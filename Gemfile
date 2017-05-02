@@ -5,3 +5,4 @@ gem 'shotgun'
 
 gem 'puma'
 gem 'tux'
+gem 'rspec'
