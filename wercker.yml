@@ -14,9 +14,9 @@ build:
         name: test
         code: bundle exec rspec
 
-# deploy:
-#   steps:
-#     - heroku-deploy:
-#         key: $HEROKU_KEY
-#         user: $HEROKU_USER
-#         app-name: $HEROKU_APP_NAME
+deploy:
+  steps:
+    - heroku-deploy:
+        key: $HEROKU_KEY
+        user: $HEROKU_USER
+        app-name: $HEROKU_APP_NAME
