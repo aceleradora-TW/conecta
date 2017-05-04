@@ -8,7 +8,7 @@ services:
 build:
   steps:
     - install-packages:
-         packages: libpq-dev
+         packages: libpq-dev postgresql-server-dev-9.4
     - bundle-install
     - script:
         name: echo ruby information
