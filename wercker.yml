@@ -2,11 +2,7 @@ ruby: 2.3.1
 box: ruby:2.3.1
 build:
   steps:
-    - script:
-      name: update bundler and bundle install
-      code: |
-        gem install bundler
-        bundle install
+    - bundle-install
     - install-packages:
         packages: postgresql-9.3 postgresql-server-dev-9.3 libpq-dev
     - script:
