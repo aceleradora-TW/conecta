@@ -9,11 +9,11 @@ gem 'tux'
 gem 'rspec'
 
 group :development do
-  gem "sqlite3"
+  gem 'sqlite3'
   gem 'dm-sqlite-adapter'
 end
 
 group :production do
-  gem "pg"
+  gem 'pg'
   gem 'dm-postgres-adapter'
 end
