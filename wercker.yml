@@ -1,10 +1,5 @@
 ruby: 2.3.1
 box: ruby:2.3.1
-services:
-   - id: postgres
-     env:
-       POSTGRES_PASSWORD: ourlittlesecret
-       POSTGRES_USER: myuser
 build:
   steps:
     - install-packages:
