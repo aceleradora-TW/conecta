@@ -13,9 +13,7 @@ group :development do
   gem 'dm-sqlite-adapter'
 end
 
-
-gem "pg"
-gem 'dm-postgres-adapter'
-
 group :production do
+  gem "pg"
+  gem 'dm-postgres-adapter'
 end
