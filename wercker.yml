@@ -1,9 +1,12 @@
 ruby: 2.3.1
 box: ruby:2.3.1
+services:
+   - id: postgres
+     env:
+       POSTGRES_PASSWORD: ourlittlesecret
+       POSTGRES_USER: myuser
 build:
   steps:
-    - install-packages:
-        packages: postgresql-9.3 postgresql-server-dev-9.3 libpq-dev
     - bundle-install
     - script:
         name: echo ruby information
