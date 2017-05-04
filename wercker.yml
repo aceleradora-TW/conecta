@@ -7,6 +7,8 @@ services:
        POSTGRES_USER: myuser
 build:
   steps:
+    - install-packages:
+         packages: libpq-dev
     - bundle-install
     - script:
         name: echo ruby information
