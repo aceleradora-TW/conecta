@@ -7,11 +7,10 @@
 <body>
   <h1>Olá pessoal :D</h1>
   <br>
-  <%= @company.name  %>
-  <br>
-  <%= @company.description  %>
-  <br>
-  <%= @company.size  %>
+
+  <% if @error != [] %>
+  <%= @error %>
+  <% end %>
 
 </body>
 </html>

@@ -8,6 +8,6 @@ class Institution
 
   property :type, Discriminator
 
-  has n, :locations, :required => true
-  has 1, :contact, :required => true
+  has n, :locations
+  #has 1, :contact, :required => true
 end
