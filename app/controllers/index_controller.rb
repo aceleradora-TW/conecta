@@ -20,3 +20,21 @@ get "/" do
   # @locationSozinha = @company.locations
   erb :index
 end
+
+get "/test" do
+  # @error = []
+  # @company = Company.create(name: 'tw', description: 'uma descricao qlqr', size: 'GRANDE')
+  #   @company.save
+  # @type = Type.new(name: "Produtos")
+  # if !@type.save
+  #   @type.errors.each do |error|
+  #     @error.push(error.to_s)
+  #   end
+  #   return "Erro: " + @error.to_s
+  # end
+  # @company.types << @type
+  # @company.save
+  #
+  # return @company.types[0].name
+  #erb :index
+end
