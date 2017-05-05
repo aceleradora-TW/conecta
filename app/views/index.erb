@@ -6,6 +6,18 @@
   </head>
   <body>
     <h1>Olá pessoal :D</h1>
-    <%=  @company.name %>
+
+
+    <%  @allInstitutions.each do |i| %>
+    <%=    i.name %>
+    ID:
+     <%=    i.id  %>
+
+     SITE <%= i.contact.site %>
+
+
+    <br/>
+    <% end %>
+
   </body>
 </html>
