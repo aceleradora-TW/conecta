@@ -1,12 +1,6 @@
 get "/" do
-  @institution = Institution.create(name: 'outra Inst', description: 'descricao qlqr')
 
-  @allInstitutions = Institution.all
-
-  @contact = Contact.create(site: 'testesite')
-  @institution.contact = @contact
-  @institution.save
-
+@company = Company.create(name: 'tw', description: 'umadescricaoqlqr', size: 'GRANDE')
 
 
   erb :index

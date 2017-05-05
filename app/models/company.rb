@@ -1,6 +1,8 @@
+require_relative 'institution'
 
-class Company
-  include DataMapper::Resource
-  property :id,         Serial
-  property :name,       String
+class Company < Institution
+
+  property :size,       String
+
+
 end

@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Conecta</title>
-  </head>
-  <body>
-    <h1>Olá pessoal :D</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Conecta</title>
+</head>
+<body>
+  <h1>Olá pessoal :D</h1>
+  <br>
+  <%= @company.name  %>
+  <br>
+  <%= @company.description  %>
+  <br>
+  <%= @company.size  %>
 
 
-    <%  @allInstitutions.each do |i| %>
-    <%=    i.name %>
-    ID:
-     <%=    i.id  %>
-
-     SITE <%= i.contact.site %>
-
-
-    <br/>
-    <% end %>
-
-  </body>
+</body>
 </html>
