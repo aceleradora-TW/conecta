@@ -1,9 +1,9 @@
 require_relative 'institution'
 
-class researchCenter < Institution
+class ResearchCenter < Institution
 
   property :structureType,    String
-  property :project,          String   
+  property :project,          String
 
-
+ has n, :researchAreas, :through => Resource
 end
