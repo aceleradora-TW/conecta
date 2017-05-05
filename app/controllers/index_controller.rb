@@ -1,6 +1,6 @@
 get "/" do
 
-@company = Company.create(name: 'tw', description: 'umadescricaoqlqr', size: 'GRANDE')
+@company = Company.create(name: 'tw', description: 'uma descricao qlqr', size: 'GRANDE')
 
 
   erb :index
