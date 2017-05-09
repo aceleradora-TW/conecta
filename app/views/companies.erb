@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Conecta</title>
+</head>
+<body>
+  <h1>Empresas</h1>
+  <% @companies.each do |company| %>
+  <b>Nome:</b> <%= company.name %><br>
+  <b>Tamanho:</b> <%= company.size %>
+  <br><br>
+  <% end %>
+
+  <% if @error != [] %>
+  <%= @error %>
+  <% end %>
+
+</body>
+</html>
