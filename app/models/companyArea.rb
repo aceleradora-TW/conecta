@@ -4,5 +4,5 @@ class CompanyArea
   property :id,    Serial
   property :name,  String, :required => true
 
- # belongs_to, :company#, :through => Resource
+  belongs_to :company, :required => false
 end
