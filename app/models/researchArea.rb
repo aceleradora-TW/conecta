@@ -4,5 +4,5 @@ class ResearchArea
   property :id,    Serial
   property :name,  String, :required => true
 
- has n, :researchCenter#, :through => Resource
+ # belongs_to, :researchCenter#, :through => Resource
 end
