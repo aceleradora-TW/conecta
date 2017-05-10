@@ -1,3 +1,6 @@
+require_relative 'config_views.rb'
+require "sinatra/base"
+
 class App < Config
 
   get "/" do

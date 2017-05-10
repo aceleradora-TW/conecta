@@ -6,7 +6,7 @@ gem 'data_mapper'
 
 gem 'puma'
 gem 'tux'
-gem 'rspec'
+gem 'rspec', '~> 2.14'
 
 gem "rack"
 gem "rack-test"
