@@ -8,6 +8,9 @@ gem 'puma'
 gem 'tux'
 gem 'rspec'
 
+gem "rack"
+gem "rack-test"
+
 group :development do
   gem 'sqlite3'
   gem 'dm-sqlite-adapter'
