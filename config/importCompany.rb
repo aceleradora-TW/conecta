@@ -31,36 +31,29 @@ headers.each do |col|
   end
 end
 
-
 #save Segment, Area, CompanyType, Competences in DAtabases
 information_object = {}
 csv.each do |row|
   row = row.to_hash
   information = row['information']
   if information.start_with? "Segmento_"
-    segment_name = information.sub! "Segmento_", ""
+    segment_name = information.sub "Segmento_", ""
     segment_object = Segment.create(name: segment_name)
     information_object[information] = segment_object
   elsif information.start_with? "Perfil_"
-    type_name = information.sub! "Perfil_", ""
+    type_name = information.sub "Perfil_", ""
     type_object = CompanyType.create(name: type_name)
     information_object[information] = type_object
   elsif information.start_with? "Capacidades_"
     # Capacidades_2-1 Eng Software_Desenvolvimento SW Client Server
     competence_clean = information.sub! "Capacidades_", ""    # 2-1 Eng Software_Desenvolvimento SW Client Server
     competence_area_number = competence_clean[0]              # 2
-    competence_name = competence_clean.sub(/\d[\W+]\d+/,"")   # Eng Software_Desenvolvimento SW Client Server
+    competence_name = competence_clean.sub(/\d[\W+]\d+ /,"")   # Eng Software_Desenvolvimento SW Client Server
     competence_company_area = area_information[competence_area_number.to_i]# CompanyArea::{ name: Software}
-    competence_object = Competence.create(name: competence_name)
-    competence_object.companyArea = competence_company_area
-    competence_object.save
+    competence_object = Competence.create(name: competence_name, companyArea: competence_company_area)
     information_object[information] = competence_object
-
   end
 end
-
-
-#esboço da continuação do código - quase pronto
 
 companies.each do |company|
   csv.each do |row|
@@ -69,26 +62,24 @@ companies.each do |company|
     info_value = row[company.name] || ""
 
     if information == "size"
-
       size_name = ""
       if info_value == "1"
-        size_name = "Pequena"
+        size_name = "Grande"
       elsif info_value == "2"
         size_name = "Média"
       elsif info_value == "3"
-        size_name = "Grande"
+        size_name = "Pequena"
       end
       company.size = size_name
-
     elsif information.start_with? "Segmento_"
-      segment_name = information.sub! "Segmento_", ""
+      segment_object = information_object[information]
+      if info_value.strip == "1"
+        company.segments.push segment_object
+        company.save
+        puts segment_object.name + "[" + segment_object.id.to_s + "]" + " inserido na empresa " + company.name
+      end
     end
   end
   company.save
 
 end
-
-
-# company.save
-# #break
-# end
