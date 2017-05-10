@@ -8,7 +8,11 @@
   <h1>Empresas</h1>
   <% @companies.each do |company| %>
   <b>Nome:</b> <%= company.name %><br>
-  <b>Tamanho:</b> <%= company.size %>
+  <b>Tamanho:</b> <%= company.size %><br>
+  <b>Segmentos:</b> <% company.segments.each do |segment| %>
+  <%= segment.name + "; " %>
+  <% end %>
+  
   <br><br>
   <% end %>
 
