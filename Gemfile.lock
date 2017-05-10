@@ -119,6 +119,8 @@ DEPENDENCIES
   dm-sqlite-adapter
   pg
   puma
+  rack
+  rack-test
   rspec
   shotgun
   sinatra

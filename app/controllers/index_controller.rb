@@ -1,23 +1,27 @@
-get "/" do
-  @error = []
-  erb :index
-end
+class App < Config
 
-get "/companies" do
-  @companies = Company.all
-  erb :companies
-end
+  get "/" do
+    @error = []
+    erb :index
+  end
 
-get "/segments" do
-  @segments = Segment.all
-  erb :segments
-end
+  get "/companies" do
+    @companies = Company.all
+    erb :companies
+  end
 
-get "/competences" do
-  @competences = Competence.all
-  erb :competences
-end
+  get "/segments" do
+    @segments = Segment.all
+    erb :segments
+  end
 
-get "/import-companies" do
-  require_relative "../../config/importCompany.rb"
+  get "/competences" do
+    @competences = Competence.all
+    erb :competences
+  end
+
+  get "/import-companies" do
+    require_relative "../../config/importCompany.rb"
+  end
+
 end
