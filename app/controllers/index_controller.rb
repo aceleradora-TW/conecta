@@ -1,7 +1,7 @@
 require_relative 'controller.rb'
 require "sinatra/base"
 
-class App < Controller
+class IndexController < Controller
 
   get "/" do
     @error = []
@@ -21,6 +21,10 @@ class App < Controller
   get "/competences" do
     @competences = Competence.all
     erb :competences
+  end
+
+  get "/search" do
+    erb :search
   end
 
   get "/import-companies" do

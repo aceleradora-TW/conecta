@@ -4,6 +4,17 @@
 # loaded once.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'capybara/rspec'
+require 'capybara/dsl'
+
+require './app/controllers/config_views'
+require './app/controllers/index_controller'
+
+module RSpecMixin
+  include Rack::Test::Methods
+  def app() App end
+end
+
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
   config.run_all_when_everything_filtered = true
@@ -14,4 +25,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+  config.include RSpecMixin
+  config.include Capybara::DSL
 end
+
+Capybara.app = IndexController
