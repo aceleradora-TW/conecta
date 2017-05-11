@@ -1,11 +1,10 @@
-
+#Instituições (empresas e centros de pesquisa)
 class Institution
   include DataMapper::Resource
-  property :id,         Serial
-  property :name,       String, :required => true
-  property :description,       String#, :required => true
-  property :logo,       String
-
+  property :id, Serial
+  property :name, String, :required => true
+  property :description, String
+  property :logo, String
   property :type, Discriminator
 
   has n, :locations
