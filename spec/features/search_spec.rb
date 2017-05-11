@@ -14,18 +14,3 @@ RSpec.describe IndexController do
     end
   end
 end
-
-it "Deve exibir o campo de busca" do
-  visit "/"
-  expect(page).to have_css("input", class: 'search-field')
-end
-
-it "Deve exibir o botão de busca" do
-  visit "/"
-  expect(page).to have_css("button", class: 'button-primery')
-end
-end
-end
-end
-# end
-# end
