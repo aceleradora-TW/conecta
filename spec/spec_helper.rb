@@ -29,4 +29,4 @@ RSpec.configure do |config|
   config.include Capybara::DSL
 end
 
-Capybara.app = App
+Capybara.app = IndexController
