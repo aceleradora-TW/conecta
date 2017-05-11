@@ -1,7 +1,7 @@
 require_relative 'controller.rb'
 require "sinatra/base"
 
-class App < Controller
+class IndexController < Controller
 
   get "/" do
     @error = []
