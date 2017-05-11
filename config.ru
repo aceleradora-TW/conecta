@@ -5,5 +5,5 @@ set :app_file, __FILE__
 # run Sinatra::Application
 
 map '/' do
-  run App
+  run IndexController
 end
