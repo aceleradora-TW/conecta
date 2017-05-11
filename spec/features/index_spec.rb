@@ -2,7 +2,7 @@ require 'rack/test'
 require 'rspec'
 require 'spec_helper'
 
-RSpec.describe App do
+RSpec.describe IndexController do
   describe "OLA" do
     context "Quando listar todas as empresas" do
       it "deve mostrar na tela Lista de Instituições" do
