@@ -1,7 +1,7 @@
-require_relative 'config_views.rb'
+require_relative 'controller.rb'
 require "sinatra/base"
 
-class App < Config
+class App < Controller
 
   get "/" do
     @error = []
