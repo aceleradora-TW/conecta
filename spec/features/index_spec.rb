@@ -7,7 +7,6 @@ RSpec.describe IndexController do
     context "Quando abrir página principal" do
       it "Deve mostrar boas vindas" do
         visit "/"
-        puts page.body
         expect(page).to have_content 'Olá pessoal'
       end
     end
