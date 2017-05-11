@@ -12,7 +12,13 @@
   <b>Segmentos:</b> <% company.segments.each do |segment| %>
   <%= segment.name + "; " %>
   <% end %>
-  
+  <b>Perfil:</b> <% company.company_types.each do |type| %>
+  <%= type.name + "; " %>
+  <% end %>
+  <b>Capacidades:</b> <% company.competences.each do |competence| %>
+  <%= competence.name + "; " %>
+  <% end %>
+
   <br><br>
   <% end %>
 
