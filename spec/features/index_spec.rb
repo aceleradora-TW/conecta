@@ -3,7 +3,7 @@ require 'rspec'
 require 'spec_helper'
 
 RSpec.describe IndexController do
-  describe "OLA" do
+  describe "Index" do
     context "Quando listar todas as empresas" do
       it "deve mostrar na tela Lista de Instituições" do
         visit "/"
