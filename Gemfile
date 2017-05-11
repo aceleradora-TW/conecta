@@ -12,6 +12,7 @@ group :development, :test do
   gem 'rspec', '~> 2.14'
   gem "rack-test"
   gem 'sqlite3'
+  gem 'capybara'
   gem 'dm-sqlite-adapter'
 end
 
