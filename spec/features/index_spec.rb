@@ -4,11 +4,11 @@ require 'spec_helper'
 
 RSpec.describe IndexController do
   describe "Index" do
-    context "Quando listar todas as empresas" do
-      it "deve mostrar na tela Lista de Instituições" do
+    context "Quando abrir página principal" do
+      it "Deve mostrar boas vindas" do
         visit "/"
         puts page.body
-        expect(page).to have_content 'pessoal'
+        expect(page).to have_content 'Olá pessoal'
       end
     end
   end
