@@ -3,6 +3,7 @@ require_relative 'institution'
 class Company < Institution
   property :size, String
   has n, :segments, :through => Resource
-  has n, :companyTypes
-  has n, :companyAreas
+  has n, :company_types, :through => Resource
+  has n, :company_areas, :through => Resource
+  has n, :competences, :through => Resource
 end
