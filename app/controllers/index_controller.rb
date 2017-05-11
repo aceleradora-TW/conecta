@@ -23,6 +23,10 @@ class IndexController < Controller
     erb :competences
   end
 
+  get "/search" do
+    erb :search
+  end
+
   get "/import-companies" do
     require_relative "../../config/importCompany.rb"
   end
