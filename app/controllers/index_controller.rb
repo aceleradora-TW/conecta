@@ -27,8 +27,9 @@ class IndexController < Controller
     erb :search
   end
 
-  get "/import-companies" do
-    require_relative "../../config/importCompany.rb"
+  get "/research_centers" do
+    @research_centers = ResearchCenter.all
+    erb :research_centers
   end
 
 end
