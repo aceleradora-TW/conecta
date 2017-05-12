@@ -27,6 +27,11 @@ class IndexController < Controller
     erb :search
   end
 
+  get "/results" do
+    @companies = Company.all
+    erb :results
+  end
+
   get "/import-companies" do
     require_relative "../../config/importCompany.rb"
   end
