@@ -31,9 +31,10 @@ class IndexController < Controller
     @research_centers = ResearchCenter.all
     erb :research_centers
 
-  get "/results" do
-    @companies = Company.all
-    erb :results
-  end
+    get "/results" do
+      @companies = Company.all
+      erb :results
+    end
 
+  end
 end
