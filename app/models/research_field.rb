@@ -4,5 +4,5 @@ class ResearchField
   property :id, Serial
   property :name, String, :required => true
 
-  belongs_to :researchCenter, :required => false
+  has n, :research_centers, :through => Resource  
 end
