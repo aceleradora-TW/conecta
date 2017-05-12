@@ -1,5 +1,7 @@
 require_relative 'models/csv_company'
+
 class InstitutionBuilder
+
   def parse_company row
     company_csv = CsvCompany.new
     @segments, @types, @competences = [],[],[]
@@ -43,5 +45,37 @@ class InstitutionBuilder
     company_csv.types = @types
     company_csv.competences = @competences
     return company_csv
+  end
+
+  def parse_research_center row
+    research_center_csv = CsvResearchCenter.new
+
+    row.each do |col|
+      header = col[0] || ""
+      value = col[1] || ""
+      value.strip!
+      if header == "ESTRUTURA_PESQUISA"
+        @name = value
+      elsif header == "DESCRIÇÃO"
+        @description = value
+      elsif header == "TIPO_ESTRUTURA"
+        @structure_type = value
+      elsif header ==  "AREA_PESQUISA"
+        @research_area = value
+      elsif header ==  "EIXO_TEMATICO"
+        @research_field = value
+      elsif header ==  "PROJETOS"
+        @project = value
+      end
+    end
+
+    research_center_csv.name = @name
+    research_center_csv.structure_type = @structure_type
+    research_center_csv.description  = @description
+    research_center_csv.research_area = @research_area
+    research_center_csv.research_field = @research_field
+    research_center_csv.project = @project
+    return research_center_csv
+
   end
 end
