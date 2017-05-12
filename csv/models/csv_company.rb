@@ -1,13 +1,10 @@
-require_relative '../../app/models/company'
-require_relative '../../app/models/segment'
-require_relative '../../app/models/company_area'
-require_relative '../../app/models/competence'
 class CsvCompany
   attr_accessor :name, :size, :description,:segments,:types,:competences
   def initialize
     @competence_area_array = nil
     create_competence_area_array()
   end
+
   def insert_to_db
 
     company = Company.new(name: @name, size: @size)

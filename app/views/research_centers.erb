@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Conecta</title>
+</head>
+<body>
+  <h1>CENTROS DE PESQUISA</h1>
+  <% @research_centers.each do |rc| %>
+  <b>Nome:</b> <%= rc.name %><br>
+  <b>tipo estrutura:</b> <%= rc.structure_type %><br>
+  <b>projeto:</b> <%= rc.project%>
+
+
+  <br><br>
+  <% end %>
+
+  <% if @error != [] %>
+  <%= @error %>
+  <% end %>
+
+</body>
+</html>

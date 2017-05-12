@@ -13,6 +13,10 @@ company_list.each {|company| company.insert_to_db }
 
 research_center_csv_content = File.read(Dir.pwd + '/csv/files/research_center.csv')
 research_center_parser = CsvParser.new(:col_sep => '*')
-research_center_parser.parse_research_center(research_center_csv_content)
+research_list = research_center_parser.parse_research_center(research_center_csv_content)
+research_list.each {|research_center| research_center.insert_to_db  }
+# research_list.each {|rc| puts rc.inspect}
+# puts ResearchCenter.all
+
 
 Process.kill('TERM', Process.pid)
