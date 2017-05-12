@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Conecta</title>
-</head>
-<body>
-  <h1>Capacidades</h1>
-  <% @competences.each do |competence| %>
-  <b>Nome:</b> <%= competence.name %><br>
-  <b>Área:</b> <%= competence.companyArea.name %>
-  <br><br>
-  <% end %>
+<h1>Capacidades</h1>
+<% @competences.each do |competence| %>
+<b>Nome:</b> <%= competence.name %><br>
+<b>Área:</b> <%= competence.companyArea.name %>
+<br><br>
+<% end %>
 
-  <% if @error != [] %>
-  <%= @error %>
-  <% end %>
-
-</body>
-</html>
+<% if @error != [] %>
+<%= @error %>
+<% end %>
