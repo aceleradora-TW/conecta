@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Conecta</title>
-</head>
-<body>
-  <h1>Segmentos</h1>
-  <% @segments.each do |segment| %>
-  <b>Nome:</b> <%= segment.name %>
-  <br><br>
-  <% end %>
+<h1>Segmentos</h1>
+<% @segments.each do |segment| %>
+<b>Nome:</b> <%= segment.name %>
+<br><br>
+<% end %>
 
-  <% if @error != [] %>
-  <%= @error %>
-  <% end %>
-
-</body>
-</html>
+<% if @error != [] %>
+<%= @error %>
+<% end %>
