@@ -1,11 +1,6 @@
-require_relative '../../app/models/company'
-require_relative '../../app/models/segment'
-require_relative '../../app/models/company_area'
-require_relative '../../app/models/competence'
 class CsvCompany
   attr_accessor :name, :size, :description,:segments,:types,:competences
-  def initialize
-  end
+
   def insert_to_db
     company = Company.new(name: @name, size: @size)
     @segments.each do |segment|
@@ -30,7 +25,7 @@ class CsvCompany
       company.competences.push(competence_object)
     end
     company.save
-    puts company.company_types.inspect
+    # puts company.company_types.inspect
 
   end
 end
