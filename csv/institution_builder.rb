@@ -49,7 +49,7 @@ class InstitutionBuilder
 
   def parse_research_center row
     research_center_csv = CsvResearchCenter.new
-
+    @research_field = []
     row.each do |col|
       header = col[0] || ""
       value = col[1] || ""
@@ -66,15 +66,30 @@ class InstitutionBuilder
         @research_field = value
       elsif header ==  "PROJETOS"
         @project = value
+      elsif header ==  "E-MAIL"
+        @email = value
+      elsif header ==  "TELEFONE"
+        @phone = value
+      elsif header ==  "SITE"
+        @site = value
+      elsif header ==  "COORDENADOR"
+        @contact_name = value
       end
     end
 
     research_center_csv.name = @name
     research_center_csv.structure_type = @structure_type
     research_center_csv.description  = @description
+    research_center_csv.project = @project
+
     research_center_csv.research_area = @research_area
     research_center_csv.research_field = @research_field
-    research_center_csv.project = @project
+
+    research_center_csv.email = @email
+    research_center_csv.phone = @phone
+    research_center_csv.site = @site
+    research_center_csv.contact_name = @contact_name
+
     return research_center_csv
 
   end
