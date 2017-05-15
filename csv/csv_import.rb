@@ -5,10 +5,10 @@ require_relative 'csv_parser.rb'
 
 DataMapper.auto_migrate!
 
-# company_csv_content = File.read(Dir.pwd + '/csv/files/company.csv')
-# company_parser = CsvParser.new
-# company_list = company_parser.parse_company(company_csv_content)
-# company_list.each {|company| company.insert_to_db }
+company_csv_content = File.read(Dir.pwd + '/csv/files/company.csv')
+company_parser = CsvParser.new
+company_list = company_parser.parse_company(company_csv_content)
+company_list.each {|company| company.insert_to_db }
 
 
 research_center_csv_content = File.read(Dir.pwd + '/csv/files/research_center.csv')
