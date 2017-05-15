@@ -3,7 +3,7 @@ class Institution
   include DataMapper::Resource
   property :id, Serial
   property :name, String, :required => true
-  property :description, String
+  property :description, Text
   property :logo, String
   property :type, Discriminator
 

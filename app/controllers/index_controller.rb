@@ -50,4 +50,13 @@ class IndexController < Controller
     end
     erb :results
   end
+
+  get "/components" do
+    erb :components
+  end
+
+  get "/import-companies" do
+    require_relative "../../config/importCompany.rb"
+  end
+
 end
