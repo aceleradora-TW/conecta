@@ -1,23 +1,30 @@
+
 <h1>Empresas</h1>
 <% @companies.each do |company| %>
 <div class="card">
-  <b>Nome:</b> <%= company.name %><br>
-  <b>Tamanho:</b> <%= company.size %><br>
-  <!-- <b>Segmentos:</b> <% company.segments.each do |segment| %>
-  <%= segment.name + "; " %>
-  <% end %><br> -->
-  <!-- <b>Perfil:</b> <% company.company_types.each do |type| %>
-  <%= type.name + "; " %>
-  <% end %><br> -->
-  <b>Capacidades:</b>
-  <ul>
-    <% company.competences.each do |competence| %>
-    <li><%= competence.name %></li>
-    <% end %>
-  </ul>
-</div>
+<b>Nome:</b> <%= company.name %><br>
+<b>Tamanho:</b> <%= company.size %><br>
+<b>Segmentos:</b> <% company.segments.each do |segment| %>
+<%= segment.name + "; " %>
+<% end %><br>
+<b>Perfil:</b> <% company.company_types.each do |type| %>
+<%= type.name + "; " %>
+<% end %><br>
+
+
+<% array = [] %>
+<b>Capacidades:</b> <% company.competences.each do |competence| %>
+<% if !(array.include? competence.competence_area.name) %>
+  <% array.push(competence.competence_area.name) %>
+<% end %>
+<% end %><br>
+
+<% array.each do |element| %>
+  <%= element + " " %>
+<% end %>
+</div><br>
 <% end %>
 
 <% if @error != [] %>
-  <%= @error %>
+<%= @error %>
 <% end %><br>

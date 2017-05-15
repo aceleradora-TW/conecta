@@ -6,9 +6,9 @@ gem 'data_mapper'
 
 gem 'puma'
 gem 'tux'
-gem "rack"
 
 group :development, :test do
+  gem "rack", '2.0.2'
   gem 'rspec', '~> 2.14'
   gem "rack-test"
   gem 'sqlite3'
