@@ -9,7 +9,7 @@
 <%= type.name + "; " %>
 <% end %><br>
 <b>Capacidades:</b> <% company.competences.each do |competence| %>
-<%= competence.name + "; " %>
+<%= competence.name + "[" + competence.competence_area.name + "]; " %>
 <% end %><br>
 
 <br><br>
