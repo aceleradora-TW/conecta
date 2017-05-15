@@ -37,8 +37,8 @@ class IndexController < Controller
     erb :results
   end
 
-  get "/componets" do
-    erb :componets
+  get "/components" do
+    erb :components
   end
 
   get "/import-companies" do
