@@ -13,6 +13,8 @@
     <b>Tipo estrutura:</b> <%= rc.structure_type %><br>
     <b>Projeto:</b> <%= rc.project%> <br>
     <b>Descrição:</b> <%= rc.description%> <br>
+    <b>Unidade:</b> <%= rc.unit%> <br>
+    <b>Sigla:</b> <%= rc.initials%> <br>
 
     <b>Area de Pesquisa:</b>
     <% rc.research_areas.each do |a| %>
@@ -41,7 +43,7 @@
   </div>
 
 
-    <br><br> <% end %>
+  <br><br> <% end %>
 
   <% if @error != [] %>
   <%= @error %>

@@ -74,6 +74,10 @@ class InstitutionBuilder
         @site = value
       elsif header ==  "COORDENADOR"
         @contact_name = value
+      elsif header ==  "UNIDADE"
+        @unit = value
+      elsif header ==  "SIGLA"
+        @initials = value
       end
     end
 
@@ -81,6 +85,8 @@ class InstitutionBuilder
     research_center_csv.structure_type = @structure_type
     research_center_csv.description  = @description
     research_center_csv.project = @project
+    research_center_csv.unit = @unit
+    research_center_csv.initials = @initials
 
     research_center_csv.research_area = @research_area
     research_center_csv.research_field = @research_field
