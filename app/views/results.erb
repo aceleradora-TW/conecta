@@ -1,4 +1,3 @@
-
 <h1>Empresas</h1>
 <% @companies.each do |company| %>
 <div class="card">
@@ -11,20 +10,39 @@
 <%= type.name + "; " %>
 <% end %><br>
 
+<% @company_competences = @competences_by_company[company]%>
 
-<% array = [] %>
-<b>Capacidades:</b> <% company.competences.each do |competence| %>
-<% if !(array.include? competence.competence_area.name) %>
-  <% array.push(competence.competence_area.name) %>
-<% end %>
-<% end %><br>
+<% if @company_competences != nil %>
+<ul>
+<%   @company_competences.each_key do |competence_area| %>
+<li class="itens"><%= competence_area %></li>
+<ul class="subitens">
+<%  @company_competences[competence_area].each do |comp| %>
+  <li><%= comp %></li>
+  <% end %>
+</ul>
 
-<% array.each do |element| %>
-  <%= element + " " %>
 <% end %>
+</ul>
+<% end %>
+
 </div><br>
 <% end %>
 
 <% if @error != [] %>
 <%= @error %>
 <% end %><br>
+
+<script>
+let itens = document.getElementsByClassName('itens');
+let subitens = document.getElementsByClassName('subitens');
+for(let i = 0; i < itens.length; i++) {
+  document.getElementsByClassName('itens')[i].addEventListener("click", function(){
+    if(subitens[i].style.display == 'none') {
+      subitens[i].style.display = 'block';
+    } else {
+      subitens[i].style.display = 'none';
+    }
+  });
+}
+</script>
