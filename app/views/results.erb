@@ -53,8 +53,10 @@ for(let i = 0; i < itens.length; i++) {
   itens[i].addEventListener("click", function(){
     if(subitens[i].style.display == 'none') {
       subitens[i].style.display = 'block';
+      itens[i].style.color = 'red';
     } else {
       subitens[i].style.display = 'none';
+      itens[i].style.color = 'black';
     }
   });
 }
