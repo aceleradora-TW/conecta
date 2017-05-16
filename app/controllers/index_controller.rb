@@ -36,4 +36,41 @@ class IndexController < Controller
     @companies = Company.all
     erb :results
   end
+
+  get "/search_companies" do
+    # @result = []
+    @value = params[:value]
+    @search_type = params[:search_type]
+
+    if @search_type == 'competencia'
+      @competences = Competence.all(:name.like => "%#{@value}%")
+      @competences_id =   @competences.map{|c| c.id}
+      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ?',@competences_id])
+    elsif @search_type == 'segmento'
+      @segments = Segment.all(:name.like => "%#{@value}%")
+      @segments_id = @segments.map{|s| s.id}
+      @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
+    elsif @search_type == 'empresa'
+      @companies = Institution.all(:name.like => "%#{@value}%")
+
+    end
+    erb :teste
+
+
+
+
+    # @result = Company.all(:size.like => '%Grande%')
+    # @result = Segment.all(:name.like => '%Software%')
+    # @result.push(Institution.all(name: @value))
+
+    # @result = Company.all(size: @value)
+    # @result = Institution.all(name: @value)
+  end
+
+  # get "/search_companies2" do
+  #   @value = params[:value]
+  #   # @result2 = Company.all(size: @value)
+  #   @result2 = Institution.all(name: @value)
+  #   erb :teste
+  # end
 end

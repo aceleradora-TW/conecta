@@ -8,9 +8,22 @@
 <body>
   <h1>Olá pessoal :D</h1>
   <br>
-  <input class="search-field" type="Oi" name="Olá" value="Hello">
-  <button class="button-primary" type="button" name="button"></button>
+  <!-- <input class="search-field" type="Oi" name="Olá" value="Hello">
+  <button class="button-primary" type="button" name="button"></button> -->
+  <div id="divBusca">
 
-<% if @error != [] %>
-<%= @error %>
-<% end %>
+    <form action="/search_companies" name="search">
+      <input type="text" id="txtBusca" placeholder="Buscar..." name="value"/><br><br>
+      <input type="radio" name="search_type" value="empresa"> Empresa<br>
+      <input type="radio" name="search_type" value="competencia"> Competência<br>
+      <input type="radio" name="search_type" value="segmento"> Segmento<br><br>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+
+
+
+  <% if @error != [] %>
+  <%= @error %>
+  <% end %>
