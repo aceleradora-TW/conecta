@@ -33,8 +33,11 @@ class IndexController < Controller
   end
 
   get "/research_centers" do
+    # SE CRASHAR FOI AQ
+    # @research_centers = ResearchCenter.all
+    # erb :research_centers
     @research_centers = ResearchCenter.all
-    erb :research_centers
+    erb :results_centers
   end
 
   get "/results" do
@@ -54,11 +57,6 @@ class IndexController < Controller
       end
     end
     erb :results
-  end
-
-  get "/results_centers" do
-    @research_centers = ResearchCenter.all
-    erb :results_centers
   end
 
   get "/search_companies" do
