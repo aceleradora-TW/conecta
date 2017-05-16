@@ -32,7 +32,6 @@ class CsvCompany
       company.competences.push(competence_object)
     end
     company.save
-    puts company.company_types.inspect
   end
   def create_competence_area_array
     if !@competence_area_array

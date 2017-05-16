@@ -1,7 +1,5 @@
 require_relative 'models/csv_company'
-
 class InstitutionBuilder
-
   def parse_company row
     company_csv = CsvCompany.new
     @segments, @types, @competences = [],[],[]
@@ -97,6 +95,5 @@ class InstitutionBuilder
     research_center_csv.contact_name = @contact_name
 
     return research_center_csv
-
   end
 end

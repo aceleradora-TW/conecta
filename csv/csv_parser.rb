@@ -14,21 +14,8 @@ class CsvParser
     }
   end
 
-
-
-  def parse_company(csv_content)
-    to_company = lambda { |row| @builder.parse_company row }
-    company_list = CSV.parse(csv_content, @parse_options).map(&to_company)
-    return company_list
+  def parse(csv_content, builder_lambda)
+    parsed_data = CSV.parse(csv_content, @parse_options).map{ |row| builder_lambda.call(row,@builder)}
+    return parsed_data
   end
-
-  def parse_research_center(csv_content)
-    to_research_center = lambda { |row| @builder.parse_research_center row}
-    research_list = CSV.parse(csv_content, @parse_options).map(&to_research_center)
-    return research_list
-  end
-
-
-
-
 end
