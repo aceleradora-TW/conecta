@@ -8,7 +8,7 @@ RSpec.describe IndexController do
 
       it "Deve mostrar o logo" do
         visit "/"
-        expect(page).to have_content 'Logo'
+        expect(page).to have_content 'Conecta'
       end
 
       it "Deve mostrar o Ver empresas" do

@@ -8,6 +8,11 @@ class IndexController < Controller
     erb :index
   end
 
+  get "/index2" do
+    @error = []
+    erb :index_search
+  end
+
   get "/companies" do
     @companies = Company.all
     erb :companies
@@ -49,6 +54,26 @@ class IndexController < Controller
       end
     end
     erb :results
+  end
+
+  get "/search_companies" do
+    @value = params[:value]
+    @search_type = params[:search_type]
+
+    if @search_type == 'competencia'
+      @competences = Competence.all(:name.like => "%#{@value}%")
+      @competences_id =   @competences.map{|c| c.id}
+      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ?',@competences_id])
+    elsif @search_type == 'segmento'
+      @segments = Segment.all(:name.like => "%#{@value}%")
+      @segments_id = @segments.map{|s| s.id}
+      @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
+    elsif @search_type == 'empresa'
+      @companies = Company.all(:name.like => "%#{@value}%")
+    elsif @search_type == 'centro-pesquisa'
+      @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
+    end
+    erb :search_companies
   end
 
   get "/components" do
