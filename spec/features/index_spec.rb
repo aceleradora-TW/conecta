@@ -26,6 +26,16 @@ RSpec.describe IndexController do
         expect(page).to have_css("button", class: 'Button')
       end
 
+      it "Deve conter o link de redirecionamento para lista de empresas" do
+        visit "/"
+        expect(page).to have_link("Buscar", :href=>"/results")
+      end
+
+      it "Deve conter o link de redirecionamento para lista de centros de pesquisas" do
+        visit "/"
+        expect(page).to have_link("Buscar", :href=>"/research_centers")
+      end
+
     end
   end
 end
