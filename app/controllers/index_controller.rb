@@ -56,6 +56,11 @@ class IndexController < Controller
     erb :results
   end
 
+  get "/results_centers" do
+    @research_centers = ResearchCenter.all
+    erb :results_centers
+  end
+
   get "/search_companies" do
     @value = params[:value]
     @search_type = params[:search_type]
