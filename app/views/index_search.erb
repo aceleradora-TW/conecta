@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="/stylesheets/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/css/teste.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/css/Button.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/css/Section.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/css/card.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
   <meta charset="utf-8">
   <title>Conecta</title>
+
+  <style>
+  .inputBusca{
+    width: 105%;
+    margin-right: 60px;
+  }
+  .radioButton{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  }
+  </style>
+
 </head>
-<body>
+<body"
 
-  <h1>Olá pessoal :D</h1>
-  <br>
-  <!-- <input class="search-field" type="Oi" name="Olá" value="Hello">
-  <button class="button-primary" type="button" name="button"></button> -->
-  <div id="divBusca">
+  <section class="SectionCards">
+    <div class="Card">
+      <div class="CompanyName"><h1>Pesquise aqui...</h1></div>
+      <br>
 
-    <form action="/search_companies" name="search">
-      <input type="text" id="txtBusca" placeholder="Buscar..." name="value"/><br><br>
-      <input type="radio" name="search_type" value="empresa"> Empresa<br>
-      <input type="radio" name="search_type" value="competencia"> Competência<br>
-      <input type="radio" name="search_type" value="segmento"> Segmento<br>
-      <input type="radio" name="search_type" value="centro-pesquisa">Centro de Pesquisa<br><br>
-      <button type="submit">Buscar</button>
-    </form>
-  </div>
+      <form action="/search_companies" name="search">
+        <input class="inputBusca" type="text" placeholder="Pesquisar..." name="value"/><br><br>
+        <div class="radioButton">
+          <input type="radio" name="search_type" value="empresa"> Empresa<br>
+          <input type="radio" name="search_type" value="competencia"> Competência<br>
+          <input type="radio" name="search_type" value="segmento"> Segmento<br>
+          <input type="radio" name="search_type" value="centro-pesquisa">Centro de Pesquisa<br><br>
+          <button class="Button" type="submit" name="button">Buscar</button>
+        </div>
 
-  <section class="SectionPrimary">
-    <h1>Logo</h1>
-    <br>
-    <h3>Ver empresas</h3>
-    <a href="/results">
-      <button class="Button" type="button" name="button" >Buscar</button>
-    </a>
-    <br>
-    <h3>Ver centros de pesquisa</h3>
-    <a href="/research_centers">
-      <button class="Button" type="button" name="button">Buscar</button>
-    </a>
+      </form>
+
+    </div>
 
   </section>
 
-  <% if @error != [] %>
+</body>
+</html>
+
+<% if @error != [] %>
   <%= @error %>
   <% end %>
