@@ -9,7 +9,6 @@ class CsvResearchCenter
     structure_type: @structure_type, project: @project, description: @description,
     unit: @unit, initials: @initials )
 
-
     field_object = ResearchField.first(name: @research_field)
     if !field_object
       field_object = ResearchField.create(name: @research_field)
@@ -22,13 +21,10 @@ class CsvResearchCenter
     end
     research_center.research_areas.push(area_object)
 
-
     contact_object = Contact.new(site: @site, phone: @phone, contact_name: @contact_name,
     email: @email)
     research_center.contact = contact_object
 
-
     research_center.save
-    puts research_center.errors.inspect
   end
 end
