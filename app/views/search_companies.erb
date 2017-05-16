@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Resultados Buscados</h1>
+  <br><br><br>
+
+  <%if @search_type == 'competencia' %>
+    <% @company_competence.each do |c| %>
+      Empresa <%= c.company.name %> -
+      Competencia <%= c.competence.name %>
+      <br/>
+    <% end %>
+
+  <% elsif @search_type == 'segmento' %>
+    <% @company_segments.each do |s| %>
+      Empresa <%= s.company.name %> -
+      Segmento <%= s.segment.name %>
+      <br/>
+    <% end %>
+
+  <% elsif @search_type == 'empresa'   %>
+    <% @companies.each do |e| %>
+      Empresa <%= e.name %>
+      <br/>
+    <% end %>
+  <% end %>
+
+
+  </body>
+  </html>
