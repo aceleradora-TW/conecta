@@ -8,6 +8,11 @@ class IndexController < Controller
     erb :index
   end
 
+  get "/index2" do
+    @error = []
+    erb :index_search
+  end
+
   get "/companies" do
     @companies = Company.all
     erb :companies
@@ -64,7 +69,9 @@ class IndexController < Controller
       @segments_id = @segments.map{|s| s.id}
       @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
     elsif @search_type == 'empresa'
-      @companies = Institution.all(:name.like => "%#{@value}%")
+      @companies = Company.all(:name.like => "%#{@value}%")
+    elsif @search_type == 'centro-pesquisa'
+      @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
     end
     erb :search_companies
   end
