@@ -1,0 +1,57 @@
+
+<h1>CENTROS DE PESQUISA</h1>
+<section class="SectionCards">
+  <% @research_centers.each do |rc| %>
+
+  <div class="Card">
+    <div class="CompanyName">
+      <h1><%= rc.name %></h1>
+    </div>
+    <h3> <%= rc.project%> </h3>
+    <div class="CompanyDescription">
+      <%= rc.description%>
+    </div>
+    <div class="CenterTheme">
+      <div class="ItemTheme">
+        <b>Area de Pesquisa:</b>
+        <% rc.research_areas.each do |a| %>
+        <%= a.name %>
+        <% end %>
+      </div>
+      <div class="ItemTheme">
+        <b>Eixo tematico:</b>
+        <% rc.research_fields.each do |f| %>
+        <%= f.name %>
+        <% end %>
+      </div>
+    </div>
+    <br><b>Contato:</b><br>
+
+
+    <div class="CenterTheme">
+      <div class="ItemTheme">
+        <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
+      </div>
+      <div class="ItemTheme">
+        <b>Email:</b>  <%= rc.contact.email %>
+
+      </div>
+    </div>
+    <div class="CenterTheme">
+      <div class="ItemTheme">
+        <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
+      </div>
+      <div class="ItemTheme">
+        <b>Site:</b>  <%= rc.contact.site %> 
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br><br> <% end %>
+</section>
+<% if @error != [] %>
+<%= @error %>
+<% end %>

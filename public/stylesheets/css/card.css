@@ -85,6 +85,19 @@ body {
   line-height: 1.8em;
 
 }
+.CenterTheme{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.ItemTheme{
+  width: 50%;
+  height: 100%;
+  margin: 2%;
+
+}
 
 .CompanyCompetences{
   width: 100%;
