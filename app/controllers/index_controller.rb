@@ -66,7 +66,7 @@ class IndexController < Controller
     elsif @search_type == 'empresa'
       @companies = Institution.all(:name.like => "%#{@value}%")
     end
-    erb :teste
+    erb :search_companies
   end
 
   get "/components" do
