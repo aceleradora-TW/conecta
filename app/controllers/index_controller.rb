@@ -8,7 +8,7 @@ class IndexController < Controller
     erb :index
   end
 
-  get "/index2" do
+  get "/index_search" do
     @error = []
     erb :index_search
   end
@@ -33,8 +33,11 @@ class IndexController < Controller
   end
 
   get "/research_centers" do
+    # SE CRASHAR FOI AQ
+    # @research_centers = ResearchCenter.all
+    # erb :research_centers
     @research_centers = ResearchCenter.all
-    erb :research_centers
+    erb :results_centers
   end
 
   get "/results" do
@@ -73,7 +76,7 @@ class IndexController < Controller
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
     end
-    erb :search_companies
+    erb :search_all
   end
 
   get "/components" do
