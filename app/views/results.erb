@@ -1,30 +1,63 @@
 
-<h1>Empresas</h1>
+
+  <h1>Empresas</h1>
+<section class="SectionCards">
 <% @companies.each do |company| %>
-<div class="card">
-<b>Nome:</b> <%= company.name %><br>
-<b>Tamanho:</b> <%= company.size %><br>
-<b>Segmentos:</b> <% company.segments.each do |segment| %>
-<%= segment.name + "; " %>
-<% end %><br>
-<b>Perfil:</b> <% company.company_types.each do |type| %>
-<%= type.name + "; " %>
-<% end %><br>
+
+<div class="Card">
+<div class="CompanyName"><h1> <%= company.name %></h1></div>
 
 
-<% array = [] %>
-<b>Capacidades:</b> <% company.competences.each do |competence| %>
-<% if !(array.include? competence.competence_area.name) %>
-  <% array.push(competence.competence_area.name) %>
+<div class="CompanyDescription">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<div class="CompanyCompetences">
+<% @company_competences = @competences_by_company[company]%>
+
+<% if @company_competences != nil %>
+<h3>Competências</h3>
+<ul class="CompetenceList">
+<%   @company_competences.each_key do |competence_area| %>
+<li class="Itens"><%= competence_area %></li>
+<ul class="Subitens">
+<%  @company_competences[competence_area].each do |comp| %>
+  <li><%= comp %></li>
+  <% end %>
+</ul>
+
 <% end %>
-<% end %><br>
-
-<% array.each do |element| %>
-  <%= element + " " %>
-<% end %>
-</div><br>
+</ul>
 <% end %>
 
+</div>
+
+
+</div>
+
+
+
+<% end %>
+</section>
 <% if @error != [] %>
 <%= @error %>
+
+
 <% end %><br>
+
+
+<script>
+let itens = document.getElementsByClassName('Itens');
+let subitens = document.getElementsByClassName('Subitens');
+for(let i = 0; i < itens.length; i++) {
+  itens[i].addEventListener("click", function(){
+    if(subitens[i].style.display == 'none') {
+      subitens[i].style.display = 'block';
+      itens[i].style.color = 'red';
+    } else {
+      subitens[i].style.display = 'none';
+      itens[i].style.color = 'black';
+    }
+  });
+}
+</script>

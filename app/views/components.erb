@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="/stylesheets/css/Button.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/css/Section.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+  <title>Conecta</title>
+</head>
+
+<body>
+  <section class="SectionPrimary">
+    <h1>Components</h1>
+    <button class="Button" type="button" name="button"></button>
+  </section>
+
+  <% if @error != [] %>
+    <%= @error %>
+    <% end %>

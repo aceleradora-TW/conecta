@@ -6,14 +6,44 @@
 </head>
 <body>
   <h1>CENTROS DE PESQUISA</h1>
+
   <% @research_centers.each do |rc| %>
-  <b>Nome:</b> <%= rc.name %><br>
-  <b>tipo estrutura:</b> <%= rc.structure_type %><br>
-  <b>projeto:</b> <%= rc.project%>
+  <div style="border-bottom: 2px solid black;">
+    <b>Nome:</b> <%= rc.name %><br>
+    <b>Tipo estrutura:</b> <%= rc.structure_type %><br>
+    <b>Projeto:</b> <%= rc.project%> <br>
+    <b>Descrição:</b> <%= rc.description%> <br>
+    <b>Unidade:</b> <%= rc.unit%> <br>
+    <b>Sigla:</b> <%= rc.initials%> <br>
+
+    <b>Area de Pesquisa:</b>
+    <% rc.research_areas.each do |a| %>
+    <%= a.name %>
+    <% end %>
+    <br>
+
+    <b>Eixo tematico:</b>
+    <% rc.research_fields.each do |f| %>
+    <%= f.name %>
+    <% end %>
+    <br>
+
+    <br><b>Contato:</b><br>
 
 
-  <br><br>
-  <% end %>
+
+    <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
+    <b>Email:</b>  <%= rc.contact.email %> <br>
+    <b>Telefone de Contato:</b>  <%= rc.contact.phone %> <br>
+    <b>Site:</b>  <%= rc.contact.site %> <br>
+
+    <br>
+
+
+  </div>
+
+
+  <br><br> <% end %>
 
   <% if @error != [] %>
   <%= @error %>

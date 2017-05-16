@@ -34,11 +34,24 @@ class IndexController < Controller
 
   get "/results" do
     @companies = Company.all
+    @competences_by_company = {}
+    @companies.each do |company|
+      filtered_competences = {}
+      company.competences.each do |competence|
+        if !(filtered_competences.key?(competence.competence_area.name))
+          competence_area_array = [competence.name]
+          filtered_competences[competence.competence_area.name] = competence_area_array
+        else
+          competence_area_array = filtered_competences[competence.competence_area.name]
+          competence_area_array.push(competence.name)
+        end
+        @competences_by_company[company] = filtered_competences
+      end
+    end
     erb :results
   end
 
   get "/search_companies" do
-    # @result = []
     @value = params[:value]
     @search_type = params[:search_type]
 
@@ -52,25 +65,16 @@ class IndexController < Controller
       @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
     elsif @search_type == 'empresa'
       @companies = Institution.all(:name.like => "%#{@value}%")
-
     end
     erb :teste
-
-
-
-
-    # @result = Company.all(:size.like => '%Grande%')
-    # @result = Segment.all(:name.like => '%Software%')
-    # @result.push(Institution.all(name: @value))
-
-    # @result = Company.all(size: @value)
-    # @result = Institution.all(name: @value)
   end
 
-  # get "/search_companies2" do
-  #   @value = params[:value]
-  #   # @result2 = Company.all(size: @value)
-  #   @result2 = Institution.all(name: @value)
-  #   erb :teste
-  # end
+  get "/components" do
+    erb :components
+  end
+
+  get "/import-companies" do
+    require_relative "../../config/importCompany.rb"
+  end
+
 end

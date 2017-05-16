@@ -2,3 +2,4 @@ development.db
 .bundle/*
 csv/files/*
 vendor/*
+.sass-cache

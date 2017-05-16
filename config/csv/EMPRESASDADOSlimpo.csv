@@ -1,0 +1,237 @@
+,Eldorado,HPServ,HPR&D,Dell,DBServer,Datum,TOTVS,ThoughtWorks,Netwall,Toth,CADS,Engeltec,TIVEA,Sequor SW Ind,Rockhead,SOHA,Pandorga,SmartMoney,SmartLife,WGS,SouthSystem,Sevenia,Beyond Domotics
+Size: 1=grande 2=media 3=pequena,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3
+Segmento_Agronegócios,,,,,,,1,,,1,,,,,,,,,,,,1,
+Segmento_Calcados,,,,,1,,,,,,,,,,,,,,,1,,,
+Segmento_Educação,1,,,,,,1,,,,1,,,,,,,1,,,,1,
+Segmento_Eletromecânica,,,,,,,,,,1,,,,1,,,,,,1,,,
+Segmento_Energia,1,,,,,,,,,,,,,,,,,,,,,1,
+Segmento_Finanças,,,,,1,,1,,,,,,1,,,,,1,,,,,
+Segmento_Financeiro,1,,,,1,,,,,,,,,,,,,,1,,1,,
+Segmento_Hardware,1,,1,,,,,,,1,,1,,,,1,,,,1,,1,1
+Segmento_Industria criativa,,,,,,,,,,1,,,,,1,,1,,,,,,
+Segmento_Informática,1,,1,1,1,1,1,1,,1,1,,,,1,1,1,,,,,,
+Segmento_Jogos,,,,,,,,,,,,,,,1,,,,,,,,
+Segmento_Manufatura,1,,,1,1,,1,,,,1,1,,1,,,,,,1,,1,
+Segmento_Meio ambiente,,,,,,,,,,,,,,,,,,,,,,1,
+Segmento_Moveis,,,,,,,,,,,,,,,,,,,,1,,,
+Segmento_ONG (Organização não governamental),1,,,,,,,,,,,,,,,,,,,,,,
+Segmento_Petróleo e gás,1,,,,,,,,,,,,,,,,,,,,,1,
+Segmento_Saúde,1,,,,1,,1,,,1,,,,,,,,,,,,,
+Segmento_Setor publico,,,,,1,,1,,,,,,,,,,,d,,,,1,
+Segmento_Software,1,1,1,1,1,1,1,1,1,1,1,1,,1,,1,1,,1,1,1,1,1
+Segmento_Telecomunicações,1,,,,,,,,,,,,,,,,,,,,,,
+Segmento_Turismo,,,,,,,,,,,,,,,,,,,,,,,
+Segmento_Varejo,,,,,1,,1,,,,,,,,,,,,1,,,,
+Segmento_Servicos atraves de Software (SaaS),1,,,,,,1,1,,1,,,1,1,1,,,,,,,,
+Perfil_Produtos,1,,1,1,,1,1,,1,1,,1,1,1,1,1,,,1,1,1,1,1
+Perfil_Servico_Projetos,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,,1,,,1,1,1,
+Perfil_Servico_Consultoria,1,1,1,,1,1,1,1,1,1,1,,1,1,1,1,,1,,1,1,1,
+Perfil_Servico_Treinamento,1,,,,1,,1,,1,,1,,,,,,,1,,,,,
+Perfil_Servico_Outsourcing,,1,1,,1,1,1,,,,,,,,,,1,,,,1,,
+Perfil_P&D,1,,1,,,1,1,,,1,,,,,1,,1,,,,,1,
+Capacidades_1-1 Manufatura,,6,6,6,,,,,,6,,5,,,,4,,,,5,,4,3
+Capacidades_1-2 Outsourcing (Hardware),6,6,6,5,,,,,,4,,5,,2,,4,,,,3,,,3
+Capacidades_1-3 Robôs,4,3,3,,,,,,,3,,4,,5,,,,,,6,,2,
+Capacidades_1-4 Escalabilidade (Hardware),4,6,6,6,,,,,,6,,4,,2,,5,,,,,,3,3
+Capacidades_1-5 Automação industrial / comercial (Hardware),6,6,4,4,,,,2,,5,,2,,6,,6,,,3,6,,3,
+Capacidades_1-6 RFID,6,6,4,2,,,,3,,4,,6,,6,,6,,,2,3,,2,
+Capacidades_1-7 Protótipos (Hardware),6,5,4,,,,,,,6,,6,,4,,5,,,,3,,5,6
+Capacidades_1-8 Infraestrutura (Hardware),5,6,6,6,,,,3,,6,,5,,4,,5,,,4,3,,2,4
+Capacidades_1-9 Integração (Hardware),6,6,6,5,,,,3,,6,,5,,4,,3,,,3,5,,2,
+Capacidades_1-10 Qualidade (Hardware),6,6,6,6,,,,,,6,,5,,4,,6,,,,2,,2,3
+Capacidades_1.11 Certificação,6,6,6,6,,,,,,6,,,,2,,,,,,,,4,6
+Capacidades_2-1 Eng Software_Desenvolvimento SW Client Server,6,6,5,5,5,6,6,6,4,3,,5,5,6,6,6,4,,4,4,6,3,
+Capacidades_2-2 Eng Software_Desenvolvimento SW Mobile,6,6,5,5,5,6,4,5,2,3,,3,5,6,6,5,4,,5,2,5,2,6
+Capacidades_2-3 Eng Software_Desenvolvimento SW Web,6,6,5,5,6,6,5,6,5,4,,5,6,6,6,6,4,,5,2,6,3,6
+Capacidades_2-4 Eng Software_Modelagem de Processo de SW,6,4,5,5,4,6,5,6,3,6,,3,4,2,6,4,4,,4,,4,,3
+Capacidades_2-5 Eng Software_Engenharia de Requisitos,5,5,5,5,6,6,5,4,3,6,,4,5,2,6,5,4,,5,,5,4,4
+Capacidades_2-6 Eng Software_Gerenciamento de Requisitos,6,5,5,5,6,6,4,6,3,5,,4,5,2,6,5,4,,5,,5,4,3
+"Capacidades_2-7 Eng Software_Verificação, Validação e Teste de Software",6,6,5,5,6,6,3,5,3,6,,4,5,2,6,5,4,,5,,6,4,4
+Capacidades_2-8 Eng Software_Escalabilidade de SW,4,5,5,5,5,6,5,6,3,6,,4,5,2,6,6,4,,5,,5,5,6
+Capacidades_2-9 Eng Software_Reuso de Software,5,5,5,5,5,6,4,6,4,6,,4,4,2,6,6,4,,4,,6,4,6
+Capacidades_2-10 Eng Software_Prototipagem de SW,6,4,5,5,5,6,4,6,4,5,,5,5,2,6,4,4,,5,,6,4,4
+Capacidades_2-11 Eng Software_Gestão de desenvolvimento SW,6,5,5,5,6,6,4,6,5,6,,4,5,5,6,6,4,,5,,6,4,
+Capacidades_2-12 Eng Software_Integração de Software,6,5,5,5,6,6,5,6,5,6,,5,5,5,6,5,4,,5,,6,3,4
+"Capacidades_2-13 Eng Software_Localização de Software (adaptação cultural, legal & regional)",6,4,5,5,4,6,5,6,3,3,,5,5,4,5,4,4,,4,,6,,
+Capacidades_2-14 Eng Software_Interface Homem-Maquina (IHC),6,4,5,5,4,6,4,5,3,5,,5,4,6,6,4,4,,4,4,5,6,6
+Capacidades_2-15 Eng Software_Qualidade (SW),6,5,5,5,6,6,4,5,4,6,,4,5,6,5,6,4,,5,2,6,3,
+Capacidades_2-16 Eng Software_Redes (Software),6,,5,5,,6,,5,6,4,,6,4,6,4,4,4,,5,4,5,3,6
+Capacidades_2-17 Tecnologia_Banco de dados,6,5,5,5,6,6,5,5,4,4,,6,5,6,5,5,4,2,5,3,6,3,5
+Capacidades_2-18 Tecnologia_Big data,6,5,5,5,3,5,3,6,2,3,,5,4,5,2,,4,,5,2,3,2,3
+Capacidades_2-19 Tecnologia_Business intelligence,5,5,5,5,5,5,5,6,2,3,,3,4,5,4,,4,2,5,2,4,2,
+Capacidades_2-20 Tecnologia_Data warehousing,5,5,5,5,5,5,,5,2,2,,3,4,5,2,,4,,5,2,4,2,
+Capacidades_2-21 Metodologias_DevOps (interdependência entre desenvolvimento e operações),5,4,5,5,4,5,3,6,3,5,,4,4,4,2,5,,,3,2,4,2,
+Capacidades_2-22 Metodologias_Lean,6,3,5,5,4,6,3,6,2,3,,3,4,6,2,6,4,,4,2,3,2,5
+Capacidades_2-23 Metodologias_Métodos ágeis,6,4,5,5,6,6,3,6,3,6,,4,4,5,6,6,4,,5,2,5,3,
+Capacidades_2-24 Metodologias_Interativa,6,5,5,5,6,6,3,6,2,6,,4,4,5,6,6,,,4,2,3,3,
+Capacidades_2-25 Metodologias_Waterfall,6,6,5,5,5,5,4,,2,2,,4,4,5,6,5,,,4,2,5,,
+Capacidades_2-26 Outros_Automação industrial / comercial (Software),6,,5,4,5,6,3,3,,3,,5,,6,5,5,4,,4,6,4,,
+"Capacidades_2-27 Outros_Enterprise Software (centralizado, usado em toda empresa)",6,5,5,5,5,6,6,2,2,3,,4,4,6,5,,4,,3,2,6,,
+Capacidades_2-28 Outros_Equipes distribuídas de projeto,6,5,5,6,5,6,6,6,2,5,,4,5,,2,,4,,5,2,5,,6
+Capacidades_2-29 Outros_Outsourcing (Software),5,6,5,,6,6,6,3,2,6,,4,4,5,5,,4,,4,2,6,,
+Capacidades_2-30 Outros_Processamento de imagens,6,3,5,4,,4,,4,2,5,,3,,6,6,,,,4,6,2,,
+Capacidades_2-31 Outros_Software Embarcado,6,6,5,5,4,6,,2,2,6,,6,,6,5,6,,,3,3,3,4,6
+Capacidades_2-32 Outros_Software para Monitoramento,6,6,5,,,4,,2,6,6,,5,5,6,5,6,,,5,3,4,4,
+Capacidades_2-33 Outros_Segurança de Sistemas,6,5,5,5,,5,,3,2,3,,4,5,5,4,,,,,2,2,,
+Capacidades_2-34 Outros_Computacao Ubiqua,6,3,5,,2,3,,5,2,2,,4,4,4,2,,,,,,2,,
+Capacidades_3-1 Finanças (Empresa),6,6,5,5,4,4,5,4,3,,,,4,,6,3,,6,4,3,5,2,6
+Capacidades_3-2 Área Jurídica,5,6,5,4,,4,5,4,3,,,,,,3,2,,4,4,,3,2,4
+Capacidades_3-3 Parcerias,5,6,5,5,4,5,5,3,2,,,4,4,4,5,3,,4,5,3,2,3,6
+Capacidades_3-4 Propriedade intelectual,5,6,5,5,3,3,5,3,3,3,,4,3,,6,3,,2,4,3,2,3,5
+Capacidades_3-5 Call center,,5,5,5,,3,5,,2,,,,3,,,,,3,3,,3,,
+Capacidades_3-6 RH / Recrutamento e seleção,6,4,5,5,5,6,5,3,3,,,,3,,,,,4,3,,5,,6
+Capacidades_3-7 Planejamento estratégico,6,5,5,5,4,4,5,4,4,4,,5,4,4,5,3,,5,5,,4,3,6
+Capacidades_3-8 Gestão de projetos,6,5,5,6,6,6,5,4,4,6,,5,4,4,5,6,,3,5,2,5,5,5
+Capacidades_3-9 Gerenciamento de Portfólio de Projetos,6,5,5,6,4,6,5,4,2,6,,5,4,4,4,3,,3,4,,5,5,5
+Capacidades_3-10 Comunicação (Assessoria de Imprensa),6,6,5,6,4,3,5,4,3,,,3,,,3,3,,3,4,,,2,3
+Capacidades_3-11 Governança,6,5,5,5,4,5,5,5,4,,,2,3,4,,3,,2,4,,3,2,
+Capacidades_3-12 Gestão de operação,6,5,5,5,4,6,5,5,2,,,4,3,4,6,,,2,4,,4,2,
+Capacidades_3-13 Inovação,6,4,5,5,4,6,5,4,3,6,,5,4,4,5,5,,2,5,3,4,5,6
+Capacidades_3-14 Negociação,6,5,5,5,4,5,5,4,4,6,,5,5,4,6,3,,4,5,,5,3,6
+Capacidades_3-15 Liderança,6,6,5,5,5,5,5,5,4,6,,4,4,4,6,3,,3,5,,5,3,6
+Capacidades_3-16 Métodos Leans / Ágeis em áreas não relacionada com software,6,4,5,5,5,6,2,6,2,6,,2,4,,,5,,3,5,,5,3,6
+Capacidades_3-17 Gestão de conhecimento,5,4,5,5,5,4,4,5,3,6,,4,4,4,5,3,,3,5,,3,3,
+Capacidades_3-18 Modelagem de Processos do Negócio (BPM),5,4,5,5,4,5,3,3,3,5,,2,3,,,,,2,5,2,3,2,5
+Capacidades_4-1 Consultoria,6,5,5,,6,5,5,6,2,6,,,6,6,6,3,,6,3,2,6,4,
+Capacidades_4-2 Relacionamento com investidores,5,6,5,,4,4,5,3,2,5,,3,3,5,2,3,,5,4,,2,3,6
+Capacidades_4-3 Relações publicas,5,6,5,,4,3,4,3,2,4,,3,,,2,3,,4,4,,2,2,3
+Capacidades_4-4 Escalabilidade (Serviços),5,6,5,,,5,5,4,2,6,,3,4,,5,3,,,5,,5,3,
+Capacidades_4-5 Documentação,6,6,5,,,4,5,3,2,6,,4,4,,5,3,,4,4,,5,3,3
+Capacidades_4-6 Relacionamento com agencias de fomento,6,3,5,,3,3,,3,3,6,,2,3,2,3,2,,,2,,2,3,3
+Capacidades_4-7 Video / Animação 2D/3D,6,2,5,,,3,,2,2,,,3,,2,6,2,,2,3,2,,,6
+Capacidades_4-8 Internet das coisas,6,4,5,,2,6,3,4,2,4,,6,4,2,3,2,,3,2,,3,2,6
+Capacidades_4-9 Tecnologia de Nuvem,6,6,5,,3,6,6,6,3,4,,6,6,6,3,5,4,3,5,,4,2,5
+Capacidades_4-10 Treinamento / Aprendizagem,6,4,5,,6,4,4,5,2,5,,4,6,4,6,4,,4,4,,4,2,4
+Capacidades_4-11 Coaching,4,5,5,,6,4,3,6,2,5,,,4,4,6,,,4,4,,5,2,5
+Capacidades_4-12 Games,6,,5,,,6,,3,3,2,,,,,6,,,,2,,,,
+Capacidades_4-13 Outsourcing (outro que HW ou SW),,6,5,,,2,,,2,3,,5,4,,,,,,,,6,,
+Capacidades_4-14 Networking com outras empresas do segmento,6,5,5,,4,4,4,2,3,5,,4,3,6,6,3,,4,4,2,5,2,4
+Capacidades_4-15 Redes Sociais,6,4,5,,5,4,6,4,3,,,3,3,2,5,2,,4,4,,5,3,3
+Capacidades_4-16 Produção de Imagem (2D/3D/Fotografia),6,2,5,,,3,,3,2,,,3,,,6,,,2,,2,,,6
+Capacidades_4-17 Relacionamento com TECNOPUC,6,5,5,,5,6,3,3,5,5,,5,3,5,5,3,,4,5,3,4,5,4
+Capacidades_4-18 Relacionamento com os departamentos da PUC,6,5,4,,4,5,3,3,5,5,,5,3,2,5,3,,4,4,3,4,5,
+Capacidades_5-1 Conhecimento de iniciativas de GREEN IT (TI Verde),4,6,5,6,2,3,5,3,2,4,,2,,,2,2,,,,,3,2,
+"Capacidades_5-2 Identificação de riscos estratégicos, financeiros, regulatórios, reputacionais ou operacionais relacionados a impactos socioambientais",4,5,5,5,,3,4,3,2,4,,2,3,,5,2,,3,,,2,3,5
+Capacidades_5-3 Proposta de valor incluindo princípios de sustentabilidade & desenvolvimento de iniciativas sustentáveis,5,6,5,5,2,3,4,3,2,5,,2,,,,2,,2,,,2,3,5
+Capacidades_5-4 Estrategias de sustentabilidade objetivando aumento da eficiência do uso de recursos naturais e reducao de impactos socioambientais,4,6,5,5,,5,4,3,,,,2,,,,2,,3,,,2,3,5
+Capacidades_5-5 Monitoramento de iniciativas sustentáveis,4,6,5,5,,4,4,2,2,3,,2,,,,2,,2,,,2,2,5
+Capacidades_5-6 Impacto em nosso programa de P&D da analise de necessidades sustentáveis dos clientes,5,6,5,5,,4,4,,2,3,,2,,,,2,,2,,2,2,2,
+Capacidades_5-7 Incentivos a clientes e fornecedores que oferecem praticas sustentáveis,,6,5,5,,3,4,2,2,5,,2,,,2,2,,2,,2,2,2,
+Capacidades_6-1 Vendas / Definição de canal,6,6,5,5,4,4,5,3,4,6,,4,4,4,5,3,,3,4,4,4,2,
+Capacidades_6-2 Prospecção / Conhecimento de clientes,6,5,5,5,4,4,5,4,4,6,,4,4,5,5,3,,3,4,4,4,2,
+Capacidades_6-3 Precificação de serviços e produtos,6,5,5,5,4,4,5,3,4,6,,5,4,4,6,,,4,4,5,5,2,
+Capacidades_6-4 Importação,6,6,5,5,,4,,2,2,5,,6,4,4,5,4,,,,3,,3,3
+Capacidades_6-5 Exportação,5,6,5,5,,4,4,2,2,,,,4,4,6,,4,,,,,,
+Capacidades_6-6 Distribuição,,6,5,5,,4,4,2,2,,,5,4,3,6,,,3,,4,3,3,
+Capacidades_6-6 Relacionamento com fornecedores,6,6,5,5,5,4,4,3,,6,,5,4,5,5,3,,4,,5,4,3,5
+Capacidades_6-8 Conhecimento de mercado / concorrentes,6,6,5,5,5,4,5,4,5,6,,5,3,6,5,5,,,4,6,4,4,6
+Capacidades_6-9 Mercado nicho / tecnologia nicho,6,5,5,5,5,4,5,3,2,6,,5,4,5,3,6,,4,4,6,4,4,6
+Capacidades_6-10 CRM / ERP,5,5,5,5,4,4,6,2,3,6,,4,4,6,,,,2,3,3,4,3,
+Capacidades_6-11 Traduções,6,6,5,,,4,5,2,2,,,5,,,4,,,3,,3,,3,
+Capacidades_6-12 Design - Concepção de produto & serviço (Design de user experience),6,5,5,,4,6,4,5,3,6,,5,3,4,6,,,,4,2,4,2,6
+Capacidades_6-13 Design - Imagem / Grafico / Branding,6,5,5,,,4,4,5,3,5,,5,,4,6,2,,3,4,2,4,,6
+Capacidades_6-14 Marketing (Empresa),4,5,5,5,5,4,5,4,4,5,,4,3,4,4,,,3,4,2,3,2,
+Capacidades_6-15 Modelos de negócios,6,5,5,5,5,4,5,5,4,6,,5,4,4,5,3,,4,4,2,5,3,5
+Necessidades_1-1 Manufatura,,,6,,,,,,,,,3,,5,,5,,,,4,,2,6
+Necessidades_1-2 Outsourcing (Hardware),,,5,,,2,,,,,,3,,5,,3,,,3,4,,,
+Necessidades_1-3 Robôs,2,,4,,,,,2,,,,3,,4,,,,,,4,,,
+Necessidades_1-4 Escalabilidade (Hardware),2,,5,,,,,2,,,,3,,2,,4,,,,3,4,2,6
+Necessidades_1-5 Automação industrial / comercial (Hardware),2,,4,,,,,,,,,3,,6,,2,,,3,5,,,
+Necessidades_1-6 RFID,,,4,,2,,4,4,,,,3,,6,,2,,,4,3,3,,
+Necessidades_1-7 Protótipos (Hardware),2,,5,,2,,,2,,,,3,,2,,2,,,2,4,,6,5
+Necessidades_1-8 Infraestrutura (Hardware),,,5,,,2,,2,,,,3,,2,,2,,,2,,,3,5
+Necessidades_1-9 Integração (Hardware),,,5,,,,,3,,,,3,,2,,2,,,2,,,3,
+Necessidades_1-10 Qualidade (Hardware),,,6,,,,,2,,,,3,,2,,2,,,2,,,3,6
+Necessidades_1.11 Certificação,,,6,,,,,,,,3,5,,2,,5,6,,,,3,5,6
+Necessidades_2-1 Eng Software_Desenvolvimento SW Client Server,,2,5,2,,3,,4,3,,,3,,2,,2,,,4,,,3,
+Necessidades_2-2 Eng Software_Desenvolvimento SW Mobile,,2,5,5,,3,5,5,5,,,5,3,2,,2,,,5,3,,2,6
+Necessidades_2-3 Eng Software_Desenvolvimento SW Web,,2,5,2,,3,6,6,6,,,3,3,2,,2,,,5,3,,2,6
+Necessidades_2-4 Eng Software_Modelagem de Processo de SW,,2,5,2,,3,5,4,5,,,3,3,2,,2,,,3,2,,2,6
+Necessidades_2-5 Eng Software_Engenharia de Requisitos,2,2,5,5,,3,6,4,5,,,3,3,2,,2,,,3,2,,2,4
+Necessidades_2-6 Eng Software_Gerenciamento de Requisitos,,2,5,5,,3,6,5,5,,,3,3,2,,2,,,3,2,,2,3
+"Necessidades_2-7 Eng Software_Verificação, Validação e Teste de Software",,2,5,5,,3,6,4,5,,,3,3,2,,2,,,3,2,,2,6
+Necessidades_2-8 Eng Software_Escalabilidade de SW,,2,5,5,,3,3,5,5,,,3,3,2,,2,,,4,2,,2,6
+Necessidades_2-9 Eng Software_Reuso de Software,,5,5,2,2,3,3,5,5,,,3,3,2,,2,,,2,2,,2,4
+Necessidades_2-10 Eng Software_Prototipagem de SW,,5,5,2,2,3,4,5,4,,,3,3,2,,2,,,4,2,,2,5
+Necessidades_2-11 Eng Software_Gestão de desenvolvimento SW,,2,5,5,,3,4,5,5,,,3,3,2,,2,,,4,2,,2,3
+Necessidades_2-12 Eng Software_Integração de Software,,2,5,5,,3,2,4,5,,2,3,3,2,,2,,,4,2,,2,6
+"Necessidades_2-13 Eng Software_Localização de Software (adaptação cultural, legal & regional)",,2,5,5,,3,3,4,4,,,4,3,2,,3,,,2,2,,2,
+Necessidades_2-14 Eng Software_Interface Homem-Maquina (IHC),2,2,5,5,4,3,4,4,5,,2,3,3,2,,5,,,2,2,,4,6
+Necessidades_2-15 Eng Software_Qualidade (SW),,2,5,4,,3,6,4,5,,,3,3,2,,2,,,3,2,,3,
+Necessidades_2-16 Eng Software_Redes (Software),,2,5,4,,3,2,3,6,,,3,3,2,,2,,,3,2,,2,6
+Necessidades_2-17 Tecnologia_Banco de dados,,2,5,5,,3,3,4,5,,2,3,4,2,,2,,3,4,2,,2,6
+Necessidades_2-18 Tecnologia_Big data,2,2,5,4,,3,3,5,4,,,3,3,2,,,,2,5,2,,2,5
+Necessidades_2-19 Tecnologia_Business intelligence,2,2,5,5,,3,4,5,4,,,2,3,2,,,,3,5,2,,2,
+Necessidades_2-20 Tecnologia_Data warehousing,2,2,5,5,,3,2,5,4,,,2,3,2,,,,,5,2,,2,
+Necessidades_2-21 Metodologias_DevOps (interdependência entre desenvolvimento e operações),,5,5,4,2,3,4,6,4,,,2,3,2,,3,,,,2,,2,
+Necessidades_2-22 Metodologias_Lean,,2,5,5,2,3,5,6,4,,,2,3,2,,3,,,4,2,,3,5
+Necessidades_2-23 Metodologias_Métodos ágeis,,2,5,6,2,3,5,6,4,,3,2,3,2,,3,,,5,4,,3,4
+Necessidades_2-24 Metodologias_Interativa,,2,5,5,,3,2,5,4,,,2,3,2,,3,,,3,2,,3,2
+Necessidades_2-25 Metodologias_Waterfall,,2,4,5,,3,2,,2,,,2,3,2,,2,,,2,2,,2,
+Necessidades_2-26 Outros_Automação industrial / comercial (Software),2,2,5,3,2,3,,,2,,,3,3,2,,,,,5,2,,,
+"Necessidades_2-27 Outros_Enterprise Software (centralizado, usado em toda empresa)",,2,5,6,,3,2,,2,,,3,3,2,,,,,2,2,,,
+Necessidades_2-28 Outros_Equipes distribuídas de projeto,,2,6,6,,3,4,6,2,,2,3,3,2,,,,,4,2,,2,2
+Necessidades_2-29 Outros_Outsourcing (Software),2,2,5,2,,3,2,2,2,,,3,3,2,,,,,4,2,,,
+Necessidades_2-30 Outros_Processamento de imagens,,2,5,5,,3,,2,2,,2,4,3,2,,,,,2,4,,,
+Necessidades_2-31 Outros_Software Embarcado,,2,5,5,,3,,2,2,,,3,3,2,,2,,,2,2,,3,6
+Necessidades_2-32 Outros_Software para Monitoramento,,2,5,2,,3,,,6,,,3,3,2,,2,,,,2,,3,
+Necessidades_2-33 Outros_Segurança de Sistemas,2,2,5,2,2,3,,3,4,,,4,3,2,,,,,4,2,,,
+Necessidades_2-34 Outros_Computacao Ubiqua,2,2,,,2,,,4,2,,,3,3,2,,,,,,2,,,
+Necessidades_3-1 Finanças (Empresa),,2,6,2,4,4,,2,5,,,4,3,4,,5,2,,5,4,3,5,4
+Necessidades_3-2 Área Jurídica,,2,5,2,5,5,,2,3,,,3,3,4,3,6,2,2,5,3,4,4,3
+Necessidades_3-3 Parcerias,2,2,5,2,2,5,,2,4,,2,4,4,5,4,5,2,4,6,4,5,4,6
+Necessidades_3-4 Propriedade intelectual,2,2,6,2,2,4,,2,4,,2,5,3,5,5,6,3,2,4,4,3,4,4
+Necessidades_3-5 Call center,,2,5,2,,3,2,,3,,,4,3,,,4,3,4,4,,3,,2
+Necessidades_3-6 RH / Recrutamento e seleção,2,2,5,2,6,5,4,2,5,,,5,3,3,,3,2,2,4,3,4,2,5
+Necessidades_3-7 Planejamento estratégico,,2,5,2,4,4,,2,4,,2,3,3,4,,5,2,4,4,3,4,6,5
+Necessidades_3-8 Gestão de projetos,,2,5,2,,3,4,,4,,3,3,3,4,,3,,4,4,,3,5,4
+Necessidades_3-9 Gerenciamento de Portfólio de Projetos,,2,5,2,3,3,4,2,4,,2,3,3,4,,3,,4,4,3,3,5,5
+Necessidades_3-10 Comunicação (Assessoria de Imprensa),,2,5,2,4,3,,2,4,,,4,4,5,4,5,2,5,5,3,4,4,6
+Necessidades_3-11 Governança,,2,5,2,4,4,,2,4,,,2,3,4,,3,2,2,4,,3,3,
+Necessidades_3-12 Gestão de operação,,2,5,2,2,3,,2,4,,,3,3,4,,3,,2,3,,4,3,
+Necessidades_3-13 Inovação,,2,5,2,5,5,2,4,6,,3,3,3,4,,3,2,4,5,3,4,4,6
+Necessidades_3-14 Negociação,,2,5,2,3,4,2,4,4,,,3,3,4,,3,2,4,5,3,4,4,4
+Necessidades_3-15 Liderança,,2,5,2,6,5,4,4,5,,,3,3,4,,3,2,2,5,3,4,4,6
+Necessidades_3-16 Métodos Leans / Ágeis em áreas não relacionada com software,,2,5,2,2,3,5,4,4,,,3,3,4,,3,3,2,4,,4,3,5
+Necessidades_3-17 Gestão de conhecimento,2,5,5,2,4,3,3,3,5,,2,3,3,4,,3,2,2,4,3,4,3,3
+Necessidades_3-18 Modelagem de Processos do Negócio (BPM),2,2,5,2,,3,3,2,4,,2,3,3,4,,,2,2,4,3,4,3,
+Necessidades_4-1 Consultoria,2,5,5,,4,5,4,2,4,,,4,3,4,,2,,3,5,3,,2,2
+Necessidades_4-2 Relacionamento com investidores,,3,5,,5,5,,2,5,,2,4,3,5,,5,,5,6,,4,2,5
+Necessidades_4-3 Relações publicas,,3,5,,2,5,,2,4,,,4,4,5,,2,,5,5,,4,2,5
+Necessidades_4-4 Escalabilidade (Serviços),,2,5,,2,3,4,2,5,,2,3,5,4,,2,,5,6,,4,2,
+Necessidades_4-5 Documentação,2,2,5,,,3,3,,5,,,3,3,5,,2,,4,3,2,4,2,2
+Necessidades_4-6 Relacionamento com agencias de fomento,,2,5,,5,5,,2,5,,,5,3,5,5,4,3,3,4,5,,2,3
+Necessidades_4-7 Video / Animação 2D/3D,2,3,5,,,3,,,4,,2,3,3,4,,2,,,,2,,,5
+Necessidades_4-8 Internet das coisas,2,2,5,,2,5,3,5,3,,,3,2,4,,2,,,2,,4,3,6
+Necessidades_4-9 Tecnologia de Nuvem,,2,5,,2,5,3,5,5,,,3,3,4,,2,,,3,,4,3,6
+Necessidades_4-10 Treinamento / Aprendizagem,,2,5,,4,3,4,5,5,,,3,3,4,,2,,2,4,,4,3,3
+Necessidades_4-11 Coaching,2,,5,,5,5,3,5,4,,,4,3,5,,2,,2,4,,4,3,4
+Necessidades_4-12 Games,2,,5,,,3,,3,4,,2,,,3,,2,,,2,,,,
+Necessidades_4-13 Outsourcing (outro que HW ou SW),2,2,5,,,2,,,3,,,3,3,4,,2,,,,,4,3,
+Necessidades_4-14 Networking com outras empresas do segmento,2,2,5,,4,5,2,2,4,,,4,5,5,,2,,5,5,3,5,5,2
+Necessidades_4-15 Redes Sociais,,2,5,,2,5,2,2,5,,2,4,4,4,2,2,,3,6,,4,3,5
+Necessidades_4-16 Produção de Imagem (2D/3D/Fotografia),2,2,5,,,3,,2,3,,2,3,3,3,,2,,2,,3,,,5
+Necessidades_4-17 Relacionamento com TECNOPUC,2,6,5,,4,3,3,4,5,,2,3,5,5,2,3,,4,5,5,6,5,3
+Necessidades_4-18 Relacionamento com os departamentos da PUC,2,6,5,,5,4,3,4,5,,2,3,4,5,2,3,,4,4,5,6,5,3
+Necessidades_5-1 Conhecimento de iniciativas de GREEN IT (TI Verde),2,2,5,2,2,4,2,4,2,,2,2,3,,,2,,2,,,4,2,
+"Necessidades_5-2 Identificação de riscos estratégicos, financeiros, regulatórios, reputacionais ou operacionais relacionados a impactos socioambientais",2,2,5,2,,3,2,4,2,,,2,2,,,2,,4,,,4,3,5
+Necessidades_5-3 Proposta de valor incluindo princípios de sustentabilidade & desenvolvimento de iniciativas sustentáveis,2,2,5,2,2,3,2,4,2,,,2,3,,,2,,3,,,4,2,4
+Necessidades_5-4 Estrategias de sustentabilidade objetivando aumento da eficiência do uso de recursos naturais e reducao de impactos socioambientais,2,2,5,2,,3,2,4,2,,2,2,3,,,2,,2,,,4,6,4
+Necessidades_5-5 Monitoramento de iniciativas sustentáveis,2,2,5,2,,3,2,4,2,,2,2,3,,,2,,2,,,4,6,2
+Necessidades_5-6 Impacto em nosso programa de P&D da analise de necessidades sustentáveis dos clientes,2,2,5,2,,3,2,2,2,,2,2,3,,,2,,2,,,5,4,
+Necessidades_5-7 Incentivos a clientes e fornecedores que oferecem praticas sustentáveis,2,2,5,2,,3,2,2,2,,2,2,3,,,2,,2,,,5,4,3
+Necessidades_6-1 Vendas / Definição de canal,,6,5,2,2,5,,2,6,,,3,5,4,,2,2,4,6,3,4,6,6
+Necessidades_6-2 Prospecção / Conhecimento de clientes,,2,5,2,2,5,,2,6,,2,3,6,5,,2,2,4,6,4,4,6,6
+Necessidades_6-3 Precificação de serviços e produtos,,2,5,2,2,4,,2,5,,,3,3,4,,2,,3,6,3,,5,6
+Necessidades_6-4 Importação,,2,5,2,,5,,2,3,,,3,2,5,2,6,,,,4,,5,5
+Necessidades_6-5 Exportação,2,2,5,2,,5,,2,5,,,3,2,5,6,2,2,,,3,4,2,2
+Necessidades_6-6 Distribuição,,2,5,2,,5,,2,5,,,3,5,5,,2,,,,4,,2,5
+Necessidades_6-6 Relacionamento com fornecedores,,2,5,2,,4,,2,3,,,3,2,5,,5,,5,3,4,4,3,5
+Necessidades_6-8 Conhecimento de mercado / concorrentes,,5,5,2,2,5,,2,5,,,3,4,5,5,5,2,4,6,2,4,5,5
+Necessidades_6-9 Mercado nicho / tecnologia nicho,,5,5,2,,5,,2,4,,,3,4,5,,2,2,4,4,3,4,3,4
+Necessidades_6-10 CRM / ERP,,2,5,2,,3,,,3,,,3,3,4,,,,6,4,4,4,3,
+Necessidades_6-11 Traduções,2,2,5,2,,4,,2,4,,2,3,,4,4,2,,2,2,,,,
+Necessidades_6-12 Design - Concepção de produto & serviço (Design de user experience),2,2,5,2,5,5,,5,5,,2,3,4,4,,5,2,2,2,,5,2,6
+Necessidades_6-13 Design - Imagem / Grafico / Branding,2,2,5,2,2,5,,4,4,,2,4,,4,,5,2,3,2,4,5,3,6
+Necessidades_6-14 Marketing (Empresa),,2,5,2,2,5,,4,5,,,4,4,4,2,5,2,4,5,4,5,5,6
+Necessidades_6-15 Modelos de negócios,,2,5,2,2,5,,4,4,,,3,3,4,,5,2,3,6,4,5,5,6
