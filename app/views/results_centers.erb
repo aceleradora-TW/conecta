@@ -3,7 +3,7 @@
 <section class="SectionCards">
   <% @research_centers.each do |rc| %>
 
-  <div class="Card">
+  <div class="CardCenter">
     <div class="CompanyName">
       <h1><%= rc.name %></h1>
     </div>
@@ -25,33 +25,37 @@
         <% end %>
       </div>
     </div>
-    <br><b>Contato:</b><br>
 
+  <div class="CenterTheme">
+  <div class="ContactTitle">
+  <h3>Contato</h3>
+  </div>
+</div>
 
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
-      </div>
-      <div class="ItemTheme">
-        <b>Email:</b>  <%= rc.contact.email %>
-
-      </div>
+  <div class="CenterTheme">
+    <div class="ItemTheme">
+      <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
     </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
-      </div>
-      <div class="ItemTheme">
-        <b>Site:</b>  <%= rc.contact.site %> 
-      </div>
+    <div class="ItemTheme">
+      <b>Email:</b>  <%= rc.contact.email %>
+
     </div>
-
-
+  </div>
+  <div class="CenterTheme">
+    <div class="ItemTheme">
+      <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
+    </div>
+    <div class="ItemTheme">
+      <b>Site:</b>  <%= rc.contact.site %>
+    </div>
   </div>
 
 
-  <br><br> <% end %>
+</div>
+
+
+<br><br> <% end %>
 </section>
 <% if @error != [] %>
-<%= @error %>
-<% end %>
+  <%= @error %>
+  <% end %>
