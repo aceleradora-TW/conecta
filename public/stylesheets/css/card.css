@@ -22,7 +22,7 @@ body {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   min-height: 66vh;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   width: 48%;
   display: flex;
   flex-direction: column;
@@ -66,6 +66,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .CompetencesTitle{
   width: 100%;
   height: 5%;
@@ -99,6 +100,13 @@ body {
   height: 10%;
   text-align: center;
 
+}
+
+.CenterName{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 .CompanyDescription{
