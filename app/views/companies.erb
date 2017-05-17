@@ -8,8 +8,9 @@
 <b>Perfil:</b> <% company.company_types.each do |type| %>
 <%= type.name + "; " %>
 <% end %><br>
-<b>Capacidades:</b> <% company.competences.each do |competence| %>
-<%= competence.name + "[" + competence.competence_area.name + "]; " %>
+<b>Capacidades:</b> <% company.competence_institutions.each do |competence_inst| %>
+<%= competence_inst.competence.name + "[" + competence_inst.competence.competence_area.name + "]{" + competence_inst.competence_value + "}; " %>
+<br>
 <% end %><br>
 
 <br><br>
