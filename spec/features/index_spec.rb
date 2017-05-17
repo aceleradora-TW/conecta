@@ -28,12 +28,12 @@ RSpec.describe IndexController do
 
       it "Deve conter o link de redirecionamento para lista de empresas" do
         visit "/"
-        expect(page).to have_link("Buscar", :href=>"/results")
+        expect(page).to have_link("Listar", :href=>"/results")
       end
 
       it "Deve conter o link de redirecionamento para lista de centros de pesquisas" do
         visit "/"
-        expect(page).to have_link("Buscar", :href=>"/research_centers")
+        expect(page).to have_link("Listar", :href=>"/research_centers")
       end
 
     end
