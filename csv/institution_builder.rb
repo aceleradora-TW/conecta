@@ -31,7 +31,7 @@ class InstitutionBuilder
         competence_area_number = competence_clean[0]
         competence_name = competence_clean.sub(/\d[\W+]\d+ /,"")
         if value != ""
-          competence_object = {name: competence_name, area_number:competence_area_number, value: value }
+          competence_object = {name: competence_name, area_number:competence_area_number, competence_value: value }
           @competences.push(competence_object)
         end
       end
@@ -42,6 +42,7 @@ class InstitutionBuilder
     company_csv.segments = @segments
     company_csv.types = @types
     company_csv.competences = @competences
+
     return company_csv
   end
 

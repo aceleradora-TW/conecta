@@ -1,5 +1,5 @@
 class CsvCompany
-  attr_accessor :name, :size, :description,:segments,:types,:competences
+  attr_accessor :name, :size, :description,:segments,:types,:competences, :competence_value
   def initialize
     @competence_area_array = nil
     create_competence_area_array()
@@ -8,6 +8,7 @@ class CsvCompany
   def insert_to_db
 
     company = Company.new(name: @name, size: @size)
+
     @segments.each do |segment|
       segment_object = Segment.first(name: segment)
       if !segment_object
@@ -23,15 +24,24 @@ class CsvCompany
       company.company_types.push(type_object)
     end
     @competences.each do |competence|
-      #puts competence
+
       competence_object = Competence.first(name: competence[:name])
       if !competence_object
         competence_area = @competence_area_array[competence[:area_number].to_i]
         competence_object = Competence.create(name: competence[:name], competence_area: competence_area)
       end
-      company.competences.push(competence_object)
+      competence_institution_object = CompetenceInstitution.new(competence_value: competence[:competence_value] )
+      competence_institution_object.company = company
+      competence_institution_object.competence = competence_object
+      competence_institution_object.save
+
     end
+
+
     company.save
+
+    puts company.inspect
+
   end
   def create_competence_area_array
     if !@competence_area_array
