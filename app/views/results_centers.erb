@@ -1,5 +1,6 @@
 
 <h1>CENTROS DE PESQUISA</h1>
+<a href="/" style="float: right; margin-right: 30px; margin-top: -50px; font-size: 24px;">Voltar</a>
 <section class="SectionCards">
   <% @research_centers.each do |rc| %>
 
@@ -55,7 +56,7 @@
 </div>
 
 
-<br><br> <% end %>
+<% end %>
 </section>
 <% if @error != [] %>
   <%= @error %>
