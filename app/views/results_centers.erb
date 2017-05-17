@@ -1,5 +1,6 @@
 
 <h1>CENTROS DE PESQUISA</h1>
+<a href="/" style="float: right; margin-right: 30px; margin-top: -50px; font-size: 24px;">Voltar</a>
 <section class="SectionCards">
   <% @research_centers.each do |rc| %>
 
@@ -7,8 +8,9 @@
     <div class="CenterName">
       <h1><%= rc.name %></h1>
     </div>
-    <h3> <%= rc.project%> </h3>
-    <div class="CompanyDescription">
+      <div class="CompanyDescription">
+    <h4> <%= rc.project%> </h4>
+
       <%= rc.description%>
     </div>
     <div class="CenterTheme">
@@ -54,7 +56,7 @@
 </div>
 
 
-<br><br> <% end %>
+<% end %>
 </section>
 <% if @error != [] %>
   <%= @error %>
