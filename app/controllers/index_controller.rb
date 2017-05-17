@@ -59,7 +59,7 @@ class IndexController < Controller
     erb :results
   end
 
-  get "/search_companies" do
+  get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
 
@@ -67,15 +67,37 @@ class IndexController < Controller
       @competences = Competence.all(:name.like => "%#{@value}%")
       @competences_id =   @competences.map{|c| c.id}
       @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ?',@competences_id])
+
     elsif @search_type == 'segmento'
       @segments = Segment.all(:name.like => "%#{@value}%")
       @segments_id = @segments.map{|s| s.id}
       @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
+
+
     elsif @search_type == 'empresa'
       @companies = Company.all(:name.like => "%#{@value}%")
+
+      # Refatorar pesquisa
+      @competences_by_company = {}
+      @companies.each do |company|
+        filtered_competences = {}
+        company.competences.each do |competence|
+          if filtered_competences.key?(competence.competence_area.name)
+            competence_area_array = filtered_competences[competence.competence_area.name]
+            competence_area_array.push(competence.name)
+          else
+            competence_area_array = [competence.name]
+            filtered_competences[competence.competence_area.name] = competence_area_array
+          end
+          @competences_by_company[company] = filtered_competences
+        end
+      end
+
+
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
     end
+
     erb :search_all
   end
 
