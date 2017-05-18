@@ -8,6 +8,10 @@ gem 'puma'
 gem 'tux'
 
 group :development, :test do
+  gem 'simplecov'
+
+
+  gem 'rerun'
   gem "rack", '2.0.2'
   gem 'rspec', '~> 2.14'
   gem "rack-test"
