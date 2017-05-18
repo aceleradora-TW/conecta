@@ -7,3 +7,6 @@ end
 task "i" do
   exec "ruby csv/csv_import.rb"
 end
+task "test" do
+  exec "rspec -fd -c"
+end
