@@ -1,0 +1,60 @@
+/* INSERIR NO RESET */
+body {
+  margin: 0;
+}
+
+.Nav {
+  width: 100%;
+  height: 65px;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Nav img {
+  width: 15%;
+  height: 60%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.NavMenu {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.NavMenu ul {
+  margin-right: 10px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.NavMenu li {
+  color: white;
+  width: 32%;
+  font-size: 1.2em;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
