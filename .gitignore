@@ -3,3 +3,4 @@ development.db
 csv/files/*
 vendor/*
 .sass-cache
+coverage

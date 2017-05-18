@@ -12,24 +12,32 @@
 </div>
 
 <div class="CompanyCompetences">
+
 <% @company_competences = @competences_by_company[company]%>
 
 <% if @company_competences != nil %>
-<div class=" CompetencesTitle">
-<h3>Competências</h3>
-</div>
-<ul class="CompetenceList">
-<%   @company_competences.each_key do |competence_area| %>
-<li class="Itens"><%= competence_area %></li>
-<ul class="Subitens">
-<%  @company_competences[competence_area].each do |comp| %>
-  <li><%= comp %></li>
-  <% end %>
-</ul>
+  <div class=" CompetencesTitle">
+    <h3>Competências</h3>
+  </div>
 
-<% end %>
-</ul>
-<% end %>
+  <ul class="CompetenceList">
+
+  <%   @company_competences.each_key do |competence_area| %>
+    <li class="Itens"><%= competence_area %></li>
+    <ul class="Subitens">
+      <%  @company_competences[competence_area].each do |comp| %>
+
+      <li><%= comp %></li>
+      <% end %>
+    </ul>
+
+    <% end %>
+
+  </ul>
+
+  <% end %>
+
+
 
 </div>
 

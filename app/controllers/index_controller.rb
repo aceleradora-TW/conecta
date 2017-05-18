@@ -42,19 +42,22 @@ class IndexController < Controller
 
   get "/results" do
     @companies = Company.all
+
     @competences_by_company = {}
     @companies.each do |company|
       filtered_competences = {}
-      company.competences.each do |competence|
-        if !(filtered_competences.key?(competence.competence_area.name))
-          competence_area_array = [competence.name]
-          filtered_competences[competence.competence_area.name] = competence_area_array
+      company.competence_institutions.each do |comp_all|
+        if filtered_competences.key?(comp_all.competence.competence_area.name)
+          competence_area_array = filtered_competences[comp_all.competence.competence_area.name]
+          competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value + " | ")
         else
-          competence_area_array = filtered_competences[competence.competence_area.name]
-          competence_area_array.push(competence.name)
+          competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value + " | "]
+          filtered_competences[comp_all.competence.competence_area.name] = competence_area_array
         end
         @competences_by_company[company] = filtered_competences
       end
+
+
     end
     erb :results
   end
