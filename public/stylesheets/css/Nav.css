@@ -14,7 +14,7 @@ body {
 }
 
 .Nav img {
-  width: 15%;
+  width: 30%;
   height: 60%;
   vertical-align: middle;
   border: 0;
@@ -27,7 +27,7 @@ body {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -57,4 +57,13 @@ body {
   margin-bottom: 10px;
   line-height: 1.7em;
   font-weight: lighter;
+}
+
+.NavMenu a {
+  text-decoration: none;
+
+}
+
+.Nav a{
+  padding-left: 45px;
 }
