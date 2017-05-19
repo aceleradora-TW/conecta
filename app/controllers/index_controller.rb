@@ -52,9 +52,19 @@ class IndexController < Controller
     @search_type = params[:search_type]
 
     if @search_type == 'competencia'
+      @companies = Company.all
+      area_competence
+      @companies_searched = []
       @competences = Competence.all(:name.like => "%#{@value}%")
       @competences_id =   @competences.map{|c| c.id}
-      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ?',@competences_id])
+      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ? and (competence_value = 4 or competence_value = 5 or competence_value = 6)',@competences_id])
+      @company_competence.each do |single_cmp_competence|
+        local_company = single_cmp_competence.company
+        if !@companies_searched.include? local_company
+          @companies_searched.push(local_company)
+        end
+      end
+
 
     elsif @search_type == 'segmento'
       @segments = Segment.all(:name.like => "%#{@value}%")
@@ -65,7 +75,6 @@ class IndexController < Controller
     elsif @search_type == 'empresa'
       @companies = Company.all(:name.like => "%#{@value}%")
       #metodo de pesquisa
-      area_competence
 
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
@@ -99,7 +108,5 @@ class IndexController < Controller
       end
     end
   end
-
-
 
 end

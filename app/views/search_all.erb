@@ -2,11 +2,45 @@
   <h1>Resultados Buscados</h1>
   <section class="SectionCards">
   <%if @search_type == 'competencia' %>
-  <% @company_competence.each do |c| %>
-  Empresa: <%= c.company.name %> -
-  Competencia: <%= c.competence.name %>
-  <br/>
-  <% end %>
+    <% @companies_searched.each do |companies_searched|%>
+        <!-- inicio card -->
+    <div class="Card">
+      <div class="CompanyName"><h1><%= companies_searched.name %></h1></div>
+      <div class="CompanyDescription">
+        Mayra ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </div>
+      <% @company_competences = @competences_by_company[companies_searched]%>
+      <div class="CompanyCompetences">
+      <% if @companies_searched != nil %>
+        <div class=" CompetencesTitle">
+          <h3>Competências</h3>
+        </div>
+        <ul class="CompetenceList">
+
+        <% @company_competences.each_key do |competence_area| %>
+          <li class="Itens"><%= competence_area %></li>
+
+          <ul class="Subitens">
+            <% @company_competences[competence_area].each do |comp| %>
+            <li><%= comp %></li>
+            <% end %>
+          </ul>
+
+          <% end %>
+
+        </ul>
+
+        <% end %>
+      </div>
+
+
+    </div>
+    <!--  fim card -->
+
+
+    <%end%>
+
+
 
   <% elsif @search_type == 'segmento' %>
   <% @company_segments.each do |s| %>
