@@ -1,5 +1,5 @@
 
-<h1>CENTROS DE PESQUISA</h1>
+<h1> ESTRUTURAS DE PESQUISA</h1>
 <a href="/" style="float: right; margin-right: 30px; margin-top: -50px; font-size: 24px;">Voltar</a>
 <section class="SectionCards">
   <% @research_centers.each do |rc| %>
@@ -48,7 +48,8 @@
       <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
     </div>
     <div class="ItemTheme">
-      <b>Site:</b>  <%= rc.contact.site %>
+      <%@siteurl = rc.contact.site%>
+      <b>Site:</b>  <%=rc.contact.site %>
     </div>
   </div>
 

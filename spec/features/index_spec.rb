@@ -16,9 +16,9 @@ RSpec.describe IndexController do
         expect(page).to have_content 'Ver empresas'
       end
 
-      it "Deve mostrar o Ver centros de pesquisa" do
+      it "Deve mostrar o Ver estruturas de pesquisa" do
         visit "/"
-        expect(page).to have_content 'Ver centros de pesquisa'
+        expect(page).to have_content 'Ver estruturas de pesquisa'
       end
 
       it "Deve exibir o botão de buscar" do
@@ -31,7 +31,7 @@ RSpec.describe IndexController do
         expect(page).to have_link("Listar", :href=>"/results")
       end
 
-      it "Deve conter o link de redirecionamento para lista de centros de pesquisas" do
+      it "Deve conter o link de redirecionamento para lista de estruturas de pesquisas" do
         visit "/"
         expect(page).to have_link("Listar", :href=>"/research_centers")
       end
