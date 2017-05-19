@@ -39,7 +39,8 @@
       <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
     </div>
     <div class="ItemTheme">
-      <b>Email:</b>  <%= rc.contact.email %>
+      <%@email = rc.contact.email%>
+      <b> <a href=mailto:'"<%=@email%>"'> Email:</a></b>  <%= @email %>
 
     </div>
   </div>
@@ -48,8 +49,8 @@
       <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
     </div>
     <div class="ItemTheme">
-      <%@siteurl = rc.contact.site%>
-      <b>Site:</b>  <a href=<%= @siteurl %> target="_blank"> <%=@siteurl %></a>
+      <%@site_url = rc.contact.site%>
+      <b>Site:</b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
     </div>
   </div>
 
