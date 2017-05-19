@@ -8,8 +8,8 @@
     <div class="CenterName">
       <h1><%= rc.name %></h1>
     </div>
-      <div class="CompanyDescription">
-    <h4> <%= rc.project%> </h4>
+    <div class="CompanyDescription">
+      <h4> <%= rc.project%> </h4>
 
       <%= rc.description%>
     </div>
@@ -28,38 +28,38 @@
       </div>
     </div>
 
-  <div class="CenterTheme">
-  <div class="ContactTitle">
-  <h3>Contato</h3>
+    <div class="CenterTheme">
+      <div class="ContactTitle">
+        <h3>Contato</h3>
+      </div>
+    </div>
+
+    <div class="CenterTheme">
+      <div class="ItemTheme">
+        <b>Nome de Contato: </b>  <%= rc.contact.contact_name %> <br>
+      </div>
+      <div class="ItemTheme">
+        <%@email = rc.contact.email%>
+        <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%= @email %></a>
+
+      </div>
+    </div>
+    <div class="CenterTheme">
+      <div class="ItemTheme">
+        <b>Telefone de Contato: </b>  <%= rc.contact.phone %>
+      </div>
+      <div class="ItemTheme">
+        <%@site_url = rc.contact.site%>
+        <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
+      </div>
+    </div>
+
+
   </div>
-</div>
-
-  <div class="CenterTheme">
-    <div class="ItemTheme">
-      <b>Nome de Contato:</b>  <%= rc.contact.contact_name %> <br>
-    </div>
-    <div class="ItemTheme">
-      <%@email = rc.contact.email%>
-      <b> <a href=mailto:'"<%=@email%>"'> Email:</a></b>  <%= @email %>
-
-    </div>
-  </div>
-  <div class="CenterTheme">
-    <div class="ItemTheme">
-      <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
-    </div>
-    <div class="ItemTheme">
-      <%@site_url = rc.contact.site%>
-      <b>Site:</b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
-    </div>
-  </div>
 
 
-</div>
-
-
-<% end %>
+  <% end %>
 </section>
 <% if @error != [] %>
-  <%= @error %>
-  <% end %>
+<%= @error %>
+<% end %>
