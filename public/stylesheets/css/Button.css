@@ -14,3 +14,7 @@
   text-align: center;
   letter-spacing: .5px;
 }
+
+.Button:hover {
+  background-color: rgba(55, 113, 200, 0.8);
+}

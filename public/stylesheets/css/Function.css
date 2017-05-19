@@ -1,0 +1,65 @@
+.Function{
+  padding: 0;
+  width: 100%;
+  min-height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContentFunction {
+  background: #fff;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  min-height: 35vh;
+  margin-bottom: 2%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.Title {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.CardContentF {
+  height: 50%;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.BoxFunctions {
+  height: 50%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Icon {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  align-items: center;
+}
+
+.Text {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
