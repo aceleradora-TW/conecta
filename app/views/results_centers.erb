@@ -48,7 +48,8 @@
       <b>Telefone de Contato:</b>  <%= rc.contact.phone %>
     </div>
     <div class="ItemTheme">
-      <b>Site:</b>  <%= rc.contact.site %>
+      <%@siteurl = rc.contact.site%>
+      <b>Site:</b>  <%=rc.contact.site %>
     </div>
   </div>
 
