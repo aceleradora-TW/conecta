@@ -1,0 +1,33 @@
+.About{
+  padding: 0;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.CardContentA {
+  background: #fff;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  min-height: 35vh;
+  margin-bottom: 2%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.CardContentA p {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ContentAbout {
+  padding: 4%;
+}
