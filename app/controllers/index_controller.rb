@@ -67,14 +67,26 @@ class IndexController < Controller
 
 
     elsif @search_type == 'segmento'
+      @companies = Company.all
+      area_competence
+
+      @segments_searched = []
+
       @segments = Segment.all(:name.like => "%#{@value}%")
       @segments_id = @segments.map{|s| s.id}
       @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
 
+      @company_segments.each do |single_segment|
+        local_company = single_segment.company
+        if !@segments_searched.include? local_company
+          @segments_searched.push(local_company)
+        end
+      end
+
 
     elsif @search_type == 'empresa'
       @companies = Company.all(:name.like => "%#{@value}%")
-      #metodo de pesquisa
+      area_competence
 
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")

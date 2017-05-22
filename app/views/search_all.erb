@@ -43,11 +43,50 @@
 
 
   <% elsif @search_type == 'segmento' %>
-  <% @company_segments.each do |s| %>
-  Empresa: <%= s.company.name %> -
-  Segmento: <%= s.segment.name %>
-  <br/>
+
+
+  <% @segments_searched.each do |s| %>
+
+  <!-- inicio card -->
+<div class="Card">
+<div class="CompanyName"><h1><%= s.name %></h1></div>
+<div class="CompanyDescription">
+  Mayra ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+
+
+<% @segment_competences = @competences_by_company[s]%>
+
+<div class="CompanyCompetences">
+<% if @segments_searched != nil %>
+  <div class=" CompetencesTitle">
+    <h3>Competências</h3>
+  </div>
+  <ul class="CompetenceList">
+
+  <% @segment_competences.each_key do |competence_area| %>
+    <li class="Itens"><%= competence_area %></li>
+
+    <ul class="Subitens">
+      <% @segment_competences[competence_area].each do |comp| %>
+      <li><%= comp %></li>
+      <% end %>
+    </ul>
+
+    <% end %>
+
+  </ul>
+
   <% end %>
+</div>
+
+
+</div>
+<!--  fim card -->
+<% end %>
+
+
+
 
   <% elsif @search_type == 'empresa'%>
   <% @companies.each do |company| %>
