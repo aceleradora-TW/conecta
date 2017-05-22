@@ -1,7 +1,7 @@
 body {
   background: #e0e0e0;
   font-family: 'Lato', sans-serif;
-
+  overflow-x: hidden;
 }
 
 .Card {
@@ -150,4 +150,42 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 3%;
+}
+
+.SectionSearch{
+  padding: 0;
+  width: 100%;
+  min-height: 39vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+
+}
+
+.ContentSearch{
+  background: #fff;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  min-height: 35vh;
+  margin-bottom: 2%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+  padding: 0%;
+}
+
+.inputBusca{
+  width: 105%;
+  margin-right: 60px;
+}
+.radioButton{
+margin-left: 30px;
+margin-bottom: 10px;
+
+
 }
