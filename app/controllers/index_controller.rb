@@ -74,10 +74,11 @@ class IndexController < Controller
 
     elsif @search_type == 'empresa'
       @companies = Company.all(:name.like => "%#{@value}%")
-      #metodo de pesquisa
+      area_competence
 
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
+
     end
 
     erb :search_all

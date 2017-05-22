@@ -92,9 +92,66 @@
 
 
   <% elsif @search_type == 'centro-pesquisa'%>
-  <% @research_center.each do |e| %>
-  Centro de Pesquisa: <%= e.name %>
-  <br/>
+  <% @research_center.each do |rc_searched| %>
+
+<!-- INICIO CARD -->
+
+<div class="CardCenter">
+  <div class="CenterName">
+    <h1><%= rc_searched.name %></h1>
+  </div>
+  <div class="CompanyDescription">
+    <h4> <%= rc_searched.project%> </h4>
+
+    <%= rc_searched.description%>
+  </div>
+  <div class="CenterTheme">
+    <div class="ItemTheme">
+      <b>Area de Pesquisa:</b>
+      <% rc_searched.research_areas.each do |a| %>
+      <%= a.name %>
+      <% end %>
+    </div>
+    <div class="ItemTheme">
+      <b>Eixo tematico:</b>
+      <% rc_searched.research_fields.each do |f| %>
+      <%= f.name %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="CenterTheme">
+    <div class="ContactTitle">
+      <h3>Contato</h3>
+    </div>
+  </div>
+
+  <div class="CenterTheme">
+    <div class="ItemTheme">
+      <b>Nome de Contato: </b>  <%= rc_searched.contact.contact_name %> <br>
+    </div>
+    <div class="ItemTheme">
+      <%@email = rc_searched.contact.email%>
+      <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%= @email %></a>
+
+    </div>
+  </div>
+  <div class="CenterTheme">
+    <div class="ItemTheme">
+      <b>Telefone de Contato: </b>  <%= rc_searched.contact.phone %>
+    </div>
+    <div class="ItemTheme">
+      <%@site_url = rc_searched.contact.site%>
+      <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
+    </div>
+  </div>
+
+
+</div>
+
+
+<!-- FIM CARD -->
+
   <% end %>
 
 </section>
