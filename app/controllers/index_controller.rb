@@ -90,6 +90,7 @@ class IndexController < Controller
 
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
+
     end
 
     erb :search_all
