@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "9393:9393"
+    volumes:
+     - .:/code
+    depends_on:
+     - db
+  db:
+    image: postgres:9.3
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=test_db
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data

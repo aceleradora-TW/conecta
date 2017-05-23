@@ -1,39 +1,37 @@
 .Function{
-  padding: 0;
+
   width: 100%;
-  min-height: 38vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
 }
 
 .ContentFunction {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 35vh;
-  margin-bottom: 2%;
+  height: 35vh;
   width: 98%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
 
 .Title {
   width: 100%;
-  height: 10%;
+  height: 25%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3%;
+
 }
 
 .CardContentF {
-  height: 50%;
+  height: 75%;
   width: 98%;
   display: flex;
   justify-content: space-around;
@@ -41,7 +39,7 @@
 }
 
 .BoxFunctions {
-  height: 50%;
+  height: 100%;
   width: 20%;
   display: flex;
   align-items: center;
@@ -49,16 +47,26 @@
   flex-direction: column;
 }
 
-.Icon {
+.Arrow{
   height: 50%;
-  width: 40%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.Icon {
+  height: 45%;
+  width: 35%;
   display: flex;
   justify-content: center;
   border-radius: 100%;
   align-items: center;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .Text {
+  height: 55%;
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
