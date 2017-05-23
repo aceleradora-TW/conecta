@@ -14,8 +14,8 @@
     margin-right: 60px;
   }
   .radioButton{
-  margin-left: 30px;
-  margin-bottom: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
   </style>
 
@@ -33,7 +33,10 @@
           <input type="radio" name="search_type" value="empresa"> Empresa<br>
           <input type="radio" name="search_type" value="competencia"> Competência<br>
           <input type="radio" name="search_type" value="segmento"> Segmento<br>
-          <input type="radio" name="search_type" value="centro-pesquisa">Centro de Pesquisa<br><br>
+          <input type="radio" name="search_type" value="centro-pesquisa">Centro de Pesquisa<br>
+          <input type="radio" name="search_type" value="area-pesquisa"> Area de Pesquisa<br>
+          <input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Tematico<br>
+          <input type="radio" name="search_type" value="project"> Projeto <br> <br>
           <button class="Button" type="submit" name="button">Buscar</button>
         </div>
 
@@ -47,5 +50,5 @@
 </html>
 
 <% if @error != [] %>
-  <%= @error %>
-  <% end %>
+<%= @error %>
+<% end %>

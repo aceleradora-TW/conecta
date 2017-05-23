@@ -91,6 +91,25 @@ class IndexController < Controller
     elsif @search_type == 'centro-pesquisa'
       @research_center = ResearchCenter.all(:name.like => "%#{@value}%")
 
+    elsif @search_type == 'area-pesquisa'
+
+      @research_centers = ResearchCenter.all
+
+      @areas = ResearchArea.all(:name.like => "%#{@value}%")
+
+    elsif @search_type == 'eixo-pesquisa'
+
+      @research_centers = ResearchCenter.all
+
+      @fields = ResearchField.all(:name.like => "%#{@value}%")
+
+    elsif @search_type == 'project'
+
+      @research_centers = ResearchCenter.all
+
+      @project = ResearchCenter.all(:project.like => "%#{@value}%")
+
+
     end
 
     erb :search_all
@@ -121,5 +140,6 @@ class IndexController < Controller
       end
     end
   end
+
 
 end
