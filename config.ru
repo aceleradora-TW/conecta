@@ -8,3 +8,4 @@ use Rack::Static, :urls => ["/images", "/js", "/stylesheets/css"], :root => "pub
 map '/' do
   run IndexController
 end
+ 

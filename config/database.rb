@@ -1,10 +1,11 @@
+require 'data_mapper'
 require 'dm-core'
 require  'dm-migrations'
 require 'dm-validations'
 DataMapper::Property::String.length(255)
 
 configure :development do
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
+  DataMapper.setup(:default, "postgres://test:test@db/test_db")
 end
 
 configure :production do
