@@ -4,3 +4,4 @@ csv/files/*
 vendor/*
 .sass-cache
 coverage
+data/*

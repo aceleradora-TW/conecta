@@ -8,7 +8,5 @@ WORKDIR /code
 RUN gem update --system
 RUN bundle install
 
-#Code
-COPY . /code
 EXPOSE 9393:9393
 CMD ["rake", "s"]
