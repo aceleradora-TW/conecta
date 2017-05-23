@@ -15,12 +15,18 @@ Before run the project, you need the following programs installed:
 $ git clone https://github.com/aceleradora-TW/conecta.git
 $ cd conecta
 ```
+# Build
+Build Application whenever you **add or remove gems** in Gemfile. To build run the command:
+```
+$ make build
+```
+The command **make build** takes a long time so it is recommended to use only if you really need to change the Gemfile.
+
 # Execution
 To run server locally, run the command:
 ```
 $ make run
 ```
-The first time you run **make run** will take a long time to download all images and dependencies from Docker.
 
 # Import Data
 To have Companies and Reasearch Center data to show in the project you need to import these data from csv files.
