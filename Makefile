@@ -1,4 +1,4 @@
-run:
+run:build
 	@echo "Starting Server" && \
 	docker-compose up
 
