@@ -1,14 +1,14 @@
-  <br>
+<br>
 
-  <section class="SectionCardsHome">
-    <div class="Card">
-      <div class="CompanyName"><h1>Ver empresas do TecnoPUC</h1></div>
-      <br>
-      <a href="/results">
-        <button class="Button" type="button" name="button">Listar</button>
-      </a>
-    </div>
-    <div class="Card">
+<section class="SectionCardsHome">
+  <div class="Card">
+    <div class="CompanyName"><h1>Ver empresas do TecnoPUC</h1></div>
+    <br>
+    <a href="/results">
+      <button class="Button" type="button" name="button">Listar</button>
+    </a>
+  </div>
+  <div class="Card">
     <div class="CompanyName"><h1>Ver estruturas de pesquisa do TecnoPUC</h1></div>
     <br>
     <a href="/research_centers">
@@ -20,18 +20,50 @@
 <section class="SectionSearch">
   <div class="ContentSearch">
     <div class="CompanyName"><h1>Encontre parcerias agora</h1></div>
-    <form action="/search_all" name="search">
-      <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/><br><br>
-      <div class="radioButton">
-        <input type="radio" name="search_type" value="empresa"> Empresa<br>
-        <input type="radio" name="search_type" value="competencia"> Competência<br>
-        <input type="radio" name="search_type" value="segmento"> Segmento<br>
-        <input type="radio" name="search_type" value="centro-pesquisa">Estrutura de Pesquisa<br><br>
-        <button class="Button" type="submit" name="button">Buscar</button>
+
+    <form class="form-search" action="/search_all" name="search">
+
+
+
+      <div class="input-group">
+
+        <div class="input-group-btn">
+          <button class="btn-filter" type="button" name="button">
+            <span>Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          </button>
+        </div>
+
+
+        <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" />
+        <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="dropdown-menu">
+          <input type="radio" name="search_type" value="empresa" checked> Empresa<br>
+          <input type="radio" name="search_type" value="competencia"> Competência<br>
+          <input type="radio" name="search_type" value="segmento"> Segmento<br>
+          <input type="radio" name="search_type" value="centro-pesquisa">Estrutura de Pesquisa<br>
+          <input type="radio" name="search_type" value="centro-pesquisa">Área de Pesquisa<br>
+          <input type="radio" name="search_type" value="centro-pesquisa">Eixo Temático<br>
+        </div>
+
+
+
       </div>
+
+
+
+
+      <br><br><br>
+
+
     </form>
   </div>
 </section>
+
+
+
+
+
 
 <section class="About" id="About">
   <div class="CardContentA">
@@ -83,6 +115,16 @@
   </div>
 </section>
 
-  <% if @error != [] %>
-  <%= @error %>
-  <% end %>
+<% if @error != [] %>
+<%= @error %>
+<% end %>
+
+<script>
+  var btnFilter = document.querySelector('.btn-filter');
+  var menu = document.querySelector('.dropdown-menu');
+
+  btnFilter.onclick = function() {
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+  }
+
+</script>
