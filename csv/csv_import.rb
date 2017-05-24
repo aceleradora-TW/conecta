@@ -14,7 +14,7 @@ puts "Saving Companies"
 company_list.each_with_index {|company, index| company.insert_to_db; puts "#{index + 1}/#{company_list.length}" }
 
 puts "\n\n"
-puts "Importing Research Centers..."
+puts "Importing Research Centsers..."
 research_center_csv_content = File.read(Dir.pwd + '/csv/files/research_center.csv')
 research_center_parser = CsvParser.new(:col_sep => '*')
 research_list = research_center_parser.parse(research_center_csv_content, CsvLambdas.research_center)
