@@ -33,22 +33,22 @@
           <button class="btn-filter" type="button" name="button">
             <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
           </button>
+          <div class="dropdown-menu">
+            <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
+            <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
+            <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
+            <hr>
+            <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
+            <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
+            <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
+            <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
+          </div>
         </div>
 
 
         <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
         <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 
-        <div class="dropdown-menu">
-          <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
-          <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
-          <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
-          <hr>
-          <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
-          <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
-          <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
-          <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
-        </div>
 
 
 
@@ -136,10 +136,18 @@
 <script>
   var btnFilter = document.querySelector('.btn-filter');
   var menu = document.querySelector('.dropdown-menu');
-
+  var textFilter = document.querySelector('.text-filter');
 
   btnFilter.onclick = function() {
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    menu.classList.toggle('dropdown-menu-visible');
+    btnFilter.classList.toggle('btn-filter-activated');
   }
+
+  window.onclick = function(event) {
+      if ((!event.target.matches('.btn-filter')) && (!event.target.matches('.dropdown-menu')) && (!event.target.matches('.text-filter')) && (!event.target.matches('.filterLabel'))) {
+        menu.classList.remove('dropdown-menu-visible');
+        btnFilter.classList.remove('btn-filter-activated');
+      }
+    }
 
 </script>
