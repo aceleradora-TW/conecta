@@ -1,3 +1,7 @@
+
+
+<section class="SectionHome">
+
   <section class="SectionCardsHome">
     <div class="Card">
       <div class="CompanyName"><h1>Ver empresas do TecnoPUC</h1></div>
@@ -27,7 +31,7 @@
 
         <div class="input-group-btn">
           <button class="btn-filter" type="button" name="button">
-            <span>Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
           </button>
         </div>
 
@@ -36,14 +40,14 @@
         <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 
         <div class="dropdown-menu">
-          <input type="radio" name="search_type" value="empresa" checked> Empresa<br>
-          <input type="radio" name="search_type" value="competencia"> Competência<br>
-          <input type="radio" name="search_type" value="segmento"> Segmento<br>
+          <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
+          <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
+          <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
           <hr>
-          <input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa<br>
-          <input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa<br>
-          <input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático<br>
-          <input type="radio" name="search_type" value="project"> Projeto <br>
+          <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
+          <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
+          <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
+          <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
         </div>
 
 
@@ -123,6 +127,7 @@
     </div>
   </div>
 </section>
+</section>
 
 <% if @error != [] %>
 <%= @error %>
@@ -131,6 +136,7 @@
 <script>
   var btnFilter = document.querySelector('.btn-filter');
   var menu = document.querySelector('.dropdown-menu');
+
 
   btnFilter.onclick = function() {
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
