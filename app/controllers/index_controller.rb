@@ -71,7 +71,6 @@ class IndexController < Controller
     elsif @search_type == 'segmento'
       @companies = Company.all
       area_competence
-
       @segments_searched = []
 
       @segments = Segment.all(:conditions => ["lower(name) like ?", @value_sql])
@@ -81,10 +80,11 @@ class IndexController < Controller
         @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
         @company_segments.each do |single_segment|
           local_company = single_segment.company
-          if !@segments_searched.include? local_company
+          if !(@segments_searched.include? local_company)
             @segments_searched.push(local_company)
           end
         end
+        puts "@@@ Segments Serached #{@segments_searched}"
       end
     elsif @search_type == 'empresa'
       @companies = Company.all(:conditions => ["lower(name) like ?", @value_sql])
