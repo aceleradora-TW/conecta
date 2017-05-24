@@ -39,9 +39,10 @@
           <input type="radio" name="search_type" value="empresa" checked> Empresa<br>
           <input type="radio" name="search_type" value="competencia"> Competência<br>
           <input type="radio" name="search_type" value="segmento"> Segmento<br>
-          <input type="radio" name="search_type" value="centro-pesquisa">Estrutura de Pesquisa<br>
-          <input type="radio" name="search_type" value="area-pesquisa"> Area de Pesquisa<br>
-          <input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Tematico<br>
+          <hr>
+          <input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa<br>
+          <input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa<br>
+          <input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático<br>
           <input type="radio" name="search_type" value="project"> Projeto <br>
         </div>
 
@@ -132,7 +133,7 @@
   var menu = document.querySelector('.dropdown-menu');
 
   btnFilter.onclick = function() {
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   }
 
 </script>
