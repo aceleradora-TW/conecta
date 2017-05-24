@@ -30,7 +30,7 @@ class CsvCompany
         competence_area = @competence_area_array[competence[:area_number].to_i]
         competence_object = Competence.create(name: competence[:name], competence_area: competence_area)
       end
-      competence_institution_object = CompetenceInstitution.new(competence_value: competence[:competence_value] )
+      competence_institution_object = CompetenceInstitution.new(competence_value: competence[:competence_value].to_i )
       competence_institution_object.company = company
       competence_institution_object.competence = competence_object
       competence_institution_object.save

@@ -58,7 +58,7 @@
     <% @segment_competences = @competences_by_company[s]%>
 
     <div class="CompanyCompetences">
-      <% if @segments_searched != nil %>
+      <% if @segments_searched != nil && @segment_competences != nil %>
       <div class=" CompetencesTitle">
         <h3>Competências</h3>
       </div>
@@ -184,10 +184,10 @@
         <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
       </div>
     </div>
+  </div>
     <% end %>
 
 
-  </div>
 
 
   <!-- FIM CARD -->
