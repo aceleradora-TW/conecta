@@ -24,13 +24,14 @@ class IndexController < Controller
   end
 
   get "/research_centers" do
-      @research_centers = ResearchCenter.all
+
+    @research_centers = ResearchCenter.all
     erb :results_centers
   end
 
   get "/results" do
     @companies = Company.all
-      area_competence
+    area_competence
     erb :results
   end
 
@@ -38,7 +39,37 @@ class IndexController < Controller
     @value = params[:value]
     @search_type = params[:search_type]
     @value_sql = "%#{@value.downcase}%"
+    return_found_values @value_sql, @search_type
+    erb :search_all
+  end
 
+  get "/components" do
+    erb :components
+  end
+
+  get "/import-companies" do
+    require_relative "../../config/importCompany.rb"
+  end
+
+
+  def area_competence
+    @competences_by_company = {}
+    @companies.each do |company|
+      filtered_competences = {}
+      company.competence_institutions.each do |comp_all|
+        if filtered_competences.key?(comp_all.competence.competence_area.name)
+          competence_area_array = filtered_competences[comp_all.competence.competence_area.name]
+          competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | ")
+        else
+          competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | "]
+          filtered_competences[comp_all.competence.competence_area.name] = competence_area_array
+        end
+        @competences_by_company[company] = filtered_competences
+      end
+    end
+  end
+
+  def return_found_values value_sql, search_type
     if @search_type == 'competencia'
       @companies = Company.all
       area_competence
@@ -98,37 +129,10 @@ class IndexController < Controller
 
       @project = ResearchCenter.all(:conditions => ["lower(project) like ?", @value_sql])
 
-
     end
-
-    erb :search_all
+    
   end
 
-  get "/components" do
-    erb :components
-  end
-
-  get "/import-companies" do
-    require_relative "../../config/importCompany.rb"
-  end
-
-
-  def area_competence
-    @competences_by_company = {}
-    @companies.each do |company|
-      filtered_competences = {}
-      company.competence_institutions.each do |comp_all|
-        if filtered_competences.key?(comp_all.competence.competence_area.name)
-          competence_area_array = filtered_competences[comp_all.competence.competence_area.name]
-          competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | ")
-        else
-          competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | "]
-          filtered_competences[comp_all.competence.competence_area.name] = competence_area_array
-        end
-        @competences_by_company[company] = filtered_competences
-      end
-    end
-  end
 
 
 end
