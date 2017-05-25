@@ -13,11 +13,6 @@ class IndexController < Controller
     erb :index_search
   end
 
-  get "/companies" do
-    @companies = Company.all
-    erb :companies
-  end
-
   get "/segments" do
     @segments = Segment.all
     erb :segments
@@ -28,22 +23,14 @@ class IndexController < Controller
     erb :competences
   end
 
-  get "/search" do
-    erb :search
-  end
-
   get "/research_centers" do
-    # SE CRASHAR FOI AQ
-    # @research_centers = ResearchCenter.all
-    # erb :research_centers
-    @research_centers = ResearchCenter.all
+      @research_centers = ResearchCenter.all
     erb :results_centers
   end
 
   get "/results" do
     @companies = Company.all
-    #metodo de pesquisa
-    area_competence
+      area_competence
     erb :results
   end
 
