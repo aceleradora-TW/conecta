@@ -8,6 +8,8 @@ gem 'pg'
 gem 'dm-postgres-adapter'
 
 group :development, :test do
+  gem 'sass'
+  gem 'compass'
   gem 'simplecov'
   gem 'rerun'
   gem 'rack', '2.0.2'
