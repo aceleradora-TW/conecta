@@ -24,13 +24,14 @@ class IndexController < Controller
   end
 
   get "/research_centers" do
-      @research_centers = ResearchCenter.all
+
+    @research_centers = ResearchCenter.all
     erb :results_centers
   end
 
   get "/results" do
     @companies = Company.all
-      area_competence
+    area_competence
     erb :results
   end
 
@@ -38,69 +39,7 @@ class IndexController < Controller
     @value = params[:value]
     @search_type = params[:search_type]
     @value_sql = "%#{@value.downcase}%"
-
-    if @search_type == 'competencia'
-      @companies = Company.all
-      area_competence
-      @companies_searched = []
-
-      @competences = Competence.all(:conditions => ["lower(name) like ?", @value_sql])
-      if(@competences.length != 0)
-        @competences_id =   @competences.map{|c| c.id}
-        @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ? and (competence_value >= 4)',@competences_id])
-        @company_competence.each do |single_cmp_competence|
-          local_company = single_cmp_competence.company
-          if !@companies_searched.include? local_company
-            @companies_searched.push(local_company)
-          end
-        end
-      end
-    elsif @search_type == 'segmento'
-      @companies = Company.all
-      area_competence
-      @segments_searched = []
-
-      @segments = Segment.all(:conditions => ["lower(name) like ?", @value_sql])
-
-      if @segments.length != 0
-        @segments_id = @segments.map{|s| s.id}
-        @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
-        @company_segments.each do |single_segment|
-          local_company = single_segment.company
-          if !(@segments_searched.include? local_company)
-            @segments_searched.push(local_company)
-          end
-        end
-        puts "@@@ Segments Serached #{@segments_searched}"
-      end
-    elsif @search_type == 'empresa'
-      @companies = Company.all(:conditions => ["lower(name) like ?", @value_sql])
-      area_competence
-
-    elsif @search_type == 'centro-pesquisa'
-      @research_center = ResearchCenter.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'area-pesquisa'
-
-      @research_centers = ResearchCenter.all
-
-      @areas = ResearchArea.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'eixo-pesquisa'
-
-      @research_centers = ResearchCenter.all
-
-      @fields = ResearchField.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'project'
-
-      @research_centers = ResearchCenter.all
-
-      @project = ResearchCenter.all(:conditions => ["lower(project) like ?", @value_sql])
-
-
-    end
-
+    return_found_values @value_sql, @search_type
     erb :search_all
   end
 
@@ -129,6 +68,88 @@ class IndexController < Controller
       end
     end
   end
+
+
+
+  def return_competence search_type
+    @companies = Company.all
+    area_competence
+    @companies_searched = []
+
+    @competences = Competence.all(:conditions => ["lower(name) like ?", @value_sql])
+    if(@competences.length != 0)
+      @competences_id =   @competences.map{|c| c.id}
+      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ? and (competence_value >= 4)',@competences_id])
+      @company_competence.each do |single_cmp_competence|
+        local_company = single_cmp_competence.company
+        if !@companies_searched.include? local_company
+          @companies_searched.push(local_company)
+        end
+      end
+    end
+  end
+
+  def return_segment search_type
+        @companies = Company.all
+    area_competence
+    @segments_searched = []
+
+    @segments = Segment.all(:conditions => ["lower(name) like ?", @value_sql])
+
+    if @segments.length != 0
+      @segments_id = @segments.map{|s| s.id}
+      @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?',@segments_id])
+      @company_segments.each do |single_segment|
+        local_company = single_segment.company
+        if !(@segments_searched.include? local_company)
+          @segments_searched.push(local_company)
+        end
+      end
+      puts "@@@ Segments Serached #{@segments_searched}"
+    end
+  end
+  def return_found_values value_sql, search_type
+
+    case search_type
+
+    when 'competencia' then
+      return_competence value_sql
+    when 'segmento' then
+      return_segment value_sql
+
+    end
+
+
+
+    if @search_type == 'empresa'
+      @companies = Company.all(:conditions => ["lower(name) like ?", @value_sql])
+      area_competence
+
+    elsif @search_type == 'centro-pesquisa'
+      @research_center = ResearchCenter.all(:conditions => ["lower(name) like ?", @value_sql])
+
+    elsif @search_type == 'area-pesquisa'
+
+      @research_centers = ResearchCenter.all
+
+      @areas = ResearchArea.all(:conditions => ["lower(name) like ?", @value_sql])
+
+    elsif @search_type == 'eixo-pesquisa'
+
+      @research_centers = ResearchCenter.all
+
+      @fields = ResearchField.all(:conditions => ["lower(name) like ?", @value_sql])
+
+    elsif @search_type == 'project'
+
+      @research_centers = ResearchCenter.all
+
+      @project = ResearchCenter.all(:conditions => ["lower(project) like ?", @value_sql])
+
+    end
+
+  end
+
 
 
 end
