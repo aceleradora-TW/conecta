@@ -1,153 +1,122 @@
-
-
 <section class="SectionHome">
-
   <section class="SectionCardsHome">
+
     <div class="Card">
       <div class="CompanyName"><h1>Ver empresas do TecnoPUC</h1></div>
-      <br>
       <a href="/results">
         <button class="Button" type="button" name="button">Listar</button>
       </a>
     </div>
+
     <div class="Card">
-    <div class="CompanyName"><h1>Ver estruturas de pesquisa do TecnoPUC</h1></div>
-    <br>
-    <a href="/research_centers">
-      <button class="Button" type="button" name="button">Listar</button>
-    </a>
-  </div>
-</section>
+      <div class="CompanyName"><h1>Ver estruturas de pesquisa do TecnoPUC</h1></div>
+      <a href="/research_centers">
+        <button class="Button" type="button" name="button">Listar</button>
+      </a>
+    </div>
+  </section>
 
-<section class="SectionSearch">
-  <div class="ContentSearch">
-    <div class="CompanyName"><h1>Encontre parcerias agora</h1></div>
+  <section class="SectionSearch">
+    <div class="ContentSearch">
+      <div class="CompanyName"><h1>Encontre parcerias agora</h1></div>
+      <form class="form-search" action="/search_all" name="search">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button class="btn-filter" type="button" name="button">
+              <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            </button>
+            <div class="dropdown-menu">
+              <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
+              <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
+              <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
+              <hr>
+              <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
+              <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
+              <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
+              <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
+            </div>
+          </div>
+          <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
+          <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-    <form class="form-search" action="/search_all" name="search">
+  <section class="About" id="About">
+    <div class="CardContentA">
+      <div class="ContentAbout">
+        <div class="CompanyName"><h1>Sobre</h1></div>
+        <p>A plataforma Conecta faz parte de uma estratégia institucional de Gestão de Inovação na PUCRS, a qual pretende beneficiar o maior número de pessoas, no menor tempo viável, acelerando processos de conexão para a prospecção de recursos humanos e financeiros, em projetos de iniciação científica e tecnológica.</p>
+        <p>A Conecta é fruto do trabalho colaborativo de diferentes atores do ecossistema TECNOPUC, citando-se: Pró-Reitoria de Pesquisa, Inovação e Desenvolvimento (PROPESQ), INOVAPUCRS, Agência de Gestão Tecnológica (AGT), Centro de Empreendedorismo (IDEAR), Centro de Inovação Microsoft, Thoughtworks e Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG).</p>
+      </div>
+    </div>
+  </section>
 
-
-
-      <div class="input-group">
-
-        <div class="input-group-btn">
-          <button class="btn-filter" type="button" name="button">
-            <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-          </button>
-          <div class="dropdown-menu">
-            <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
-            <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
-            <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
-            <hr>
-            <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
-            <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
-            <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
-            <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
+  <section class="Function" id="Function">
+    <div class="ContentFunction">
+      <div class="Title"><h1>Como funciona</h1></div>
+      <div class="CardContentF">
+        <div class="BoxFunctions">
+          <div class="Icon">
+            <i class="material-icons" style="font-size: 3em; color: #0faac3;">insert_drive_file</i>
+          </div>
+          <div class="Text">
+            <p>Você cadastra sua empresa no Conecta</p>
           </div>
         </div>
-
-
-        <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
-        <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-
-
-
-
+        <div class="Arrow">
+          <i class="material-icons">arrow_forward</i>
+        </div>
+        <div class="BoxFunctions">
+          <div class="Icon">
+            <i class="material-icons" style="font-size: 3em; color: #EB6361;">build</i>
+          </div>
+          <div class="Text">
+            <p>Procura recursos ou serviços</p>
+          </div>
+        </div>
+        <div class="Arrow">
+          <i class="material-icons">arrow_forward</i>
+        </div>
+        <div class="BoxFunctions">
+          <div class="Icon">
+            <i class="material-icons" style="font-size: 3em; color: #02af7e;">business</i>
+          </div>
+          <div class="Text">
+            <p>Encontra empresas fornecedoras</p>
+          </div>
+        </div>
+        <div class="Arrow">
+          <i class="material-icons">arrow_forward</i>
+        </div>
+        <div class="BoxFunctions">
+          <div class="Icon">
+            <i class="material-icons" style="font-size: 3em; color: #EB9532;">contact_mail</i>
+          </div>
+          <div class="Text">
+            <p>O conecta contata essa empresa para você</p>
+          </div>
+        </div>
       </div>
-
-
-
-
-      <br><br><br>
-
-
-    </form>
-  </div>
+    </div>
+  </section>
 </section>
-
-
-
-
-
-
-<section class="About" id="About">
-  <div class="CardContentA">
-    <div class="ContentAbout">
-      <div class="CompanyName"><h1>Sobre</h1></div>
-      <p>A plataforma Conecta faz parte de uma estratégia institucional de Gestão de Inovação na PUCRS, a qual pretende beneficiar o maior número de pessoas, no menor tempo viável, acelerando processos de conexão para a prospecção de recursos humanos e financeiros, em projetos de iniciação científica e tecnológica.</p>
-      <p>A Conecta é fruto do trabalho colaborativo de diferentes atores do ecossistema TECNOPUC, citando-se: Pró-Reitoria de Pesquisa, Inovação e Desenvolvimento (PROPESQ), INOVAPUCRS, Agência de Gestão Tecnológica (AGT), Centro de Empreendedorismo (IDEAR), Centro de Inovação Microsoft, Thoughtworks e Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG).</p>
-    </div>
-  </div>
-</section>
-
-<section class="Function" id="Function">
-  <div class="ContentFunction">
-    <div class="Title"><h1>Como funciona</h1></div>
-    <div class="CardContentF">
-      <div class="BoxFunctions">
-        <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #0faac3;">insert_drive_file</i>
-        </div>
-        <div class="Text">
-          <p>Você cadastra sua empresa no Conecta</p>
-        </div>
-      </div>
-      <div class="Arrow">
-      <i class="material-icons">arrow_forward</i>
-    </div>
-      <div class="BoxFunctions">
-        <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #EB6361;">build</i>
-        </div>
-        <div class="Text">
-          <p>Procura recursos ou serviços</p>
-        </div>
-      </div>
-      <div class="Arrow">
-      <i class="material-icons">arrow_forward</i>
-    </div>
-      <div class="BoxFunctions">
-        <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #02af7e;">business</i>
-        </div>
-        <div class="Text">
-          <p>Encontra empresas fornecedoras</p>
-        </div>
-      </div>
-      <div class="Arrow">
-      <i class="material-icons">arrow_forward</i>
-    </div>
-      <div class="BoxFunctions">
-        <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #EB9532;">contact_mail</i>
-        </div>
-        <div class="Text">
-          <p>O conecta contata esssa empresa para você</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</section>
-
-<% if @error != [] %>
-<%= @error %>
-<% end %>
 
 <script>
-  var btnFilter = document.querySelector('.btn-filter');
-  var menu = document.querySelector('.dropdown-menu');
-  var textFilter = document.querySelector('.text-filter');
+var btnFilter = document.querySelector('.btn-filter');
+var menu = document.querySelector('.dropdown-menu');
+var textFilter = document.querySelector('.text-filter');
 
-  btnFilter.onclick = function() {
-    menu.classList.toggle('dropdown-menu-visible');
-    btnFilter.classList.toggle('btn-filter-activated');
+btnFilter.onclick = function() {
+  menu.classList.toggle('dropdown-menu-visible');
+  btnFilter.classList.toggle('btn-filter-activated');
+}
+
+window.onclick = function(event) {
+  if ((!event.target.matches('.btn-filter')) && (!event.target.matches('.dropdown-menu')) && (!event.target.matches('.text-filter')) && (!event.target.matches('.filterLabel'))) {
+    menu.classList.remove('dropdown-menu-visible');
+    btnFilter.classList.remove('btn-filter-activated');
   }
-
-  window.onclick = function(event) {
-      if ((!event.target.matches('.btn-filter')) && (!event.target.matches('.dropdown-menu')) && (!event.target.matches('.text-filter')) && (!event.target.matches('.filterLabel'))) {
-        menu.classList.remove('dropdown-menu-visible');
-        btnFilter.classList.remove('btn-filter-activated');
-      }
-    }
-
+}
 </script>
