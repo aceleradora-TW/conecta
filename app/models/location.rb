@@ -1,4 +1,3 @@
-#Endereço das Instituições
 class Location
   include DataMapper::Resource
   property :id,              Serial

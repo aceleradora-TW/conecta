@@ -1,4 +1,3 @@
-#Instituições (empresas e centros de pesquisa)
 class Institution
   include DataMapper::Resource
   property :id, Serial
