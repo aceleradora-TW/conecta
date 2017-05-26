@@ -1,5 +1,6 @@
 require_relative 'controller.rb'
 require "sinatra/base"
+require_relative "../services/competence_service"
 
 class IndexController < Controller
 
@@ -92,15 +93,15 @@ class IndexController < Controller
 
 
 
-  def return_competence search_type
+  def return_competence value_sql
     @companies = Company.all
     area_competence
     @companies_searched = []
-
-    @competences = Competence.all(:conditions => ["lower(name) like ?", @value_sql])
+    competence_service = CompetenceService.new
+    @competences = competence_service.find_by_name(value_sql)
     if(@competences.length != 0)
-      @competences_id =   @competences.map{|c| c.id}
-      @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ? and (competence_value >= 4)',@competences_id])
+      @company_competence = competence_service.find_related_institutions(@competences)
+      puts @company_competence
       @company_competence.each do |single_cmp_competence|
         local_company = single_cmp_competence.company
         if !@companies_searched.include? local_company
