@@ -51,6 +51,27 @@ class IndexController < Controller
     require_relative "../../config/importCompany.rb"
   end
 
+  def return_found_values value_sql, search_type
+
+    case search_type
+
+    when 'competencia' then
+      return_competence value_sql
+    when 'segmento' then
+      return_segment value_sql
+    when 'empresa' then
+      return_company value_sql
+    when 'centro-pesquisa' then
+      return_research_center value_sql
+    when 'area-pesquisa' then
+      return_research_area value_sql
+    when 'eixo-pesquisa' then
+      return_research_field value_sql
+    when 'project' then
+      return_research_project value_sql
+    end
+
+  end
 
   def area_competence
     @competences_by_company = {}
@@ -90,7 +111,7 @@ class IndexController < Controller
   end
 
   def return_segment search_type
-        @companies = Company.all
+    @companies = Company.all
     area_competence
     @segments_searched = []
 
@@ -108,47 +129,31 @@ class IndexController < Controller
       puts "@@@ Segments Serached #{@segments_searched}"
     end
   end
-  def return_found_values value_sql, search_type
 
-    case search_type
-
-    when 'competencia' then
-      return_competence value_sql
-    when 'segmento' then
-      return_segment value_sql
-
-    end
-
-
-
-    if @search_type == 'empresa'
-      @companies = Company.all(:conditions => ["lower(name) like ?", @value_sql])
-      area_competence
-
-    elsif @search_type == 'centro-pesquisa'
-      @research_center = ResearchCenter.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'area-pesquisa'
-
-      @research_centers = ResearchCenter.all
-
-      @areas = ResearchArea.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'eixo-pesquisa'
-
-      @research_centers = ResearchCenter.all
-
-      @fields = ResearchField.all(:conditions => ["lower(name) like ?", @value_sql])
-
-    elsif @search_type == 'project'
-
-      @research_centers = ResearchCenter.all
-
-      @project = ResearchCenter.all(:conditions => ["lower(project) like ?", @value_sql])
-
-    end
-
+  def return_company value_sql
+    @companies = Company.all(:conditions => ["lower(name) like ?", @value_sql])
+    area_competence
   end
+
+  def return_research_center  value_sql
+    @research_center = ResearchCenter.all(:conditions => ["lower(name) like ?", @value_sql])
+  end
+
+  def return_research_area value_sql
+    @research_centers = ResearchCenter.all
+    @areas = ResearchArea.all(:conditions => ["lower(name) like ?", @value_sql])
+  end
+
+  def return_research_field value_sql
+    @research_centers = ResearchCenter.all
+    @fields = ResearchField.all(:conditions => ["lower(name) like ?", @value_sql])
+  end
+
+  def return_research_project value_sql
+    @research_centers = ResearchCenter.all
+    @project = ResearchCenter.all(:conditions => ["lower(project) like ?", @value_sql])
+  end
+
 
 
 
