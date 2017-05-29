@@ -13,7 +13,7 @@
 
 <div class="CompanyCompetences">
 
-<% @company_competences = @competences_by_company[company]%>
+<% @company_competences = company.grouped_competences%>
 
 <% if @company_competences != nil %>
   <div class=" CompetencesTitle">

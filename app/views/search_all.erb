@@ -1,5 +1,12 @@
 
 <h1>Resultados Buscados</h1>
+
+<h3> <%if @institution.length == 0%>
+  <br>
+  Nenhum resultado encontrado
+<% end %>
+</h3>
+
 <section class="SectionCards">
   <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
   <% @institution.each do |company| %>
@@ -8,7 +15,11 @@
   <div class="Card">
     <div class="CompanyName"><h1><%= company.name %></h1></div>
     <div class="CompanyDescription">
-      Mayra ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Mayra ipsum dolor sit amet, consectetur adipisicing elit.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+       ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+       fugiat nulla pariatur.
     </div>
 
     <div class="CompanyCompetences">

@@ -1,6 +1,6 @@
 require_relative "../services/search_service"
 
-class SearchController
+class RouterService
 
 
   def return_found_values value_sql, search_type

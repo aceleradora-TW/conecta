@@ -1,7 +1,7 @@
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
-require_relative "search_controller"
+require_relative "../services/router_service"
 
 class IndexController < Controller
 
@@ -33,16 +33,15 @@ class IndexController < Controller
 
   get "/results" do
     @companies = Company.all
-    area_competence
     erb :results
   end
 
   get "/search_all" do
-    search_controller = SearchController.new
+    router_service = RouterService.new
     @value = params[:value]
     @search_type = params[:search_type]
-    @value_sql = "%#{@value.downcase}%"
-    @institution = search_controller.return_found_values @value_sql, @search_type
+    @value_sql = "%#{@value.strip.downcase}%"
+    @institution = router_service.return_found_values @value_sql, @search_type
 
     erb :search_all
   end
