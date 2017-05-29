@@ -4,39 +4,41 @@
 
 Conecta project fosters partnerships in an innovation ecosystem.
 
-# Instalation Prerequisites
+# Installation requirements
 
-Before run the project, you need the following programs installed:
+Before running the project, you need to install the the following programs:
 **Docker**
 **docker-compose**
 
-# Instalation
+# Installation
 ```
 $ git clone https://github.com/aceleradora-TW/conecta.git
 $ cd conecta
 ```
 # Build
-Build Application whenever you **add or remove gems** in Gemfile. To build run the command:
+Build the docker application image whenever you **change the Gemfile**. To build it, run the command:
 ```
 $ make build
 ```
-The command **make build** takes a long time so it is recommended to use only if you really need to change the Gemfile.
+_The command **make build** takes a long time so it is recommended to use it only if you really need to change the Gemfile._
 
 # Execution
-To run server locally, run the command:
+To run the server, execute:
 ```
 $ make run
 ```
 
 # Import Data
-To have Companies and Reasearch Center data to show in the project you need to import these data from csv files.
-You can find this files in Aceleradora Google Drive.
-This files should be located in:
+To have Companies and Research Centers available in the project you need to import their data from CSV files.
+
+You can find such files in Aceleradora's Google Drive.
+
+The CSV files should be located in:
 ```
   csv/files/company.csv
   csv/files/research_center.csv
 ```
-With this files in the right folder, you can run the import command (It is faster now, with postgres =D )
+With the files in the right folder, you can run the import command (It is faster now, with postgres =D )
 ```
 $ make import
 ```
@@ -46,7 +48,7 @@ Open browser in:
 $ localhost:9393
 ```
 # Test
-To run all tests with capibara and rspec, run the command
+To run all the tests with Capybara and Rspec, run the command:
 ```
 $ make test
 ```
