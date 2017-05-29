@@ -1,95 +1,8 @@
 
 <h1>Resultados Buscados</h1>
 <section class="SectionCards">
-  <%if @search_type == 'competencia' %>
-  <% @companies_searched.each do |companies_searched|%>
-  <!-- inicio card -->
-  <div class="Card">
-    <div class="CompanyName"><h1><%= companies_searched.name %></h1></div>
-    <div class="CompanyDescription">
-      Mayra ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </div>
-    <% @company_competences = @competences_by_company[companies_searched]%>
-    <div class="CompanyCompetences">
-      <% if @companies_searched != nil %>
-      <div class=" CompetencesTitle">
-        <h3>Competências</h3>
-      </div>
-      <ul class="CompetenceList">
-
-        <% @company_competences.each_key do |competence_area| %>
-        <li class="Itens"><%= competence_area %></li>
-
-        <ul class="Subitens">
-          <% @company_competences[competence_area].each do |comp| %>
-          <li><%= comp %></li>
-          <% end %>
-        </ul>
-
-        <% end %>
-
-      </ul>
-
-      <% end %>
-    </div>
-
-
-  </div>
-  <!--  fim card -->
-
-
-  <%end%>
-
-
-
-  <% elsif @search_type == 'segmento' %>
-
-
-  <% @segments_searched.each do |s| %>
-
-  <!-- inicio card -->
-  <div class="Card">
-    <div class="CompanyName"><h1><%= s.name %></h1></div>
-    <div class="CompanyDescription">
-      Mayra ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </div>
-
-
-    <% @segment_competences = @competences_by_company[s]%>
-
-    <div class="CompanyCompetences">
-      <% if @segments_searched != nil && @segment_competences != nil %>
-      <div class=" CompetencesTitle">
-        <h3>Competências</h3>
-      </div>
-      <ul class="CompetenceList">
-
-        <% @segment_competences.each_key do |competence_area| %>
-        <li class="Itens"><%= competence_area %></li>
-
-        <ul class="Subitens">
-          <% @segment_competences[competence_area].each do |comp| %>
-          <li><%= comp %></li>
-          <% end %>
-        </ul>
-
-        <% end %>
-
-      </ul>
-
-      <% end %>
-    </div>
-
-
-  </div>
-  <!--  fim card -->
-  <% end %>
-
-
-
-
-  <% elsif @search_type == 'empresa'%>
-  <% @companies.each do |company| %>
+  <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
+  <% @institution.each do |company| %>
 
   <!-- inicio card -->
   <div class="Card">
@@ -99,7 +12,7 @@
     </div>
 
     <div class="CompanyCompetences">
-      <% @company_competences = @competences_by_company[company]%>
+      <% @company_competences = company.grouped_competences %>
 
       <% if @company_competences != nil %>
       <div class=" CompetencesTitle">
@@ -122,16 +35,14 @@
 
       <% end %>
     </div>
-
-
   </div>
   <!--  fim card -->
 
   <% end %>
+  <!--  ***************************************** ESTRUTURA DE PESQUISAS *********************** -->
 
-
-  <% elsif @search_type == 'centro-pesquisa'%>
-  <% @research_center.each do |rc_searched| %>
+  <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
+  <% @institution.each do |rc_searched| %>
 
   <!-- INICIO CARD -->
 
@@ -186,208 +97,9 @@
     </div>
   </div>
     <% end %>
-
-
 
 
   <!-- FIM CARD -->
-
-
-  <% elsif @search_type == 'area-pesquisa'%>
-  <% @areas.each do |area_searched| %>
-  <% area_searched.research_centers.each do |research_centers_areas| %>
-
-  <!-- INICIO CARD -->
-
-  <div class="CardCenter">
-    <div class="CenterName">
-      <h1><%= research_centers_areas.name %></h1>
-    </div>
-    <div class="CompanyDescription">
-      <h4> <%= research_centers_areas.project %> </h4>
-
-      <%= research_centers_areas.description %>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Area de Pesquisa:</b>
-
-        <%= area_searched.name %>
-
-      </div>
-      <div class="ItemTheme">
-        <b>Eixo tematico:</b>
-
-        <% research_centers_areas.research_fields.each do |research_centers_field| %>
-        <%= research_centers_field.name %>
-        <% end %>
-
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ContactTitle">
-        <h3>Contato</h3>
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Nome de Contato: </b>  <%= research_centers_areas.contact.contact_name %> <br>
-      </div>
-      <div class="ItemTheme">
-        <% @email = research_centers_areas.contact.email %>
-        <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%= @email %></a>
-
-      </div>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Telefone de Contato: </b>  <%= research_centers_areas.contact.phone %>
-      </div>
-      <div class="ItemTheme">
-        <% @site_url = research_centers_areas.contact.site %>
-        <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
-      </div>
-    </div>
-
-
-  </div>
-
-  <% end %>
-  <% end %>
-
-  <% elsif @search_type == 'eixo-pesquisa'%>
-
-  <% @fields.each do |field_searched| %>
-  <% field_searched.research_centers.each do |research_centers_fields| %>
-
-  <!-- INICIO CARD -->
-
-  <div class="CardCenter">
-
-    <div class="CenterName">
-      <h1><%= research_centers_fields.name %></h1>
-    </div>
-    <div class="CompanyDescription">
-      <h4> <%= research_centers_fields.project %> </h4>
-
-      <%= research_centers_fields.description %>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Area de Pesquisa:</b>
-
-        <% research_centers_fields.research_areas.each do |research_centers_area| %>
-
-        <%= research_centers_area.name %>
-
-        <% end %>
-      </div>
-      <div class="ItemTheme">
-        <b>Eixo tematico:</b>
-
-        <% research_centers_fields.research_fields.each do |research_centers_field| %>
-        <%= research_centers_field.name %>
-        <% end %>
-
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ContactTitle">
-        <h3>Contato</h3>
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Nome de Contato: </b>  <%= research_centers_fields.contact.contact_name %> <br>
-      </div>
-      <div class="ItemTheme">
-        <% @email = research_centers_fields.contact.email %>
-        <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%= @email %></a>
-
-      </div>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Telefone de Contato: </b>  <%= research_centers_fields.contact.phone %>
-      </div>
-      <div class="ItemTheme">
-        <% @site_url = research_centers_fields.contact.site %>
-        <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
-      </div>
-    </div>
-
-
-  </div>
-
-
-  <% end %>
-  <% end %>
-
-  <% elsif @search_type == 'project'%>
-  <% @project.each do |rc_searched| %>
-
-  <!-- INICIO CARD -->
-
-  <div class="CardCenter">
-
-    <div class="CenterName">
-      <h1><%= rc_searched.name %></h1>
-    </div>
-    <div class="CompanyDescription">
-      <h4> <%= rc_searched.project%> </h4>
-
-      <%= rc_searched.description%>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Area de Pesquisa:</b>
-        <% rc_searched.research_areas.each do |a| %>
-        <%= a.name %>
-        <% end %>
-      </div>
-      <div class="ItemTheme">
-        <b>Eixo tematico:</b>
-        <% rc_searched.research_fields.each do |f| %>
-        <%= f.name %>
-        <% end %>
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ContactTitle">
-        <h3>Contato</h3>
-      </div>
-    </div>
-
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Nome de Contato: </b>  <%= rc_searched.contact.contact_name %> <br>
-      </div>
-      <div class="ItemTheme">
-        <%@email = rc_searched.contact.email%>
-        <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%= @email %></a>
-
-      </div>
-    </div>
-    <div class="CenterTheme">
-      <div class="ItemTheme">
-        <b>Telefone de Contato: </b>  <%= rc_searched.contact.phone %>
-      </div>
-      <div class="ItemTheme">
-        <%@site_url = rc_searched.contact.site%>
-        <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> <%=@site_url %></a>
-      </div>
-    </div>
-  </div>
-    <% end %>
-
-
-
-
 
 
 </section>
