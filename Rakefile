@@ -2,6 +2,9 @@ require ::File.expand_path('../config/environment', __FILE__)
 
 desc 'Start Development Server Locally'
 task "s" do
+  fork do
+    exec "compass watch"
+  end
   exec "rerun --background 'rackup config.ru --port 9393 --host 0.0.0.0'"
 end
 task "i" do

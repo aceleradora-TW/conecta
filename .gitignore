@@ -5,3 +5,4 @@ vendor/*
 .sass-cache
 coverage
 data/*
+.sass-cache/
