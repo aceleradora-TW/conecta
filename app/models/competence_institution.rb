@@ -7,9 +7,6 @@ class CompetenceInstitution
   belongs_to :company,  :key => true
 
   def competence_value_calculated
-    if competence_value > 0
-      return (competence_value - 1).to_s + "/5"
-    end
-    return 0
+    competence_value > 1 ? (competence_value - 1).to_s + "/5" : "0/5"
   end
 end
