@@ -168,8 +168,6 @@ body {
 }
 
 .ContentSearch{
-  background: #fff;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   min-height: 35vh;
   margin-bottom: 2%;
   width: 98%;

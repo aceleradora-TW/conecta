@@ -6,22 +6,11 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
 }
 
-.CardContentA {
-  background: #fff;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 35vh;
-  margin-bottom: 2%;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: lighter;
-  text-align: justify;
-}
 
 .CardContentA p {
   font-size: 1.2em;

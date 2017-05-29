@@ -14,3 +14,80 @@
   text-align: center;
   letter-spacing: .5px;
 }
+
+/* line 16, ../sass/Button.scss */
+.ButtonTag {
+  width: 40%;
+  height: 25px;
+  background-color: #3D8EB9;
+  margin: 15px;
+  float: right;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 29, ../sass/Button.scss */
+.ButtonTag a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 34, ../sass/Button.scss */
+.ButtonSearch {
+  width: 18.6%;
+  height: 90%;
+  background-color: #3D8EB9;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  border-radius: 2px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 47, ../sass/Button.scss */
+.Button:hover {
+  box-shadow: 1px 1px 1px 1px #6BB9F0;
+  cursor: pointer;
+}
+
+/* line 51, ../sass/Button.scss */
+.Button a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 58, ../sass/Button.scss */
+.Check {
+  display: none;
+  width: 13px;
+  height: 13px;
+  border: 1px solid blue;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+/* line 66, ../sass/Button.scss */
+.div {
+  width: 10px;
+  height: 10px;
+  border: 1px solid blue;
+  background-color: transparent;
+  border-radius: 0px;
+  margin-right: 5px;
+  background-color: blue;
+}
+
+/* line 77, ../sass/Button.scss */
+.Check:hover {
+  width: 15px;
+  height: 15px;
+}
