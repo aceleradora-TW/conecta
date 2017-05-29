@@ -1,24 +1,33 @@
-require 'sinatra'
-require_relative '../config/environment.rb'
-require_relative '../config/database.rb'
-require_relative 'csv_parser.rb'
-require_relative 'models/csv_lambdas.rb'
+require_relative 'csv_mappers.rb'
 
-DataMapper.auto_migrate!
+module CsvImport
 
-puts "Importing Companies..."
-company_csv_content = File.read(Dir.pwd + '/csv/files/company.csv')
-company_parser = CsvParser.new
-company_list = company_parser.parse(company_csv_content,CsvLambdas.company)
-puts "Saving Companies"
-company_list.each_with_index {|company, index| company.insert_to_db; puts "#{index + 1}/#{company_list.length}" }
+  def self.run
 
-puts "\n\n"
-puts "Importing Research Centsers..."
-research_center_csv_content = File.read(Dir.pwd + '/csv/files/research_center.csv')
-research_center_parser = CsvParser.new(:col_sep => '*')
-research_list = research_center_parser.parse(research_center_csv_content, CsvLambdas.research_center)
-puts "Saving Research Centers"
-research_list.each_with_index {|research_center, index| research_center.insert_to_db; puts "#{index + 1}/#{research_list.length}"  }
+    puts "Importing Companies..."
 
-Process.kill('TERM', Process.pid)
+    companies = CsvMappers.parse_company()
+
+    puts "Saving Companies"
+
+    companies.each_with_index do |company, index|
+      company.insert_to_db
+      puts "#{index + 1}/#{companies.length}"
+    end
+
+    puts "\n\n"
+
+    puts "Importing Research Centers..."
+
+    research_centers = CsvMappers.parse_research_center()
+
+    puts "Saving Companies"
+
+    research_centers.each_with_index do |center, index|
+      center.insert_to_db
+      puts "#{index + 1}/#{research_centers.length}"
+    end
+
+  end
+
+end
