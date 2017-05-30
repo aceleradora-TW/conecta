@@ -25,9 +25,9 @@
   <%   @company_competences.each_key do |competence_area| %>
     <li class="Items"><%= competence_area %></li>
     <ul class="Subitems">
-      <%  @company_competences[competence_area].each do |comp| %>
+      <%  @company_competences[competence_area].each do |competence| %>
 
-      <li><%= comp %></li>
+      <li><%= competence %></li>
       <% end %>
     </ul>
 

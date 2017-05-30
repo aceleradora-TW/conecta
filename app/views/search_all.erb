@@ -35,8 +35,8 @@
         <%   @company_competences.each_key do |competence_area| %>
         <li class="Items"><%= competence_area %></li>
         <ul class="Subitems">
-          <%  @company_competences[competence_area].each do |comp| %>
-          <li><%= comp %></li>
+          <%  @company_competences[competence_area].each do |competence| %>
+          <li><%= competence %></li>
           <% end %>
         </ul>
 
@@ -50,7 +50,6 @@
   <!--  fim card -->
 
   <% end %>
-  <!--  ***************************************** ESTRUTURA DE PESQUISAS *********************** -->
 
   <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
   <% @institution.each do |rc_searched| %>

@@ -33,7 +33,7 @@ class RouterService
         end
       end
     end
-    return @companies_searched
+    @companies_searched
   end
 
   def return_segment value_sql, search_service

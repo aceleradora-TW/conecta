@@ -9,13 +9,13 @@ class Company < Institution
 
   def grouped_competences
     filtered_competences = {}
-    competence_institutions.each do |comp_all|
-      if filtered_competences.key?(comp_all.competence.competence_area.name)
-        competence_area_array = filtered_competences[comp_all.competence.competence_area.name]
-        competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | ")
+    competence_institutions.each do |competence_all|
+      if filtered_competences.key?(competence_all.competence.competence_area.name)
+        competence_area_array = filtered_competences[competence_all.competence.competence_area.name]
+        competence_area_array.push(competence_all.competence.name + " | " + competence_all.competence_value.to_s + " | ")
       else
-        competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | "]
-        filtered_competences[comp_all.competence.competence_area.name] = competence_area_array
+        competence_area_array = [competence_all.competence.name + " | " + competence_all.competence_value.to_s + " | "]
+        filtered_competences[competence_all.competence.competence_area.name] = competence_area_array
       end
     end
     return filtered_competences

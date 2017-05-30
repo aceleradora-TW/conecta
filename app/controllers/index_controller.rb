@@ -5,6 +5,11 @@ require_relative "../services/router_service"
 
 class IndexController < Controller
 
+  def initialize
+    super
+    @router_service = RouterService.new
+  end
+
   get "/" do
     @error = []
     erb :index
@@ -37,21 +42,16 @@ class IndexController < Controller
   end
 
   get "/search_all" do
-    router_service = RouterService.new
     @value = params[:value]
     @search_type = params[:search_type]
-    @value_sql = "%#{@value.strip.downcase}%"
-    @institution = router_service.return_found_values @value_sql, @search_type
+    value_sql = "%#{@value.strip.downcase}%"
+    @institution = @router_service.return_found_values value_sql, @search_type
 
     erb :search_all
   end
 
   get "/components" do
     erb :components
-  end
-
-  get "/import-companies" do
-    require_relative "../../config/importCompany.rb"
   end
 
 
