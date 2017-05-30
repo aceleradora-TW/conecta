@@ -23,8 +23,8 @@
   <ul class="CompetenceList">
 
   <%   @company_competences.each_key do |competence_area| %>
-    <li class="Itens"><%= competence_area %></li>
-    <ul class="Subitens">
+    <li class="Items"><%= competence_area %></li>
+    <ul class="Subitems">
       <%  @company_competences[competence_area].each do |comp| %>
 
       <li><%= comp %></li>
@@ -51,23 +51,4 @@
 <% if @error != [] %>
 <%= @error %>
 
-
 <% end %><br>
-
-
-<script>
-let itens = document.getElementsByClassName('Itens');
-let subitens = document.getElementsByClassName('Subitens');
-for(let i = 0; i < itens.length; i++) {
-  itens[i].addEventListener("click", function(){
-    if(subitens[i].style.display == 'block') {
-      subitens[i].style.display = 'none';
-      itens[i].style.color = 'black';
-    }
-    else{
-      subitens[i].style.display = 'block';
-      itens[i].style.color = 'rgba(52, 73, 94,0.8)';
-    }
-  });
-}
-</script>
