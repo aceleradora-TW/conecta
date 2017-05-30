@@ -26,7 +26,7 @@
 	justify-content: flex-end;
 	flex-direction: row;
 	list-style: none;
-	align-items: center;
+	margin: 0;
 	padding-right: 10%;
 	list-style: none;
 	align-items: center;
@@ -45,8 +45,8 @@
 }
 .Link:hover{
 	background-color: rgba(0,0,0,0.7);
-  text-decoration: none;
-  color: #34495e;
+	text-decoration: none;
+	color: #34495e;
 	font-size: 1.2em;
 }
 .Link:hover a{
@@ -57,7 +57,7 @@
 
 .NavLinks a{
 	text-decoration: none;
-  font-size: 1.2em;
+	font-size: 1.2em;
 	color: white;
 }
 .NavLinks a:hover{

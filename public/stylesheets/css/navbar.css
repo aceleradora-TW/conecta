@@ -29,7 +29,7 @@
   justify-content: flex-end;
   flex-direction: row;
   list-style: none;
-  align-items: center;
+  margin: 0;
   padding-right: 10%;
   list-style: none;
   align-items: center;
