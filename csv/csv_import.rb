@@ -21,7 +21,7 @@ module CsvImport
 
     research_centers = CsvMappers.parse_research_center()
 
-    puts "Saving Companies"
+    puts "Saving Research Centers"
 
     research_centers.each_with_index do |center, index|
       center.insert_to_db
