@@ -80,9 +80,9 @@ class IndexController < Controller
       company.competence_institutions.each do |comp_all|
         if filtered_competences.key?(comp_all.competence.competence_area.name)
           competence_area_array = filtered_competences[comp_all.competence.competence_area.name]
-          competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | ")
+          competence_area_array.push(comp_all.competence.name + " | " + comp_all.competence_value_calculated.to_s + " | ")
         else
-          competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value.to_s + " | "]
+          competence_area_array = [comp_all.competence.name + " | " + comp_all.competence_value_calculated.to_s + " | "]
           filtered_competences[comp_all.competence.competence_area.name] = competence_area_array
         end
         @competences_by_company[company] = filtered_competences
