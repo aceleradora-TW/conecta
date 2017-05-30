@@ -1,15 +1,17 @@
-/* line 1, ../sass/Function.scss */
-.Function {
+.Function{
+
   width: 100%;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
-/* line 13, ../sass/Function.scss */
+
 .ContentFunction {
+
   height: 35vh;
   width: 98%;
   display: flex;
@@ -18,7 +20,6 @@
   font-weight: lighter;
 }
 
-/* line 23, ../sass/Function.scss */
 .Title {
   width: 100%;
   height: 25%;
@@ -26,9 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-/* line 33, ../sass/Function.scss */
 .CardContentF {
   height: 75%;
   width: 98%;
@@ -37,7 +38,6 @@
   align-items: flex-start;
 }
 
-/* line 41, ../sass/Function.scss */
 .BoxFunctions {
   height: 100%;
   width: 20%;
@@ -47,29 +47,26 @@
   flex-direction: column;
 }
 
-/* line 50, ../sass/Function.scss */
-.Arrow {
+.Arrow{
   height: 50%;
   width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgba(255, 255, 255, 1);
 }
-
-/* line 58, ../sass/Function.scss */
 .Icon {
   height: 50%;
-  width: 40%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  border-radius: 100%;
-  align-items: center;
+width: 40%;
+color: white;
+display: flex;
+justify-content: center;
+background-color: white;
+border-radius: 100%;
+align-items: center;
 }
 
-/* line 70, ../sass/Function.scss */
+
 .Text {
   height: 55%;
   font-size: 1.2em;

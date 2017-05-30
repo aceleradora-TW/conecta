@@ -1,14 +1,14 @@
 .About{
   padding: 0;
   width: 100%;
-  min-height: 50vh;
+  min-height: 105vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
   font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    text-align: justify;
+  font-weight: lighter;
+  text-align: justify;
 }
 
 
@@ -18,5 +18,10 @@
 }
 
 .ContentAbout {
-  padding: 4%;
+  height: 105vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -32,11 +32,12 @@
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+  padding-right: 20%;
 }
 
 /* line 32, ../sass/box.scss */
 .BoxText {
-  height: 23%;
+  height: 60%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
 /* line 40, ../sass/box.scss */
 .BoxSearch {
   width: 100%;
-  height: 65%;
+  height: 60%;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -119,7 +120,7 @@
 /* line 100, ../sass/box.scss */
 .TitleSearch {
   width: 60%;
-  height: 10%;
+  height: 20%;
   font-family: 'Lato', sans-serif;
   color: white;
   display: flex;
