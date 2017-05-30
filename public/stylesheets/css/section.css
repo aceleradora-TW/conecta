@@ -1,0 +1,45 @@
+/* line 1, ../sass/section.scss */
+.Section {
+  display: flex;
+  flex-direction: column;
+  width: 100;
+  min-height: 110vh;
+  /*background-image: url("https://static1.squarespace.com/static/55555e9be4b0cc5c1ed72f84/t/556f8657e4b0ad976216e5e7/1433372247762/business-banner.jpg?format=1500w");*/
+  background-image: url("http://www.speckygeek.com/uploads/cache/2017/03/Business-Web-Design-Office-800x400.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 12, ../sass/section.scss */
+.SectionOpacity {
+  width: 100%;
+  height: 95vh;
+  background-color: rgba(0, 0, 0, 0.47);
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 20, ../sass/section.scss */
+.Function {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 32, ../sass/section.scss */
+.About {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  color: #ffffff;
+  background-color: rgba(44, 127, 171, 0.93);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
