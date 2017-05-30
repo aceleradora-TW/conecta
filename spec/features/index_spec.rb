@@ -10,11 +10,6 @@ RSpec.describe IndexController do
         visit "/"
         expect(page).to have_content 'Conecta'
       end
-
-      it "Deve exibir o botão de buscar" do
-        visit "/"
-        expect(page).to have_css("button", class: 'btn-search')
-      end
       it "Deve exibir o botão do filtro de busca" do
         visit "/"
         expect(page).to have_css("button", class: 'btn-filter')
