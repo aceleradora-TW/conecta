@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-/* line 49, ../sass/box.scss */
+/* line 48, ../sass/box.scss */
 .NavSearch {
   width: 60%;
   height: 57%;
@@ -64,7 +64,7 @@
   justify-content: space-between;
 }
 
-/* line 56, ../sass/box.scss */
+/* line 55, ../sass/box.scss */
 .Tag {
   width: 24.5%;
   height: 100%;
@@ -74,7 +74,7 @@
   justify-content: center;
 }
 
-/* line 64, ../sass/box.scss */
+/* line 63, ../sass/box.scss */
 .TagTitle {
   width: 100%;
   height: 25%;
@@ -86,7 +86,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-/* line 75, ../sass/box.scss */
+/* line 74, ../sass/box.scss */
 .TagContent {
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
   background-color: white;
 }
 
-/* line 87, ../sass/box.scss */
+/* line 86, ../sass/box.scss */
 .Box {
   width: 60%;
   height: 10%;
@@ -111,12 +111,12 @@
   margin: 15px;
 }
 
-/* line 97, ../sass/box.scss */
+/* line 96, ../sass/box.scss */
 .Tag:hover .TagContent {
   visibility: visible;
 }
 
-/* line 100, ../sass/box.scss */
+/* line 99, ../sass/box.scss */
 .TitleSearch {
   width: 60%;
   height: 10%;
@@ -128,7 +128,7 @@
   text-shadow: 1px 1px #000;
 }
 
-/* line 111, ../sass/box.scss */
+/* line 110, ../sass/box.scss */
 .BoxTextTitle {
   height: 100%;
   width: 85%;
@@ -137,7 +137,7 @@
   align-items: center;
 }
 
-/* line 118, ../sass/box.scss */
+/* line 117, ../sass/box.scss */
 .BoxDown {
   height: 100%;
   width: 15%;
@@ -146,7 +146,7 @@
   align-items: center;
 }
 
-/* line 125, ../sass/box.scss */
+/* line 124, ../sass/box.scss */
 .BoxInput {
   height: 100%;
   width: 100%;
@@ -157,7 +157,7 @@
   justify-content: space-around;
 }
 
-/* line 134, ../sass/box.scss */
+/* line 133, ../sass/box.scss */
 .Input {
   height: 89%;
   width: 80%;
@@ -170,7 +170,7 @@
   font-size: 1.2em;
 }
 
-/* line 145, ../sass/box.scss */
+/* line 144, ../sass/box.scss */
 .FunctionTitle {
   width: 100%;
   height: 30%;
@@ -184,7 +184,7 @@
   text-shadow: 1px 1px #000;
 }
 
-/* line 158, ../sass/box.scss */
+/* line 157, ../sass/box.scss */
 .FunctionContent {
   width: 95%;
   height: 70%;
@@ -193,7 +193,7 @@
   align-items: flex-start;
 }
 
-/* line 165, ../sass/box.scss */
+/* line 164, ../sass/box.scss */
 .BoxFunction {
   height: 50%;
   width: 20%;
@@ -203,7 +203,7 @@
   flex-direction: column;
 }
 
-/* line 174, ../sass/box.scss */
+/* line 173, ../sass/box.scss */
 .BoxIcon {
   height: 50%;
   width: 40%;
@@ -215,7 +215,7 @@
   align-items: center;
 }
 
-/* line 185, ../sass/box.scss */
+/* line 184, ../sass/box.scss */
 .BoxText {
   height: 50%;
   width: 100%;
@@ -229,7 +229,7 @@
   color: white;
 }
 
-/* line 198, ../sass/box.scss */
+/* line 197, ../sass/box.scss */
 .AboutTitle {
   width: 100%;
   height: 20%;
@@ -242,7 +242,7 @@
   text-shadow: 1px 1px #000;
 }
 
-/* line 210, ../sass/box.scss */
+/* line 209, ../sass/box.scss */
 .AboutText {
   width: 60%;
   height: 80%;
@@ -256,7 +256,7 @@
   color: black;
 }
 
-/* line 222, ../sass/box.scss */
+/* line 221, ../sass/box.scss */
 .CheckBox {
   width: 80%;
   height: 12%;
