@@ -128,3 +128,8 @@
 .u-font-withe {
   color: white;
 }
+
+/* line 88, ../sass/utilities.scss */
+.u-center {
+  text-align: center;
+}

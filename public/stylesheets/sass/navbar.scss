@@ -36,29 +36,31 @@
 }
 .Link{
 	width: 24%;
-	height: 60%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: white;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+  color: white;
 }
 .Link:hover{
 	background-color: rgba(0,0,0,0.7);
 	text-decoration: none;
 	color: #34495e;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 .Link:hover a{
 	background-color: rgba(0,0,0,0.7);
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .NavLinks a{
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: white;
+	text-align: center;
 }
 .NavLinks a:hover{
 	text-decoration: none;
