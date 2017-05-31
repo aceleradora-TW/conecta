@@ -15,32 +15,6 @@ class IndexController < Controller
     erb :index
   end
 
-  get "/index_search" do
-    @error = []
-    erb :index_search
-  end
-
-  get "/segments" do
-    @segments = Segment.all
-    erb :segments
-  end
-
-  get "/competences" do
-    @competences = Competence.all
-    erb :competences
-  end
-
-  get "/research_centers" do
-
-    @research_centers = ResearchCenter.all
-    erb :results_centers
-  end
-
-  get "/results" do
-    @companies = Company.all
-    erb :results
-  end
-
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
@@ -49,10 +23,5 @@ class IndexController < Controller
 
     erb :search_all
   end
-
-  get "/components" do
-    erb :components
-  end
-
 
 end
