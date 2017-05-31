@@ -67,3 +67,8 @@
   align-items: flex-start;
   justify-content: space-around;
 }
+
+.SectionPrimary {
+  width: 100vw;
+  height: 100vh;
+}
