@@ -4,8 +4,7 @@ build:
 
 run:build
 	@echo "Starting Server"
-	docker-compose up -d
-	docker-compose logs --follow web
+	docker-compose up
 
 bash:
 	@echo "Starting Application Bash"
