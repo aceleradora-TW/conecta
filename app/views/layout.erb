@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title>Conecta</title>
   <link rel="stylesheet" href="/stylesheets/css/card.css">
-  <link href="/stylesheets/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/css/teste.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <!-- <link href="/stylesheets/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="/stylesheets/css/teste.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
   <link href="/stylesheets/css/Button.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/css/Section.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/css/section.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/css/card.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/css/About.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/css/Function.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -21,9 +21,13 @@
   <script src="https://use.fontawesome.com/3f86ba9d74.js"></script>
 </head>
 <body>
-  <section class="Section">
-    <%= erb :header %>
+<section class="Section">
+  <%= erb :header %>
   <%= yield %>
+
 </section>
+
+<script type="text/javascript" src="/js/expand_cards.js"></script>
+<script type="text/javascript" src="/js/search_filter.js"></script>
 </body>
 </html>

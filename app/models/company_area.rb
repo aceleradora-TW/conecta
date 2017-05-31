@@ -1,4 +1,3 @@
-#Area das Empresas
 class CompanyArea
   include DataMapper::Resource
   property :id,    Serial

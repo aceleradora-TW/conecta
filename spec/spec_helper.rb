@@ -12,7 +12,6 @@ SimpleCov.start
 require 'capybara/rspec'
 require 'capybara/dsl'
 
-require './app/controllers/config_views'
 require './app/controllers/index_controller'
 
 module RSpecMixin

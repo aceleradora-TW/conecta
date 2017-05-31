@@ -36,7 +36,7 @@ body {
 }
 
 /* line 39, ../sass/card.scss */
-.Subitens {
+.Subitems {
   width: 85%;
   margin-top: 2%;
   display: none;
@@ -50,7 +50,7 @@ body {
 }
 
 /* line 52, ../sass/card.scss */
-.Itens {
+.Items {
   width: 40%;
   display: flex;
   width: 50%;
