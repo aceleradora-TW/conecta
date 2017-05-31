@@ -1,40 +1,69 @@
-.Section{
-	display: flex;
-	flex-direction: column;
-	width: 100;
-	min-height: 85vh;
-	/*background-image: url("https://static1.squarespace.com/static/55555e9be4b0cc5c1ed72f84/t/556f8657e4b0ad976216e5e7/1433372247762/business-banner.jpg?format=1500w");*/
-	background-image: url("http://www.speckygeek.com/uploads/cache/2017/03/Business-Web-Design-Office-800x400.jpg");
-	background-size: cover;
-	background-attachment: fixed;
+/* line 1, ../sass/Section.scss */
+.Section {
+  display: flex;
+  flex-direction: column;
+  width: 100;
+  min-height: 85vh;
+  background-image: url("http://www.speckygeek.com/uploads/cache/2017/03/Business-Web-Design-Office-800x400.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+/* line 11, ../sass/Section.scss */
+.SectionOpacity {
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.47);
+  display: flex;
+  flex-direction: column;
 }
-.SectionOpacity{
-	width: 100%;
-	height: 85vh;
-	background-color: rgba(0,0,0,0.47);
-	display: flex;
-	flex-direction: column;
-}
-.Function{
-	display: flex;
-	width: 100%;
-	height: 85vh;
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5),rgba(0,0,0,0.7), rgba(0,0,0,0.8),rgba(0,0,0,0.9) );
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 
+/* line 19, ../sass/Section.scss */
+.Function {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
-.About{
-	display: flex;
-	width: 100%;
-	height: 80vh;
-	color: #ffffff;
-	background-color: rgba(44, 127, 171, 0.93);
-	background-size: cover;
-	flex-direction: column;
-	justify-content: center;
+
+/* line 29, ../sass/Section.scss */
+.About {
+  padding: 0;
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+  background-color: rgba(44, 127, 171, 0.93);
+  color: white;
+}
+
+/* line 43, ../sass/Section.scss */
+.SectionCards {
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* line 53, ../sass/Section.scss */
+.SectionSearch {
+  padding: 0;
+  width: 100%;
+  min-height: 39vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
 }
