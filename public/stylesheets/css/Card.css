@@ -1,4 +1,4 @@
-/* line 2, ../sass/card.scss */
+/* line 2, ../sass/Card.scss */
 .Card {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -13,7 +13,7 @@
   font-weight: lighter;
 }
 
-/* line 16, ../sass/card.scss */
+/* line 16, ../sass/Card.scss */
 .CardCenter {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -28,8 +28,8 @@
   font-weight: lighter;
 }
 
-/* line 30, ../sass/card.scss */
-.Subitens {
+/* line 30, ../sass/Card.scss */
+.Subitems {
   width: 85%;
   margin-top: 2%;
   display: none;
@@ -42,8 +42,8 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 43, ../sass/card.scss */
-.Itens {
+/* line 43, ../sass/Card.scss */
+.Items {
   width: 40%;
   display: flex;
   width: 50%;
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-/* line 54, ../sass/card.scss */
+/* line 54, ../sass/Card.scss */
 .CompetenceList {
   display: flex;
   width: 100%;
@@ -66,7 +66,7 @@
   justify-content: space-between;
 }
 
-/* line 65, ../sass/card.scss */
+/* line 65, ../sass/Card.scss */
 .CompetencesTitle {
   width: 100%;
   height: 5%;
@@ -75,7 +75,7 @@
   justify-content: center;
 }
 
-/* line 73, ../sass/card.scss */
+/* line 73, ../sass/Card.scss */
 .ContactTitle {
   width: 100%;
   height: 5%;
@@ -84,14 +84,14 @@
   justify-content: center;
 }
 
-/* line 81, ../sass/card.scss */
+/* line 81, ../sass/Card.scss */
 .CompanyName {
   width: 100%;
   height: 10%;
   text-align: center;
 }
 
-/* line 86, ../sass/card.scss */
+/* line 86, ../sass/Card.scss */
 .CenterName {
   width: 100%;
   height: 10%;
@@ -99,7 +99,7 @@
   margin-bottom: 3%;
 }
 
-/* line 93, ../sass/card.scss */
+/* line 93, ../sass/Card.scss */
 .CompanyDescription {
   width: 90%;
   height: 30%;
@@ -108,7 +108,7 @@
   line-height: 1.8em;
 }
 
-/* line 100, ../sass/card.scss */
+/* line 100, ../sass/Card.scss */
 .CenterTheme {
   width: 100%;
   height: 20%;
@@ -116,7 +116,7 @@
   flex-direction: row;
 }
 
-/* line 106, ../sass/card.scss */
+/* line 106, ../sass/Card.scss */
 .ItemTheme {
   width: 50%;
   height: 100%;
@@ -124,7 +124,7 @@
   word-wrap: break-word;
 }
 
-/* line 113, ../sass/card.scss */
+/* line 113, ../sass/Card.scss */
 .CompanyCompetences {
   width: 100%;
   height: 60%;
