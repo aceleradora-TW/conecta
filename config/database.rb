@@ -1,7 +1,8 @@
 require 'data_mapper'
 require 'dm-core'
-require  'dm-migrations'
+require 'dm-migrations'
 require 'dm-validations'
+
 DataMapper::Property::String.length(255)
 
 configure :development do
