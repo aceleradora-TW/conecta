@@ -1,104 +1,139 @@
-<section class="SectionHome">
-  <section class="SectionCardsHome">
+<section class="Section">
+  <div class="SectionOpacity">
+    <div class="BoxText">
+      <div class="TextExplanation">
+        <div style="font-size: 1.4em;">  Quer expandir os seus negócios?</div>
+        <div> Encontre parcerias adequadas às suas necessidades no ecossistema do TecnoPUC.</div>
+      </div>
+      <div class="LogosCredibility">
+        <div class="LogoTecnopuc"><img src="/images/tecnopuc4.png" ></div>
+        <div class="LogoPuc"><img src="/images/puc4.png" ></div>
 
-    <div class="Card">
-      <div class="CompanyName"><h1>Ver empresas do TecnoPUC</h1></div>
-      <a href="/results">
-        <button class="Button" type="button" name="button">Listar</button>
-      </a>
+
+      </div>
     </div>
 
-    <div class="Card">
-      <div class="CompanyName"><h1>Ver estruturas de pesquisa do TecnoPUC</h1></div>
-      <a href="/research_centers">
-        <button class="Button" type="button" name="button">Listar</button>
-      </a>
-    </div>
-  </section>
+    <div class="BoxSearch">
+      <div class="TitleSearch u-fontSizeLarge">
+            Encontre parcerias agora
+          </div>
+      <section class="SectionSearch">
+                <div class="ContentSearch">
+          <form class="form-search" action="/search_all" name="search" id="searchFrom">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button class="btn-filter" type="button" name="button">
+                  <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </button>
+                <div class="dropdown-menu">
+                  <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
+                  <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
+                  <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
+                  <hr>
+                  <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
+                  <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
+                  <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
+                  <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
+                </div>
+              </div>
 
-  <section class="SectionSearch">
-    <div class="ContentSearch">
-      <div class="CompanyName"><h1>Encontre parcerias agora</h1></div>
-      <form class="form-search" action="/search_all" name="search">
-        <div class="input-group">
-          <div class="input-group-btn">
-            <button class="btn-filter" type="button" name="button">
-              <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            </button>
-            <div class="dropdown-menu">
-              <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
-              <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
-              <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
-              <hr>
-              <label><input type="radio" name="search_type" value="centro-pesquisa"> Estrutura de Pesquisa</label><br>
-              <label><input type="radio" name="search_type" value="area-pesquisa"> Área de Pesquisa</label><br>
-              <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
-              <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
+              <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
+              <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
+              <!-- <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->
             </div>
-          </div>
-          <input class="inputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
-          <button class="btn-search" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
         </div>
-      </form>
-    </div>
-  </section>
+      </section>
 
-  <section class="About" id="About">
-    <div class="CardContentA">
-      <div class="ContentAbout">
-        <div class="CompanyName"><h1>Sobre</h1></div>
-        <p>A plataforma Conecta faz parte de uma estratégia institucional de Gestão de Inovação na PUCRS, a qual pretende beneficiar o maior número de pessoas, no menor tempo viável, acelerando processos de conexão para a prospecção de recursos humanos e financeiros, em projetos de iniciação científica e tecnológica.</p>
-        <p>A Conecta é fruto do trabalho colaborativo de diferentes atores do ecossistema TECNOPUC, citando-se: Pró-Reitoria de Pesquisa, Inovação e Desenvolvimento (PROPESQ), INOVAPUCRS, Agência de Gestão Tecnológica (AGT), Centro de Empreendedorismo (IDEAR), Centro de Inovação Microsoft, Thoughtworks e Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG).</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="Function" id="Function">
-    <div class="ContentFunction">
-      <div class="Title"><h1>Como funciona</h1></div>
-      <div class="CardContentF">
-        <div class="BoxFunctions">
-          <div class="Icon">
-            <i class="material-icons" style="font-size: 3em; color: #0faac3;">insert_drive_file</i>
-          </div>
-          <div class="Text">
-            <p>Você cadastra sua empresa no Conecta</p>
-          </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section class="About" id="About">
+
+  <div class="ContentAbout">
+    <div class="u-fontSizeLarge"><h1>Sobre</h1></div>
+<p class="u-fontSizeMedium u-line-height-medium">A plataforma Conecta faz parte de uma estratégia institucional de Gestão da Inovação na PUCRS, a qual tem o intuito de:
+<ul class="u-fontSizeMedium u-line-height-medium">
+<li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação</li>
+<li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica</li>
+<li>Conectar empresas, pessoas e saberes, processos e serviços, procurando potencializar ações voltadas à inovação, pesquisa e desenvolvimento.</li>
+</ul>
+</p>
+  <p class="u-fontSizeMedium u-line-height-medium">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
+Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ)
+Rede INOVAPUCRS:
+<ul class="u-fontSizeMedium u-line-height-medium u-align-left">
+<li>Agência de Gestão Tecnológica (AGT)</li>
+<li>Parque Científico e Tecnológico da PUCRS (TECNOPUC)</li>
+<li>Escritório de Transferência de Tecnologia (ETT)</li>
+<li>Incubadora RAIAR</li>
+<li>Espaço Co working</li>
+<li>Centro de Inovação Microsoft (C.I.)</li>
+<li>Centro de Empreendedorismo (IDEAR)</li>
+<li>Thoughtworks</li>
+<li>Laboratório de Criatividade (CriaLab)</li>
+<li>Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG)</li>
+</ul>
+</p>
+  </div>
+
+</section>
+
+<section class="Function" id="Function">
+  <div class="ContentFunction">
+    <div class="CompanyName u-font-withe u-fontSizeLarge"><h1>Como Funciona</h1></div>
+    <div class="Title"><h1></h1></div>
+    <div class="CardContentF">
+      <div class="BoxFunctions ">
+        <div class="Icon">
+          <i class="material-icons" style="font-size: 3em; color: #0faac3;">insert_drive_file</i>
         </div>
-        <div class="Arrow">
-          <i class="material-icons">arrow_forward</i>
-        </div>
-        <div class="BoxFunctions">
-          <div class="Icon">
-            <i class="material-icons" style="font-size: 3em; color: #EB6361;">build</i>
-          </div>
-          <div class="Text">
-            <p>Procura recursos ou serviços</p>
-          </div>
-        </div>
-        <div class="Arrow">
-          <i class="material-icons">arrow_forward</i>
-        </div>
-        <div class="BoxFunctions">
-          <div class="Icon">
-            <i class="material-icons" style="font-size: 3em; color: #02af7e;">business</i>
-          </div>
-          <div class="Text">
-            <p>Encontra empresas fornecedoras</p>
-          </div>
-        </div>
-        <div class="Arrow">
-          <i class="material-icons">arrow_forward</i>
-        </div>
-        <div class="BoxFunctions">
-          <div class="Icon">
-            <i class="material-icons" style="font-size: 3em; color: #EB9532;">contact_mail</i>
-          </div>
-          <div class="Text">
-            <p>O conecta contata essa empresa para você</p>
-          </div>
+        <div class="Text">
+          <p class="BoxText">Você cadastra sua empresa no Conecta</p>
         </div>
       </div>
+      <div class="Arrow">
+        <i class="material-icons">arrow_forward</i>
+      </div>
+      <div class="BoxFunctions">
+        <div class="Icon">
+          <i class="material-icons" style="font-size: 3em; color: #EB6361;">build</i>
+        </div>
+        <div class="Text">
+          <p class="BoxText">Procura recursos ou serviços</p>
+        </div>
+      </div>
+      <div class="Arrow">
+        <i class="material-icons">arrow_forward</i>
+      </div>
+      <div class="BoxFunctions">
+        <div class="Icon">
+          <i class="material-icons" style="font-size: 3em; color: #02af7e;">business</i>
+        </div>
+        <div class="Text">
+          <p class="BoxText">Encontra empresas fornecedoras</p>
+        </div>
+      </div>
+      <div class="Arrow">
+        <i class="material-icons">arrow_forward</i>
+      </div>
+      <div class="BoxFunctions">
+        <div class="Icon">
+          <i class="material-icons" style="font-size: 3em; color: #EB9532;">contact_mail</i>
+        </div>
+        <div class="Text">
+          <p class="BoxText">O conecta contata essa empresa para você</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 </section>
