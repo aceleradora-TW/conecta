@@ -7,6 +7,6 @@ COPY Gemfile* /code/
 WORKDIR /code
 RUN gem update --system
 RUN bundle install
-
+ENV LANG C.UTF-8
 EXPOSE 9393:9393
 CMD ["rake", "s"]
