@@ -1,0 +1,17 @@
+/* line 1, ../sass/Logos.scss */
+.LogoTecnopuc {
+  height: 50%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+/* line 8, ../sass/Logos.scss */
+.LogoPuc {
+  height: 100%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
