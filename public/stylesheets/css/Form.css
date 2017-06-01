@@ -1,5 +1,5 @@
 /* line 1, ../sass/Form.scss */
-.Form-search {
+.FormSearch {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 /* line 10, ../sass/Form.scss */
-.input-group {
+.InputGroup {
   display: flex;
   justify-content: center;
   width: 75%;
@@ -17,13 +17,13 @@
 }
 
 /* line 17, ../sass/Form.scss */
-.input-group-btn {
+.InputGroupButton {
   width: 23%;
   z-index: 99;
 }
 
 /* line 22, ../sass/Form.scss */
-.btn-filter {
+.ButtonFilter {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -33,12 +33,12 @@
 }
 
 /* line 31, ../sass/Form.scss */
-.btn-filter-activated {
+.ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
 
 /* line 35, ../sass/Form.scss */
-.inputBusca {
+.InputBusca {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
   padding-left: 2%;
@@ -46,7 +46,7 @@
 }
 
 /* line 42, ../sass/Form.scss */
-.btn-search {
+.ButtonSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
   cursor: pointer;
@@ -55,12 +55,12 @@
 }
 
 /* line 50, ../sass/Form.scss */
-.btn-search:hover {
+.ButtonSearch:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* line 53, ../sass/Form.scss */
-.dropdown-menu {
+.DropdownMenu {
   list-style: none;
   position: static;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -75,23 +75,23 @@
 }
 
 /* line 67, ../sass/Form.scss */
-input, .btn-filter, .btn-search {
+input, .ButtonFilter, .ButtonSearch {
   outline: none;
 }
 
 /* line 71, ../sass/Form.scss */
-.dropdown-menu-visible {
+.DropdownMenu-visible {
   opacity: 1;
   transition: .5s;
 }
 
 /* line 79, ../sass/Form.scss */
-.dropdown-menu li a {
+.DropdownMenu li a {
   color: black;
   text-decoration: none;
 }
 
 /* line 84, ../sass/Form.scss */
-.dropdown-menu li:hover {
+.DropdownMenu li:hover {
   background: rgba(0, 0, 0, 0.1);
 }

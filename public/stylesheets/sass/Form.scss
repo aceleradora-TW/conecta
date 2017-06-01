@@ -1,4 +1,4 @@
-.Form-search {
+.FormSearch {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -7,19 +7,19 @@
   width: 85%;
 }
 
-.input-group {
+.InputGroup {
   display: flex;
   justify-content: center;
   width: 75%;
   height: 4vh;
 }
 
-.input-group-btn{
+.InputGroupButton{
   width: 23%;
   z-index: 99;
 }
 
-.btn-filter{
+.ButtonFilter{
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 0, 0, .4);
   width: 100%;
@@ -28,18 +28,18 @@
   border-radius: 4px 0 0 4px;
 }
 
-.btn-filter-activated {
+.ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
 
-.inputBusca{
+.InputBusca{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
   padding-left: 2%;
   width: 60%;
 }
 
-.btn-search{
+.ButtonSearch{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
   cursor: pointer;
@@ -47,10 +47,10 @@
   border-radius: 0 4px 4px 0;
 }
 
-.btn-search:hover {
+.ButtonSearch:hover {
   background: rgba(0, 0, 0, .2);
 }
-.dropdown-menu{
+.DropdownMenu{
   list-style: none;
   position: static;
   border: 1px solid rgba(0, 0, 0, .4);
@@ -64,23 +64,23 @@
   transition: 1s;
 }
 
-input, .btn-filter, .btn-search {
+input, .ButtonFilter, .ButtonSearch {
   outline: none;
 }
 
-.dropdown-menu-visible {
+.DropdownMenu-visible {
   opacity: 1;
   transition: .5s;
 }
 
-.dropdown-menu li{
+.DropdownMenu li{
 }
 
-.dropdown-menu li a{
+.DropdownMenu li a{
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
-.dropdown-menu li:hover{
+.DropdownMenu li:hover{
   background: rgba(0, 0, 0, .10);
 }
