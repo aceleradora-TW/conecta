@@ -1,3 +1,4 @@
+ # -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
@@ -18,10 +19,11 @@ class IndexController < Controller
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
-    value_sql = "%#{@value.strip.downcase}%"
-    @institution = @router_service.return_found_values value_sql, @search_type
-
-    erb :search_all
+    if @search_type
+      @value = @value ? @value : ""
+      value_sql = "%#{@value.strip.downcase}%"
+      @institution = @router_service.return_found_values value_sql, @search_type
+      erb :search_all
+    end
   end
-
 end
