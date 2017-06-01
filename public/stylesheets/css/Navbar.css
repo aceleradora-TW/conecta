@@ -1,4 +1,4 @@
-/* line 1, ../sass/navbar.scss */
+/* line 1, ../sass/Navbar.scss */
 .Navbar {
   width: 100%;
   height: 12vh;
@@ -11,7 +11,7 @@
   color: white;
 }
 
-/* line 13, ../sass/navbar.scss */
+/* line 13, ../sass/Navbar.scss */
 .NavLogo {
   width: 50%;
   height: 100%;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-/* line 22, ../sass/navbar.scss */
+/* line 22, ../sass/Navbar.scss */
 .NavLinks {
   width: 50%;
   height: 100%;
@@ -36,7 +36,7 @@
   color: white;
 }
 
-/* line 37, ../sass/navbar.scss */
+/* line 37, ../sass/Navbar.scss */
 .Link {
   width: 24%;
   height: 60%;
@@ -48,7 +48,7 @@
   color: white;
 }
 
-/* line 47, ../sass/navbar.scss */
+/* line 46, ../sass/Navbar.scss */
 .Link:hover {
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
@@ -56,14 +56,14 @@
   font-size: 1.1em;
 }
 
-/* line 53, ../sass/navbar.scss */
+/* line 52, ../sass/Navbar.scss */
 .Link:hover a {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 1.1em;
 }
 
-/* line 59, ../sass/navbar.scss */
+/* line 58, ../sass/Navbar.scss */
 .NavLinks a {
   text-decoration: none;
   font-size: 1.1em;
@@ -71,7 +71,7 @@
   text-align: center;
 }
 
-/* line 65, ../sass/navbar.scss */
+/* line 63, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
   color: white;

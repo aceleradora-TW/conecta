@@ -13,7 +13,7 @@ RSpec.describe IndexController do
 
       it "Deve exibir o botão do filtro de busca" do
         visit "/"
-        expect(page).to have_css("button", class: 'btn-filter')
+        expect(page).to have_css("button", class: 'ButtonFilter')
       end
 
       it "Deve exibir o texto do copyright no footer" do
