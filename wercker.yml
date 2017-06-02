@@ -19,7 +19,7 @@ build:
           echo -p "gem list: $(gem list)"
     - script:
         name: migrate database
-        code: rake db:reset && rake db: 
+        code: rake db:reset && rake db:seed_test 
     - script:
         name: test
         code: bundle exec rspec
