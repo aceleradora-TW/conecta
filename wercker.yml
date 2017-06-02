@@ -1,8 +1,7 @@
 ruby: 2.3.1
 box: ruby:2.3.1
 services:
-  - name: db
-      id: postgres:9.3
+    - id: postgres:9.3
       env:
         POSTGRES_PASSWORD: test
         POSTGRES_USER: test
