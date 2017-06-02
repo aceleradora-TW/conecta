@@ -28,37 +28,57 @@
   color: white;
 }
 
-/* line 27, ../sass/Utilities.scss */
+/* line 25, ../sass/Utilities.scss */
+.u-font-blue {
+  color: #0faac3;
+}
+
+/* line 28, ../sass/Utilities.scss */
+.u-font-red {
+  color: #eb6361;
+}
+
+/* line 31, ../sass/Utilities.scss */
+.u-font-green {
+  color: #02af7e;
+}
+
+/* line 34, ../sass/Utilities.scss */
+.u-font-orange {
+  color: #eb9532;
+}
+
+/* line 40, ../sass/Utilities.scss */
 .u-align-left {
   text-align: left;
 }
 
-/* line 33, ../sass/Utilities.scss */
+/* line 46, ../sass/Utilities.scss */
 .u-marginSmall {
   margin: 6px;
 }
 
-/* line 37, ../sass/Utilities.scss */
+/* line 50, ../sass/Utilities.scss */
 .u-marginLeft {
   margin-left: 10%;
 }
 
-/* line 41, ../sass/Utilities.scss */
+/* line 54, ../sass/Utilities.scss */
 .u-marginRight {
   margin-right: 0.1%;
 }
 
-/* line 45, ../sass/Utilities.scss */
+/* line 58, ../sass/Utilities.scss */
 .u-marginTop {
   margin-top: 1%;
 }
 
-/* line 50, ../sass/Utilities.scss */
+/* line 63, ../sass/Utilities.scss */
 .u-buttonColor {
   background-color: #3D8EB9;
 }
 
-/* line 55, ../sass/Utilities.scss */
+/* line 68, ../sass/Utilities.scss */
 .u-line-height-medium {
   line-height: 1.7em;
 }
