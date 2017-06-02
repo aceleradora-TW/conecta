@@ -5,7 +5,7 @@ require 'dm-validations'
 
 DataMapper::Property::String.length(255)
 
-configure :development do
+configure :development, :test do
   DataMapper.setup(:default, "postgres://test:test@db/test_db")
 end
 
