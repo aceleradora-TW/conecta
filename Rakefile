@@ -1,5 +1,6 @@
 require ::File.expand_path('../config/environment', __FILE__)
 require_relative 'csv/csv_import.rb'
+require_relative 'config/seed.rb'
 
 desc 'Start Development Server Locally'
 
@@ -27,5 +28,10 @@ namespace :db do
   task :seed do
     CsvImport.run
   end
+
+  task :seed_test do
+    Seed.seed
+  end
+
 
 end
