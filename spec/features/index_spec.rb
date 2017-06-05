@@ -31,6 +31,16 @@ RSpec.describe IndexController do
         expect(page).to have_link('Estruturas de pesquisa')
       end
 
+      it "Deve exibir o título Como Funciona" do
+        visit "/"
+        expect(page).to have_selector('h1', text: 'Como Funciona')
+      end
+
+      it "Deve exibir o título Sobre" do
+        visit "/"
+        expect(page).to have_selector('h1', text: 'Sobre')
+      end
+
     end
   end
 end
