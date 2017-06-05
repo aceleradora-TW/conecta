@@ -13,6 +13,37 @@
   font-weight: lighter;
 }
 
+.CardNav {
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.CardLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardTitle {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
 .CardCenter {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -41,25 +72,21 @@
 
 }
 .Items{
-  width: 40%;
-  display: flex;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 2em;
   cursor: pointer;
+  align-self: center;
 }
 
 .CompetenceList {
   display:flex;
   width: 100%;
   height: 95%;
-  text-align: center;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: left;
+  flex-direction: column;
 }
 
 .CompetencesTitle{
@@ -69,7 +96,20 @@
   align-items: flex-end;
   justify-content: center;
 }
+.ItemText{
+  width: 50%;
+  height: 100%;
+  display:flex;
+  text-align: right;
+}
 
+.ItemStar{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: #e4b541;
+}
 .ContactTitle{
   width: 100%;
   height: 5%;
@@ -93,6 +133,7 @@
 .CompanyDescription{
   width: 90%;
   height: 30%;
+  display: none;
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
@@ -109,11 +150,36 @@
   margin: 2%;
   word-wrap: break-word;
 }
+.FooterCardPrimay {
+  border-top: 2px solid #c1c1c1;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+.RatingExplanation {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.BoxButtonCard {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .CompanyCompetences{
   width: 100%;
   height: 60%;
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+}
+.CardSecondary{
+  display: none;
 }
