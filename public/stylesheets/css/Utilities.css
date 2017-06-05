@@ -62,3 +62,8 @@
 .u-line-height-medium {
   line-height: 1.7em;
 }
+
+/* line 59, ../sass/Utilities.scss */
+.u-width-medium {
+  width: 50%;
+}
