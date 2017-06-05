@@ -1,5 +1,6 @@
 /* line 1, ../sass/Button.scss */
 .Button {
+  display: flex;
   background-color: #3771c8;
   height: 100%;
   line-height: 36px;
@@ -15,13 +16,13 @@
   letter-spacing: .5px;
 }
 
-/* line 17, ../sass/Button.scss */
+/* line 18, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
 
-/* line 21, ../sass/Button.scss */
+/* line 22, ../sass/Button.scss */
 .Button a {
   text-decoration: none;
   color: white;
