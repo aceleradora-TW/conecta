@@ -23,12 +23,12 @@ RSpec.describe IndexController do
 
       it "Deve exibir o botão da lista de empresas" do
         visit "/"
-        expect(page).to have_link('Empresas')
+        expect(page).to have_selector('span', text: 'Empresas')
       end
 
       it "Deve exibir o botão da lista de estruturas de pesquisa" do
         visit "/"
-        expect(page).to have_link('Estruturas de pesquisa')
+        expect(page).to have_selector('span', text: 'Estruturas de Pesquisa')
       end
 
       it "Deve exibir o título Como Funciona" do
