@@ -1,5 +1,11 @@
 ruby: 2.3.1
 box: ruby:2.3.1
+services:
+    - id: postgres:9.3
+      env:
+        POSTGRES_PASSWORD: test
+        POSTGRES_USER: test
+        POSTGRES_DB: test_db
 build:
   steps:
     - install-packages:
@@ -11,7 +17,9 @@ build:
           echo "ruby version $(ruby --version) running!"
           echo "from location $(which ruby)"
           echo -p "gem list: $(gem list)"
-
+    - script:
+        name: migrate database
+        code: rake db:reset && rake db:seed_test 
     - script:
         name: test
         code: bundle exec rspec
