@@ -14,3 +14,9 @@ window.onclick = function(event) {
     btnFilter.classList.remove('ButtonFilter-activated');
   }
 }
+window.onload = function OnLoadFunction(){
+  var urlHasAnchor = location.href.indexOf("#") > 0;
+  if(!urlHasAnchor){
+    document.getElementById("InputBusca").focus();
+  }
+}
