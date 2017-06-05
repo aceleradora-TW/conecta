@@ -40,6 +40,10 @@ RSpec.describe IndexController do
         visit "/"
         expect(page).to have_selector('h1', text: 'Sobre')
       end
+      it "Deve exibir o título Colaboradores" do
+        visit "/"
+        expect(page).to have_selector('h1', text: 'Colaboradores')
+      end
 
     end
   end
