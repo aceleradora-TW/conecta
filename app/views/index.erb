@@ -11,10 +11,10 @@
       </div>
     </div>
     <div class="BoxSearch">
-      <div class="TitleSearch u-fontSizeLarge">
-        Encontre parcerias agora
-      </div>
       <section class="SectionSearch">
+        <div class="TitleSearch u-fontSizeLarge">
+          Encontre parcerias agora
+        </div>
         <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
             <div class="InputGroup">
@@ -33,11 +33,30 @@
                   <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
                 </div>
               </div>
-              <input class="InputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
+
+              <input id="InputBusca" class="InputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
               <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
               <!-- <button class="ButtonSearch" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->
             </div>
           </form>
+        </div>
+        <div class="NavSearch">
+          <div class="Tag" onclick="location.href='/search_all?search_type=empresa&value='">
+            <div class="TagTitle u-colorGreen">
+              <div class="BoxTextTitle">
+                <i class="material-icons u-fontSizeMedium">work</i>
+                <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
+              </div>
+            </div>
+          </div>
+          <div class="Tag" onclick="location.href='/search_all?search_type=centro-pesquisa&value='">
+            <div class="TagTitle u-colorOrange">
+              <div class="BoxTextTitle">
+                <i class="material-icons u-fontSizeMedium">school</i>
+                <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -107,13 +126,13 @@
 </section>
 
 
-<section class="About" id="Collaborators">
+<section class="Function" id="Collaborators">
   <div class="ContentAbout">
-    <div class="u-fontSizeLarge"><h1>Colaboradores</h1></div>
-    <p class="u-fontSizeMedium u-line-height-medium">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
+    <div class="u-font-withe u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
+    <p class="u-font-withe u-fontSizeMedium u-fontFamilyLato">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
       Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ)
       Rede INOVAPUCRS:
-      <ul class="u-fontSizeMedium u-line-height-medium u-align-left">
+      <ul class="u-fontSizeMedium u-line-height-medium u-align-left u-font-withe u-fontFamilyLato">
         <li>Agência de Gestão Tecnológica (AGT)</li>
         <li>Parque Científico e Tecnológico da PUCRS (TECNOPUC)</li>
         <li>Escritório de Transferência de Tecnologia (ETT)</li>
