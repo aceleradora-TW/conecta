@@ -2,7 +2,7 @@
 .Section {
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 100%;
   min-height: 85vh;
   background-image: url("http://www.speckygeek.com/uploads/cache/2017/03/Business-Web-Design-Office-800x400.jpg");
   background-size: cover;
@@ -63,7 +63,7 @@
   width: 100%;
   min-height: 39vh;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

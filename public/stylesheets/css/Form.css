@@ -70,28 +70,30 @@
   right: 61.05vw;
   bottom: 4.6vh;
   padding: 2%;
+  display: none;
   opacity: 0;
   transition: 1s;
 }
 
-/* line 67, ../sass/Form.scss */
+/* line 68, ../sass/Form.scss */
 input, .ButtonFilter, .ButtonSearch {
   outline: none;
 }
 
-/* line 71, ../sass/Form.scss */
+/* line 72, ../sass/Form.scss */
 .DropdownMenu-visible {
   opacity: 1;
+  display: block;
   transition: .5s;
 }
 
-/* line 79, ../sass/Form.scss */
+/* line 81, ../sass/Form.scss */
 .DropdownMenu li a {
   color: black;
   text-decoration: none;
 }
 
-/* line 84, ../sass/Form.scss */
+/* line 86, ../sass/Form.scss */
 .DropdownMenu li:hover {
   background: rgba(0, 0, 0, 0.1);
 }

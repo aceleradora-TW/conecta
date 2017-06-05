@@ -68,3 +68,47 @@
 .u-line-height-medium{
 	line-height: 1.7em;
 }
+.u-colorRed{
+	background-color: #EB6361;
+}
+.u-colorRed:hover{
+	box-shadow: 1px 1px 2px 2px #E26A6A;
+	cursor: pointer;
+}
+.u-colorGreen{
+	/*background-color: #64DDBB;*/
+	background-color: #02af7e;
+}
+.u-colorGreen:hover{
+	box-shadow: 1px 1px 2px 2px #36D7B7;
+	cursor: pointer;
+}
+.u-colorBlue{
+	background-color: #0faac3;
+}
+.u-colorBlue:hover{
+	box-shadow: 1px 1px 2px 2px #6BB9F0;
+	cursor: pointer;
+}
+
+.u-colorOrange{
+	background-color: #EB9532;
+}
+.u-colorOrange:hover{
+	box-shadow: 1px 1px 2px 2px #F4B350;
+	cursor: pointer;
+}
+
+.u-colorRed1{
+	color: #EB6361!important;
+}
+.u-colorGreen1{
+	/*background-color: #64DDBB;*/
+	color: #02af7e;
+}
+.u-colorBlue1{
+	color: #0faac3;
+}
+.u-colorOrange1{
+	color: #EB9532;
+}
