@@ -73,7 +73,7 @@
 }
 
 /* line 69, ../sass/Box.scss */
-.BoxFunctions {
+.BoxHowItWorks {
   height: 100%;
   width: 20%;
   display: flex;
@@ -95,7 +95,7 @@
 }
 
 /* line 89, ../sass/Box.scss */
-.ContentFunction {
+.ContentHowItWorks {
   height: 35vh;
   width: 98%;
   display: flex;
