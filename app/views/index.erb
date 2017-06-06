@@ -2,23 +2,20 @@
   <div class="SectionOpacity">
     <div class="BoxText">
       <div class="TextExplanation">
-        <div style="font-size: 1.4em;">  Quer expandir os seus negócios?</div>
-        <div> Encontre parcerias adequadas às suas necessidades no ecossistema do TecnoPUC.</div>
+        <div class="u-fontSizeMedium">  Quer expandir os seus empreendimentos?</div>
+        <div> Encontre colaboradores adequados às suas necessidades no ecossistema de empresas do TecnoPuc</div>
       </div>
       <div class="LogosCredibility">
         <div class="LogoTecnopuc"><img src="/images/tecnopuc4.png" ></div>
         <div class="LogoPuc"><img src="/images/puc4.png" ></div>
-
-
       </div>
     </div>
-
     <div class="BoxSearch">
-      <div class="TitleSearch u-fontSizeLarge">
-            Encontre parcerias agora
-          </div>
       <section class="SectionSearch">
-                <div class="ContentSearch">
+        <div class="TitleSearch u-fontSizeLarge">
+          Encontre parcerias agora
+        </div>
+        <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
             <div class="InputGroup">
               <div class="InputGroupButton">
@@ -37,75 +34,53 @@
                 </div>
               </div>
 
-              <input class="InputBusca" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value" autofocus/>
+              <input id="InputSearch" class="InputSearch" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
               <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
               <!-- <button class="ButtonSearch" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->
             </div>
           </form>
         </div>
+        <div class="NavSearch">
+          <div class="Tag" onclick="location.href='/search_all?search_type=empresa'">
+            <div class="TagTitle u-colorGreen">
+              <div class="BoxTextTitle">
+                <i class="material-icons u-fontSizeMedium">work</i>
+                <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
+              </div>
+            </div>
+          </div>
+          <div class="Tag" onclick="location.href='/search_all?search_type=centro-pesquisa'">
+            <div class="TagTitle u-colorOrange">
+              <div class="BoxTextTitle">
+                <i class="material-icons u-fontSizeMedium">school</i>
+                <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-
-
-
     </div>
-
   </div>
-
 </section>
 
-
-
-
-<section class="About" id="About">
-
-  <div class="ContentAbout">
-    <div class="u-fontSizeLarge"><h1>Sobre</h1></div>
-<p class="u-fontSizeMedium u-line-height-medium">A plataforma Conecta faz parte de uma estratégia institucional de Gestão da Inovação na PUCRS, a qual tem o intuito de:
-<ul class="u-fontSizeMedium u-line-height-medium">
-<li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação</li>
-<li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica</li>
-<li>Conectar empresas, pessoas e saberes, processos e serviços, procurando potencializar ações voltadas à inovação, pesquisa e desenvolvimento.</li>
-</ul>
-</p>
-  <p class="u-fontSizeMedium u-line-height-medium">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
-Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ)
-Rede INOVAPUCRS:
-<ul class="u-fontSizeMedium u-line-height-medium u-align-left">
-<li>Agência de Gestão Tecnológica (AGT)</li>
-<li>Parque Científico e Tecnológico da PUCRS (TECNOPUC)</li>
-<li>Escritório de Transferência de Tecnologia (ETT)</li>
-<li>Incubadora RAIAR</li>
-<li>Espaço Co working</li>
-<li>Centro de Inovação Microsoft (C.I.)</li>
-<li>Centro de Empreendedorismo (IDEAR)</li>
-<li>Thoughtworks</li>
-<li>Laboratório de Criatividade (CriaLab)</li>
-<li>Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG)</li>
-</ul>
-</p>
-  </div>
-
-</section>
-
-<section class="Function" id="Function">
-  <div class="ContentFunction">
-    <div class="CompanyName u-font-withe u-fontSizeLarge"><h1>Como Funciona</h1></div>
-    <div class="Title"><h1></h1></div>
+<section class="HowItWorks" id="HowItWorks">
+  <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato "><h1>Como Funciona</h1></div>
+  <div class="ContentHowItWorks">
     <div class="CardContentF">
-      <div class="BoxFunctions ">
+      <div class="BoxHowItWorks ">
         <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #0faac3;">insert_drive_file</i>
+          <i class="material-icons md-3  u-fontBlue">insert_drive_file</i>
         </div>
         <div class="Text">
           <p class="BoxText">Você cadastra sua empresa no Conecta</p>
         </div>
       </div>
       <div class="Arrow">
-        <i class="material-icons">arrow_forward</i>
+        <i class="material-icons ">arrow_forward</i>
       </div>
-      <div class="BoxFunctions">
+      <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #EB6361;">build</i>
+          <i class="material-icons md-3 u-fontRed">build</i>
         </div>
         <div class="Text">
           <p class="BoxText">Procura recursos ou serviços</p>
@@ -114,9 +89,9 @@ Rede INOVAPUCRS:
       <div class="Arrow">
         <i class="material-icons">arrow_forward</i>
       </div>
-      <div class="BoxFunctions">
+      <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #02af7e;">business</i>
+          <i class="material-icons md-3 u-fontGreen">business</i>
         </div>
         <div class="Text">
           <p class="BoxText">Encontra empresas fornecedoras</p>
@@ -125,9 +100,9 @@ Rede INOVAPUCRS:
       <div class="Arrow">
         <i class="material-icons">arrow_forward</i>
       </div>
-      <div class="BoxFunctions">
+      <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons" style="font-size: 3em; color: #EB9532;">contact_mail</i>
+          <i class="material-icons md-3 u-fontOrange">contact_mail</i>
         </div>
         <div class="Text">
           <p class="BoxText">O conecta contata essa empresa para você</p>
@@ -136,4 +111,39 @@ Rede INOVAPUCRS:
     </div>
   </div>
 </section>
+
+<section class="About" id="About">
+  <div class="ContentAbout">
+    <div class="u-fontSizeLarge"><h1>Sobre</h1></div>
+    <p class="u-fontSizeMedium u-lineHeightMedium">A plataforma Conecta faz parte de uma estratégia institucional de Gestão da Inovação na PUCRS, a qual tem o intuito de:
+      <ul class="u-fontSizeMedium u-lineHeightMedium">
+        <li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação</li>
+        <li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica</li>
+        <li>Conectar empresas, pessoas e saberes, processos e serviços, procurando potencializar ações voltadas à inovação, pesquisa e desenvolvimento.</li>
+      </ul>
+    </p>
+  </div>
+</section>
+
+
+<section class="Collaborators" id="Collaborators">
+  <div class="ContentAbout">
+    <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
+    <p class="u-fontWhite u-fontSizeMedium u-fontFamilyLato">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
+      Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ)
+      Rede INOVAPUCRS:
+      <ul class="u-fontSizeMedium u-lineHeightMedium u-alignLeft u-fontWhite u-fontFamilyLato">
+        <li>Agência de Gestão Tecnológica (AGT)</li>
+        <li>Parque Científico e Tecnológico da PUCRS (TECNOPUC)</li>
+        <li>Escritório de Transferência de Tecnologia (ETT)</li>
+        <li>Incubadora RAIAR</li>
+        <li>Espaço Co working</li>
+        <li>Centro de Inovação Microsoft (C.I.)</li>
+        <li>Centro de Empreendedorismo (IDEAR)</li>
+        <li>Thoughtworks</li>
+        <li>Laboratório de Criatividade (CriaLab)</li>
+        <li>Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG)</li>
+      </ul>
+    </p>
+  </div>
 </section>

@@ -15,16 +15,29 @@
 }
 
 .u-fontFamilyLato {
-  font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
-.u-font-withe{
+.u-fontWhite{
 	color: rgba(255,255,255,1);
 }
 
+.u-fontBlue{
+	color: rgba(15,170,195,1);
+}
+.u-fontRed{
+	color: rgba(235,99,97,1);
+}
+.u-fontGreen{
+	color: rgba(2,175,126,1);
+}
+.u-fontOrange{
+	color: rgba(235,149,50,1);
+}
 
 
-.u-align-left{
+
+.u-alignLeft{
 	text-align: left;
 }
 
@@ -48,10 +61,40 @@
 
 
 .u-buttonColor {
-  background-color: #3D8EB9;
+	background-color: #3D8EB9;
 }
 
 
-.u-line-height-medium{
-  line-height: 1.7em;
+.u-lineHeightMedium{
+	line-height: 1.7em;
+}
+.u-colorRed{
+	background-color: #EB6361;
+}
+.u-colorRed:hover{
+	box-shadow: 1px 1px 2px 2px #E26A6A;
+	cursor: pointer;
+}
+.u-colorGreen{
+	/*background-color: #64DDBB;*/
+	background-color: #02af7e;
+}
+.u-colorGreen:hover{
+	box-shadow: 1px 1px 2px 2px #36D7B7;
+	cursor: pointer;
+}
+.u-colorBlue{
+	background-color: #0faac3;
+}
+.u-colorBlue:hover{
+	box-shadow: 1px 1px 2px 2px #6BB9F0;
+	cursor: pointer;
+}
+
+.u-colorOrange{
+	background-color: #EB9532;
+}
+.u-colorOrange:hover{
+	box-shadow: 1px 1px 2px 2px #F4B350;
+	cursor: pointer;
 }

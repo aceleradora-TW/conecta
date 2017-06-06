@@ -14,3 +14,9 @@ window.onclick = function(event) {
     btnFilter.classList.remove('ButtonFilter-activated');
   }
 }
+window.onload = function onLoad(){
+  var urlHasAnchor = location.href.indexOf("#") > 0;
+  if(!urlHasAnchor){
+    document.getElementById("InputSearch").focus();
+  }
+}
