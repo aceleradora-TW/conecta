@@ -38,48 +38,48 @@
 .u-buttonColor{
   background-color: #3D8EB9;
 }
-.u-coloRed{
+.u-colorRed{
 	background-color: #EB6361;
 }
-.u-coloRed:hover{
+.u-colorRed:hover{
 	box-shadow: 1px 1px 2px 2px #E26A6A;
 	cursor: pointer;
 }
-.u-coloGreen{
+.u-colorGreen{
 	/*background-color: #64DDBB;*/
 	background-color: #02af7e;
 }
-.u-coloGreen:hover{
+.u-colorGreen:hover{
 	box-shadow: 1px 1px 2px 2px #36D7B7;
 	cursor: pointer;
 }
-.u-coloBlue{
+.u-colorBlue{
 	background-color: #0faac3;
 }
-.u-coloBlue:hover{
+.u-colorBlue:hover{
 	box-shadow: 1px 1px 2px 2px #6BB9F0;
 	cursor: pointer;
 }
 
-.u-coloOrange{
+.u-colorOrange{
 	background-color: #EB9532;
 }
-.u-coloOrange:hover{
+.u-colorOrange:hover{
 	box-shadow: 1px 1px 2px 2px #F4B350;
 	cursor: pointer;
 }
 
-.u-coloRed1{
+.u-colorRed1{
 	color: #EB6361!important;
 }
-.u-coloGreen1{
+.u-colorGreen1{
 	/*background-color: #64DDBB;*/
 	color: #02af7e;
 }
-.u-coloBlue1{
+.u-colorBlue1{
 	color: #0faac3;
 }
-.u-coloOrange1{
+.u-colorOrange1{
 	color: #EB9532;
 }
 
@@ -87,7 +87,7 @@
 .u-line-height-medium{
   line-height: 1.7em;
 }
-.u-font-withe{
+.u-font-withe,.u-fontWhite {
 	color: rgba(255,255,255,1);
 }
 .u-center{

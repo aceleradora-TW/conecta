@@ -111,7 +111,7 @@
 
 /* line 101, ../sass/Card.scss */
 .ItemText {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   text-align: right;
@@ -189,14 +189,15 @@
 
 /* line 164, ../sass/Card.scss */
 .RatingExplanation {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 20px;
 }
 
-/* line 172, ../sass/Card.scss */
+/* line 173, ../sass/Card.scss */
 .BoxButtonCard {
   width: 50%;
   height: 50%;
@@ -205,7 +206,7 @@
   align-items: center;
 }
 
-/* line 179, ../sass/Card.scss */
+/* line 180, ../sass/Card.scss */
 .CompanyCompetences {
   width: 100%;
   height: 60%;
@@ -213,14 +214,14 @@
   flex-direction: column;
 }
 
-/* line 186, ../sass/Card.scss */
+/* line 187, ../sass/Card.scss */
 .CardSecondary {
   border-top: 2px solid #c1c1c1;
   padding: 1%;
   display: none;
 }
 
-/* line 192, ../sass/Card.scss */
+/* line 193, ../sass/Card.scss */
 .FooterCardSecondary {
   border-top: 2px solid #c1c1c1;
   width: 100%;

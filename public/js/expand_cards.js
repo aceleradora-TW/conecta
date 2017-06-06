@@ -1,5 +1,5 @@
-const items = document.querySelectorAll('.Items');
-const subitems = document.querySelectorAll('.Subitems');
+const items = document.querySelectorAll('.ItemsArea');
+const subitems = document.querySelectorAll('.SubItemsArea');
 for(let i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function(){
     if(subitems[i].style.display == 'block') {
@@ -12,16 +12,16 @@ for(let i = 0; i < items.length; i++) {
     }
   });
 }
-const button = document.querySelectorAll('.u-width-medium');
+const button = document.querySelectorAll('.ButtonSeeMore');
 const cardsecondary = document.querySelectorAll('.CardSecondary');
 for(let i = 0; i < button.length; i++){
 button[i].addEventListener("click", function(){
-  if(cardsecondary[i].style.display == 'none') {
-    cardsecondary[i].style.display = 'block';
+  if(cardsecondary[i].style.display == 'block') {
+    cardsecondary[i].style.display = 'none';
 
   }
   else{
-    cardsecondary[i].style.display = 'none';
+    cardsecondary[i].style.display = 'block';
   }
 });
 }

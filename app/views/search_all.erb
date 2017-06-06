@@ -8,23 +8,16 @@
 <section class="SectionCards">
   <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
   <% @institution.each do |company| %>
-
-
-
-
-
-
   <!-- inicio card -->
   <div class="Card">
     <div class="CardNav">
       <div class="CardLogo">
-        <div class="Logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/2000px-Dell_Logo.svg.png" style="widht: 80px; height: 80px"></div>
+        <div class="Logo"><img src="images/default_company.jpg" style="widht: 80px; height: 80px"></div>
       </div>
       <div class="CardTitle">
         <h1><%= company.name %></h1>
       </div>
     </div>
-
 
     <div class="CompanyCompetences">
       <ul class="CompetenceList">
@@ -50,7 +43,7 @@
         <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
       </div>
       <div class="BoxButtonCard">
-        <div class="Button u-width-medium">
+        <div class="Button u-width-medium ButtonSeeMore">
           ver mais
         </div>
       </div>
@@ -74,14 +67,11 @@
         <ul class="CompetenceList">
 
           <%   @company_competences.each_key do |competence_area| %>
-          <li class="Items "><div class="ItemText"><%= competence_area %></div>
-            <!-- <div class="ItemStar"> <i class="material-icons">star</i><i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star_border</i>
-            <i class="material-icons">star_border</i></div> -->
+          <li class="Items ItemsArea"><div class="ItemText"><%= competence_area %></div>
+
           </li>
 
-            <ul class="Subitems">
+            <ul class="Subitems SubItemsArea">
               <%  @company_competences[competence_area].each do |competence| %>
               <li><%= competence %></li>
               <% end %>

@@ -99,7 +99,7 @@
   font-size: 1.2em;
 }
 .ItemText{
-  width: 50%;
+  width: 80%;
   height: 100%;
   display:flex;
   text-align: right;
@@ -162,11 +162,12 @@
   align-items:center;
 }
 .RatingExplanation {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 20px;
 }
 
 .BoxButtonCard {

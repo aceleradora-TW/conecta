@@ -59,68 +59,68 @@
 }
 
 /* line 41, ../sass/utilities.scss */
-.u-coloRed {
+.u-colorRed {
   background-color: #EB6361;
 }
 
 /* line 44, ../sass/utilities.scss */
-.u-coloRed:hover {
+.u-colorRed:hover {
   box-shadow: 1px 1px 2px 2px #E26A6A;
   cursor: pointer;
 }
 
 /* line 48, ../sass/utilities.scss */
-.u-coloGreen {
+.u-colorGreen {
   /*background-color: #64DDBB;*/
   background-color: #02af7e;
 }
 
 /* line 52, ../sass/utilities.scss */
-.u-coloGreen:hover {
+.u-colorGreen:hover {
   box-shadow: 1px 1px 2px 2px #36D7B7;
   cursor: pointer;
 }
 
 /* line 56, ../sass/utilities.scss */
-.u-coloBlue {
+.u-colorBlue {
   background-color: #0faac3;
 }
 
 /* line 59, ../sass/utilities.scss */
-.u-coloBlue:hover {
+.u-colorBlue:hover {
   box-shadow: 1px 1px 2px 2px #6BB9F0;
   cursor: pointer;
 }
 
 /* line 64, ../sass/utilities.scss */
-.u-coloOrange {
+.u-colorOrange {
   background-color: #EB9532;
 }
 
 /* line 67, ../sass/utilities.scss */
-.u-coloOrange:hover {
+.u-colorOrange:hover {
   box-shadow: 1px 1px 2px 2px #F4B350;
   cursor: pointer;
 }
 
 /* line 72, ../sass/utilities.scss */
-.u-coloRed1 {
+.u-colorRed1 {
   color: #EB6361 !important;
 }
 
 /* line 75, ../sass/utilities.scss */
-.u-coloGreen1 {
+.u-colorGreen1 {
   /*background-color: #64DDBB;*/
   color: #02af7e;
 }
 
 /* line 79, ../sass/utilities.scss */
-.u-coloBlue1 {
+.u-colorBlue1 {
   color: #0faac3;
 }
 
 /* line 82, ../sass/utilities.scss */
-.u-coloOrange1 {
+.u-colorOrange1 {
   color: #EB9532;
 }
 
@@ -130,7 +130,7 @@
 }
 
 /* line 90, ../sass/utilities.scss */
-.u-font-withe {
+.u-font-withe, .u-fontWhite {
   color: white;
 }
 
