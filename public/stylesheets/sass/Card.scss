@@ -1,32 +1,25 @@
+@import "_mixins.scss";
 
 .Card {
+  @include flex($align: center, $direction: column, $justify: center);
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   min-height: 35vh;
   margin-bottom: 2%;
   width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
-
 .CardCenter {
+  @include flex($align: center, $direction: column, $justify: center);
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   min-height: 66vh;
   margin-bottom: 3%;
   width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
-
 .Subitems {
   width: 85%;
   margin-top: 2%;
@@ -38,46 +31,32 @@
   margin: 0;
   box-shadow: 2px 3px 1px 1px rgba(48, 91, 159, 0.1);
   background-color: rgba(255,255,255,0.8);
-
 }
 .Items{
+  @include flex($align: center, $justify: center);
   width: 40%;
   display: flex;
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 2em;
   cursor: pointer;
 }
-
 .CompetenceList {
-  display:flex;
+  @include flex($align: flex-start, $direction: row, $justify: space-between);
   width: 100%;
   height: 95%;
   text-align: center;
-  flex-direction: row;
-  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-
 .CompetencesTitle{
+  @include flex($align: flex-end, $justify: center);
   width: 100%;
   height: 5%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
-
 .ContactTitle{
+  @include flex($align: flex-end, $justify: center);
   width: 100%;
   height: 5%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
-
 .CompanyName {
   width: 100%;
   height: 10%;
@@ -89,7 +68,6 @@
   text-align: center;
   margin-bottom: 3%;
 }
-
 .CompanyDescription{
   width: 90%;
   height: 30%;
@@ -98,10 +76,9 @@
   line-height: 1.8em;
 }
 .CenterTheme{
+  @include flex($direction: row);
   width: 100%;
   height: 20%;
-  display: flex;
-  flex-direction: row;
 }
 .ItemTheme{
   width: 50%;
@@ -109,11 +86,9 @@
   margin: 2%;
   word-wrap: break-word;
 }
-
 .CompanyCompetences{
+  @include flex($direction: column);
   width: 100%;
   height: 60%;
-  display: flex;
-  flex-direction: column;
   margin-top: 3%;
 }
