@@ -122,3 +122,9 @@
 	height: 100%;
 	width: 85%;
 }
+
+.FormSearch {
+  @include flex($align: center, $direction: columns, $justify: center);
+  align-content: space-between;
+  width: 85%;
+}
