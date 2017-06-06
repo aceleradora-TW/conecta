@@ -195,3 +195,13 @@
   height: 100%;
   width: 85%;
 }
+
+/* line 125, ../sass/Box.scss */
+.FormSearch {
+  display: flex;
+  align-items: center;
+  flex-direction: columns;
+  justify-content: center;
+  align-content: space-between;
+  width: 85%;
+}

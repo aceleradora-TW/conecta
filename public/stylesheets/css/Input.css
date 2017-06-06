@@ -1,0 +1,29 @@
+/* line 1, ../sass/Input.scss */
+.InputGroup {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 6vh;
+}
+/* line 6, ../sass/Input.scss */
+.InputGroup input {
+  font-size: 1.05em;
+}
+/* line 9, ../sass/Input.scss */
+.InputGroup span {
+  font-size: 1.3em;
+}
+
+/* line 14, ../sass/Input.scss */
+.InputGroupButton {
+  width: 30%;
+  z-index: 99;
+}
+
+/* line 19, ../sass/Input.scss */
+.InputSearch {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  padding-left: 2%;
+  width: 60%;
+}
