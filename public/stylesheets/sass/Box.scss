@@ -1,15 +1,5 @@
-@mixin flex($align: null, $direction: null, $justify: null) {
-  display: flex;
-  @if($align) {
-    align-items: $align;
-  }
-  @if($direction) {
-    flex-direction: $direction;
-  }
-  @if($justify){
-    justify-content: $justify;
-  }
-}
+@import "_mixins.scss";
+
 .ContentAbout {
   @include flex($align: center, $direction: column, $justify: center);
   height: 50%;
