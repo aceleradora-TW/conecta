@@ -7,6 +7,9 @@ gem 'tux'
 gem 'pg'
 gem 'dm-postgres-adapter'
 
+gem 'coveralls', require: false
+
+
 group :development, :test do
   gem 'sass'
   gem 'compass'
