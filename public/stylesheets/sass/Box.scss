@@ -11,7 +11,7 @@
   width: 100%;
   height: 70%;
   font-family: $font-style;
-  color: $white-color:
+  color: $white-color;
   text-shadow: 1px 1px #000;
   line-height: 2em;
   font-size: 1.3em;
@@ -43,7 +43,7 @@
   width: 60%;
   height: 20%;
   font-family: $font-style;
-  color: $white-color
+  color: $white-color;
   text-shadow: 1px 1px #000;
 }
 .BoxHowItWorks {
@@ -55,8 +55,8 @@
   @include flex($align: center, $justify: center);
   height: 50%;
   width: 40%;
-  color: $white-color
-  background-color: $white-color
+  color: $white-color;
+  background-color: $white-color;
   border-radius: 100%;
 }
 .ContentHowItWorks {
@@ -81,7 +81,7 @@
   @include flex($align: center, $justify: center);
   height: 50%;
   width: 5%;
-  color: $white-color
+  color: $white-color;
 }
 .Text {
   height: 55%;
@@ -108,7 +108,7 @@
   @include flex($align: center, $direction: row, $justify: center);
 	width: 100%;
 	height: 100%;
-	color: $white-color
+	color: $white-color;
 	font-family: $font-style;
 
 }

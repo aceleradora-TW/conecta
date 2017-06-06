@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .u-fontSizeSmall {
 	font-size: 1em;
 }
@@ -15,11 +17,11 @@
 }
 
 .u-fontFamilyLato {
-	font-family: 'Lato', sans-serif;
+	font-family: $font-style;
 }
 
 .u-fontWhite{
-	color: rgba(255,255,255,1);
+	color: $white-color;
 }
 
 .u-fontBlue{
@@ -60,9 +62,9 @@
 }
 
 
-.u-buttonColor {
-	background-color: #3D8EB9;
-}
+// .u-buttonColor {
+// 	background-color: #3D8EB9;
+// }
 
 
 .u-lineHeightMedium{
