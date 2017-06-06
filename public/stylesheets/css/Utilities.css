@@ -127,24 +127,3 @@
   box-shadow: 1px 1px 2px 2px #F4B350;
   cursor: pointer;
 }
-
-/* line 102, ../sass/Utilities.scss */
-.u-colorRed1 {
-  color: #EB6361 !important;
-}
-
-/* line 105, ../sass/Utilities.scss */
-.u-colorGreen1 {
-  /*background-color: #64DDBB;*/
-  color: #02af7e;
-}
-
-/* line 109, ../sass/Utilities.scss */
-.u-colorBlue1 {
-  color: #0faac3;
-}
-
-/* line 112, ../sass/Utilities.scss */
-.u-colorOrange1 {
-  color: #EB9532;
-}
