@@ -13,24 +13,18 @@ RSpec.describe IndexController do
         expect(page).to have_content('Resultados Buscados')
       end
 
-      it "Deve mostrar o botão de empresas" do
+      it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por empresas" do
         visit "/search_all?search_type=empresa&value="
-        expect(page).to have_link('Empresas')
+        expect(page).to have_link('Como funciona')
+        expect(page).to have_link('Sobre')
+        expect(page).to have_link('Colaboradores')
       end
 
-      it "Deve mostrar o botão de Estruturas de pesquisa" do
+      it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por estruturas de pesquisa" do
         visit "/search_all?search_type=centro-pesquisa&value="
-        expect(page).to have_link('Estruturas de pesquisa')
-      end
-
-      it "Deve mostrar a lista de empresas" do
-        visit "/search_all?search_type=empresa&value="
-        expect(page).to have_link('Empresas')
-      end
-
-      it "Deve mostrar a lista de Estruturas de pesquisa" do
-        visit "/search_all?search_type=centro-pesquisa&value="
-        expect(page).to have_link('Estruturas de pesquisa')
+        expect(page).to have_link('Como funciona')
+        expect(page).to have_link('Sobre')
+        expect(page).to have_link('Colaboradores')
       end
 
     end
