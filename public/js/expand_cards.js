@@ -12,3 +12,16 @@ for(let i = 0; i < items.length; i++) {
     }
   });
 }
+const button = document.querySelectorAll('.u-width-medium');
+const cardsecondary = document.querySelectorAll('.CardSecondary');
+for(let i = 0; i < button.length; i++){
+button[i].addEventListener("click", function(){
+  if(cardsecondary[i].style.display == 'none') {
+    cardsecondary[i].style.display = 'block';
+
+  }
+  else{
+    cardsecondary[i].style.display = 'none';
+  }
+});
+}

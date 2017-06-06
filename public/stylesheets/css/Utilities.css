@@ -65,5 +65,11 @@
 
 /* line 59, ../sass/Utilities.scss */
 .u-width-medium {
-  width: 50%;
+  width: 30%;
+  margin: 5%;
+}
+
+/* line 64, ../sass/Utilities.scss */
+.u-colorGold {
+  color: #e4b541;
 }

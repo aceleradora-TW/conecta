@@ -2,7 +2,7 @@
 .Card {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 35vh;
+  min-height: 45vh;
   margin-bottom: 2%;
   width: 48%;
   display: flex;
@@ -104,9 +104,12 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-/* line 99, ../sass/Card.scss */
+/* line 102, ../sass/Card.scss */
 .ItemText {
   width: 50%;
   height: 100%;
@@ -114,7 +117,7 @@
   text-align: right;
 }
 
-/* line 106, ../sass/Card.scss */
+/* line 109, ../sass/Card.scss */
 .ItemStar {
   width: 50%;
   height: 100%;
@@ -123,7 +126,7 @@
   color: #e4b541;
 }
 
-/* line 113, ../sass/Card.scss */
+/* line 116, ../sass/Card.scss */
 .ContactTitle {
   width: 100%;
   height: 5%;
@@ -132,14 +135,14 @@
   justify-content: center;
 }
 
-/* line 121, ../sass/Card.scss */
+/* line 124, ../sass/Card.scss */
 .CompanyName {
   width: 100%;
   height: 10%;
   text-align: center;
 }
 
-/* line 126, ../sass/Card.scss */
+/* line 129, ../sass/Card.scss */
 .CenterName {
   width: 100%;
   height: 10%;
@@ -147,17 +150,17 @@
   margin-bottom: 3%;
 }
 
-/* line 133, ../sass/Card.scss */
+/* line 136, ../sass/Card.scss */
 .CompanyDescription {
   width: 90%;
   height: 30%;
-  display: none;
+  display: flex;
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
 }
 
-/* line 141, ../sass/Card.scss */
+/* line 144, ../sass/Card.scss */
 .CenterTheme {
   width: 100%;
   height: 20%;
@@ -165,7 +168,7 @@
   flex-direction: row;
 }
 
-/* line 147, ../sass/Card.scss */
+/* line 150, ../sass/Card.scss */
 .ItemTheme {
   width: 50%;
   height: 100%;
@@ -173,7 +176,7 @@
   word-wrap: break-word;
 }
 
-/* line 153, ../sass/Card.scss */
+/* line 156, ../sass/Card.scss */
 .FooterCardPrimay {
   border-top: 2px solid #c1c1c1;
   width: 100%;
@@ -184,28 +187,46 @@
   align-items: center;
 }
 
-/* line 162, ../sass/Card.scss */
+/* line 165, ../sass/Card.scss */
 .RatingExplanation {
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-/* line 170, ../sass/Card.scss */
+/* line 173, ../sass/Card.scss */
 .BoxButtonCard {
-  width: 40%;
+  width: 50%;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
-/* line 177, ../sass/Card.scss */
+/* line 180, ../sass/Card.scss */
 .CompanyCompetences {
   width: 100%;
   height: 60%;
   display: flex;
   flex-direction: column;
+}
+
+/* line 187, ../sass/Card.scss */
+.CardSecondary {
+  border-top: 2px solid #c1c1c1;
+  padding: 1%;
+  display: none;
+}
+
+/* line 193, ../sass/Card.scss */
+.FooterCardSecondary {
+  border-top: 2px solid #c1c1c1;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }

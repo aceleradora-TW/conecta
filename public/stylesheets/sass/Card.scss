@@ -2,7 +2,7 @@
 .Card {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 35vh;
+  min-height: 45vh;
   margin-bottom: 2%;
   width: 48%;
   display: flex;
@@ -95,6 +95,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .ItemText{
   width: 50%;
@@ -133,7 +136,7 @@
 .CompanyDescription{
   width: 90%;
   height: 30%;
-  display: none;
+  display: flex;
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
@@ -160,7 +163,7 @@
   align-items:center;
 }
 .RatingExplanation {
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -168,10 +171,10 @@
 }
 
 .BoxButtonCard {
-  width: 40%;
+  width: 50%;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .CompanyCompetences{
@@ -179,4 +182,20 @@
   height: 60%;
   display: flex;
   flex-direction: column;
+}
+
+.CardSecondary{
+  border-top: 2px solid #c1c1c1;
+  padding: 1%;
+  display: none;
+}
+
+.FooterCardSecondary{
+  border-top: 2px solid #c1c1c1;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
 }
