@@ -33,7 +33,7 @@ RSpec.describe IndexController do
 
       it "Deve exibir o título Como Funciona" do
         visit "/"
-        expect(page).to have_selector('h1', text: 'Como Funciona')
+        expect(page).to have_selector('h1', text: 'Como funciona?')
       end
 
       it "Deve exibir o título Sobre" do
