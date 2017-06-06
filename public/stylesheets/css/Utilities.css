@@ -24,32 +24,32 @@
 }
 
 /* line 21, ../sass/Utilities.scss */
-.u-font-withe {
+.u-fontWhite {
   color: white;
 }
 
 /* line 25, ../sass/Utilities.scss */
-.u-font-blue {
+.u-fontBlue {
   color: #0faac3;
 }
 
 /* line 28, ../sass/Utilities.scss */
-.u-font-red {
+.u-fontRed {
   color: #eb6361;
 }
 
 /* line 31, ../sass/Utilities.scss */
-.u-font-green {
+.u-fontGreen {
   color: #02af7e;
 }
 
 /* line 34, ../sass/Utilities.scss */
-.u-font-orange {
+.u-fontOrange {
   color: #eb9532;
 }
 
 /* line 40, ../sass/Utilities.scss */
-.u-align-left {
+.u-alignLeft {
   text-align: left;
 }
 
@@ -79,7 +79,7 @@
 }
 
 /* line 68, ../sass/Utilities.scss */
-.u-line-height-medium {
+.u-lineHeightMedium {
   line-height: 1.7em;
 }
 
