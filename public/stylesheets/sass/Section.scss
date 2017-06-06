@@ -43,11 +43,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
   text-align: justify;
-  background-color: rgba(48, 89, 119, 0.93);
-  color: rgba(255, 255, 255, 1);
+  background-color: $darker-blue-color;
+  color: $white-color;
 }
 .SectionCards {
   padding: 0;
