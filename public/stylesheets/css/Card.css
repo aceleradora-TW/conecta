@@ -79,7 +79,7 @@
 
 /* line 73, ../sass/Card.scss */
 .Items {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
