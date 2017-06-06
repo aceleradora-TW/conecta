@@ -1,0 +1,24 @@
+.InputGroup {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 6vh;
+  input {
+    font-size: 1.05em;
+  }
+  span {
+    font-size: 1.3em;
+  }
+}
+
+.InputGroupButton{
+  width: 30%;
+  z-index: 99;
+}
+
+.InputSearch{
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  padding-left: 2%;
+  width: 60%;
+}
