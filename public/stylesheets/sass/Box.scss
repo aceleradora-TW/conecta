@@ -11,7 +11,7 @@
   width: 100%;
   height: 70%;
   font-family: $font-style;
-  color: $white-color;
+  color: $white-font-color;
   text-shadow: 1px 1px #000;
   line-height: 2em;
   font-size: 1.3em;
@@ -30,7 +30,7 @@
   font-weight: lighter;
   font-size: 1.3em;
   text-align: center;
-  color: $white-color
+  color: $white-font-color
 }
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
@@ -43,7 +43,7 @@
   width: 60%;
   height: 20%;
   font-family: $font-style;
-  color: $white-color;
+  color: $white-font-color;
   text-shadow: 1px 1px #000;
 }
 .BoxHowItWorks {
@@ -55,7 +55,7 @@
   @include flex($align: center, $justify: center);
   height: 50%;
   width: 40%;
-  color: $white-color;
+  color: $white-font-color;
   background-color: $white-color;
   border-radius: 100%;
 }
@@ -108,7 +108,7 @@
   @include flex($align: center, $direction: row, $justify: center);
 	width: 100%;
 	height: 100%;
-	color: $white-color;
+	color: $white-font-color;
 	font-family: $font-style;
 
 }
