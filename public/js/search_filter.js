@@ -17,6 +17,6 @@ window.onclick = function(event) {
 window.onload = function onLoad(){
   var urlHasAnchor = location.href.indexOf("#") > 0;
   if(!urlHasAnchor){
-    document.getElementById("InputBusca").focus();
+    document.getElementById("InputSearch").focus();
   }
 }
