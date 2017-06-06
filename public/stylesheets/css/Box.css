@@ -1,139 +1,139 @@
-/* line 1, ../sass/Box.scss */
+/* line 13, ../sass/Box.scss */
 .ContentAbout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 50%;
   width: 65%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
-/* line 10, ../sass/Box.scss */
+/* line 18, ../sass/Box.scss */
 .TextExplanation {
-  width: 100%;
-  height: 70%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 70%;
   font-family: 'Lato', sans-serif;
   color: #fff;
   text-shadow: 1px 1px #000;
-  flex-direction: column;
   line-height: 2em;
   font-size: 1.3em;
   font-weight: lighter;
 }
 
-/* line 25, ../sass/Box.scss */
+/* line 29, ../sass/Box.scss */
 .LogosCredibility {
-  width: 99%;
-  height: 30%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+  width: 99%;
+  height: 30%;
 }
 
 /* line 34, ../sass/Box.scss */
 .BoxText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 50%;
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   font-size: 1.3em;
   text-align: center;
   color: white;
 }
 
-/* line 48, ../sass/Box.scss */
+/* line 44, ../sass/Box.scss */
 .BoxSearch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 60%;
-  display: flex;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
-  flex-direction: column;
-  align-items: center;
 }
 
-/* line 58, ../sass/Box.scss */
+/* line 50, ../sass/Box.scss */
 .TitleSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60%;
   height: 20%;
   font-family: 'Lato', sans-serif;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-shadow: 1px 1px #000;
 }
 
-/* line 69, ../sass/Box.scss */
+/* line 58, ../sass/Box.scss */
 .BoxHowItWorks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 20%;
+}
+
+/* line 63, ../sass/Box.scss */
+.Icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-
-/* line 78, ../sass/Box.scss */
-.Icon {
   height: 50%;
   width: 40%;
   color: white;
-  display: flex;
-  justify-content: center;
   background-color: white;
   border-radius: 100%;
-  align-items: center;
 }
 
-/* line 89, ../sass/Box.scss */
+/* line 71, ../sass/Box.scss */
 .ContentHowItWorks {
-  height: 35vh;
-  width: 98%;
   display: flex;
   flex-direction: column;
+  height: 35vh;
+  width: 98%;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
 
-/* line 98, ../sass/Box.scss */
+/* line 78, ../sass/Box.scss */
 .Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 25%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* line 107, ../sass/Box.scss */
+/* line 84, ../sass/Box.scss */
 .CardContentF {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
   height: 75%;
   width: 98%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 
-/* line 115, ../sass/Box.scss */
+/* line 89, ../sass/Box.scss */
 .Arrow {
-  height: 50%;
-  width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50%;
+  width: 5%;
   color: white;
 }
 
-/* line 124, ../sass/Box.scss */
+/* line 95, ../sass/Box.scss */
 .Text {
   height: 55%;
   font-size: 1.2em;
@@ -141,58 +141,57 @@
   text-align: center;
 }
 
-/* line 131, ../sass/Box.scss */
+/* line 101, ../sass/Box.scss */
 .ContentSearch {
-  min-height: 25vh;
-  width: 98%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  min-height: 25vh;
+  width: 98%;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
 }
 
-/* line 143, ../sass/Box.scss */
+/* line 110, ../sass/Box.scss */
 .Tag {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 40%;
   height: 7vh;
-  display: flex;
-  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
-/* line 153, ../sass/Box.scss */
+/* line 116, ../sass/Box.scss */
 .TagTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   font-family: 'Lato', sans-serif;
 }
 
-/* line 164, ../sass/Box.scss */
+/* line 124, ../sass/Box.scss */
 .NavSearch {
-  width: 60%;
-  height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 60%;
+  height: 60%;
 }
 
-/* line 171, ../sass/Box.scss */
+/* line 129, ../sass/Box.scss */
 .BoxTextTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

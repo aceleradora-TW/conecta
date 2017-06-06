@@ -1,178 +1,133 @@
+@mixin flex($align: null, $direction: null, $justify: null) {
+  display: flex;
+  @if($align) {
+    align-items: $align;
+  }
+  @if($direction) {
+    flex-direction: $direction;
+  }
+  @if($justify){
+    justify-content: $justify;
+  }
+}
 .ContentAbout {
+  @include flex($align: center, $direction: column, $justify: center);
   height: 50%;
   width: 65%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
-
 .TextExplanation {
+  @include flex($align: center, $direction: column, $justify: center);
   width: 100%;
   height: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Lato', sans-serif;
   color: #fff;
   text-shadow: 1px 1px #000;
-  flex-direction: column;
   line-height: 2em;
   font-size: 1.3em;
   font-weight: lighter;
 }
-
 .LogosCredibility {
+  @include flex($align: center, $direction: row, $justify: flex-end);
   width: 99%;
   height: 30%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
 }
-
 .BoxText {
+  @include flex($align: center, $direction: column, $justify: center);
   height: 50%;
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   font-size: 1.3em;
   text-align: center;
   color: white;
 }
-
 .BoxSearch {
+  @include flex($align: center, $direction: column, $justify: center);
   width: 100%;
   height: 60%;
-  display: flex;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
-  flex-direction: column;
-  align-items: center;
 }
-
 .TitleSearch {
+  @include flex($align: center, $justify: center);
   width: 60%;
   height: 20%;
   font-family: 'Lato', sans-serif;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-shadow: 1px 1px #000;
 }
-
 .BoxHowItWorks {
+  @include flex($align: center, $direction: column, $justify: center);
   height: 100%;
   width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
-
 .Icon {
+  @include flex($align: center, $justify: center);
   height: 50%;
   width: 40%;
   color: white;
-  display: flex;
-  justify-content: center;
   background-color: white;
   border-radius: 100%;
-  align-items: center;
 }
-
 .ContentHowItWorks {
+  @include flex($direction: column);
   height: 35vh;
   width: 98%;
-  display: flex;
-  flex-direction: column;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
-
 .Title {
+  @include flex($align: center, $justify: center);
   width: 100%;
   height: 25%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .CardContentF {
+  @include flex($align: flex-start, $justify: space-around);
   height: 75%;
   width: 98%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
 }
-
 .Arrow {
+  @include flex($align: center, $justify: center);
   height: 50%;
   width: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
 }
-
 .Text {
   height: 55%;
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
-
 .ContentSearch {
+  @include flex($align: center, $direction: column, $justify: center);
   min-height: 25vh;
   width: 98%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
 }
 .Tag{
+  @include flex($align: center, $direction: column, $justify: center);
 	width: 40%;
 	height: 7vh;
-	display: flex;
-  
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
   cursor: pointer;
 }
 .TagTitle{
+  @include flex($align: center, $direction: row, $justify: center);
 	width: 100%;
 	height: 100%;
 	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
 	font-family: 'Lato', sans-serif;
 
 }
 .NavSearch{
+  @include flex($direction: row, $justify: space-between);
 	width: 60%;
 	height: 60%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 .BoxTextTitle{
+  @include flex($align: center, $justify: center);
 	height: 100%;
 	width: 85%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
