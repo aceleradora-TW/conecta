@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import "_variables.scss";
 
 .ContentAbout {
   @include flex($align: center, $direction: column, $justify: center);
@@ -9,8 +10,8 @@
   @include flex($align: center, $direction: column, $justify: center);
   width: 100%;
   height: 70%;
-  font-family: 'Lato', sans-serif;
-  color: #fff;
+  font-family: $font-style;
+  color: $white-color;
   text-shadow: 1px 1px #000;
   line-height: 2em;
   font-size: 1.3em;
@@ -25,11 +26,11 @@
   @include flex($align: center, $direction: column, $justify: center);
   height: 50%;
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
   font-size: 1.3em;
   text-align: center;
-  color: white;
+  color: $white-color
 }
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
@@ -41,8 +42,8 @@
   @include flex($align: center, $justify: center);
   width: 60%;
   height: 20%;
-  font-family: 'Lato', sans-serif;
-  color: white;
+  font-family: $font-style;
+  color: $white-color;
   text-shadow: 1px 1px #000;
 }
 .BoxHowItWorks {
@@ -54,15 +55,15 @@
   @include flex($align: center, $justify: center);
   height: 50%;
   width: 40%;
-  color: white;
-  background-color: white;
+  color: $white-color;
+  background-color: $white-color;
   border-radius: 100%;
 }
 .ContentHowItWorks {
   @include flex($direction: column);
   height: 35vh;
   width: 98%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
 }
 .Title {
@@ -80,7 +81,7 @@
   @include flex($align: center, $justify: center);
   height: 50%;
   width: 5%;
-  color: white;
+  color: $white-color;
 }
 .Text {
   height: 55%;
@@ -92,7 +93,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   min-height: 25vh;
   width: 98%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
@@ -107,8 +108,8 @@
   @include flex($align: center, $direction: row, $justify: center);
 	width: 100%;
 	height: 100%;
-	color: white;
-	font-family: 'Lato', sans-serif;
+	color: $white-color;
+	font-family: $font-style;
 
 }
 .NavSearch{

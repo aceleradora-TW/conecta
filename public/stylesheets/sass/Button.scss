@@ -1,5 +1,7 @@
+@import "_mixins.scss";
+
 .Button{
-  display: flex;
+  @include flex();
   background-color: #3771c8;
   height: 100%;
   line-height: 36px;
@@ -20,11 +22,9 @@
 	cursor: pointer;
 }
 .Button a {
+  @include flex($align: center, $justify: center);
 	text-decoration: none;
 	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .ButtonFilter{
