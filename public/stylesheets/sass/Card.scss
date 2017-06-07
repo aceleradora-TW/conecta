@@ -57,18 +57,17 @@
 }
 
 .Subitems {
-  width: 85%;
-  margin-top: 2%;
+  width: 100%;
   display: none;
   list-style: none;
   line-height: 1.8em;
   font-size: 0.8em;
   text-align:left;
   margin: 0;
-  box-shadow: 2px 3px 1px 1px rgba(48, 91, 159, 0.1);
-  background-color: rgba(255,255,255,0.8);
-
+  padding: 0;
+  background-color: rgba(255,255,255,1);
 }
+
 .Items{
   width: 100%;
   display: flex;
@@ -131,7 +130,7 @@
 }
 
 .CompanyDescription{
-  width: 90%;
+  width: 100%;
   height: 30%;
   display: flex;
   text-align: center;
