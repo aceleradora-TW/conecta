@@ -1,5 +1,5 @@
-/* line 1, ../sass/Logos.scss */
-.LogoTecnopuc {
+/* line 3, ../sass/Logos.scss */
+.Logo-wide {
   height: 50%;
   width: 10%;
   background-repeat: no-repeat;
@@ -7,9 +7,8 @@
   margin: 10px;
   background-image: url("/images/tecnopuc4.png");
 }
-
-/* line 9, ../sass/Logos.scss */
-.LogoPuc {
+/* line 12, ../sass/Logos.scss */
+.Logo-tall {
   height: 95%;
   width: 3%;
   background-repeat: no-repeat;
