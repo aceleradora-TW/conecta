@@ -1,7 +1,6 @@
 .Card {
   background: #fff;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 45vh;
   margin-bottom: 2%;
   width: 48%;
   display: flex;
@@ -106,7 +105,6 @@
 }
 
 .ItemStar{
-  width: 20%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -171,7 +169,7 @@
 }
 
 .BoxButtonCard {
-  width: 50%;
+  width: 60%;
   height: 50%;
   display: flex;
   justify-content: flex-end;
