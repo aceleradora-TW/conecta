@@ -28,8 +28,14 @@ class RouterService
       @company_competence = search_service.find_related_competence_institutions(@competences)
       @company_competence.each do |single_cmp_competence|
         local_company = single_cmp_competence.company
-        if !@companies_searched.include? local_company
+        index_of_company = @companies_searched.index local_company
+        if !index_of_company
+          local_company.searched_competences = [single_cmp_competence]
+          #local_company.searched_competences.inspect
+          #local_company.searched_competences.push(single_cmp_competence)
           @companies_searched.push(local_company)
+        else
+          @companies_searched[index_of_company].searched_competences.push(single_cmp_competence)
         end
       end
     end
