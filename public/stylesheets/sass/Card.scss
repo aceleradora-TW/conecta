@@ -103,6 +103,11 @@
 
 }
 
+.Items:hover {
+  background: rgba(0,0,0,.05);
+  transition: .5s;
+}
+
 .CompetenceList {
   display:flex;
   width: 100%;
@@ -175,7 +180,7 @@
   word-wrap: break-word;
 }
 .FooterCardPrimay {
-  border-top: 2px solid #c1c1c1;
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
   width: 100%;
   min-height: 60px;
   display: flex;
@@ -207,13 +212,13 @@
 }
 
 .CardSecondary{
-  border-top: 2px solid #c1c1c1;
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
 }
 
 .FooterCardSecondary{
-  border-bottom: 2px solid #c1c1c1;
+  border-bottom: 1px solid rgba(193, 193, 193, 0.45);
   width: 100%;
   min-height: 60px;
   display: flex;
