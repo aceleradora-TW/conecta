@@ -129,8 +129,6 @@
 .CompanyCompetences{
   @include flex($direction: column);
   @include size($height: 60%, $width: 100%);
-  width: 100%;
-  height: 60%;
   margin-top: 3%;
 }
 
