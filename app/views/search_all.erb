@@ -123,7 +123,7 @@
         <h1><%= rc_searched.name %></h1>
     </div>
 
-    <div class="CompanyCompetences">
+    <div class="ResearchCompetences">
       <div class="ItemTheme">
         <b>Area de Pesquisa:</b>
         <% rc_searched.research_areas.each do |a| %>
@@ -162,10 +162,25 @@
 
     <% end %>
     <!-- TEM QUE POR NO VER MAIS -->
+
+    <div class="FooterCardPrimay">
+  <div class="BoxButtonCard">
+    <div class="Button u-width-medium">
+      contato
+    </div>
+    <div class="Button u-widthMedium ButtonSeeMore">
+      ver mais
+    </div>
+  </div>
+</div>
+<div class="CardSecondary">
+
     <div class="CompanyDescription">
       <%= rc_searched.description%>
     </div>
+</div>
 
+</div>
   </div>
   <% end %>
 
