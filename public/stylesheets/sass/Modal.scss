@@ -8,19 +8,21 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  display: flex;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.8);
 }
 .ModalContent {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
+  height: 50%;
+  text-align: center;
 }
 .Close {
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }
@@ -32,12 +34,34 @@
 }
 
 textarea {
-  width: 310px;
-  height: 100px;
+  width: 45%;
+  height: 30%;
   margin: 8px 0px;
   font-style: italic;
   color: rgba(115,115,115,1);
   padding: 7px 15px;
   border-radius: 5px;
   outline: none;
+}
+
+.ModalHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.ModalTitle {
+  font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.ModalDescription {
+  font-size: 0.9em;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
 }
