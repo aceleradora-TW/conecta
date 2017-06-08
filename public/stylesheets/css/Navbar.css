@@ -12,6 +12,7 @@
 }
 
 /* line 14, ../sass/Navbar.scss */
+>>>>>>> be1e9f30247b751a94dc2c855ee45a5dff7904a6
 .NavLogo {
   width: 50%;
   height: 100%;
@@ -62,7 +63,6 @@
   color: white;
   font-size: 1.1em;
 }
-
 /* line 60, ../sass/Navbar.scss */
 .NavLinks a {
   text-decoration: none;
