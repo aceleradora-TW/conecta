@@ -9,4 +9,7 @@ class CompetenceInstitution
   def competence_value_calculated
     competence_value > 1 ? (competence_value - 1).to_s + "/5" : "0/5"
   end
+  def competence_value_calculated_integer
+    competence_value > 1 ? (competence_value - 1): 0
+  end
 end

@@ -8,12 +8,6 @@ btnFilter.onclick = function() {
   btnFilter.classList.toggle('ButtonFilter-activated');
 }
 
-window.onclick = function(event) {
-  if ((!event.target.matches('.ButtonFilter')) && (!event.target.matches('.DropdownMenu')) && (!event.target.matches('.text-filter')) && (!event.target.matches('.filterLabel'))) {
-    menu.classList.remove('DropdownMenu-visible');
-    btnFilter.classList.remove('ButtonFilter-activated');
-  }
-}
 window.onload = function onLoad(){
   var urlHasAnchor = location.href.indexOf("#") > 0;
   if(!urlHasAnchor){
