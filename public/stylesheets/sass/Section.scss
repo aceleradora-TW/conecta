@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 .Section {
   display: flex;
@@ -19,8 +20,7 @@
 }
 
 .HowItWorks {
-  width: 100%;
-  height: 95vh;
+  @include size($width: 100%, $height: 95vh);
   display: flex;
   flex-direction: column;
   color: $white-font-color;

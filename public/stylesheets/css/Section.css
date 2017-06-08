@@ -1,4 +1,4 @@
-/* line 3, ../sass/Section.scss */
+/* line 4, ../sass/Section.scss */
 .Section {
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   background-attachment: fixed;
 }
 
-/* line 13, ../sass/Section.scss */
+/* line 14, ../sass/Section.scss */
 .SectionOpacity {
   width: 100%;
   height: 85vh;
@@ -18,10 +18,10 @@
   flex-direction: column;
 }
 
-/* line 21, ../sass/Section.scss */
+/* line 22, ../sass/Section.scss */
 .HowItWorks {
-  width: 100%;
   height: 95vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   color: white;
