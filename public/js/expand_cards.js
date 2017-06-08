@@ -2,12 +2,12 @@ const items = document.querySelectorAll('.ItemsArea');
 const subitems = document.querySelectorAll('.SubItemsArea');
 for(let i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function(){
-    if(subitems[i].style.display == 'block') {
+    if(subitems[i].style.display == 'flex') {
       subitems[i].style.display = 'none';
       items[i].style.color = 'black';
     }
     else{
-      subitems[i].style.display = 'block';
+      subitems[i].style.display = 'flex';
       items[i].style.color = 'rgba(52, 73, 94,0.8)';
     }
   });
