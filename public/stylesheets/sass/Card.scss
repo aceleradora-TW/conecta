@@ -5,7 +5,7 @@
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45vh);
-  background: #fff;
+  background: rgba(255, 255, 255, 1);
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: 'Lato', sans-serif;
@@ -44,7 +44,7 @@
 }
 .CompetenceList {
   @include flex($align: flex-start, $direction: column, $justify: space-between);
-  width: 100%;
+  @include ($width: 100%);
   height: 95%;
   text-align: left;
 }
