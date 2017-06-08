@@ -1,9 +1,12 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
 .Section {
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 85vh;
-  background-image: url("http://www.speckygeek.com/uploads/cache/2017/03/Business-Web-Design-Office-800x400.jpg");
+  background-image: url("https://goo.gl/cBzVRv");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -17,12 +20,10 @@
 }
 
 .HowItWorks {
-  width: 100%;
-  height: 95vh;
+  @include size($width: 100%, $height: 95vh);
+  @include flex($align: center, $direction: column, $justify: center);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: $white-font-color;
   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5),rgba(0,0,0,0.7), rgba(0,0,0,0.8),rgba(0,0,0,0.9) );
 }
 .Collaborators {
@@ -36,18 +37,16 @@
 }
 
 .About{
+  @include flex($align: center, $direction: row, $justify: space-around);
   padding: 0;
   width: 100%;
   min-height: 97vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
   text-align: justify;
-  background-color: rgba(48, 89, 119, 0.93);
-  color: rgba(255, 255, 255, 1);
+  background-color: $darker-blue-color;
+  color: $white-font-color;
 }
 .SectionCards {
   padding: 0;

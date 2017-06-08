@@ -1,233 +1,53 @@
-/* line 1, ../sass/Card.scss */
-.Card {
-  background: #fff;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 45vh;
-  margin-bottom: 2%;
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: lighter;
-}
+/*
+Error: Invalid CSS after "  @include ": expected identifier, was "($width: 100%);"
+        on line 47 of /code/public/stylesheets/sass/Card.scss
 
-/* line 15, ../sass/Card.scss */
-.CardNav {
-  width: 100%;
-  min-height: 20%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
+42:   cursor: pointer;
+43:   align-self: center;
+44: }
+45: .CompetenceList {
+46:   @include flex($align: flex-start, $direction: column, $justify: space-between);
+47:   @include ($width: 100%);
+48:   height: 95%;
+49:   text-align: left;
+50: }
+51: .CompetencesTitle{
+52:   @include flex($align: flex-end, $justify: center);
 
-/* line 23, ../sass/Card.scss */
-.CardLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 29, ../sass/Card.scss */
-.CardTitle {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* line 36, ../sass/Card.scss */
-.Logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-/* line 46, ../sass/Card.scss */
-.CardCenter {
-  background: #fff;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  min-height: 66vh;
-  margin-bottom: 3%;
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: lighter;
-}
-
-/* line 60, ../sass/Card.scss */
-.Subitems {
-  width: 85%;
-  margin-top: 2%;
-  display: none;
-  list-style: none;
-  line-height: 1.8em;
-  font-size: 0.8em;
-  text-align: left;
-  margin: 0;
-  box-shadow: 2px 3px 1px 1px rgba(48, 91, 159, 0.1);
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-/* line 73, ../sass/Card.scss */
-.Items {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 2em;
-  cursor: pointer;
-  align-self: center;
-}
-
-/* line 83, ../sass/Card.scss */
-.CompetenceList {
-  display: flex;
-  width: 100%;
-  height: 95%;
-  text-align: left;
-  flex-direction: column;
-}
-
-/* line 91, ../sass/Card.scss */
-.CompetencesTitle {
-  width: 100%;
-  height: 5%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: 5%;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-/* line 101, ../sass/Card.scss */
-.ItemText {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  text-align: right;
-}
-
-/* line 108, ../sass/Card.scss */
-.ItemStar {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  color: #e4b541;
-}
-
-/* line 115, ../sass/Card.scss */
-.ContactTitle {
-  width: 100%;
-  height: 5%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-/* line 123, ../sass/Card.scss */
-.CompanyName {
-  width: 100%;
-  height: 10%;
-  text-align: center;
-}
-
-/* line 128, ../sass/Card.scss */
-.CenterName {
-  width: 100%;
-  height: 10%;
-  text-align: center;
-  margin-bottom: 3%;
-}
-
-/* line 135, ../sass/Card.scss */
-.CompanyDescription {
-  width: 90%;
-  height: 30%;
-  display: flex;
-  text-align: center;
-  font-size: 0.9em;
-  line-height: 1.8em;
-}
-
-/* line 143, ../sass/Card.scss */
-.CenterTheme {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  flex-direction: row;
-}
-
-/* line 149, ../sass/Card.scss */
-.ItemTheme {
-  width: 50%;
-  height: 100%;
-  margin: 2%;
-  word-wrap: break-word;
-}
-
-/* line 155, ../sass/Card.scss */
-.FooterCardPrimay {
-  border-top: 2px solid #c1c1c1;
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* line 164, ../sass/Card.scss */
-.RatingExplanation {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-/* line 173, ../sass/Card.scss */
-.BoxButtonCard {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-/* line 180, ../sass/Card.scss */
-.CompanyCompetences {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 187, ../sass/Card.scss */
-.CardSecondary {
-  border-top: 2px solid #c1c1c1;
-  padding: 1%;
-  display: none;
-}
-
-/* line 193, ../sass/Card.scss */
-.FooterCardSecondary {
-  border-top: 2px solid #c1c1c1;
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+Backtrace:
+/code/public/stylesheets/sass/Card.scss:47
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:238:in `include_directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:222:in `special_directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:197:in `directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  @include \": expected identifier, was \"($width: 100%);\"\A         on line 47 of /code/public/stylesheets/sass/Card.scss\A \A 42:   cursor: pointer;\A 43:   align-self: center;\A 44: }\A 45: .CompetenceList {\A 46:   @include flex($align: flex-start, $direction: column, $justify: space-between);\A 47:   @include ($width: 100%);\A 48:   height: 95%;\A 49:   text-align: left;\A 50: }\A 51: .CompetencesTitle{\A 52:   @include flex($align: flex-end, $justify: center);"; }

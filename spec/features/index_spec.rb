@@ -18,7 +18,7 @@ RSpec.describe IndexController do
 
       it "Deve exibir o texto do copyright no footer" do
         visit "/"
-        expect(page).to have_content "© 2017 Conecta, Todos os direitos deservados."
+        expect(page).to have_content "© 2017 Conecta, Todos os direitos reservados."
       end
 
       it "Deve exibir o botão da lista de empresas" do
@@ -33,7 +33,7 @@ RSpec.describe IndexController do
 
       it "Deve exibir o título Como Funciona" do
         visit "/"
-        expect(page).to have_selector('h1', text: 'Como funciona')
+        expect(page).to have_selector('h1', text: 'Como Funciona')
       end
 
       it "Deve exibir o título Sobre" do
