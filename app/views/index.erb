@@ -18,6 +18,7 @@
         <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
             <div class="InputGroup ">
+              <div class="BoxFilterBy">
                 <button class="ButtonFilter" type="button" name="button">
                   <span class="u-fontSizeMedium">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </button>
@@ -31,7 +32,7 @@
                   <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
                   <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
                 </div>
-
+              </div>
               <input id="InputSearch" class="Input-search" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
               <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
               <!-- <button class="ButtonSearch" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->

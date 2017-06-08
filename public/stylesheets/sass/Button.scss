@@ -29,7 +29,7 @@
 }
 
 .ButtonFilter{
-  @include size($height: 100%, $width: 30%);
+  @include size($height: 100%, $width: 100%);
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;

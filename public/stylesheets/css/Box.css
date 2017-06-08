@@ -202,7 +202,7 @@
 .FormSearch {
   display: flex;
   align-items: center;
-  flex-direction: columns;
+  flex-direction: column;
   justify-content: center;
   width: 85%;
   align-content: space-between;
@@ -214,4 +214,10 @@
   justify-content: center;
   height: 6vh;
   width: 75%;
+}
+
+/* line 118, ../sass/Box.scss */
+.BoxFilterBy {
+  width: 30%;
+  z-index: 2;
 }
