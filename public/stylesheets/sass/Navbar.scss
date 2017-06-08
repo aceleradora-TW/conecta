@@ -1,3 +1,5 @@
+@import "MediaQuery";
+
 .Navbar{
 	width: 100%;
 	height: 12vh;
@@ -15,9 +17,12 @@
 	height: 100%;
 	display: flex;
 	justify-content: flex-start;
-	margin-left: 25px;
+	margin-left: 3%;
 	align-items: center;
-
+	@include tablet{
+		width: 25%;
+		justify-content: center;
+	}
 }
 .NavLinks{
 	width: 50%;
@@ -32,17 +37,22 @@
 	align-items: center;
 	color: white;
 
+	@include tablet {
+		justify-content: space-around;
+		padding-right: 5%;
+	}
+
 
 }
 .Link{
 	width: 24%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  flex-wrap: wrap;
-  color: white;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	flex-wrap: wrap;
+	color: white;
 }
 .Link:hover{
 	background-color: rgba(0,0,0,0.7);
@@ -55,7 +65,7 @@
 	color: white;
 	font-size: 1.1em;
 }
- 
+
 .NavLinks a{
 	text-decoration: none;
 	font-size: 1.1em;

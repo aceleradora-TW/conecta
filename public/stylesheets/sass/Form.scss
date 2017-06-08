@@ -1,3 +1,5 @@
+@import "MediaQuery";
+
 .FormSearch {
   display: flex;
   justify-content: center;
@@ -17,6 +19,14 @@
   }
   span {
     font-size: 1.3em;
+  }
+  @include tablet {
+    input {
+      font-size: 0.8em;
+    }
+    span {
+      font-size: 1.1em;
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-/* line 1, ../sass/Button.scss */
+/* line 3, ../sass/Button.scss */
 .Button {
   display: flex;
   background-color: #3771c8;
@@ -15,14 +15,20 @@
   text-align: center;
   letter-spacing: .5px;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 3, ../sass/Button.scss */
+  .Button {
+    font-size: 0.8rem;
+  }
+}
 
-/* line 18, ../sass/Button.scss */
+/* line 23, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
 
-/* line 22, ../sass/Button.scss */
+/* line 27, ../sass/Button.scss */
 .Button a {
   text-decoration: none;
   color: white;

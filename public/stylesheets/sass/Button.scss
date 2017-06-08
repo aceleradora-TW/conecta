@@ -1,3 +1,5 @@
+@import "MediaQuery";
+
 .Button{
   display: flex;
   background-color: #3771c8;
@@ -13,6 +15,9 @@
   color: #fff;
   text-align: center;
   letter-spacing: .5px;
+  @include tablet {
+    font-size: 0.8rem;
+  }
 }
 
 .Button:hover{
