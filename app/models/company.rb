@@ -10,7 +10,6 @@ class Company < Institution
   has n, :competence_institutions
 
   def featured_competences
-    self.contact = Contact.new(site: "SITE", phone: "FONE", contact_name: "CONTATO", email: "EMAIL") 
     if @searched_competences and @searched_competences.length > 0
       ordered_competences = @searched_competences.sort{|a,b| b.competence_value_calculated_integer <=> a.competence_value_calculated_integer}
       return ordered_competences.slice(0,3)
