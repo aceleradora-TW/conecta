@@ -1,5 +1,8 @@
 /* line 1, ../sass/Dropdown.scss */
 .DropdownMenu {
+  height: 200px;
+  width: 300px;
+  z-index: 2;
   list-style: none;
   position: static;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -13,7 +16,7 @@
   opacity: 0;
   transition: 1s;
 }
-/* line 15, ../sass/Dropdown.scss */
+/* line 18, ../sass/Dropdown.scss */
 .DropdownMenu-visible {
   opacity: 1;
   display: block;

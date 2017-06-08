@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import "_variables.scss";
 
 .Button{
   @include flex();
@@ -29,7 +30,7 @@
 
 .ButtonFilter{
   @include size($height: 100%, $width: 30%);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
