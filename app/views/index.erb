@@ -6,8 +6,8 @@
         <div> Encontre colaboradores adequados às suas necessidades no ecossistema de empresas do TecnoPuc</div>
       </div>
       <div class="LogosCredibility">
-        <div class="LogoTecnopuc"><img src="/images/tecnopuc4.png" ></div>
-        <div class="LogoPuc"><img src="/images/puc4.png" ></div>
+        <div class="Logo-wide"></div>
+        <div class="Logo-tall"></div>
       </div>
     </div>
     <div class="BoxSearch">
@@ -17,10 +17,10 @@
         </div>
         <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
-            <div class="InputGroup">
-              <div class="InputGroupButton">
+            <div class="InputGroup ">
+              <div class="BoxFilterBy">
                 <button class="ButtonFilter" type="button" name="button">
-                  <span class="text-filter">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                  <span class="u-fontSizeMedium">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </button>
                 <div class="DropdownMenu">
                   <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Empresa</label><br>
@@ -33,7 +33,6 @@
                   <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
                 </div>
               </div>
-
               <input id="InputSearch" class="InputSearch" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
               <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
               <!-- <button class="ButtonSearch" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->
@@ -42,7 +41,7 @@
         </div>
         <div class="NavSearch">
           <div class="Tag" onclick="location.href='/search_all?search_type=empresa'">
-            <div class="TagTitle u-colorGreen">
+            <div class="TagTitle u-colorBackgroundGreen">
               <div class="BoxTextTitle">
                 <i class="material-icons u-fontSizeMedium">work</i>
                 <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
@@ -50,7 +49,7 @@
             </div>
           </div>
           <div class="Tag" onclick="location.href='/search_all?search_type=centro-pesquisa'">
-            <div class="TagTitle u-colorOrange">
+            <div class="TagTitle u-colorBackgroundOrange">
               <div class="BoxTextTitle">
                 <i class="material-icons u-fontSizeMedium">school</i>
                 <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
@@ -62,14 +61,13 @@
     </div>
   </div>
 </section>
-
-<section class="HowItWorks" id="HowItWorks">
-  <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato "><h1>Como funciona</h1></div>
+<section class="HowItWorks u-fontWhiteColor" id="HowItWorks">
+  <div class="u-fontSizeLarge u-fontFamilyLato"><h1>Como Funciona</h1></div>
   <div class="ContentHowItWorks">
     <div class="CardContentF">
       <div class="BoxHowItWorks ">
         <div class="Icon">
-          <i class="material-icons md-3  u-colorBlue1">insert_drive_file</i>
+          <i class="material-icons md-3  u-colorLightBlue">insert_drive_file</i>
         </div>
         <div class="Text">
           <p class="BoxText">Você cadastra sua empresa no Conecta</p>
@@ -80,7 +78,7 @@
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-colorRed1">build</i>
+          <i class="material-icons md-3 u-colorLightRed">build</i>
         </div>
         <div class="Text">
           <p class="BoxText">Procura recursos ou serviços</p>
@@ -91,7 +89,7 @@
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-colorGreen1">business</i>
+          <i class="material-icons md-3 u-colorGreen">business</i>
         </div>
         <div class="Text">
           <p class="BoxText">Encontra empresas fornecedoras</p>
@@ -102,7 +100,7 @@
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-colorOrange1">contact_mail</i>
+          <i class="material-icons md-3 u-colorOrange">contact_mail</i>
         </div>
         <div class="Text">
           <p class="BoxText">O Conecta contata essa empresa para você</p>
@@ -126,9 +124,9 @@
 </section>
 
 
-<section class="Collaborators" id="Collaborators">
+<section class="Collaborators u-fontWhiteColor" id="Collaborators">
   <div class="ContentAbout">
-    <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
+    <div class="u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
     <p class="u-fontWhite u-fontSizeMedium u-fontFamilyLato">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
       <ul class="u-fontSizeMedium u-lineHeightMedium u-alignLeft u-fontWhite u-fontFamilyLato">
         <li>Rede INOVAPUCRS;</li>

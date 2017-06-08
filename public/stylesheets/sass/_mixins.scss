@@ -1,0 +1,27 @@
+@mixin flex($align: null, $direction: null, $justify: null) {
+  display: flex;
+  @if($align) {
+    align-items: $align;
+  }
+  @if($direction) {
+    flex-direction: $direction;
+  }
+  @if($justify){
+    justify-content: $justify;
+  }
+}
+
+@mixin size($height: null, $width: null, $min-height: null, $min-width: null) {
+  @if($height) {
+    height: $height;
+  }
+  @if($width) {
+    width: $width;
+  }
+  @if($min-height) {
+    min-height: $min-height;
+  }
+  @if($min-width) {
+    min-width: $min-width;
+  }
+}
