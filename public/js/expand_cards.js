@@ -1,15 +1,32 @@
 const items = document.querySelectorAll('.ItemsArea');
 const subitems = document.querySelectorAll('.SubItemsArea');
 for(let i = 0; i < items.length; i++) {
+
   items[i].addEventListener("click", function(){
-    if(subitems[i].style.display == 'block') {
-      subitems[i].style.display = 'none';
-      items[i].style.color = 'black';
+    if(subitems[i].classList.contains("active")){
+      subitems[i].classList.remove("active");
+      return;
     }
-    else{
-      subitems[i].style.display = 'block';
-      items[i].style.color = 'rgba(52, 73, 94,0.8)';
-    }
+    subitems[i].parentNode.querySelectorAll(".active").forEach(function(element){
+      element.classList.remove("active");
+    });
+    subitems[i].classList.add("active");
+    // if(subitems[i].style.display == 'flex') {
+    //   //subitems[i].style.display = 'none';
+    //   subitems[i].classList.remove('active');
+    //   console.log("Desativou " + subitems[i]);
+    //   items[i].style.color = 'black';
+    // }
+    // else{
+    //   //subitems[i].style.display = 'flex';
+    //   subitems[i].classList.add('active');
+    //   console.log("Ativou " + subitems[i]);
+    //   document.querySelectorAll('.active').forEach(function(item){
+    //     item.classList.remove('active');
+    //     console.log("Desativou " + item);
+    //   });
+    //   items[i].style.color = 'rgba(52, 73, 94,0.8)';
+    // }
   });
 }
 const button = document.querySelectorAll('.ButtonSeeMore');
