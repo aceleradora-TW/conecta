@@ -18,7 +18,22 @@
         <h1><%= company.name %></h1>
       </div>
     </div>
+    <% if @search_type == 'segmento' %>
+    <div class="CompanyCompetences">
+      <ul class="CompetenceList">
+        <% company.segments.each do |segment| %>
+        <% if segment.name.downcase.include? @value %>
+        <li class="Items">
 
+          <div class="ItemText"><%= segment.name %><i class="material-icons u-colorGreen">check circle</i></div>
+
+
+        </li>
+        <% end %>
+        <%end %>
+      </ul>
+    </div>
+    <% else %>
     <div class="CompanyCompetences">
       <ul class="CompetenceList">
 
@@ -40,7 +55,7 @@
           <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
         </div>
     </div>
-
+    <% end %>
     <div class="FooterCardPrimay">
       <div class="BoxButtonCard">
         <div class="Button u-width-medium">
