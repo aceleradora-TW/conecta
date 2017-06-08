@@ -87,7 +87,7 @@
     margin-left: 8.5%;
   }
   &.active{
-      display: flex;
+    display: flex;
   }
 }
 
@@ -212,11 +212,16 @@
 }
 
 .FooterCardSecondary{
-  border-top: 2px solid #c1c1c1;
+  border-bottom: 2px solid #c1c1c1;
   width: 100%;
   min-height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+  .FooterCardSecondaryItem {
+    width: 45%;
+  }
 }

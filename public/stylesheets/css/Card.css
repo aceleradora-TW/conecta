@@ -250,11 +250,17 @@
 
 /* line 214, ../sass/Card.scss */
 .FooterCardSecondary {
-  border-top: 2px solid #c1c1c1;
+  border-bottom: 2px solid #c1c1c1;
   width: 100%;
   min-height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+/* line 224, ../sass/Card.scss */
+.FooterCardSecondary .FooterCardSecondaryItem {
+  width: 45%;
 }
