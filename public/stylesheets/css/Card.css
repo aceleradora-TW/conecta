@@ -120,10 +120,9 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  color: #e4b541;
 }
 
-/* line 112, ../sass/Card.scss */
+/* line 111, ../sass/Card.scss */
 .ContactTitle {
   width: 100%;
   height: 5%;
@@ -132,14 +131,14 @@
   justify-content: center;
 }
 
-/* line 120, ../sass/Card.scss */
+/* line 119, ../sass/Card.scss */
 .CompanyName {
   width: 100%;
   height: 10%;
   text-align: center;
 }
 
-/* line 125, ../sass/Card.scss */
+/* line 124, ../sass/Card.scss */
 .CenterName {
   width: 100%;
   height: 10%;
@@ -147,7 +146,7 @@
   margin-bottom: 3%;
 }
 
-/* line 132, ../sass/Card.scss */
+/* line 131, ../sass/Card.scss */
 .CompanyDescription {
   width: 100%;
   height: 30%;
@@ -157,7 +156,7 @@
   line-height: 1.8em;
 }
 
-/* line 140, ../sass/Card.scss */
+/* line 139, ../sass/Card.scss */
 .CenterTheme {
   width: 100%;
   height: 20%;
@@ -165,7 +164,7 @@
   flex-direction: row;
 }
 
-/* line 146, ../sass/Card.scss */
+/* line 145, ../sass/Card.scss */
 .ItemTheme {
   width: 50%;
   height: 100%;
@@ -173,7 +172,7 @@
   word-wrap: break-word;
 }
 
-/* line 152, ../sass/Card.scss */
+/* line 151, ../sass/Card.scss */
 .FooterCardPrimay {
   border-top: 2px solid #c1c1c1;
   width: 100%;
@@ -184,7 +183,7 @@
   align-items: center;
 }
 
-/* line 161, ../sass/Card.scss */
+/* line 160, ../sass/Card.scss */
 .RatingExplanation {
   width: 70%;
   height: 100%;
@@ -194,7 +193,7 @@
   margin: 20px;
 }
 
-/* line 170, ../sass/Card.scss */
+/* line 169, ../sass/Card.scss */
 .BoxButtonCard {
   width: 60%;
   height: 50%;
@@ -203,7 +202,7 @@
   align-items: center;
 }
 
-/* line 177, ../sass/Card.scss */
+/* line 176, ../sass/Card.scss */
 .CompanyCompetences {
   width: 100%;
   height: 60%;
@@ -211,14 +210,14 @@
   flex-direction: column;
 }
 
-/* line 184, ../sass/Card.scss */
+/* line 183, ../sass/Card.scss */
 .CardSecondary {
   border-top: 2px solid #c1c1c1;
   padding: 1%;
   display: none;
 }
 
-/* line 190, ../sass/Card.scss */
+/* line 189, ../sass/Card.scss */
 .FooterCardSecondary {
   border-top: 2px solid #c1c1c1;
   width: 100%;
@@ -227,4 +226,9 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+/* line 200, ../sass/Card.scss */
+.ItemsArea .ItemText {
+  width: 100%;
 }

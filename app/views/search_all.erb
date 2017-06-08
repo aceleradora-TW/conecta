@@ -28,7 +28,7 @@
               <div class="ItemText"><%= company_competence.competence.name %></div>
               <div class="ItemStar">
                 <% for pos in (1..5) %>
-                <i class="material-icons"><%=pos <= rating ? "star" : "star_border"%></i>
+                <i class="material-icons u-colorGold"><%=pos <= rating ? "star" : "star_border"%></i>
 
                 <% end %>
               </div>
@@ -67,11 +67,11 @@
         <% @company_competences = company.grouped_competences %>
 
         <% if @company_competences != nil %>
-        <ul class="CompetenceList">
+        <ul class="CompetenceList u-widthLarge ">
 
           <%   @company_competences.each_key do |competence_area| %>
           <li class="Items ItemsArea"><div class="ItemText"><%= competence_area %></div>
-
+            <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
           </li>
 
             <ul class="Subitems SubItemsArea">
