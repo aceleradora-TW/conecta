@@ -23,6 +23,7 @@
   height: 95vh;
   display: flex;
   flex-direction: column;
+  color: $white-font-color;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5),rgba(0,0,0,0.7), rgba(0,0,0,0.8),rgba(0,0,0,0.9) );
@@ -49,7 +50,7 @@
   font-weight: lighter;
   text-align: justify;
   background-color: $darker-blue-color;
-  color: $white-color;
+  color: $white-font-color;
 }
 .SectionCards {
   padding: 0;

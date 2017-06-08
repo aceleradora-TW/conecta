@@ -20,30 +20,9 @@
 	font-family: $font-style;
 }
 
-.u-fontWhite{
-	color: $white-color;
+.u-fontWhiteColor {
+ color: $white-font-color;
 }
-
-.u-fontBlue{
-	color: rgba(15,170,195,1);
-}
-.u-fontRed{
-	color: rgba(235,99,97,1);
-}
-.u-fontGreen{
-	color: rgba(2,175,126,1);
-}
-.u-fontOrange{
-	color: rgba(235,149,50,1);
-}
-
-
-
-.u-alignLeft{
-	text-align: left;
-}
-
-
 
 .u-marginSmall {
 	margin: 6px;
@@ -64,33 +43,47 @@
 .u-lineHeightMedium{
 	line-height: 1.7em;
 }
-.u-colorRed{
-	background-color: #EB6361;
+
+.u-colorLightBlue{
+	color: $light-blue-color;
 }
-.u-colorRed:hover{
-	box-shadow: 1px 1px 2px 2px #E26A6A;
-	cursor: pointer;
+
+
+.u-colorLightRed{
+	color: $light-red-color;
 }
+
+
+
 .u-colorGreen{
-	/*background-color: #64DDBB;*/
-	background-color: #02af7e;
-}
-.u-colorGreen:hover{
-	box-shadow: 1px 1px 2px 2px #36D7B7;
-	cursor: pointer;
-}
-.u-colorBlue{
-	background-color: #0faac3;
-}
-.u-colorBlue:hover{
-	box-shadow: 1px 1px 2px 2px #6BB9F0;
-	cursor: pointer;
+	color: $aqua-green-color;
 }
 
 .u-colorOrange{
-	background-color: #EB9532;
+	color: $burnt-yellow-color;
 }
-.u-colorOrange:hover{
-	box-shadow: 1px 1px 2px 2px #F4B350;
+
+.u-colorBackgroundOrange{
+	background-color: $burnt-yellow-color;
+}
+.u-colorBackgroundGreen{
+	background-color: $aqua-green-color;
+}
+.u-colorBackgroundGreen:hover{
+	box-shadow: 1px 1px 2px 2px rgba(100, 221, 187,1);
 	cursor: pointer;
+}
+
+.u-colorBackgroundOrange:hover{
+	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80,1);
+	cursor: pointer;
+}
+
+.u-widthMedium{
+	width: 30%;
+	margin: 5%;
+}
+
+.u-colorGold{
+	color: #e4b541;
 }

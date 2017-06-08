@@ -24,101 +24,84 @@
 }
 
 /* line 23, ../sass/Utilities.scss */
-.u-fontWhite {
+.u-fontWhiteColor {
   color: white;
 }
 
 /* line 27, ../sass/Utilities.scss */
-.u-fontBlue {
-  color: #0faac3;
-}
-
-/* line 30, ../sass/Utilities.scss */
-.u-fontRed {
-  color: #eb6361;
-}
-
-/* line 33, ../sass/Utilities.scss */
-.u-fontGreen {
-  color: #02af7e;
-}
-
-/* line 36, ../sass/Utilities.scss */
-.u-fontOrange {
-  color: #eb9532;
-}
-
-/* line 42, ../sass/Utilities.scss */
-.u-alignLeft {
-  text-align: left;
-}
-
-/* line 48, ../sass/Utilities.scss */
 .u-marginSmall {
   margin: 6px;
 }
 
-/* line 52, ../sass/Utilities.scss */
+/* line 31, ../sass/Utilities.scss */
 .u-marginLeft {
   margin-left: 10%;
 }
 
-/* line 56, ../sass/Utilities.scss */
+/* line 35, ../sass/Utilities.scss */
 .u-marginRight {
   margin-right: 0.1%;
 }
 
-/* line 60, ../sass/Utilities.scss */
+/* line 39, ../sass/Utilities.scss */
 .u-marginTop {
   margin-top: 1%;
 }
 
-/* line 64, ../sass/Utilities.scss */
+/* line 43, ../sass/Utilities.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }
 
-/* line 67, ../sass/Utilities.scss */
-.u-colorRed {
-  background-color: #EB6361;
+/* line 47, ../sass/Utilities.scss */
+.u-colorLightBlue {
+  color: #0faac3;
 }
 
-/* line 70, ../sass/Utilities.scss */
-.u-colorRed:hover {
-  box-shadow: 1px 1px 2px 2px #E26A6A;
-  cursor: pointer;
+/* line 52, ../sass/Utilities.scss */
+.u-colorLightRed {
+  color: #eb6361;
 }
 
-/* line 74, ../sass/Utilities.scss */
+/* line 58, ../sass/Utilities.scss */
 .u-colorGreen {
-  /*background-color: #64DDBB;*/
+  color: #02af7e;
+}
+
+/* line 62, ../sass/Utilities.scss */
+.u-colorOrange {
+  color: #eb9532;
+}
+
+/* line 66, ../sass/Utilities.scss */
+.u-colorBackgroundOrange {
+  background-color: #eb9532;
+}
+
+/* line 69, ../sass/Utilities.scss */
+.u-colorBackgroundGreen {
   background-color: #02af7e;
 }
 
-/* line 78, ../sass/Utilities.scss */
-.u-colorGreen:hover {
-  box-shadow: 1px 1px 2px 2px #36D7B7;
+/* line 72, ../sass/Utilities.scss */
+.u-colorBackgroundGreen:hover {
+  box-shadow: 1px 1px 2px 2px #64ddbb;
+  cursor: pointer;
+}
+
+/* line 77, ../sass/Utilities.scss */
+.u-colorBackgroundOrange:hover {
+  box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
 /* line 82, ../sass/Utilities.scss */
-.u-colorBlue {
-  background-color: #0faac3;
+.u-widthMedium {
+  width: 30%;
+  margin: 5%;
 }
 
-/* line 85, ../sass/Utilities.scss */
-.u-colorBlue:hover {
-  box-shadow: 1px 1px 2px 2px #6BB9F0;
-  cursor: pointer;
-}
-
-/* line 90, ../sass/Utilities.scss */
-.u-colorOrange {
-  background-color: #EB9532;
-}
-
-/* line 93, ../sass/Utilities.scss */
-.u-colorOrange:hover {
-  box-shadow: 1px 1px 2px 2px #F4B350;
-  cursor: pointer;
+/* line 87, ../sass/Utilities.scss */
+.u-colorGold {
+  color: #e4b541;
 }

@@ -1,9 +1,10 @@
 @import "_mixins.scss";
+@import "_variables.scss";
 
 .Button{
   @include flex();
+  @include size($height: 100%);
   background-color: #3771c8;
-  height: 100%;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -28,10 +29,9 @@
 }
 
 .ButtonFilter{
-  background-color: rgba(255, 255, 255, 1);
+  @include size($height: 100%, $width: 100%);
+  background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
-  width: 30%;
-  height: 100%;
   cursor: pointer;
   border-radius: 4px 0 0 4px;
 }

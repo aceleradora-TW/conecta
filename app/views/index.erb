@@ -18,6 +18,7 @@
         <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
             <div class="InputGroup ">
+              <div class="BoxFilterBy">
                 <button class="ButtonFilter" type="button" name="button">
                   <span class="u-fontSizeMedium">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </button>
@@ -31,7 +32,7 @@
                   <label><input type="radio" name="search_type" value="eixo-pesquisa"> Eixo Temático</label><br>
                   <label><input type="radio" name="search_type" value="project"> Projeto</label><br>
                 </div>
-
+              </div>
               <input id="InputSearch" class="Input-search" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
               <div class="Button u-marginRight"><a onclick="document.forms['search'].submit();">Buscar<i class="material-icons u-marginSmall">search</i></a></div>
               <!-- <button class="ButtonSearch" type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button> -->
@@ -40,7 +41,7 @@
         </div>
         <div class="NavSearch">
           <div class="Tag" onclick="location.href='/search_all?search_type=empresa'">
-            <div class="TagTitle u-colorGreen">
+            <div class="TagTitle u-colorBackgroundGreen">
               <div class="BoxTextTitle">
                 <i class="material-icons u-fontSizeMedium">work</i>
                 <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
@@ -48,7 +49,7 @@
             </div>
           </div>
           <div class="Tag" onclick="location.href='/search_all?search_type=centro-pesquisa'">
-            <div class="TagTitle u-colorOrange">
+            <div class="TagTitle u-colorBackgroundOrange">
               <div class="BoxTextTitle">
                 <i class="material-icons u-fontSizeMedium">school</i>
                 <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
@@ -60,25 +61,24 @@
     </div>
   </div>
 </section>
-
-<section class="HowItWorks" id="HowItWorks">
-  <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato "><h1>Como Funciona</h1></div>
+<section class="HowItWorks u-fontWhiteColor" id="HowItWorks">
+  <div class="u-fontSizeLarge u-fontFamilyLato"><h1>Como Funciona</h1></div>
   <div class="ContentHowItWorks">
     <div class="CardContentF">
       <div class="BoxHowItWorks ">
         <div class="Icon">
-          <i class="material-icons md-3  u-fontBlue">insert_drive_file</i>
+          <i class="material-icons md-3  u-colorLightBlue">insert_drive_file</i>
         </div>
         <div class="Text">
           <p class="BoxText">Você cadastra sua empresa no Conecta</p>
         </div>
       </div>
       <div class="Arrow">
-        <i class="material-icons ">arrow_forward</i>
+        <i class="material-icons">arrow_forward</i>
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-fontRed">build</i>
+          <i class="material-icons md-3 u-colorLightRed">build</i>
         </div>
         <div class="Text">
           <p class="BoxText">Procura recursos ou serviços</p>
@@ -89,7 +89,7 @@
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-fontGreen">business</i>
+          <i class="material-icons md-3 u-colorGreen">business</i>
         </div>
         <div class="Text">
           <p class="BoxText">Encontra empresas fornecedoras</p>
@@ -100,10 +100,10 @@
       </div>
       <div class="BoxHowItWorks">
         <div class="Icon">
-          <i class="material-icons md-3 u-fontOrange">contact_mail</i>
+          <i class="material-icons md-3 u-colorOrange">contact_mail</i>
         </div>
         <div class="Text">
-          <p class="BoxText">O conecta contata essa empresa para você</p>
+          <p class="BoxText">O Conecta contata essa empresa para você</p>
         </div>
       </div>
     </div>
@@ -115,8 +115,8 @@
     <div class="u-fontSizeLarge"><h1>Sobre</h1></div>
     <p class="u-fontSizeMedium u-lineHeightMedium">A plataforma Conecta faz parte de uma estratégia institucional de Gestão da Inovação na PUCRS, a qual tem o intuito de:
       <ul class="u-fontSizeMedium u-lineHeightMedium">
-        <li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação</li>
-        <li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica</li>
+        <li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação;</li>
+        <li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica;</li>
         <li>Conectar empresas, pessoas e saberes, processos e serviços, procurando potencializar ações voltadas à inovação, pesquisa e desenvolvimento.</li>
       </ul>
     </p>
@@ -124,23 +124,23 @@
 </section>
 
 
-<section class="Collaborators" id="Collaborators">
+<section class="Collaborators u-fontWhiteColor" id="Collaborators">
   <div class="ContentAbout">
-    <div class="u-fontWhite u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
+    <div class="u-fontSizeLarge u-fontFamilyLato"><h1>Colaboradores</h1></div>
     <p class="u-fontWhite u-fontSizeMedium u-fontFamilyLato">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se:
-      Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ)
-      Rede INOVAPUCRS:
       <ul class="u-fontSizeMedium u-lineHeightMedium u-alignLeft u-fontWhite u-fontFamilyLato">
-        <li>Agência de Gestão Tecnológica (AGT)</li>
-        <li>Parque Científico e Tecnológico da PUCRS (TECNOPUC)</li>
-        <li>Escritório de Transferência de Tecnologia (ETT)</li>
-        <li>Incubadora RAIAR</li>
-        <li>Espaço Co working</li>
-        <li>Centro de Inovação Microsoft (C.I.)</li>
-        <li>Centro de Empreendedorismo (IDEAR)</li>
-        <li>Thoughtworks</li>
-        <li>Laboratório de Criatividade (CriaLab)</li>
-        <li>Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG)</li>
+        <li>Rede INOVAPUCRS;</li>
+        <li>Pró-Reitoria 	de Pesquisa, Inovação e Desenvolvimento (PROPESQ);</li>
+        <li>Agência de Gestão Tecnológica (AGT);</li>
+        <li>Parque Científico e Tecnológico da PUCRS (TECNOPUC);</li>
+        <li>Escritório de Transferência de Tecnologia (ETT);</li>
+        <li>Incubadora RAIAR;</li>
+        <li>Espaço Coworking;</li>
+        <li>Centro de Inovação Microsoft (C.I.);</li>
+        <li>Centro de Empreendedorismo (IDEAR);</li>
+        <li>ThoughtWorks;</li>
+        <li>Laboratório de Criatividade (CriaLab);</li>
+        <li>Laboratório de Tratamento de Imagens e Geoprocessamento (LTIG).</li>
       </ul>
     </p>
   </div>

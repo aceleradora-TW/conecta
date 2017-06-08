@@ -1,0 +1,35 @@
+$tv-width: "(min-width: 1815px)";
+$desktop-width: "(min-width: 1191px) and (max-width:1814px)";
+$tablet-width: "(min-width: 768px) and (max-width: 1190px)";
+$mobile-width: "(min-width: 500px) and (max-width: 767px)";
+$smallMobile-width: "(max-width: 499px)";
+
+@mixin tv {
+  @media #{$tv-width} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet-width}{
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media #{$mobile-width}{
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media #{$smallMobile-width}{
+    @content;
+  }
+}
