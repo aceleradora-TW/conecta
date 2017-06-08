@@ -1,38 +1,31 @@
-/* line 1, ../sass/Modal.scss */
+/* line 3, ../sass/Modal.scss */
 .ModalContact {
   display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  display: flex;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 15, ../sass/Modal.scss */
+/* line 10, ../sass/Modal.scss */
 .ModalContent {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
-  height: 50%;
+  height: 40%;
   text-align: center;
 }
 
-/* line 24, ../sass/Modal.scss */
+/* line 19, ../sass/Modal.scss */
 .Close {
   color: #aaaaaa;
   font-size: 28px;
   font-weight: bold;
 }
 
-/* line 29, ../sass/Modal.scss */
+/* line 24, ../sass/Modal.scss */
 .Close:hover,
 .Close:focus {
   color: #000;
@@ -40,7 +33,7 @@
   cursor: pointer;
 }
 
-/* line 36, ../sass/Modal.scss */
+/* line 31, ../sass/Modal.scss */
 textarea {
   width: 45%;
   height: 30%;
@@ -52,7 +45,7 @@ textarea {
   outline: none;
 }
 
-/* line 47, ../sass/Modal.scss */
+/* line 42, ../sass/Modal.scss */
 .ModalHeader {
   display: flex;
   flex-direction: row;
@@ -60,19 +53,44 @@ textarea {
   justify-content: space-between;
   align-items: flex-start;
   align-content: stretch;
+  border-bottom: 1px solid #eceeef;
 }
 
-/* line 56, ../sass/Modal.scss */
+/* line 52, ../sass/Modal.scss */
 .ModalTitle {
   font-size: 1.3em;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: lighter;
 }
 
-/* line 62, ../sass/Modal.scss */
+/* line 58, ../sass/Modal.scss */
+.ModalBody {
+  border-bottom: 1px solid #eceeef;
+  height: 75%;
+}
+
+/* line 63, ../sass/Modal.scss */
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: lighter;
+}
+
+/* line 70, ../sass/Modal.scss */
+.ButtonClear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: #0faac3;
+  border: none;
+}
+
+/* line 82, ../sass/Modal.scss */
+.IconButtonClear {
+  color: white;
 }
