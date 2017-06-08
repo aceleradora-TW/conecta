@@ -37,13 +37,11 @@
 }
 
 .About{
+  @include flex($align: center, $direction: row, $justify: space-around);
   padding: 0;
   width: 100%;
   min-height: 97vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   font-family: $font-style;
   font-weight: lighter;
   text-align: justify;

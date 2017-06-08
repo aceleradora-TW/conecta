@@ -44,13 +44,14 @@
 
 /* line 39, ../sass/Section.scss */
 .About {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 0;
   width: 100%;
   min-height: 97vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   font-family: Lato, sans-serif;
   font-weight: lighter;
   text-align: justify;
@@ -58,7 +59,7 @@
   color: white;
 }
 
-/* line 53, ../sass/Section.scss */
+/* line 51, ../sass/Section.scss */
 .SectionCards {
   padding: 0;
   width: 100%;
@@ -70,7 +71,7 @@
   justify-content: space-around;
 }
 
-/* line 63, ../sass/Section.scss */
+/* line 61, ../sass/Section.scss */
 .SectionSearch {
   padding: 0;
   width: 100%;
