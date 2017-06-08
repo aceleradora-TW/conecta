@@ -1,7 +1,8 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 .Navbar{
-	@include size ($width: 100%, $height: 12vh);
+	@include size($width:100%, $height:12vh);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -9,7 +10,6 @@
 	font-weight: lighter;
 	background-color: rgba(0,0,0,0.47);
 	color: $white-font-color;
-
 }
 .NavLogo{
 	width: 50%;
