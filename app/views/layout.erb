@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/stylesheets/css/Utilities.css">
   <link rel="stylesheet" href="/stylesheets/css/Form.css">
   <link rel="stylesheet" href="/stylesheets/css/Default.css">
+  <link rel="stylesheet" href="/stylesheets/css/Modal.css">
   <link href="/stylesheets/css/footer.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -23,7 +24,7 @@
   <script src="https://use.fontawesome.com/3f86ba9d74.js"></script>
 </head>
 <body>
-
+  <%= erb :modal_contact %>
 <section class="Section">
   <%= erb :header %>
   <%= yield %>
@@ -31,6 +32,6 @@
 </section>
 <script type="text/javascript" src="/js/expand_cards.js"></script>
 <script type="text/javascript" src="/js/search_filter.js"></script>
-
+<script type="text/javascript" src="/js/modal_contact.js"></script>
 </body>
 </html>
