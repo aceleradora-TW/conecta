@@ -1,6 +1,6 @@
 
 @import "_mixins.scss";
-
+@import "_variables.scss";
 
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
@@ -44,7 +44,7 @@
 }
 .CompetenceList {
   @include flex($align: flex-start, $direction: column, $justify: space-between);
-  @include ($width: 100%);
+  @include size($width: 100%);
   height: 95%;
   text-align: left;
 }

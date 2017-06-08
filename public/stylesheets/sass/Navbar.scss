@@ -1,7 +1,8 @@
+@import "_mixins.scss";
 @import "_variables.scss";
 
 .Navbar{
-	@include size ($width: 100%, $height: 12vh);
+	@include size($width: 100%, $height: 12vh);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
