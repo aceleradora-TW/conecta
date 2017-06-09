@@ -103,22 +103,32 @@
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 83, ../sass/Utilities.scss */
   .u-widthMedium {
-    height: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    font-size: 1em;
   }
 }
 @media (max-width: 499px) {
   /* line 83, ../sass/Utilities.scss */
   .u-widthMedium {
-    height: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    font-size: 0.5em;
   }
 }
 
-/* line 94, ../sass/Utilities.scss */
+/* line 104, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 98, ../sass/Utilities.scss */
+/* line 108, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }

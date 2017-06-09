@@ -1,3 +1,4 @@
+@import "MediaQuery.scss";
 body{
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@ body{
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 5em;
+  font-size: 35px;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
@@ -26,3 +27,11 @@ body{
 .material-icons.md-3 {
    font-size: 3em;
  }
+ .material-icons.md-35px {
+    @include tablet{
+      font-size: 35px;
+    };
+    @include smallMobile{
+      font-size: 20px;
+    };
+  }

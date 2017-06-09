@@ -15,12 +15,12 @@
     width: 95%;
     min-height: 55vh;
     font-size: 1.5em;
-    };
-    @include smallMobile {
-      width: 95%;
-      min-height: 55vh;
-      font-size: 1.5em;
-      };
+  };
+  @include smallMobile {
+    width: 95%;
+    min-height: 55vh;
+    font-size: 1.5em;
+  };
 }
 
 .LogoCard{
@@ -30,12 +30,12 @@
     align-items: center;
     justify-content: center;
   }
-    @include smallMobile{
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
+  @include smallMobile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .CardNav {
   width: 100%;
@@ -43,6 +43,11 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  @include smallMobile{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  };
 }
 
 .CardResearchNav {
@@ -69,15 +74,18 @@
 .LogoImage{
   width: 40px;
   height: 40px;
+  border-radius: 100%;
 }
 .LogoSmall {
-  width: 40px;
+  width: 30%;
   height: 40px;
-  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  @include tablet{
+    height: 100px;
+  };
 }
 
 .CardCenter {
@@ -133,6 +141,12 @@
   @include size($width: 100%);
   line-height: 2em;
   align-self: center;
+  @include smallMobile{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+  };
 }
 .Items:hover {
   background: rgba(0,0,0,.05);
@@ -155,8 +169,8 @@
   font-size: 1.2em;
 }
 .ItemText{
-  // @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include flex();
+  @include flex($align: flex-start, $direction: row, $justify: space-between);
+  // @include flex();
   @include size($height: 100%, $width: 70%);
   display:flex;
   text-align: right;
@@ -166,8 +180,10 @@
     text-align: left;
   };
   @include smallMobile{
-    width: 68%;
+    width: 100%;
     text-align: left;
+    justify-content: center;
+    align-items: center;
   };
 }
 
@@ -175,11 +191,16 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+
   @include tablet{
     width: 32%;
   }
   @include smallMobile{
-    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 
@@ -238,12 +259,16 @@
     align-items: center;
     justify-content: center;
     height: 30%;
-    }
-    @include smallMobile{
-      align-items: center;
-      justify-content: center;
-      height: 30%;
-    }
+    width: 97%;
+    font-size: 1.1em;
+  }
+  @include smallMobile{
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    font-size: 12px;
+    width: 100%;
+  }
 }
 
 .BoxButtonCard {
@@ -254,22 +279,31 @@
   align-items: center;
   @include tablet{
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+  }
+  @include smallMobile{
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 70%;
   }
-    @include smallMobile{
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 70%;
-    }
 }
 
 .CompanyCompetences{
   @include flex($direction: column);
   @include size($height: 60%, $width: 100%);
   margin-top: 3%;
+  @include tablet {
+    width: 90%;
+    font-size: 1.1em;
+  }
+  @include smallMobile {
+    font-size: 0.9em;
+  };
 }
 
 .ResearchCompetences{
@@ -298,7 +332,25 @@
   flex-wrap: wrap;
   padding-top: 3%;
   margin-bottom: 3%;
-  .FooterCardSecondaryItem {
+  @include tablet {
+    min-height: 146px;
+    flex-direction: column;
+  };
+  @include smallMobile{
+    min-height: 140px;
+    flex-direction: column;
+  };
+    .FooterCardSecondaryItem {
     width: 45%;
+    @include tablet{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    };
+    @include smallMobile{
+      font-size: 12px;
+
+    };
   }
 }

@@ -40,15 +40,15 @@
           <div class="ItemText"><%= company_competence.competence.name %></div>
           <div class="ItemStar">
             <% for pos in (1..5) %>
-            <i class="material-icons u-colorGold"><%=pos <= rating ? "star" : "star_border"%></i>
+            <i class="material-icons md-35px u-colorGold"><%=pos <= rating ? "star" : "star_border"%></i>
             <% end %>
           </div>
         </li>
         <% end %>
       </ul>
-      <div class="RatingExplanation">
-        <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
-      </div>
+    </div>
+    <div class="RatingExplanation">
+      <i class="material-icons md-35px u-colorGold">star</i> Nível de competência informado pela empresa
     </div>
     <% end %>
     <div class="FooterCardSecondary">
@@ -69,7 +69,7 @@
 
     <div class="FooterCardPrimay">
       <div class="BoxButtonCard">
-        <div class="Button u-width-medium">
+        <div class="Button u-widthMedium">
           contato
         </div>
         <div class="Button u-widthMedium ButtonSeeMore">
