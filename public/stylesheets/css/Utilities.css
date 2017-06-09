@@ -132,3 +132,8 @@
 .u-colorGold {
   color: #e4b541;
 }
+
+/* line 68, ../sass/Utilities.scss */
+.u-displayBlock {
+  display: block;
+}
