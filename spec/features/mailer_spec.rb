@@ -6,7 +6,8 @@ require 'spec_helper'
 RSpec.describe Mailer, type: :mailer do
 
   before(:all) do
-    @mail = Mailer.notification().deliver
+    @mail = Mailer.notification()
+
   end
   describe "#notification" do
     context "Quando chamar o metodo" do
