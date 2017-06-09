@@ -98,6 +98,14 @@
   align-self: center;
 
 }
+
+.ItemsFeatured{
+  @include flex($align: center, $justify: space-around);
+  @include size($width: 100%);
+  line-height: 2em;
+  align-self: center;
+
+}
 .Items:hover {
   background: rgba(0,0,0,.05);
   transition: .5s;
