@@ -38,7 +38,7 @@
 
         <% company.featured_competences.each_with_index do |company_competence,index| %>
         <% rating = company_competence.competence_value_calculated_integer  %>
-        <li class="Items ">
+        <li class="ItemsFeatured ">
           <div class="ItemText"><%= company_competence.competence.name %></div>
           <div class="ItemStar">
             <% for pos in (1..5) %>
@@ -163,7 +163,7 @@
       </div>
       <div class="FooterCardSecondaryItem">
         <%@site_url = rc_searched.contact.site%>
-        <b>Site: </b>  <a href=<%= @site_url %> target="_blank"> Visitar</a>
+        <b>Site: </b>  <a class="URL" href=<%= @site_url %> target="_blank"> <%= @site_url %></a>
       </div>
 
 
@@ -205,3 +205,4 @@
 </div>
 
 </div>
+<script src="js/break_links.js"></script>
