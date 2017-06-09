@@ -36,7 +36,7 @@
 /* line 31, ../sass/Modal.scss */
 textarea {
   width: 45%;
-  height: 30%;
+  height: 70%;
   margin: 8px 0px;
   font-style: italic;
   color: #737373;
@@ -82,8 +82,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   font-size: 0.7rem;
   border-radius: 100%;
   background-color: #0faac3;
@@ -93,4 +93,23 @@ textarea {
 /* line 82, ../sass/Modal.scss */
 .IconButtonClear {
   color: white;
+}
+
+/* line 86, ../sass/Modal.scss */
+.ModalBody {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 91, ../sass/Modal.scss */
+.BoxClear {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 25%;
+}
+
+/* line 98, ../sass/Modal.scss */
+.BoxTextArea {
+  height: 70%;
 }

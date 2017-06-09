@@ -9,14 +9,21 @@
 
     <div class="ModalBody">
       <h3 class="ModalDescription">Escreva sua mensagem no campo abaixo</h3>
-      <button class="ButtonClear" type="button" name="button" onclick="deleteMessage(this)"><i class="material-icons md-1-4 u-marginSmall IconButtonClear">edit</i></button>
-      <textarea autofocus onfocus="this.innerHTML = this.innerHTML;" id="MessageModal">Tenho interesse em realizar uma parceria com sua empresa.</textarea>
+      <div class="BoxClear">
+        <button class="ButtonClear" type="button" name="button" onclick="deleteMessage(this)"><i class="material-icons md-1-4 u-marginSmall IconButtonClear">edit</i></button>
+      </div>
+      <div class="BoxTextArea">
+        <textarea autofocus onfocus="this.innerHTML = this.innerHTML;" id="MessageModal">Tenho interesse em realizar uma parceria com sua empresa.</textarea>
+      </div>
     </div>
 
     <div class="ModalFooter">
-
+      <div class="BoxButtonCard u-marginLeftSmall">
+        <div class="Button u-widthMedium" id="SendEmail">
+          enviar
+        </div>
+      </div>
     </div>
 
   </div>
-
 </div>

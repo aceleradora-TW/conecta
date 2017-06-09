@@ -30,7 +30,7 @@
 
 textarea {
   width: 45%;
-  height: 30%;
+  height: 70%;
   margin: 8px 0px;
   font-style: italic;
   color: rgba(115,115,115,1);
@@ -71,8 +71,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   font-size: 0.7rem;
   border-radius: 100%;
   background-color: $light-blue-color;
@@ -81,4 +81,20 @@ textarea {
 
 .IconButtonClear {
   color: $white-font-color;
+}
+
+.ModalBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.BoxClear {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 25%;
+}
+
+.BoxTextArea {
+  height: 70%;
 }
