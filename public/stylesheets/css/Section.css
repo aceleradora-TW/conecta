@@ -1,83 +1,54 @@
-/* line 4, ../sass/Section.scss */
-.Section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 85vh;
-  background-image: url("https://goo.gl/cBzVRv");
-  background-size: cover;
-  background-attachment: fixed;
-}
+/*
+Error: Invalid CSS after "  @import ": expected file to import (string or url()), was "size($width: 10..."
+        on line 5 of /code/public/stylesheets/sass/Section.scss
 
-/* line 14, ../sass/Section.scss */
-.SectionOpacity {
-  width: 100%;
-  height: 85vh;
-  background-color: rgba(0, 0, 0, 0.47);
-  display: flex;
-  flex-direction: column;
-}
+1: @import "_variables.scss";
+2: @import "_mixins.scss";
+3: 
+4: .Section {
+5:   @import size($width: 100%);
+6:   @import flex($direction: column);
+7:   min-height: 85vh;
+8:   background-image: url("/images/background-main.jpg");
+9:   // background-image: url("https://goo.gl/cBzVRv");
+10:   background-size: cover;
 
-/* line 22, ../sass/Section.scss */
-.HowItWorks {
-  height: 95vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
-}
-
-/* line 29, ../sass/Section.scss */
-.Collaborators {
-  width: 100%;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-/* line 39, ../sass/Section.scss */
-.About {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
-  width: 100%;
-  min-height: 97vh;
-  display: flex;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-  text-align: justify;
-  background-color: rgba(48, 89, 119, 0.93);
-  color: white;
-}
-
-/* line 51, ../sass/Section.scss */
-.SectionCards {
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-/* line 61, ../sass/Section.scss */
-.SectionSearch {
-  padding: 0;
-  width: 100%;
-  min-height: 39vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+Backtrace:
+/code/public/stylesheets/sass/Section.scss:5
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1117:in `expr!'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:371:in `block in import_directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:370:in `loop'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:370:in `import_directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:222:in `special_directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:197:in `directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  @import \": expected file to import (string or url()), was \"size($width: 10...\"\A         on line 5 of /code/public/stylesheets/sass/Section.scss\A \A 1: @import \"_variables.scss\";\A 2: @import \"_mixins.scss\";\A 3: \A 4: .Section {\A 5:   @import size($width: 100%);\A 6:   @import flex($direction: column);\A 7:   min-height: 85vh;\A 8:   background-image: url(\"/images/background-main.jpg\");\A 9:   // background-image: url(\"https://goo.gl/cBzVRv\");\A 10:   background-size: cover;"; }
