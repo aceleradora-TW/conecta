@@ -27,7 +27,7 @@
     @include flex($align: center, $justify: center);
   	text-decoration: none;
   	color: white;
-
+  }
   @include tablet {
     font-size: 0.8rem;
   }
