@@ -3,14 +3,11 @@ var company = document.querySelector('#SendEmail');
 
 function showModal(id) {
   modal.style.display = "flex";
-
   company.id = "SendEmail"+id;
-
 }
 
 function closeModal() {
   modal.style.display = "none";
-
   company.id = "SendEmail";
 }
 

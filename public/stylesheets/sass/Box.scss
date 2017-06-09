@@ -119,3 +119,10 @@
   @include size($width: 30%);
   z-index: 2;
 }
+.BoxClear {
+  @include flex($align: flex-end, $justify: flex-end);
+  margin-right: 25%;
+}
+.BoxTextArea {
+  @include size($height: 70%);
+}
