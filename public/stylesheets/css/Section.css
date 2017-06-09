@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 85vh;
-  background-image: url("https://static1.squarespace.com/static/55555e9be4b0cc5c1ed72f84/t/556f8657e4b0ad976216e5e7/1433372247762/business-banner.jpg?format=1500w");
+  background-image: url("/images/background-main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
