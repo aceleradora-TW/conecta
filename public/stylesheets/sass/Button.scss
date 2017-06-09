@@ -1,9 +1,11 @@
+@import "_mixins.scss";
+@import "_variables.scss";
 @import "MediaQuery";
 
 .Button{
-  display: flex;
+  @include flex($justify: center);
+  @include size($height: 100%);
   background-color: #3771c8;
-  height: 100%;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -15,25 +17,53 @@
   color: #fff;
   text-align: center;
   letter-spacing: .5px;
+
+  &:hover{
+  	box-shadow: 1px 1px 1px 1px #6BB9F0;
+  	cursor: pointer;
+  }
+
+  a {
+    @include flex($align: center, $justify: center);
+  	text-decoration: none;
+  	color: white;
+  }
   @include tablet {
     font-size: 0.8rem;
   }
   @include mobile {
     font-size: 0.75rem;
-    width: 10%;
+    width: 0%;
     justify-content: center;
+    span{display:none}
+
+  }
+  @include smallMobile {
+    font-size: 0.75rem;
+    width: 0%;
+    justify-content: center;
+    span{display:none}
+
   }
 
 }
-
-.Button:hover{
-  box-shadow: 1px 1px 1px 1px #6BB9F0;
+.ButtonFilter{
+  @include size($height: 100%, $width: 100%);
+  background-color: $white-color;
+  border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
+  border-radius: 4px 0 0 4px;
+  &-activated {
+    border-radius: 4px 0 0 0;
+  }
 }
-.Button a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ButtonSearch{
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2%;
+  border-radius: 0 4px 4px 0;
+  &:hover {
+    background: rgba(0, 0, 0, .2);
+  }
 }

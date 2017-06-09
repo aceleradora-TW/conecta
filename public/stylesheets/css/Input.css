@@ -1,0 +1,27 @@
+/* line 5, ../sass/Input.scss */
+.InputSearch {
+  font-size: 1.05em;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  padding-left: 2%;
+  font-size: 1.05em;
+  width: 60%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 5, ../sass/Input.scss */
+  .InputSearch {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 5, ../sass/Input.scss */
+  .InputSearch {
+    font-size: 0.6em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Input.scss */
+  .InputSearch {
+    font-size: 0.6em;
+  }
+}
