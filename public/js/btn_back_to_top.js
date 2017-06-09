@@ -1,14 +1,14 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {showButtonWhenScrolled()};
 
-function scrollFunction() {
+function showButtonWhenScrolled() {
+  var backToTopButton = document.querySelector("#backToTopButton");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+    backToTopButton.classList.add("u-displayBlock");
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    backToTopButton.classList.remove("u-displayBlock");
   }
 }
-
-function topFunction() {
+function scrollBackToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
