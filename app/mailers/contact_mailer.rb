@@ -11,7 +11,7 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'gmail.com',
   :authentication => :plain,
   :user_name      => "aceleradora11@gmail.com",
-  :password       => "aceleradora11tw",
+  :password       => "",
   :enable_starttls_auto => true
 }
 ActionMailer::Base.view_paths = File.expand_path('../../../app/views/', __FILE__)
