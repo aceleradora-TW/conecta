@@ -1,8 +1,8 @@
+@import "_mixins.scss";
 .Logo {
 
 	&-wide {
-		height: 50%;
-		width: 10%;
+		@include size($height: 50%, $width: 10%);
 		background-repeat: no-repeat;
 		background-size: 100%;
 		margin: 10px;
@@ -10,13 +10,10 @@
 	}
 
 	&-tall {
-		height: 95%;
-		width: 3%;
+		@include size($height: 95%, $width: 3%);
 		background-repeat: no-repeat;
 		background-size: 100%;
 		margin: 0 5% 0% 2%;
 		background-image: url("/images/puc4.png");
 	}
-
-
 }

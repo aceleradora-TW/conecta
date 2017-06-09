@@ -80,11 +80,9 @@
   justify-content: center;
   height: 100%;
   width: 20%;
-  height: 100%;
-  width: 20%;
 }
 
-/* line 49, ../sass/Box.scss */
+/* line 47, ../sass/Box.scss */
 .Icon {
   display: flex;
   align-items: center;
@@ -96,7 +94,7 @@
   border-radius: 100%;
 }
 
-/* line 56, ../sass/Box.scss */
+/* line 54, ../sass/Box.scss */
 .ContentHowItWorks {
   display: flex;
   flex-direction: column;
@@ -106,7 +104,7 @@
   font-weight: lighter;
 }
 
-/* line 62, ../sass/Box.scss */
+/* line 60, ../sass/Box.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -116,7 +114,7 @@
   text-align: center;
 }
 
-/* line 67, ../sass/Box.scss */
+/* line 65, ../sass/Box.scss */
 .CardContentF {
   display: flex;
   align-items: flex-start;
@@ -125,7 +123,7 @@
   width: 98%;
 }
 
-/* line 71, ../sass/Box.scss */
+/* line 69, ../sass/Box.scss */
 .Arrow {
   display: flex;
   align-items: center;
@@ -135,7 +133,7 @@
   color: white;
 }
 
-/* line 76, ../sass/Box.scss */
+/* line 74, ../sass/Box.scss */
 .Text {
   height: 55%;
   font-size: 1.2em;
@@ -143,7 +141,7 @@
   text-align: center;
 }
 
-/* line 82, ../sass/Box.scss */
+/* line 80, ../sass/Box.scss */
 .ContentSearch {
   display: flex;
   align-items: center;
@@ -157,7 +155,7 @@
   padding: 0%;
 }
 
-/* line 90, ../sass/Box.scss */
+/* line 88, ../sass/Box.scss */
 .Tag {
   display: flex;
   align-items: center;
@@ -168,7 +166,7 @@
   cursor: pointer;
 }
 
-/* line 95, ../sass/Box.scss */
+/* line 93, ../sass/Box.scss */
 .TagTitle {
   display: flex;
   align-items: center;
@@ -180,7 +178,7 @@
   font-family: Lato, sans-serif;
 }
 
-/* line 101, ../sass/Box.scss */
+/* line 99, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -189,7 +187,7 @@
   width: 60%;
 }
 
-/* line 105, ../sass/Box.scss */
+/* line 103, ../sass/Box.scss */
 .BoxTextTitle {
   display: flex;
   align-items: center;
@@ -198,7 +196,7 @@
   width: 85%;
 }
 
-/* line 109, ../sass/Box.scss */
+/* line 107, ../sass/Box.scss */
 .FormSearch {
   display: flex;
   align-items: center;
@@ -208,7 +206,7 @@
   align-content: space-between;
 }
 
-/* line 114, ../sass/Box.scss */
+/* line 112, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
@@ -216,7 +214,7 @@
   width: 75%;
 }
 
-/* line 118, ../sass/Box.scss */
+/* line 116, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
