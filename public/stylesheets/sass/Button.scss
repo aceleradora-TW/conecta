@@ -16,16 +16,16 @@
   color: #fff;
   text-align: center;
   letter-spacing: .5px;
-}
+  &:hover{
+  	box-shadow: 1px 1px 1px 1px #6BB9F0;
+  	cursor: pointer;
+  }
 
-.Button:hover{
-	box-shadow: 1px 1px 1px 1px #6BB9F0;
-	cursor: pointer;
-}
-.Button a {
-  @include flex($align: center, $justify: center);
-	text-decoration: none;
-	color: white;
+  a {
+    @include flex($align: center, $justify: center);
+  	text-decoration: none;
+  	color: white;
+  }
 }
 
 .ButtonFilter{
@@ -34,10 +34,9 @@
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
-}
-
-.ButtonFilter-activated {
-  border-radius: 4px 0 0 0;
+  &-activated {
+    border-radius: 4px 0 0 0;
+  }
 }
 
 .ButtonSearch{
@@ -46,8 +45,7 @@
   cursor: pointer;
   padding: 0 2%;
   border-radius: 0 4px 4px 0;
-}
-
-.ButtonSearch:hover {
-  background: rgba(0, 0, 0, .2);
+  &:hover {
+    background: rgba(0, 0, 0, .2);
+  }
 }
