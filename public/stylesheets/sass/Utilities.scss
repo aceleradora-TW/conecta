@@ -21,7 +21,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;	
+ color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -79,9 +79,17 @@
 	cursor: pointer;
 }
 
+.u-widthNone{
+	width: 0%;
+}
+
 .u-widthMedium{
 	width: 30%;
 	margin: 5%;
+}
+
+.u-widthLarge {
+	width: 90%;
 }
 
 .u-colorGold{
