@@ -60,3 +60,26 @@
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+
+/* line 55, ../sass/Button.scss */
+.ButtonClear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: rgba(48, 89, 119, 0.93);
+  border: none;
+}
+
+/* line 64, ../sass/Button.scss */
+.ButtonClear:hover {
+  background-color: #3771c8;
+}
+
+/* line 68, ../sass/Button.scss */
+.IconButtonClear {
+  color: white;
+}

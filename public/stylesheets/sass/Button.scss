@@ -51,3 +51,20 @@
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, .2);
 }
+
+.ButtonClear {
+  @include flex($align: center, $justify: center);
+  @include size($height: 30px, $width: 30px);
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: $darker-blue-color;
+  border: none;
+}
+
+.ButtonClear:hover {
+  background-color: $blue-color;
+}
+
+.IconButtonClear {
+  color: $white-font-color;
+}

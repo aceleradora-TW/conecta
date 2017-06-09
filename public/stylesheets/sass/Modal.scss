@@ -1,100 +1,55 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 .ModalContact {
+  @include size($height: 100%, $width: 100%);
   display: none;
   position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .ModalContent {
-  background-color: #fefefe;
+  @include size($height: 40%, $width: 50%);
+  background-color: rgba(254, 254, 254, 1);
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  height: 40%;
+  border: 1px solid rgba(136, 136, 136, 1);
   text-align: center;
+  font-family: $font-style;
 }
 .Close {
-  color: #aaaaaa;
+  color: rgba(170, 170, 170, 1);
   font-size: 28px;
   font-weight: bold;
 }
 .Close:hover,
 .Close:focus {
-  color: #000;
+  color: $black-font-color;
   text-decoration: none;
   cursor: pointer;
 }
-
 textarea {
-  width: 45%;
-  height: 70%;
+  @include size($height: 70%, $width: 45%);
   margin: 8px 0px;
-  font-style: italic;
-  color: rgba(115,115,115,1);
+  color: rgba(115, 115, 115, 1);
   padding: 7px 15px;
   border-radius: 5px;
   outline: none;
 }
-
 .ModalHeader {
-  display: flex;
-  flex-direction: row;
+  @include flex($align: flex-start, $direction: row, $justify: space-between);
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
   align-content: stretch;
-  border-bottom: 1px solid #eceeef;
+  border-bottom: 1px solid rgba(236, 238, 239, 1);
 }
-
 .ModalTitle {
   font-size: 1.3em;
-  font-family: $font-style;
-  font-weight: lighter;
 }
-
 .ModalBody {
-  border-bottom: 1px solid #eceeef;
-  height: 75%;
+  @include flex($direction: column);
+  @include size($height: 75%);
+  border-bottom: 1px solid rgba(236, 238, 239, 1);
 }
-
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
-  font-family: $font-style;
-  font-weight: lighter;
-}
-
-.ButtonClear {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  font-size: 0.7rem;
-  border-radius: 100%;
-  background-color: $light-blue-color;
-  border: none;
-}
-
-.IconButtonClear {
-  color: $white-font-color;
-}
-
-.ModalBody {
-  display: flex;
-  flex-direction: column;
-}
-
-.BoxClear {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-right: 25%;
-}
-
-.BoxTextArea {
-  height: 70%;
 }

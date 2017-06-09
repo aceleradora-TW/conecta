@@ -1,21 +1,22 @@
-/* line 3, ../sass/Modal.scss */
+/* line 4, ../sass/Modal.scss */
 .ModalContact {
+  height: 100%;
+  width: 100%;
   display: none;
   position: fixed;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* line 10, ../sass/Modal.scss */
 .ModalContent {
+  height: 40%;
+  width: 50%;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  height: 40%;
+  border: 1px solid #888888;
   text-align: center;
+  font-family: Lato, sans-serif;
 }
 
 /* line 19, ../sass/Modal.scss */
@@ -28,88 +29,48 @@
 /* line 24, ../sass/Modal.scss */
 .Close:hover,
 .Close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 31, ../sass/Modal.scss */
+/* line 30, ../sass/Modal.scss */
 textarea {
-  width: 45%;
   height: 70%;
+  width: 45%;
   margin: 8px 0px;
-  font-style: italic;
   color: #737373;
   padding: 7px 15px;
   border-radius: 5px;
   outline: none;
 }
 
-/* line 42, ../sass/Modal.scss */
+/* line 38, ../sass/Modal.scss */
 .ModalHeader {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   align-content: stretch;
   border-bottom: 1px solid #eceeef;
 }
 
-/* line 52, ../sass/Modal.scss */
+/* line 44, ../sass/Modal.scss */
 .ModalTitle {
   font-size: 1.3em;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
 }
 
-/* line 58, ../sass/Modal.scss */
-.ModalBody {
-  border-bottom: 1px solid #eceeef;
-  height: 75%;
-}
-
-/* line 63, ../sass/Modal.scss */
-.ModalDescription {
-  font-size: 0.9em;
-  justify-content: center;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-}
-
-/* line 70, ../sass/Modal.scss */
-.ButtonClear {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  font-size: 0.7rem;
-  border-radius: 100%;
-  background-color: #0faac3;
-  border: none;
-}
-
-/* line 82, ../sass/Modal.scss */
-.IconButtonClear {
-  color: white;
-}
-
-/* line 86, ../sass/Modal.scss */
+/* line 47, ../sass/Modal.scss */
 .ModalBody {
   display: flex;
   flex-direction: column;
+  height: 75%;
+  border-bottom: 1px solid #eceeef;
 }
 
-/* line 91, ../sass/Modal.scss */
-.BoxClear {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-right: 25%;
-}
-
-/* line 98, ../sass/Modal.scss */
-.BoxTextArea {
-  height: 70%;
+/* line 52, ../sass/Modal.scss */
+.ModalDescription {
+  font-size: 0.9em;
+  justify-content: center;
 }

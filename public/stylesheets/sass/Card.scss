@@ -5,6 +5,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45vh);
   background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: 'Lato', sans-serif;
@@ -138,8 +139,7 @@
 .ItemStar{
   height: 100%;
   display: flex;
-  justify-content: flex-start;
-  color: rgba(228, 181, 65, 1);
+  justify-content: flex-end;
 }
 
 .ContactTitle{

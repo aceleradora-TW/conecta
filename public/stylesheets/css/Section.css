@@ -9,7 +9,7 @@
   background-attachment: fixed;
 }
 
-/* line 14, ../sass/Section.scss */
+/* line 15, ../sass/Section.scss */
 .SectionOpacity {
   width: 100%;
   height: 85vh;
@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 
-/* line 22, ../sass/Section.scss */
+/* line 23, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
