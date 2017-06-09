@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "MediaQuery.scss";
 
 .u-fontSizeSmall {
 	font-size: 1em;
@@ -21,7 +22,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;	
+ color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -82,6 +83,12 @@
 .u-widthMedium{
 	width: 30%;
 	margin: 5%;
+	@include tablet{
+		height:100%;
+		};
+		@include smallMobile{
+			height:100%;
+			};
 }
 
 .u-colorGold{

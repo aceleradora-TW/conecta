@@ -1,6 +1,7 @@
 
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "MediaQuery.scss";
 
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
@@ -10,8 +11,32 @@
   margin-bottom: 2%;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
+  @include tablet {
+    width: 95%;
+    min-height: 55vh;
+    font-size: 1.5em;
+    };
+    @include smallMobile {
+      width: 95%;
+      min-height: 55vh;
+      font-size: 1.5em;
+      };
 }
 
+.LogoCard{
+  @include tablet{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  };
+    @include smallMobile{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    };
+}
 
 .CardCenter {
   @include flex($align: center, $direction: column, $justify: center);
@@ -41,6 +66,12 @@
   line-height: 2em;
   cursor: pointer;
   align-self: center;
+  @include tablet{
+    width: 100%;
+  };
+  @include smallMobile{
+    width: 100%;
+  };
 }
 .CompetenceList {
   @include flex($align: flex-start, $direction: column, $justify: space-between);
@@ -61,6 +92,14 @@
   display:flex;
   text-align: right;
   flex-wrap: wrap;
+  @include tablet{
+    width: 68%;
+    text-align: left;
+  };
+  @include smallMobile{
+    width: 68%;
+    text-align: left;
+  };
 }
 
 .ItemStar{
@@ -69,6 +108,12 @@
   display: flex;
   justify-content: flex-start;
   color: rgba(228, 181, 65, 1);
+  @include tablet{
+    width: 32%;
+  };
+  @include smallMobile{
+    width: 32%;
+  };
 }
 
 .ContactTitle{
@@ -108,6 +153,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items:center;
+  @include tablet{
+    flex-direction: column;
+  };
+  @include smallMobile{
+    flex-direction: column;
+  };
 }
 .RatingExplanation {
   width: 70%;
@@ -116,6 +167,16 @@
   align-items: center;
   justify-content: space-around;
   margin: 20px;
+  @include tablet{
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    };
+    @include smallMobile{
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+      };
 }
 
 .BoxButtonCard {
@@ -124,6 +185,18 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include tablet{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    };
+    @include smallMobile{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 70%;
+      };
 }
 
 .CompanyCompetences{

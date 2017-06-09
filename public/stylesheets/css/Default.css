@@ -1,9 +1,10 @@
 /* line 1, ../sass/Default.scss */
 body {
   margin: 0;
+  padding: 0;
 }
 
-/* line 4, ../sass/Default.scss */
+/* line 5, ../sass/Default.scss */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -23,7 +24,7 @@ body {
   font-feature-settings: 'liga';
 }
 
-/* line 25, ../sass/Default.scss */
+/* line 26, ../sass/Default.scss */
 .material-icons.md-3 {
   font-size: 3em;
 }

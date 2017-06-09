@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "MediaQuery.scss";
 
 .Section {
   display: flex;
@@ -57,6 +58,16 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around;
+  @include tablet{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  };
+  @include smallMobile{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  };
 }
 .SectionSearch {
   padding: 0;

@@ -1,6 +1,8 @@
 /* line 4, ../sass/Button.scss */
 .Button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   background-color: #3771c8;
   line-height: 36px;
