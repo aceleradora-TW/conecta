@@ -1,7 +1,7 @@
-/* line 3, ../sass/Navbar.scss */
+/* line 4, ../sass/Navbar.scss */
 .Navbar {
-  width: 100%;
   height: 12vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
