@@ -2,7 +2,8 @@
 @import "_variables.scss";
 
 .Button{
-  @include flex($align: center, $justify: center);
+  // @include flex($align: center, $justify: center);
+  @include flex($justify: center);
   @include size($height: 100%);
   background-color: #3771c8;
   line-height: 36px;

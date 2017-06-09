@@ -114,6 +114,11 @@
 }
 
 /* line 94, ../sass/Utilities.scss */
+.u-widthLarge {
+  width: 90%;
+}
+
+/* line 98, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
