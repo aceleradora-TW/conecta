@@ -1,5 +1,6 @@
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "MediaQuery";
 
 .ContentAbout {
   @include flex($align: center, $direction: column, $justify: center);
@@ -14,10 +15,18 @@
   line-height: 2em;
   font-size: 1.3em;
   font-weight: lighter;
+  @include tablet{
+    font-size: 1.7em;
+  }
+
+
 }
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
+  @include tablet{
+    align-items: baseline;
+  }
 }
 .BoxText {
   @include flex($align: center, $direction: column, $justify: center);
@@ -26,7 +35,10 @@
   font-weight: lighter;
   font-size: 1.3em;
   text-align: center;
-  color: $white-font-color
+  color: $white-font-color;
+  @include tablet{
+    font-size: 0.8em;
+  }
 }
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
@@ -43,6 +55,9 @@
 .BoxHowItWorks {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 100%, $width: 20%);
+  @include tablet{
+    height: 80%;
+  }
 }
 .Icon {
   @include flex($align: center, $justify: center);
@@ -50,6 +65,10 @@
   color: $white-font-color;
   background-color: $white-color;
   border-radius: 100%;
+  @include tablet{
+    width: 50%;
+    height: 50%;
+  }
 }
 .ContentHowItWorks {
   @include flex($direction: column);

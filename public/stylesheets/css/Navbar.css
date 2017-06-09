@@ -1,5 +1,7 @@
-/* line 4, ../sass/Navbar.scss */
+/* line 6, ../sass/Navbar.scss */
 .Navbar {
+  height: 12vh;
+  width: 100%;
   height: 12vh;
   width: 100%;
   display: flex;
@@ -11,18 +13,24 @@
   color: white;
 }
 
-/* line 14, ../sass/Navbar.scss */
->>>>>>> be1e9f30247b751a94dc2c855ee45a5dff7904a6
+/* line 17, ../sass/Navbar.scss */
 .NavLogo {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-left: 25px;
+  margin-left: 3%;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 17, ../sass/Navbar.scss */
+  .NavLogo {
+    width: 25%;
+    justify-content: center;
+  }
+}
 
-/* line 23, ../sass/Navbar.scss */
+/* line 29, ../sass/Navbar.scss */
 .NavLinks {
   width: 50%;
   height: 100%;
@@ -36,8 +44,15 @@
   align-items: center;
   color: white;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 29, ../sass/Navbar.scss */
+  .NavLinks {
+    justify-content: space-around;
+    padding-right: 5%;
+  }
+}
 
-/* line 38, ../sass/Navbar.scss */
+/* line 49, ../sass/Navbar.scss */
 .Link {
   width: 24%;
   height: 60%;
@@ -49,7 +64,7 @@
   color: white;
 }
 
-/* line 48, ../sass/Navbar.scss */
+/* line 60, ../sass/Navbar.scss */
 .Link:hover {
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
@@ -57,13 +72,14 @@
   font-size: 1.1em;
 }
 
-/* line 54, ../sass/Navbar.scss */
+/* line 66, ../sass/Navbar.scss */
 .Link:hover a {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 1.1em;
 }
-/* line 60, ../sass/Navbar.scss */
+
+/* line 72, ../sass/Navbar.scss */
 .NavLinks a {
   text-decoration: none;
   font-size: 1.1em;
@@ -71,7 +87,7 @@
   text-align: center;
 }
 
-/* line 66, ../sass/Navbar.scss */
+/* line 78, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
   color: white;

@@ -1,4 +1,4 @@
-/* line 4, ../sass/Logos.scss */
+/* line 5, ../sass/Logos.scss */
 .Logo-wide {
   height: 50%;
   width: 10%;
@@ -7,12 +7,29 @@
   margin: 10px;
   background-image: url("/images/tecnopuc4.png");
 }
-/* line 12, ../sass/Logos.scss */
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 5, ../sass/Logos.scss */
+  .Logo-wide {
+    height: 75%;
+    width: 19%;
+    justify-content: center;
+    margin: 0;
+  }
+}
+/* line 19, ../sass/Logos.scss */
 .Logo-tall {
-  height: 95%;
-  width: 3%;
+  height: 100%;
+  width: 10%;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 0 5% 0% 2%;
+  margin: 10px;
   background-image: url("/images/puc4.png");
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 19, ../sass/Logos.scss */
+  .Logo-tall {
+    width: 20%;
+    justify-content: flex-end;
+    margin: 0;
+  }
 }
