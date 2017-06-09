@@ -136,6 +136,13 @@
   // text-align: right;
   // flex-wrap: wrap;
 }
+.ItemTextSegment{
+  @include flex();
+  @include size($height: 100%, $width: 70%);
+  display: flex;
+  justify-content: center;
+  
+}
 
 .ItemStar{
   height: 100%;
