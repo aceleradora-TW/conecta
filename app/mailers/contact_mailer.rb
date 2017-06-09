@@ -32,5 +32,5 @@ class Mailer < ActionMailer::Base
   end
 end
 
-email = Mailer.notification
-email.deliver
+# email = Mailer.notification
+# email.deliver
