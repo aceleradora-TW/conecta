@@ -29,8 +29,20 @@
     font-size: 1.7em;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 12, ../sass/Box.scss */
+  .TextExplanation {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 12, ../sass/Box.scss */
+  .TextExplanation {
+    font-size: 0.6em;
+  }
+}
 
-/* line 32, ../sass/Box.scss */
+/* line 38, ../sass/Box.scss */
 .LogosCredibility {
   width: 99%;
   height: 30%;
@@ -40,13 +52,13 @@
   justify-content: flex-end;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 32, ../sass/Box.scss */
+  /* line 38, ../sass/Box.scss */
   .LogosCredibility {
     align-items: baseline;
   }
 }
 
-/* line 44, ../sass/Box.scss */
+/* line 50, ../sass/Box.scss */
 .BoxText {
   height: 50%;
   width: 100%;
@@ -61,13 +73,21 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 44, ../sass/Box.scss */
+  /* line 50, ../sass/Box.scss */
   .BoxText {
-    font-size: 0.8em;
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 50, ../sass/Box.scss */
+  .BoxText {
+    font-size: 0.7em;
+    margin: 1vh 0;
+    justify-content: flex-start;
   }
 }
 
-/* line 62, ../sass/Box.scss */
+/* line 72, ../sass/Box.scss */
 .BoxSearch {
   width: 100%;
   height: 60%;
@@ -78,7 +98,7 @@
   align-items: center;
 }
 
-/* line 72, ../sass/Box.scss */
+/* line 82, ../sass/Box.scss */
 .TitleSearch {
   width: 60%;
   height: 20%;
@@ -90,7 +110,7 @@
   text-shadow: 1px 1px #000;
 }
 
-/* line 83, ../sass/Box.scss */
+/* line 93, ../sass/Box.scss */
 .BoxHowItWorks {
   height: 100%;
   width: 20%;
@@ -100,13 +120,20 @@
   flex-direction: column;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 83, ../sass/Box.scss */
+  /* line 93, ../sass/Box.scss */
   .BoxHowItWorks {
     height: 80%;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 93, ../sass/Box.scss */
+  .BoxHowItWorks {
+    height: 60%;
+    width: 80%;
+  }
+}
 
-/* line 95, ../sass/Box.scss */
+/* line 109, ../sass/Box.scss */
 .Icon {
   height: 50%;
   width: 40%;
@@ -118,14 +145,21 @@
   align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 95, ../sass/Box.scss */
+  /* line 109, ../sass/Box.scss */
   .Icon {
     width: 50%;
     height: 50%;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 109, ../sass/Box.scss */
+  .Icon {
+    height: 53%;
+    width: 60%;
+  }
+}
 
-/* line 110, ../sass/Box.scss */
+/* line 129, ../sass/Box.scss */
 .ContentHowItWorks {
   height: 35vh;
   width: 98%;
@@ -135,7 +169,7 @@
   font-weight: lighter;
 }
 
-/* line 119, ../sass/Box.scss */
+/* line 138, ../sass/Box.scss */
 .Title {
   width: 100%;
   height: 25%;
@@ -145,7 +179,7 @@
   align-items: center;
 }
 
-/* line 128, ../sass/Box.scss */
+/* line 147, ../sass/Box.scss */
 .CardContentF {
   height: 75%;
   width: 98%;
@@ -154,7 +188,7 @@
   align-items: flex-start;
 }
 
-/* line 136, ../sass/Box.scss */
+/* line 155, ../sass/Box.scss */
 .Arrow {
   height: 50%;
   width: 5%;
@@ -164,7 +198,7 @@
   color: white;
 }
 
-/* line 145, ../sass/Box.scss */
+/* line 164, ../sass/Box.scss */
 .Text {
   height: 55%;
   font-size: 1.2em;
@@ -172,7 +206,7 @@
   text-align: center;
 }
 
-/* line 152, ../sass/Box.scss */
+/* line 171, ../sass/Box.scss */
 .ContentSearch {
   min-height: 25vh;
   width: 98%;
@@ -185,8 +219,14 @@
   text-align: justify;
   padding: 0%;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 171, ../sass/Box.scss */
+  .ContentSearch {
+    min-height: 20vh;
+  }
+}
 
-/* line 164, ../sass/Box.scss */
+/* line 188, ../sass/Box.scss */
 .Tag {
   width: 40%;
   height: 7vh;
@@ -196,8 +236,15 @@
   justify-content: center;
   cursor: pointer;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 188, ../sass/Box.scss */
+  .Tag {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
 
-/* line 174, ../sass/Box.scss */
+/* line 202, ../sass/Box.scss */
 .TagTitle {
   width: 100%;
   height: 100%;
@@ -209,7 +256,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-/* line 185, ../sass/Box.scss */
+/* line 213, ../sass/Box.scss */
 .NavSearch {
   width: 60%;
   height: 60%;
@@ -217,8 +264,15 @@
   flex-direction: row;
   justify-content: space-between;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 213, ../sass/Box.scss */
+  .NavSearch {
+    flex-direction: column;
+    width: 60%;
+  }
+}
 
-/* line 192, ../sass/Box.scss */
+/* line 224, ../sass/Box.scss */
 .BoxTextTitle {
   height: 100%;
   width: 85%;

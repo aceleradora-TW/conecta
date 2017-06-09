@@ -2,6 +2,7 @@
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -26,9 +27,10 @@ body{
 }
 .material-icons.md-3 {
   font-size: 3em;
-
-
   @include tablet {
     font-size: 2.3em;
+  }
+  @include mobile {
+    font-size: 2.5em;
   }
 }

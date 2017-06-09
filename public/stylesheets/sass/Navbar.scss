@@ -10,8 +10,11 @@
 	font-weight: lighter;
 	background-color: rgba(0,0,0,0.47);
 	color: white;
-
+	@include mobile{
+		align-items: center;
+	}
 }
+
 .NavLogo{
 	width: 50%;
 	height: 100%;
@@ -36,13 +39,10 @@
 	list-style: none;
 	align-items: center;
 	color: white;
-
 	@include tablet {
 		justify-content: space-around;
 		padding-right: 5%;
 	}
-
-
 }
 .Link{
 	width: 24%;
@@ -74,6 +74,5 @@
 }
 .NavLinks a:hover{
 	text-decoration: none;
-
 	color: white;
 }

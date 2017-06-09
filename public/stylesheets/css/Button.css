@@ -21,14 +21,22 @@
     font-size: 0.8rem;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 3, ../sass/Button.scss */
+  .Button {
+    font-size: 0.75rem;
+    width: 10%;
+    justify-content: center;
+  }
+}
 
-/* line 23, ../sass/Button.scss */
+/* line 29, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
 
-/* line 27, ../sass/Button.scss */
+/* line 33, ../sass/Button.scss */
 .Button a {
   text-decoration: none;
   color: white;

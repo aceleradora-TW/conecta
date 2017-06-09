@@ -6,6 +6,10 @@
 
 .u-fontSizeMediumSlogan{
 	font-size: 1.3em;
+	@include mobile{
+		font-size: 1.5em;
+	};
+
 }
 
 .u-fontSizeMedium{
@@ -13,11 +17,17 @@
 	@include tablet{
 		font-size: 1em;
 	};
+	@include mobile{
+		font-size: 0.9em;
+	};
 }
 
 .u-fontSizeLarge {
 	font-size: 1.7em;
 	@include tablet{
+		font-size: 1.5em;
+	};
+	@include mobile{
 		font-size: 1.3em;
 	};
 }

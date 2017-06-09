@@ -28,6 +28,17 @@
       font-size: 1.1em;
     }
   }
+
+  @include mobile {
+    width: 90%;
+    height: 5.3vh;
+    input {
+      font-size: 0.65em;
+    }
+    span {
+      font-size: 1em;
+    }
+  }
 }
 
 

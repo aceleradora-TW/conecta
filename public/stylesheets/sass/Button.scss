@@ -18,16 +18,22 @@
   @include tablet {
     font-size: 0.8rem;
   }
+  @include mobile {
+    font-size: 0.75rem;
+    width: 10%;
+    justify-content: center;
+  }
+
 }
 
 .Button:hover{
-	box-shadow: 1px 1px 1px 1px #6BB9F0;
-	cursor: pointer;
+  box-shadow: 1px 1px 1px 1px #6BB9F0;
+  cursor: pointer;
 }
 .Button a {
-	text-decoration: none;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
