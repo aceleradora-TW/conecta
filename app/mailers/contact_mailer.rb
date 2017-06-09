@@ -23,8 +23,7 @@ class Mailer < ActionMailer::Base
 
   def notification
     mail(
-      # :to      => "g_meneguz@yahoo.com.br", :from    => "aceleradora11@gmail.com", :subject => "Dale",
-      :to      => "xxx@xxx.com", :from    => "aceleradora11@gmail.com", :subject => "Dale",
+      :to      => "xuxx@xxx.com", :from    => "aceleradora11@gmail.com", :subject => "Dale",
       :template_path => "app/views/mailer",  template_name: 'notification') do |format|
       format.html { render 'notification' }
       format.text { render plain: 'notification' }

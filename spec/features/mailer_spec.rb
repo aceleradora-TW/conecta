@@ -13,7 +13,7 @@ RSpec.describe Mailer, type: :mailer do
     context "Quando chamar o metodo" do
 
       it "Deve enviar um e-mail para cvcardozo@me.com" do
-        expect(@mail.to).to eq(['xxx@xxx.com'])
+        expect(@mail.to).to eq(['xuxx@xxx.com'])
       end
 
     end
