@@ -1,9 +1,11 @@
-var modal = document.querySelector('#ModalContact');
-var company = document.querySelector('#SendEmail');
+var modal = document.querySelector("#ModalContact");
+var company = document.querySelector("#SendEmail");
+var message = document.querySelector("#MessageModal");
 
 function showModal(id) {
   modal.style.display = "flex";
   company.id = "SendEmail"+id;
+  showMessage();
 }
 
 function closeModal() {
@@ -13,12 +15,16 @@ function closeModal() {
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
-    company.id = "SendEmail";
+    closeModal();
   }
 }
 
 function deleteMessage(){
-  document.querySelector("#MessageModal").value = "";
-  document.querySelector("#MessageModal").focus();
+  message.value = "";
+  message.focus();
+}
+
+function showMessage(){
+  message.value = "Tenho interesse em realizar uma parceria com sua empresa.";
+  message.focus();
 }
