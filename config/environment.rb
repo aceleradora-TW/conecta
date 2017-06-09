@@ -13,3 +13,4 @@ configure do
   # set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
+Dir[APP_ROOT.join('app', 'mailers', '*.rb')].each { |file| require file }
