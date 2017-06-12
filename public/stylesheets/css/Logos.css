@@ -17,23 +17,12 @@
   background-image: url("/images/puc4.png");
 }
 /* line 21, ../sass/Logos.scss */
-.Logo .LogosColaboradores {
+.Logo .LogoCollaborators {
   width: 100%;
   min-height: 30%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
   flex-direction: row;
-}
-/* line 31, ../sass/Logos.scss */
-.Logo .LogosList {
-  background-color: red;
-  width: 70%;
-  display: flex;
   justify-content: space-around;
-}
-/* line 39, ../sass/Logos.scss */
-.Logo .backgroundSize {
-  background-size: 5% 10%;
+  flex-wrap: wrap;
 }
