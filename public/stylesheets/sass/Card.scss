@@ -72,7 +72,7 @@
     @include flex($justify: flex-start);
     margin-left: 8.5%;
   }
-  &.active{
+  &.Open{
     @include flex()
   }
 }
