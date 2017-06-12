@@ -5,7 +5,7 @@
     <title>Conecta - não responda.</title>
   </head>
   <body>
-    <h1>Olá <%= "aa"  %></h1>
+    <h1>Olá <%= email_data.to.name %></h1>
     <p>
       Este é um email automático enviado pelo Conecta da Tecnopuc.
     </p>
@@ -13,13 +13,13 @@
       Um usuário do site gostaria de entrar em contato com a sua empresa, veja os dados abaixo.
     </p>
     <p>
-      Nome: <%= "Nome" %>
+      Nome: <%= email_data.from.name %>
     </p>
     <p>
-      Email: <%=" @user.email" %>
+      Email: <%= email_data.from.email %>
     </p>
     <p>
-      Comentário: <%="@user.comment" %>
+      Comentário: <%= email_data.from.text %>
     </p>
 
     <p>Equipe Conecta</p>
