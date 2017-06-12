@@ -63,6 +63,10 @@
 	color: $burnt-yellow-color;
 }
 
+.u-colorBackgroundwhite{
+	background-color: $white-color;
+}
+
 .u-colorBackgroundOrange{
 	background-color: $burnt-yellow-color;
 }
@@ -98,4 +102,8 @@
 
 .u-displayBlock {
 	display: block;
+}
+
+.u-borderWhite{
+	border: solid 2px;
 }
