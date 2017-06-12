@@ -27,6 +27,9 @@ body{
 .material-icons.md-3 {
    font-size: 3em;
  }
+ .material-icons.md-5 {
+    font-size: 5em;
+  }
  .material-icons.md-35px {
     @include tablet{
       font-size: 35px;

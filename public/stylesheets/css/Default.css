@@ -29,14 +29,19 @@ body {
   font-size: 3em;
 }
 
+/* line 30, ../sass/Default.scss */
+.material-icons.md-5 {
+  font-size: 5em;
+}
+
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 30, ../sass/Default.scss */
+  /* line 33, ../sass/Default.scss */
   .material-icons.md-35px {
     font-size: 35px;
   }
 }
 @media (max-width: 499px) {
-  /* line 30, ../sass/Default.scss */
+  /* line 33, ../sass/Default.scss */
   .material-icons.md-35px {
     font-size: 20px;
   }
