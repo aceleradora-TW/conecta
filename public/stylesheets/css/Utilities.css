@@ -96,12 +96,17 @@
 }
 
 /* line 83, ../sass/Utilities.scss */
+.u-widthNone {
+  width: 0%;
+}
+
+/* line 87, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 83, ../sass/Utilities.scss */
+  /* line 87, ../sass/Utilities.scss */
   .u-widthMedium {
     height: 70px;
     display: flex;
@@ -112,7 +117,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 83, ../sass/Utilities.scss */
+  /* line 87, ../sass/Utilities.scss */
   .u-widthMedium {
     height: 35px;
     display: flex;
@@ -123,17 +128,17 @@
   }
 }
 
-/* line 104, ../sass/Utilities.scss */
+/* line 108, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 108, ../sass/Utilities.scss */
+/* line 112, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
 
-/* line 68, ../sass/Utilities.scss */
+/* line 116, ../sass/Utilities.scss */
 .u-displayBlock {
   display: block;
 }

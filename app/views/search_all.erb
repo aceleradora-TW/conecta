@@ -1,17 +1,19 @@
 <h1 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">Resultados Buscados</h1>
-
-<h3> <%if @institution.length == 0%>
-  <br>
-  Nenhum resultado encontrado
+<h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">
+  <% if @institution.length == 0 %>
+  <br>Nenhum resultado encontrado
   <% end %>
 </h3>
 <section class="SectionCards">
   <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
   <% @institution.each do |company| %>
-  <!-- inicio card -->
   <div class="Card">
     <div class="CardNav">
-        <div class="LogoSmall LogoCard"><img class="LogoImage" src="images/default_company.jpg"></div>
+            <div class="CardLogo">
+        <div class="LogoSmall">
+          <img class="LogoImage" src="images/default_company.jpg">
+        </div>
+      </div>
       <div class="CardTitle">
         <h1><%= company.name %></h1>
       </div>
@@ -22,9 +24,9 @@
         <% company.segments.each do |segment| %>
         <% if segment.name.downcase.include? @value %>
         <li class="Items">
-
-          <div class="ItemText"><%= segment.name %><i class="material-icons u-colorGreen">check circle</i></div>
-
+          <div class="ItemTextSegment">
+            <%= segment.name %><i class="material-icons u-widthNone u-colorGreen">check circle</i>
+          </div>
         </li>
         <% end %>
         <%end %>
@@ -33,7 +35,6 @@
     <% else %>
     <div class="CompanyCompetences">
       <ul class="CompetenceList">
-
         <% company.featured_competences.each_with_index do |company_competence,index| %>
         <% rating = company_competence.competence_value_calculated_integer  %>
         <li class="ItemsFeatured ">
@@ -63,10 +64,7 @@
       <div class="FooterCardSecondaryItem"><b>E-mail</b>: <a href="mailto:endereco@email.com">endereco@email.com</a></div>
       <div class="FooterCardSecondaryItem"><b>Site</b>: <a href="http://conectatw.herokuapp.com">http://conectatw.herokuapp.com</a></div>
       <% end %>
-
-
     </div>
-
     <div class="FooterCardPrimay">
       <div class="BoxButtonCard">
         <div class="Button u-widthMedium">
@@ -86,69 +84,48 @@
         fugiat nulla pariatur.
       </div>
       <div class="CompanyCompetences">
-        <div class="CompetencesTitle">
-          Demais competências
-        </div>
+        <div class="CompetencesTitle">Demais competências</div>
         <% @company_competences = company.grouped_competences %>
-
         <% if @company_competences != nil %>
         <ul class="CompetenceList">
-
-          <%   @company_competences.each_key do |competence_area| %>
-          <li class="Items ItemsArea"><div class="ItemText"><%= competence_area %></div>
+          <% @company_competences.each_key do |competence_area| %>
+          <li class="Items ItemsArea">
+            <div class="ItemText"><%= competence_area %></div>
             <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
           </li>
-
           <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
-            <%  @company_competences[competence_area].each do |competence| %>
+            <% @company_competences[competence_area].each do |competence| %>
             <li><%= competence %></li>
             <% end %>
           </ul>
-
           <% end %>
-
         </ul>
-
         <% end %>
       </div>
     </div>
   </div>
-  <!--  fim card -->
-
-
-
-
-
-
   <% end %>
-
   <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
   <% @institution.each do |rc_searched| %>
-
-  <!-- INICIO CARD -->
-
   <div class="Card">
     <div class="CardResearchNav">
       <h1><%= rc_searched.name %></h1>
     </div>
-
     <div class="ResearchCompetences">
       <div class="ItemTheme">
         <b>Area de Pesquisa:</b>
-        <% rc_searched.research_areas.each do |a| %>
-        <%= a.name %>
+        <% rc_searched.research_areas.each do |area| %>
+        <%= area.name %>
         <% end %>
       </div>
       <div class="ItemTheme">
         <b>Eixo tematico:</b>
-        <% rc_searched.research_fields.each do |f| %>
-        <%= f.name %>
+        <% rc_searched.research_fields.each do |field| %>
+        <%= field.name %>
         <% end %>
       </div>
     </div>
-
     <div class="FooterCardSecondary">
-
       <% if(rc_searched.contact) %>
       <div class="FooterCardSecondaryItem">
         <b>Nome de Contato: </b>  <%= rc_searched.contact.contact_name || ""  %> <br>
@@ -163,15 +140,8 @@
         <%@site_url = rc_searched.contact.site%>
         <b>Site: </b>  <a class="URL" href=<%= @site_url %> target="_blank"> <%= @site_url %></a>
       </div>
-
-
     </div>
-
-
-
     <% end %>
-    <!-- TEM QUE POR NO VER MAIS -->
-
     <div class="FooterCardPrimay">
       <div class="BoxButtonCard">
         <div class="Button u-widthMedium">
@@ -183,24 +153,12 @@
       </div>
     </div>
     <div class="CardSecondary">
-
       <div class="CompanyDescription">
         <%= rc_searched.description%>
       </div>
     </div>
-
   </div>
-</div>
+  <% end %>
 <% end %>
-
-
-<!-- FIM CARD -->
-
-
 </section>
-
-<% end %>
-</div>
-
-</div>
 <script src="js/break_links.js"></script>
