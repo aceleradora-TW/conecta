@@ -471,6 +471,7 @@
     };
     @include smallMobile{
       font-size: 13px;
+      flex-wrap: wrap;
     };
 
   }

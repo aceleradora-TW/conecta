@@ -16,6 +16,16 @@
 		flex-direction: column;
 		height: 14vh;
 	};
+	@include mobile{
+		justify-content: center;
+		flex-direction: column;
+		height: 14vh;
+	};
+	@include smallMobile{
+		justify-content: center;
+		flex-direction: column;
+		height: 14vh;
+	};
 }
 .NavLogo{
 	width: 50%;
@@ -29,6 +39,16 @@
 		justify-content: space-around;
 		min-height: 50px;
 	};
+	@include mobile{
+		width: 90%;
+		justify-content: space-around;
+		min-height: 50px;
+	};
+	@include smallMobile{
+		width: 90%;
+		justify-content: space-around;
+		min-height: 50px;
+	};
 }
 .Hamburguer{
 	display: none;
@@ -36,9 +56,27 @@
 		display: block;
 		width: 5%;
 	}
+	@include mobile{
+		display: block;
+		width: 5%;
+	}
+	@include smallMobile{
+		display: block;
+		width: 5%;
+	}
 }
 .LogoLogo{
 	@include tablet{
+		width: 95%;
+		display: flex;
+		justify-content: center;
+	};
+	@include mobile{
+		width: 95%;
+		display: flex;
+		justify-content: center;
+	};
+	@include smallMobile{
 		width: 95%;
 		display: flex;
 		justify-content: center;
@@ -63,8 +101,22 @@
 		min-height: 20vh;
 		width: 90%;
 	};
-
-
+	@include mobile{
+		font-size: 1.5em;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 20vh;
+		width: 90%;
+	};
+	@include smallMobile{
+		font-size: 1.5em;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 20vh;
+		width: 90%;
+	};
 }
 .Link{
 	width: 24%;
@@ -79,7 +131,17 @@
 		border-top: 1px solid rgba(0,0,0,0.4);
 		width: 90%;
 		height: 10vh;
-
+	};
+	@include mobile{
+		border-top: 1px solid rgba(0,0,0,0.4);
+		width: 90%;
+		height: 10vh;
+	};
+	@include smallMobile{
+		border-top: 1px solid rgba(0,0,0,0.4);
+		width: 90%;
+		height: 10vh;
+		font-size: 1em;
 	};
 }
 .Link:hover{
@@ -99,6 +161,9 @@
 	font-size: 1.1em;
 	color: $white-font-color;
 	text-align: center;
+	@include smallMobile{
+		font-size: 0.8em;
+	};
 }
 .NavLinks a:hover{
 	text-decoration: none;

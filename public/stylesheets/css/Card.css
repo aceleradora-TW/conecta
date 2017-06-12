@@ -699,5 +699,6 @@
   /* line 460, ../sass/Card.scss */
   .FooterCardSecondary .FooterCardSecondaryItem {
     font-size: 13px;
+    flex-wrap: wrap;
   }
 }
