@@ -9,7 +9,7 @@
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
   @include tablet {
     width: 95%;
@@ -49,11 +49,10 @@
   }
 }
 .CardNav {
-  width: 100%;
-  min-height: 20%;
+
+@include flex($direction: row, $justify: flex-start);
+@include size($width: 100%, $min-height: 20%);
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
   @include mobile{
     width: 100%;
     display: flex;
@@ -68,6 +67,8 @@
     flex-direction: column;
     align-items: center;
   };
+
+
 }
 
 .CardResearchNav {
@@ -88,30 +89,26 @@
 }
 
 .CardLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
+  @include flex($align: center, $justify: center);
+  @include size($width: 30%);
 }
 
 .CardTitle {
+  @include flex($justify: center);
+  @include size($height: 100%, $width: 40%);
   font-size: 1.3em;
-  height: 100%;
-  width: 40%;
-  display: flex;
-  justify-content: center;
 }
+
 .LogoImage{
-  width: 40px;
-  height: 40px;
+  @include size($height: 40px, $width: 40px);
   border-radius: 100%;
+
 }
+
 .LogoSmall {
-  width: 30%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($align: center, $justify: center);
+  @include size($height: 40px, $width: 40px);
+  border-radius: 100%;
   margin: 10px;
   @include tablet{
     height: 100px;
@@ -121,12 +118,13 @@
 .CardCenter {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 66vh);
-  background: rgba(255, 255, 255, 1);
+  background: $white-color;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 3%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
 }
+
 .Subitems {
   @include size($width: 100%);
   display: none;
@@ -135,16 +133,15 @@
   line-height: 2em;
   font-size: 0.8em;
   text-align:center;
-  background-color: rgba(255,255,255,1);
+  background-color: $white-color;
   padding: 0;
   justify-content: space-around;
   li {
-    display: flex;
-    justify-content: flex-start;
+    @include flex($justify: flex-start);
     margin-left: 8.5%;
   }
-  &.active{
-    display: flex;
+  &.Open{
+    @include flex()
   }
 }
 
@@ -163,6 +160,12 @@
   @include smallMobile{
     width: 100%;
   };
+
+  &:hover {
+    background: rgba(0,0,0,.05);
+    transition: .5s;
+  }
+
 }
 
 .ItemsFeatured{
@@ -170,6 +173,7 @@
   @include size($width: 100%);
   line-height: 2em;
   align-self: center;
+
   @include mobile{
     align-items: center;
     justify-content: center;
@@ -186,16 +190,16 @@
 .Items:hover {
   background: rgba(0,0,0,.05);
   transition: .5s;
+
 }
+
 .CompetenceList {
-  @include flex($align: flex-start, $direction: column, $justify: space-between);
-  @include size($width: 100%);
-  height: 95%;
+  @include flex($align: flex-start, $direction: column, $justify: space-around);
+  @include size($height: 95%, $width: 100%);
   text-align: left;
-  flex-direction: column;
   padding: 0;
-  justify-content: space-around;
 }
+
 .CompetencesTitle{
   @include flex($align: flex-end, $justify: center);
   @include size($height: 5%, $width: 100%);
@@ -203,10 +207,10 @@
   font-weight: bold;
   font-size: 1.2em;
 }
+
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
   @include size($height: 100%, $width: 70%);
-  display:flex;
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
@@ -228,19 +232,17 @@
     font-size: 0.7em;
   };
 
-}
-.ItemTextSegment{
-  @include flex();
-  @include size($height: 100%, $width: 70%);
-  display: flex;
-  justify-content: center;
 
+}
+
+.ItemTextSegment{
+  @include flex($justify: center);
+  @include size($height: 100%, $width: 70%);
 }
 
 .ItemStar{
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
+  @include flex($justify: flex-end);
+  @include size($height: 100%);
 
   @include tablet{
     width: 32%;
@@ -257,24 +259,31 @@
     justify-content: center;
     align-items: center;
   }
+
 }
+
+
+
 
 .ContactTitle{
   @include flex($align: flex-end, $justify: center);
   @include size($height: 5%, $width: 100%);
 }
+
 .CompanyName {
   @include size($height: 10%, $width: 100%);
   text-align: center;
 }
+
 .CenterName{
   @include size($height: 10%, $width: 100%);
   text-align: center;
   margin-bottom: 3%;
 }
+
 .CompanyDescription{
+  @include flex();
   @include size($height: 30%, $width: 100%);
-  display: flex;
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
@@ -294,19 +303,18 @@
   @include flex($direction: row);
   @include size($height: 20%, $width: 100%);
 }
+
 .ItemTheme{
   @include size($height: 100%, $width: 50%);
   margin: 2%;
   word-wrap: break-word;
 }
+
 .FooterCardPrimay {
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
   border-top: 1px solid rgba(193, 193, 193, 0.45);
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:center;
+
   @include tablet{
     flex-direction: column;
   };
@@ -317,12 +325,10 @@
     flex-direction: column;
   };
 }
+
 .RatingExplanation {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include flex($align: center, $justify: space-around);
+  @include size($height: 100%, $width: 70%);
   margin: 20px;
   @include tablet{
     align-items: center;
@@ -348,11 +354,8 @@
 }
 
 .BoxButtonCard {
-  width: 60%;
-  height: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+@include flex($align: center, $justify: flex-end);
+@include size($height: 50%, $width: 60%);
   @include tablet{
     align-items: center;
     justify-content: space-around;
@@ -395,8 +398,6 @@
 .ResearchCompetences{
   @include flex($direction: row);
   @include size($height: 60%, $width: 100%);
-  width: 100%;
-  height: 60%;
   margin-top: 3%;
   text-align: center;
   @include mobile{
@@ -438,13 +439,9 @@
 }
 
 .FooterCardSecondary{
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
   border-top: 1px solid rgba(193, 193, 193, 0.45);
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 3%;
   margin-bottom: 3%;
@@ -461,7 +458,8 @@
     flex-direction: column;
   };
   .FooterCardSecondaryItem {
-    width: 45%;
+    @include size($width: 45%);
+
     @include tablet{
       width: 100%;
       display: flex;
@@ -474,5 +472,6 @@
     @include smallMobile{
       font-size: 13px;
     };
+
   }
 }
