@@ -16,6 +16,11 @@
     min-height: 55vh;
     font-size: 1.5em;
   };
+  @include mobile {
+    width: 95%;
+    min-height: 55vh;
+    font-size: 1.5em;
+  };
   @include smallMobile {
     width: 95%;
     min-height: 55vh;
@@ -25,6 +30,12 @@
 
 .LogoCard{
   @include tablet{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mobile{
     display: flex;
     width: 100%;
     align-items: center;
@@ -43,7 +54,16 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  @include mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  };
   @include smallMobile{
+    width: 100%;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -55,6 +75,16 @@
   @include size($width: 100%, $min-height: 20%);
   font-family: $font-style;
   flex-wrap: wrap;
+  @include mobile{
+    font-size: 0.9em;
+    text-align: center;
+    width: 90%;
+  };
+  @include smallMobile{
+    font-size: 0.9em;
+    text-align: center;
+    width: 90%;
+  };
 }
 
 .CardLogo {
@@ -131,6 +161,9 @@
   @include tablet{
     width: 100%;
   };
+  @include mobile{
+    width: 100%;
+  };
   @include smallMobile{
     width: 100%;
   };
@@ -141,6 +174,12 @@
   @include size($width: 100%);
   line-height: 2em;
   align-self: center;
+  @include mobile{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+  };
   @include smallMobile{
     align-items: center;
     justify-content: center;
@@ -179,11 +218,19 @@
     width: 68%;
     text-align: left;
   };
+  @include mobile{
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+  };
   @include smallMobile{
     width: 100%;
     text-align: left;
     justify-content: center;
     align-items: center;
+    font-size: 0.7em;
   };
 }
 
@@ -195,12 +242,17 @@
   @include tablet{
     width: 32%;
   }
+  @include mobile{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @include smallMobile{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }
 
@@ -223,6 +275,17 @@
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
+  @include tablet{
+    width: 90%;
+  };
+  @include mobile {
+    font-size: 0.7em;
+    width: 90%;
+  };
+  @include smallMobile {
+    font-size: 0.7em;
+    width: 90%;
+  };
 }
 .CenterTheme{
   @include flex($direction: row);
@@ -244,6 +307,9 @@
   @include tablet{
     flex-direction: column;
   };
+  @include mobile{
+    flex-direction: row;
+  };
   @include smallMobile{
     flex-direction: column;
   };
@@ -261,6 +327,13 @@
     height: 30%;
     width: 97%;
     font-size: 1.1em;
+  }
+  @include mobile{
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    font-size: 12px;
+    width: 100%;
   }
   @include smallMobile{
     align-items: center;
@@ -284,6 +357,13 @@
     height: 100px;
     flex-direction: row;
   }
+  @include mobile{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+  }
   @include smallMobile{
     flex-direction: column;
     align-items: center;
@@ -301,6 +381,9 @@
     width: 90%;
     font-size: 1.1em;
   }
+  @include mobile {
+    font-size: 0.9em;
+  };
   @include smallMobile {
     font-size: 0.9em;
   };
@@ -313,12 +396,42 @@
   height: 60%;
   margin-top: 3%;
   text-align: center;
+  @include mobile{
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
+  @include smallMobile{
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
 }
 
 .CardSecondary{
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
+  @include tablet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
+  @include mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
+  @include smallMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
 }
 
 .FooterCardSecondary{
@@ -336,11 +449,15 @@
     min-height: 146px;
     flex-direction: column;
   };
+  @include mobile{
+    min-height: 140px;
+    flex-direction: column;
+  };
   @include smallMobile{
     min-height: 140px;
     flex-direction: column;
   };
-    .FooterCardSecondaryItem {
+  .FooterCardSecondaryItem {
     width: 45%;
     @include tablet{
       width: 100%;
@@ -348,9 +465,11 @@
       align-items: center;
       justify-content: center;
     };
+    @include mobile{
+      font-size: 13px;
+    };
     @include smallMobile{
-      font-size: 12px;
-
+      font-size: 13px;
     };
   }
 }

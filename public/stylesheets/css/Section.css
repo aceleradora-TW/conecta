@@ -78,6 +78,14 @@
     justify-content: center;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 53, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 499px) {
   /* line 53, ../sass/Section.scss */
   .SectionCards {
@@ -87,7 +95,7 @@
   }
 }
 
-/* line 73, ../sass/Section.scss */
+/* line 78, ../sass/Section.scss */
 .SectionSearch {
   padding: 0;
   width: 100%;
