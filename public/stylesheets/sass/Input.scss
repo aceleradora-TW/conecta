@@ -18,6 +18,7 @@
     }
     @include smallMobile{
       font-size: 0.6em;
+      #BtnFilter{order: 1;}
     }
 
   }

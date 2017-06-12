@@ -43,6 +43,7 @@
     width: 0%;
     justify-content: center;
     span{display:none}
+    #BtnSearch {order: 3;}
 
   }
 
@@ -56,6 +57,10 @@
   &-activated {
     border-radius: 4px 0 0 0;
   }
+
+  @include smallMobile{
+    #BtnFilter {order: 2;}
+  };
 }
 .ButtonSearch{
   border: 1px solid rgba(0, 0, 0, .4);

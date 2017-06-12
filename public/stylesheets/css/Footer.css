@@ -1,4 +1,4 @@
-/* line 3, ../sass/Footer.scss */
+/* line 4, ../sass/Footer.scss */
 footer {
   display: flex;
   align-items: center;
@@ -9,4 +9,10 @@ footer {
   font-family: 'Lato', sans-serif;
   background-color: black;
   color: white;
+}
+@media (max-width: 499px) {
+  /* line 4, ../sass/Footer.scss */
+  footer {
+    font-size: 0.75em;
+  }
 }

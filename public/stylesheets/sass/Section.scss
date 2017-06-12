@@ -1,14 +1,26 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "MediaQuery";
 
 .Section {
   @include size($width: 100%);
   @include flex($direction: column);
   min-height: 85vh;
-  background-image: url("/images/background-main.jpg");
-  // background-image: url("https://goo.gl/cBzVRv");
+  background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include tablet{
+    background-image: url("/images/background-main-tablet.jpg");
+  }
+  @include mobile{
+    background-image: url("/images/background-main-mobile.jpg");
+  }
+  @include smallMobile{
+    background-image: url("/images/background-main-smallMobile.jpg");
+    background-repeat: repeat;
+  }
 }
 
 .SectionOpacity {

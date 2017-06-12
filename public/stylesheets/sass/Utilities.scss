@@ -9,7 +9,7 @@
 	font-size: 1.3em;
 	@include mobile{
 		font-size: 1.5em;
-	};
+	}
 
 }
 
@@ -17,20 +17,26 @@
 	font-size: 1.3em;
 	@include tablet{
 		font-size: 1em;
-	};
+	}
 	@include mobile{
 		font-size: 0.9em;
-	};
+	}
+	@include smallMobile{
+		font-size: 0.6em;
+	}
 }
 
 .u-fontSizeLarge {
 	font-size: 1.7em;
 	@include tablet{
 		font-size: 1.5em;
-	};
+	}
 	@include mobile{
 		font-size: 1.3em;
-	};
+	}
+	@include smallMobile{
+		font-size: 1.1em;
+	}
 }
 
 .u-fontSizeXLarge {
@@ -45,7 +51,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;
+	color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -132,7 +138,7 @@
 }
 .u-colorGreen{
 	/*background-color: #64DDBB;*/
-	background-color: #02af7e;
+	color: #02af7e;
 }
 .u-colorGreen:hover{
 	box-shadow: 1px 1px 2px 2px #36D7B7;
@@ -147,7 +153,7 @@
 }
 
 .u-colorOrange{
-	background-color: #EB9532;
+	color: #EB9532;
 }
 .u-colorOrange:hover{
 	box-shadow: 1px 1px 2px 2px #F4B350;
@@ -169,4 +175,10 @@
 
 .u-center{
 	text-align: center;
+}
+
+.u-rotateIcon{
+	@include smallMobile{
+		-webkit-transform: rotate(90deg);
+	}
 }

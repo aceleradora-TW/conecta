@@ -1,15 +1,36 @@
-/* line 4, ../sass/Section.scss */
+/* line 5, ../sass/Section.scss */
 .Section {
   width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 85vh;
-  background-image: url("/images/background-main.jpg");
+  background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 5, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-tablet.jpg");
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 5, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-mobile.jpg");
+  }
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-smallMobile.jpg");
+    background-repeat: repeat;
+  }
 }
 
-/* line 14, ../sass/Section.scss */
+/* line 26, ../sass/Section.scss */
 .SectionOpacity {
   height: 85vh;
   width: 100%;
@@ -18,7 +39,7 @@
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 21, ../sass/Section.scss */
+/* line 33, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -30,7 +51,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 27, ../sass/Section.scss */
+/* line 39, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -45,7 +66,7 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 38, ../sass/Section.scss */
+/* line 50, ../sass/Section.scss */
 .About {
   display: flex;
   align-items: center;
@@ -62,7 +83,7 @@
   color: white;
 }
 
-/* line 50, ../sass/Section.scss */
+/* line 62, ../sass/Section.scss */
 .SectionCards {
   padding: 0;
   width: 100%;
@@ -74,7 +95,7 @@
   justify-content: space-around;
 }
 
-/* line 60, ../sass/Section.scss */
+/* line 72, ../sass/Section.scss */
 .SectionSearch {
   padding: 0;
   width: 100%;

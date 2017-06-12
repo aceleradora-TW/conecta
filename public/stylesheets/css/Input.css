@@ -24,4 +24,8 @@
   .InputSearch {
     font-size: 0.6em;
   }
+  /* line 21, ../sass/Input.scss */
+  .InputSearch #BtnFilter {
+    order: 1;
+  }
 }
