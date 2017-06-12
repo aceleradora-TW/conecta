@@ -16,14 +16,18 @@
   text-align: center;
   letter-spacing: .5px;
 }
+/* line 20, ../sass/Button.scss */
+.Button.ButtonSend {
+  height: 4.6vh;
+}
 
-/* line 21, ../sass/Button.scss */
+/* line 26, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
 
-/* line 25, ../sass/Button.scss */
+/* line 30, ../sass/Button.scss */
 .Button a {
   display: flex;
   align-items: center;
@@ -32,7 +36,7 @@
   color: white;
 }
 
-/* line 31, ../sass/Button.scss */
+/* line 36, ../sass/Button.scss */
 .ButtonFilter {
   height: 100%;
   width: 100%;
@@ -42,12 +46,12 @@
   border-radius: 4px 0 0 4px;
 }
 
-/* line 39, ../sass/Button.scss */
+/* line 44, ../sass/Button.scss */
 .ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
 
-/* line 43, ../sass/Button.scss */
+/* line 48, ../sass/Button.scss */
 .ButtonSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
@@ -56,12 +60,12 @@
   border-radius: 0 4px 4px 0;
 }
 
-/* line 51, ../sass/Button.scss */
+/* line 56, ../sass/Button.scss */
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 55, ../sass/Button.scss */
+/* line 60, ../sass/Button.scss */
 .ButtonClear {
   display: flex;
   align-items: center;
@@ -74,17 +78,17 @@
   border: none;
 }
 
-/* line 64, ../sass/Button.scss */
+/* line 69, ../sass/Button.scss */
 .ButtonClear:hover {
   background-color: #3771c8;
 }
 
-/* line 68, ../sass/Button.scss */
+/* line 73, ../sass/Button.scss */
 .IconButtonClear {
   color: white;
 }
 
-/* line 72, ../sass/Button.scss */
+/* line 77, ../sass/Button.scss */
 .ButtonBack {
   display: none;
   position: fixed;
@@ -100,7 +104,7 @@
   border-radius: 100%;
 }
 
-/* line 87, ../sass/Button.scss */
+/* line 92, ../sass/Button.scss */
 .ButtonBack:hover {
   background-color: black;
 }

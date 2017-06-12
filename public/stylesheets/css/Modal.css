@@ -9,7 +9,7 @@
 
 /* line 10, ../sass/Modal.scss */
 .ModalContent {
-  height: 40%;
+  height: 66%;
   width: 50%;
   background-color: #fefefe;
   margin: auto;
@@ -65,12 +65,43 @@ textarea {
 .ModalBody {
   display: flex;
   flex-direction: column;
-  height: 75%;
-  border-bottom: 1px solid #eceeef;
+  height: 83%;
 }
 
 /* line 52, ../sass/Modal.scss */
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
+}
+
+/* line 57, ../sass/Modal.scss */
+.ModalFooter {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  border-top: 1px solid #eceeef;
+}
+
+/* line 64, ../sass/Modal.scss */
+.ModalInputs {
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  width: 100%;
+  align-items: center;
+}
+/* line 70, ../sass/Modal.scss */
+.ModalInputs input {
+  width: 50%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #c1c1c1;
+  padding: 5px 6px;
+  box-sizing: border-box;
+}
+/* line 78, ../sass/Modal.scss */
+.ModalInputs span {
+  justify-content: flex-start;
+  text-align: left;
+  width: 51%;
 }

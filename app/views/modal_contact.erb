@@ -8,6 +8,16 @@
 
     <div class="ModalBody">
       <h3 class="ModalDescription">Escreva sua mensagem no campo abaixo</h3>
+      <div class="ModalInputs">
+        <span class="u-marginBottom">Nome: </span>
+        <input class="u-marginBottom" type="text" name="" value="" placeholder="Escreva seu nome aqui">
+        <span class="u-marginBottom">Email: </span>
+        <input class="u-marginBottom" type="text" name="" value="" placeholder="Escreva seu e-mail aqui">
+        <span class="u-marginBottom">Para: </span>
+        <input class="u-marginBottom" type="text" name="" value="" id="ContactCompany" disabled="true">
+      </div>
+
+
       <div class="BoxTextArea">
         <textarea autofocus onfocus="this.innerHTML = this.innerHTML;" id="MessageModal"></textarea>
         <div class="BoxClear">
@@ -18,7 +28,7 @@
 
     <div class="ModalFooter">
       <div class="BoxButtonCard u-marginLeftSmall">
-        <div class="Button u-widthMedium" id="SendEmail">
+        <div class="Button ButtonSend u-widthMedium" id="SendEmail">
           enviar
         </div>
       </div>
