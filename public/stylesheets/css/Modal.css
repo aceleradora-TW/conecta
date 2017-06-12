@@ -25,10 +25,8 @@
   font-size: 28px;
   font-weight: bold;
 }
-
-/* line 24, ../sass/Modal.scss */
-.Close:hover,
-.Close:focus {
+/* line 23, ../sass/Modal.scss */
+.Close:hover, .Close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -68,40 +66,16 @@ textarea {
   height: 83%;
 }
 
-/* line 52, ../sass/Modal.scss */
+/* line 51, ../sass/Modal.scss */
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
 }
 
-/* line 57, ../sass/Modal.scss */
+/* line 55, ../sass/Modal.scss */
 .ModalFooter {
   display: flex;
   flex-direction: row;
   align-content: stretch;
   border-top: 1px solid #eceeef;
-}
-
-/* line 64, ../sass/Modal.scss */
-.ModalInputs {
-  display: flex;
-  flex-direction: column;
-  height: 48%;
-  width: 100%;
-  align-items: center;
-}
-/* line 70, ../sass/Modal.scss */
-.ModalInputs input {
-  width: 50%;
-  outline: none;
-  border-radius: 3px;
-  border: 1px solid #c1c1c1;
-  padding: 5px 6px;
-  box-sizing: border-box;
-}
-/* line 78, ../sass/Modal.scss */
-.ModalInputs span {
-  justify-content: flex-start;
-  text-align: left;
-  width: 51%;
 }
