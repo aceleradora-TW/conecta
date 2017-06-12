@@ -1,15 +1,27 @@
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>Conecta - não responda.</title>
+  </head>
+  <body>
+    <h1>Olá <%= "aa"  %></h1>
+    <p>
+      Este é um email automático enviado pelo Conecta da Tecnopuc.
+    </p>
+    <p>
+      Um usuário do site gostaria de entrar em contato com a sua empresa, veja os dados abaixo.
+    </p>
+    <p>
+      Nome: <%= "Nome" %>
+    </p>
+    <p>
+      Email: <%=" @user.email" %>
+    </p>
+    <p>
+      Comentário: <%="@user.comment" %>
+    </p>
 
-<style>
-
-</style>
-
-</head>
-<body>
-
-  <h1>Teste de Notification Mailer HTML</h1>
-
-
-</body>
+    <p>Equipe Conecta</p>
+  </body>
 </html>

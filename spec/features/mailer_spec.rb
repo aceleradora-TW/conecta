@@ -6,14 +6,13 @@ require 'spec_helper'
 RSpec.describe Mailer, type: :mailer do
 
   before(:all) do
-    @mail = Mailer.notification()
-
+    @contact_mail = Mailer.send_email_contact()
   end
-  describe "#notification" do
+  describe "#send_email_contact" do
     context "Quando chamar o metodo" do
 
-      it "Deve enviar um e-mail para cvcardozo@me.com" do
-        expect(@mail.to).to eq(['xuxx@xxx.com'])
+      it "Deve enviar um e-mail para aceleradora11@gmail.com" do
+        expect(@contact_mail.to).to eq(['aceleradora11@gmail.com'])
       end
 
     end
