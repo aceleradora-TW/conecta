@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 85vh;
-  background-image: url("https://goo.gl/cBzVRv");
+  background-image: url("/images/background-main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }

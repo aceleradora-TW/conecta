@@ -96,12 +96,22 @@
 }
 
 /* line 82, ../sass/Utilities.scss */
+.u-widthNone {
+  width: 0%;
+}
+
+/* line 86, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 
-/* line 87, ../sass/Utilities.scss */
+/* line 91, ../sass/Utilities.scss */
+.u-widthLarge {
+  width: 90%;
+}
+
+/* line 95, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }

@@ -1,53 +1,108 @@
-
 @import "_mixins.scss";
 @import "_variables.scss";
 
+
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 45vh);
+  @include size($width: 48%, $min-height: 35vh);
   background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
 }
 
+.CardNav {
+  @include flex($direction: row, $justify: flex-start);
+  @include size($width: 100%, $min-height: 20%);
+}
+
+.CardResearchNav {
+  @include flex($align: center, $direction: row, $justify: center);
+  @include size($width: 100%, $min-height: 20%);
+  font-family: $font-style;
+  flex-wrap: wrap;
+}
+
+.CardLogo {
+  @include flex($align: center, $justify: center);
+  @include size($width: 30%);
+}
+
+.CardTitle {
+  @include flex($justify: center);
+  @include size($height: 100%, $width: 40%);
+  font-size: 1.3em;
+}
+
+.LogoImage{
+  @include size($height: 40px, $width: 40px);
+}
+
+.LogoSmall {
+  @include flex($align: center, $justify: center);
+  @include size($height: 40px, $width: 40px);
+  border-radius: 100%;
+  margin: 10px;
+}
 
 .CardCenter {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 66vh);
-  background: rgba(255, 255, 255, 1);
+  background: $white-color;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 3%;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style;
   font-weight: lighter;
 }
-.Subitems {
-  @include size($width: 85%);
-  margin-top: 2%;
-  display: none;
-  list-style: none;
-  line-height: 1.8em;
-  font-size: 0.8em;
-  text-align: left;
-  margin: 0;
-  box-shadow: 2px 3px 1px 1px rgba(48, 91, 159, 0.1);
-  background-color: rgba(255,255,255,0.8);
-}
-.Items{
 
-  @include flex($align: center, $justify: center);
-  @include size($width: 50%);
+.Subitems {
+  @include size($width: 100%);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2em;
+  font-size: 0.8em;
+  text-align:center;
+  background-color: $white-color;
+  padding: 0;
+  justify-content: space-around;
+  li {
+    @include flex($justify: flex-start);
+    margin-left: 8.5%;
+  }
+  &.Open{
+    @include flex()
+  }
+}
+
+.Items{
+  @include flex($align: center, $justify: space-around);
+  @include size($width: 100%);
   line-height: 2em;
   cursor: pointer;
   align-self: center;
+  &:hover {
+    background: rgba(0,0,0,.05);
+    transition: .5s;
+  }
 }
-.CompetenceList {
-  @include flex($align: flex-start, $direction: column, $justify: space-between);
+
+.ItemsFeatured{
+  @include flex($align: center, $justify: space-around);
   @include size($width: 100%);
-  height: 95%;
-  text-align: left;
+  line-height: 2em;
+  align-self: center;
 }
+
+.CompetenceList {
+  @include flex($align: flex-start, $direction: column, $justify: space-around);
+  @include size($height: 95%, $width: 100%);
+  text-align: left;
+  padding: 0;
+}
+
 .CompetencesTitle{
   @include flex($align: flex-end, $justify: center);
   @include size($height: 5%, $width: 100%);
@@ -55,38 +110,41 @@
   font-weight: bold;
   font-size: 1.2em;
 }
+
 .ItemText{
-  @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 95%, $width: 100%);
-  display:flex;
-  text-align: right;
-  flex-wrap: wrap;
+  @include flex();
+  @include size($height: 100%, $width: 70%);
+}
+
+.ItemTextSegment{
+  @include flex($justify: center);
+  @include size($height: 100%, $width: 70%);
 }
 
 .ItemStar{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  color: rgba(228, 181, 65, 1);
+  @include flex($justify: flex-end);
+  @include size($height: 100%)
 }
 
 .ContactTitle{
   @include flex($align: flex-end, $justify: center);
   @include size($height: 5%, $width: 100%);
 }
+
 .CompanyName {
   @include size($height: 10%, $width: 100%);
   text-align: center;
 }
+
 .CenterName{
   @include size($height: 10%, $width: 100%);
   text-align: center;
   margin-bottom: 3%;
 }
+
 .CompanyDescription{
-  @include size($height: 30%, $width: 90%);
-  display: flex;
+  @include flex();
+  @include size($height: 30%, $width: 100%);
   text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
@@ -95,35 +153,28 @@
   @include flex($direction: row);
   @include size($height: 20%, $width: 100%);
 }
+
 .ItemTheme{
   @include size($height: 100%, $width: 50%);
   margin: 2%;
   word-wrap: break-word;
 }
+
 .FooterCardPrimay {
-  border-top: 2px solid #c1c1c1;
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:center;
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
+
 }
 .RatingExplanation {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include flex($align: center, $justify: space-around);
+  @include size($height: 100%, $width: 70%);
   margin: 20px;
 }
 
 .BoxButtonCard {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex($align: center, $justify: flex-end);
+  @include size($height: 50%, $width: 60%);
 }
 
 .CompanyCompetences{
@@ -132,18 +183,27 @@
   margin-top: 3%;
 }
 
+.ResearchCompetences{
+  @include flex($direction: row);
+  @include size($height: 60%, $width: 100%);
+  margin-top: 3%;
+  text-align: center;
+}
+
 .CardSecondary{
-  border-top: 2px solid #c1c1c1;
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
 }
 
 .FooterCardSecondary{
-  border-top: 2px solid #c1c1c1;
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:center;
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
+  flex-wrap: wrap;
+  padding-top: 3%;
+  margin-bottom: 3%;
+  .FooterCardSecondaryItem {
+    @include size($width: 45%);
+  }
 }
