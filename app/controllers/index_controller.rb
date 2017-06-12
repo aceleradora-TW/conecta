@@ -26,4 +26,6 @@ class IndexController < Controller
       erb :search_all
     end
   end
+  post "/request_contact" do
+  end
 end
