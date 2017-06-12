@@ -82,8 +82,9 @@
 /* line 68, ../sass/Button.scss */
 .IconButtonClear {
   color: white;
+}
 
-/* line 30, ../sass/Button.scss */
+/* line 72, ../sass/Button.scss */
 .ButtonBack {
   display: none;
   position: fixed;
@@ -99,7 +100,7 @@
   border-radius: 100%;
 }
 
-/* line 45, ../sass/Button.scss */
+/* line 87, ../sass/Button.scss */
 .ButtonBack:hover {
   background-color: black;
 }
