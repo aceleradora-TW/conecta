@@ -1,27 +1,29 @@
 const items = document.querySelectorAll('.ItemsArea');
 const subitems = document.querySelectorAll('.SubItemsArea');
-for(let i = 0; i < items.length; i++) {
-  items[i].addEventListener("click", function(){
-    if(subitems[i].style.display == 'block') {
-      subitems[i].style.display = 'none';
-      items[i].style.color = 'black';
-    }
-    else{
-      subitems[i].style.display = 'block';
-      items[i].style.color = 'rgba(52, 73, 94,0.8)';
+
+
+items.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    if(subitems[index].classList.contains("Open")){
+      subitems[index].classList.remove("Open");
+    } else {
+      document.querySelectorAll(".Open").forEach(function close(element){
+        element.classList.remove("Open");
+      });
+      subitems[index].classList.add("Open");
     }
   });
-}
-const button = document.querySelectorAll('.ButtonSeeMore');
-const cardsecondary = document.querySelectorAll('.CardSecondary');
-for(let i = 0; i < button.length; i++){
-button[i].addEventListener("click", function(){
-  if(cardsecondary[i].style.display == 'block') {
-    cardsecondary[i].style.display = 'none';
-
-  }
-  else{
-    cardsecondary[i].style.display = 'block';
-  }
 });
+
+const button = document.querySelectorAll('.ButtonSeeMore');
+const cardSecondary = document.querySelectorAll('.CardSecondary');
+for(let i = 0; i < button.length; i++){
+  button[i].addEventListener("click", function(){
+    if(cardSecondary[i].style.display == 'block') {
+      cardSecondary[i].style.display = 'none';
+    }
+    else{
+      cardSecondary[i].style.display = 'block';
+    }
+  });
 }

@@ -101,22 +101,32 @@
 }
 
 /* line 86, ../sass/Utilities.scss */
+.u-widthNone {
+  width: 0%;
+}
+
+/* line 90, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 
-/* line 91, ../sass/Utilities.scss */
+/* line 95, ../sass/Utilities.scss */
+.u-widthLarge {
+  width: 90%;
+}
+
+/* line 99, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
 
-/* line 95, ../sass/Utilities.scss */
+/* line 103, ../sass/Utilities.scss */
 .u-displayBlock {
   display: block;
 }
 
-/* line 99, ../sass/Utilities.scss */
+/* line 107, ../sass/Utilities.scss */
 .u-borderWhite {
   border: solid 2px;
 }
