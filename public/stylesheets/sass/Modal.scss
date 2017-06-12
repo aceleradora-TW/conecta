@@ -20,12 +20,12 @@
   color: rgba(170, 170, 170, 1);
   font-size: 28px;
   font-weight: bold;
-}
-.Close:hover,
-.Close:focus {
-  color: $black-font-color;
-  text-decoration: none;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $black-font-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 textarea {
   @include size($height: 70%, $width: 45%);
@@ -48,36 +48,13 @@ textarea {
   @include flex($direction: column);
   @include size($height: 83%);
 }
-
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
 }
-
 .ModalFooter {
   @include flex($direction: row);
   align-content: stretch;
   border-top: 1px solid rgba(236, 238, 239, 1);
 
-}
-
-.ModalInputs {
-  display: flex;
-  flex-direction: column;
-  height: 48%;
-  width: 100%;
-  align-items: center;
-  input {
-    @include size($width: 50%);
-    outline: none;
-    border-radius: 3px;
-    border: 1px solid rgba(193, 193, 193, 1);
-    padding: 5px 6px;
-    box-sizing: border-box;
-  }
-  span {
-    justify-content: flex-start;
-    text-align: left;
-    width: 51%;
-  }
 }
