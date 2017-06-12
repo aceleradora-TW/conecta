@@ -220,7 +220,7 @@
   z-index: 2;
 }
 
-/* line 122, ../sass/Box.scss */
+/* line 120, ../sass/Box.scss */
 .BoxClear {
   display: flex;
   align-items: flex-end;
@@ -228,7 +228,7 @@
   margin-right: 25%;
 }
 
-/* line 126, ../sass/Box.scss */
+/* line 124, ../sass/Box.scss */
 .BoxTextArea {
-  height: 70%;
+  height: 53%;
 }

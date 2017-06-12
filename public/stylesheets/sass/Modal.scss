@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .ModalContent {
-  @include size($height: 40%, $width: 50%);
+  @include size($height: 66%, $width: 50%);
   background-color: rgba(254, 254, 254, 1);
   margin: auto;
   padding: 20px;
@@ -46,10 +46,38 @@ textarea {
 }
 .ModalBody {
   @include flex($direction: column);
-  @include size($height: 75%);
-  border-bottom: 1px solid rgba(236, 238, 239, 1);
+  @include size($height: 83%);
 }
+
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
+}
+
+.ModalFooter {
+  @include flex($direction: row);
+  align-content: stretch;
+  border-top: 1px solid rgba(236, 238, 239, 1);
+
+}
+
+.ModalInputs {
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  width: 100%;
+  align-items: center;
+  input {
+    @include size($width: 50%);
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    padding: 5px 6px;
+    box-sizing: border-box;
+  }
+  span {
+    justify-content: flex-start;
+    text-align: left;
+    width: 51%;
+  }
 }
