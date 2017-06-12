@@ -110,14 +110,14 @@
     <div class="ResearchCompetences">
       <div class="ItemTheme">
         <b>Area de Pesquisa:</b>
-        <% rc_searched.research_areas.each do |a| %>
-        <%= a.name %>
+        <% rc_searched.research_areas.each do |area| %>
+        <%= area.name %>
         <% end %>
       </div>
       <div class="ItemTheme">
         <b>Eixo tematico:</b>
-        <% rc_searched.research_fields.each do |f| %>
-        <%= f.name %>
+        <% rc_searched.research_fields.each do |field| %>
+        <%= field.name %>
         <% end %>
       </div>
     </div>
