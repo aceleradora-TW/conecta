@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import "_variables.scss";
 .Logo {
 
 	&-wide {
@@ -16,4 +17,29 @@
 		margin: 0 5% 0% 2%;
 		background-image: url("/images/puc4.png");
 	}
+
+	.LogosColaboradores{
+		width: 100%;
+		min-height: 30%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+
+	.LogosList{
+		width: 70%;
+		display: flex;
+		justify-content: space-around;
+		background-color: red;
+	}
+
+	.backgroundSize{
+		background-size: 5% 10%;
+
+	}
+
+
+
 }
