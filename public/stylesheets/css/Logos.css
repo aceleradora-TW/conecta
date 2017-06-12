@@ -28,12 +28,12 @@
 }
 /* line 31, ../sass/Logos.scss */
 .Logo .LogosList {
+  background-color: red;
   width: 70%;
   display: flex;
   justify-content: space-around;
-  background-color: red;
 }
-/* line 38, ../sass/Logos.scss */
+/* line 39, ../sass/Logos.scss */
 .Logo .backgroundSize {
   background-size: 5% 10%;
 }
