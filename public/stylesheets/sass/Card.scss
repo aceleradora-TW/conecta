@@ -84,10 +84,6 @@
   &.active{
     display: flex;
   }
-  // text-align: left;
-  // margin: 0;
-  // box-shadow: 2px 3px 1px 1px rgba(48, 91, 159, 0.1);
-  // background-color: rgba(255,255,255,0.8);
 }
 
 .Items{
@@ -130,11 +126,12 @@
   @include flex();
   @include size($height: 100%, $width: 70%);
   display: flex;
-
-  // @include flex($align: flex-start, $direction: row, $justify: space-between);
-  //
-  // text-align: right;
-  // flex-wrap: wrap;
+}
+.ItemTextSegment{
+  @include flex();
+  @include size($height: 100%, $width: 70%);
+  display: flex;
+  justify-content: center;
 }
 
 .ItemStar{
