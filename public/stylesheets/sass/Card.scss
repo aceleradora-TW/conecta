@@ -83,6 +83,10 @@
   line-height: 2em;
   cursor: pointer;
   align-self: center;
+  &:hover {
+    background: rgba(0,0,0,.05);
+    transition: .5s;
+  }
 }
 
 .ItemsFeatured{
@@ -90,11 +94,6 @@
   @include size($width: 100%);
   line-height: 2em;
   align-self: center;
-}
-
-.Items:hover {
-  background: rgba(0,0,0,.05);
-  transition: .5s;
 }
 
 .CompetenceList {
