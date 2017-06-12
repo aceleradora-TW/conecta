@@ -40,8 +40,8 @@
             <li class="ItemsFeatured ">
               <div class="ItemText"><%= company_competence.competence.name %></div>
               <div class="ItemStar">
-              <% for pos in (1..5) %>
-                <i class="material-icons u-colorGold"><%=pos <= rating ? "star" : "star_border"%></i>
+              <% for n_of_stars in (1..5) %>
+                <i class="material-icons u-colorGold"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
               <% end %>
               </div>
             </li>
