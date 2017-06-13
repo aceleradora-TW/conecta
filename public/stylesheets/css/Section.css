@@ -7,10 +7,11 @@
   background-image: url("/images/background-main.jpg");
   background-size: cover;
   background-attachment: fixed;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 16, ../sass/Section.scss */
-/* line 14, ../sass/Section.scss */
+/* line 17, ../sass/Section.scss */
 .SectionOpacity {
   width: 100%;
   height: 85vh;
@@ -19,8 +20,7 @@
   flex-direction: column;
 }
 
-/* line 24, ../sass/Section.scss */
-/* line 22, ../sass/Section.scss */
+/* line 25, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -33,8 +33,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 31, ../sass/Section.scss */
-/* line 29, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -45,12 +44,7 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-
-/* line 41, ../sass/Section.scss */
-/* line 39, ../sass/Section.scss */
-
-/* line 35, ../sass/Section.scss */
-
+/* line 38, ../sass/Section.scss */
 .About {
   display: flex;
   align-items: center;
@@ -67,12 +61,7 @@
   color: white;
 }
 
-
-/* line 53, ../sass/Section.scss */
-/* line 51, ../sass/Section.scss */
-
-/* line 47, ../sass/Section.scss */
-
+/* line 50, ../sass/Section.scss */
 .SectionCards {
   padding: 0;
   width: 100%;
@@ -84,7 +73,7 @@
   justify-content: space-around;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 53, ../sass/Section.scss */
+  /* line 50, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -92,7 +81,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 53, ../sass/Section.scss */
+  /* line 50, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -100,7 +89,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 53, ../sass/Section.scss */
+  /* line 50, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -108,12 +97,7 @@
   }
 }
 
-
-/* line 78, ../sass/Section.scss */
-/* line 61, ../sass/Section.scss */
-
-/* line 57, ../sass/Section.scss */
-
+/* line 75, ../sass/Section.scss */
 .SectionSearch {
   padding: 0;
   width: 100%;
@@ -124,7 +108,7 @@
   justify-content: center;
 }
 
-/* line 67, ../sass/Section.scss */
+/* line 85, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

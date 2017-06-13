@@ -115,7 +115,11 @@
 		flex-direction: column;
 		justify-content: center;
 		min-height: 20vh;
-		width: 90%;
+		width: 100%;
+		padding: 0;
+
+
+
 	};
 }
 .Link{
@@ -161,8 +165,11 @@
 	font-size: 1.1em;
 	color: $white-font-color;
 	text-align: center;
+	@include tablet{
+	font-size: 0.9em;
+	};
 	@include smallMobile{
-		font-size: 0.8em;
+		font-size: 0.7em;
 	};
 }
 .NavLinks a:hover{

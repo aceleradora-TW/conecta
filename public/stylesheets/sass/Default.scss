@@ -2,6 +2,10 @@
 body{
   margin: 0;
   padding: 0;
+  @include smallMobile{
+    padding: 0;
+    margin: 0;
+  };
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -27,8 +31,11 @@ body{
 .material-icons.md-3 {
    font-size: 3em;
  }
- .material-icons.md-5 {
-    font-size: 5em;
+ .material-icons.md-hamburger {
+    font-size: 3em;
+    @include smallMobile{
+      font-size: 2em;
+    };
   }
  .material-icons.md-35px {
     @include tablet{
