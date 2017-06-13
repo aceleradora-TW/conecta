@@ -3,53 +3,49 @@
 @import "MediaQuery.scss";
 
 .Navbar{
+	@include flex($align: center, $justify: space-between,  $direction: row);
 	@include size($width: 100%, $height: 12vh);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	font-family: $font-style;
 	font-weight: lighter;
 	background-color: rgba(0,0,0,0.47);
 	color: $white-font-color;
+
 	@include tablet{
-		justify-content: center;
-		flex-direction: column;
-		height: 14vh;
-	};
+		@include flex($justify: center,  $direction: column);
+		@include size($height: 14vh);
+	}
+
 	@include mobile{
-		justify-content: center;
-		flex-direction: column;
-		height: 14vh;
-	};
+		@include flex($justify: center,  $direction: column);
+		@include size($height: 14vh);
+	}
+
 	@include smallMobile{
-		justify-content: center;
-		flex-direction: column;
-		height: 14vh;
-	};
+		@include flex($justify: center,  $direction: column);
+		@include size($height: 14vh);
+	}
 }
 .NavLogo{
-	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-start;
+	@include size($width: 50%, $height: 100%);
+	@include flex($justify: flex-start,  $align: center);
 	margin-left: 25px;
-	align-items: center;
+
 	@include tablet{
-		width: 90%;
-		justify-content: space-around;
-		min-height: 50px;
-	};
+		@include size($width: 90%, $min-height: 50px);
+		@include flex($justify: space-around);
+	}
+
 	@include mobile{
-		width: 90%;
-		justify-content: space-around;
-		min-height: 50px;
-	};
+		@include size($width: 90%, $min-height: 50px);
+		@include flex($justify: space-around);
+	}
+
 	@include smallMobile{
-		width: 90%;
-		justify-content: space-around;
-		min-height: 50px;
-	};
+		@include size($width: 90%, $min-height: 50px);
+		@include flex($justify: space-around);
+	}
 }
+
 .Hamburger{
 	display: none;
 	@include tablet{
@@ -65,88 +61,76 @@
 		width: 5%;
 	}
 }
+
 .LogoImage{
 	@include tablet{
-		width: 95%;
-		display: flex;
-		justify-content: center;
-	};
+		@include size($width: 95%);
+		@include flex($justify: center);
+	}
+
 	@include mobile{
-		width: 95%;
-		display: flex;
-		justify-content: center;
-	};
+		@include size($width: 95%);
+		@include flex($justify: center);
+	}
 	@include smallMobile{
-		width: 95%;
-		display: flex;
-		justify-content: center;
-	};
+		@include size($width: 95%);
+		@include flex($justify: center);
+	}
 }
+
 .NavLinks{
-	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
+	@include size($width: 50%, $min-height: 100%);
+	@include flex($justify:flex-end, $align:center, $direction: row);
 	list-style: none;
 	margin: 0;
-	list-style: none;
-	align-items: center;
 	color: $white-color;
+
 	@include tablet{
+		@include size($width: 90%, $min-height: 20vh);
+		@include flex($justify:center, $direction: column);
 		font-size: 1.5em;
 		display: none;
-		flex-direction: column;
-		justify-content: center;
-		min-height: 20vh;
-		width: 90%;
-	};
+	}
+
 	@include mobile{
+		@include size($width: 90%, $min-height: 20vh);
 		font-size: 1.5em;
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		min-height: 20vh;
-		width: 90%;
-	};
+	}
+
 	@include smallMobile{
+		@include size($width: 100%, $min-height: 20vh);
 		font-size: 1.5em;
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		min-height: 20vh;
-		width: 100%;
 		padding: 0;
-
-
-
-	};
+	}
 }
 .Link{
-	width: 24%;
-	height: 60%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include size($width: 24%, $height: 60%);
+	@include flex($align: center, $justify: center);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
+
 	@include tablet{
+		@include size($width: 90%, $height: 10vh);
 		border-top: 1px solid rgba(0,0,0,0.4);
-		width: 90%;
-		height: 10vh;
-	};
+	}
+
 	@include mobile{
+		@include size($width: 90%, $height: 10vh);
 		border-top: 1px solid rgba(0,0,0,0.4);
-		width: 90%;
-		height: 10vh;
-	};
+	}
+
 	@include smallMobile{
+		@include size($width: 90%, $height: 10vh);
 		border-top: 1px solid rgba(0,0,0,0.4);
-		width: 90%;
-		height: 10vh;
 		font-size: 1em;
-	};
+	}
 }
 .Link:hover{
 	background-color: rgba(0,0,0,0.7);
@@ -166,11 +150,11 @@
 	color: $white-font-color;
 	text-align: center;
 	@include tablet{
-	font-size: 0.9em;
-	};
+		font-size: 0.9em;
+	}
 	@include smallMobile{
 		font-size: 0.7em;
-	};
+	}
 }
 .NavLinks a:hover{
 	text-decoration: none;
