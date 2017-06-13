@@ -5,10 +5,7 @@
 
 .Navbar{
 	@include size($width:100%, $height:12vh);
-	@include size($width: 100%, $height: 12vh);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	@include flex($direction: row, $justify: space-between);
 	font-family: $font-style;
 	font-weight: lighter;
 	background-color: rgba(0,0,0,0.47);
@@ -19,15 +16,13 @@
 }
 
 .NavLogo{
-	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-start;
+	@include size($width:50%, $height:100%);
+	@include flex($align: center, $justify: flex-start);
 	margin-left: 3%;
-	align-items: center;
+
 	@include tablet{
-		width: 25%;
-		justify-content: center;
+		@include size($width:25%);
+		@include flex($justify: center);
 	}
 	@include smallMobile{
 		width: 100%;
@@ -37,35 +32,28 @@
 	}
 }
 .NavLinks{
-	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
+	@include size($width:50%, $height:100%);
+	@include flex($align: center, $direction: row, $justify: flex-end);
 	list-style: none;
 	margin: 0;
 	padding-right: 10%;
 	list-style: none;
-	align-items: center;
 	color: $white-color;
-
 	@include tablet {
-		justify-content: space-around;
+		@include flex($justify: space-around);
 		padding-right: 5%;
 	}
 	@include mobile {
-	padding-right: 5%;
+		padding-right: 5%;
 	}
 	@include smallMobile {
-	padding-right: 5%;
+		padding-right: 5%;
 	}
 }
+
 .Link{
-	width: 24%;
-	height: 60%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include size($width:24%, $height:60%);
+	@include flex($align: center, $justify: center);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
