@@ -1,0 +1,14 @@
+<%@cont = 1%>
+
+<h1 class="u-fontFamilyLato u-colorGreen"> Todas as instituições cadastradas:</h1>
+
+<% @institution.each do |institution| %>
+
+<h2 class="u-fontFamilyLato"> <%= institution.name %> </h2>
+<br>
+
+<%@cont = @cont + 1%>
+
+<%end%>
+
+<%= @cont%>

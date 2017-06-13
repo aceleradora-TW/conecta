@@ -1,4 +1,4 @@
- # -*- encoding : utf-8 -*-
+# -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
@@ -26,4 +26,11 @@ class IndexController < Controller
       erb :search_all
     end
   end
+
+  get "/list_all" do
+    @institution = Institution.all
+    erb :list_all
+  end
+
+
 end
