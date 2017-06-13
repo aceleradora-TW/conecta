@@ -2,13 +2,13 @@ var modal = document.querySelector("#ModalContact");
 var company = document.querySelector("#SendEmailButton");
 var message = document.querySelector("#MessageModal");
 
-function showModal(id, ContactCompany) {
+function showModal(id, InstitutionName) {
   var contact = document.querySelector("#ContactCompany");
   modal.style.display = "flex";
 
   var inputInstitutionId = document.querySelector("#InstitutionId");
   inputInstitutionId.value = id;
-  console.log(inputInstitutionId);
+  contact.value = InstitutionName
   showMessage("Tenho interesse em realizar uma parceria com sua empresa.");
 }
 
