@@ -14,19 +14,19 @@
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   letter-spacing: .5px;
 
   &:hover{
-  	box-shadow: 1px 1px 1px 1px #6BB9F0;
+  	box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
   	cursor: pointer;
   }
 
   a {
     @include flex($align: center, $justify: center);
   	text-decoration: none;
-  	color: white;
+  	color: rgba(255, 255, 255, 1);
   }
   @include tablet {
     font-size: 0.8rem;

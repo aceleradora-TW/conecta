@@ -12,13 +12,13 @@
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-  color: #fff;
+  color: white;
   text-align: center;
   letter-spacing: .5px;
 }
 /* line 21, ../sass/Button.scss */
 .Button:hover {
-  box-shadow: 1px 1px 1px 1px #6BB9F0;
+  box-shadow: 1px 1px 1px 1px #6bb9f0;
   cursor: pointer;
 }
 /* line 26, ../sass/Button.scss */
