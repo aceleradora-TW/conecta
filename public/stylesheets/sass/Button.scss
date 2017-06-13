@@ -5,7 +5,7 @@
 .Button{
   @include flex($justify: center);
   @include size($height: 100%);
-  background-color: #3771c8;
+  background-color: $blue-color;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -14,40 +14,35 @@
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: $white-font-color;
   text-align: center;
   letter-spacing: .5px;
-
   &:hover{
   	box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
   	cursor: pointer;
   }
-
   a {
     @include flex($align: center, $justify: center);
   	text-decoration: none;
-  	color: rgba(255, 255, 255, 1);
+  	color: $white-color;
   }
   @include tablet {
     font-size: 0.8rem;
   }
   @include mobile {
+    @include flex($justify: center);
+    @include size($width: 0%);
     font-size: 0.75rem;
-    width: 0%;
-    justify-content: center;
     span{display:none}
-
   }
   @include smallMobile {
+    @include flex($justify: center);
+    @include size($width: 0%);
     font-size: 0.75rem;
-    width: 0%;
-    justify-content: center;
     span{display:none}
-    #BtnSearch {order: 3;}
-
   }
-
 }
+
 .ButtonFilter{
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;
@@ -57,11 +52,8 @@
   &-activated {
     border-radius: 4px 0 0 0;
   }
-
-  @include smallMobile{
-    #BtnFilter {order: 2;}
-  };
 }
+
 .ButtonSearch{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
