@@ -18,10 +18,10 @@
   .Logo-wide {
     height: 50%;
     width: 20%;
-    justify-content: center;
-    margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 0;
   }
 }
 @media (max-width: 499px) {
@@ -30,7 +30,7 @@
     width: 35%;
   }
 }
-/* line 25, ../sass/Logos.scss */
+/* line 22, ../sass/Logos.scss */
 .Logo-tall {
   height: 95%;
   width: 3%;
@@ -40,25 +40,26 @@
   background-image: url("/images/puc4.png");
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 25, ../sass/Logos.scss */
+  /* line 22, ../sass/Logos.scss */
   .Logo-tall {
     height: 95%;
     width: 3%;
+    display: flex;
     justify-content: flex-end;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 25, ../sass/Logos.scss */
+  /* line 22, ../sass/Logos.scss */
   .Logo-tall {
     width: 5%;
-    justify-content: center;
     display: flex;
-    margin: 0 20px;
     align-items: center;
+    justify-content: center;
+    margin: 0 20px;
   }
 }
 @media (max-width: 499px) {
-  /* line 25, ../sass/Logos.scss */
+  /* line 22, ../sass/Logos.scss */
   .Logo-tall {
     width: 10%;
   }
