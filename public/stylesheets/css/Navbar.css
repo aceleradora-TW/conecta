@@ -6,9 +6,9 @@
   justify-content: space-between;
   height: 12vh;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
   font-family: Lato, sans-serif;
   font-weight: lighter;
-  background-color: rgba(0, 0, 0, 0.47);
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {

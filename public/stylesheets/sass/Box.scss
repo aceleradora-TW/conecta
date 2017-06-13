@@ -31,7 +31,7 @@
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 60%, $width: 100%);
-  background-color: rgba(0, 0, 0, 0.7);
+  @include blackGradient($alpha: 0.7);
 }
 .TitleSearch {
   @include flex($align: center, $justify: center);

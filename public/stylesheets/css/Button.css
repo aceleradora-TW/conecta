@@ -58,11 +58,12 @@
 
 /* line 52, ../sass/Button.scss */
 .ButtonSearch:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 55, ../sass/Button.scss */
+/* line 56, ../sass/Button.scss */
 .ButtonBack {
+  background-color: rgba(0, 0, 0, 0.7);
   display: none;
   position: fixed;
   bottom: 20px;
@@ -70,14 +71,13 @@
   z-index: 3;
   border: none;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 100%;
 }
 
-/* line 70, ../sass/Button.scss */
+/* line 71, ../sass/Button.scss */
 .ButtonBack:hover {
   background-color: black;
 }
