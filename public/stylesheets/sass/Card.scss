@@ -172,8 +172,12 @@
 }
 
 .BoxButtonCard {
-  @include flex($align: center, $justify: flex-end);
+  @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 60%);
+}
+.BoxButtonMessage {
+  @include flex($align: center, $justify: center);
+  @include size($height: 50%, $width: 40%);
 }
 
 .CompanyCompetences{

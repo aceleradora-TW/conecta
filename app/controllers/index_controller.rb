@@ -34,7 +34,7 @@ class IndexController < Controller
     @institution = Institution.get(@institution_id)
     if(!@institution.contact)
       # Comentário Temporário! Contato ficticio para validação com PO.
-      # return "A instituição #{@institution.name} não possui email cadastrado."
+      # return "[erro]A instituição #{@institution.name} não possui email cadastrado."
       @institution.contact = Contact.new(email: "aceleradora11@gmail.com", contact_name: "Fulano da Empresa")
     end
     institution_contact_name = @institution.contact.contact_name
@@ -45,7 +45,5 @@ class IndexController < Controller
 
     mailer.send_now
     "Email Enviado com Sucesso!"
-
-    # "<p>#{@name}, #{@email},#{@comment}, #{@institution_id},</p>"
   end
 end

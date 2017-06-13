@@ -45,7 +45,11 @@
   justify-content: center;
 }
 .ModalFooter {
-  @include flex($direction: row);
+  @include flex($direction: column,$align: center);
+  @include size($width: 100%);
   border-top: 1px solid rgba(236, 238, 239, 1);
-
+}
+.Spinner{
+  @include size($width: 80px, $height: 80px);
+  color: black;
 }
