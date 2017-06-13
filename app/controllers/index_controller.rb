@@ -26,4 +26,8 @@ class IndexController < Controller
       erb :search_all
     end
   end
+
+  get "/admin" do
+    erb :login
+  end
 end
