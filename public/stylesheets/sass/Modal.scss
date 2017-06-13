@@ -1,0 +1,60 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.ModalContact {
+  @include size($height: 100%, $width: 100%);
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ModalContent {
+  @include size($height: 66%, $width: 50%);
+  background-color: rgba(254, 254, 254, 1);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgba(136, 136, 136, 1);
+  text-align: center;
+  font-family: $font-style;
+}
+.Close {
+  color: rgba(170, 170, 170, 1);
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: $black-font-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+textarea {
+  @include size($height: 70%, $width: 45%);
+  margin: 8px 0px;
+  color: rgba(115, 115, 115, 1);
+  padding: 7px 15px;
+  border-radius: 5px;
+  outline: none;
+}
+.ModalHeader {
+  @include flex($align: flex-start, $direction: row, $justify: space-between);
+  flex-wrap: nowrap;
+  align-content: stretch;
+  border-bottom: 1px solid rgba(236, 238, 239, 1);
+}
+.ModalTitle {
+  font-size: 1.3em;
+}
+.ModalBody {
+  @include flex($direction: column);
+  @include size($height: 83%);
+}
+.ModalDescription {
+  font-size: 0.9em;
+  justify-content: center;
+}
+.ModalFooter {
+  @include flex($direction: row);
+  align-content: stretch;
+  border-top: 1px solid rgba(236, 238, 239, 1);
+
+}

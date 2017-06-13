@@ -26,6 +26,17 @@ RSpec.describe IndexController do
         expect(page).to have_link('Colaboradores')
       end
 
+      it "Deve mostrar o botão contato" do
+        visit "/search_all?search_type=empresa&value="
+        expect(page).to have_css('.ButtonContact')
+      end
+
+      it "Deve mostrar uma modal ao clicar no botão contato" do
+        visit "/search_all?search_type=empresa&value="
+        find("#ButtonContact1").click
+        expect(page).to have_css(".ModalContact")
+      end
+
     end
   end
 end

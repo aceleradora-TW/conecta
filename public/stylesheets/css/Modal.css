@@ -1,0 +1,81 @@
+/* line 4, ../sass/Modal.scss */
+.ModalContact {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 10, ../sass/Modal.scss */
+.ModalContent {
+  height: 66%;
+  width: 50%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  text-align: center;
+  font-family: Lato, sans-serif;
+}
+
+/* line 19, ../sass/Modal.scss */
+.Close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* line 23, ../sass/Modal.scss */
+.Close:hover, .Close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 30, ../sass/Modal.scss */
+textarea {
+  height: 70%;
+  width: 45%;
+  margin: 8px 0px;
+  color: #737373;
+  padding: 7px 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* line 38, ../sass/Modal.scss */
+.ModalHeader {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  border-bottom: 1px solid #eceeef;
+}
+
+/* line 44, ../sass/Modal.scss */
+.ModalTitle {
+  font-size: 1.3em;
+}
+
+/* line 47, ../sass/Modal.scss */
+.ModalBody {
+  display: flex;
+  flex-direction: column;
+  height: 83%;
+}
+
+/* line 51, ../sass/Modal.scss */
+.ModalDescription {
+  font-size: 0.9em;
+  justify-content: center;
+}
+
+/* line 55, ../sass/Modal.scss */
+.ModalFooter {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  border-top: 1px solid #eceeef;
+}
