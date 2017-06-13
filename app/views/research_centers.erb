@@ -32,16 +32,12 @@
       <%@site_url = rc_searched.contact.site%>
       <b>Site: </b>  <a class="URL" href=<%= @site_url %> target="_blank"> <%= @site_url %></a>
     </div>
+    <% end %>
   </div>
-  <% end %>
   <div class="FooterCardPrimay">
     <div class="BoxButtonCard">
-      <div class="Button u-width-medium">
-        contato
-      </div>
-      <div class="Button u-widthMedium ButtonSeeMore">
-        ver mais
-      </div>
+      <div class="Button u-width-medium ButtonContact" onclick="showModal('<%="#{rc_searched.id}"%>', '<%="#{rc_searched.name}"%>');" id="<%='ButtonContact'"#{rc_searched.id}"%>">contato</div>
+      <div class="Button u-widthMedium ButtonSeeMore">ver mais</div>
     </div>
   </div>
   <div class="CardSecondary">
@@ -49,5 +45,5 @@
       <%= rc_searched.description%>
     </div>
   </div>
-</div>
-<% end %>
+  </div>
+  <% end %>
