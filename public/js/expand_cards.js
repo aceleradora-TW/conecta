@@ -16,14 +16,14 @@ items.forEach(function(item, index){
 });
 
 const button = document.querySelectorAll('.ButtonSeeMore');
-const cardsecondary = document.querySelectorAll('.CardSecondary');
+const cardSecondary = document.querySelectorAll('.CardSecondary');
 for(let i = 0; i < button.length; i++){
   button[i].addEventListener("click", function(){
-    if(cardsecondary[i].style.display == 'block') {
-      cardsecondary[i].style.display = 'none';
+    if(cardSecondary[i].style.display == 'block') {
+      cardSecondary[i].style.display = 'none';
     }
     else{
-      cardsecondary[i].style.display = 'block';
+      cardSecondary[i].style.display = 'block';
     }
   });
 }

@@ -222,13 +222,13 @@
 
 /* line 120, ../sass/Box.scss */
 .BoxClear {
+  width: 50%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  margin-right: 25%;
 }
 
-/* line 124, ../sass/Box.scss */
+/* line 125, ../sass/Box.scss */
 .BoxTextArea {
-  height: 53%;
+  width: 100%;
 }

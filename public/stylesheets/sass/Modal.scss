@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .ModalContent {
-  @include size($height: 66%, $width: 50%);
+  @include size( $width: 50%);
   background-color: rgba(254, 254, 254, 1);
   margin: auto;
   padding: 20px;
@@ -26,14 +26,6 @@
     text-decoration: none;
     cursor: pointer;
   }
-}
-textarea {
-  @include size($height: 70%, $width: 45%);
-  margin: 8px 0px;
-  color: rgba(115, 115, 115, 1);
-  padding: 7px 15px;
-  border-radius: 5px;
-  outline: none;
 }
 .ModalHeader {
   @include flex($align: flex-start, $direction: row, $justify: space-between);
@@ -54,7 +46,6 @@ textarea {
 }
 .ModalFooter {
   @include flex($direction: row);
-  align-content: stretch;
   border-top: 1px solid rgba(236, 238, 239, 1);
 
 }

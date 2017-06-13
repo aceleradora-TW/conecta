@@ -9,7 +9,6 @@
 
 /* line 10, ../sass/Modal.scss */
 .ModalContent {
-  height: 66%;
   width: 50%;
   background-color: #fefefe;
   margin: auto;
@@ -33,17 +32,6 @@
 }
 
 /* line 30, ../sass/Modal.scss */
-textarea {
-  height: 70%;
-  width: 45%;
-  margin: 8px 0px;
-  color: #737373;
-  padding: 7px 15px;
-  border-radius: 5px;
-  outline: none;
-}
-
-/* line 38, ../sass/Modal.scss */
 .ModalHeader {
   display: flex;
   align-items: flex-start;
@@ -54,28 +42,27 @@ textarea {
   border-bottom: 1px solid #eceeef;
 }
 
-/* line 44, ../sass/Modal.scss */
+/* line 36, ../sass/Modal.scss */
 .ModalTitle {
   font-size: 1.3em;
 }
 
-/* line 47, ../sass/Modal.scss */
+/* line 39, ../sass/Modal.scss */
 .ModalBody {
   display: flex;
   flex-direction: column;
   height: 83%;
 }
 
-/* line 51, ../sass/Modal.scss */
+/* line 43, ../sass/Modal.scss */
 .ModalDescription {
   font-size: 0.9em;
   justify-content: center;
 }
 
-/* line 55, ../sass/Modal.scss */
+/* line 47, ../sass/Modal.scss */
 .ModalFooter {
   display: flex;
   flex-direction: row;
-  align-content: stretch;
   border-top: 1px solid #eceeef;
 }

@@ -7,6 +7,10 @@ function showModal(id, ContactCompany) {
   modal.style.display = "flex";
   company.id = "SendEmail"+id;
   contact.value = ContactCompany;
+
+  var inputInstitutionId = document.querySelector("#institution_id");
+  inputInstitutionId.value = id;
+  console.log(inputInstitutionId);
   showMessage("Tenho interesse em realizar uma parceria com sua empresa.");
 }
 
