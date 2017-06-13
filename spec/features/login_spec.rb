@@ -17,7 +17,7 @@ RSpec.describe IndexController do
 
       it "Deve exibir o botão de Login" do
         visit "/admin"
-        expect(page).to have_css("button", class: 'ButtonLogin')
+        expect(page).to have_css("button", class: 'ButtonSend')
       end
 
       it "Deve mostrar link 'esqueceu sua senha?'" do
