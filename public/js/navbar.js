@@ -1,4 +1,4 @@
-var hamburger = document.querySelector('.Hamburguer');
+var hamburger = document.querySelector('.Hamburger');
 var navLinks =  document.querySelector('.NavLinks');
 var Navbar = document.querySelector('.Navbar');
 hamburger.addEventListener("click", function() {

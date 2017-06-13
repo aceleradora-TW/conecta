@@ -50,7 +50,7 @@
 		min-height: 50px;
 	};
 }
-.Hamburguer{
+.Hamburger{
 	display: none;
 	@include tablet{
 		display: block;
@@ -65,7 +65,7 @@
 		width: 5%;
 	}
 }
-.LogoLogo{
+.LogoImage{
 	@include tablet{
 		width: 95%;
 		display: flex;
