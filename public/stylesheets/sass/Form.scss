@@ -10,7 +10,6 @@
 .InputGroup {
   @include flex($justify: center);
   @include size($width: 75%, $height: 6vh);
-
   input {
     font-size: 1.05em;
   }
@@ -25,10 +24,8 @@
       font-size: 1.1em;
     }
   }
-
   @include mobile {
-    width: 90%;
-    height: 5.3vh;
+    @include size($width: 90%, $height: 5.3vh);
     input {
       font-size: 0.65em;
     }
@@ -43,18 +40,6 @@
   z-index: 99;
 }
 
-.ButtonFilter{
-  @include size($width: 100%, $height: 100%);
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(0, 0, 0, .4);
-  cursor: pointer;
-  border-radius: 4px 0 0 4px;
-}
-
-.ButtonFilter-activated {
-  border-radius: 4px 0 0 0;
-}
-
 .InputSearch{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
@@ -62,23 +47,12 @@
   width: 60%;
 }
 
-.ButtonSearch{
-  border: 1px solid rgba(0, 0, 0, .4);
-  border-left: none;
-  cursor: pointer;
-  padding: 0 2%;
-  border-radius: 0 4px 4px 0;
-}
-
-.ButtonSearch:hover {
-  background: rgba(0, 0, 0, .2);
-}
 .DropdownMenu{
   list-style: none;
   position: static;
   border: 1px solid rgba(0, 0, 0, .4);
   border-radius: 0 0 4px 4px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white-color;
   text-align: left;
   right: 61.05vw;
   bottom: 4.6vh;
@@ -86,26 +60,13 @@
   display: none;
   opacity: 0;
   transition: 1s;
+  &-visible {
+    opacity: 1;
+    display: block;
+    transition: .5s;
+  }
 }
 
 input, .ButtonFilter, .ButtonSearch {
   outline: none;
-}
-
-.DropdownMenu-visible {
-  opacity: 1;
-  display: block;
-  transition: .5s;
-}
-
-.DropdownMenu li{
-}
-
-.DropdownMenu li a{
-  color: rgba(0, 0, 0, 1);
-  text-decoration: none;
-}
-
-.DropdownMenu li:hover{
-  background: rgba(0, 0, 0, .10);
 }

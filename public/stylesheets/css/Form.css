@@ -1,176 +1,71 @@
-/* line 4, ../sass/Form.scss */
-.FormSearch {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-  align-content: space-between;
-}
+/*
+Error: Undefined variable: "$white-color".
+        on line 55 of /code/public/stylesheets/sass/Form.scss
 
-/* line 10, ../sass/Form.scss */
-.InputGroup {
-  display: flex;
-  justify-content: center;
-  height: 6vh;
-  width: 75%;
-}
-/* line 14, ../sass/Form.scss */
-.InputGroup input {
-  font-size: 1.05em;
-}
-/* line 17, ../sass/Form.scss */
-.InputGroup span {
-  font-size: 1.3em;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 21, ../sass/Form.scss */
-  .InputGroup input {
-    font-size: 0.8em;
-  }
-  /* line 24, ../sass/Form.scss */
-  .InputGroup span {
-    font-size: 1.1em;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 12, ../sass/Form.scss */
-  .InputGroup {
-    width: 90%;
-    height: 5.3vh;
-  }
-  /* line 35, ../sass/Form.scss */
-  .InputGroup input {
-    font-size: 0.65em;
-  }
-  /* line 38, ../sass/Form.scss */
-  .InputGroup span {
-    font-size: 1em;
-  }
-}
+50: .DropdownMenu{
+51:   list-style: none;
+52:   position: static;
+53:   border: 1px solid rgba(0, 0, 0, .4);
+54:   border-radius: 0 0 4px 4px;
+55:   background-color: $white-color;
+56:   text-align: left;
+57:   right: 61.05vw;
+58:   bottom: 4.6vh;
+59:   padding: 2%;
+60:   display: none;
 
-<<<<<<< HEAD
-/* line 45, ../sass/Form.scss */
-=======
-/* line 30, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.InputGroupButton {
-  width: 30%;
-  z-index: 99;
-}
-
-<<<<<<< HEAD
-/* line 50, ../sass/Form.scss */
-=======
-/* line 35, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.ButtonFilter {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  border-radius: 4px 0 0 4px;
-}
-
-<<<<<<< HEAD
-/* line 59, ../sass/Form.scss */
-=======
-/* line 43, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.ButtonFilter-activated {
-  border-radius: 4px 0 0 0;
-}
-
-<<<<<<< HEAD
-/* line 63, ../sass/Form.scss */
-=======
-/* line 47, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.InputSearch {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-left: none;
-  padding-left: 2%;
-  width: 60%;
-}
-
-<<<<<<< HEAD
-/* line 70, ../sass/Form.scss */
-=======
-/* line 54, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.ButtonSearch {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-left: none;
-  cursor: pointer;
-  padding: 0 2%;
-  border-radius: 0 4px 4px 0;
-}
-
-<<<<<<< HEAD
-/* line 78, ../sass/Form.scss */
-=======
-/* line 62, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.ButtonSearch:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-<<<<<<< HEAD
-/* line 81, ../sass/Form.scss */
-=======
-/* line 65, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.DropdownMenu {
-  list-style: none;
-  position: static;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 4px 4px;
-  background-color: white;
-  text-align: left;
-  right: 61.05vw;
-  bottom: 4.6vh;
-  padding: 2%;
-  display: none;
-  opacity: 0;
-  transition: 1s;
-}
-
-<<<<<<< HEAD
-/* line 96, ../sass/Form.scss */
-=======
-/* line 80, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-input, .ButtonFilter, .ButtonSearch {
-  outline: none;
-}
-
-<<<<<<< HEAD
-/* line 100, ../sass/Form.scss */
-=======
-/* line 84, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.DropdownMenu-visible {
-  opacity: 1;
-  display: block;
-  transition: .5s;
-}
-
-<<<<<<< HEAD
-/* line 109, ../sass/Form.scss */
-=======
-/* line 93, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.DropdownMenu li a {
-  color: black;
-  text-decoration: none;
-}
-
-<<<<<<< HEAD
-/* line 114, ../sass/Form.scss */
-=======
-/* line 98, ../sass/Form.scss */
->>>>>>> 372e2120b5408dffb95e572cf05cad1f0cf35e0c
-.DropdownMenu li:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
+Backtrace:
+/code/public/stylesheets/sass/Form.scss:55
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$white-color\".\A         on line 55 of /code/public/stylesheets/sass/Form.scss\A \A 50: .DropdownMenu{\A 51:   list-style: none;\A 52:   position: static;\A 53:   border: 1px solid rgba(0, 0, 0, .4);\A 54:   border-radius: 0 0 4px 4px;\A 55:   background-color: $white-color;\A 56:   text-align: left;\A 57:   right: 61.05vw;\A 58:   bottom: 4.6vh;\A 59:   padding: 2%;\A 60:   display: none;"; }
