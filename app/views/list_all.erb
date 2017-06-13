@@ -1,14 +1,11 @@
-<%@cont = 1%>
+<section class="SectionSearch u-fontFamilyLato">
+  <h2>Listagem das Instiruições Cadastradas</h2>
+  <div class="ContentCardList">
+    <% @institution.each do |institution| %>
 
-<h1 class="u-fontFamilyLato u-colorGreen"> Todas as instituições cadastradas:</h1>
-
-<% @institution.each do |institution| %>
-
-<h2 class="u-fontFamilyLato"> <%= institution.name %> </h2>
-<br>
-
-<%@cont = @cont + 1%>
-
-<%end%>
-
-<%= @cont%>
+    <div class="CardList">
+      <h2> <%= institution.name %> </h2>
+    </div>
+    <%end%>
+  </div>
+</section>
