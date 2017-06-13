@@ -63,6 +63,7 @@
 }
 
 /* line 44, ../sass/Section.scss */
+
 .About {
   width: 100%;
   min-height: 97vh;
@@ -79,6 +80,7 @@
 }
 
 /* line 55, ../sass/Section.scss */
+
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -91,6 +93,7 @@
 }
 
 /* line 62, ../sass/Section.scss */
+
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -99,4 +102,12 @@
   flex-direction: column;
   justify-content: center;
   padding: 0;
+}
+
+/* line 67, ../sass/Section.scss */
+.LogosList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

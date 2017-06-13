@@ -1,5 +1,7 @@
 @import "_mixins.scss";
 @import "MediaQuery";
+@import "_variables.scss";
+
 .Logo {
 	&-wide {
 		@include size($height: 50%, $width: 10%);
@@ -38,4 +40,11 @@
 			@include size($width: 10%);
 		}
 	}
+
+	.LogoCollaborators{
+	  @include size($width: 100%, $min-height: 30%);
+		@include flex($align: center, $direction: row, $justify: space-around);
+		flex-wrap: wrap;
+	}
+
 }

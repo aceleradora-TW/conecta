@@ -97,6 +97,10 @@
 	color: $burnt-yellow-color;
 }
 
+.u-colorBackgroundwhite{
+	background-color: $white-color;
+}
+
 .u-colorBackgroundOrange{
 	background-color: $burnt-yellow-color;
 }
@@ -167,4 +171,8 @@
 	@include smallMobile{
 		-webkit-transform: rotate(90deg);
 	}
+}
+
+.u-borderWhite{
+	border: solid 2px;
 }

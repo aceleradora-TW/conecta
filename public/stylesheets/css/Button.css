@@ -89,7 +89,7 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 30, ../sass/Button.scss */
+/* line 55, ../sass/Button.scss */
 .ButtonBack {
   display: none;
   position: fixed;
@@ -105,7 +105,7 @@
   border-radius: 100%;
 }
 
-/* line 45, ../sass/Button.scss */
+/* line 70, ../sass/Button.scss */
 .ButtonBack:hover {
   background-color: black;
 }

@@ -64,3 +64,9 @@
   @include flex($align: center, $direction: column, $justify: center);
   padding: 0;
 }
+
+.LogosList{
+  @include size($width: 100%);
+  @include flex($justify: space-around);
+  flex-wrap: wrap;
+}
