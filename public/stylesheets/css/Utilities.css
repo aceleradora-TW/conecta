@@ -175,76 +175,55 @@
 
 /* line 132, ../sass/Utilities.scss */
 .u-colorRed {
-  background-color: #EB6361;
+  background-color: #eb6361;
 }
 
 /* line 135, ../sass/Utilities.scss */
 .u-colorRed:hover {
-  box-shadow: 1px 1px 2px 2px #E26A6A;
+  box-shadow: 1px 1px 2px 2px #e26a6a;
   cursor: pointer;
 }
 
 /* line 139, ../sass/Utilities.scss */
 .u-colorGreen {
-  /*background-color: #64DDBB;*/
   color: #02af7e;
 }
 
-/* line 143, ../sass/Utilities.scss */
+/* line 142, ../sass/Utilities.scss */
 .u-colorGreen:hover {
-  box-shadow: 1px 1px 2px 2px #36D7B7;
+  box-shadow: 1px 1px 2px 2px #36d7b7;
   cursor: pointer;
 }
 
-/* line 147, ../sass/Utilities.scss */
+/* line 146, ../sass/Utilities.scss */
 .u-colorBlue {
   background-color: #0faac3;
 }
 
-/* line 150, ../sass/Utilities.scss */
+/* line 149, ../sass/Utilities.scss */
 .u-colorBlue:hover {
-  box-shadow: 1px 1px 2px 2px #6BB9F0;
+  box-shadow: 1px 1px 2px 2px #6bb9f0;
   cursor: pointer;
 }
 
-/* line 155, ../sass/Utilities.scss */
+/* line 154, ../sass/Utilities.scss */
 .u-colorOrange {
-  color: #EB9532;
+  color: #eb9532;
 }
 
-/* line 158, ../sass/Utilities.scss */
+/* line 157, ../sass/Utilities.scss */
 .u-colorOrange:hover {
-  box-shadow: 1px 1px 2px 2px #F4B350;
+  box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
-/* line 163, ../sass/Utilities.scss */
-.u-colorRed1 {
-  color: #EB6361 !important;
-}
-
-/* line 166, ../sass/Utilities.scss */
-.u-colorGreen1 {
-  color: #02af7e;
-}
-
-/* line 169, ../sass/Utilities.scss */
-.u-colorBlue1 {
-  color: #0faac3;
-}
-
-/* line 172, ../sass/Utilities.scss */
-.u-colorOrange1 {
-  color: #EB9532;
-}
-
-/* line 176, ../sass/Utilities.scss */
+/* line 162, ../sass/Utilities.scss */
 .u-center {
   text-align: center;
 }
 
 @media (max-width: 499px) {
-  /* line 180, ../sass/Utilities.scss */
+  /* line 166, ../sass/Utilities.scss */
   .u-rotateIcon {
     -webkit-transform: rotate(90deg);
   }
