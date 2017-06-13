@@ -13,11 +13,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 48%;
   width: 100%;
 }
 /* line 16, ../sass/Input.scss */
-.ModalInputs input {
+.ModalInputs input, .ModalInputs textarea {
   width: 50%;
   outline: none;
   border-radius: 3px;
@@ -31,6 +30,7 @@
   text-align: left;
   width: 51%;
 }
+<<<<<<< HEAD
 
 /* line 30, ../sass/Input.scss */
 .LoginInputs {
@@ -54,4 +54,14 @@
   justify-content: flex-start;
   text-align: left;
   width: 51%;
+=======
+/* line 29, ../sass/Input.scss */
+.ModalInputs textarea {
+  min-height: 20vh;
+  margin: 8px 0px;
+  color: #737373;
+  padding: 7px 15px;
+  border-radius: 5px;
+  outline: none;
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 }

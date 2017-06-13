@@ -18,7 +18,10 @@
   letter-spacing: .5px;
   &.ButtonSend {
     @include size($height: 4.6vh);
-  } 
+    &:disabled{
+      background-color: gray;
+    }
+  }
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
     cursor: pointer;

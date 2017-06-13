@@ -30,4 +30,25 @@ class IndexController < Controller
   get "/admin" do
     erb :login
   end
+
+  post "/request_contact" do
+    @name = params[:name]
+    @email = params[:email]
+    @comment = params[:comment]
+    @institution_id = params[:institution_id]
+    @institution = Institution.get(@institution_id)
+    if(!@institution.contact)
+      # Comentário Temporário! Contato ficticio para validação com PO.
+      # return "[erro]A instituição #{@institution.name} não possui email cadastrado."
+      @institution.contact = Contact.new(email: "aceleradora11@gmail.com", contact_name: "Fulano da Empresa")
+    end
+    institution_contact_name = @institution.contact.contact_name
+    institution_email = @institution.contact.email
+    "Email: #{institution_email}"
+    email_infos = EmailData.new(@name, @email, @comment, institution_contact_name, institution_email)
+    mailer = ContactMailer.new email_infos
+
+    mailer.send_now
+    "Email Enviado com Sucesso!"
+  end
 end

@@ -1,12 +1,14 @@
 var modal = document.querySelector("#ModalContact");
-var company = document.querySelector("#SendEmail");
+var company = document.querySelector("#SendEmailButton");
 var message = document.querySelector("#MessageModal");
 
-function showModal(id, ContactCompany) {
+function showModal(id, InstitutionName) {
   var contact = document.querySelector("#ContactCompany");
   modal.style.display = "flex";
-  company.id = "SendEmail"+id;
-  contact.value = ContactCompany;
+
+  var inputInstitutionId = document.querySelector("#InstitutionId");
+  inputInstitutionId.value = id;
+  contact.value = InstitutionName
   showMessage("Tenho interesse em realizar uma parceria com sua empresa.");
 }
 
@@ -29,4 +31,30 @@ function deleteMessage(){
 function showMessage(msg){
   message.value = msg;
   message.focus();
+}
+
+function sendMail(){
+  $("#SendEmailMessage").removeClass("u-colorRed");
+  $("#SendEmailMessage").removeClass("u-colorGreen");
+  $("#SendEmailButton").attr("disabled","disabled");
+
+  $("#SendEmailMessage").html("<img class='Spinner' src='images/spinner.gif'>");
+  var url = "/request_contact";
+  $.ajax({
+    type: "POST",
+    url: url,
+    data: $("#ContactForm").serialize(),
+    success: function(response){
+      if(response.indexOf("[erro]") < 0){
+        $("#SendEmailMessage").addClass("u-colorGreen");
+        $("#SendEmailMessage").html(response);
+        setTimeout(closeModal,3000);
+      }
+      else{
+        $("#SendEmailMessage").addClass("u-colorLightRed");
+        $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
+      }
+    }
+  });
+  event.preventDefault();
 }

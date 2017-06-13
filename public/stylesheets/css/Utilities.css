@@ -98,60 +98,104 @@
   color: #eb9532;
 }
 
+<<<<<<< HEAD
 /* line 86, ../sass/Utilities.scss */
+=======
+/* line 74, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorBackgroundwhite {
   background-color: white;
 }
 
+<<<<<<< HEAD
 /* line 90, ../sass/Utilities.scss */
+=======
+/* line 78, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorBackgroundOrange {
   background-color: #eb9532;
 }
 
+<<<<<<< HEAD
 /* line 93, ../sass/Utilities.scss */
+=======
+/* line 81, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorBackgroundGreen {
   background-color: #02af7e;
 }
 
+<<<<<<< HEAD
 /* line 96, ../sass/Utilities.scss */
+=======
+/* line 84, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorBackgroundGreen:hover {
   box-shadow: 1px 1px 2px 2px #64ddbb;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 101, ../sass/Utilities.scss */
+=======
+/* line 89, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorBackgroundOrange:hover {
   box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 106, ../sass/Utilities.scss */
+=======
+/* line 94, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-widthNone {
   width: 0%;
 }
 
+<<<<<<< HEAD
 /* line 110, ../sass/Utilities.scss */
+=======
+/* line 98, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 
+<<<<<<< HEAD
 /* line 115, ../sass/Utilities.scss */
+=======
+/* line 103, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-widthLarge {
   width: 90%;
 }
 
+<<<<<<< HEAD
 /* line 119, ../sass/Utilities.scss */
+=======
+/* line 107, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-colorGold {
   color: #e4b541;
 }
 
+<<<<<<< HEAD
 /* line 123, ../sass/Utilities.scss */
+=======
+/* line 111, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-displayBlock {
   display: block;
 }
 
+<<<<<<< HEAD
 /* line 127, ../sass/Utilities.scss */
+=======
+/* line 115, ../sass/Utilities.scss */
+>>>>>>> 1c33c133b61636731e153c6f2b5b6eeaf1e75609
 .u-borderWhite {
   border: solid 2px;
 }

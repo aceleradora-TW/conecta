@@ -12,8 +12,8 @@
 }
 .ModalInputs {
   @include flex($align: center, $direction: column);
-  @include size($height: 48%, $width: 100%);
-  input {
+  @include size($width: 100%);
+  input, textarea{
     @include size($width: 50%);
     outline: none;
     border-radius: 3px;
@@ -25,6 +25,14 @@
     justify-content: flex-start;
     text-align: left;
     width: 51%;
+  }
+  textarea {
+    min-height: 20vh;
+    margin: 8px 0px;
+    color: rgba(115, 115, 115, 1);
+    padding: 7px 15px;
+    border-radius: 5px;
+    outline: none;
   }
 }
 .LoginInputs {
