@@ -140,3 +140,8 @@
 .u-borderWhite {
   border: solid 2px;
 }
+
+/* line 119, ../sass/Utilities.scss */
+.u-fontBold {
+  font-weight: bold;
+}
