@@ -1,24 +1,24 @@
 /* line 4, ../sass/Section.scss */
 .Section {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   min-height: 85vh;
+  display: flex;
+  flex-direction: column;
   background-image: url("/images/background-main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* line 14, ../sass/Section.scss */
+/* line 12, ../sass/Section.scss */
 .SectionOpacity {
-  width: 100%;
   height: 85vh;
-  background-color: rgba(0, 0, 0, 0.47);
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 22, ../sass/Section.scss */
+/* line 18, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -26,12 +26,11 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  display: flex;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 29, ../sass/Section.scss */
+/* line 25, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -42,16 +41,15 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 35, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .About {
+  width: 100%;
+  min-height: 97vh;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
-  width: 100%;
-  min-height: 97vh;
-  display: flex;
   font-family: Lato, sans-serif;
   font-weight: lighter;
   text-align: justify;
@@ -59,30 +57,30 @@
   color: white;
 }
 
-/* line 47, ../sass/Section.scss */
+/* line 43, ../sass/Section.scss */
 .SectionCards {
-  padding: 0;
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: row;
   justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-/* line 57, ../sass/Section.scss */
+/* line 50, ../sass/Section.scss */
 .SectionSearch {
-  padding: 0;
   width: 100%;
   min-height: 39vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding: 0;
 }
 
-/* line 67, ../sass/Section.scss */
+/* line 56, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;
