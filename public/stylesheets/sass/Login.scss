@@ -1,9 +1,19 @@
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "MediaQuery.scss";
 
 .LoginHeader {
   @include flex($align: center, $justify: center);
   @include size($height: 15%, $width: 100%);
+  @include tablet{
+    font-size: 1.3em;
+  }
+  @include mobile{
+    font-size: 1.1em;
+  }
+  @include smallMobile{
+    font-size: 1em;
+  }
 }
 
 .LoginBody {

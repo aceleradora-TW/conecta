@@ -1,5 +1,6 @@
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "MediaQuery.scss";
 
 
 .Card {
@@ -22,8 +23,16 @@
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
+  @include tablet{
+  @include size($width: 80%);
+  }
+  @include mobile{
+  @include size($width: 80%);
+  }
+  @include smallMobile{
+  @include size($width: 90%,$height: 300px);
 }
-
+}
 .CardNav {
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);

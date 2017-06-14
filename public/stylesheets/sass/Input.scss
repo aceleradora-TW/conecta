@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import "MediaQuery.scss";
 
 .Input{
   &Search{
@@ -37,10 +38,31 @@
     border: 1px solid rgba(193, 193, 193, 1);
     padding: 5px 6px;
     box-sizing: border-box;
+    @include tablet{
+      @include size($height: 40px,$width: 100%);
+    }
+    @include mobile{
+      @include size($height: 40px,$width: 100%);
+    }
+    @include smallMobile{
+      @include size($height: 40px,$width: 100%);
+    }
   }
   span {
     justify-content: flex-start;
     text-align: left;
     width: 51%;
+    @include tablet{
+    @include size($width: 100%);
+     font-size: 1.5em;
+    }
+    @include mobile{
+      @include size($width: 100%);
+      font-size: 1em;
+    }
+    @include smallMobile{
+    @include size($width: 100%);
+      font-size: 0.9em;
+    }
   }
 }
