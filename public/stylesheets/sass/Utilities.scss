@@ -46,8 +46,9 @@
 	margin-left: 10%;
 }
 
-.u-marginLeftSmall{
-	margin-left: 7%;
+.u-marginLeftSmall {
+	margin-left: 6%;
+
 }
 
 .u-marginRight {
@@ -56,6 +57,10 @@
 
 .u-marginTop {
 	margin-top: 1%;
+}
+
+.u-marginBottom {
+	margin-bottom: 1%;
 }
 
 .u-lineHeightMedium{
@@ -79,6 +84,10 @@
 
 .u-colorOrange{
 	color: $burnt-yellow-color;
+}
+
+.u-colorBackgroundwhite{
+	background-color: $white-color;
 }
 
 .u-colorBackgroundOrange{
@@ -159,4 +168,8 @@
 
 .u-center{
 	text-align: center;
+}
+
+.u-borderWhite{
+	border: solid 2px;
 }

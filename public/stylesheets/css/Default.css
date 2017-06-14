@@ -33,3 +33,8 @@ body {
     font-size: 2.3em;
   }
 }
+
+/* line 34, ../sass/Default.scss */
+.material-icons.md-1-4 {
+  font-size: 1.4em;
+}

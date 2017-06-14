@@ -38,10 +38,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 31, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 97vh;
@@ -57,7 +57,7 @@
   color: white;
 }
 
-/* line 42, ../sass/Section.scss */
+/* line 43, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -69,7 +69,7 @@
   flex-wrap: wrap;
 }
 
-/* line 49, ../sass/Section.scss */
+/* line 50, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -78,4 +78,12 @@
   flex-direction: column;
   justify-content: center;
   padding: 0;
+}
+
+/* line 56, ../sass/Section.scss */
+.LogosList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
