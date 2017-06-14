@@ -6,6 +6,9 @@ services:
      - "9393:9393"
     volumes:
      - .:/code
+    environment:
+     - GMAIL_USER=${GMAIL_USER}
+     - GMAIL_PASSWORD=${GMAIL_PASSWORD}
     depends_on:
      - db
   db:

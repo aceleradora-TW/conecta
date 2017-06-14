@@ -2,10 +2,9 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
-
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 35vh);
+  @include size($width: 48%, $min-height: 45vh);
   background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -193,8 +192,12 @@
 }
 
 .BoxButtonCard {
-  @include flex($align: center, $justify: flex-end);
+  @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 60%);
+}
+.BoxButtonMessage {
+  @include flex($align: center, $justify: center);
+  @include size($height: 50%, $width: 40%);
 }
 
 .CompanyCompetences{

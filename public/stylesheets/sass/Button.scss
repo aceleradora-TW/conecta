@@ -19,11 +19,17 @@
   letter-spacing: .5px;
   &.ButtonSend {
     @include size($height: 4.6vh);
+
     @include mobile{
       @include size($height: 32px);
     }
     @include smallMobile{
       @include size($height: 32px);
+}
+
+    &:disabled{
+      background-color: gray;
+
     }
   }
   &:hover{
