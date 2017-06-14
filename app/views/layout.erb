@@ -18,8 +18,12 @@
   <link rel="stylesheet" href="/stylesheets/css/Logos.css">
   <link rel="stylesheet" href="/stylesheets/css/Navbar.css">
   <link rel="stylesheet" href="/stylesheets/css/Utilities.css">
+  <link rel="stylesheet" href="/stylesheets/css/Default.css">
+  <link rel="stylesheet" href="/stylesheets/css/Modal.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> -->
   <link href="/stylesheets/css/Footer.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <!-- <link rel="stylesheet" href="/stylesheets/css/normalize.css"> -->
+
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,14 +33,20 @@
   <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
     <i class="material-icons">arrow_upward</i>
   </button>
-
+  <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
+    <i class="material-icons">arrow_upward</i>
+  </button>
 <section class="Section">
+  <%= erb :modal_contact %>
   <%= erb :header %>
   <%= yield %>
   <%= erb :footer %>
 </section>
 <script type="text/javascript" src="/js/expand_cards.js"></script>
 <script type="text/javascript" src="/js/search_filter.js"></script>
+<script type="text/javascript" src="/js/modal_contact.js"></script>
 <script type="text/javascript" src="/js/btn_back_to_top.js"></script>
+<script type="text/javascript" src="/js/jquery_ajax.js"></script>
+
 </body>
 </html>

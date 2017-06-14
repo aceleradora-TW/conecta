@@ -9,6 +9,7 @@ gem 'dm-postgres-adapter'
 
 gem 'coveralls', require: false
 
+gem "actionmailer"
 
 group :development, :test do
   gem 'sass'

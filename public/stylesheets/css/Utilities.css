@@ -44,94 +44,104 @@
 }
 
 /* line 38, ../sass/Utilities.scss */
+.u-marginLeftSmall {
+  margin-left: 6%;
+}
+
+/* line 42, ../sass/Utilities.scss */
 .u-marginRight {
   margin-right: 0.1%;
 }
 
-/* line 42, ../sass/Utilities.scss */
+/* line 46, ../sass/Utilities.scss */
 .u-marginTop {
   margin-top: 1%;
 }
 
-/* line 46, ../sass/Utilities.scss */
+/* line 50, ../sass/Utilities.scss */
+.u-marginBottom {
+  margin-bottom: 1%;
+}
+
+/* line 54, ../sass/Utilities.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }
 
-/* line 50, ../sass/Utilities.scss */
+/* line 58, ../sass/Utilities.scss */
 .u-colorLightBlue {
   color: #0faac3;
 }
 
-/* line 55, ../sass/Utilities.scss */
+/* line 63, ../sass/Utilities.scss */
 .u-colorLightRed {
   color: #eb6361;
 }
 
-/* line 61, ../sass/Utilities.scss */
+/* line 69, ../sass/Utilities.scss */
 .u-colorGreen {
   color: #02af7e;
 }
 
-/* line 65, ../sass/Utilities.scss */
+/* line 73, ../sass/Utilities.scss */
 .u-colorOrange {
   color: #eb9532;
 }
 
-/* line 69, ../sass/Utilities.scss */
+/* line 77, ../sass/Utilities.scss */
 .u-colorBackgroundwhite {
   background-color: white;
 }
 
-/* line 73, ../sass/Utilities.scss */
+/* line 81, ../sass/Utilities.scss */
 .u-colorBackgroundOrange {
   background-color: #eb9532;
 }
 
-/* line 76, ../sass/Utilities.scss */
+/* line 84, ../sass/Utilities.scss */
 .u-colorBackgroundGreen {
   background-color: #02af7e;
 }
 
-/* line 79, ../sass/Utilities.scss */
+/* line 87, ../sass/Utilities.scss */
 .u-colorBackgroundGreen:hover {
   box-shadow: 1px 1px 2px 2px #64ddbb;
   cursor: pointer;
 }
 
-/* line 84, ../sass/Utilities.scss */
+/* line 92, ../sass/Utilities.scss */
 .u-colorBackgroundOrange:hover {
   box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
-/* line 89, ../sass/Utilities.scss */
+/* line 97, ../sass/Utilities.scss */
 .u-widthNone {
   width: 0%;
 }
 
-/* line 93, ../sass/Utilities.scss */
+/* line 101, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 
-/* line 98, ../sass/Utilities.scss */
+/* line 106, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 102, ../sass/Utilities.scss */
+/* line 110, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
 
-/* line 106, ../sass/Utilities.scss */
+/* line 114, ../sass/Utilities.scss */
 .u-displayBlock {
   display: block;
 }
 
-/* line 110, ../sass/Utilities.scss */
+/* line 118, ../sass/Utilities.scss */
 .u-borderWhite {
   border: solid 2px;
 }

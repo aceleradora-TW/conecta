@@ -16,18 +16,22 @@
   color: #fff;
   text-align: center;
   letter-spacing: .5px;
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: gray;
+    }
+  }
+  &:hover{
+    box-shadow: 1px 1px 1px 1px #6BB9F0;
+    cursor: pointer;
+  }
+  a {
+    @include flex($align: center, $justify: center);
+    text-decoration: none;
+    color: white;
+  }
 }
-
-.Button:hover{
-	box-shadow: 1px 1px 1px 1px #6BB9F0;
-	cursor: pointer;
-}
-.Button a {
-  @include flex($align: center, $justify: center);
-	text-decoration: none;
-	color: white;
-}
-
 .ButtonFilter{
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;
@@ -35,23 +39,33 @@
   cursor: pointer;
   border-radius: 4px 0 0 4px;
 }
-
 .ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
-
 .ButtonSearch{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
   cursor: pointer;
   padding: 0 2%;
   border-radius: 0 4px 4px 0;
+  &:hover {
+    background: rgba(0, 0, 0, .2);
+  }
 }
-
-.ButtonSearch:hover {
-  background: rgba(0, 0, 0, .2);
+.ButtonClear {
+  @include flex($align: center, $justify: center);
+  @include size($height: 30px, $width: 30px);
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: $darker-blue-color;
+  border: none;
+  &:hover {
+    background-color: $blue-color;
+  }
 }
-
+.IconButtonClear {
+  color: $white-font-color;
+}
 .ButtonBack {
 	display: none;
 	position: fixed;
@@ -65,8 +79,7 @@
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 100%;
-}
-
-.ButtonBack:hover {
-	background-color: rgba(0, 0, 0, 1);
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
 }

@@ -7,3 +7,35 @@
   font-size: 1.05em;
   width: 60%;
 }
+
+/* line 13, ../sass/Input.scss */
+.ModalInputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+/* line 16, ../sass/Input.scss */
+.ModalInputs input, .ModalInputs textarea {
+  width: 50%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #c1c1c1;
+  padding: 5px 6px;
+  box-sizing: border-box;
+}
+/* line 24, ../sass/Input.scss */
+.ModalInputs span {
+  justify-content: flex-start;
+  text-align: left;
+  width: 51%;
+}
+/* line 29, ../sass/Input.scss */
+.ModalInputs textarea {
+  min-height: 20vh;
+  margin: 8px 0px;
+  color: #737373;
+  padding: 7px 15px;
+  border-radius: 5px;
+  outline: none;
+}
