@@ -1,11 +1,12 @@
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "MediaQuery";
 
 .Button{
   // @include flex($align: center, $justify: center);
   @include flex($justify: center);
   @include size($height: 100%);
-  background-color: #3771c8;
+  background-color: $blue-color;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -14,9 +15,10 @@
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-  color: #fff;
+  color: $white-color;
   text-align: center;
   letter-spacing: .5px;
+
 }
 
 .Button:hover{
@@ -27,6 +29,26 @@
   @include flex($align: center, $justify: center);
   text-decoration: none;
   color: white;
+
+  &:hover{
+    box-shadow: 1px 1px 1px 1px #6BB9F0;
+    cursor: pointer;
+  }
+  a {
+    @include flex($align: center, $justify: center);
+    text-decoration: none;
+    color: $white-color;
+  }
+  @include tablet {
+    font-size: 0.8rem;
+  }
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: rgba(128, 128, 128, 1);
+    }
+  }
+
 }
 
 .ButtonFilter{
@@ -35,10 +57,10 @@
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
-}
 
-.ButtonFilter-activated {
-  border-radius: 4px 0 0 0;
+  &-activated {
+    border-radius: 4px 0 0 0;
+  }
 }
 
 .ButtonSearch{
@@ -47,10 +69,29 @@
   cursor: pointer;
   padding: 0 2%;
   border-radius: 0 4px 4px 0;
+  &:hover {
+    background: rgba(0, 0, 0, .2);
+  }
 }
 
 .ButtonSearch:hover {
   @include blackGradient($alpha: 0.2);
+}
+
+.ButtonClear {
+  @include flex($align: center, $justify: center);
+  @include size($height: 30px, $width: 30px);
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: $darker-blue-color;
+  border: none;
+  &:hover {
+    background-color: $blue-color;
+  }
+}
+
+.IconButtonClear {
+  color: $white-font-color;
 }
 
 .ButtonBack {
@@ -62,12 +103,11 @@
   z-index: 3;
   border: none;
   outline: none;
-  color: white;
+  color: $white-color;
   cursor: pointer;
   padding: 15px;
   border-radius: 100%;
-}
-
-.ButtonBack:hover {
-  @include blackGradient($alpha: 1);
+  &:hover {
+    @include blackGradient($alpha: 1);
+    }
 }

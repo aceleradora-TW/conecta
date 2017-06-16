@@ -2,9 +2,11 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
-.Navbar {
+
+
+.Navbar{
+	@include size($width:100%, $height:12vh);
 	@include flex($align: center, $justify: space-between,  $direction: row);
-	@include size($width: 100%, $height: 12vh);
 	@include blackGradient($alpha: 0.47);
 	font-family: $font-style;
 	font-weight: lighter;
@@ -115,13 +117,23 @@
 	}
 }
 
-.Link {
-	@include size($width: 24%, $height: 60%);
+.NavLogo{
+	@include size($width:50%, $height:100%);
+	@include flex($align: center, $justify: flex-start);
+	margin-left: 3%;
+
+	@include tablet{
+		@include size($width:25%);
+		@include flex($justify: center);
+	}
+}
+
+.Link{
+	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
-
 	@include tablet {
 		@include size($width: 90%, $height: 10vh);
 		border-top: 1px solid rgba(0,0,0,0.4);
@@ -167,7 +179,7 @@
 	}
 }
 
-.NavLinks a:hover {
+.NavLinks a:hover{
 	text-decoration: none;
 	color: $white-font-color;
 }
