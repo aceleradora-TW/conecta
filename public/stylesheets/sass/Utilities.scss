@@ -127,3 +127,7 @@
 .u-fontBold {
 	font-weight: bold;
 }
+
+.u-gradientTransparentToBlack {
+	 background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+}
