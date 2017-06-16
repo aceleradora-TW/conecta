@@ -8,7 +8,7 @@ gem 'pg'
 gem 'dm-postgres-adapter'
 
 gem 'coveralls', require: false
-
+gem 'omniauth'
 gem "actionmailer"
 
 group :development, :test do
