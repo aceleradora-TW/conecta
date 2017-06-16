@@ -2,9 +2,10 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
+
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 35vh);
+  @include size($width: 48%, $min-height: 45vh);
   background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -201,7 +202,7 @@
 }
 
 .CompetencesTitle{
-  @include flex($align: flex-end, $justify: center);
+  @include flex($align:flex-end, $justify:center);
   @include size($height: 5%, $width: 100%);
   margin-top: 5%;
   font-weight: bold;
@@ -261,8 +262,6 @@
   }
 
 }
-
-
 
 
 .ContactTitle{
@@ -377,6 +376,10 @@
     width: 100%;
     height: 70%;
   }
+}
+.BoxButtonMessage {
+  @include flex($align: center, $justify: center);
+  @include size($height: 50%, $width: 40%);
 }
 
 .CompanyCompetences{

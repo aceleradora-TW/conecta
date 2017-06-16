@@ -28,10 +28,7 @@ RSpec.configure do |config|
   config.filter_run :focus
   require './config/environment.rb'
   require './config/database.rb'
-  # Run specs in random order to surface order dependencies. If you find an
-  # order dependency and want to debug it, you can fix the order by providing
-  # the seed, which is printed after each run.
-  #     --seed 1234
+  require './config/mailer.rb'
   config.order = 'random'
   config.include RSpecMixin
   config.include Capybara::DSL
