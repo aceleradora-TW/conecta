@@ -48,7 +48,16 @@ class IndexController < Controller
     mailer = ContactMailer.new email_infos
 
     mailer.send_now
-    "Email Enviado com Sucesso!"
+    "Email Enviado com Sucesso!"  
 
   end
+
+  post "/sessions" do
+
+  end
+
+  get "/sessions/logout" do
+
+  end
+
 end
