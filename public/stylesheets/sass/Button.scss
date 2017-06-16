@@ -2,10 +2,12 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
+
+
 .Button{
   @include flex($justify: center);
   @include size($height: 100%);
-  background-color: #3771c8;
+  background-color: $blue-color;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -14,9 +16,10 @@
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-  color: #fff;
+  color: $white-color;
   text-align: center;
   letter-spacing: .5px;
+
   &.ButtonSend {
     @include size($height: 4.6vh);
 
@@ -39,19 +42,31 @@
   a {
     @include flex($align: center, $justify: center);
     text-decoration: none;
-    color: white;
+    color: $white-color;
+  }
+  @include tablet {
+    font-size: 0.8rem;
+  }
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: rgba(128, 128, 128, 1);
+    }
   }
 }
+
 .ButtonFilter{
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
+
+  &-activated {
+    border-radius: 4px 0 0 0;
+  }
 }
-.ButtonFilter-activated {
-  border-radius: 4px 0 0 0;
-}
+
 .ButtonSearch{
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
@@ -62,6 +77,7 @@
     background: rgba(0, 0, 0, .2);
   }
 }
+
 .ButtonClear {
   @include flex($align: center, $justify: center);
   @include size($height: 30px, $width: 30px);
@@ -73,9 +89,11 @@
     background-color: $blue-color;
   }
 }
+
 .IconButtonClear {
   color: $white-font-color;
 }
+
 .ButtonBack {
   display: none;
   position: fixed;
@@ -85,7 +103,7 @@
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: $white-color;
   cursor: pointer;
   padding: 15px;
   border-radius: 100%;
