@@ -1,4 +1,4 @@
- # -*- encoding : utf-8 -*-
+# -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
@@ -29,7 +29,7 @@ class IndexController < Controller
 
   get "/admin" do
     erb :login
-
+  end
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
