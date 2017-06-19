@@ -18,6 +18,7 @@ group :development, :test do
   gem 'rerun'
   gem 'rack', '2.0.2'
   gem 'rspec'
+  gem 'rspec-mocks'
   gem 'rack-test'
   gem 'capybara'
 end
