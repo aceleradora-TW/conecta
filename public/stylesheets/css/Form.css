@@ -1,0 +1,117 @@
+/* line 4, ../sass/Form.scss */
+.FormSearch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  align-content: space-between;
+}
+
+/* line 10, ../sass/Form.scss */
+.InputGroup {
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+  width: 75%;
+}
+/* line 14, ../sass/Form.scss */
+.InputGroup input {
+  font-size: 1.05em;
+}
+/* line 17, ../sass/Form.scss */
+.InputGroup span {
+  font-size: 1.3em;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 21, ../sass/Form.scss */
+  .InputGroup input {
+    font-size: 0.8em;
+  }
+  /* line 24, ../sass/Form.scss */
+  .InputGroup span {
+    font-size: 1.1em;
+  }
+}
+
+/* line 30, ../sass/Form.scss */
+.InputGroupButton {
+  width: 30%;
+  z-index: 99;
+}
+
+/* line 35, ../sass/Form.scss */
+.ButtonFilter {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-radius: 4px 0 0 4px;
+}
+
+/* line 43, ../sass/Form.scss */
+.ButtonFilter-activated {
+  border-radius: 4px 0 0 0;
+}
+
+/* line 47, ../sass/Form.scss */
+.InputSearch {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  padding-left: 2%;
+  width: 60%;
+}
+
+/* line 54, ../sass/Form.scss */
+.ButtonSearch {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2%;
+  border-radius: 0 4px 4px 0;
+}
+
+/* line 62, ../sass/Form.scss */
+.ButtonSearch:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 65, ../sass/Form.scss */
+.DropdownMenu {
+  list-style: none;
+  position: static;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 4px 4px;
+  background-color: white;
+  text-align: left;
+  right: 61.05vw;
+  bottom: 4.6vh;
+  padding: 2%;
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+/* line 80, ../sass/Form.scss */
+input, .ButtonFilter, .ButtonSearch {
+  outline: none;
+}
+
+/* line 84, ../sass/Form.scss */
+.DropdownMenu-visible {
+  opacity: 1;
+  display: block;
+  transition: .5s;
+}
+
+/* line 93, ../sass/Form.scss */
+.DropdownMenu li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 98, ../sass/Form.scss */
+.DropdownMenu li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
