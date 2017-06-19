@@ -13,7 +13,7 @@
 	font-size: 1.3em;
 	@include tablet{
 		font-size: 1em;
-	};
+	}
 }
 
 .u-fontSizeLarge {
@@ -35,7 +35,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;
+	color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -113,6 +113,22 @@
 .u-widthMedium{
 	width: 30%;
 	margin: 5%;
+	@include tablet{
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 4px;
+		font-size: 1em;
+	};
+	@include smallMobile{
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 4px;
+		font-size: 0.5em;
+	};
 }
 
 .u-widthLarge {
