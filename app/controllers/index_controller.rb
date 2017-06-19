@@ -5,7 +5,6 @@ require_relative "../services/search_service"
 require_relative "../services/router_service"
 
 class IndexController < Controller
-
   def initialize
     super
     @router_service = RouterService.new
@@ -27,9 +26,6 @@ class IndexController < Controller
     end
   end
 
-  get "/admin" do
-    erb :login
-  end
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
@@ -48,16 +44,7 @@ class IndexController < Controller
     mailer = ContactMailer.new email_infos
 
     mailer.send_now
-    "Email Enviado com Sucesso!"  
+    "Email Enviado com Sucesso!"
 
   end
-
-  post "/sessions" do
-
-  end
-
-  get "/sessions/logout" do
-
-  end
-
 end
