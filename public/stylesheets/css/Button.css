@@ -4,24 +4,24 @@
   justify-content: center;
   height: 100%;
   background-color: #3771c8;
-  line-height: 36px;
+  line-height: 2em;
   padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 0.9em;
   outline: 0;
   text-decoration: none;
   color: white;
   text-align: center;
   letter-spacing: .5px;
 }
-/* line 20, ../sass/Button.scss */
+/* line 21, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
-/* line 24, ../sass/Button.scss */
+/* line 25, ../sass/Button.scss */
 .Button a {
   display: flex;
   align-items: center;
@@ -35,16 +35,16 @@
     font-size: 0.8rem;
   }
 }
-/* line 32, ../sass/Button.scss */
+/* line 33, ../sass/Button.scss */
 .Button.ButtonSend {
   height: 4.6vh;
 }
-/* line 34, ../sass/Button.scss */
+/* line 35, ../sass/Button.scss */
 .Button.ButtonSend:disabled {
   background-color: gray;
 }
 
-/* line 40, ../sass/Button.scss */
+/* line 41, ../sass/Button.scss */
 .ButtonFilter {
   height: 100%;
   width: 100%;
@@ -53,12 +53,12 @@
   cursor: pointer;
   border-radius: 4px 0 0 4px;
 }
-/* line 47, ../sass/Button.scss */
+/* line 48, ../sass/Button.scss */
 .ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
 
-/* line 52, ../sass/Button.scss */
+/* line 53, ../sass/Button.scss */
 .ButtonSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
@@ -66,12 +66,14 @@
   padding: 0 2%;
   border-radius: 0 4px 4px 0;
 }
-/* line 58, ../sass/Button.scss */
+/* line 59, ../sass/Button.scss */
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
+
 /* line 55, ../sass/Button.scss */
+
 .ButtonClear {
   display: flex;
   align-items: center;
@@ -83,18 +85,20 @@
   background-color: rgba(48, 89, 119, 0.93);
   border: none;
 }
-/* line 70, ../sass/Button.scss */
+/* line 71, ../sass/Button.scss */
 .ButtonClear:hover {
   background-color: #3771c8;
 }
 
-/* line 75, ../sass/Button.scss */
+/* line 76, ../sass/Button.scss */
 .IconButtonClear {
   color: white;
 }
 
 
+
 /* line 69, ../sass/Button.scss */
+
 
 .ButtonBack {
   display: none;
@@ -111,7 +115,9 @@
   border-radius: 100%;
 }
 
+
 /* line 82, ../sass/Button.scss */
+
 
 .ButtonBack:hover {
   background-color: black;
