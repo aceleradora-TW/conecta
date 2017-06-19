@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "MediaQuery";
+@import "_mixins.scss";
 
 .u-fontSizeSmall {
 	font-size: 1em;
@@ -122,19 +123,19 @@
 	width: 30%;
 	margin: 5%;
 	@include tablet{
-		height: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 4px;
-		font-size: 1em;
+		@include flex($align: center, $justify: center);
+		width: 15%;
+		height: 2.8em;
+		line-height: 0.8em;
+		font-size: 0.8rem;
+		margin: 2em;
+
 	};
 	@include smallMobile{
-		height: 35px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 4px;
+		@include flex($align: center, $justify: center);
+		height: 3em;
+		margin: 1em;
+		line-height: 1.3em;
 		font-size: 0.5em;
 	};
 }
@@ -203,5 +204,5 @@
 }
 
 .u-gradientTransparentToBlack {
-	 background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
 }
