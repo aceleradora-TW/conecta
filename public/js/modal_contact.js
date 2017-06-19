@@ -34,7 +34,7 @@ function showMessage(msg){
 }
 
 function sendMail(){
-  $("#SendEmailMessage").removeClass("u-colorRed");
+  $("#SendEmailMessage").removeClass("u-colorBackgroundRed");
   $("#SendEmailMessage").removeClass("u-colorGreen");
   $("#SendEmailButton").attr("disabled","disabled");
 
