@@ -1,10 +1,23 @@
+require 'bcrypt'
+
 class User
-  attr_accessor :name,:email
-  def initialize(name,email)
-    @name = name
-    @email = email
+  include DataMapper::Resource
+  include BCrypt
+  property :id, Serial
+  property :name, String, :required => false
+  property :email, String, :required => true
+  property :password_hash, String, :required => true
+  property :role, String, :required => true
+  def is_admin
+    return @role == 'admin'
   end
-  def self.find_or_create_from_auth_hash(hash)
-    return User.new("Carloas","carloas@uol.com")
+
+  def password
+    @password ||= Password.new(password_hash)
+  end
+
+  def password=(new_password)
+    @password = Password.create(new_password)
+    self.password_hash = @password
   end
 end
