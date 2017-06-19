@@ -35,7 +35,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;
+	color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -50,7 +50,6 @@
 	margin-left: 6%;
 
 }
-
 .u-marginLeftXSmall {
 	margin-left: 2%;
 }
@@ -187,5 +186,5 @@
 }
 
 .u-gradientTransparentToBlack {
-	 background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
 }
