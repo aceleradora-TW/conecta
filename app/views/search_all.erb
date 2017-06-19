@@ -9,6 +9,7 @@
     <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
     <%= erb :companies %>
     <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
+
     <%= erb :research_centers %>
     <% end %>
   </section>

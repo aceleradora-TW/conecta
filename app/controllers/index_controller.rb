@@ -1,4 +1,4 @@
- # -*- encoding : utf-8 -*-
+# -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
@@ -20,6 +20,7 @@ class IndexController < Controller
     @value = params[:value]
     @search_type = params[:search_type]
     @search_description = "Exibindo #{@search_type}s para '#{@value}'"
+
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
@@ -28,10 +29,10 @@ class IndexController < Controller
     end
   end
   post "/request_contact" do
-    @name = params[:name] || ""
-    @email = params[:email] || ""
-    @comment = params[:comment] || ""
-    @institution_id = params[:institution_id] || ""
+    @name = params[:name]
+    @email = params[:email]
+    @comment = params[:comment]
+    @institution_id = params[:institution_id]
     @institution = Institution.get(@institution_id)
     if(!@institution.contact)
       # Comentário Temporário! Contato ficticio para validação com PO.
