@@ -35,7 +35,7 @@
 }
 
 .u-fontWhiteColor {
- color: $white-font-color;
+	color: $white-font-color;
 }
 
 .u-marginSmall {
@@ -50,6 +50,9 @@
 	margin-left: 6%;
 
 }
+.u-marginLeftXSmall {
+	margin-left: 2%;
+}
 
 .u-marginRight {
 	margin-right: 0.1%;
@@ -57,6 +60,10 @@
 
 .u-marginTop {
 	margin-top: 1%;
+}
+
+.u-marginTopLarge {
+	margin-top: 3%;
 }
 
 .u-marginBottom {
@@ -172,4 +179,12 @@
 
 .u-borderWhite{
 	border: solid 2px;
+}
+
+.u-fontBold {
+	font-weight: bold;
+}
+
+.u-gradientTransparentToBlack {
+	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
 }
