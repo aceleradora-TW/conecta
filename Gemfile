@@ -17,8 +17,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'rerun'
   gem 'rack', '2.0.2'
-  gem 'rspec'
-  gem 'rspec-mocks'
+  gem 'rspec', '~>3.6.0'
   gem 'rack-test'
   gem 'capybara'
 end
