@@ -4,12 +4,12 @@
   justify-content: center;
   height: 100%;
   background-color: #3771c8;
-  line-height: 36px;
+  line-height: 2em;
   padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 0.9em;
   outline: 0;
   text-decoration: none;
   color: white;
@@ -75,7 +75,6 @@
 .ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
-
 /* line 57, ../sass/Button.scss */
 .ButtonSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -89,7 +88,29 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 55, ../sass/Button.scss */
+/* line 64, ../sass/Button.scss */
+.ButtonClear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 0.7rem;
+  border-radius: 100%;
+  background-color: rgba(48, 89, 119, 0.93);
+  border: none;
+}
+/* line 71, ../sass/Button.scss */
+.ButtonClear:hover {
+  background-color: #3771c8;
+}
+
+/* line 76, ../sass/Button.scss */
+.IconButtonClear {
+  color: white;
+}
+
+/* line 80, ../sass/Button.scss */
 .ButtonBack {
   display: none;
   position: fixed;
@@ -104,8 +125,7 @@
   padding: 15px;
   border-radius: 100%;
 }
-
-/* line 70, ../sass/Button.scss */
+/* line 93, ../sass/Button.scss */
 .ButtonBack:hover {
   background-color: black;
 }

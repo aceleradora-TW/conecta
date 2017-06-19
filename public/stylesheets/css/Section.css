@@ -31,6 +31,7 @@
 }
 
 /* line 25, ../sass/Section.scss */
+
 .SectionOpacity {
   height: 85vh;
   width: 100%;
@@ -38,6 +39,7 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.47);
 }
+
 
 /* line 31, ../sass/Section.scss */
 .HowItWorks {
@@ -79,8 +81,8 @@
   color: white;
 }
 
-/* line 55, ../sass/Section.scss */
 
+/* line 55, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -90,6 +92,30 @@
   justify-content: space-around;
   padding: 0;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* line 62, ../sass/Section.scss */
@@ -104,7 +130,7 @@
   padding: 0;
 }
 
-/* line 67, ../sass/Section.scss */
+/* line 72, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

@@ -2,6 +2,7 @@
 @import "MediaQuery";
 @import "_variables.scss";
 
+
 .Logo {
 	&-wide {
 		@include size($height: 50%, $width: 10%);
