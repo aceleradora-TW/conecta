@@ -9,7 +9,7 @@ RSpec.describe IndexController do
 
       it "Deve mostrar a lista de busca" do
         visit "/search_all?search_type=empresa&value="
-        expect(page).to have_content('Resultados Buscados')
+        expect(page).to have_content('Exibindo')
       end
 
       it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por empresas" do
