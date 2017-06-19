@@ -1,66 +1,66 @@
-/* line 4, ../sass/Utilities.scss */
+/* line 5, ../sass/Utilities.scss */
 .u-fontSizeSmall {
   font-size: 1em;
 }
 
-/* line 8, ../sass/Utilities.scss */
+/* line 9, ../sass/Utilities.scss */
 .u-fontSizeMediumSlogan {
   font-size: 1.3em;
 }
 
-/* line 12, ../sass/Utilities.scss */
+/* line 13, ../sass/Utilities.scss */
 .u-fontSizeMedium {
   font-size: 1.3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 12, ../sass/Utilities.scss */
+  /* line 13, ../sass/Utilities.scss */
   .u-fontSizeMedium {
     font-size: 1em;
   }
 }
 
-/* line 19, ../sass/Utilities.scss */
+/* line 20, ../sass/Utilities.scss */
 .u-fontSizeLarge {
   font-size: 1.7em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 19, ../sass/Utilities.scss */
+  /* line 20, ../sass/Utilities.scss */
   .u-fontSizeLarge {
     font-size: 1.3em;
   }
 }
 
-/* line 26, ../sass/Utilities.scss */
+/* line 27, ../sass/Utilities.scss */
 .u-fontSizeXLarge {
   font-size: 5em;
 }
 
-/* line 30, ../sass/Utilities.scss */
+/* line 31, ../sass/Utilities.scss */
 .u-fontFamilyLato {
   font-family: Lato, sans-serif;
 }
 
-/* line 33, ../sass/Utilities.scss */
+/* line 34, ../sass/Utilities.scss */
 .u-font-withe, .u-fontWhite {
   color: white;
 }
 
-/* line 37, ../sass/Utilities.scss */
+/* line 38, ../sass/Utilities.scss */
 .u-fontWhiteColor {
   color: white;
 }
 
-/* line 41, ../sass/Utilities.scss */
+/* line 42, ../sass/Utilities.scss */
 .u-marginSmall {
   margin: 6px;
 }
 
-/* line 45, ../sass/Utilities.scss */
+/* line 46, ../sass/Utilities.scss */
 .u-marginLeft {
   margin-left: 10%;
 }
 
-/* line 49, ../sass/Utilities.scss */
+/* line 50, ../sass/Utilities.scss */
 .u-marginLeftSmall {
   margin-left: 6%;
 }
@@ -79,6 +79,7 @@
 .u-marginTop {
   margin-top: 1%;
 }
+
 
 /* line 65, ../sass/Utilities.scss */
 .u-marginTopLarge {
@@ -151,6 +152,31 @@
 .u-widthMedium {
   width: 30%;
   margin: 5%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 122, ../sass/Utilities.scss */
+  .u-widthMedium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 2.8em;
+    line-height: 0.8em;
+    font-size: 0.8rem;
+    margin: 2em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 122, ../sass/Utilities.scss */
+  .u-widthMedium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    margin: 1em;
+    line-height: 1.3em;
+    font-size: 0.5em;
+  }
 }
 
 /* line 125, ../sass/Utilities.scss */
