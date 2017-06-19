@@ -1,3 +1,5 @@
+@import "MediaQuery";
+
 body{
   margin: 0;
 }
@@ -23,8 +25,11 @@ body{
   font-feature-settings: 'liga';
 }
 .material-icons.md-3 {
-   font-size: 3em;
- }
+  font-size: 3em;
+  @include tablet {
+    font-size: 2.3em;
+  }
+}
 
 .material-icons.md-1-4 {
   font-size: 1.4em;

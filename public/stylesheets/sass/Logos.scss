@@ -1,5 +1,7 @@
 @import "_mixins.scss";
+@import "MediaQuery";
 @import "_variables.scss";
+
 .Logo {
 
 	&-wide {
@@ -8,6 +10,12 @@
 		background-size: 100%;
 		margin: 10px;
 		background-image: url("/images/tecnopuc4.png");
+		@include tablet{
+			height: 75%;
+			width: 19%;
+			justify-content: center;
+			margin: 0;
+		}
 	}
 
 	&-tall {
@@ -16,6 +24,11 @@
 		background-size: 100%;
 		margin: 0 5% 0% 2%;
 		background-image: url("/images/puc4.png");
+		@include tablet{
+			width: 20%;
+			justify-content: flex-end;
+			margin: 0;
+		}
 	}
 
 	.LogoCollaborators{
