@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+.u-fontSizeXSmall {
+	font-size: 0.8em;
+}
+
 .u-fontSizeSmall {
 	font-size: 1em;
 }
@@ -48,12 +52,16 @@
 	margin-top: 1%;
 }
 
-.u-marginTopLarge {
+.u-marginTopLarge, .u-marginTopMedium {
 	margin-top: 3%;
 }
 
 .u-marginBottom {
 	margin-bottom: 1%;
+}
+
+.u-marginBottomMedium {
+	margin-bottom: 5%;
 }
 
 .u-lineHeightMedium{

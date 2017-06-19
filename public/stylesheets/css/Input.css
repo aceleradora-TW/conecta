@@ -30,6 +30,7 @@
   text-align: left;
   width: 51%;
 }
+<<<<<<< HEAD
 /* line 29, ../sass/Input.scss */
 .ModalInputs textarea {
   min-height: 20vh;
@@ -38,4 +39,29 @@
   padding: 7px 15px;
   border-radius: 5px;
   outline: none;
+=======
+
+/* line 30, ../sass/Input.scss */
+.LoginInputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 48%;
+  width: 100%;
+}
+/* line 33, ../sass/Input.scss */
+.LoginInputs input {
+  width: 50%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #c1c1c1;
+  padding: 5px 6px;
+  box-sizing: border-box;
+}
+/* line 41, ../sass/Input.scss */
+.LoginInputs span {
+  justify-content: flex-start;
+  text-align: left;
+  width: 51%;
+>>>>>>> a9d7acf24b32be37e3f5e80abf6d187041894ee8
 }

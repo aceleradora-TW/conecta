@@ -35,3 +35,20 @@
     outline: none;
   }
 }
+.LoginInputs {
+  @include flex($align: center, $direction: column);
+  @include size($height: 48%, $width: 100%);
+  input {
+    @include size($width: 50%);
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    padding: 5px 6px;
+    box-sizing: border-box;
+  }
+  span {
+    justify-content: flex-start;
+    text-align: left;
+    width: 51%;
+  }
+}

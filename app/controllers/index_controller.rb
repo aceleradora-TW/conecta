@@ -27,6 +27,7 @@ class IndexController < Controller
       erb :search_all
     end
   end
+
   post "/request_contact" do
     @name = params[:name] || ""
     @email = params[:email] || ""
@@ -46,5 +47,9 @@ class IndexController < Controller
 
     mailer.send_now
     "Email Enviado com Sucesso!"
+  end
+
+  get "/admin" do
+    erb :login
   end
 end
