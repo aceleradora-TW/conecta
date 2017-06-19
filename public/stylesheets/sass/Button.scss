@@ -7,12 +7,12 @@
   @include flex($justify: center);
   @include size($height: 100%);
   background-color: $blue-color;
-  line-height: 36px;
+  line-height: 2em;
   padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 0.9em;
   outline: 0;
   text-decoration: none;
   color: $white-color;

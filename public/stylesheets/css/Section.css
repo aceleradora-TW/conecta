@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-/* line 15, ../sass/Section.scss */
+/* line 13, ../sass/Section.scss */
 .SectionOpacity {
   background-color: rgba(0, 0, 0, 0.47);
   height: 85vh;
@@ -21,7 +21,7 @@
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 22, ../sass/Section.scss */
+/* line 19, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -33,7 +33,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 29, ../sass/Section.scss */
+/* line 26, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -45,7 +45,7 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 36, ../sass/Section.scss */
+/* line 33, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 97vh;
@@ -61,7 +61,7 @@
   color: white;
 }
 
-/* line 47, ../sass/Section.scss */
+/* line 44, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -98,8 +98,32 @@
     justify-content: center;
   }
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 44, ../sass/Section.scss */
+  .SectionCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-/* line 71, ../sass/Section.scss */
+/* line 66, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -110,7 +134,7 @@
   padding: 0;
 }
 
-/* line 77, ../sass/Section.scss */
+/* line 72, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

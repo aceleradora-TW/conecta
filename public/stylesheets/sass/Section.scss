@@ -49,23 +49,21 @@
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
   @include tablet{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  };
+  }
   @include mobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  };
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
   @include smallMobile{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  };
+  }
 }
 
 .SectionSearch {

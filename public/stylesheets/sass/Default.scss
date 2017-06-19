@@ -3,10 +3,6 @@
 body{
   margin: 0;
   padding: 0;
-  @include smallMobile{
-    padding: 0;
-    margin: 0;
-  };
 }
 .material-icons {
   font-family: 'Material Icons';
