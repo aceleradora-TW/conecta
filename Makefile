@@ -42,5 +42,6 @@ db-migrate:db-start
 db-seed:db-migrate
 	@echo "Importing Data from CSV"
 	@docker-compose run web rake db:seed
+	@docker-compose run web rake db:seed_test_users
 	@echo "Selecting count of inserted institutions:"
 	@docker-compose exec -T db psql -d test_db -U test -c 'SELECT count(id) from institutions;'

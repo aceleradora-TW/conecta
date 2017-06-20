@@ -5,7 +5,6 @@ require_relative "../services/search_service"
 require_relative "../services/router_service"
 
 class IndexController < Controller
-
   def initialize
     super
     @router_service = RouterService.new
@@ -29,15 +28,6 @@ class IndexController < Controller
     end
   end
 
-
-  get "/list_all" do
-    @companies = Company.all
-    @research_centers = ResearchCenter.all
-    erb :list_all
-  end
-
-
-
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
@@ -57,6 +47,6 @@ class IndexController < Controller
 
     mailer.send_now
     "Email Enviado com Sucesso!"
-  end
 
+  end
 end

@@ -33,5 +33,8 @@ namespace :db do
     Seed.seed
   end
 
+  task :seed_test_users do
+    Seed.seed_users
+  end
 
 end

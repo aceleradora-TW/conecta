@@ -1,178 +1,188 @@
 /* line 5, ../sass/Utilities.scss */
+.u-fontSizeXSmall {
+  font-size: 0.8em;
+}
+
+/* line 9, ../sass/Utilities.scss */
 .u-fontSizeSmall {
   font-size: 1em;
 }
 
-/* line 9, ../sass/Utilities.scss */
+/* line 13, ../sass/Utilities.scss */
 .u-fontSizeMediumSlogan {
   font-size: 1.3em;
 }
 
-/* line 13, ../sass/Utilities.scss */
+/* line 17, ../sass/Utilities.scss */
 .u-fontSizeMedium {
   font-size: 1.3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 13, ../sass/Utilities.scss */
+  /* line 17, ../sass/Utilities.scss */
   .u-fontSizeMedium {
     font-size: 1em;
   }
 }
 
-/* line 20, ../sass/Utilities.scss */
+/* line 24, ../sass/Utilities.scss */
 .u-fontSizeLarge {
   font-size: 1.7em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 20, ../sass/Utilities.scss */
+  /* line 24, ../sass/Utilities.scss */
   .u-fontSizeLarge {
     font-size: 1.3em;
   }
 }
 
-/* line 27, ../sass/Utilities.scss */
+/* line 31, ../sass/Utilities.scss */
 .u-fontSizeXLarge {
   font-size: 5em;
 }
 
-/* line 31, ../sass/Utilities.scss */
+/* line 35, ../sass/Utilities.scss */
 .u-fontFamilyLato {
   font-family: Lato, sans-serif;
 }
 
-/* line 35, ../sass/Utilities.scss */
+/* line 39, ../sass/Utilities.scss */
 .u-fontWhite {
   color: white;
 }
 
-/* line 39, ../sass/Utilities.scss */
+/* line 43, ../sass/Utilities.scss */
 .u-marginSmall {
   margin: 6px;
 }
 
-/* line 43, ../sass/Utilities.scss */
+/* line 47, ../sass/Utilities.scss */
 .u-marginLeft {
   margin-left: 10%;
 }
 
-/* line 46, ../sass/Utilities.scss */
+/* line 50, ../sass/Utilities.scss */
 .u-marginLeftSmall {
   margin-left: 5%;
 }
 
-/* line 50, ../sass/Utilities.scss */
+/* line 54, ../sass/Utilities.scss */
 .u-marginLeftSmall {
   margin-left: 6%;
 }
 
-/* line 54, ../sass/Utilities.scss */
+/* line 58, ../sass/Utilities.scss */
 .u-marginLeftXSmall {
   margin-left: 2%;
 }
 
-/* line 58, ../sass/Utilities.scss */
+/* line 62, ../sass/Utilities.scss */
 .u-marginRight {
   margin-right: 0.1%;
 }
 
-/* line 62, ../sass/Utilities.scss */
+/* line 66, ../sass/Utilities.scss */
 .u-marginTop {
   margin-top: 1%;
 }
 
-/* line 66, ../sass/Utilities.scss */
+/* line 69, ../sass/Utilities.scss */
 .u-marginTopLarge {
   margin-top: 3%;
 }
 
-/* line 70, ../sass/Utilities.scss */
+/* line 73, ../sass/Utilities.scss */
 .u-marginBottom {
   margin-bottom: 1%;
 }
 
-/* line 74, ../sass/Utilities.scss */
+/* line 77, ../sass/Utilities.scss */
+.u-marginBottomMedium {
+  margin-bottom: 5%;
+}
+
+/* line 80, ../sass/Utilities.scss */
 .u-marginSidesAndBottom {
   margin: 0 2%;
   margin-bottom: 2%;
 }
 
-/* line 79, ../sass/Utilities.scss */
+/* line 85, ../sass/Utilities.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }
 
-/* line 83, ../sass/Utilities.scss */
+/* line 89, ../sass/Utilities.scss */
 .u-colorLightBlue {
   color: #0faac3;
 }
 
-/* line 87, ../sass/Utilities.scss */
+/* line 93, ../sass/Utilities.scss */
 .u-colorLightRed {
   color: #eb6361;
 }
 
-/* line 91, ../sass/Utilities.scss */
+/* line 97, ../sass/Utilities.scss */
 .u-colorGreen {
   color: #02af7e;
 }
 
-/* line 95, ../sass/Utilities.scss */
+/* line 101, ../sass/Utilities.scss */
 .u-colorOrange {
   color: #eb9532;
 }
 
-/* line 99, ../sass/Utilities.scss */
+/* line 105, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
 
-/* line 103, ../sass/Utilities.scss */
+/* line 109, ../sass/Utilities.scss */
 .u-colorBackgroundWhite {
   background-color: white;
 }
 
-/* line 107, ../sass/Utilities.scss */
+/* line 113, ../sass/Utilities.scss */
 .u-colorBackgroundOrange {
   background-color: #eb9532;
 }
-/* line 109, ../sass/Utilities.scss */
+/* line 115, ../sass/Utilities.scss */
 .u-colorBackgroundOrange:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
   cursor: pointer;
 }
 
-/* line 115, ../sass/Utilities.scss */
+/* line 121, ../sass/Utilities.scss */
 .u-colorBackgroundGreen {
   background-color: #02af7e;
 }
-/* line 117, ../sass/Utilities.scss */
+/* line 123, ../sass/Utilities.scss */
 .u-colorBackgroundGreen:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
   cursor: pointer;
 }
 
-/* line 123, ../sass/Utilities.scss */
+/* line 129, ../sass/Utilities.scss */
 .u-colorBackgroundRed {
   background-color: #eb6361;
 }
-/* line 125, ../sass/Utilities.scss */
+/* line 131, ../sass/Utilities.scss */
 .u-colorBackgroundRed:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
   cursor: pointer;
 }
 
-/* line 131, ../sass/Utilities.scss */
+/* line 137, ../sass/Utilities.scss */
 .u-widthNone {
   width: 0%;
 }
 
-/* line 135, ../sass/Utilities.scss */
+/* line 141, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 135, ../sass/Utilities.scss */
+  /* line 141, ../sass/Utilities.scss */
   .u-widthMedium {
     display: flex;
     align-items: center;
@@ -185,7 +195,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 135, ../sass/Utilities.scss */
+  /* line 141, ../sass/Utilities.scss */
   .u-widthMedium {
     display: flex;
     align-items: center;
@@ -197,37 +207,37 @@
   }
 }
 
-/* line 156, ../sass/Utilities.scss */
+/* line 162, ../sass/Utilities.scss */
 .u-widthMediumOnly {
   width: 30%;
 }
 
-/* line 160, ../sass/Utilities.scss */
+/* line 166, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 164, ../sass/Utilities.scss */
+/* line 169, ../sass/Utilities.scss */
 .u-center {
   text-align: center;
 }
 
-/* line 168, ../sass/Utilities.scss */
+/* line 173, ../sass/Utilities.scss */
 .u-borderWhite {
   border: solid 2px;
 }
 
-/* line 172, ../sass/Utilities.scss */
+/* line 177, ../sass/Utilities.scss */
 .u-fontBold {
   font-weight: bold;
 }
 
-/* line 176, ../sass/Utilities.scss */
+/* line 181, ../sass/Utilities.scss */
 .u-gradientTransparentToBlack {
   background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
 }
 
-/* line 180, ../sass/Utilities.scss */
+/* line 185, ../sass/Utilities.scss */
 .u-displayNone {
   display: none;
 }

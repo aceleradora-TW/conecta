@@ -2,6 +2,10 @@
 @import "MediaQuery";
 @import "_mixins.scss";
 
+.u-fontSizeXSmall {
+	font-size: 0.8em;
+}
+
 .u-fontSizeSmall {
 	font-size: 1em;
 }
@@ -62,7 +66,6 @@
 .u-marginTop {
 	margin-top: 1%;
 }
-
 .u-marginTopLarge {
 	margin-top: 3%;
 }
@@ -71,6 +74,9 @@
 	margin-bottom: 1%;
 }
 
+.u-marginBottomMedium {
+	margin-bottom: 5%;
+}
 .u-marginSidesAndBottom {
 	margin: 0 2%;
 	margin-bottom: 2%;
@@ -160,7 +166,6 @@
 .u-widthLarge {
 	width: 90%;
 }
-
 .u-center{
 	text-align: center;
 }
