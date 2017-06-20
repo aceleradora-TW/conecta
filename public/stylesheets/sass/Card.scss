@@ -47,6 +47,45 @@
     @include size($width: 90%,$height: 300px);
   }
 }
+
+.CardList {
+  @include flex($align: center, $direction: column, $justify: flex-end);
+  @include size($width: 30%);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  margin-bottom: 2%;
+  font-family: $font-style;
+  font-weight: lighter;
+  @include tablet{
+    @include size($width: 40%);
+    padding: 2%;
+  }
+  @include mobile{
+    @include size($width: 90%);
+    padding: 2%;
+  }
+  @include smallMobile{
+    @include size($width: 90%);
+    padding: 2%;
+  }
+}
+
+
+.ContentCardList{
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($width: 90%);
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  @include mobile{
+    flex-direction: column;
+  }
+  @include smallMobile{
+    flex-direction: column;
+  }
+}
+
 .LogoCard{
   @include tablet{
     display: flex;
@@ -67,6 +106,7 @@
     justify-content: center;
   }
 }
+
 .CardNav {
 
   @include flex($direction: row, $justify: flex-start);
@@ -92,6 +132,7 @@
   @include size($width: 100%, $min-height: 20%);
   font-family: $font-style;
   flex-wrap: wrap;
+  text-align: center;
   @include mobile{
     font-size: 0.9em;
     text-align: center;

@@ -1,0 +1,17 @@
+<section class="SectionSearch u-fontFamilyLato">
+  <h2>Listagem das Instiruições Cadastradas</h2>
+  <div class="ContentCardList">
+    <% @companies.each do |company| %>
+
+    <div class="CardList">
+      <h2> <%= company.name %> </h2>
+    </div>
+    <%end%>
+    <% @research_centers.each do |research_center| %>
+
+    <div class="CardList">
+      <h2> <%= research_center.name %> </h2>
+    </div>
+    <%end%>
+  </div>
+</section>
