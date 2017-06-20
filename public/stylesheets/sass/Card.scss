@@ -28,7 +28,7 @@
   };
 }
 
-.CardList {
+.CardList, .InstitutionList {
   @include flex($align: center, $direction: column, $justify: flex-end);
   @include size($width: 30%);
   background: rgba(255, 255, 255, 1);
@@ -508,4 +508,30 @@
       font-size: 13px;
     }
   }
+}
+
+.InstitutionList {
+  @include flex($direction: row);
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.InstitutionListHeader {
+  @include size($width: 100%);
+  @include flex($direction: row, $justify: flex-start);
+}
+
+.InstitutionList .Title {
+  background: red;
+  @include size($width: 20%, $height: 5vh);
+}
+
+.InstitutionList .LeftItem {
+  @include size($width: 75%);
+  text-align: left;
+}
+
+.InstitutionList .RightItem {
+  @include size($width: 25%);
+  text-align: center;
 }

@@ -1,17 +1,20 @@
 <section class="SectionSearch u-fontFamilyLato">
   <h2>Listagem das Instiruições Cadastradas</h2>
   <div class="ContentCardList">
-    <% @companies.each do |company| %>
+    <div class="InstitutionList u-widthLarge">
+      <div class="InstitutionListHeader">
+        <div class="Button u-widthMedium ButtonContact">Empresas</div>
+        <div class="Button u-widthMedium ButtonContact">Estruturas de Pesquisa</div>
 
-    <div class="CardList">
-      <h2> <%= company.name %> </h2>
-    </div>
-    <%end%>
-    <% @research_centers.each do |research_center| %>
+      </div>
+        <% @companies.each do |company| %>
+          <div class="LeftItem"><%= company.name %></div>
+          <div class="RightItem"><!-- TODO: Opções editar/remover/... --></div>
+        <%end%>
+        <!-- <% @research_centers.each do |research_center| %>
+          <div style="width: 100%; text-align: left;"><%= research_center.name %></div>
+        <%end%> -->
 
-    <div class="CardList">
-      <h2> <%= research_center.name %> </h2>
     </div>
-    <%end%>
   </div>
 </section>
