@@ -126,7 +126,7 @@
 }
 /* line 101, ../sass/Utilities.scss */
 .u-colorBackgroundOrange:hover {
-  box-shadow: 1px 1px 2px 2px #f4b350;
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
   cursor: pointer;
 }
 
@@ -136,7 +136,7 @@
 }
 /* line 109, ../sass/Utilities.scss */
 .u-colorBackgroundGreen:hover {
-  box-shadow: 1px 1px 2px 2px #64ddbb;
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
   cursor: pointer;
 }
 
@@ -146,7 +146,7 @@
 }
 /* line 117, ../sass/Utilities.scss */
 .u-colorBackgroundRed:hover {
-  box-shadow: 1px 1px 2px 2px #e26a6a;
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
   cursor: pointer;
 }
 
