@@ -1,4 +1,4 @@
- # -*- encoding : utf-8 -*-
+# -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
@@ -19,6 +19,8 @@ class IndexController < Controller
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
+    @search_description = "Exibindo #{@search_type}s para '#{@value}'"
+
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"

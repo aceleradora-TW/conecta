@@ -15,7 +15,7 @@
 	font-size: 1.3em;
 	@include tablet{
 		font-size: 1em;
-	};
+	}
 }
 
 .u-fontSizeLarge {
@@ -32,11 +32,8 @@
 .u-fontFamilyLato {
 	font-family: $font-style;
 }
-.u-font-withe,.u-fontWhite {
-	color: rgba(255,255,255,1);
-}
 
-.u-fontWhiteColor {
+.u-fontWhite {
 	color: $white-font-color;
 }
 
@@ -52,6 +49,9 @@
 	margin-left: 6%;
 
 }
+.u-marginLeftXSmall {
+	margin-left: 2%;
+}
 
 .u-marginRight {
 	margin-right: 0.1%;
@@ -59,6 +59,10 @@
 
 .u-marginTop {
 	margin-top: 1%;
+}
+
+.u-marginTopLarge {
+	margin-top: 3%;
 }
 
 .u-marginBottom {
@@ -73,12 +77,9 @@
 	color: $light-blue-color;
 }
 
-
 .u-colorLightRed{
 	color: $light-red-color;
 }
-
-
 
 .u-colorGreen{
 	color: $aqua-green-color;
@@ -88,24 +89,36 @@
 	color: $burnt-yellow-color;
 }
 
-.u-colorBackgroundwhite{
+.u-colorGold{
+	color: rgba(228, 181, 65, 1);
+}
+
+.u-colorBackgroundWhite{
 	background-color: $white-color;
 }
 
 .u-colorBackgroundOrange{
 	background-color: $burnt-yellow-color;
-}
-.u-colorBackgroundGreen{
-	background-color: $aqua-green-color;
-}
-.u-colorBackgroundGreen:hover{
-	box-shadow: 1px 1px 2px 2px rgba(100, 221, 187,1);
-	cursor: pointer;
+	&:hover {
+		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(244, 179, 80,1);
+		cursor: pointer;
+	}
 }
 
-.u-colorBackgroundOrange:hover{
-	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80,1);
-	cursor: pointer;
+.u-colorBackgroundGreen{
+	background-color: $aqua-green-color;
+	&:hover {
+		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(100, 221, 187,1);
+		cursor: pointer;
+	}
+}
+
+.u-colorBackgroundRed {
+	background-color: rgba(235, 99, 97, 1);
+	&:hover {
+		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(226, 106, 106, 1);
+		cursor: pointer;
+	}
 }
 
 .u-widthNone{
@@ -123,7 +136,7 @@
 	}
 	@include smallMobile{
 		@include flex($justify: center, $align: center);
-		@include size($height: 35%);
+		@include size($height: 35%, width: 15%);
 		margin: 1%;
 		font-size: 0.5em;
 	}
@@ -133,57 +146,18 @@
 	width: 90%;
 }
 
-.u-colorGold{
-	color: #e4b541;
-}
-.u-colorRed{
-	background-color: #EB6361;
-}
-.u-colorRed:hover{
-	box-shadow: 1px 1px 2px 2px #E26A6A;
-	cursor: pointer;
-}
-.u-colorGreen{
-	/*background-color: #64DDBB;*/
-	background-color: #02af7e;
-}
-.u-colorGreen:hover{
-	box-shadow: 1px 1px 2px 2px #36D7B7;
-	cursor: pointer;
-}
-.u-colorBlue{
-	background-color: #0faac3;
-}
-.u-colorBlue:hover{
-	box-shadow: 1px 1px 2px 2px #6BB9F0;
-	cursor: pointer;
-}
-
-.u-colorOrange{
-	background-color: #EB9532;
-}
-.u-colorOrange:hover{
-	box-shadow: 1px 1px 2px 2px #F4B350;
-	cursor: pointer;
-}
-
-.u-colorRed1{
-	color: #EB6361!important;
-}
-.u-colorGreen1{
-	color: #02af7e;
-}
-.u-colorBlue1{
-	color: #0faac3;
-}
-.u-colorOrange1{
-	color: #EB9532;
-}
-
 .u-center{
 	text-align: center;
 }
 
 .u-borderWhite{
 	border: solid 2px;
+}
+
+.u-fontBold {
+	font-weight: bold;
+}
+
+.u-gradientTransparentToBlack {
+	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">Resultados Buscados</h1>
 <h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">
   <% if @institution.length == 0 %>
@@ -8,9 +9,27 @@
   <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
 
 
+=======
+<div class="u-gradientTransparentToBlack">
+  <h1 class="u-fontFamilyLato u-fontSizeMedium u-marginLeftXSmall u-marginTopLarge u-fontWhite"><%= @search_description %></h1>
+  <h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft u-fontWhite">
+    <% if @institution.length == 0 %>
+    <br>Nenhum resultado encontrado
+    <% end %>
+  </h3>
+  <section class="SectionCards">
+    <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
+>>>>>>> 076098bf298145dd6e7c44c47ec2b74df0c40f21
     <%= erb :companies %>
-  <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
+    <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
+
     <%= erb :research_centers %>
+<<<<<<< HEAD
   <% end %>
 </section>
+=======
+    <% end %>
+  </section>
+</div>
+>>>>>>> 076098bf298145dd6e7c44c47ec2b74df0c40f21
 <script src="js/break_links.js"></script>

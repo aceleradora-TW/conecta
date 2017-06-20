@@ -4,12 +4,12 @@
   justify-content: center;
   height: 100%;
   background-color: #3771c8;
-  line-height: 36px;
+  line-height: 2em;
   padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 0.9em;
   outline: 0;
   text-decoration: none;
   color: white;

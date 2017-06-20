@@ -65,7 +65,6 @@
   }
 }
 
-
 .SectionSearch {
   @include size($width: 100%, $min-height: 100%);
   @include flex($align: center, $direction: column, $justify: center);
