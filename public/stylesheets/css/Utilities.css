@@ -1,71 +1,212 @@
-/*
-Error: Undefined variable: "$red-font-color".
-        on line 40 of /code/public/stylesheets/sass/Utilities.scss
+/* line 5, ../sass/Utilities.scss */
+.u-fontSizeSmall {
+  font-size: 1em;
+}
 
-35: .u-fontWhite {
-36: 	color: $white-font-color;
-37: }
-38: 
-39: .u-fontRed {
-40: 	color: $red-font-color;
-41: }
-42: 
-43: .u-marginSmall {
-44: 	margin: 6px;
-45: }
+/* line 9, ../sass/Utilities.scss */
+.u-fontSizeMediumSlogan {
+  font-size: 1.3em;
+}
 
-Backtrace:
-/code/public/stylesheets/sass/Utilities.scss:40
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$red-font-color\".\A         on line 40 of /code/public/stylesheets/sass/Utilities.scss\A \A 35: .u-fontWhite {\A 36: 	color: $white-font-color;\A 37: }\A 38: \A 39: .u-fontRed {\A 40: 	color: $red-font-color;\A 41: }\A 42: \A 43: .u-marginSmall {\A 44: 	margin: 6px;\A 45: }"; }
+/* line 13, ../sass/Utilities.scss */
+.u-fontSizeMedium {
+  font-size: 1.3em;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 13, ../sass/Utilities.scss */
+  .u-fontSizeMedium {
+    font-size: 1em;
+  }
+}
+
+/* line 20, ../sass/Utilities.scss */
+.u-fontSizeLarge {
+  font-size: 1.7em;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 20, ../sass/Utilities.scss */
+  .u-fontSizeLarge {
+    font-size: 1.3em;
+  }
+}
+
+/* line 27, ../sass/Utilities.scss */
+.u-fontSizeXLarge {
+  font-size: 5em;
+}
+
+/* line 31, ../sass/Utilities.scss */
+.u-fontFamilyLato {
+  font-family: Lato, sans-serif;
+}
+
+/* line 35, ../sass/Utilities.scss */
+.u-fontWhite {
+  color: white;
+}
+
+/* line 39, ../sass/Utilities.scss */
+.u-marginSmall {
+  margin: 6px;
+}
+
+/* line 43, ../sass/Utilities.scss */
+.u-marginLeft {
+  margin-left: 10%;
+}
+
+/* line 47, ../sass/Utilities.scss */
+.u-marginLeftSmall {
+  margin-left: 6%;
+}
+
+/* line 51, ../sass/Utilities.scss */
+.u-marginLeftXSmall {
+  margin-left: 2%;
+}
+
+/* line 55, ../sass/Utilities.scss */
+.u-marginRight {
+  margin-right: 0.1%;
+}
+
+/* line 59, ../sass/Utilities.scss */
+.u-marginTop {
+  margin-top: 1%;
+}
+
+/* line 63, ../sass/Utilities.scss */
+.u-marginTopLarge {
+  margin-top: 3%;
+}
+
+/* line 67, ../sass/Utilities.scss */
+.u-marginBottom {
+  margin-bottom: 1%;
+}
+
+/* line 71, ../sass/Utilities.scss */
+.u-lineHeightMedium {
+  line-height: 1.7em;
+}
+
+/* line 75, ../sass/Utilities.scss */
+.u-colorLightBlue {
+  color: #0faac3;
+}
+
+/* line 79, ../sass/Utilities.scss */
+.u-colorLightRed {
+  color: #eb6361;
+}
+
+/* line 83, ../sass/Utilities.scss */
+.u-colorGreen {
+  color: #02af7e;
+}
+
+/* line 87, ../sass/Utilities.scss */
+.u-colorOrange {
+  color: #eb9532;
+}
+
+/* line 91, ../sass/Utilities.scss */
+.u-colorGold {
+  color: #e4b541;
+}
+
+/* line 95, ../sass/Utilities.scss */
+.u-colorBackgroundWhite {
+  background-color: white;
+}
+
+/* line 99, ../sass/Utilities.scss */
+.u-colorBackgroundOrange {
+  background-color: #eb9532;
+}
+/* line 101, ../sass/Utilities.scss */
+.u-colorBackgroundOrange:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
+  cursor: pointer;
+}
+
+/* line 107, ../sass/Utilities.scss */
+.u-colorBackgroundGreen {
+  background-color: #02af7e;
+}
+/* line 109, ../sass/Utilities.scss */
+.u-colorBackgroundGreen:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
+  cursor: pointer;
+}
+
+/* line 115, ../sass/Utilities.scss */
+.u-colorBackgroundRed {
+  background-color: #eb6361;
+}
+/* line 117, ../sass/Utilities.scss */
+.u-colorBackgroundRed:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
+  cursor: pointer;
+}
+
+/* line 123, ../sass/Utilities.scss */
+.u-widthNone {
+  width: 0%;
+}
+
+/* line 127, ../sass/Utilities.scss */
+.u-widthMedium {
+  width: 30%;
+  margin: 5%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 127, ../sass/Utilities.scss */
+  .u-widthMedium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 2.8em;
+    line-height: 0.8em;
+    font-size: 0.8rem;
+    margin: 2em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 127, ../sass/Utilities.scss */
+  .u-widthMedium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    margin: 1em;
+    line-height: 1.3em;
+    font-size: 0.5em;
+  }
+}
+
+/* line 148, ../sass/Utilities.scss */
+.u-widthLarge {
+  width: 90%;
+}
+
+/* line 152, ../sass/Utilities.scss */
+.u-center {
+  text-align: center;
+}
+
+/* line 156, ../sass/Utilities.scss */
+.u-borderWhite {
+  border: solid 2px;
+}
+
+/* line 160, ../sass/Utilities.scss */
+.u-fontBold {
+  font-weight: bold;
+}
+
+/* line 164, ../sass/Utilities.scss */
+.u-gradientTransparentToBlack {
+  background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
+}
