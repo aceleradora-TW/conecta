@@ -251,7 +251,7 @@
   z-index: 2;
 }
 
-/* line 120, ../sass/Box.scss */
+/* line 139, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -259,7 +259,7 @@
   justify-content: flex-end;
 }
 
-/* line 125, ../sass/Box.scss */
+/* line 144, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }

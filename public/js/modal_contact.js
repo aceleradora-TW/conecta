@@ -34,7 +34,7 @@ function showMessage(msg){
 }
 
 function sendMail(){
-  $("#SendEmailMessage").removeClass("u-colorBackgroundRed");
+  $("#SendEmailMessage").removeClass("u-colorLightRed");
   $("#SendEmailMessage").removeClass("u-colorGreen");
   $("#SendEmailButton").attr("disabled","disabled");
 
@@ -51,9 +51,9 @@ function sendMail(){
         setTimeout(closeModal,3000);
       }
       else{
-        $("#SendEmailMessage").addClass("u-colorLightRed");
         $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
       }
+      $("#SendEmailButton").removeAttr("disabled");
     }
   });
   event.preventDefault();
