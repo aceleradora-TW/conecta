@@ -15,14 +15,22 @@
             <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
           </div>
         </div>
+        <div class="TagTitle u-widthMediumOnly u-marginSidesAndBottom u-colorBackgroundRed">
+          <div class="BoxTextTitle">
+            <i class="material-icons u-fontSizeMedium">list</i>
+            <span class="u-fontSizeMedium u-marginSmall">Todas Instituições</span>
+          </div>
+        </div>
       </div>
       <div class="u-widthLarge u-displayNone" id="companies">
+        <div class="LeftItem"><h1>Empresas</h1></div>
         <% @companies.each do |company| %>
         <div class="LeftItem"><%= company.name %></div>
         <div class="RightItem"><!-- TODO: Opções editar/remover/... --></div>
         <%end%>
       </div>
       <div class="u-widthLarge u-displayNone" id="research-centers">
+        <div class="LeftItem"><h1>Estruturas de Pesquisa</h1></div>
         <% @research_centers.each do |research_center| %>
         <div class="LeftItem"><%= research_center.name %></div>
         <div class="RightItem"><!-- TODO: Opções editar/remover/... --></div>

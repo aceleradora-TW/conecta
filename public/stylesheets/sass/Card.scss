@@ -511,7 +511,7 @@
 }
 
 .InstitutionList {
-  @include flex($direction: row);
+  @include flex($direction: row, $justify: flex-start);
   flex-wrap: wrap;
   padding: 2%;
 }
