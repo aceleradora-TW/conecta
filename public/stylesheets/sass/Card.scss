@@ -518,7 +518,7 @@
 
 .InstitutionListHeader {
   @include size($width: 100%);
-  @include flex($direction: row, $justify: flex-start);
+  @include flex($direction: row, $justify: center);
 }
 
 .InstitutionList .Title {

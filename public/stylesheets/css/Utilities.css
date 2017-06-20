@@ -96,69 +96,75 @@
 }
 
 /* line 77, ../sass/Utilities.scss */
+.u-marginSidesAndBottom {
+  margin: 0 2%;
+  margin-bottom: 2%;
+}
+
+/* line 82, ../sass/Utilities.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }
 
-/* line 81, ../sass/Utilities.scss */
+/* line 86, ../sass/Utilities.scss */
 .u-colorLightBlue {
   color: #0faac3;
 }
 
-/* line 86, ../sass/Utilities.scss */
+/* line 91, ../sass/Utilities.scss */
 .u-colorLightRed {
   color: #eb6361;
 }
 
-/* line 92, ../sass/Utilities.scss */
+/* line 97, ../sass/Utilities.scss */
 .u-colorGreen {
   color: #02af7e;
 }
 
-/* line 96, ../sass/Utilities.scss */
+/* line 101, ../sass/Utilities.scss */
 .u-colorOrange {
   color: #eb9532;
 }
 
-/* line 100, ../sass/Utilities.scss */
+/* line 105, ../sass/Utilities.scss */
 .u-colorBackgroundwhite {
   background-color: white;
 }
 
-/* line 104, ../sass/Utilities.scss */
+/* line 109, ../sass/Utilities.scss */
 .u-colorBackgroundOrange {
   background-color: #eb9532;
 }
 
-/* line 107, ../sass/Utilities.scss */
+/* line 112, ../sass/Utilities.scss */
 .u-colorBackgroundGreen {
   background-color: #02af7e;
 }
 
-/* line 110, ../sass/Utilities.scss */
+/* line 115, ../sass/Utilities.scss */
 .u-colorBackgroundGreen:hover {
   box-shadow: 1px 1px 2px 2px #64ddbb;
   cursor: pointer;
 }
 
-/* line 115, ../sass/Utilities.scss */
+/* line 120, ../sass/Utilities.scss */
 .u-colorBackgroundOrange:hover {
   box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
-/* line 120, ../sass/Utilities.scss */
+/* line 125, ../sass/Utilities.scss */
 .u-widthNone {
   width: 0%;
 }
 
-/* line 124, ../sass/Utilities.scss */
+/* line 129, ../sass/Utilities.scss */
 .u-widthMedium {
   width: 30%;
   margin: 5%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 124, ../sass/Utilities.scss */
+  /* line 129, ../sass/Utilities.scss */
   .u-widthMedium {
     display: flex;
     align-items: center;
@@ -171,7 +177,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 124, ../sass/Utilities.scss */
+  /* line 129, ../sass/Utilities.scss */
   .u-widthMedium {
     display: flex;
     align-items: center;
@@ -183,97 +189,107 @@
   }
 }
 
-/* line 145, ../sass/Utilities.scss */
+/* line 150, ../sass/Utilities.scss */
+.u-widthMediumOnly {
+  width: 30%;
+}
+
+/* line 154, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 149, ../sass/Utilities.scss */
+/* line 158, ../sass/Utilities.scss */
 .u-colorGold {
   color: #e4b541;
 }
 
-/* line 152, ../sass/Utilities.scss */
+/* line 161, ../sass/Utilities.scss */
 .u-colorRed {
   background-color: #EB6361;
 }
 
-/* line 155, ../sass/Utilities.scss */
+/* line 164, ../sass/Utilities.scss */
 .u-colorRed:hover {
   box-shadow: 1px 1px 2px 2px #E26A6A;
   cursor: pointer;
 }
 
-/* line 159, ../sass/Utilities.scss */
+/* line 168, ../sass/Utilities.scss */
 .u-colorGreen {
   /*background-color: #64DDBB;*/
   background-color: #02af7e;
 }
 
-/* line 163, ../sass/Utilities.scss */
+/* line 172, ../sass/Utilities.scss */
 .u-colorGreen:hover {
   box-shadow: 1px 1px 2px 2px #36D7B7;
   cursor: pointer;
 }
 
-/* line 167, ../sass/Utilities.scss */
+/* line 176, ../sass/Utilities.scss */
 .u-colorBlue {
   background-color: #0faac3;
 }
 
-/* line 170, ../sass/Utilities.scss */
+/* line 179, ../sass/Utilities.scss */
 .u-colorBlue:hover {
   box-shadow: 1px 1px 2px 2px #6BB9F0;
   cursor: pointer;
 }
 
-/* line 175, ../sass/Utilities.scss */
+/* line 184, ../sass/Utilities.scss */
 .u-colorOrange {
   background-color: #EB9532;
 }
 
-/* line 178, ../sass/Utilities.scss */
+/* line 187, ../sass/Utilities.scss */
 .u-colorOrange:hover {
   box-shadow: 1px 1px 2px 2px #F4B350;
   cursor: pointer;
 }
 
-/* line 183, ../sass/Utilities.scss */
+/* line 192, ../sass/Utilities.scss */
 .u-colorRed1 {
   color: #EB6361 !important;
 }
 
-/* line 186, ../sass/Utilities.scss */
+/* line 195, ../sass/Utilities.scss */
 .u-colorGreen1 {
   color: #02af7e;
 }
 
-/* line 189, ../sass/Utilities.scss */
+/* line 198, ../sass/Utilities.scss */
 .u-colorBlue1 {
   color: #0faac3;
 }
 
-/* line 192, ../sass/Utilities.scss */
+/* line 201, ../sass/Utilities.scss */
 .u-colorOrange1 {
   color: #EB9532;
 }
 
-/* line 196, ../sass/Utilities.scss */
+/* line 205, ../sass/Utilities.scss */
 .u-center {
   text-align: center;
 }
 
-/* line 200, ../sass/Utilities.scss */
+/* line 209, ../sass/Utilities.scss */
 .u-borderWhite {
   border: solid 2px;
 }
 
-/* line 204, ../sass/Utilities.scss */
+/* line 213, ../sass/Utilities.scss */
 .u-fontBold {
   font-weight: bold;
 }
 
-/* line 208, ../sass/Utilities.scss */
+/* line 217, ../sass/Utilities.scss */
 .u-gradientTransparentToBlack {
   background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
+}
+
+/* line 221, ../sass/Utilities.scss */
+.u-displayNone {
+  display: none;
 }
