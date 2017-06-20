@@ -1,0 +1,38 @@
+<div class="ModalContact" id="ModalContact">
+  <div class="ModalContent">
+    <div class="ModalHeader">
+      <span class="ModalTitle">Contato pela plataforma</span>
+      <span class="Close" onclick="closeModal();">&times;</span>
+    </div>
+
+    <form action="/request_contact" method="post" id="ContactForm">
+    <div class="ModalBody">
+      <h3 class="ModalDescription">Escreva sua mensagem no campo abaixo</h3>
+      <div class="ModalInputs">
+        <span class="u-marginBottom">Nome: </span>
+        <input class="u-marginBottom" type="text" name="name" value="" placeholder="Escreva seu nome aqui">
+        <span class="u-marginBottom">Email: </span>
+        <input class="u-marginBottom" type="text" name="email" value="" placeholder="Escreva seu e-mail aqui">
+        <span class="u-marginBottom">Para: </span>
+        <input class="u-marginBottom" type="text" name="institution_name" value="" id="ContactCompany" disabled="true">
+        <input type="hidden" name="institution_id" value="" id="InstitutionId" d="true">
+        <textarea autofocus name="comment" onfocus="this.innerHTML = this.innerHTML;" id="MessageModal"></textarea>
+        <div class="BoxClear">
+          <button class="ButtonClear" type="button" name="button" onclick="deleteMessage()"><i class="material-icons md-1-4 u-marginSmall IconButtonClear">edit</i></button>
+        </div>
+        </div>
+      </div>
+
+    <div class="ModalFooter">
+      <div class="BoxButtonCard">
+        <button type="button" onclick="sendMail()" class="Button ButtonSend u-widthMedium" id="SendEmailButton">
+          enviar
+        </button>
+      </div>
+      <div class="BoxButtonMessage" id="SendEmailMessage">
+      </div>
+    </div>
+  </form>
+</div>
+  </div>
+</div>

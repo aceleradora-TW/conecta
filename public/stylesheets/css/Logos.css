@@ -1,4 +1,4 @@
-/* line 5, ../sass/Logos.scss */
+/* line 6, ../sass/Logos.scss */
 .Logo-wide {
   height: 50%;
   width: 10%;
@@ -7,15 +7,14 @@
   margin: 10px;
   background-image: url("/images/tecnopuc4.png");
 }
-
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 4, ../sass/Logos.scss */
+  /* line 6, ../sass/Logos.scss */
   .Logo-wide {
     justify-content: center;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 4, ../sass/Logos.scss */
+  /* line 6, ../sass/Logos.scss */
   .Logo-wide {
     height: 50%;
     width: 20%;
@@ -26,13 +25,12 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 4, ../sass/Logos.scss */
+  /* line 6, ../sass/Logos.scss */
   .Logo-wide {
     width: 35%;
   }
 }
-/* line 22, ../sass/Logos.scss */
-
+/* line 24, ../sass/Logos.scss */
 .Logo-tall {
   height: 95%;
   width: 3%;
@@ -41,9 +39,8 @@
   margin: 0 5% 0% 2%;
   background-image: url("/images/puc4.png");
 }
-
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 22, ../sass/Logos.scss */
+  /* line 24, ../sass/Logos.scss */
   .Logo-tall {
     height: 95%;
     width: 3%;
@@ -52,7 +49,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 22, ../sass/Logos.scss */
+  /* line 24, ../sass/Logos.scss */
   .Logo-tall {
     width: 5%;
     display: flex;
@@ -62,12 +59,12 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 22, ../sass/Logos.scss */
+  /* line 24, ../sass/Logos.scss */
   .Logo-tall {
     width: 10%;
   }
-
- /* line 21, ../sass/Logos.scss */
+}
+/* line 44, ../sass/Logos.scss */
 .Logo .LogoCollaborators {
   width: 100%;
   min-height: 30%;

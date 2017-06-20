@@ -90,11 +90,12 @@
 @media (max-width: 499px) {
   /* line 37, ../sass/Box.scss */
   .BoxText {
-    font-size: 0.57em;
+    width: 90%;
+    font-size: 0.7em;
   }
 }
 
-/* line 58, ../sass/Box.scss */
+/* line 59, ../sass/Box.scss */
 .BoxSearch {
   display: flex;
   align-items: center;
@@ -105,7 +106,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 64, ../sass/Box.scss */
+/* line 65, ../sass/Box.scss */
 .TitleSearch {
   display: flex;
   align-items: center;
@@ -117,13 +118,14 @@
   text-shadow: 1px 1px #000;
 }
 @media (max-width: 499px) {
-  /* line 64, ../sass/Box.scss */
+  /* line 65, ../sass/Box.scss */
   .TitleSearch {
     text-align: center;
+    margin-top: 3%;
   }
 }
 
-/* line 75, ../sass/Box.scss */
+/* line 77, ../sass/Box.scss */
 .BoxHowItWorks {
   display: flex;
   align-items: center;
@@ -133,20 +135,20 @@
   width: 20%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 75, ../sass/Box.scss */
+  /* line 77, ../sass/Box.scss */
   .BoxHowItWorks {
     height: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 75, ../sass/Box.scss */
+  /* line 77, ../sass/Box.scss */
   .BoxHowItWorks {
     height: 60%;
     width: 80%;
   }
 }
 @media (max-width: 499px) {
-  /* line 75, ../sass/Box.scss */
+  /* line 77, ../sass/Box.scss */
   .BoxHowItWorks {
     display: flex;
     flex-direction: column;
@@ -154,7 +156,7 @@
   }
 }
 
-/* line 90, ../sass/Box.scss */
+/* line 92, ../sass/Box.scss */
 .Icon {
   display: flex;
   align-items: center;
@@ -166,28 +168,28 @@
   border-radius: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 90, ../sass/Box.scss */
+  /* line 92, ../sass/Box.scss */
   .Icon {
     height: 50%;
     width: 50%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 90, ../sass/Box.scss */
+  /* line 92, ../sass/Box.scss */
   .Icon {
     height: 53%;
     width: 60%;
   }
 }
 @media (max-width: 499px) {
-  /* line 90, ../sass/Box.scss */
+  /* line 92, ../sass/Box.scss */
   .Icon {
-    height: 7vh;
+    height: 16vh;
     width: 12vw;
   }
 }
 
-/* line 109, ../sass/Box.scss */
+/* line 111, ../sass/Box.scss */
 .ContentHowItWorks {
   display: flex;
   flex-direction: column;
@@ -197,13 +199,13 @@
   font-weight: lighter;
 }
 @media (max-width: 499px) {
-  /* line 109, ../sass/Box.scss */
+  /* line 111, ../sass/Box.scss */
   .ContentHowItWorks {
     height: 70%;
   }
 }
 
-/* line 119, ../sass/Box.scss */
+/* line 121, ../sass/Box.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -213,7 +215,7 @@
   text-align: center;
 }
 
-/* line 125, ../sass/Box.scss */
+/* line 127, ../sass/Box.scss */
 .CardContentF {
   display: flex;
   align-items: flex-start;
@@ -222,16 +224,16 @@
   width: 98%;
 }
 @media (max-width: 499px) {
-  /* line 125, ../sass/Box.scss */
+  /* line 127, ../sass/Box.scss */
   .CardContentF {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 95%;
+    height: 100%;
   }
 }
 
-/* line 134, ../sass/Box.scss */
+/* line 136, ../sass/Box.scss */
 .Arrow {
   display: flex;
   align-items: center;
@@ -241,7 +243,7 @@
   color: white;
 }
 
-/* line 140, ../sass/Box.scss */
+/* line 142, ../sass/Box.scss */
 .Text {
   height: 55%;
   font-size: 1.2em;
@@ -249,7 +251,7 @@
   text-align: center;
 }
 
-/* line 147, ../sass/Box.scss */
+/* line 149, ../sass/Box.scss */
 .ContentSearch {
   display: flex;
   align-items: center;
@@ -263,13 +265,13 @@
   padding: 0%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 147, ../sass/Box.scss */
+  /* line 149, ../sass/Box.scss */
   .ContentSearch {
     min-height: 20vh;
   }
 }
 
-/* line 159, ../sass/Box.scss */
+/* line 161, ../sass/Box.scss */
 .Tag {
   display: flex;
   align-items: center;
@@ -280,21 +282,21 @@
   cursor: pointer;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 159, ../sass/Box.scss */
+  /* line 161, ../sass/Box.scss */
   .Tag {
     width: 100%;
     margin-bottom: 2%;
   }
 }
 @media (max-width: 499px) {
-  /* line 159, ../sass/Box.scss */
+  /* line 161, ../sass/Box.scss */
   .Tag {
     width: 100%;
     margin-bottom: 3%;
   }
 }
 
-/* line 173, ../sass/Box.scss */
+/* line 175, ../sass/Box.scss */
 .TagTitle {
   display: flex;
   align-items: center;
@@ -306,7 +308,7 @@
   font-family: Lato, sans-serif;
 }
 
-/* line 180, ../sass/Box.scss */
+/* line 182, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -315,7 +317,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 180, ../sass/Box.scss */
+  /* line 182, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -323,7 +325,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 180, ../sass/Box.scss */
+  /* line 182, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     align-items: center;
@@ -332,7 +334,7 @@
   }
 }
 
-/* line 193, ../sass/Box.scss */
+/* line 195, ../sass/Box.scss */
 .BoxTextTitle {
   display: flex;
   align-items: center;
@@ -341,7 +343,7 @@
   width: 85%;
 }
 
-/* line 198, ../sass/Box.scss */
+/* line 200, ../sass/Box.scss */
 .FormSearch {
   display: flex;
   align-items: center;
@@ -350,8 +352,14 @@
   width: 85%;
   align-content: space-between;
 }
+@media (max-width: 499px) {
+  /* line 200, ../sass/Box.scss */
+  .FormSearch {
+    width: 100%;
+  }
+}
 
-/* line 204, ../sass/Box.scss */
+/* line 209, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
@@ -359,16 +367,30 @@
   width: 75%;
 }
 @media (max-width: 499px) {
-  /* line 204, ../sass/Box.scss */
+  /* line 209, ../sass/Box.scss */
   .InputGroup {
     height: 7vh;
+    width: 95%;
     display: flex;
     flex-direction: row;
   }
 }
 
-/* line 213, ../sass/Box.scss */
+/* line 218, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
+}
+
+/* line 222, ../sass/Box.scss */
+.BoxClear {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* line 227, ../sass/Box.scss */
+.BoxTextArea {
+  width: 100%;
 }
