@@ -23,9 +23,9 @@
     box-sizing: border-box;
   }
   span {
-    justify-content: flex-start;
+    @include flex($justify: flex-start);
+    @include size($width: 51%);
     text-align: left;
-    width: 51%;
   }
   textarea {
     min-height: 20vh;

@@ -74,8 +74,14 @@
 	margin-bottom: 1%;
 }
 
+<<<<<<< HEAD
 .u-marginBottomMedium {
 	margin-bottom: 5%;
+=======
+.u-marginSidesAndBottom {
+	margin: 0 2%;
+	margin-bottom: 2%;
+>>>>>>> ec6774fa7878d8f4280c58ef6c327d31dd323eb6
 }
 
 .u-lineHeightMedium{
@@ -155,6 +161,10 @@
 	};
 }
 
+.u-widthMediumOnly {
+	width: 30%;
+}
+
 .u-widthLarge {
 	width: 90%;
 }
@@ -172,4 +182,8 @@
 
 .u-gradientTransparentToBlack {
 	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+}
+
+.u-displayNone {
+	display: none;
 }

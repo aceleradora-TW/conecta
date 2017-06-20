@@ -1,17 +1,42 @@
-<section class="SectionSearch u-fontFamilyLato">
-  <h2>Listagem das Instiruições Cadastradas</h2>
+<section class="SectionList u-fontFamilyLato">
+  <h2>Listagem das Instituições Cadastradas</h2>
   <div class="ContentCardList">
-    <% @companies.each do |company| %>
-
-    <div class="CardList">
-      <h2> <%= company.name %> </h2>
+    <div class="InstitutionList u-widthLarge">
+      <div class="InstitutionListHeader">
+        <div class="TagTitle u-widthMediumOnly u-marginSidesAndBottom u-colorBackgroundRed">
+          <div class="BoxTextTitle">
+            <i class="material-icons u-fontSizeMedium">list</i>
+            <span class="u-fontSizeMedium u-marginSmall">Todas Instituições</span>
+          </div>
+        </div>
+        <div class="TagTitle u-widthMediumOnly u-marginSidesAndBottom u-colorBackgroundGreen">
+          <div class="BoxTextTitle">
+            <i class="material-icons u-fontSizeMedium">work</i>
+            <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
+          </div>
+        </div>
+        <div class="TagTitle u-widthMediumOnly u-marginSidesAndBottom u-colorBackgroundOrange">
+          <div class="BoxTextTitle">
+            <i class="material-icons u-fontSizeMedium">school</i>
+            <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
+          </div>
+        </div>
+      </div>
+      <div class="u-widthLarge" id="companies">
+        <div class="LeftItem"><h1>Empresas</h1></div>
+        <% @companies.each do |company| %>
+        <div class="LeftItem"><%= company.name %></div>
+        <div class="RightItem"><!-- TODO: Opções editar/remover/... --></div>
+        <%end%>
+      </div>
+      <div class="u-widthLarge " id="research-centers">
+        <div class="LeftItem"><h1>Estruturas de Pesquisa</h1></div>
+        <% @research_centers.each do |research_center| %>
+        <div class="LeftItem"><%= research_center.name %></div>
+        <div class="RightItem"><!-- TODO: Opções editar/remover/... --></div>
+        <%end%>
+      </div>
     </div>
-    <%end%>
-    <% @research_centers.each do |research_center| %>
-
-    <div class="CardList">
-      <h2> <%= research_center.name %> </h2>
-    </div>
-    <%end%>
   </div>
 </section>
+<script src="js/institution_list_toggle.js"></script>

@@ -26,9 +26,10 @@
 }
 /* line 25, ../sass/Input.scss */
 .ModalInputs span {
+  display: flex;
   justify-content: flex-start;
-  text-align: left;
   width: 51%;
+  text-align: left;
 }
 /* line 30, ../sass/Input.scss */
 .ModalInputs textarea {

@@ -1,227 +1,56 @@
-/* line 5, ../sass/Utilities.scss */
-.u-fontSizeXSmall {
-  font-size: 0.8em;
-}
+/*
+Error: Invalid CSS after "...c327d31dd323eb6": expected "{", was "}"
+        on line 85 of /code/public/stylesheets/sass/Utilities.scss
 
-/* line 9, ../sass/Utilities.scss */
-.u-fontSizeSmall {
-  font-size: 1em;
-}
+80: =======
+81: .u-marginSidesAndBottom {
+82: 	margin: 0 2%;
+83: 	margin-bottom: 2%;
+84: >>>>>>> ec6774fa7878d8f4280c58ef6c327d31dd323eb6
+85: }
+86: 
+87: .u-lineHeightMedium{
+88: 	line-height: 1.7em;
+89: }
+90: 
 
-/* line 13, ../sass/Utilities.scss */
-.u-fontSizeMediumSlogan {
-  font-size: 1.3em;
-}
-
-/* line 17, ../sass/Utilities.scss */
-.u-fontSizeMedium {
-  font-size: 1.3em;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 17, ../sass/Utilities.scss */
-  .u-fontSizeMedium {
-    font-size: 1em;
-  }
-}
-
-/* line 24, ../sass/Utilities.scss */
-.u-fontSizeLarge {
-  font-size: 1.7em;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 24, ../sass/Utilities.scss */
-  .u-fontSizeLarge {
-    font-size: 1.3em;
-  }
-}
-
-/* line 31, ../sass/Utilities.scss */
-.u-fontSizeXLarge {
-  font-size: 5em;
-}
-
-/* line 35, ../sass/Utilities.scss */
-.u-fontFamilyLato {
-  font-family: Lato, sans-serif;
-}
-
-/* line 39, ../sass/Utilities.scss */
-.u-fontWhite {
-  color: white;
-}
-
-/* line 43, ../sass/Utilities.scss */
-.u-marginSmall {
-  margin: 6px;
-}
-
-/* line 47, ../sass/Utilities.scss */
-.u-marginLeft {
-  margin-left: 10%;
-}
-
-/* line 50, ../sass/Utilities.scss */
-.u-marginLeftSmall {
-  margin-left: 5%;
-}
-
-/* line 54, ../sass/Utilities.scss */
-.u-marginLeftSmall {
-  margin-left: 6%;
-}
-
-/* line 58, ../sass/Utilities.scss */
-.u-marginLeftXSmall {
-  margin-left: 2%;
-}
-
-/* line 62, ../sass/Utilities.scss */
-.u-marginRight {
-  margin-right: 0.1%;
-}
-
-/* line 66, ../sass/Utilities.scss */
-.u-marginTop {
-  margin-top: 1%;
-}
-
-/* line 69, ../sass/Utilities.scss */
-.u-marginTopLarge {
-  margin-top: 3%;
-}
-
-/* line 73, ../sass/Utilities.scss */
-.u-marginBottom {
-  margin-bottom: 1%;
-}
-
-/* line 77, ../sass/Utilities.scss */
-.u-marginBottomMedium {
-  margin-bottom: 5%;
-}
-
-/* line 81, ../sass/Utilities.scss */
-.u-lineHeightMedium {
-  line-height: 1.7em;
-}
-
-/* line 85, ../sass/Utilities.scss */
-.u-colorLightBlue {
-  color: #0faac3;
-}
-
-/* line 89, ../sass/Utilities.scss */
-.u-colorLightRed {
-  color: #eb6361;
-}
-
-/* line 93, ../sass/Utilities.scss */
-.u-colorGreen {
-  color: #02af7e;
-}
-
-/* line 97, ../sass/Utilities.scss */
-.u-colorOrange {
-  color: #eb9532;
-}
-
-/* line 101, ../sass/Utilities.scss */
-.u-colorGold {
-  color: #e4b541;
-}
-
-/* line 105, ../sass/Utilities.scss */
-.u-colorBackgroundWhite {
-  background-color: white;
-}
-
-/* line 109, ../sass/Utilities.scss */
-.u-colorBackgroundOrange {
-  background-color: #eb9532;
-}
-/* line 111, ../sass/Utilities.scss */
-.u-colorBackgroundOrange:hover {
-  box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
-  cursor: pointer;
-}
-
-/* line 117, ../sass/Utilities.scss */
-.u-colorBackgroundGreen {
-  background-color: #02af7e;
-}
-/* line 119, ../sass/Utilities.scss */
-.u-colorBackgroundGreen:hover {
-  box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
-  cursor: pointer;
-}
-
-/* line 125, ../sass/Utilities.scss */
-.u-colorBackgroundRed {
-  background-color: #eb6361;
-}
-/* line 127, ../sass/Utilities.scss */
-.u-colorBackgroundRed:hover {
-  box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
-  cursor: pointer;
-}
-
-/* line 133, ../sass/Utilities.scss */
-.u-widthNone {
-  width: 0%;
-}
-
-/* line 137, ../sass/Utilities.scss */
-.u-widthMedium {
-  width: 30%;
-  margin: 5%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 137, ../sass/Utilities.scss */
-  .u-widthMedium {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    height: 2.8em;
-    line-height: 0.8em;
-    font-size: 0.8rem;
-    margin: 2em;
-  }
-}
-@media (max-width: 499px) {
-  /* line 137, ../sass/Utilities.scss */
-  .u-widthMedium {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3em;
-    margin: 1em;
-    line-height: 1.3em;
-    font-size: 0.5em;
-  }
-}
-
-/* line 158, ../sass/Utilities.scss */
-.u-widthLarge {
-  width: 90%;
-}
-
-/* line 161, ../sass/Utilities.scss */
-.u-center {
-  text-align: center;
-}
-
-/* line 165, ../sass/Utilities.scss */
-.u-borderWhite {
-  border: solid 2px;
-}
-
-/* line 169, ../sass/Utilities.scss */
-.u-fontBold {
-  font-weight: bold;
-}
-
-/* line 173, ../sass/Utilities.scss */
-.u-gradientTransparentToBlack {
-  background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
-}
+Backtrace:
+/code/public/stylesheets/sass/Utilities.scss:85
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...c327d31dd323eb6\": expected \"{\", was \"}\"\A         on line 85 of /code/public/stylesheets/sass/Utilities.scss\A \A 80: =======\A 81: .u-marginSidesAndBottom {\A 82: 	margin: 0 2%;\A 83: 	margin-bottom: 2%;\A 84: >>>>>>> ec6774fa7878d8f4280c58ef6c327d31dd323eb6\A 85: }\A 86: \A 87: .u-lineHeightMedium{\A 88: 	line-height: 1.7em;\A 89: }\A 90: "; }
