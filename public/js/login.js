@@ -1,3 +1,4 @@
+const timeBeforeReloadPage = 1000;
 function login(){
   $("#LoginMessage").removeClass("u-colorRed");
   $("#LoginMessage").removeClass("u-colorGreen");
@@ -13,6 +14,7 @@ function login(){
       if(response.indexOf("[erro]") < 0){
         $("#LoginMessage").addClass("u-colorGreen");
         $("#LoginMessage").html(response);
+        location.reload();
       }
       else{
         $("#LoginMessage").addClass("u-colorLightRed");
