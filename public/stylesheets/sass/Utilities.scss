@@ -43,11 +43,14 @@
 .u-marginLeft {
 	margin-left: 10%;
 }
+.u-marginLeftSmall {
+	margin-left: 5%;
+}
 
 .u-marginLeftSmall {
 	margin-left: 6%;
 
-} 
+}
 .u-marginLeftXSmall {
 	margin-left: 2%;
 }
@@ -66,6 +69,11 @@
 
 .u-marginBottom {
 	margin-bottom: 1%;
+}
+
+.u-marginSidesAndBottom {
+	margin: 0 2%;
+	margin-bottom: 2%;
 }
 
 .u-lineHeightMedium{
@@ -145,6 +153,10 @@
 	};
 }
 
+.u-widthMediumOnly {
+	width: 30%;
+}
+
 .u-widthLarge {
 	width: 90%;
 }
@@ -163,4 +175,8 @@
 
 .u-gradientTransparentToBlack {
 	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+}
+
+.u-displayNone {
+	display: none;
 }

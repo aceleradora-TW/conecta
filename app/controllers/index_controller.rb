@@ -28,6 +28,16 @@ class IndexController < Controller
       erb :search_all
     end
   end
+
+
+  get "/list_all" do
+    @companies = Company.all
+    @research_centers = ResearchCenter.all
+    erb :list_all
+  end
+
+
+
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
@@ -48,4 +58,5 @@ class IndexController < Controller
     mailer.send_now
     "Email Enviado com Sucesso!"
   end
+
 end
