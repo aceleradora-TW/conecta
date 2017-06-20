@@ -31,8 +31,8 @@ class AdminController < Controller
 
   get "/admin/list_instituitions" do
     if @user_info.is_admin
-      @companies = Company.all
-      @research_centers = ResearchCenter.all
+      @companies = Company.all(order: [:name.asc])
+      @research_centers = ResearchCenter.all(order: [:name.asc])
       erb :list_all, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
