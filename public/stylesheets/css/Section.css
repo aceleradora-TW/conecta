@@ -1,7 +1,7 @@
 /* line 5, ../sass/Section.scss */
 .Section {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   background-image: url("/images/background-main.jpg");
@@ -98,7 +98,7 @@
 /* line 69, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
-  min-height: 39vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -35,7 +35,7 @@
 
 	@include tablet {
 		@include size($width: 90%, $min-height: 50px);
-		@include flex($justify: space-around);
+		@include flex($justify: flex-start);
 	}
 
 	@include mobile {
@@ -52,7 +52,7 @@
 .Hamburger {
 	display: none;
 	@include tablet {
-		@include size($width: 5%);
+		@include size($width: 36%);
 		display: block;
 	}
 
@@ -68,18 +68,24 @@
 }
 
 .LogoImage {
+	width: 37%;
+	height: 50%;
+	background-image: url("/images/logo.png");
+	background-repeat: no-repeat;
+	border-radius: 0;
+	background-size: 100%;
 	@include tablet {
-		@include size($width: 95%);
+		@include size($width: 45%, $height: 48%);
 		@include flex($justify: center);
 	}
 
 	@include mobile {
-		@include size($width: 95%);
+		@include size($width: 55%);
 		@include flex($justify: center);
 	}
 
 	@include smallMobile {
-		@include size($width: 95%);
+		@include size($width: 67%);
 		@include flex($justify: center);
 	}
 }
@@ -92,7 +98,7 @@
 	color: $white-color;
 
 	@include tablet {
-		@include size($width: 90%, $min-height: 20vh);
+		@include size($width: 90%, $min-height: 20%);
 		display: none;
 		justify-content: center;
 		flex-direction: column;
@@ -100,7 +106,7 @@
 	}
 
 	@include mobile {
-		@include size($width: 90%, $min-height: 20vh);
+		@include size($width: 90%, $min-height: 20%);
 		display: none;
 		flex-direction: column;
 		justify-content: center;
@@ -108,12 +114,30 @@
 	}
 
 	@include smallMobile {
-		@include size($width: 100%, $min-height: 20vh);
+		@include size($width: 100%, $min-height: 20%);
 		display: none;
 		flex-direction: column;
 		justify-content: center;
 		font-size: 1.5em;
 		padding: 0;
+	}
+	a {
+		text-decoration: none;
+		font-size: 1.1em;
+		color: $white-font-color;
+		text-align: center;
+
+		@include tablet {
+			font-size: 0.9em;
+		}
+
+		@include smallMobile {
+			font-size: 0.7em;
+		}
+		&:hover{
+			text-decoration: none;
+			color: $white-font-color;
+		}
 	}
 }
 
@@ -141,38 +165,15 @@
 		border-top: 1px solid rgba(0,0,0,0.4);
 		font-size: 1em;
 	}
-}
-
-.Link:hover {
-	background-color: rgba(0,0,0,0.7);
-	text-decoration: none;
-	color: rgba(52, 73, 94,1);
-	font-size: 1.1em;
-}
-
-.Link:hover a {
-	background-color: rgba(0,0,0,0.7);
-	color: $white-font-color;
-	font-size: 1.1em;
-}
-
-.NavLinks a {
-	text-decoration: none;
-	font-size: 1.1em;
-	color: $white-font-color;
-	text-align: center;
-
-	@include tablet {
-		font-size: 0.9em;
+	&:hover {
+		background-color: rgba(0,0,0,0.7);
+		text-decoration: none;
+		color: rgba(52, 73, 94,1);
+		font-size: 1.1em;
 	}
-
-	@include smallMobile {
-		font-size: 0.7em;
+	&:hover a {
+		background-color: rgba(0,0,0,0.7);
+		color: $white-font-color;
+		font-size: 1.1em;
 	}
-}
-
-
-.NavLinks a:hover{
-	text-decoration: none;
-	color: $white-font-color;
 }

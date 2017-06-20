@@ -13,8 +13,7 @@
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
-    width: 95%;
-    min-height: 55vh;
+    @include size($width: 95%, $min-height: 55vh);
     font-size: 1.5em;
   };
   @include mobile {
@@ -51,8 +50,8 @@
 }
 .CardNav {
 
-@include flex($direction: row, $justify: flex-start);
-@include size($width: 100%, $min-height: 20%);
+  @include flex($direction: row, $justify: flex-start);
+  @include size($width: 100%, $min-height: 20%);
   display: flex;
   @include mobile{
     width: 100%;
@@ -353,8 +352,8 @@
 }
 
 .BoxButtonCard {
-@include flex($align: center, $justify: flex-end);
-@include size($height: 50%, $width: 60%);
+  @include flex($align: center, $justify: flex-end);
+  @include size($height: 50%, $width: 60%);
   @include tablet{
     align-items: center;
     justify-content: space-around;

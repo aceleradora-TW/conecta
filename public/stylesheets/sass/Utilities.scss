@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
+@import "_mixins.scss";
 
 
 .u-fontSizeSmall {
@@ -115,21 +116,17 @@
 	width: 30%;
 	margin: 5%;
 	@include tablet{
-		height: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 4px;
+		@include size($height: 70%);
+		@include flex($justify: center,$align: center);
+		margin: 1%;
 		font-size: 1em;
-	};
+	}
 	@include smallMobile{
-		height: 35px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 4px;
+		@include flex($justify: center, $align: center);
+		@include size($height: 35%);
+		margin: 1%;
 		font-size: 0.5em;
-	};
+	}
 }
 
 .u-widthLarge {
