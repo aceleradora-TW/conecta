@@ -33,7 +33,7 @@ class AdminController < Controller
     if @user_info.is_admin
       @companies = Company.all(order: [:name.asc])
       @research_centers = ResearchCenter.all(order: [:name.asc])
-      erb :list_all, :layout => :layout_admin
+      erb :list_institutions, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
     end
