@@ -19,42 +19,42 @@
   text-align: center;
   letter-spacing: .5px;
   @include smallMobile{
-  @include size($width: 1%);  
+    @include size($width: 1%);
   }
   &:hover{
-  	box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
-  	cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
+    cursor: pointer;
   }
   a {
     @include flex($align: center, $justify: center);
-  	text-decoration: none;
-  	color: $white-color;
-
-  @include tablet {
-    font-size: 0.8rem;
-  }
-
-  @include mobile {
-    @include flex($justify: center);
-    @include size($width: 0%);
-    font-size: 0.75rem;
-    span{display:none}
-  }
-  @include smallMobile {
-    @include flex($justify: center);
-    @include size($width: 0%);
-    font-size: 0.75rem;
-    span{display:none}
-}
-  &.ButtonSend {
-    @include size($height: 4.6vh);
-    &:disabled{
-      background-color: rgba(128, 128, 128, 1);
+    text-decoration: none;
+    color: $white-color;
+    @include tablet {
+      font-size: 0.8rem;
     }
-}
-}
-}
 
+    @include mobile {
+      @include flex($justify: center);
+      @include size($width: 0%);
+      font-size: 0.75rem;
+      span{display:none}
+    }
+    @include smallMobile {
+      @include flex($justify: center);
+      @include size($width: 0%);
+      font-size: 0.75rem;
+      span{display:none}
+    }
+  }
+
+&.ButtonSend {
+  @include size($height: 4.6vh);
+  &:disabled{
+    background-color: rgba(128, 128, 128, 1);
+  }
+  }
+
+}
 .ButtonFilter{
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;

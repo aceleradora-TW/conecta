@@ -2,6 +2,7 @@
 @import "_mixins.scss";
 @import "MediaQuery.scss";
 
+
 .Section {
   @include size($width: 100%, $min-height: 85vh);
   @include flex($direction: column);
