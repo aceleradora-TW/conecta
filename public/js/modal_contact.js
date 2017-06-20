@@ -33,6 +33,15 @@ function showMessage(msg){
   message.focus();
 }
 
+function validateForm() {
+  var inputName = document.querySelector('#contactName');
+  var inputEmail = document.querySelector('#contactEmail');
+  
+  if(inputName.value != "" && inputEmail.value != ""){
+    sendMail();
+  }
+}
+
 function sendMail(){
   $("#SendEmailMessage").removeClass("u-colorRed");
   $("#SendEmailMessage").removeClass("u-colorGreen");
@@ -56,5 +65,16 @@ function sendMail(){
       }
     }
   });
+  $("#SendEmailButton").removeAttr("disabled");
   event.preventDefault();
+}
+
+function InvalidMsg(textbox) {
+  if (textbox.value == '') {
+    textbox.setCustomValidity('Campo obrigatório');
+  }
+  else {
+    textbox.setCustomValidity('');
+  }
+  return true;
 }

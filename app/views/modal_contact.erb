@@ -10,9 +10,9 @@
       <h3 class="ModalDescription">Escreva sua mensagem no campo abaixo</h3>
       <div class="ModalInputs">
         <span class="u-marginBottom">Nome: </span>
-        <input class="u-marginBottom" type="text" name="name" value="" placeholder="Escreva seu nome aqui">
+        <input class="u-marginBottom" id="contactName" type="text" name="name" value="" placeholder="Escreva seu nome aqui" required oninvalid="InvalidMsg(this);"  oninput="InvalidMsg(this);">
         <span class="u-marginBottom">Email: </span>
-        <input class="u-marginBottom" type="text" name="email" value="" placeholder="Escreva seu e-mail aqui">
+        <input class="u-marginBottom" id="contactEmail" type="text" name="email" value="" placeholder="Escreva seu e-mail aqui" required oninvalid="InvalidMsg(this);"  oninput="InvalidMsg(this);">
         <span class="u-marginBottom">Para: </span>
         <input class="u-marginBottom" type="text" name="institution_name" value="" id="ContactCompany" disabled="true">
         <input type="hidden" name="institution_id" value="" id="InstitutionId" d="true">
@@ -25,7 +25,7 @@
 
     <div class="ModalFooter">
       <div class="BoxButtonCard">
-        <button type="button" onclick="sendMail()" class="Button ButtonSend u-widthMedium" id="SendEmailButton">
+        <button type="submit" onclick="validateForm()" class="Button ButtonSend u-widthMedium" id="SendEmailButton">
           enviar
         </button>
       </div>
