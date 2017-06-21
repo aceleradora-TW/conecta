@@ -1,21 +1,30 @@
 <% @institution.each do |rc_searched| %>
 <div class="Card">
+  <% rating = 0 %>
   <div class="CardResearchNav">
     <h1><%= rc_searched.name %></h1>
   </div>
-  <div class="ResearchCompetences">
-    <div class="ItemTheme">
-      <b>Area de Pesquisa:</b>
-      <% rc_searched.research_areas.each do |area| %>
-      <%= area.name %>
+  <div class="CompanyCompetences">
+    <ul class="CompetenceList">
+      <% rc_searched.featured_competences.each_with_index do |rc_searched_competence,index| %>
+        <% rating = rc_searched_competence.competence_value_calculated_integer  %>
+      <li class="ItemsFeatured ">
+        <div class="ItemText"><%= rc_searched_competence.competence.name %></div>
+        <div class="ItemStar">
+          <% if rating > 0 %>
+        <% for n_of_stars in (1..5) %>
+          <i class="material-icons u-colorGold"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
+        <% end %>
+        <% end %>
+        </div>
+      </li>
       <% end %>
+    </ul>
+    <% if rating > 0 %>
+    <div class="RatingExplanation">
+      <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
     </div>
-    <div class="ItemTheme">
-      <b>Eixo tematico:</b>
-      <% rc_searched.research_fields.each do |field| %>
-      <%= field.name %>
-      <% end %>
-    </div>
+    <% end %>
   </div>
   <div class="FooterCardSecondary">
     <% if(rc_searched.contact) %>
