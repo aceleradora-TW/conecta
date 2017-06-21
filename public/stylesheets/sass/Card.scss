@@ -540,6 +540,18 @@
   @include flex($direction: row, $justify: center);
 }
 
+.RegisterListHeader {
+  @include size($width: 94%);
+  @include flex($align:center, $direction: row);
+  border-radius: 5px;
+}
+
+.RegisterListItem {
+  @include size($width: 50%);
+  @include flex($align:center, $direction: column, $justify: space-around);
+
+}
+
 .InstitutionList .Title {
   background: red;
   @include size($width: 20%, $height: 5vh);

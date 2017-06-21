@@ -115,6 +115,13 @@
 	color: $white-font-color;
 	font-family: $font-style;
 }
+
+.RegisterTitle{
+  @include flex($align: center, $direction: row, $justify: center);
+  @include size($height: 100%, $width: 100%);
+	color: $white-font-color;
+	font-family: $font-style;
+}
 .NavSearch{
   @include flex($direction: row, $justify: space-between);
   @include size($height: 60%, $width: 60%);
