@@ -1,17 +1,16 @@
-/* line 4, ../sass/Footer.scss */
+/* line 5, ../sass/Footer.scss */
 footer {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 6vh;
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   background-color: black;
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 4, ../sass/Footer.scss */
+  /* line 5, ../sass/Footer.scss */
   footer {
     font-size: 0.75em;
   }

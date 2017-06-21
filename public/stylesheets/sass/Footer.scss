@@ -1,13 +1,14 @@
 @import "_mixins.scss";
 @import "MediaQuery";
+@import "_variables";
 
 footer{
 	@include flex($align: center, $direction: column, $justify: center);
-	@include size($width: 100%, $height: 6vh);
-	font-family: 'Lato', sans-serif;
-	background-color: rgba(0,0,0,1);
+	@include size($width: 100%);
+	font-family: $font-style;
+	background-color: $black-font-color;
 	color: white;
-	@include smallMobile{
+	@include smallMobile {
 		font-size: 0.75em;
 	}
 }
