@@ -7,3 +7,12 @@ footer{
 	background-color: rgba(0,0,0,1);
 	color: white;
 }
+
+.RegisterFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+}

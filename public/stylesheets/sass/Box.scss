@@ -151,3 +151,16 @@
 .BoxTextArea {
   @include size($width: 100%);
 }
+
+.BoxRegisterBody{
+  // usar mixin aqui
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75%;
+      width: 80%;
+}
+
+.BoxSteps{
+  @include flex($align: center, $direction: row, $justify: center);
+}
