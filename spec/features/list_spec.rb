@@ -28,12 +28,12 @@ RSpec.describe IndexController do
 
       skip "Deve mostrar Botao de cadastro de empresa" do
         visit "/list_all"
-        expect(page).to have_css ("div", class: 'RegisterTitle')
+        expect(page).to have_css("div", class: 'RegisterTitle')
       end
 
       skip "Deve mostrar Botao de cadastro de estrutura de pesquisa" do
         visit "/list_all"
-        expect(page).to have_css ("div", class: 'RegisterTitle')
+        expect(page).to have_css("div", class: 'RegisterTitle')
       end
 
     end
