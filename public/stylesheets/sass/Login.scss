@@ -1,0 +1,30 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "MediaQuery.scss";
+
+.LoginHeader {
+  @include flex($align: center, $justify: center);
+  @include size($height: 15%, $width: 100%);
+  @include tablet{
+    font-size: 1.3em;
+  }
+  @include mobile{
+    font-size: 1.1em;
+  }
+  @include smallMobile{
+    font-size: 1em;
+  }
+}
+
+.LoginBody {
+  @include flex($direction: column, $justify: center);
+  @include size($height: 50%, $width: 80%);
+}
+
+.LoginFooter {
+  @include flex($align: center, $direction: column, $justify: space-around);
+  @include size($height: 40%, $width: 100%);
+  & a {
+    color: $black-font-color;
+  }
+}

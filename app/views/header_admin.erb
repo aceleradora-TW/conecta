@@ -1,0 +1,14 @@
+<nav class="Navbar">
+  <a href="/" class="NavLogo">
+    <img src="/images/logo.png" alt="">
+  </a>
+  <ul class="NavLinks">
+    <%if @user_info.is_logged_in %>
+      <i class="material-icons u-colorBlue">account_circle</i>
+      <div class="u-marginLeftXSmall"> <%= @user_info.name %> </div>
+      <a class="Link" href="/session/logout"><li>Deslogar</li></a>
+    <% elsif request.path != "/admin" %>
+    <a class="Link" href="/admin"><li>Login</li></a>
+    <%end %>
+  </ul>
+</nav>

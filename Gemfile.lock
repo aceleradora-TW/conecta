@@ -206,6 +206,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionmailer
+  bcrypt
   capybara
   compass
   coveralls

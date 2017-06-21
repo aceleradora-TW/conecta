@@ -71,8 +71,6 @@
   justify-content: space-around;
   padding: 0;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 47, ../sass/Section.scss */
@@ -99,7 +97,7 @@
   }
 }
 
-/* line 71, ../sass/Section.scss */
+/* line 69, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -110,7 +108,18 @@
   padding: 0;
 }
 
-/* line 77, ../sass/Section.scss */
+/* line 75, ../sass/Section.scss */
+.SectionList {
+  width: 100%;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+/* line 81, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

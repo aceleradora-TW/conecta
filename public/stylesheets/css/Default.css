@@ -1,72 +1,44 @@
-/* line 3, ../sass/Default.scss */
-body {
-  margin: 0;
-  padding: 0;
-}
-@media (max-width: 499px) {
-  /* line 3, ../sass/Default.scss */
-  body {
-    padding: 0;
-    margin: 0;
-  }
-}
+/*
+Error: Invalid CSS after "...ediaQuery.scss"": expected "{", was ";"
+        on line 2 of /code/public/stylesheets/sass/Default.scss
 
-/* line 11, ../sass/Default.scss */
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 35px;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
+1: <<<<<<< HEAD
+2: @import "MediaQuery.scss";
+3: =======
+4: @import "MediaQuery";
+5: >>>>>>> ed257bb3e3b1cb1687e30cc3929952c976ebe84d
+6: 
+7: body{
 
-/* line 32, ../sass/Default.scss */
-.material-icons.md-3 {
-  font-size: 3em;
-}
-
-/* line 35, ../sass/Default.scss */
-.material-icons.md-hamburger {
-  font-size: 3em;
-}
-@media (max-width: 499px) {
-  /* line 35, ../sass/Default.scss */
-  .material-icons.md-hamburger {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 41, ../sass/Default.scss */
-  .material-icons.md-35px {
-    font-size: 35px;
-  }
-}
-@media (max-width: 499px) {
-  /* line 41, ../sass/Default.scss */
-  .material-icons.md-35px {
-    font-size: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 41, ../sass/Default.scss */
-  .material-icons.md-35px {
-    font-size: 2.3em;
-  }
-}
-
-/* line 53, ../sass/Default.scss */
-.material-icons.md-1-4 {
-  font-size: 1.4em;
-}
+Backtrace:
+/code/public/stylesheets/sass/Default.scss:2
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ediaQuery.scss\"\": expected \"{\", was \";\"\A         on line 2 of /code/public/stylesheets/sass/Default.scss\A \A 1: <<<<<<< HEAD\A 2: @import \"MediaQuery.scss\";\A 3: =======\A 4: @import \"MediaQuery\";\A 5: >>>>>>> ed257bb3e3b1cb1687e30cc3929952c976ebe84d\A 6: \A 7: body{"; }

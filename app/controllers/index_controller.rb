@@ -1,11 +1,10 @@
- # -*- encoding : utf-8 -*-
+# -*- encoding : utf-8 -*-
 require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
 require_relative "../services/router_service"
 
 class IndexController < Controller
-
   def initialize
     super
     @router_service = RouterService.new
@@ -19,6 +18,8 @@ class IndexController < Controller
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
+    @search_description = "Exibindo #{@search_type}s para '#{@value}'"
+
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
@@ -26,6 +27,7 @@ class IndexController < Controller
       erb :search_all
     end
   end
+
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
@@ -45,5 +47,6 @@ class IndexController < Controller
 
     mailer.send_now
     "Email Enviado com Sucesso!"
+
   end
 end

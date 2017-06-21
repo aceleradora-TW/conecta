@@ -1,34 +1,25 @@
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
+
+
 
 .Button{
   // @include flex($align: center, $justify: center);
   @include flex($justify: center);
   @include size($height: 100%);
   background-color: $blue-color;
-  line-height: 36px;
+  line-height: 2em;
   padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 0.9em;
   outline: 0;
   text-decoration: none;
   color: $white-color;
   text-align: center;
   letter-spacing: .5px;
-
-}
-
-.Button:hover{
-  box-shadow: 1px 1px 1px 1px #6BB9F0;
-  cursor: pointer;
-}
-.Button a {
-  @include flex($align: center, $justify: center);
-  text-decoration: none;
-  color: white;
 
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
@@ -48,7 +39,6 @@
       background-color: rgba(128, 128, 128, 1);
     }
   }
-
 }
 
 .ButtonFilter{
