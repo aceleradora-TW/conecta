@@ -211,10 +211,10 @@
   }
   @include tablet{
     width: 100%;
-  }
+  };
   @include mobile{
     width: 100%;
-  }
+  };
   @include smallMobile{
     width: 100%;
   }
@@ -292,7 +292,6 @@
 .ItemStar{
   @include flex($justify: flex-end);
   @include size($height: 100%);
-
   @include tablet{
     width: 32%;
   }
@@ -393,7 +392,7 @@
     justify-content: center;
     height: 30%;
     font-size: 12px;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -402,8 +401,8 @@
   @include size($height: 50%, $width: 60%);
 }
 .BoxButtonMessage {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
+  @include flex($align: center, $justify: flex-end);
+  @include size($height: 50%, $width: 60%);
   @include tablet{
     align-items: center;
     justify-content: space-around;
@@ -430,6 +429,27 @@
 .BoxButtonMessage {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
+  @include tablet{
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+  }
+  @include mobile{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+  }
+  @include smallMobile{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+  }
 }
 
 .CompanyCompetences{
@@ -512,20 +532,20 @@
   }
 }
 
-  .FooterCardSecondaryItem {
-    @include size($width: 45%);
-    @include tablet{
-      @include size($width: 100%);
-      @include flex($align: center, $justify: center);
-    }
-    @include mobile{
-      font-size: 13px;
-    }
-    @include smallMobile{
-      font-size: 13px;
-      flex-wrap: wrap;
-    }
+.FooterCardSecondaryItem {
+  @include size($width: 45%);
+  @include tablet{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
+  @include mobile{
+    font-size: 13px;
+  }
+  @include smallMobile{
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+}
 
 .InstitutionList {
   @include flex($direction: row, $justify: flex-start);

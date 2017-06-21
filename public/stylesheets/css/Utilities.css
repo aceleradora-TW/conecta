@@ -1,18 +1,19 @@
 /*
 Error: Invalid CSS after "...ediaQuery.scss"": expected "{", was ";"
-        on line 3 of /code/public/stylesheets/sass/Utilities.scss
+        on line 4 of /code/public/stylesheets/sass/Utilities.scss
 
 1: @import "_variables.scss";
 2: <<<<<<< HEAD
-3: @import "MediaQuery.scss";
-4: =======
-5: @import "MediaQuery";
-6: @import "_mixins.scss";
-7: 
-8: .u-fontSizeXSmall {
+3: <<<<<<< HEAD
+4: @import "MediaQuery.scss";
+5: =======
+6: =======
+7: >>>>>>> fe425c8ec68deb20222ba0bba968a41b1bc1acab
+8: @import "MediaQuery";
+9: @import "_mixins.scss";
 
 Backtrace:
-/code/public/stylesheets/sass/Utilities.scss:3
+/code/public/stylesheets/sass/Utilities.scss:4
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -42,4 +43,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ediaQuery.scss\"\": expected \"{\", was \";\"\A         on line 3 of /code/public/stylesheets/sass/Utilities.scss\A \A 1: @import \"_variables.scss\";\A 2: <<<<<<< HEAD\A 3: @import \"MediaQuery.scss\";\A 4: =======\A 5: @import \"MediaQuery\";\A 6: @import \"_mixins.scss\";\A 7: \A 8: .u-fontSizeXSmall {"; }
+  content: "Error: Invalid CSS after \"...ediaQuery.scss\"\": expected \"{\", was \";\"\A         on line 4 of /code/public/stylesheets/sass/Utilities.scss\A \A 1: @import \"_variables.scss\";\A 2: <<<<<<< HEAD\A 3: <<<<<<< HEAD\A 4: @import \"MediaQuery.scss\";\A 5: =======\A 6: =======\A 7: >>>>>>> fe425c8ec68deb20222ba0bba968a41b1bc1acab\A 8: @import \"MediaQuery\";\A 9: @import \"_mixins.scss\";"; }

@@ -1,14 +1,20 @@
 @import "_variables.scss";
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import "MediaQuery.scss";
 =======
+=======
+>>>>>>> fe425c8ec68deb20222ba0bba968a41b1bc1acab
 @import "MediaQuery";
 @import "_mixins.scss";
 
 .u-fontSizeXSmall {
 	font-size: 0.8em;
 }
+<<<<<<< HEAD
 >>>>>>> ed257bb3e3b1cb1687e30cc3929952c976ebe84d
+=======
+>>>>>>> fe425c8ec68deb20222ba0bba968a41b1bc1acab
 
 .u-fontSizeSmall {
 	font-size: 1em;
@@ -152,15 +158,15 @@
 		line-height: 0.8em;
 		font-size: 0.8rem;
 		margin: 2em;
-	};
-
+	}
+  
 	@include smallMobile{
 		@include flex($align: center, $justify: center);
 		height: 3em;
 		margin: 1em;
 		line-height: 1.3em;
 		font-size: 0.5em;
-	};
+	}
 }
 
 .u-widthMediumOnly {
