@@ -214,7 +214,7 @@
   @include size($width: 75%);
   @include smallMobile {
     @include size($width: 95%);
-    @include flex($direction: row); 
+    @include flex($direction: row);
   }
 }
 

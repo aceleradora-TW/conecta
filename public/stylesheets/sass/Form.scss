@@ -8,46 +8,6 @@
   align-content: space-between;
 }
 
-.InputGroup {
-  @include flex($justify: center);
-  @include size($width: 75%, $height: 6vh);
-  input {
-    font-size: 1.05em;
-  }
-  span {
-    font-size: 1.3em;
-  }
-  @include tablet {
-    input {
-      font-size: 0.8em;
-    }
-    span {
-      font-size: 1.1em;
-    }
-  }
-  @include mobile {
-    @include size($width: 90%, $height: 5.3vh);
-    input {
-      font-size: 0.65em;
-    }
-    span {
-      font-size: 1em;
-    }
-  }
-}
-
-.InputGroupButton {
-  @include size($width: 30%);
-  z-index: 99;
-}
-
-.InputSearch {
-  @include size($width: 60%);
-  border: 1px solid rgba(0, 0, 0, .4);
-  border-left: none;
-  padding-left: 2%;
-}
-
 .DropdownMenu{
   list-style: none;
   position: static;
