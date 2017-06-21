@@ -107,6 +107,17 @@
 }
 
 /* line 74, ../sass/Section.scss */
+.SectionList {
+  width: 100%;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+/* line 80, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

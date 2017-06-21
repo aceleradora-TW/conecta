@@ -6,9 +6,8 @@ gem 'puma'
 gem 'tux'
 gem 'pg'
 gem 'dm-postgres-adapter'
-
+gem 'bcrypt'
 gem 'coveralls', require: false
-
 gem "actionmailer"
 
 group :development, :test do

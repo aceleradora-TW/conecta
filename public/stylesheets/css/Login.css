@@ -39,11 +39,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  height: 20%;
+  justify-content: space-around;
+  height: 40%;
   width: 100%;
 }
-/* line 27, ../sass/Login.scss */
+/* line 28, ../sass/Login.scss */
 .LoginFooter a {
   color: black;
 }

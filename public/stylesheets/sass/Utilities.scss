@@ -3,6 +3,11 @@
 @import "_mixins.scss";
 
 
+.u-fontSizeXSmall {
+	font-size: 0.8em;
+}
+
+
 .u-fontSizeSmall {
 	font-size: 1em;
 }
@@ -44,6 +49,9 @@
 .u-marginLeft {
 	margin-left: 10%;
 }
+.u-marginLeftSmall {
+	margin-left: 5%;
+}
 
 .u-marginLeftSmall {
 	margin-left: 6%;
@@ -60,13 +68,20 @@
 .u-marginTop {
 	margin-top: 1%;
 }
-
 .u-marginTopLarge {
 	margin-top: 3%;
 }
 
 .u-marginBottom {
 	margin-bottom: 1%;
+}
+
+.u-marginBottomMedium {
+	margin-bottom: 5%;
+}
+.u-marginSidesAndBottom {
+	margin: 0 2%;
+	margin-bottom: 2%;
 }
 
 .u-lineHeightMedium{
@@ -142,10 +157,13 @@
 	}
 }
 
+.u-widthMediumOnly {
+	width: 30%;
+}
+
 .u-widthLarge {
 	width: 90%;
 }
-
 .u-center{
 	text-align: center;
 }
@@ -160,4 +178,8 @@
 
 .u-gradientTransparentToBlack {
 	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+}
+
+.u-displayNone {
+	display: none;
 }
