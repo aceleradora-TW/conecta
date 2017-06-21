@@ -1,4 +1,4 @@
-@import "_variables.scss";
+ @import "_variables.scss";
 @import "MediaQuery";
 @import "_mixins.scss";
 
@@ -6,35 +6,35 @@
 	font-size: 1em;
 }
 
-.u-fontSizeMediumSlogan{
+.u-fontSizeMediumSlogan {
 	font-size: 1.3em;
-	@include mobile{
+	@include mobile {
 		font-size: 1.5em;
 	}
 }
 
-.u-fontSizeMedium{
+.u-fontSizeMedium {
 	font-size: 1.3em;
-	@include tablet{
+	@include tablet {
 		font-size: 1em;
 	}
-	@include mobile{
+	@include mobile {
 		font-size: 0.9em;
 	}
-	@include smallMobile{
+	@include smallMobile {
 		font-size: 0.8em;
 	}
 }
 
 .u-fontSizeLarge {
 	font-size: 1.7em;
-	@include tablet{
+	@include tablet {
 		font-size: 1.5em;
 	}
-	@include mobile{
+	@include mobile {
 		font-size: 1.3em;
 	}
-	@include smallMobile{
+	@include smallMobile {
 		font-size: 1.1em;
 	}
 }
@@ -82,57 +82,57 @@
 	margin-bottom: 1%;
 }
 
-.u-lineHeightMedium{
+.u-lineHeightMedium {
 	line-height: 1.7em;
 }
 
-.u-colorLightBlue{
+.u-colorLightBlue {
 	color: $light-blue-color;
 }
 
 
-.u-colorLightRed{
+.u-colorLightRed {
 	color: $light-red-color;
 }
 
 
 
-.u-colorGreen{
+.u-colorGreen {
 	color: $aqua-green-color;
 }
 
-.u-colorOrange{
+.u-colorOrange {
 	color: $burnt-yellow-color;
 }
 
-.u-colorBackgroundwhite{
+.u-colorBackgroundwhite {
 	background-color: $white-color;
 }
 
-.u-colorBackgroundOrange{
+.u-colorBackgroundOrange {
 	background-color: $burnt-yellow-color;
 }
-.u-colorBackgroundGreen{
+.u-colorBackgroundGreen {
 	background-color: $aqua-green-color;
 }
-.u-colorBackgroundGreen:hover{
+.u-colorBackgroundGreen:hover {
 	box-shadow: 1px 1px 2px 2px rgba(100, 221, 187,1);
 	cursor: pointer;
 }
 
-.u-colorBackgroundOrange:hover{
+.u-colorBackgroundOrange:hover {
 	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80,1);
 	cursor: pointer;
 }
 
-.u-widthNone{
+.u-widthNone {
 	width: 0%;
 }
 
-.u-widthMedium{
+.u-widthMedium {
 	width: 30%;
 	margin: 5%;
-	@include tablet{
+	@include tablet {
 		@include flex($align: center, $justify: center);
 		width: 15%;
 		height: 2.8em;
@@ -141,7 +141,7 @@
 		margin: 2em;
 
 	};
-	@include smallMobile{
+	@include smallMobile {
 		@include flex($align: center, $justify: center);
 		height: 3em;
 		margin: 1em;
@@ -154,50 +154,50 @@
 	width: 90%;
 }
 
-.u-colorGold{
+.u-colorGold {
 	color: #e4b541;
 }
-.u-colorRed{
+.u-colorRed {
 	background-color: rgba(235, 99, 97, 1);
 }
-.u-colorRed:hover{
+.u-colorRed:hover {
 	box-shadow: 1px 1px 2px 2px rgba(226, 106, 106, 1);
 	cursor: pointer;
 }
-.u-colorGreen{
+.u-colorGreen {
 	color: $aqua-green-color;
 }
-.u-colorGreen:hover{
+.u-colorGreen:hover {
 	box-shadow: 1px 1px 2px 2px rgba(54, 215, 183, 1);
 	cursor: pointer;
 }
-.u-colorBlue{
+.u-colorBlue {
 	background-color: $light-blue-color;
 }
-.u-colorBlue:hover{
+.u-colorBlue:hover {
 	box-shadow: 1px 1px 2px 2px rgba(107, 185, 240, 1);
 	cursor: pointer;
 }
 
-.u-colorOrange{
+.u-colorOrange {
 	color: $burnt-yellow-color;
 }
-.u-colorOrange:hover{
+.u-colorOrange:hover {
 	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80, 1);
 	cursor: pointer;
 }
 
-.u-center{
+.u-center {
 	text-align: center;
 }
 
-.u-rotateIcon{
-	@include smallMobile{
+.u-rotateIcon {
+	@include smallMobile {
 		-webkit-transform: rotate(90deg);
 	}
 }
 
-.u-borderWhite{
+.u-borderWhite {
 	border: solid 2px;
 }
 

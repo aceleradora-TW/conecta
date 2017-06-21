@@ -6,25 +6,8 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 85%);
   align-content: space-between;
-}
-
-.DropdownMenu{
-  list-style: none;
-  position: static;
-  border: 1px solid rgba(0, 0, 0, .4);
-  border-radius: 0 0 4px 4px;
-  background-color: $white-color;
-  text-align: left;
-  right: 61.05vw;
-  bottom: 4.6vh;
-  padding: 2%;
-  display: none;
-  opacity: 0;
-  transition: 1s;
-  &-visible {
-    opacity: 1;
-    display: block;
-    transition: .5s;
+  @include smallMobile {
+    @include size($width: 100%);
   }
 }
 

@@ -7,30 +7,14 @@
   width: 85%;
   align-content: space-between;
 }
-
-/* line 11, ../sass/Form.scss */
-.DropdownMenu {
-  list-style: none;
-  position: static;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 4px 4px;
-  background-color: white;
-  text-align: left;
-  right: 61.05vw;
-  bottom: 4.6vh;
-  padding: 2%;
-  display: none;
-  opacity: 0;
-  transition: 1s;
-}
-/* line 24, ../sass/Form.scss */
-.DropdownMenu-visible {
-  opacity: 1;
-  display: block;
-  transition: .5s;
+@media (max-width: 499px) {
+  /* line 5, ../sass/Form.scss */
+  .FormSearch {
+    width: 100%;
+  }
 }
 
-/* line 31, ../sass/Form.scss */
+/* line 14, ../sass/Form.scss */
 input, .ButtonFilter, .ButtonSearch {
   outline: none;
 }

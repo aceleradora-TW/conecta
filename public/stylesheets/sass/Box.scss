@@ -200,14 +200,7 @@
   @include size($height: 100%, $width: 85%);
 }
 
-.FormSearch {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 85%);
-  align-content: space-between;
-  @include smallMobile {
-    @include size($width: 100%);
-  }
-}
+
 
 .InputGroup {
   @include flex($justify: center);

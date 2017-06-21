@@ -349,30 +349,14 @@
   width: 85%;
 }
 
-/* line 203, ../sass/Box.scss */
-.FormSearch {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-  align-content: space-between;
-}
-@media (max-width: 499px) {
-  /* line 203, ../sass/Box.scss */
-  .FormSearch {
-    width: 100%;
-  }
-}
-
-/* line 212, ../sass/Box.scss */
+/* line 205, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
   width: 75%;
 }
 @media (max-width: 499px) {
-  /* line 212, ../sass/Box.scss */
+  /* line 205, ../sass/Box.scss */
   .InputGroup {
     width: 95%;
     display: flex;
@@ -380,13 +364,13 @@
   }
 }
 
-/* line 221, ../sass/Box.scss */
+/* line 214, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
-/* line 225, ../sass/Box.scss */
+/* line 218, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -394,7 +378,7 @@
   justify-content: flex-end;
 }
 
-/* line 230, ../sass/Box.scss */
+/* line 223, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }
