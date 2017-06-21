@@ -1,14 +1,10 @@
 @import "_variables.scss";
-<<<<<<< HEAD
-@import "MediaQuery.scss";
-=======
 @import "MediaQuery";
 @import "_mixins.scss";
 
 .u-fontSizeXSmall {
 	font-size: 0.8em;
 }
->>>>>>> ed257bb3e3b1cb1687e30cc3929952c976ebe84d
 
 .u-fontSizeSmall {
 	font-size: 1em;
