@@ -1,210 +1,206 @@
- @import "_variables.scss";
+@import "_variables.scss";
 @import "MediaQuery";
 @import "_mixins.scss";
 
 .u-fontSizeSmall {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 .u-fontSizeMediumSlogan {
-	font-size: 1.3em;
-	@include mobile {
-		font-size: 1.5em;
-	}
+  font-size: 1.3em;
+  @include mobile {
+    font-size: 1.5em;
+  }
 }
 
 .u-fontSizeMedium {
-	font-size: 1.3em;
-	@include tablet {
-		font-size: 1em;
-	}
-	@include mobile {
-		font-size: 0.9em;
-	}
-	@include smallMobile {
-		font-size: 0.8em;
-	}
+  font-size: 1.3em;
+  @include tablet {
+    font-size: 1em;
+  }
+  @include mobile {
+    font-size: 0.9em;
+  }
+  @include smallMobile {
+    font-size: 0.8em;
+  }
 }
 
 .u-fontSizeLarge {
-	font-size: 1.7em;
-	@include tablet {
-		font-size: 1.5em;
-	}
-	@include mobile {
-		font-size: 1.3em;
-	}
-	@include smallMobile {
-		font-size: 1.1em;
-	}
+  font-size: 1.7em;
+  @include tablet {
+    font-size: 1.5em;
+  }
+  @include mobile {
+    font-size: 1.3em;
+  }
+  @include smallMobile {
+    font-size: 1.1em;
+  }
 }
 
 .u-fontSizeXLarge {
-	font-size: 5em;
+  font-size: 5em;
 }
 
 .u-fontFamilyLato {
-	font-family: $font-style;
+  font-family: $font-style;
 }
+
 .u-font-withe,.u-fontWhite {
-	color: $white-font-color;
+  color: $white-font-color;
 }
 
 .u-fontWhiteColor {
-	color: $white-font-color;
+  color: $white-font-color;
 }
 
 .u-marginSmall {
-	margin: 6px;
+  margin: 6px;
 }
 
 .u-marginLeft {
-	margin-left: 10%;
+  margin-left: 10%;
 }
 
 .u-marginLeftSmall {
-	margin-left: 6%;
+  margin-left: 6%;
 
 }
 .u-marginLeftXSmall {
-	margin-left: 2%;
+  margin-left: 2%;
 }
 
 .u-marginTop {
-	margin-top: 1%;
+  margin-top: 1%;
 }
 
 .u-marginTopLarge {
-	margin-top: 3%;
+  margin-top: 3%;
 }
 
 .u-marginBottom {
-	margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 .u-lineHeightMedium {
-	line-height: 1.7em;
+  line-height: 1.7em;
 }
 
 .u-colorLightBlue {
-	color: $light-blue-color;
+  color: $light-blue-color;
 }
-
 
 .u-colorLightRed {
-	color: $light-red-color;
+  color: $light-red-color;
 }
 
-
-
 .u-colorGreen {
-	color: $aqua-green-color;
+  color: $aqua-green-color;
 }
 
 .u-colorOrange {
-	color: $burnt-yellow-color;
+  color: $burnt-yellow-color;
 }
 
 .u-colorBackgroundwhite {
-	background-color: $white-color;
+  background-color: $white-color;
 }
 
 .u-colorBackgroundOrange {
-	background-color: $burnt-yellow-color;
+  background-color: $burnt-yellow-color;
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(244, 179, 80,1);
+    cursor: pointer;
+  }
 }
 .u-colorBackgroundGreen {
-	background-color: $aqua-green-color;
-}
-.u-colorBackgroundGreen:hover {
-	box-shadow: 1px 1px 2px 2px rgba(100, 221, 187,1);
-	cursor: pointer;
-}
-
-.u-colorBackgroundOrange:hover {
-	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80,1);
-	cursor: pointer;
+  background-color: $aqua-green-color;
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(100, 221, 187,1);
+    cursor: pointer;
+  }
 }
 
 .u-widthNone {
-	width: 0%;
+  width: 0%;
 }
 
 .u-widthMedium {
-	width: 30%;
-	margin: 5%;
-	@include tablet {
-		@include flex($align: center, $justify: center);
-		width: 15%;
-		height: 2.8em;
-		line-height: 0.8em;
-		font-size: 0.8rem;
-		margin: 2em;
-
-	};
-	@include smallMobile {
-		@include flex($align: center, $justify: center);
-		height: 3em;
-		margin: 1em;
-		line-height: 1.3em;
-		font-size: 0.5em;
-	};
+  width: 30%;
+  margin: 5%;
+  @include tablet {
+    @include flex($align: center, $justify: center);
+    width: 15%;
+    height: 2.8em;
+    line-height: 0.8em;
+    font-size: 0.8rem;
+    margin: 2em;
+  }
+  @include smallMobile {
+    @include flex($align: center, $justify: center);
+    height: 3em;
+    margin: 1em;
+    line-height: 1.3em;
+    font-size: 0.5em;
+  }
 }
 
 .u-widthLarge {
-	width: 90%;
+  width: 90%;
 }
 
 .u-colorGold {
-	color: #e4b541;
+  color: rgba(228, 181, 65, 1);
 }
 .u-colorRed {
-	background-color: rgba(235, 99, 97, 1);
-}
-.u-colorRed:hover {
-	box-shadow: 1px 1px 2px 2px rgba(226, 106, 106, 1);
-	cursor: pointer;
+  background-color: rgba(235, 99, 97, 1);
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(226, 106, 106, 1);
+    cursor: pointer;
+  }
 }
 .u-colorGreen {
-	color: $aqua-green-color;
-}
-.u-colorGreen:hover {
-	box-shadow: 1px 1px 2px 2px rgba(54, 215, 183, 1);
-	cursor: pointer;
+  color: $aqua-green-color;
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(54, 215, 183, 1);
+    cursor: pointer;
+  }
 }
 .u-colorBlue {
-	background-color: $light-blue-color;
-}
-.u-colorBlue:hover {
-	box-shadow: 1px 1px 2px 2px rgba(107, 185, 240, 1);
-	cursor: pointer;
+  background-color: $light-blue-color;
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(107, 185, 240, 1);
+    cursor: pointer;
+  }
 }
 
 .u-colorOrange {
-	color: $burnt-yellow-color;
-}
-.u-colorOrange:hover {
-	box-shadow: 1px 1px 2px 2px rgba(244, 179, 80, 1);
-	cursor: pointer;
+  color: $burnt-yellow-color;
+  &:hover {
+    box-shadow: 1px 1px 2px 2px rgba(244, 179, 80, 1);
+    cursor: pointer;
+  }
 }
 
 .u-center {
-	text-align: center;
+  text-align: center;
 }
 
 .u-rotateIcon {
-	@include smallMobile {
-		-webkit-transform: rotate(90deg);
-	}
+  @include smallMobile {
+    -webkit-transform: rotate(90deg);
+  }
 }
 
 .u-borderWhite {
-	border: solid 2px;
+  border: solid 2px;
 }
 
 .u-fontBold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .u-gradientTransparentToBlack {
-	background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
+  background: linear-gradient(rgba(0,0,0,.47), rgba(0,0,0,.90));
 }
