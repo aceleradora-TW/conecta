@@ -69,25 +69,6 @@
   }
 }
 
-.Icon {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
-  color: $white-font-color;
-  background-color: $white-color;
-  border-radius: 100%;
-  @include tablet {
-    @include size($height: 50%, $width: 50%);
-  }
-
-  @include mobile {
-    @include size($height: 53%, $width: 60%);
-  }
-
-  @include smallMobile {
-    @include size($height: 16vh, $width: 12vw);
-  }
-}
-
 .BowFlowHowItWorks {
   @include flex($direction: column);
   @include size($height: 35vh, $width: 98%);
@@ -111,12 +92,6 @@
     @include flex($align: center, $direction: column);
     @include size($height: 100%);
   }
-}
-
-.Arrow {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 5%);
-  color: $white-color;
 }
 
 .ContentSearch {

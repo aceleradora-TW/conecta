@@ -123,39 +123,6 @@
 }
 
 /* line 72, ../sass/Box.scss */
-.Icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  width: 40%;
-  color: white;
-  background-color: white;
-  border-radius: 100%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 72, ../sass/Box.scss */
-  .Icon {
-    height: 50%;
-    width: 50%;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 72, ../sass/Box.scss */
-  .Icon {
-    height: 53%;
-    width: 60%;
-  }
-}
-@media (max-width: 499px) {
-  /* line 72, ../sass/Box.scss */
-  .Icon {
-    height: 16vh;
-    width: 12vw;
-  }
-}
-
-/* line 91, ../sass/Box.scss */
 .BowFlowHowItWorks {
   display: flex;
   flex-direction: column;
@@ -165,13 +132,13 @@
   font-weight: lighter;
 }
 @media (max-width: 499px) {
-  /* line 91, ../sass/Box.scss */
+  /* line 72, ../sass/Box.scss */
   .BowFlowHowItWorks {
     height: 70%;
   }
 }
 
-/* line 101, ../sass/Box.scss */
+/* line 82, ../sass/Box.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -181,7 +148,7 @@
   text-align: center;
 }
 
-/* line 107, ../sass/Box.scss */
+/* line 88, ../sass/Box.scss */
 .BoxCardContent {
   display: flex;
   align-items: flex-start;
@@ -190,7 +157,7 @@
   width: 98%;
 }
 @media (max-width: 499px) {
-  /* line 107, ../sass/Box.scss */
+  /* line 88, ../sass/Box.scss */
   .BoxCardContent {
     display: flex;
     align-items: center;
@@ -199,17 +166,7 @@
   }
 }
 
-/* line 116, ../sass/Box.scss */
-.Arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  width: 5%;
-  color: white;
-}
-
-/* line 122, ../sass/Box.scss */
+/* line 97, ../sass/Box.scss */
 .ContentSearch {
   display: flex;
   align-items: center;
@@ -223,19 +180,19 @@
   padding: 0%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 122, ../sass/Box.scss */
+  /* line 97, ../sass/Box.scss */
   .ContentSearch {
     min-height: 20vh;
   }
 }
 @media (max-width: 499px) {
-  /* line 122, ../sass/Box.scss */
+  /* line 97, ../sass/Box.scss */
   .ContentSearch {
     min-height: 18vh;
   }
 }
 
-/* line 137, ../sass/Box.scss */
+/* line 112, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -244,7 +201,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 137, ../sass/Box.scss */
+  /* line 112, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -252,7 +209,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 137, ../sass/Box.scss */
+  /* line 112, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     align-items: center;
@@ -261,7 +218,7 @@
   }
 }
 
-/* line 150, ../sass/Box.scss */
+/* line 125, ../sass/Box.scss */
 .BoxTitle {
   display: flex;
   align-items: center;
@@ -270,14 +227,14 @@
   width: 85%;
 }
 
-/* line 155, ../sass/Box.scss */
+/* line 130, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
   width: 75%;
 }
 @media (max-width: 499px) {
-  /* line 155, ../sass/Box.scss */
+  /* line 130, ../sass/Box.scss */
   .InputGroup {
     width: 95%;
     display: flex;
@@ -285,13 +242,13 @@
   }
 }
 
-/* line 164, ../sass/Box.scss */
+/* line 139, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
-/* line 168, ../sass/Box.scss */
+/* line 143, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -299,7 +256,7 @@
   justify-content: flex-end;
 }
 
-/* line 173, ../sass/Box.scss */
+/* line 148, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }
