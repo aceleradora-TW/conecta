@@ -148,7 +148,7 @@
 		line-height: 0.8em;
 		font-size: 0.8rem;
 		margin: 2em;
-	};
+	}
 
 	@include smallMobile{
 		@include flex($align: center, $justify: center);
@@ -156,7 +156,7 @@
 		margin: 1em;
 		line-height: 1.3em;
 		font-size: 0.5em;
-	};
+	}
 }
 
 .u-widthMediumOnly {
