@@ -1,32 +1,43 @@
 class CsvResearchCenter
 
-  attr_accessor :name, :structure_type, :description,:project,
-  :research_field, :research_area, :unit, :initials,
-  :site, :phone, :contact_name, :email
+  attr_accessor :name, :description, :address_info,
+  :site, :phone, :contact_name, :email, :competences, :segments
+
+  def initialize
+    @competence_area_research_center = nil
+    create_competence_area_research_center()
+  end
 
   def insert_to_db
     rc_object = ResearchCenter.first(name: @name)
     if !rc_object
-      research_center = ResearchCenter.new(name: @name,
-      structure_type: @structure_type, project: @project, description: @description,
-      unit: @unit, initials: @initials )
-
-      field_object = ResearchField.first(name: @research_field)
-      if !field_object
-        field_object = ResearchField.create(name: @research_field)
-      end
-      research_center.research_fields.push(field_object)
-
-      area_object = ResearchArea.first(name: @research_area)
-      if !area_object
-        area_object = ResearchArea.create(name: @research_area)
-      end
-      research_center.research_areas.push(area_object)
-
+      @email = @email || "exemplo@domain.com"
+      research_center = ResearchCenter.new(name: @name, description: @description)
+      research_center.address = @address_info
       contact_object = Contact.new(site: @site, phone: @phone, contact_name: @contact_name,
       email: @email)
       research_center.contact = contact_object
+
+      @competences.each do |competence|
+        competence_object = Competence.first(name: competence)
+        if !competence_object
+          competence_area = @competence_area_research_center[0]
+          competence_object = Competence.create(name: competence, competence_area: competence_area)
+        end
+        competence_institution_object = CompetenceInstitution.new(competence_value: -1)
+        competence_institution_object.institution = research_center
+        competence_institution_object.competence = competence_object
+        competence_institution_object.save
+      end
       research_center.save
+    end
+  end
+
+  def create_competence_area_research_center
+    if !@competence_area_research_center
+      @competence_area_research_center = [
+        CompetenceArea.create(name: "Estruturas de Pesquisa")
+      ]
     end
   end
 end
