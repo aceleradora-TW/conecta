@@ -163,7 +163,7 @@
   }
 }
 
-.ItemsFeatured{
+.ItemsFeatured {
   @include flex($align: center, $justify: space-around);
   @include size($width: 100%);
   line-height: 2em;
@@ -181,10 +181,6 @@
     box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
   }
 }
-.Items:hover {
-  background: rgba(0,0,0,.05);
-  transition: .5s;
-}
 
 .CompetenceList {
   @include flex($align: flex-start, $direction: column, $justify: space-around);
@@ -193,7 +189,7 @@
   padding: 0;
 }
 
-.CompetencesTitle{
+.CompetencesTitle {
   @include flex($align:flex-end, $justify:center);
   @include size($height: 5%, $width: 100%);
   margin-top: 5%;
