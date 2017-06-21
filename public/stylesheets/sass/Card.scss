@@ -5,7 +5,7 @@
 
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 45vh);
+  @include size($width: 48%, $min-height: 45%);
   background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -13,57 +13,41 @@
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
   };
   @include mobile {
-    width: 95%;
-    min-height: 55vh;
-    font-size: 1.5em;
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
   };
   @include smallMobile {
-    width: 95%;
-    min-height: 55vh;
-    font-size: 1.5em;
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
   };
 }
 
 .LogoCard{
   @include tablet{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
   @include mobile{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
   @include smallMobile{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
 }
 .CardNav {
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);
   @include mobile{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include flex($direction: column, $justify: center, $align: center);
   }
   @include smallMobile{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include flex($direction: column, $justify: flex-start, $align: center);
   }
 }
 
@@ -73,12 +57,12 @@
   font-family: $font-style;
   flex-wrap: wrap;
   @include mobile{
-    font-size: 0.9em;
+    font-size: $small-font-size;
     text-align: center;
     width: 90%;
   }
   @include smallMobile{
-    font-size: 0.9em;
+    font-size: $small-font-size;
     text-align: center;
     width: 90%;
   }
@@ -92,7 +76,7 @@
 .CardTitle {
   @include flex($justify: center);
   @include size($height: 100%, $width: 40%);
-  font-size: 1.3em;
+  font-size: $medium-font-size;
 }
 
 .LogoImage{
@@ -126,7 +110,7 @@
   flex-direction: column;
   list-style: none;
   line-height: 2em;
-  font-size: 0.8em;
+  font-size: $small-font-size;
   text-align:center;
   background-color: $white-color;
   padding: 0;
@@ -152,13 +136,13 @@
     transition: .5s;
   }
   @include tablet{
-    width: 100%;
+    @include size($width: 100%);
   }
   @include mobile{
-    width: 100%;
+    @include size($width: 100%);
   }
   @include smallMobile{
-    width: 100%;
+    @include size($width: 100%);
   }
 }
 
@@ -198,7 +182,7 @@
   @include size($height: 5%, $width: 100%);
   margin-top: 5%;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: $medium-font-size;
 }
 
 .ItemText{
@@ -215,14 +199,14 @@
     text-align: left;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
   @include smallMobile{
     width: 100%;
     text-align: left;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
 }
 .ItemTextSegment{
@@ -239,19 +223,15 @@
   @include flex($justify: flex-end);
   @include size($height: 100%);
   @include tablet{
-    width: 32%;
+    @include size($width: 32%);
   }
   @include mobile{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include size($height: 100%);
+    @include flex($justify: center,$align: center);
   }
   @include smallMobile{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include size($height: 100%);
+    @include flex($justify: center,$align: center);
   }
 }
 
@@ -276,19 +256,19 @@
   @include flex();
   @include size($height: 30%, $width: 100%);
   text-align: center;
-  font-size: 0.9em;
+  font-size: $small-font-size;
   line-height: 1.8em;
   @include tablet{
-    width: 90%;
-  };
+    @include size($width: 90%);
+  }
   @include mobile {
-    font-size: 0.7em;
-    width: 90%;
-  };
+    @include size($width: 90%);
+    font-size: $small-font-size;
+  }
   @include smallMobile {
-    font-size: 0.7em;
-    width: 90%;
-  };
+    @include size($width: 90%);
+    font-size: $small-font-size;
+  }
 }
 .CenterTheme{
   @include flex($direction: row);
@@ -322,10 +302,9 @@
   @include size($height: 100%, $width: 70%);
   margin: 20px;
   @include tablet{
+    @include size($height: 30%, $width: 97%);
     align-items: center;
     justify-content: center;
-    height: 30%;
-    width: 97%;
     font-size: 1.1em;
   }
   @include mobile{
@@ -376,13 +355,13 @@
   margin-top: 3%;
   @include tablet {
     width: 90%;
-    font-size: 1.1em;
+    font-size: $medium-font-size;
   }
   @include mobile {
-    font-size: 0.9em;
+    font-size: $small-font-size;
   }
   @include smallMobile {
-    font-size: 0.9em;
+    font-size: $small-font-size;
   }
 }
 
@@ -461,7 +440,6 @@
     }
     @include smallMobile{
       font-size: 13px;
-      <<<<<<< HEAD
       flex-wrap: wrap;
     }
   }

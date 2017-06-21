@@ -31,22 +31,13 @@ body{
   font-feature-settings: 'liga';
 }
 .material-icons.md-3 {
-<<<<<<< HEAD
-   font-size: 3em;
- }
- .material-icons.md-hamburger {
-    font-size: 3em;
-    @include smallMobile{
-      font-size: 2em;
-    }
+  font-size: 3em;
+}
+.material-icons.md-hamburger {
+  font-size: 3em;
+  @include smallMobile{
+    font-size: 2em;
   }
- .material-icons.md-35px {
-    @include tablet{
-      font-size: 35px;
-    }
-    @include smallMobile{
-      font-size: 20px;
-    }
 }
 
 .material-icons.md-1-4 {

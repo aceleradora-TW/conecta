@@ -136,7 +136,7 @@
 	}
 	@include smallMobile{
 		@include flex($justify: center, $align: center);
-		@include size($height: 35%, width: 15%);
+		@include size($height: 35%, $width: 15%);
 		margin: 1%;
 		font-size: 0.5em;
 	}
