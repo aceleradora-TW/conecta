@@ -119,18 +119,20 @@
   .InputGroup {
     height: 5.3vh;
     width: 90%;
+    display: flex;
+    flex-direction: row;
   }
-  /* line 79, ../sass/Input.scss */
+  /* line 80, ../sass/Input.scss */
   .InputGroup input {
     font-size: 0.45em;
   }
-  /* line 82, ../sass/Input.scss */
+  /* line 83, ../sass/Input.scss */
   .InputGroup span {
     font-size: 0.8em;
   }
 }
 
-/* line 88, ../sass/Input.scss */
+/* line 89, ../sass/Input.scss */
 input {
   outline: none;
 }

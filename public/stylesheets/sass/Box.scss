@@ -127,15 +127,6 @@
   @include size($height: 100%, $width: 85%);
 }
 
-.InputGroup {
-  @include flex($justify: center);
-  @include size($width: 75%);
-  @include smallMobile {
-    @include size($width: 95%);
-    @include flex($direction: row);
-  }
-}
-
 .BoxFilterBy {
   @include size($width: 30%);
   z-index: 2;

@@ -228,27 +228,12 @@
 }
 
 /* line 130, ../sass/Box.scss */
-.InputGroup {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-}
-@media (max-width: 499px) {
-  /* line 130, ../sass/Box.scss */
-  .InputGroup {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* line 139, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
-/* line 143, ../sass/Box.scss */
+/* line 134, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -256,7 +241,7 @@
   justify-content: flex-end;
 }
 
-/* line 148, ../sass/Box.scss */
+/* line 139, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }

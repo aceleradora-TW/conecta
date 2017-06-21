@@ -76,6 +76,7 @@
   }
   @include smallMobile {
     @include size($width: 90%, $height: 5.3vh);
+    @include flex($direction: row);
     input {
       font-size: 0.45em;
     }
