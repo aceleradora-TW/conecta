@@ -14,7 +14,7 @@
 
 	@include tablet {
 		@include flex($justify: center,  $direction: column);
-		@include size($min-height: 100%);
+		@include size($min-height: 14vh);
 	}
 
 	@include mobile {
@@ -26,7 +26,12 @@
 		@include flex($justify: center,  $direction: column);
 		@include size($min-height: 100%);
 	}
+	&.is-open {
+		background-color: rgba(0,0,0,0.55);
+		height: 37vh;
+	}
 }
+
 
 .NavLogo {
 	@include size($width: 50%, $height: 100%);
@@ -137,6 +142,10 @@
 			text-decoration: none;
 			color: $white-font-color;
 		}
+	}
+
+	&.is-open {
+		display: flex;
 	}
 }
 

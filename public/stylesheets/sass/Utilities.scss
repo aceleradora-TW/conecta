@@ -18,14 +18,14 @@
 
 .u-fontSizeMedium{
 	font-size: 1.3em;
-	@include tablet{
+	@include tablet {
 		font-size: 1em;
 	}
 }
 
 .u-fontSizeLarge {
 	font-size: 1.7em;
-	@include tablet{
+	@include tablet {
 		font-size: 1.3em;
 	};
 }
@@ -140,16 +140,16 @@
 	width: 0%;
 }
 
-.u-widthMedium{
+.u-widthMedium {
 	width: 30%;
 	margin: 5%;
-	@include tablet{
+	@include tablet {
 		@include size($height: 70%);
 		@include flex($justify: center,$align: center);
 		margin: 1%;
 		font-size: 1em;
 	}
-	@include smallMobile{
+	@include smallMobile {
 		@include flex($justify: center, $align: center);
 		@include size($height: 35%, $width: 15%);
 		margin: 1%;
@@ -164,11 +164,11 @@
 .u-widthLarge {
 	width: 90%;
 }
-.u-center{
+.u-center {
 	text-align: center;
 }
 
-.u-borderWhite{
+.u-borderWhite {
 	border: solid 2px;
 }
 
