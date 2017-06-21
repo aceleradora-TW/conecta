@@ -40,7 +40,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   background: rgba(0,0,0,0.8);
   @include smallMobile{
-  @include size($height: 202vh);
+    @include size($height: 202vh);
   }
 }
 
@@ -54,35 +54,28 @@
   background-color: $darker-blue-color;
   color: $white-font-color;
   @include smallMobile{
-  @include size($min-height: 65vh);
+    @include size($min-height: 65vh);
   }
 }
 
 .SectionCards {
-  @include size($width: 100%, $min-height: 100vh);
+  @include size($width: 100%, $min-height: 100%);
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;
-
   @include tablet{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
   @include mobile{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
   @include smallMobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
 }
 
 .SectionSearch {
-  @include size($width: 100%, $min-height: 39vh);
+  @include size($width: 100%, $min-height: 78%);
   @include flex($align: center, $direction: column, $justify: center);
   padding: 0;
 }
