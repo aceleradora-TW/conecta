@@ -48,11 +48,6 @@
   }
 }
 
-.InputGroupButton {
-  @include size($width: 30%);
-  z-index: 99;
-}
-
 .InputGroup {
   @include flex($justify: center);
   @include size($width: 75%, $height: 6vh);

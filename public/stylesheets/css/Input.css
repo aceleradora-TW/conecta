@@ -75,68 +75,62 @@
 }
 
 /* line 51, ../sass/Input.scss */
-.InputGroupButton {
-  width: 30%;
-  z-index: 99;
-}
-
-/* line 56, ../sass/Input.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
   height: 6vh;
   width: 75%;
 }
-/* line 59, ../sass/Input.scss */
+/* line 54, ../sass/Input.scss */
 .InputGroup input {
   font-size: 1.05em;
 }
-/* line 62, ../sass/Input.scss */
+/* line 57, ../sass/Input.scss */
 .InputGroup span {
   font-size: 1.3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 66, ../sass/Input.scss */
+  /* line 61, ../sass/Input.scss */
   .InputGroup input {
     font-size: 0.8em;
   }
-  /* line 69, ../sass/Input.scss */
+  /* line 64, ../sass/Input.scss */
   .InputGroup span {
     font-size: 1.1em;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 56, ../sass/Input.scss */
+  /* line 51, ../sass/Input.scss */
   .InputGroup {
     height: 5.3vh;
     width: 90%;
   }
-  /* line 75, ../sass/Input.scss */
+  /* line 70, ../sass/Input.scss */
   .InputGroup input {
     font-size: 0.65em;
   }
-  /* line 78, ../sass/Input.scss */
+  /* line 73, ../sass/Input.scss */
   .InputGroup span {
     font-size: 1em;
   }
 }
 @media (max-width: 499px) {
-  /* line 56, ../sass/Input.scss */
+  /* line 51, ../sass/Input.scss */
   .InputGroup {
     height: 5.3vh;
     width: 90%;
   }
-  /* line 84, ../sass/Input.scss */
+  /* line 79, ../sass/Input.scss */
   .InputGroup input {
     font-size: 0.45em;
   }
-  /* line 87, ../sass/Input.scss */
+  /* line 82, ../sass/Input.scss */
   .InputGroup span {
     font-size: 0.8em;
   }
 }
 
-/* line 93, ../sass/Input.scss */
+/* line 88, ../sass/Input.scss */
 input {
   outline: none;
 }
