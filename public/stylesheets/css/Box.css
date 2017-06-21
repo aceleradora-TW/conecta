@@ -26,11 +26,23 @@
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 9, ../sass/Box.scss */
   .TextExplanation {
-    font-size: 1.7em;
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 9, ../sass/Box.scss */
+  .TextExplanation {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 9, ../sass/Box.scss */
+  .TextExplanation {
+    font-size: 1.2em;
   }
 }
 
-/* line 24, ../sass/Box.scss */
+/* line 30, ../sass/Box.scss */
 .LogosCredibility {
   display: flex;
   align-items: center;
@@ -39,14 +51,14 @@
   height: 30%;
   width: 99%;
 }
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 24, ../sass/Box.scss */
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 30, ../sass/Box.scss */
   .LogosCredibility {
-    align-items: baseline;
+    align-items: inherit;
   }
 }
 
-/* line 31, ../sass/Box.scss */
+/* line 37, ../sass/Box.scss */
 .BoxText {
   display: flex;
   align-items: center;
@@ -61,13 +73,29 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 31, ../sass/Box.scss */
+  /* line 37, ../sass/Box.scss */
   .BoxText {
-    font-size: 0.8em;
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 37, ../sass/Box.scss */
+  .BoxText {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.7em;
+    margin: 1vh 0;
+  }
+}
+@media (max-width: 499px) {
+  /* line 37, ../sass/Box.scss */
+  .BoxText {
+    width: 90%;
+    font-size: 0.7em;
   }
 }
 
-/* line 43, ../sass/Box.scss */
+/* line 59, ../sass/Box.scss */
 .BoxSearch {
   display: flex;
   align-items: center;
@@ -78,7 +106,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 48, ../sass/Box.scss */
+/* line 65, ../sass/Box.scss */
 .TitleSearch {
   display: flex;
   align-items: center;
@@ -89,8 +117,15 @@
   color: white;
   text-shadow: 1px 1px #000;
 }
+@media (max-width: 499px) {
+  /* line 65, ../sass/Box.scss */
+  .TitleSearch {
+    text-align: center;
+    margin-top: 3%;
+  }
+}
 
-/* line 55, ../sass/Box.scss */
+/* line 77, ../sass/Box.scss */
 .BoxHowItWorks {
   display: flex;
   align-items: center;
@@ -100,13 +135,28 @@
   width: 20%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 55, ../sass/Box.scss */
+  /* line 77, ../sass/Box.scss */
   .BoxHowItWorks {
     height: 80%;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 77, ../sass/Box.scss */
+  .BoxHowItWorks {
+    height: 60%;
+    width: 80%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 77, ../sass/Box.scss */
+  .BoxHowItWorks {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+}
 
-/* line 62, ../sass/Box.scss */
+/* line 92, ../sass/Box.scss */
 .Icon {
   display: flex;
   align-items: center;
@@ -118,14 +168,28 @@
   border-radius: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 62, ../sass/Box.scss */
+  /* line 92, ../sass/Box.scss */
   .Icon {
-    width: 50%;
     height: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 92, ../sass/Box.scss */
+  .Icon {
+    height: 53%;
+    width: 60%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 92, ../sass/Box.scss */
+  .Icon {
+    height: 16vh;
+    width: 12vw;
   }
 }
 
-/* line 73, ../sass/Box.scss */
+/* line 111, ../sass/Box.scss */
 .ContentHowItWorks {
   display: flex;
   flex-direction: column;
@@ -134,8 +198,14 @@
   font-family: Lato, sans-serif;
   font-weight: lighter;
 }
+@media (max-width: 499px) {
+  /* line 111, ../sass/Box.scss */
+  .ContentHowItWorks {
+    height: 70%;
+  }
+}
 
-/* line 79, ../sass/Box.scss */
+/* line 121, ../sass/Box.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -145,7 +215,7 @@
   text-align: center;
 }
 
-/* line 84, ../sass/Box.scss */
+/* line 127, ../sass/Box.scss */
 .CardContentF {
   display: flex;
   align-items: flex-start;
@@ -153,8 +223,17 @@
   height: 75%;
   width: 98%;
 }
+@media (max-width: 499px) {
+  /* line 127, ../sass/Box.scss */
+  .CardContentF {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
-/* line 88, ../sass/Box.scss */
+/* line 136, ../sass/Box.scss */
 .Arrow {
   display: flex;
   align-items: center;
@@ -164,7 +243,7 @@
   color: white;
 }
 
-/* line 93, ../sass/Box.scss */
+/* line 142, ../sass/Box.scss */
 .Text {
   height: 55%;
   font-size: 1.2em;
@@ -172,7 +251,7 @@
   text-align: center;
 }
 
-/* line 99, ../sass/Box.scss */
+/* line 149, ../sass/Box.scss */
 .ContentSearch {
   display: flex;
   align-items: center;
@@ -185,8 +264,14 @@
   text-align: justify;
   padding: 0%;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 149, ../sass/Box.scss */
+  .ContentSearch {
+    min-height: 20vh;
+  }
+}
 
-/* line 107, ../sass/Box.scss */
+/* line 161, ../sass/Box.scss */
 .Tag {
   display: flex;
   align-items: center;
@@ -196,8 +281,22 @@
   width: 40%;
   cursor: pointer;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 161, ../sass/Box.scss */
+  .Tag {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 161, ../sass/Box.scss */
+  .Tag {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}
 
-/* line 112, ../sass/Box.scss */
+/* line 175, ../sass/Box.scss */
 .TagTitle {
   display: flex;
   align-items: center;
@@ -209,7 +308,7 @@
   font-family: Lato, sans-serif;
 }
 
-/* line 118, ../sass/Box.scss */
+/* line 182, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -217,8 +316,25 @@
   height: 60%;
   width: 60%;
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 182, ../sass/Box.scss */
+  .NavSearch {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 182, ../sass/Box.scss */
+  .NavSearch {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+  }
+}
 
-/* line 122, ../sass/Box.scss */
+/* line 195, ../sass/Box.scss */
 .BoxTextTitle {
   display: flex;
   align-items: center;
@@ -227,7 +343,7 @@
   width: 85%;
 }
 
-/* line 126, ../sass/Box.scss */
+/* line 200, ../sass/Box.scss */
 .FormSearch {
   display: flex;
   align-items: center;
@@ -236,22 +352,41 @@
   width: 85%;
   align-content: space-between;
 }
+@media (max-width: 499px) {
+  /* line 200, ../sass/Box.scss */
+  .FormSearch {
+    width: 100%;
+  }
+}
 
-/* line 131, ../sass/Box.scss */
+/* line 209, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
   height: 6vh;
   width: 75%;
 }
+@media (max-width: 499px) {
+  /* line 209, ../sass/Box.scss */
+  .InputGroup {
+    height: 7vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+}
 
-/* line 135, ../sass/Box.scss */
+/* line 218, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
+<<<<<<< HEAD
 /* line 139, ../sass/Box.scss */
+=======
+/* line 222, ../sass/Box.scss */
+>>>>>>> 33cf760d73d48dab1907d9b5bff8819a29ebcfd1
 .BoxClear {
   width: 50%;
   display: flex;
@@ -259,7 +394,11 @@
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 /* line 144, ../sass/Box.scss */
+=======
+/* line 227, ../sass/Box.scss */
+>>>>>>> 33cf760d73d48dab1907d9b5bff8819a29ebcfd1
 .BoxTextArea {
   width: 100%;
 }

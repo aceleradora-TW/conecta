@@ -11,41 +11,17 @@
 	font-family: $font-style;
 	font-weight: lighter;
 	color: $white-font-color;
-
 	@include tablet {
 		@include flex($justify: center,  $direction: column);
 		@include size($height: 14vh);
 	}
-
 	@include mobile {
 		@include flex($justify: center,  $direction: column);
 		@include size($height: 14vh);
 	}
-
 	@include smallMobile {
 		@include flex($justify: center,  $direction: column);
 		@include size($height: 14vh);
-	}
-}
-
-.NavLogo {
-	@include size($width: 50%, $height: 100%);
-	@include flex($justify: flex-start,  $align: center);
-	margin-left: 25px;
-
-	@include tablet {
-		@include size($width: 90%, $min-height: 50px);
-		@include flex($justify: space-around);
-	}
-
-	@include mobile {
-		@include size($width: 90%, $min-height: 50px);
-		@include flex($justify: space-around);
-	}
-
-	@include smallMobile {
-		@include size($width: 90%, $min-height: 50px);
-		@include flex($justify: space-around);
 	}
 }
 
@@ -84,13 +60,12 @@
 	}
 }
 
-.NavLinks {
-	@include size($width: 50%, $min-height: 100%);
-	@include flex($justify:flex-end, $align:center, $direction: row);
+.NavLinks{
+	@include size($width:50%, $height:100%);
+	@include flex($align: center, $direction: row, $justify: flex-end);
 	list-style: none;
 	margin: 0;
 	color: $white-color;
-
 	@include tablet {
 		@include size($width: 90%, $min-height: 20vh);
 		display: none;
@@ -98,7 +73,6 @@
 		flex-direction: column;
 		font-size: 1.5em;
 	}
-
 	@include mobile {
 		@include size($width: 90%, $min-height: 20vh);
 		display: none;
@@ -106,7 +80,6 @@
 		justify-content: center;
 		font-size: 1.5em;
 	}
-
 	@include smallMobile {
 		@include size($width: 100%, $min-height: 20vh);
 		display: none;
@@ -125,6 +98,22 @@
 	@include tablet{
 		@include size($width:25%);
 		@include flex($justify: center);
+	}
+	@include mobile {
+		padding-right: 5%;
+	}
+	@include smallMobile {
+		padding-right: 5%;
+	}
+	& a{
+		text-decoration: none;
+		font-size: 1.1em;
+		color: $white-font-color;
+		text-align: center;
+		&:hover{
+			text-decoration: none;
+			color: $white-font-color;
+		}
 	}
 }
 
@@ -182,4 +171,10 @@
 .NavLinks a:hover{
 	text-decoration: none;
 	color: $white-font-color;
+	&:hover{
+		background-color: rgba(0,0,0,0.7);
+		text-decoration: none;
+		color: rgba(52, 73, 94, 1);
+		font-size: 1.1em;
+	}
 }

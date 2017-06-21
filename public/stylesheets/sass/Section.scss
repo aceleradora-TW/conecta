@@ -2,14 +2,25 @@
 @import "_mixins.scss";
 @import "MediaQuery.scss";
 
+
 .Section {
   @include size($width: 100%, $min-height: 85vh);
   @include flex($direction: column);
-  background-image: url("/images/background-main.jpg");
+  background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;
   background-attachment: fixed;
-  padding: 0;
-  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include tablet{
+    background-image: url("/images/background-main-tablet.jpg");
+  }
+  @include mobile{
+    background-image: url("/images/background-main-mobile.jpg");
+  }
+  @include smallMobile{
+    background-image: url("/images/background-main-smallMobile.jpg");
+    background-repeat: repeat;
+  }
 }
 
 .SectionOpacity {
@@ -31,6 +42,9 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include blackGradient($alpha: 0.8);
   background: rgba(0,0,0,0.8);
+  @include smallMobile{
+  @include size($height: 202vh);
+  }
 }
 
 .About{
@@ -42,6 +56,9 @@
   text-align: justify;
   background-color: $darker-blue-color;
   color: $white-font-color;
+  @include smallMobile{
+  @include size($min-height: 65vh);
+  }
 }
 
 .SectionCards {
@@ -49,6 +66,7 @@
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;
+
   @include tablet{
     flex-direction: column;
     align-items: center;

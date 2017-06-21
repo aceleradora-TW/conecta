@@ -2,6 +2,7 @@
 
 body{
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 .material-icons {
@@ -13,6 +14,7 @@ body{
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -32,18 +34,19 @@ body{
   font-size: 3em;
   @include smallMobile{
     font-size: 2em;
-  };
+  }
 }
+
 .material-icons.md-35px {
-  @include tablet{
-    font-size: 35px;
+  @include tablet {
+    font-size: 2.3em;
+  }
+  @include mobile {
+    font-size: 2.5em;
   }
   @include smallMobile{
-    font-size: 20px;
+    font-size: 1em;
   }
-@include tablet {
-  font-size: 2.3em;
-}
 }
 
 .material-icons.md-1-4 {

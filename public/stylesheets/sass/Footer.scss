@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import "MediaQuery";
 
 footer{
 	@include flex($align: center, $direction: column, $justify: center);
@@ -6,4 +7,7 @@ footer{
 	@include blackGradient($alpha: 1);
 	font-family: 'Lato', sans-serif;
 	color: white;
+	@include smallMobile{
+		font-size: 0.75em;
+	}
 }
