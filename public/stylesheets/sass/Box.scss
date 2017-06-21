@@ -6,27 +6,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 50%, $width: 65%);
 }
-.TextExplanation {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($height: 70%, $width: 100%);
-  font-family: $font-style;
-  color: $white-font-color;
-  text-shadow: 1px 1px #000;
-  line-height: 2em;
-  font-size: 1.3em;
-  font-weight: lighter;
-  @include tablet {
-    font-size: 1.4em;
-  }
-  @include mobile {
-    font-size: 1.3em;
-  }
-  @include smallMobile {
-    font-size: 1.2em;
-  }
 
-
-}
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
@@ -154,27 +134,6 @@
   }
 }
 
-.Tag {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($height: 7vh, $width: 40%);
-  cursor: pointer;
-  @include mobile {
-    @include size($width: 100%);
-    margin-bottom: 2%;
-  }
-  @include smallMobile {
-    @include size($width: 100%);
-    margin-bottom: 3%;
-  }
-}
-
-.TagTitle {
-  @include flex($align: center, $direction: row, $justify: center);
-  @include size($height: 100%, $width: 100%);
-  color: $white-font-color;
-  font-family: $font-style;
-}
-
 .NavSearch {
   @include flex($direction: row, $justify: space-between);
   @include size($height: 60%, $width: 60%);
@@ -192,8 +151,6 @@
   @include flex($align: center, $justify: center);
   @include size($height: 100%, $width: 85%);
 }
-
-
 
 .InputGroup {
   @include flex($justify: center);

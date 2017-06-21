@@ -1,5 +1,39 @@
-/* line 3, ../sass/Text.scss */
+/* line 5, ../sass/Text.scss */
 .Text {
   height: 55%;
   color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 10, ../sass/Text.scss */
+.TextExplanation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+  font-family: Lato, sans-serif;
+  color: white;
+  text-shadow: 1px 1px #000;
+  line-height: 2em;
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 10, ../sass/Text.scss */
+  .TextExplanation {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 10, ../sass/Text.scss */
+  .TextExplanation {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 10, ../sass/Text.scss */
+  .TextExplanation {
+    font-size: 1.2em;
+  }
 }
