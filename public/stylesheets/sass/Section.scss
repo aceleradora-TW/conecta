@@ -11,15 +11,14 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  @include tablet{
+  @include tablet {
     background-image: url("/images/background-main-tablet.jpg");
   }
-  @include mobile{
+  @include mobile {
     background-image: url("/images/background-main-mobile.jpg");
   }
-  @include smallMobile{
+  @include smallMobile {
     background-image: url("/images/background-main-smallMobile.jpg");
-    background-repeat: repeat;
   }
 }
 

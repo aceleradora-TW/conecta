@@ -26,11 +26,10 @@
   /* line 6, ../sass/Section.scss */
   .Section {
     background-image: url("/images/background-main-smallMobile.jpg");
-    background-repeat: repeat;
   }
 }
 
-/* line 26, ../sass/Section.scss */
+/* line 25, ../sass/Section.scss */
 .SectionOpacity {
   height: 85vh;
   width: 100%;
@@ -39,7 +38,7 @@
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 32, ../sass/Section.scss */
+/* line 31, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -51,7 +50,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 39, ../sass/Section.scss */
+/* line 38, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -62,13 +61,13 @@
   background: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 499px) {
-  /* line 39, ../sass/Section.scss */
+  /* line 38, ../sass/Section.scss */
   .Collaborators {
     height: 202vh;
   }
 }
 
-/* line 48, ../sass/Section.scss */
+/* line 47, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 97vh;
@@ -84,13 +83,13 @@
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 48, ../sass/Section.scss */
+  /* line 47, ../sass/Section.scss */
   .About {
     min-height: 65vh;
   }
 }
 
-/* line 62, ../sass/Section.scss */
+/* line 61, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -102,7 +101,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 62, ../sass/Section.scss */
+  /* line 61, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -110,7 +109,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 62, ../sass/Section.scss */
+  /* line 61, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -118,7 +117,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 62, ../sass/Section.scss */
+  /* line 61, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -126,7 +125,7 @@
   }
 }
 
-/* line 85, ../sass/Section.scss */
+/* line 84, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -137,7 +136,7 @@
   padding: 0;
 }
 
-/* line 91, ../sass/Section.scss */
+/* line 90, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

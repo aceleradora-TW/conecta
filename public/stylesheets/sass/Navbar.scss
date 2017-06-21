@@ -3,32 +3,32 @@
 @import "_variables.scss";
 @import "MediaQuery";
 
-.Navbar{
+.Navbar {
 	@include size($width:100%, $height:12vh);
 	@include flex($direction: row, $justify: space-between);
 	font-family: $font-style;
 	font-weight: lighter;
 	background-color: rgba(0,0,0,0.47);
 	color: $white-font-color;
-	@include mobile{
+	@include mobile {
 		align-items: center;
 	}
 }
 
-.NavLogo{
+.NavLogo {
 	@include size($width:50%, $height:100%);
 	@include flex($align: center, $justify: flex-start);
 	margin-left: 3%;
-	@include tablet{
+	@include tablet {
 		@include size($width:25%);
 		@include flex($justify: center);
 	}
-	@include smallMobile{
+	@include smallMobile {
 		width: 100%;
 	}
 }
 
-.NavLinks{
+.NavLinks {
 	@include size($width:50%, $height:100%);
 	@include flex($align: center, $direction: row, $justify: flex-end);
 	list-style: none;
@@ -46,25 +46,25 @@
 	@include smallMobile {
 		padding-right: 5%;
 	}
-	& a{
+	& a {
 		text-decoration: none;
 		font-size: 1.1em;
 		color: $white-font-color;
 		text-align: center;
-		&:hover{
+		&:hover {
 			text-decoration: none;
 			color: $white-font-color;
 		}
 	}
 }
 
-.Link{
+.Link {
 	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-font-color;
-	&:hover{
+	&:hover {
 		background-color: rgba(0,0,0,0.7);
 		text-decoration: none;
 		color: rgba(52, 73, 94, 1);
