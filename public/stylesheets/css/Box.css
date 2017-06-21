@@ -244,14 +244,6 @@
 }
 
 /* line 142, ../sass/Box.scss */
-.Text {
-  height: 55%;
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: center;
-}
-
-/* line 149, ../sass/Box.scss */
 .ContentSearch {
   display: flex;
   align-items: center;
@@ -265,19 +257,19 @@
   padding: 0%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 149, ../sass/Box.scss */
+  /* line 142, ../sass/Box.scss */
   .ContentSearch {
     min-height: 20vh;
   }
 }
 @media (max-width: 499px) {
-  /* line 149, ../sass/Box.scss */
+  /* line 142, ../sass/Box.scss */
   .ContentSearch {
     min-height: 18vh;
   }
 }
 
-/* line 164, ../sass/Box.scss */
+/* line 157, ../sass/Box.scss */
 .Tag {
   display: flex;
   align-items: center;
@@ -288,21 +280,21 @@
   cursor: pointer;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 164, ../sass/Box.scss */
+  /* line 157, ../sass/Box.scss */
   .Tag {
     width: 100%;
     margin-bottom: 2%;
   }
 }
 @media (max-width: 499px) {
-  /* line 164, ../sass/Box.scss */
+  /* line 157, ../sass/Box.scss */
   .Tag {
     width: 100%;
     margin-bottom: 3%;
   }
 }
 
-/* line 178, ../sass/Box.scss */
+/* line 171, ../sass/Box.scss */
 .TagTitle {
   display: flex;
   align-items: center;
@@ -314,7 +306,7 @@
   font-family: Lato, sans-serif;
 }
 
-/* line 185, ../sass/Box.scss */
+/* line 178, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -323,7 +315,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 185, ../sass/Box.scss */
+  /* line 178, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -331,7 +323,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 185, ../sass/Box.scss */
+  /* line 178, ../sass/Box.scss */
   .NavSearch {
     display: flex;
     align-items: center;
@@ -340,7 +332,7 @@
   }
 }
 
-/* line 198, ../sass/Box.scss */
+/* line 191, ../sass/Box.scss */
 .BoxTitle {
   display: flex;
   align-items: center;
@@ -349,14 +341,14 @@
   width: 85%;
 }
 
-/* line 205, ../sass/Box.scss */
+/* line 198, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
   width: 75%;
 }
 @media (max-width: 499px) {
-  /* line 205, ../sass/Box.scss */
+  /* line 198, ../sass/Box.scss */
   .InputGroup {
     width: 95%;
     display: flex;
@@ -364,13 +356,13 @@
   }
 }
 
-/* line 214, ../sass/Box.scss */
+/* line 207, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
-/* line 218, ../sass/Box.scss */
+/* line 211, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -378,7 +370,7 @@
   justify-content: flex-end;
 }
 
-/* line 223, ../sass/Box.scss */
+/* line 216, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }

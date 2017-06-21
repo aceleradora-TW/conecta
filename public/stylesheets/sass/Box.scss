@@ -139,13 +139,6 @@
   color: $white-color;
 }
 
-.Text {
-  @include size($height: 55%);
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: center;
-}
-
 .ContentSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 98%, $min-height: 25vh);

@@ -1,0 +1,6 @@
+@import "_mixins.scss";
+
+.Text {
+  @include size($height: 55%);
+  color: rgba(0, 0, 0, 0.8);
+}  
