@@ -3,8 +3,8 @@
 @import "_variables";
 @import "Form";
 
-.Input{
-  &Search{
+.Input {
+  &Search {
     @include size ($width: 60%);
     font-size: 1.05em;
     border: 0.2em solid rgba(0, 0, 0, .4);
@@ -88,4 +88,8 @@
       font-size: 0.8em;
     }
   }
+}
+
+input{
+  outline: none;
 }

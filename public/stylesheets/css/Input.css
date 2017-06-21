@@ -14,11 +14,6 @@
   }
 }
 
-/* line 14, ../sass/Form.scss */
-input, .ButtonFilter, .ButtonSearch {
-  outline: none;
-}
-
 /* line 7, ../sass/Input.scss */
 .InputSearch {
   width: 60%;
@@ -139,4 +134,9 @@ input, .ButtonFilter, .ButtonSearch {
   .InputGroup span {
     font-size: 0.8em;
   }
+}
+
+/* line 93, ../sass/Input.scss */
+input {
+  outline: none;
 }

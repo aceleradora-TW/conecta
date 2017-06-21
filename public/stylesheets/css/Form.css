@@ -13,8 +13,3 @@
     width: 100%;
   }
 }
-
-/* line 14, ../sass/Form.scss */
-input, .ButtonFilter, .ButtonSearch {
-  outline: none;
-}

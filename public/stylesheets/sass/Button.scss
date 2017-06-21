@@ -3,7 +3,6 @@
 @import "MediaQuery";
 
 .Button{
-  // @include flex($align: center, $justify: center);
   @include flex($justify: center);
   @include size($height: 100%);
   background-color: $blue-color;
@@ -47,27 +46,29 @@
     }
   }
 
-&.ButtonSend {
-  @include size($height: 4.6vh);
-  &:disabled{
-    background-color: rgba(128, 128, 128, 1);
-  }
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: rgba(128, 128, 128, 1);
+    }
   }
 
 }
-.ButtonFilter{
+.ButtonFilter {
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
+  outline: none;
 
   &-activated {
     border-radius: 4px 0 0 0;
   }
 }
 
-.ButtonSearch{
+.ButtonSearch {
+  outline: none;
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
   cursor: pointer;
