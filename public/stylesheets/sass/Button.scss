@@ -1,6 +1,8 @@
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
+
+
 
 .Button{
   // @include flex($align: center, $justify: center);
@@ -18,17 +20,6 @@
   color: $white-color;
   text-align: center;
   letter-spacing: .5px;
-
-}
-
-.Button:hover{
-  box-shadow: 1px 1px 1px 1px #6BB9F0;
-  cursor: pointer;
-}
-.Button a {
-  @include flex($align: center, $justify: center);
-  text-decoration: none;
-  color: white;
 
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
@@ -48,7 +39,6 @@
       background-color: rgba(128, 128, 128, 1);
     }
   }
-
 }
 
 .ButtonFilter{
