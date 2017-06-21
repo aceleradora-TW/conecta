@@ -15,8 +15,7 @@
   outline: 0;
   text-decoration: none;
   color: $white-font-color;
-  text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.1em;
   @include smallMobile{
     @include size($width: 1%);
   }
@@ -61,21 +60,8 @@
   cursor: pointer;
   border-radius: 4px 0 0 4px;
   outline: none;
-
   &-activated {
     border-radius: 4px 0 0 0;
-  }
-}
-
-.ButtonSearch {
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, .4);
-  border-left: none;
-  cursor: pointer;
-  padding: 0 2%;
-  border-radius: 0 4px 4px 0;
-  &:hover {
-    background: rgba(0, 0, 0, .2);
   }
 }
 
@@ -109,6 +95,6 @@
   padding: 15px;
   border-radius: 100%;
   &:hover {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $black-color;
   }
 }
