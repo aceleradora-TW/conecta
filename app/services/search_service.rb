@@ -4,9 +4,16 @@ class SearchService
     @competences = Competence.all(conditions: ["lower(name) like ?", competence_name])
   end
 
-  def find_related_competence_institutions compenteces
+  def find_related_competence_institutions compenteces, institution_type
+    if institution_type == :company
+      institution_discriminator = 'Company'
+    else
+      institution_discriminator = 'ResearchCenter'
+    end
+    institutions = Institution.all(fields: [:id], conditions: ["type = ?",institution_discriminator])
+    institution_ids = institutions.map { |institution| institution.id }
     competences_id = compenteces.map { |c| c.id }
-    @company_competence = CompetenceInstitution.all(conditions: ['competence_id in ? and (competence_value >= 3 OR competence_value < 0)', competences_id])
+    @company_competence = CompetenceInstitution.all(conditions: ["competence_id in ? AND (competence_value >= 3 OR competence_value < 0) AND institution_id in ?", competences_id,institution_ids])
   end
 
   def find_by_segment segment_name

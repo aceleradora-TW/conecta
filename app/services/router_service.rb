@@ -6,7 +6,7 @@ class RouterService
     search_service = SearchService.new
     case search_type
     when 'competencia' then
-      return_competence value_sql, search_service
+      return_competence value_sql, search_service, :company
     when 'segmento' then
       return_segment value_sql, search_service
     when 'empresa' then
@@ -14,15 +14,15 @@ class RouterService
     when 'centro-pesquisa' then
       return_research_center value_sql, search_service
     when 'estrutura-pesquisa-competencia' then
-      return_competence value_sql, search_service
+      return_competence value_sql, search_service, :research_center
     end
   end
 
-  def return_competence value_sql, search_service
+  def return_competence value_sql, search_service, institution_type
     @institutions_searched = []
     @competences = search_service.find_by_competence(value_sql)
     if @competences.length != 0
-      @institution_competence = search_service.find_related_competence_institutions(@competences)
+      @institution_competence = search_service.find_related_competence_institutions(@competences,institution_type)
       @institution_competence.each do |single_competence|
         local_institution = single_competence.institution
         index_of_institution = @institutions_searched.index local_institution
