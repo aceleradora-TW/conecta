@@ -400,7 +400,7 @@
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
-  width: 70%;
+  width: 42.5%;
   text-align: right;
   flex-wrap: wrap;
 }
@@ -440,20 +440,17 @@
   width: 70%;
 }
 
-/* line 274, ../sass/Card.scss */
 .ItemStar {
   height: 100%;
   display: flex;
   justify-content: flex-end;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 274, ../sass/Card.scss */
   .ItemStar {
     width: 32%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 274, ../sass/Card.scss */
   .ItemStar {
     height: 100%;
     display: flex;
@@ -462,7 +459,6 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 274, ../sass/Card.scss */
   .ItemStar {
     height: 100%;
     display: flex;
@@ -470,8 +466,6 @@
     justify-content: center;
   }
 }
-
-/* line 290, ../sass/Card.scss */
 .ContactTitle {
   display: flex;
   align-items: flex-end;
@@ -480,14 +474,12 @@
   width: 100%;
 }
 
-/* line 295, ../sass/Card.scss */
 .CompanyName {
   height: 10%;
   width: 100%;
   text-align: center;
 }
 
-/* line 300, ../sass/Card.scss */
 .CenterName {
   height: 10%;
   width: 100%;
@@ -495,7 +487,6 @@
   margin-bottom: 3%;
 }
 
-/* line 306, ../sass/Card.scss */
 .CompanyDescription {
   display: flex;
   height: 30%;
@@ -505,27 +496,23 @@
   line-height: 1.8em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 306, ../sass/Card.scss */
   .CompanyDescription {
     width: 90%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 306, ../sass/Card.scss */
   .CompanyDescription {
     width: 90%;
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 306, ../sass/Card.scss */
   .CompanyDescription {
     width: 90%;
     font-size: 0.7em;
   }
 }
 
-/* line 325, ../sass/Card.scss */
 .CenterTheme {
   display: flex;
   flex-direction: row;
@@ -533,7 +520,6 @@
   width: 100%;
 }
 
-/* line 330, ../sass/Card.scss */
 .ItemTheme {
   height: 100%;
   width: 50%;
@@ -541,7 +527,6 @@
   word-wrap: break-word;
 }
 
-/* line 336, ../sass/Card.scss */
 .FooterCardPrimay {
   display: flex;
   align-items: center;
@@ -552,35 +537,29 @@
   border-top: 1px solid rgba(193, 193, 193, 0.45);
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 336, ../sass/Card.scss */
   .FooterCardPrimay {
     flex-direction: column;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 336, ../sass/Card.scss */
   .FooterCardPrimay {
     flex-direction: row;
   }
 }
 @media (max-width: 499px) {
-  /* line 336, ../sass/Card.scss */
   .FooterCardPrimay {
     flex-direction: column;
   }
 }
 
-/* line 350, ../sass/Card.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  width: 70%;
-  margin: 20px;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 350, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -590,7 +569,6 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 350, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -600,7 +578,6 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 350, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -610,7 +587,6 @@
   }
 }
 
-/* line 374, ../sass/Card.scss */
 .BoxButtonCard {
   display: flex;
   align-items: center;
@@ -619,7 +595,6 @@
   width: 60%;
 }
 
-/* line 379, ../sass/Card.scss */
 .BoxButtonMessage {
   display: flex;
   align-items: center;
@@ -628,7 +603,6 @@
   width: 40%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 379, ../sass/Card.scss */
   .BoxButtonMessage {
     height: 100px;
     width: 100%;
@@ -638,7 +612,6 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 379, ../sass/Card.scss */
   .BoxButtonMessage {
     height: 100%;
     width: 80%;
@@ -648,7 +621,6 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 379, ../sass/Card.scss */
   .BoxButtonMessage {
     height: 70%;
     width: 100%;
@@ -658,7 +630,6 @@
   }
 }
 
-/* line 402, ../sass/Card.scss */
 .CompanyCompetences {
   display: flex;
   flex-direction: column;
@@ -667,26 +638,22 @@
   margin-top: 3%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 402, ../sass/Card.scss */
   .CompanyCompetences {
     width: 90%;
     font-size: 1.1em;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 402, ../sass/Card.scss */
   .CompanyCompetences {
     font-size: 0.9em;
   }
 }
 @media (max-width: 499px) {
-  /* line 402, ../sass/Card.scss */
   .CompanyCompetences {
     font-size: 0.9em;
   }
 }
 
-/* line 418, ../sass/Card.scss */
 .ResearchCompetences {
   display: flex;
   flex-direction: row;
@@ -696,7 +663,6 @@
   text-align: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 418, ../sass/Card.scss */
   .ResearchCompetences {
     font-size: 0.7em;
     align-items: center;
@@ -705,7 +671,6 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 418, ../sass/Card.scss */
   .ResearchCompetences {
     font-size: 0.7em;
     align-items: center;
@@ -714,14 +679,12 @@
   }
 }
 
-/* line 437, ../sass/Card.scss */
 .CardSecondary {
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 437, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -730,7 +693,6 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 437, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -739,7 +701,6 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 437, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -748,7 +709,6 @@
   }
 }
 
-/* line 452, ../sass/Card.scss */
 .FooterCardSecondary {
   display: flex;
   align-items: center;
@@ -762,32 +722,27 @@
   margin-bottom: 3%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 452, ../sass/Card.scss */
   .FooterCardSecondary {
     min-height: 146px;
     flex-direction: column;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 452, ../sass/Card.scss */
   .FooterCardSecondary {
     min-height: 140px;
     flex-direction: column;
   }
 }
 @media (max-width: 499px) {
-  /* line 452, ../sass/Card.scss */
   .FooterCardSecondary {
     min-height: 140px;
     flex-direction: column;
   }
 }
-/* line 471, ../sass/Card.scss */
 .FooterCardSecondary .FooterCardSecondaryItem {
-  width: 45%;
+  width: 42.5%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 471, ../sass/Card.scss */
   .FooterCardSecondary .FooterCardSecondaryItem {
     width: 100%;
     display: flex;
@@ -796,19 +751,16 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 471, ../sass/Card.scss */
   .FooterCardSecondary .FooterCardSecondaryItem {
     font-size: 13px;
   }
 }
 @media (max-width: 499px) {
-  /* line 471, ../sass/Card.scss */
   .FooterCardSecondary .FooterCardSecondaryItem {
     font-size: 13px;
   }
 }
 
-/* line 486, ../sass/Card.scss */
 .InstitutionList {
   display: flex;
   flex-direction: row;
@@ -817,7 +769,6 @@
   padding: 2%;
 }
 
-/* line 492, ../sass/Card.scss */
 .InstitutionListHeader {
   width: 100%;
   display: flex;
@@ -825,7 +776,6 @@
   justify-content: center;
 }
 
-/* line 497, ../sass/Card.scss */
 .RegisterListHeader {
   width: 94%;
   display: flex;
@@ -834,7 +784,6 @@
   border-radius: 5px;
 }
 
-/* line 503, ../sass/Card.scss */
 .RegisterListItem {
   width: 50%;
   display: flex;
@@ -843,20 +792,17 @@
   justify-content: space-around;
 }
 
-/* line 508, ../sass/Card.scss */
 .InstitutionList .Title {
   background: red;
   height: 5vh;
   width: 20%;
 }
 
-/* line 513, ../sass/Card.scss */
 .InstitutionList .LeftItem {
   width: 75%;
   text-align: left;
 }
 
-/* line 518, ../sass/Card.scss */
 .InstitutionList .RightItem {
   width: 25%;
   text-align: center;
