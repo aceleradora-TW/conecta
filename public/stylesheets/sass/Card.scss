@@ -261,7 +261,7 @@
 
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 70%);
+  @include size($height: 100%, $width: 42.5%);
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
@@ -298,6 +298,7 @@
 
 .ItemStar{
   height: 100%;
+  width: 45%;
   display: flex;
   justify-content: flex-end;
 
@@ -379,8 +380,7 @@
 }
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
-  margin: 20px;
+  @include size($height: 100%, $width: 100%);
   @include tablet{
     align-items: center;
     justify-content: center;
@@ -513,7 +513,7 @@
     flex-direction: column;
   }
   .FooterCardSecondaryItem {
-    @include size($width: 45%);
+    @include size($width: 42.5%);
     @include tablet{
       width: 100%;
       display: flex;
