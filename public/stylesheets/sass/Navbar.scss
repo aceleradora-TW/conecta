@@ -97,7 +97,7 @@
 .NavLinks {
 	@include size($width: 50%, $min-height: 100%);
 	@include flex($justify:flex-end, $align:center, $direction: row);
-	list-style: flex;
+	list-style: none;
 	margin: 0;
 	color: $white-color;
 
