@@ -5,6 +5,7 @@ body{
   overflow-x: hidden;
   padding: 0;
 }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -14,12 +15,12 @@ body{
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
 }
+
 .material-icons.md-3 {
   font-size: 3em;
   @include tablet {

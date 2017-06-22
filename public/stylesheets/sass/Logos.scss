@@ -5,7 +5,7 @@
 .Logo {
 	&-wide {
 		@include size($height: 50%, $width: 10%);
-		background-repeat: no-repeat;
+		background-repeat: no-repeat; 
 		background-size: 100%;
 		background-image: url("/images/tecnopuc4.png");
 		@include tablet {
@@ -44,5 +44,4 @@
 		@include flex($align: center, $direction: row, $justify: space-around);
 		flex-wrap: wrap;
 	}
-
 }

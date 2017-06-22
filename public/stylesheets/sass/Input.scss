@@ -22,6 +22,18 @@
   }
 }
 
+.InputGroupButton{
+  @include size($width: 30%);
+  z-index: 99;
+}
+
+.InputSearch{
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  padding-left: 2%;
+  width: 60%;
+}
+
 .ModalInputs {
   @include flex($align: center, $direction: column);
   @include size($width: 100%);

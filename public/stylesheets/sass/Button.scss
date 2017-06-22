@@ -44,13 +44,13 @@
 
       @include mobile {
         @include flex($justify: center);
-        @include size($width: 0%);
+        @include size($width: 0%, $height: 32px);
         font-size: 0.75rem;
         span{display:none}
       }
       @include smallMobile {
         @include flex($justify: center);
-        @include size($width: 0%);
+        @include size($width: 0%, $height: 32px);
         font-size: 0.75rem;
         span{display:none}
       }
@@ -62,7 +62,7 @@
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
-  border-radius: 4px 0 0 4px; 
+  border-radius: 4px 0 0 4px;
   outline: none;
   &-activated {
     border-radius: 4px 0 0 0;
@@ -105,4 +105,12 @@
 
 .ButtonSearch {
   @include flex($align: center);
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2%;
+  border-radius: 0 4px 4px 0;
+  &:hover{
+    background: rgba(0, 0, 0, .2);
+  }
 }

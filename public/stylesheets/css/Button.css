@@ -67,6 +67,7 @@
   .Button a {
     display: flex;
     justify-content: center;
+    height: 32px;
     width: 0%;
     font-size: 0.75rem;
   }
@@ -80,6 +81,7 @@
   .Button a {
     display: flex;
     justify-content: center;
+    height: 32px;
     width: 0%;
     font-size: 0.75rem;
   }
@@ -150,4 +152,13 @@
 .ButtonSearch {
   display: flex;
   align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2%;
+  border-radius: 0 4px 4px 0;
+}
+/* line 113, ../sass/Button.scss */
+.ButtonSearch:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
