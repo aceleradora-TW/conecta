@@ -7,7 +7,6 @@
   @include size($height: 100%);
   background-color: $blue-color;
   line-height: 2em;
-  padding: 0 2rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
@@ -33,6 +32,7 @@
     &:hover{
       box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
       cursor: pointer;
+      background: rgba(0, 0, 0, .2);
     }
     a {
       @include flex($align: center, $justify: center);
@@ -105,12 +105,11 @@
 
 .ButtonSearch {
   @include flex($align: center);
-  border: 1px solid rgba(0, 0, 0, .4);
-  border-left: none;
   cursor: pointer;
   padding: 0 2%;
-  border-radius: 0 4px 4px 0;
+  padding: 0 2em;
   &:hover{
     background: rgba(0, 0, 0, .2);
+
   }
 }
