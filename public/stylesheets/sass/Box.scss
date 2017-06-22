@@ -164,3 +164,23 @@
 .BoxSteps{
   @include flex($align: center, $direction: row, $justify: center);
 }
+
+.BoxRegister {
+  @include flex($align: center, $direction: column, $justify: center);
+  @include size($width: 40%, $height: 50vh);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  margin-bottom: 2%;
+  font-family: $font-style;
+  font-weight: lighter;
+  @include tablet{
+    @include size($width: 80%);
+  }
+  @include mobile{
+    @include size($width: 80%);
+  }
+  @include smallMobile{
+    @include size($width: 90%,$height: 300px);
+  }
+}

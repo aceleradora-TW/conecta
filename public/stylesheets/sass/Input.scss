@@ -36,6 +36,7 @@
     outline: none;
   }
 }
+
 .LoginInputs {
   @include flex($align: center, $direction: column);
   @include size($height: 48%, $width: 100%);
@@ -61,16 +62,34 @@
     text-align: left;
     width: 51%;
     @include tablet{
-    @include size($width: 100%);
-     font-size: 1.5em;
+      @include size($width: 100%);
+      font-size: 1.5em;
     }
     @include mobile{
       @include size($width: 100%);
       font-size: 1em;
     }
     @include smallMobile{
-    @include size($width: 100%);
+      @include size($width: 100%);
       font-size: 0.9em;
     }
+  }
+}
+
+.RegisterInputs {
+  @include flex($align: center, $direction: column);
+  @include size($width: 100%);
+  input{
+    @include size($width: 100%);
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    padding: 5px 6px;
+    box-sizing: border-box;
+  }
+  span {
+    @include flex($justify: flex-start);
+    @include size($width: 100%);
+    text-align: left;
   }
 }

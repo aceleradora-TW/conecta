@@ -1,69 +1,36 @@
-<!-- <section class="Section">
-
-<section class="SectionList u-fontFamilyLato">
-<h2>Empresa</h2>
-
-<form class="cardLogin" action="#" method="post">
-<div class="ModalInputs u-widthLarge">
-<span> Nome:</span>
-<input type="text" name="" value=""><br>
-</div>
-<div class="ModalInputs">
-<span>CNPJ:</span>
-<input type="text" name="" value=""><br>
-</div>
-<div class="ModalInputs">
-<span>Senha:</span>
-<input type="text" name="" value=""><br>
-</div>
-<div class="ModalInputs">
-<span>Confirmar senha:</span>
-<input type="text" name="" value=""><br>
-</div>
-<input type="submit" name="" value="Próximo">
-
-</form>
-
-</section>
-</div> -->
-
 <section class="SectionCards u-marginTopLarge">
-  <form class="CardLogin" id="LoginForm" action="/session" method="post" onload="onLoadLogin">
+  <form class="BoxRegister" id="LoginForm" action="/session" method="post" onload="onLoadLogin">
+    
     <div class="LoginHeader">
       <h1 class="u-fontFamilyLato u-fontSizeMedium">Cadastro Empresa</h1>
     </div>
-      <div class="BoxSteps">
-        <a class="Button u-marginSmall" href="1">1</a>
-        <a class="Button u-marginSmall" href="1">2</a>
-        <a class="Button u-marginSmall" href="1">3</a>
-      </div>
+
+    <div class="BoxSteps">
+      <a class="Button u-marginSmall" href="#1">1</a>
+      <a class="Button u-marginSmall" href="#2">2</a>
+      <a class="Button u-marginSmall" href="#3">3</a>
+    </div>
+
     <div class="BoxRegisterBody">
-      <!--  coolei aq-->
-      <div class="ModalInputs u-widthLarge">
+      <div class="RegisterInputs">
         <span> Nome:</span>
         <input type="text" name="" value="">
       </div>
-      <div class="ModalInputs u-widthLarge">
-        <span>CNPJ:</span>
+      <div class="RegisterInputs">
+        <span> CNPJ:</span>
+        <input type="text" name="" value="">
+      </div>  <div class="RegisterInputs">
+        <span> Senha:</span>
+        <input type="text" name="" value="">
+      </div>  <div class="RegisterInputs">
+        <span> Confirmar Senha:</span>
         <input type="text" name="" value="">
       </div>
-      <div class="ModalInputs u-widthLarge">
-        <span>Senha:</span>
-        <input type="text" name="" value="">
-      </div>
-      <div class="ModalInputs u-widthLarge">
-        <span>Confirmar senha:</span>
-        <input type="text" name="" value="">
-      </div>
-
-
-      <!--  parei de cola aq-->
-
     </div>
-    <div class="RegisterFooter">
-      inicio isso é o footer
-      <input type="submit" name="" value="Próximo">
-  fim isso é o footer
+
+    <div class="RegisterFooter u-marginSidesAndBottom">
+      <button class="Button ButtonSend" type="button" name="button">Próximo</button>
     </div>
+
   </form>
 </section>
