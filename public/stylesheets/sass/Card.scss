@@ -2,11 +2,10 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
-
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45vh);
-  background: rgba(255, 255, 255, 1);
+  background: $white-color;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
@@ -29,12 +28,59 @@
 .CardLogin {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $height: 50vh);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  margin-bottom: 2%;
+  font-family: $font-style;
+  font-weight: lighter;
+  @include tablet{
+    @include size($width: 80%);
+  }
+  @include mobile{
+    @include size($width: 80%);
+  }
+  @include smallMobile{
+    @include size($width: 90%,$height: 300px);
+  }
+}
+
+.CardList, .InstitutionList {
+  @include flex($align: center, $direction: column, $justify: flex-end);
+  @include size($width: 30%);
   background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
+  @include tablet{
+    @include size($width: 40%);
+    padding: 2%;
+  }
+  @include mobile{
+    @include size($width: 90%);
+    padding: 2%;
+  }
+  @include smallMobile{
+    @include size($width: 90%);
+    padding: 2%;
+  }
+}
+
+
+.ContentCardList{
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($width: 90%);
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  @include mobile{
+    flex-direction: column;
+  }
+  @include smallMobile{
+    flex-direction: column;
+  }
 }
 
 .LogoCard{
@@ -70,6 +116,7 @@
   @include size($width: 100%, $min-height: 20%);
   font-family: $font-style;
   flex-wrap: wrap;
+  text-align: center;
   @include mobile{
     @include size($width: 90%);
     font-size: 0.9em;
@@ -431,4 +478,42 @@
       font-size: 13px;
     }
   }
+}
+
+.InstitutionList {
+  @include flex($direction: row, $justify: flex-start);
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.InstitutionListHeader {
+  @include size($width: 100%);
+  @include flex($direction: row, $justify: center);
+}
+
+.RegisterListHeader {
+  @include size($width: 94%);
+  @include flex($align:center, $direction: row);
+  border-radius: 5px;
+}
+
+.RegisterListItem {
+  @include size($width: 50%);
+  @include flex($align:center, $direction: column, $justify: space-around);
+
+}
+
+.InstitutionList .Title {
+  background: red;
+  @include size($width: 20%, $height: 5vh);
+}
+
+.InstitutionList .LeftItem {
+  @include size($width: 75%);
+  text-align: left;
+}
+
+.InstitutionList .RightItem {
+  @include size($width: 25%);
+  text-align: center;
 }

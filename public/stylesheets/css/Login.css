@@ -1,4 +1,4 @@
-/* line 4, ../sass/Login.scss */
+/* line 5, ../sass/Login.scss */
 .LoginHeader {
   display: flex;
   align-items: center;
@@ -6,8 +6,26 @@
   height: 15%;
   width: 100%;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 5, ../sass/Login.scss */
+  .LoginHeader {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 5, ../sass/Login.scss */
+  .LoginHeader {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Login.scss */
+  .LoginHeader {
+    font-size: 1em;
+  }
+}
 
-/* line 9, ../sass/Login.scss */
+/* line 19, ../sass/Login.scss */
 .LoginBody {
   display: flex;
   flex-direction: column;
@@ -16,16 +34,16 @@
   width: 80%;
 }
 
-/* line 14, ../sass/Login.scss */
+/* line 24, ../sass/Login.scss */
 .LoginFooter {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  height: 20%;
+  justify-content: space-around;
+  height: 40%;
   width: 100%;
 }
-/* line 17, ../sass/Login.scss */
+/* line 27, ../sass/Login.scss */
 .LoginFooter a {
   color: black;
 }

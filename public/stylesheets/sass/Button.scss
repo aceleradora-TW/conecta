@@ -1,6 +1,8 @@
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
+
+
 
 .Button{
   @include flex($justify: center);
@@ -24,6 +26,22 @@
     }
 }
 
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+
+    @include mobile{
+      @include size($height: 32px);
+    }
+    @include smallMobile{
+      @include size($height: 32px);
+}
+
+    &:disabled{
+      background-color: gray;
+
+    }
+  }
+
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
     cursor: pointer;
@@ -35,12 +53,6 @@
   }
   @include tablet {
     font-size: 0.8rem;
-  }
-  &.ButtonSend {
-    @include size($height: 4.6vh);
-    &:disabled{
-      background-color: rgba(128, 128, 128, 1);
-    }
   }
 }
 
