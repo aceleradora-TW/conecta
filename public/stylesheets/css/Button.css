@@ -16,32 +16,40 @@
   text-align: center;
   letter-spacing: .5px;
 }
-/* line 23, ../sass/Button.scss */
+/* line 22, ../sass/Button.scss */
+.Button.ButtonSend {
+  height: 4.6vh;
+}
+/* line 24, ../sass/Button.scss */
+.Button.ButtonSend:disabled {
+  background-color: gray;
+}
+/* line 29, ../sass/Button.scss */
 .Button.ButtonSend {
   height: 4.6vh;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 23, ../sass/Button.scss */
+  /* line 29, ../sass/Button.scss */
   .Button.ButtonSend {
     height: 32px;
   }
 }
 @media (max-width: 499px) {
-  /* line 23, ../sass/Button.scss */
+  /* line 29, ../sass/Button.scss */
   .Button.ButtonSend {
     height: 32px;
   }
 }
-/* line 33, ../sass/Button.scss */
+/* line 39, ../sass/Button.scss */
 .Button.ButtonSend:disabled {
   background-color: gray;
 }
-/* line 38, ../sass/Button.scss */
+/* line 45, ../sass/Button.scss */
 .Button:hover {
   box-shadow: 1px 1px 1px 1px #6BB9F0;
   cursor: pointer;
 }
-/* line 42, ../sass/Button.scss */
+/* line 49, ../sass/Button.scss */
 .Button a {
   display: flex;
   align-items: center;
@@ -55,16 +63,8 @@
     font-size: 0.8rem;
   }
 }
-/* line 50, ../sass/Button.scss */
-.Button.ButtonSend {
-  height: 4.6vh;
-}
-/* line 52, ../sass/Button.scss */
-.Button.ButtonSend:disabled {
-  background-color: gray;
-}
 
-/* line 58, ../sass/Button.scss */
+/* line 59, ../sass/Button.scss */
 .ButtonFilter {
   height: 100%;
   width: 100%;
