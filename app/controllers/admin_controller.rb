@@ -9,6 +9,8 @@ use Rack::Session::Cookie, :key => 'rack.session',
 DEFAULT_ADMIN_ROUTE = "/admin/list_instituitions"
 DEFAULT_USER_ROUTE = "/admin/company"
 
+# só um teste pra ver se o wercker ta certo
+
 class AdminController < Controller
   def initialize father_controller
     super father_controller
