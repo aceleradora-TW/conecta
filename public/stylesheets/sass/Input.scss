@@ -111,9 +111,9 @@ input{
     }
   }
   span {
+    @include size($width: 51%);
     justify-content: flex-start;
     text-align: left;
-    width: 51%;
     @include tablet{
       @include size($width: 100%);
       font-size: 1.5em;

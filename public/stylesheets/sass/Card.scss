@@ -12,21 +12,19 @@
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
-    width: 95%;
-    min-height: 55vh;
-    font-size: 1.5em; 
-  };
+    @include size($width: 95%, $min-height: 55vh);
+    font-size: 1.5em;
+  }
   @include mobile {
-    width: 95%;
-    min-height: 55vh;
+    @include size($width: 95%, $min-height: 55vh);
     font-size: 1.5em;
-  };
+  }
   @include smallMobile {
-    width: 95%;
-    min-height: 55vh;
+    @include size($width: 95%, $min-height: 55vh);
     font-size: 1.5em;
-  };
+  }
 }
+
 .CardLogin {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $height: 50vh);
@@ -87,42 +85,29 @@
 
 .LogoCard{
   @include tablet{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
   @include mobile{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
   @include smallMobile{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
   }
 }
 
 .CardNav {
-
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);
   @include mobile{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include size($width: 100%);
+    @include flex($align: center, $direction: column, $justify: center);
   }
   @include smallMobile{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include size($width: 100%);
+    @include flex($align: center, $direction: column, $justify: center);
   }
 }
 
@@ -133,14 +118,14 @@
   flex-wrap: wrap;
   text-align: center;
   @include mobile{
+    @include size($width: 90%);
     font-size: 0.9em;
     text-align: center;
-    width: 90%;
   }
   @include smallMobile{
+    @include size($width: 90%);
     font-size: 0.9em;
     text-align: center;
-    width: 90%;
   }
 }
 
@@ -211,13 +196,13 @@
     transition: .5s;
   }
   @include tablet{
-    width: 100%;
+    @include size($width: 100%);
   }
   @include mobile{
-    width: 100%;
+    @include size($width: 100%);
   }
   @include smallMobile{
-    width: 100%;
+    @include size($width: 100%);
   }
 }
 
@@ -227,15 +212,11 @@
   line-height: 2em;
   align-self: center;
   @include mobile{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flex($align: center, $direction: column, $justify: center);
     box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
   }
   @include smallMobile{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flex($align: center, $direction: column, $justify: center);
     box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
   }
 }
@@ -261,18 +242,18 @@
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
-    width: 68%;
+    @include size($width: 68%);
     text-align: left;
   }
   @include mobile{
-    width: 100%;
+    @include size($width: 100%);
     text-align: left;
     justify-content: center;
     align-items: center;
     font-size: 0.7em;
   }
   @include smallMobile{
-    width: 100%;
+    @include size($width: 100%);
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -286,31 +267,18 @@
 }
 
 .ItemStar{
+  @include size($height: 100%);
   @include flex($justify: flex-end);
-  @include size($height: 100%)
-
-
-}
-
-.ItemStar{
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-
   @include tablet{
-    width: 32%;
+    @include size($width: 32%);
   }
   @include mobile{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include size($height: 100%);
+    @include flex($align: center, $justify: center);
   }
   @include smallMobile{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include size($height: 100%);
+    @include flex($align: center, $justify: center);
   }
 }
 
@@ -337,16 +305,16 @@
   font-size: 0.9em;
   line-height: 1.8em;
   @include tablet{
-    width: 90%;
-  };
+    @include size($width: 90%);
+    }
   @include mobile {
+    @include size($width: 90%);
     font-size: 0.7em;
-    width: 90%;
-  };
+  }
   @include smallMobile {
+    @include size($width: 90%);
     font-size: 0.7em;
-    width: 90%;
-  };
+  }
 }
 .CenterTheme{
   @include flex($direction: row);
@@ -378,25 +346,22 @@
   @include size($height: 100%, $width: 70%);
   margin: 20px;
   @include tablet{
+    @include size($height: 30%, $width: 97%);
     align-items: center;
     justify-content: center;
-    height: 30%;
-    width: 97%;
     font-size: 1.1em;
   }
   @include mobile{
+    @include size($height: 30%, $width: 100%);
     align-items: center;
     justify-content: center;
-    height: 30%;
     font-size: 12px;
-    width: 100%;
   }
   @include smallMobile{
+    @include size($height: 30%, $width: 100%);
     align-items: center;
     justify-content: center;
-    height: 30%;
     font-size: 12px;
-    width: 100%;
   }
 }
 
@@ -407,26 +372,23 @@
 .BoxButtonMessage {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
-  @include tablet{
+  @include tablet {
+    @include size($height: 100px, $width: 100%);
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 100px;
     flex-direction: row;
   }
   @include mobile{
+    @include size($height: 100%, $width: 80%);
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 100%;
   }
   @include smallMobile{
+    @include size($height: 70%, $width: 100%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 70%;
   }
 }
 
@@ -435,7 +397,7 @@
   @include size($height: 60%, $width: 100%);
   margin-top: 3%;
   @include tablet {
-    width: 90%;
+    @include size($width: 90%);
     font-size: 1.1em;
   }
   @include mobile {
@@ -456,13 +418,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  };
+  }
   @include smallMobile{
     font-size: 0.7em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  };
+  }
 }
 
 .CardSecondary{
@@ -470,23 +432,14 @@
   padding: 1%;
   display: none;
   @include tablet{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  };
+    @include flex($align: center, $direction: column, $justify: center);
+  }
   @include mobile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  };
+    @include flex($align: center, $direction: column, $justify: center);
+  }
   @include smallMobile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  };
+    @include flex($align: center, $direction: column, $justify: center);
+  }
 }
 
 .FooterCardSecondary{
@@ -497,24 +450,22 @@
   padding-top: 3%;
   margin-bottom: 3%;
   @include tablet {
-    min-height: 146px;
+    @include size($min-height: 146px);
     flex-direction: column;
-  };
+  }
   @include mobile{
-    min-height: 140px;
+    @include size($min-height: 140px);
     flex-direction: column;
-  };
+  }
   @include smallMobile{
-    min-height: 140px;
+    @include size($min-height: 140px);
     flex-direction: column;
   }
   .FooterCardSecondaryItem {
     @include size($width: 45%);
     @include tablet{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include size($width: 100%);
+      @include flex($align: center, $justify: center);
     }
     @include mobile{
       font-size: 13px;

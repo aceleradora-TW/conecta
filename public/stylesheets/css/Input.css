@@ -162,9 +162,9 @@ input {
 }
 /* line 113, ../sass/Input.scss */
 .LoginInputs span {
+  width: 51%;
   justify-content: flex-start;
   text-align: left;
-  width: 51%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 113, ../sass/Input.scss */

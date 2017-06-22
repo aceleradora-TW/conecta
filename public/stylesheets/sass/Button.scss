@@ -28,7 +28,6 @@
       }
       &:disabled{
         background-color: rgba(128, 128, 128, 1);
-
       }
     }
     &:hover{
@@ -63,7 +62,7 @@
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px; 
   outline: none;
   &-activated {
     border-radius: 4px 0 0 0;
