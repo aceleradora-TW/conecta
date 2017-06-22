@@ -20,6 +20,8 @@ class InstitutionBuilder
         end
       elsif header == "description"
         @description = value
+      elsif header == "logo"
+        @logo = value
       elsif header.start_with? "Segmento_"
         segment_name = header.sub "Segmento_", ""
         @segments.push(segment_name) if value == "1"
@@ -39,6 +41,7 @@ class InstitutionBuilder
     company_csv.name = @name
     company_csv.size = @size
     company_csv.description  = @description
+    company_csv.logo  = @logo
     company_csv.segments = @segments
     company_csv.types = @types
     company_csv.competences = @competences
