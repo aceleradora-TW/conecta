@@ -11,16 +11,18 @@
 	background-color: rgba(0,0,0,0.47);
 	color: $white-font-color;
 }
+
 .NavLogo{
 	@include size($width:50%, $height:100%);
 	@include flex($align: center, $justify: flex-start);
 	margin-left: 3%;
-	
+
 	@include tablet{
 	@include size($width:25%);
 	@include flex($justify: center);
 	}
 }
+
 .NavLinks{
 	@include size($width:50%, $height:100%);
   @include flex($align: center, $direction: row, $justify: flex-end);
@@ -35,20 +37,22 @@
 		padding-right: 5%;
 	}
 }
+
 .Link{
 	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
-
 }
+
 .Link:hover{
 	background-color: rgba(0,0,0,0.7);
 	text-decoration: none;
 	color: #34495e;
 	font-size: 1.1em;
 }
+
 .Link:hover a{
 	background-color: rgba(0,0,0,0.7);
 	color: $white-font-color;
@@ -61,6 +65,7 @@
 	color: $white-font-color;
 	text-align: center;
 }
+
 .NavLinks a:hover{
 	text-decoration: none;
 	color: $white-font-color;
