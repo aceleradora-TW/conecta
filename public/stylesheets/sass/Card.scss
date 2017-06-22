@@ -82,21 +82,6 @@
   }
 }
 
-.LogoCard{
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-}
-
 .CardNav {
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);

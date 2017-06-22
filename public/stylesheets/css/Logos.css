@@ -43,3 +43,31 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 41, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 41, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 41, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
