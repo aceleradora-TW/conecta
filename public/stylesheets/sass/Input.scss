@@ -11,6 +11,7 @@
     width: 60%;
   }
 }
+
 .ModalInputs {
   @include flex($align: center, $direction: column);
   @include size($width: 100%);
@@ -36,6 +37,7 @@
     outline: none;
   }
 }
+
 .LoginInputs {
   @include flex($align: center, $direction: column);
   @include size($height: 48%, $width: 100%);
@@ -61,15 +63,15 @@
     justify-content: flex-start;
     text-align: left;
     @include tablet{
-    @include size($width: 100%);
-     font-size: 1.5em;
+      @include size($width: 100%);
+      font-size: 1.5em;
     }
     @include mobile{
       @include size($width: 100%);
       font-size: 1em;
     }
     @include smallMobile{
-    @include size($width: 100%);
+      @include size($width: 100%);
       font-size: 0.9em;
     }
   }
