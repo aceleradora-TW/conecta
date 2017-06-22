@@ -26,3 +26,28 @@
     font-size: 1.2em;
   }
 }
+
+.Title {
+  @include flex($align: center, $justify: center);
+  @include size($height: 25%, $width: 100%);
+  text-align: center;
+}
+
+.TitleSearch {
+  @include flex($align: center, $justify: center);
+  @include size($height: 20%, $width: 60%);
+  font-family: $font-style;
+  color: $white-font-color;
+  text-shadow: 1px 1px #000;
+  @include smallMobile {
+    text-align: center;
+    margin-top: 3%;
+  }
+}
+
+.RegisterTitle{
+  @include flex($align: center, $direction: row, $justify: center);
+  @include size($height: 100%, $width: 100%);
+  color: $white-font-color;
+  font-family: $font-style;
+}
