@@ -1,24 +1,14 @@
 @import "_mixins.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
 
 .Input{
   &Search{
-    @include size ($width: 60%);
     font-size: 1.05em;
     border: 1px solid rgba(0, 0, 0, .4);
     border-left: none;
     padding-left: 2%;
     font-size: 1.05em;
-    @include tablet{
-      font-size: 0.8em;
-    }
-    @include mobile{
-      font-size: 0.6em;
-    }
-    @include smallMobile{
-      font-size: 0.6em;
-      }
-
+    width: 60%;
   }
 }
 .ModalInputs {
@@ -67,9 +57,9 @@
     }
   }
   span {
-    justify-content: flex-start;
+    @include size($width: 51%);
+    @include flex($justify: flex-start);
     text-align: left;
-    width: 51%;
     @include tablet{
     @include size($width: 100%);
      font-size: 1.5em;
