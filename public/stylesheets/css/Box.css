@@ -302,7 +302,7 @@
   height: 50vh;
   width: 40%;
   background: rgba(255, 255, 255, 0.72);
-  border-radius: 5px;
+  border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: Lato, sans-serif;
@@ -323,7 +323,7 @@
 @media (max-width: 499px) {
   /* line 162, ../sass/Box.scss */
   .BoxRegister {
-    height: 300px;
+    height: 52vh;
     width: 90%;
   }
 }
