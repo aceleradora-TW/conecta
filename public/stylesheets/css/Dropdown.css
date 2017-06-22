@@ -16,7 +16,7 @@
   opacity: 0;
   transition: 1s;
 }
-/* line 20, ../sass/Dropdown.scss */
+/* line 19, ../sass/Dropdown.scss */
 .DropdownMenu-visible {
   opacity: 1;
   display: block;

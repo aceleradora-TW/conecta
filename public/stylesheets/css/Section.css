@@ -41,7 +41,7 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 33, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 97vh;
@@ -57,7 +57,7 @@
   color: white;
 }
 
-/* line 44, ../sass/Section.scss */
+/* line 43, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100vh;
@@ -69,7 +69,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 44, ../sass/Section.scss */
+  /* line 43, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 44, ../sass/Section.scss */
+  /* line 43, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -85,7 +85,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 44, ../sass/Section.scss */
+  /* line 43, ../sass/Section.scss */
   .SectionCards {
     flex-direction: column;
     align-items: center;
@@ -93,7 +93,7 @@
   }
 }
 
-/* line 66, ../sass/Section.scss */
+/* line 65, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 39vh;
@@ -104,7 +104,7 @@
   padding: 0;
 }
 
-/* line 72, ../sass/Section.scss */
+/* line 71, ../sass/Section.scss */
 .SectionList {
   width: 100%;
   min-height: 82vh;
@@ -115,7 +115,7 @@
   padding: 0;
 }
 
-/* line 78, ../sass/Section.scss */
+/* line 77, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;
