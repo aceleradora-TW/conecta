@@ -1,8 +1,8 @@
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
 
-.Button{
+.Button {
   @include flex($justify: center);
   @include size($height: 100%);
   background-color: $blue-color;
@@ -18,40 +18,45 @@
   letter-spacing: 0.1em;
   @include smallMobile{
     @include size($width: 1%);
-  }
-  &:hover{
-    box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
-    cursor: pointer;
-  }
-  a {
-    @include flex($align: center, $justify: center);
-    text-decoration: none;
-    color: $white-color;
-    @include tablet {
-      font-size: 0.8rem;
-    }
+    &.ButtonSend {
+      @include size($height: 4.6vh);
+      @include mobile{
+        @include size($height: 32px);
+      }
+      @include smallMobile{
+        @include size($height: 32px);
+      }
+      &:disabled{
+        background-color: rgba(128, 128, 128, 1);
 
-    @include mobile {
-      @include flex($justify: center);
-      @include size($width: 0%);
-      font-size: 0.75rem;
-      span{display:none}
+      }
     }
-    @include smallMobile {
-      @include flex($justify: center);
-      @include size($width: 0%);
-      font-size: 0.75rem;
-      span{display:none}
+    &:hover{
+      box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
+      cursor: pointer;
+    }
+    a {
+      @include flex($align: center, $justify: center);
+      text-decoration: none;
+      color: $white-color;
+      @include tablet {
+        font-size: 0.8rem;
+      }
+
+      @include mobile {
+        @include flex($justify: center);
+        @include size($width: 0%);
+        font-size: 0.75rem;
+        span{display:none}
+      }
+      @include smallMobile {
+        @include flex($justify: center);
+        @include size($width: 0%);
+        font-size: 0.75rem;
+        span{display:none}
+      }
     }
   }
-
-  &.ButtonSend {
-    @include size($height: 4.6vh);
-    &:disabled{
-      background-color: rgba(128, 128, 128, 1);
-    }
-  }
-
 }
 .ButtonFilter {
   @include size($height: 100%, $width: 100%);
@@ -97,4 +102,8 @@
   &:hover {
     background-color: $black-color;
   }
+}
+
+.ButtonSearch {
+  @include flex($align: center);
 }

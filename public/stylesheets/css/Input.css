@@ -1,20 +1,4 @@
-/* line 5, ../sass/Form.scss */
-.FormSearch {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-  align-content: space-between;
-}
-@media (max-width: 499px) {
-  /* line 5, ../sass/Form.scss */
-  .FormSearch {
-    width: 100%;
-  }
-}
-
-/* line 7, ../sass/Input.scss */
+/* line 6, ../sass/Input.scss */
 .InputSearch {
   width: 60%;
   font-size: 1.05em;
@@ -24,19 +8,19 @@
   font-size: 1.05em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 7, ../sass/Input.scss */
+  /* line 6, ../sass/Input.scss */
   .InputSearch {
     font-size: 0.8em;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 7, ../sass/Input.scss */
+  /* line 6, ../sass/Input.scss */
   .InputSearch {
     font-size: 0.6em;
   }
 }
 @media (max-width: 499px) {
-  /* line 7, ../sass/Input.scss */
+  /* line 6, ../sass/Input.scss */
   .InputSearch {
     font-size: 0.6em;
   }
@@ -60,9 +44,10 @@
 }
 /* line 36, ../sass/Input.scss */
 .ModalInputs span {
+  display: flex;
   justify-content: flex-start;
-  text-align: left;
   width: 51%;
+  text-align: left;
 }
 /* line 41, ../sass/Input.scss */
 .ModalInputs textarea {
@@ -135,4 +120,70 @@
 /* line 89, ../sass/Input.scss */
 input {
   outline: none;
+}
+
+/* line 93, ../sass/Input.scss */
+.LoginInputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 48%;
+  width: 100%;
+}
+/* line 96, ../sass/Input.scss */
+.LoginInputs input {
+  width: 50%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #c1c1c1;
+  padding: 5px 6px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 96, ../sass/Input.scss */
+  .LoginInputs input {
+    height: 40px;
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 96, ../sass/Input.scss */
+  .LoginInputs input {
+    height: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 96, ../sass/Input.scss */
+  .LoginInputs input {
+    height: 40px;
+    width: 100%;
+  }
+}
+/* line 113, ../sass/Input.scss */
+.LoginInputs span {
+  justify-content: flex-start;
+  text-align: left;
+  width: 51%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 113, ../sass/Input.scss */
+  .LoginInputs span {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 113, ../sass/Input.scss */
+  .LoginInputs span {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 113, ../sass/Input.scss */
+  .LoginInputs span {
+    width: 100%;
+    font-size: 0.9em;
+  }
 }

@@ -18,7 +18,7 @@
     background-image: url("/images/background-main-mobile.jpg");
   }
   @include smallMobile {
-    background-image: url("/images/background-main-smallMobile.jpg");
+    background-image: url("/images/background-main-smallMobile.jpg"); 
   }
 }
 
@@ -77,6 +77,12 @@
 .SectionSearch {
   @include size($width: 100%, $min-height: 78%);
   @include flex($align: center, $direction: column, $justify: center);
+  padding: 0;
+}
+
+.SectionList {
+  @include size($width: 100%, $min-height: 82vh);
+  @include flex($align: center, $direction: column, $justify: flex-start);
   padding: 0;
 }
 
