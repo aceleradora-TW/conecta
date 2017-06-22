@@ -209,7 +209,19 @@
   font-family: Lato, sans-serif;
 }
 
-/* line 118, ../sass/Box.scss */
+/* line 119, ../sass/Box.scss */
+.RegisterTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: Lato, sans-serif;
+}
+
+/* line 125, ../sass/Box.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -218,7 +230,7 @@
   width: 60%;
 }
 
-/* line 122, ../sass/Box.scss */
+/* line 129, ../sass/Box.scss */
 .BoxTextTitle {
   display: flex;
   align-items: center;
@@ -227,7 +239,7 @@
   width: 85%;
 }
 
-/* line 126, ../sass/Box.scss */
+/* line 133, ../sass/Box.scss */
 .FormSearch {
   display: flex;
   align-items: center;
@@ -237,7 +249,7 @@
   align-content: space-between;
 }
 
-/* line 131, ../sass/Box.scss */
+/* line 138, ../sass/Box.scss */
 .InputGroup {
   display: flex;
   justify-content: center;
@@ -245,13 +257,13 @@
   width: 75%;
 }
 
-/* line 135, ../sass/Box.scss */
+/* line 142, ../sass/Box.scss */
 .BoxFilterBy {
   width: 30%;
   z-index: 2;
 }
 
-/* line 139, ../sass/Box.scss */
+/* line 146, ../sass/Box.scss */
 .BoxClear {
   width: 50%;
   display: flex;
@@ -259,7 +271,7 @@
   justify-content: flex-end;
 }
 
-/* line 144, ../sass/Box.scss */
+/* line 151, ../sass/Box.scss */
 .BoxTextArea {
   width: 100%;
 }

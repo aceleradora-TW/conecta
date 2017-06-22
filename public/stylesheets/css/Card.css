@@ -834,19 +834,37 @@
 }
 
 /* line 517, ../sass/Card.scss */
+.RegisterListHeader {
+  width: 94%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+/* line 523, ../sass/Card.scss */
+.RegisterListItem {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* line 529, ../sass/Card.scss */
 .InstitutionList .Title {
   background: red;
   height: 5vh;
   width: 20%;
 }
 
-/* line 522, ../sass/Card.scss */
+/* line 534, ../sass/Card.scss */
 .InstitutionList .LeftItem {
   width: 75%;
   text-align: left;
 }
 
-/* line 527, ../sass/Card.scss */
+/* line 539, ../sass/Card.scss */
 .InstitutionList .RightItem {
   width: 25%;
   text-align: center;
