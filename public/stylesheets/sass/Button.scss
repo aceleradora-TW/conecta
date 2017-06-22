@@ -5,7 +5,6 @@
 
 
 .Button{
-  // @include flex($align: center, $justify: center);
   @include flex($justify: center);
   @include size($height: 100%);
   background-color: $blue-color;
@@ -20,6 +19,12 @@
   color: $white-color;
   text-align: center;
   letter-spacing: .5px;
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: gray;
+    }
+}
 
   &.ButtonSend {
     @include size($height: 4.6vh);
@@ -36,6 +41,7 @@
 
     }
   }
+
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
     cursor: pointer;
@@ -48,12 +54,6 @@
   @include tablet {
     font-size: 0.8rem;
   }
-  &.ButtonSend {
-    @include size($height: 4.6vh);
-    &:disabled{
-      background-color: rgba(128, 128, 128, 1);
-    }
-  }
 }
 
 .ButtonFilter{
@@ -62,7 +62,6 @@
   border: 1px solid rgba(0, 0, 0, .4);
   cursor: pointer;
   border-radius: 4px 0 0 4px;
-
   &-activated {
     border-radius: 4px 0 0 0;
   }
