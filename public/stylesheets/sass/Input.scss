@@ -22,9 +22,9 @@
     box-sizing: border-box;
   }
   span {
+    @include size($width: 51%);
     justify-content: flex-start;
     text-align: left;
-    width: 51%;
   }
   textarea {
     min-height: 20vh;
@@ -47,8 +47,8 @@
     box-sizing: border-box;
   }
   span {
+    @include size($width: 51%);
     justify-content: flex-start;
     text-align: left;
-    width: 51%;
   }
 }

@@ -26,11 +26,10 @@
 }
 /* line 24, ../sass/Input.scss */
 .ModalInputs span {
+  width: 51%;
   justify-content: flex-start;
   text-align: left;
-  width: 51%;
 }
-
 /* line 29, ../sass/Input.scss */
 .ModalInputs textarea {
   min-height: 20vh;
@@ -40,7 +39,6 @@
   border-radius: 5px;
   outline: none;
 }
-
 
 /* line 38, ../sass/Input.scss */
 .LoginInputs {
@@ -61,17 +59,7 @@
 }
 /* line 49, ../sass/Input.scss */
 .LoginInputs span {
+  width: 51%;
   justify-content: flex-start;
   text-align: left;
-  width: 51%;
-
-/* line 29, ../sass/Input.scss */
-.ModalInputs textarea {
-  min-height: 20vh;
-  margin: 8px 0px;
-  color: #737373;
-  padding: 7px 15px;
-  border-radius: 5px;
-  outline: none;
-
 }

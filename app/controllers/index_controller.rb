@@ -29,11 +29,9 @@ class IndexController < Controller
     end
   end
 
-
   get "/admin" do
     erb :login
   end
-
 
   post "/request_contact" do
     @name = params[:name]
@@ -54,7 +52,6 @@ class IndexController < Controller
 
     mailer.send_now
     "Email Enviado com Sucesso!"
-
-
+    
   end
 end
