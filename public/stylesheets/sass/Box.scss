@@ -6,6 +6,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 50%, $width: 65%);
 }
+
 .TextExplanation {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 70%, $width: 100%);
@@ -19,6 +20,7 @@
     font-size: 1.7em;
   }
 }
+
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
@@ -26,6 +28,7 @@
     align-items: baseline;
   }
 }
+
 .BoxText {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 50%, $width: 100%);
@@ -38,11 +41,13 @@
     font-size: 0.8em;
   }
 }
+
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 60%, $width: 100%);
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .TitleSearch {
   @include flex($align: center, $justify: center);
   @include size($height: 20%, $width: 60%);
@@ -50,6 +55,7 @@
   color: $white-font-color;
   text-shadow: 1px 1px #000;
 }
+
 .BoxHowItWorks {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 100%, $width: 20%);
@@ -57,6 +63,7 @@
     height: 80%;
   }
 }
+
 .Icon {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
@@ -68,32 +75,38 @@
     height: 50%;
   }
 }
+
 .ContentHowItWorks {
   @include flex($direction: column);
   @include size($height: 35vh, $width: 98%);
   font-family: $font-style;
   font-weight: lighter;
 }
+
 .Title {
   @include flex($align: center, $justify: center);
   @include size($height: 25%, $width: 100%);
   text-align: center;
 }
+
 .CardContentF {
   @include flex($align: flex-start, $justify: space-around);
   @include size($height: 75%, $width: 98%);
 }
+
 .Arrow {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 5%);
   color: $white-color;
 }
+
 .Text {
   @include size($height: 55%);
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
+
 .ContentSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 98%, $min-height: 25vh);
@@ -102,11 +115,13 @@
   text-align: justify;
   padding: 0%;
 }
+
 .Tag{
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 7vh, $width: 40%);
   cursor: pointer;
 }
+
 .TagTitle{
   @include flex($align: center, $direction: row, $justify: center);
   @include size($height: 100%, $width: 100%);
@@ -120,32 +135,38 @@
 	color: $white-font-color;
 	font-family: $font-style;
 }
+
 .NavSearch{
   @include flex($direction: row, $justify: space-between);
   @include size($height: 60%, $width: 60%);
 }
+
 .BoxTextTitle{
   @include flex($align: center, $justify: center);
   @include size($height: 100%, $width: 85%);
 }
+
 .FormSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 85%);
   align-content: space-between;
 }
+
 .InputGroup {
   @include flex($justify: center);
   @include size($height: 6vh, $width: 75%);
 }
+
 .BoxFilterBy {
   @include size($width: 30%);
   z-index: 2;
 }
+
 .BoxClear {
   @include size($width: 50%);
   @include flex($align: flex-end, $justify: flex-end);
-
 }
+
 .BoxTextArea {
   @include size($width: 100%);
 }

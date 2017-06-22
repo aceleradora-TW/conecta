@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-/* line 7, ../sass/Default.scss */
+/* line 8, ../sass/Default.scss */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -24,18 +24,18 @@ body {
   font-feature-settings: 'liga';
 }
 
-/* line 28, ../sass/Default.scss */
+/* line 27, ../sass/Default.scss */
 .material-icons.md-3 {
   font-size: 3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 28, ../sass/Default.scss */
+  /* line 27, ../sass/Default.scss */
   .material-icons.md-3 {
     font-size: 2.3em;
   }
 }
 
-/* line 35, ../sass/Default.scss */
+/* line 34, ../sass/Default.scss */
 .material-icons.md-1-4 {
   font-size: 1.4em;
 }

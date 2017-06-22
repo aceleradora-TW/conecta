@@ -10,7 +10,6 @@
 .InputGroup {
   @include flex($justify: center);
   @include size($width: 75%, $height: 6vh);
-
   input {
     font-size: 1.05em;
   }
@@ -62,6 +61,7 @@
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, .2);
 }
+
 .DropdownMenu{
   list-style: none;
   position: static;
