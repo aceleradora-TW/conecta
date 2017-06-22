@@ -18,8 +18,6 @@
   @include tablet{
     font-size: 1.7em;
   }
-
-
 }
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
@@ -153,12 +151,8 @@
 }
 
 .BoxRegisterBody{
-  // usar mixin aqui
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 75%;
-      width: 80%;
+  @include flex($justify: center, $direction: column);
+  @include size($width: 80%, $height: 75%);
 }
 
 .BoxSteps{
