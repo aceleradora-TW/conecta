@@ -47,6 +47,18 @@
   width: 60%;
 }
 
+.ButtonSearch{
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2%;
+  border-radius: 0 4px 4px 0;
+}
+
+.ButtonSearch:hover {
+  background: rgba(0, 0, 0, .2);
+}
+
 .DropdownMenu{
   list-style: none;
   position: static;

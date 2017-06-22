@@ -4,7 +4,7 @@
 
 
 .Section {
-  @include size($width: 100%, $min-height: 85vh);
+  @include size($width: 100%, $min-height: 100%);
   @include flex($direction: column);
   background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;
@@ -85,7 +85,7 @@
 }
 
 .SectionSearch {
-  @include size($width: 100%, $min-height: 39vh);
+  @include size($width: 100%, $min-height: 100%);
   @include flex($align: center, $direction: column, $justify: center);
   padding: 0;
 }

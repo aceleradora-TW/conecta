@@ -6,6 +6,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 50%, $width: 65%);
 }
+
 .TextExplanation {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 70%, $width: 100%);
@@ -24,9 +25,8 @@
   @include smallMobile{
     font-size: 1.2em;
   }
-
-
 }
+
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
@@ -34,6 +34,7 @@
     align-items: inherit;
   }
 }
+
 .BoxText {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 50%, $width: 100%);
@@ -179,6 +180,13 @@
   font-family: $font-style;
 }
 
+.RegisterTitle{
+  @include flex($align: center, $direction: row, $justify: center);
+  @include size($height: 100%, $width: 100%);
+	color: $white-font-color;
+	font-family: $font-style;
+}
+
 .NavSearch{
   @include flex($direction: row, $justify: space-between);
   @include size($height: 60%, $width: 60%);
@@ -219,11 +227,12 @@
   @include size($width: 30%);
   z-index: 2;
 }
+
 .BoxClear {
   @include size($width: 50%);
   @include flex($align: flex-end, $justify: flex-end);
-
 }
+
 .BoxTextArea {
   @include size($width: 100%);
 }

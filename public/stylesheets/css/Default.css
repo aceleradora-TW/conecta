@@ -1,11 +1,11 @@
-/* line 3, ../sass/Default.scss */
+/* line 4, ../sass/Default.scss */
 body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
 
-/* line 8, ../sass/Default.scss */
+/* line 10, ../sass/Default.scss */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

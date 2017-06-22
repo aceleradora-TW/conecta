@@ -26,15 +26,13 @@
   </div>
   <% else %>
 
-
-
-  <div class="CompanyCompetences">
-    <ul class="CompetenceList">
-      <% company.featured_competences.each_with_index do |company_competence,index| %>
-      <% rating = company_competence.competence_value_calculated_integer  %>
-      <li class="ItemsFeatured ">
-        <div class="ItemText"><%= company_competence.competence.name %></div>
-        <div class="ItemStar">
+    <div class="CompanyCompetences">
+      <ul class="CompetenceList">
+        <% company.featured_competences.each_with_index do |company_competence,index| %>
+          <% rating = company_competence.competence_value_calculated_integer  %>
+        <li class="ItemsFeatured ">
+          <div class="ItemText"><%= company_competence.competence.name %></div>
+          <div class="ItemStar">
           <% for n_of_stars in (1..5) %>
           <i class="material-icons u-colorGold"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
           <% end %>
@@ -46,9 +44,6 @@
       <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
     </div>
   </div>
-
-
-
 
   <% end %>
   <div class="FooterCardSecondary">
@@ -66,7 +61,7 @@
   </div>
   <div class="FooterCardPrimay">
     <div class="BoxButtonCard">
-      <div class="Button u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
+      <div class="Button  u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
       <div class="Button u-widthMedium ButtonSeeMore">ver mais</div>
     </div>
   </div>

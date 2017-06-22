@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white-color".
-        on line 55 of /code/public/stylesheets/sass/Form.scss
+        on line 67 of /code/public/stylesheets/sass/Form.scss
 
-50: .DropdownMenu{
-51:   list-style: none;
-52:   position: static;
-53:   border: 1px solid rgba(0, 0, 0, .4);
-54:   border-radius: 0 0 4px 4px;
-55:   background-color: $white-color;
-56:   text-align: left;
-57:   right: 61.05vw;
-58:   bottom: 4.6vh;
-59:   padding: 2%;
-60:   display: none;
+62: .DropdownMenu{
+63:   list-style: none;
+64:   position: static;
+65:   border: 1px solid rgba(0, 0, 0, .4);
+66:   border-radius: 0 0 4px 4px;
+67:   background-color: $white-color;
+68:   text-align: left;
+69:   right: 61.05vw;
+70:   bottom: 4.6vh;
+71:   padding: 2%;
+72:   display: none;
 
 Backtrace:
-/code/public/stylesheets/sass/Form.scss:55
+/code/public/stylesheets/sass/Form.scss:67
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 55 of /code/public/stylesheets/sass/Form.scss\A \A 50: .DropdownMenu{\A 51:   list-style: none;\A 52:   position: static;\A 53:   border: 1px solid rgba(0, 0, 0, .4);\A 54:   border-radius: 0 0 4px 4px;\A 55:   background-color: $white-color;\A 56:   text-align: left;\A 57:   right: 61.05vw;\A 58:   bottom: 4.6vh;\A 59:   padding: 2%;\A 60:   display: none;"; }
+  content: "Error: Undefined variable: \"$white-color\".\A         on line 67 of /code/public/stylesheets/sass/Form.scss\A \A 62: .DropdownMenu{\A 63:   list-style: none;\A 64:   position: static;\A 65:   border: 1px solid rgba(0, 0, 0, .4);\A 66:   border-radius: 0 0 4px 4px;\A 67:   background-color: $white-color;\A 68:   text-align: left;\A 69:   right: 61.05vw;\A 70:   bottom: 4.6vh;\A 71:   padding: 2%;\A 72:   display: none;"; }
