@@ -238,32 +238,42 @@
   width: 30%;
 }
 
-/* line 189, ../sass/Utilities.scss */
+/* line 188, ../sass/Utilities.scss */
+.u-widthMediumLarge {
+  width: 80%;
+}
+
+/* line 191, ../sass/Utilities.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 193, ../sass/Utilities.scss */
+/* line 195, ../sass/Utilities.scss */
+.u-widthIcon {
+  width: 24px;
+}
+
+/* line 199, ../sass/Utilities.scss */
 .u-center {
   text-align: center;
 }
 
-/* line 197, ../sass/Utilities.scss */
+/* line 203, ../sass/Utilities.scss */
 .u-borderWhite {
   border: solid 2px;
 }
 
-/* line 201, ../sass/Utilities.scss */
+/* line 207, ../sass/Utilities.scss */
 .u-fontBold {
   font-weight: bold;
 }
 
-/* line 205, ../sass/Utilities.scss */
+/* line 211, ../sass/Utilities.scss */
 .u-gradientTransparentToBlack {
   background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
 }
 
-/* line 209, ../sass/Utilities.scss */
+/* line 215, ../sass/Utilities.scss */
 .u-displayNone {
   display: none;
 }
