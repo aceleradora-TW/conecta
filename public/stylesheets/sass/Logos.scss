@@ -10,13 +10,17 @@
 		margin: 10px;
 		background-image: url("/images/tecnopuc4.png");
 		@include tablet{
-			height: 75%;
-			width: 19%;
 			justify-content: center;
+		}
+		@include mobile{
+			@include size($height: 50%, $width: 20%);
+      @include flex($align: center, $justify: center);
 			margin: 0;
 		}
+		@include smallMobile{
+			@include size($width: 35%);
+		}
 	}
-
 	&-tall {
 		@include size($height: 95%, $width: 3%);
 		background-repeat: no-repeat;
@@ -24,9 +28,16 @@
 		margin: 0 5% 0% 2%;
 		background-image: url("/images/puc4.png");
 		@include tablet{
-			width: 20%;
-			justify-content: flex-end;
-			margin: 0;
+			@include size($height: 95%, $width: 3%);
+			@include flex($justify: flex-end);
+		}
+		@include mobile{
+			@include size($width: 5%);
+			@include flex($align: center, $justify: center);
+			margin: 0 20px;
+		}
+		@include smallMobile{
+			@include size($width: 10%);
 		}
 	}
 

@@ -25,3 +25,8 @@
     min-width: $min-width;
   }
 }
+@mixin blackGradient($alpha) {
+  @if($alpha) {
+    background-color: rgba(0,0,0, $alpha);
+  }
+}
