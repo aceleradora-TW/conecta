@@ -15,3 +15,13 @@
     font-size: 0.75em;
   }
 }
+
+/* line 16, ../sass/Footer.scss */
+.RegisterFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15%;
+  width: 100%;
+}

@@ -1,10 +1,12 @@
 @import "_variables.scss";
-@import "MediaQuery";
+@import "MediaQuery.scss";
 @import "_mixins.scss";
+
 
 .u-fontSizeXSmall {
 	font-size: 0.8em;
 }
+
 
 .u-fontSizeSmall {
 	font-size: 1em;
@@ -199,24 +201,23 @@
 	}
 }
 
-.u-widthMedium{
+.u-widthMedium {
 	width: 30%;
 	margin: 5%;
-	@include tablet{
-		@include flex($align: center, $justify: center);
-		width: 15%;
-		height: 2.8em;
+	@include tablet {
+		@include size($height: 70%, $width: 15%);
+		@include flex($justify: center,$align: center);
+		margin: 1%;
+		font-size: 1em;
 		line-height: 0.8em;
-		font-size: 0.8rem;
-		margin: 2em;
-	};
-	@include smallMobile{
-		@include flex($align: center, $justify: center);
-		height: 3em;
-		margin: 1em;
+	}
+	@include smallMobile {
+		@include flex($justify: center, $align: center);
+		@include size($height: 35%, $width: 15%);
+		margin: 1%;
 		line-height: 1.3em;
 		font-size: 0.5em;
-	};
+	}
 }
 
 .u-colorBackgroundBlue{
@@ -246,10 +247,17 @@
 .u-widthMediumOnly {
 	width: 30%;
 }
-
+.u-widthMediumLarge {
+	width: 80%;
+}
 .u-widthLarge {
 	width: 90%;
 }
+
+.u-widthIcon {
+	width: 24px;
+}
+
 .u-center{
 	text-align: center;
 }

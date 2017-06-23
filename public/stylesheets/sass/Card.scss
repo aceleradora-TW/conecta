@@ -4,7 +4,7 @@
 
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 45vh);
+  @include size($width: 48%, $min-height: 45%);
   background: $white-color;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -12,17 +12,17 @@
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
+  };
   @include mobile {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
+  };
   @include smallMobile {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
+  };
 }
 
 .CardLogin {
@@ -119,12 +119,12 @@
   text-align: center;
   @include mobile{
     @include size($width: 90%);
-    font-size: 0.9em;
+    font-size: $small-font-size;
     text-align: center;
   }
   @include smallMobile{
     @include size($width: 90%);
-    font-size: 0.9em;
+    font-size: $small-font-size;
     text-align: center;
   }
 }
@@ -137,18 +137,15 @@
 .CardTitle {
   @include flex($justify: center);
   @include size($height: 100%, $width: 40%);
-  font-size: 1.3em;
+  font-size: $medium-font-size;
 }
 
 .LogoImage{
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
+  @include size($width: 50%);
 }
 
 .LogoSmall {
   @include flex($align: center, $justify: center);
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
   margin: 10px;
   @include tablet{
     height: 100px;
@@ -171,7 +168,7 @@
   flex-direction: column;
   list-style: none;
   line-height: 2em;
-  font-size: 0.8em;
+  font-size: $small-font-size;
   text-align:center;
   background-color: $white-color;
   padding: 0;
@@ -191,6 +188,7 @@
   line-height: 2em;
   cursor: pointer;
   align-self: center;
+
   &:hover {
     background: rgba(0,0,0,.05);
     transition: .5s;
@@ -238,12 +236,12 @@
   @include size($height: 5%, $width: 100%);
   margin-top: 5%;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: $medium-font-size;
 }
 
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 70%);
+  @include size($height: 100%, $width: 42.5%);
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
@@ -255,31 +253,34 @@
     text-align: left;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
   @include smallMobile{
     @include size($width: 100%);
     text-align: left;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
 }
-
 .ItemTextSegment{
   @include flex($justify: center);
   @include size($height: 100%, $width: 70%);
 }
-
 .ItemStar{
   @include size($height: 100%);
   @include flex($justify: flex-end);
+}
+
+.ItemStar{
+  @include flex($justify: flex-end);
+  @include size($height: 100%);
   @include tablet{
     @include size($width: 32%);
   }
   @include mobile{
     @include size($height: 100%);
-    @include flex($align: center, $justify: center);
+    @include flex($justify: center,$align: center);
   }
   @include smallMobile{
     @include size($height: 100%);
@@ -307,18 +308,18 @@
   @include flex();
   @include size($height: 30%, $width: 100%);
   text-align: center;
-  font-size: 0.9em;
+  font-size: $small-font-size;
   line-height: 1.8em;
   @include tablet{
     @include size($width: 90%);
   }
   @include mobile {
     @include size($width: 90%);
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
   @include smallMobile {
     @include size($width: 90%);
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
 }
 
@@ -347,10 +348,11 @@
     flex-direction: column;
   }
 }
+
+
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
-  margin: 20px;
+  @include size($height: 100%, $width: 100%);
   @include tablet{
     @include size($height: 30%, $width: 97%);
     align-items: center;
@@ -364,7 +366,7 @@
     font-size: 12px;
   }
   @include smallMobile{
-    @include size($height: 30%, $width: 100%);
+    @include size($height: 30%, $width: 90%);
     align-items: center;
     justify-content: center;
     font-size: 12px;
@@ -372,7 +374,7 @@
 }
 
 .BoxButtonCard {
-  @include flex($align: center, $justify: center);
+  @include flex($align: center, $justify: flex-end);
   @include size($height: 50%, $width: 60%);
 }
 
@@ -393,19 +395,24 @@
   }
 }
 
+.BoxButtonMessage {
+  @include flex($align: center, $justify: center);
+  @include size($height: 50%, $width: 40%);
+}
+
 .CompanyCompetences{
   @include flex($direction: column);
   @include size($height: 60%, $width: 100%);
   margin-top: 3%;
   @include tablet {
     @include size($width: 90%);
-    font-size: 1.1em;
+    font-size: $medium-font-size;
   }
   @include mobile {
-    font-size: 0.9em;
+    font-size: $small-font-size;
   }
   @include smallMobile {
-    font-size: 0.9em;
+    font-size: $small-font-size;
   }
 }
 
@@ -463,7 +470,7 @@
     flex-direction: column;
   }
   .FooterCardSecondaryItem {
-    @include size($width: 45%);
+    @include size($width: 42.5%);
     @include tablet{
       @include size($width: 100%);
       @include flex($align: center, $justify: center);
@@ -473,6 +480,7 @@
     }
     @include smallMobile{
       font-size: 13px;
+      flex-wrap: wrap;
     }
   }
 }

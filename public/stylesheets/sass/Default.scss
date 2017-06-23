@@ -1,9 +1,14 @@
-@import "MediaQuery";
+@import "MediaQuery.scss";
+
 
 body{
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  @include smallMobile{
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .material-icons {
@@ -23,8 +28,11 @@ body{
 
 .material-icons.md-3 {
   font-size: 3em;
-  @include tablet {
-    font-size: 2.3em;
+}
+.material-icons.md-hamburger {
+  font-size: 3em;
+  @include smallMobile{
+    font-size: 2em;
   }
   @include mobile {
     font-size: 2.5em;
