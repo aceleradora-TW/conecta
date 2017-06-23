@@ -37,18 +37,6 @@ body{
   }
 }
 
-.material-icons.md-35px {
-  @include tablet {
-    font-size: 2.3em;
-  }
-  @include mobile {
-    font-size: 2.5em;
-  }
-  @include smallMobile{
-    font-size: 1em;
-  }
-}
-
 .material-icons.md-1-4 {
   font-size: 1.4em;
 }
