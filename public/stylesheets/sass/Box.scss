@@ -27,6 +27,8 @@
   }
 }
 
+
+
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
@@ -255,6 +257,9 @@
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
+  &.BoxRegisterLarge{
+    height: 65vh;
+  }
   @include tablet{
     @include size($width: 80%);
   }
