@@ -11,15 +11,14 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  @include tablet{
+  @include tablet {
     background-image: url("/images/background-main-tablet.jpg");
   }
-  @include mobile{
+  @include mobile {
     background-image: url("/images/background-main-mobile.jpg");
   }
-  @include smallMobile{
+  @include smallMobile {
     background-image: url("/images/background-main-smallMobile.jpg");
-    background-repeat: repeat;
   }
 }
 
@@ -28,7 +27,7 @@
   @include size($width: 100%, $height: 85vh);
   @include flex($direction: column);
   background-color: rgba(0,0,0,0.47);
-  }
+}
 
 .HowItWorks {
   @include size($width: 100%, $height: 95vh);
@@ -43,7 +42,7 @@
   @include blackGradient($alpha: 0.8);
   background: rgba(0,0,0,0.8);
   @include smallMobile{
-  @include size($height: 202vh);
+    @include size($height: 202vh);
   }
 }
 
@@ -57,30 +56,23 @@
   background-color: $darker-blue-color;
   color: $white-font-color;
   @include smallMobile{
-  @include size($min-height: 65vh);
+    @include size($min-height: 65vh);
   }
 }
 
 .SectionCards {
-  @include size($width: 100%, $min-height: 100vh);
+  @include size($width: 100%, $min-height: 100%);
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;
-
   @include tablet{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
   @include mobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
   @include smallMobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
 }
 
