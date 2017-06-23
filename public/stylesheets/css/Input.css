@@ -115,7 +115,7 @@
   width: 100%;
 }
 /* line 83, ../sass/Input.scss */
-.RegisterInputs input {
+.RegisterInputs input, .RegisterInputs textarea {
   width: 100%;
   outline: none;
   border-radius: 4%;
