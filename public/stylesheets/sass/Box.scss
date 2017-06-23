@@ -189,6 +189,9 @@
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
+  &.BoxRegisterLarge{
+    height: 65vh;
+  }
   @include tablet{
     @include size($width: 80%);
   }
