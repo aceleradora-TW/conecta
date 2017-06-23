@@ -369,25 +369,6 @@
   }
 }
 
-.ResearchCompetences{
-  @include flex($direction: row);
-  @include size($height: 60%, $width: 100%);
-  margin-top: 3%;
-  text-align: center;
-  @include mobile{
-    font-size: 0.7em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  @include smallMobile{
-    font-size: 0.7em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
 .CardSecondary{
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;

@@ -600,41 +600,13 @@
 }
 
 /* line 372, ../sass/Card.scss */
-.ResearchCompetences {
-  display: flex;
-  flex-direction: row;
-  height: 60%;
-  width: 100%;
-  margin-top: 3%;
-  text-align: center;
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 372, ../sass/Card.scss */
-  .ResearchCompetences {
-    font-size: 0.7em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-@media (max-width: 499px) {
-  /* line 372, ../sass/Card.scss */
-  .ResearchCompetences {
-    font-size: 0.7em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-/* line 391, ../sass/Card.scss */
 .CardSecondary {
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 391, ../sass/Card.scss */
+  /* line 372, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -643,7 +615,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 391, ../sass/Card.scss */
+  /* line 372, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -652,7 +624,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 391, ../sass/Card.scss */
+  /* line 372, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -661,7 +633,7 @@
   }
 }
 
-/* line 406, ../sass/Card.scss */
+/* line 387, ../sass/Card.scss */
 .InstitutionList {
   display: flex;
   flex-direction: row;
@@ -670,7 +642,7 @@
   padding: 2%;
 }
 
-/* line 412, ../sass/Card.scss */
+/* line 393, ../sass/Card.scss */
 .InstitutionListHeader {
   width: 100%;
   display: flex;
@@ -678,7 +650,7 @@
   justify-content: center;
 }
 
-/* line 417, ../sass/Card.scss */
+/* line 398, ../sass/Card.scss */
 .RegisterListHeader {
   width: 94%;
   display: flex;
@@ -687,7 +659,7 @@
   border-radius: 5px;
 }
 
-/* line 423, ../sass/Card.scss */
+/* line 404, ../sass/Card.scss */
 .RegisterListItem {
   width: 50%;
   display: flex;
@@ -696,20 +668,20 @@
   justify-content: space-around;
 }
 
-/* line 428, ../sass/Card.scss */
+/* line 409, ../sass/Card.scss */
 .InstitutionList .Title {
   background: red;
   height: 5vh;
   width: 20%;
 }
 
-/* line 433, ../sass/Card.scss */
+/* line 414, ../sass/Card.scss */
 .InstitutionList .LeftItem {
   width: 75%;
   text-align: left;
 }
 
-/* line 438, ../sass/Card.scss */
+/* line 419, ../sass/Card.scss */
 .InstitutionList .RightItem {
   width: 25%;
   text-align: center;
