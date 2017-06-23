@@ -15,45 +15,40 @@
   text-decoration: none;
   color: $white-font-color;
   letter-spacing: 0.1em;
-  @include smallMobile{
-    @include size($width: 1%);
-    &.ButtonSend {
-      @include size($height: 4.6vh);
-      @include mobile{
-        @include size($height: 32px);
-      }
-      @include smallMobile{
-        @include size($height: 32px);
-      }
-      &:disabled{
-        background-color: rgba(128, 128, 128, 1);
-      }
-    }
-    &:hover{
-      box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
-      cursor: pointer;
-      background: rgba(0, 0, 0, .2);
-    }
-    a {
-      @include flex($align: center, $justify: center);
-      text-decoration: none;
-      color: $white-color;
-      @include tablet {
-        font-size: 0.8rem;
-      }
+  @include smallMobile {
+    @include size($width: 15%);
+  }
+  &Send {
+    @include size($height: 30%, $width: 25%);
+    font-size: 0.8em;
 
-      @include mobile {
-        @include flex($justify: center);
-        @include size($width: 0%, $height: 32px);
-        font-size: 0.75rem;
-        span{display:none}
-      }
-      @include smallMobile {
-        @include flex($justify: center);
-        @include size($width: 0%, $height: 32px);
-        font-size: 0.75rem;
-        span{display:none}
-      }
+    &:disabled{
+      background-color: rgba(128, 128, 128, 1);
+    }
+  }
+  &:hover{
+    box-shadow: 1px 1px 1px 1px rgba(107, 185, 240, 1);
+    cursor: pointer;
+  }
+  a {
+    @include flex($align: center, $justify: center);
+    text-decoration: none;
+    color: $white-color;
+    @include tablet {
+      font-size: 0.8rem;
+    }
+
+    @include mobile {
+      @include flex($justify: center);
+      @include size($width: 0%, $height: 32px);
+      font-size: 0.75rem;
+      span{display:none}
+    }
+    @include smallMobile {
+      @include flex($justify: center);
+      @include size($width: 0%, $height: 32px);
+      font-size: 0.75rem;
+      span{display:none}
     }
   }
 }

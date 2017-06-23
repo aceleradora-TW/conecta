@@ -14,7 +14,7 @@
   width: 100%;
   font-family: Lato, sans-serif;
   color: white;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px black;
   line-height: 2em;
   font-size: 1.3em;
   font-weight: lighter;
@@ -57,7 +57,7 @@
   width: 60%;
   font-family: Lato, sans-serif;
   color: white;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 499px) {
   /* line 36, ../sass/Text.scss */

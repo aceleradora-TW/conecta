@@ -11,7 +11,7 @@
 	background-color: rgba(0,0,0,0.47);
 	color: $white-font-color;
 	@include mobile {
-		align-items: center;
+		@include flex($align: center);
 	}
 }
 

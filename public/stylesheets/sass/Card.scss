@@ -381,21 +381,15 @@
   @include size($height: 50%, $width: 40%);
   @include tablet {
     @include size($height: 100px, $width: 100%);
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
+    @include flex($align: center, $direction: row, $justify: space-around);
   }
   @include mobile{
     @include size($height: 100%, $width: 80%);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: row, $justify: center);
   }
   @include smallMobile{
     @include size($height: 70%, $width: 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $direction: column, $justify: center);
   }
 }
 

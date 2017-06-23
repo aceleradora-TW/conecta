@@ -13,6 +13,7 @@
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 6, ../sass/Navbar.scss */
   .Navbar {
+    display: flex;
     align-items: center;
   }
 }

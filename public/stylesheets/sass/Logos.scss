@@ -5,7 +5,7 @@
 .Logo {
 	&-wide {
 		@include size($height: 50%, $width: 10%);
-		background-repeat: no-repeat; 
+		background-repeat: no-repeat;
 		background-size: 100%;
 		background-image: url("/images/tecnopuc4.png");
 		@include tablet {
@@ -13,7 +13,7 @@
 		}
 		@include mobile {
 			@include size($height: 50%, $width: 20%);
-      @include flex($align: center, $justify: center);
+			@include flex($align: center, $justify: center);
 			margin: 0;
 		}
 		@include smallMobile {
@@ -40,7 +40,7 @@
 	}
 
 	.LogoCollaborators {
-	  @include size($width: 100%, $min-height: 30%);
+		@include size($width: 100%, $min-height: 30%);
 		@include flex($align: center, $direction: row, $justify: space-around);
 		flex-wrap: wrap;
 	}
