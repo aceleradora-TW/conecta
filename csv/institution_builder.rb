@@ -48,52 +48,37 @@ class InstitutionBuilder
 
   def parse_research_center row
     research_center_csv = CsvResearchCenter.new
-    @research_field = []
+    @segments, @competences = [],[]
     row.each do |col|
       header = col[0] || ""
       value = col[1] || ""
       value.strip!
-      if header == "ESTRUTURA_PESQUISA"
+      if header == "NOME_ESTRUTURA"
         @name = value
-      elsif header == "DESCRIÇÃO"
+      elsif header == "ENDERECO"
+        @address = value
+      elsif header == "RESPONSAVEL"
+        contact_names = value.split.map { |name| name.capitalize }
+        @contact_name = contact_names.join(" ")
+      elsif header == "DESCRICAO"
         @description = value
-      elsif header == "TIPO_ESTRUTURA"
-        @structure_type = value
-      elsif header ==  "AREA_PESQUISA"
-        @research_area = value
-      elsif header ==  "EIXO_TEMATICO"
-        @research_field = value
-      elsif header ==  "PROJETOS"
-        @project = value
-      elsif header ==  "E-MAIL"
-        @email = value
-      elsif header ==  "TELEFONE"
-        @phone = value
       elsif header ==  "SITE"
         @site = value
-      elsif header ==  "COORDENADOR"
-        @contact_name = value
-      elsif header ==  "UNIDADE"
-        @unit = value
-      elsif header ==  "SIGLA"
-        @initials = value
+      elsif header == "COMPETENCIAS"
+        competence_names = value.split(",")
+        @competences = competence_names.map { |competence_name| competence_name.strip.capitalize }
+      # elsif header.start_with? "SEGMENTO_"
+      #   segment_name = header.sub "SEGMENTO_", ""
+      #   @segments.push(segment_name) if value == "SIM"
       end
     end
 
     research_center_csv.name = @name
-    research_center_csv.structure_type = @structure_type
-    research_center_csv.description  = @description
-    research_center_csv.project = @project
-    research_center_csv.unit = @unit
-    research_center_csv.initials = @initials
-
-    research_center_csv.research_area = @research_area
-    research_center_csv.research_field = @research_field
-
-    research_center_csv.email = @email
-    research_center_csv.phone = @phone
-    research_center_csv.site = @site
+    research_center_csv.address_info = @address
     research_center_csv.contact_name = @contact_name
+    research_center_csv.description  = @description
+    research_center_csv.site = @site
+    research_center_csv.competences = @competences
 
     return research_center_csv
   end

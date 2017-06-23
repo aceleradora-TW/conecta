@@ -8,7 +8,7 @@ module CsvMappers
 
   CSV_LOCATION = File.join(Dir.pwd, 'csv', 'files')
   COMPANY_FILE_NAME = 'company.csv'
-  RESEARCH_CENTER_FILE_NAME = 'research_center.csv'
+  RESEARCH_CENTER_FILE_NAME = 'research_center_2.csv'
 
   class CsvFileMapper
 

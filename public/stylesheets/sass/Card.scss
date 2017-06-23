@@ -12,7 +12,6 @@
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
-<<<<<<< HEAD
     @include size($width: 95%, $min-height: 55%);
     font-size: $large-font-size;
   };
@@ -24,19 +23,6 @@
     @include size($width: 95%, $min-height: 55%);
     font-size: $large-font-size;
   };
-=======
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
-  @include mobile {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
-  @include smallMobile {
-    @include size($width: 95%, $min-height: 55vh);
-    font-size: 1.5em;
-  }
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
 }
 
 .CardLogin {
@@ -112,25 +98,17 @@
   }
 }
 
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
 .CardNav {
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);
   @include mobile{
-<<<<<<< HEAD
     @include flex($direction: column, $justify: center, $align: center);
   }
-  @include smallMobile{
-    @include flex($direction: column, $justify: flex-start, $align: center);
-=======
-    @include size($width: 100%);
-    @include flex($align: center, $direction: column, $justify: center);
-  }
+
   @include smallMobile{
     @include size($width: 100%);
     @include flex($align: center, $direction: column, $justify: center);
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
-  }
+    }
 }
 
 .CardResearchNav {
@@ -140,21 +118,14 @@
   flex-wrap: wrap;
   text-align: center;
   @include mobile{
-<<<<<<< HEAD
-    font-size: $small-font-size;
-=======
     @include size($width: 90%);
-    font-size: 0.9em;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
+    font-size: $small-font-size;
+
     text-align: center;
   }
   @include smallMobile{
-<<<<<<< HEAD
-    font-size: $small-font-size;
-=======
     @include size($width: 90%);
-    font-size: 0.9em;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
+    font-size: $small-font-size;
     text-align: center;
   }
 }
@@ -274,7 +245,7 @@
 
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 70%);
+  @include size($height: 100%, $width: 42.5%);
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
@@ -300,37 +271,25 @@
   @include flex($justify: center);
   @include size($height: 100%, $width: 70%);
 }
-
 .ItemStar{
   @include size($height: 100%);
   @include flex($justify: flex-end);
-<<<<<<< HEAD
   @include size($height: 100%)
 }
 
 .ItemStar{
   @include flex($justify: flex-end);
   @include size($height: 100%);
-=======
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
   @include tablet{
     @include size($width: 32%);
   }
   @include mobile{
     @include size($height: 100%);
-<<<<<<< HEAD
     @include flex($justify: center,$align: center);
   }
   @include smallMobile{
     @include size($height: 100%);
     @include flex($justify: center,$align: center);
-=======
-    @include flex($align: center, $justify: center);
-  }
-  @include smallMobile{
-    @include size($height: 100%);
-    @include flex($align: center, $justify: center);
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
   }
 }
 
@@ -359,7 +318,6 @@
   line-height: 1.8em;
   @include tablet{
     @include size($width: 90%);
-<<<<<<< HEAD
   }
   @include mobile {
     @include size($width: 90%);
@@ -368,17 +326,7 @@
   @include smallMobile {
     @include size($width: 90%);
     font-size: $small-font-size;
-=======
     }
-  @include mobile {
-    @include size($width: 90%);
-    font-size: 0.7em;
-  }
-  @include smallMobile {
-    @include size($width: 90%);
-    font-size: 0.7em;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
-  }
 }
 .CenterTheme{
   @include flex($direction: row);
@@ -409,8 +357,7 @@
 
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
-  margin: 20px;
+  @include size($height: 100%, $width: 100%);
   @include tablet{
     @include size($height: 30%, $width: 97%);
     align-items: center;
@@ -424,14 +371,11 @@
     font-size: 12px;
   }
   @include smallMobile{
-    @include size($height: 30%, $width: 100%);
+    @include size($height: 30%, $width: 90%);
     align-items: center;
     justify-content: center;
     font-size: 12px;
-<<<<<<< HEAD
-    width: 90%;
-=======
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
+
   }
 }
 
@@ -442,36 +386,22 @@
 .BoxButtonMessage {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
+
   @include tablet{
-<<<<<<< HEAD
-    @include size($height: 100%, $width: 100PX);
-=======
     @include size($height: 100px, $width: 100%);
     align-items: center;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
     justify-content: space-around;
     flex-direction: row;
   }
   @include mobile{
-<<<<<<< HEAD
     @include size($height: 80%, $width: 100%);
     flex-direction: row;
   }
   @include smallMobile{
-    @include size($height: 100%, $width: 70%);
-    flex-direction: column;
-=======
     @include size($height: 100%, $width: 80%);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  @include smallMobile{
-    @include size($height: 70%, $width: 100%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
   }
 }
 .BoxButtonMessage {
@@ -484,13 +414,8 @@
   @include size($height: 60%, $width: 100%);
   margin-top: 3%;
   @include tablet {
-<<<<<<< HEAD
-    width: 90%;
-    font-size: $medium-font-size;
-=======
     @include size($width: 90%);
-    font-size: 1.1em;
->>>>>>> f7307753e215ae48c06c0fa7a9099afecef3cfdf
+    font-size: $medium-font-size;
   }
   @include mobile {
     font-size: $small-font-size;
@@ -554,7 +479,7 @@
     flex-direction: column;
   }
   .FooterCardSecondaryItem {
-    @include size($width: 45%);
+    @include size($width: 42.5%);
     @include tablet{
       @include size($width: 100%);
       @include flex($align: center, $justify: center);

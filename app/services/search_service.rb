@@ -24,6 +24,8 @@ class SearchService
 
   def find_by_research_center research_centers
     @research_center = ResearchCenter.all(conditions: ["lower(name) like ?", research_centers])
+    puts @research_center.inspect
+    @research_center
   end
 
   def find_by_research_area research_areas
