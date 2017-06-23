@@ -113,12 +113,7 @@
   }
 }
 
-.CardLogo {
-  @include flex($align: center, $justify: center);
-  @include size($width: 30%);
-}
-
-.LogoImage{
+.LogoImage {
   @include size($height: 40px, $width: 40px);
   border-radius: 100%;
 }

@@ -14,6 +14,7 @@
 
 .u-fontSizeMediumSlogan {
 	font-size: 1.3em;
+}
 .u-fontSizeMediumSlogan{
 	font-size: $medium-font-size;
 	@include mobile{
@@ -109,23 +110,23 @@
 	margin-bottom: 2%;
 }
 
-.u-lineHeightMedium{
+.u-lineHeightMedium {
 	line-height: 1.7em;
 }
 
-.u-colorLightBlue{
+.u-colorLightBlue {
 	color: $light-blue-color;
 }
 
-.u-colorLightRed{
+.u-colorLightRed {
 	color: $light-red-color;
 }
 
-.u-colorGreen{
+.u-colorGreen {
 	color: $aqua-green-color;
 }
 
-.u-colorOrange{
+.u-colorOrange {
 	color: $burnt-yellow-color;
 }
 
@@ -133,11 +134,11 @@
 	color: rgba(228, 181, 65, 1);
 }
 
-.u-colorBackgroundWhite{
+.u-colorBackgroundWhite {
 	background-color: $white-color;
 }
 
-.u-colorBackgroundOrange{
+.u-colorBackgroundOrange {
 	background-color: $burnt-yellow-color;
 	&:hover {
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(244, 179, 80,1);
@@ -194,7 +195,8 @@
 }
 
 .u-widthMediumOnly {
-	@include size ($width: 30%);}
+	@include size ($width: 30%);
+}
 
 	.u-widthLarge {
 		@include size ($width: 90%);
@@ -225,10 +227,10 @@
 		cursor: pointer;
 	}
 
-
 .u-widthMediumLarge {
 	width: 80%;
-}
+	}
+
 .u-widthLarge {
 	width: 90%;
 }
@@ -237,15 +239,18 @@
 	width: 24px;
 }
 
-.u-center{
+.u-center {
 	text-align: center;
 }
 
-.u-borderWhite{
+.u-borderWhite {
 	border: solid 2px;
-}	.u-colorOrange{
+}
+
+.u-colorOrange{
 		color: $burnt-yellow-color;
-	}
+}
+
 	.u-colorOrange:hover{
 		box-shadow: 1px 1px 2px 2px rgba(244, 179, 80, 1);
 		cursor: pointer;

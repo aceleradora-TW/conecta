@@ -27,8 +27,6 @@
   }
 }
 
-
-
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);

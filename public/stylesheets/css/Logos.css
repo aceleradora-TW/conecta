@@ -76,7 +76,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 41, ../sass/Logos.scss */
+  /* line 50, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -85,7 +85,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 41, ../sass/Logos.scss */
+  /* line 50, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -94,11 +94,19 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 41, ../sass/Logos.scss */
+  /* line 50, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+}
+
+/* line 64, ../sass/Logos.scss */
+.CardLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
 }
