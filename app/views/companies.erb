@@ -3,7 +3,7 @@
     <div class="CardNav">
       <div class="CardLogo">
         <div class="LogoSmall">
-          <img class="LogoImage" src="images/default_company.jpg">
+          <img class="LogoImage" src="<%= company.logo %>">
         </div>
       </div>
       <div class="CardTitle">
@@ -28,6 +28,7 @@
       </div>
     </div>
   <% else %>
+
     <div class="CompanyCompetences">
       <ul class="CompetenceList">
         <%
@@ -63,6 +64,7 @@
       </div>
       <% end %>
     </div>
+
   <% end %>
   <div class="FooterCardSecondary">
     <% if company.contact %>
@@ -79,7 +81,8 @@
   </div>
   <div class="FooterCardPrimay">
     <div class="BoxButtonCard">
-      <div class="Button u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
+
+      <div class="Button  u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
       <div class="Button u-widthMedium ButtonSeeMore">ver mais</div>
     </div>
   </div>
