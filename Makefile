@@ -16,9 +16,15 @@ stop:
 ps:
 	docker-compose ps
 
+js-install:
+	npm install
+
 test:
 	@echo "Starting Tests"
 	docker-compose run web rake test
+
+js-test:
+	npm test
 
 db-start:
 	docker-compose up -d db
