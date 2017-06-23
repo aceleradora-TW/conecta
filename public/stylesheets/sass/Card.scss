@@ -141,14 +141,11 @@
 }
 
 .LogoImage{
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
+  @include size($width: 50%);
 }
 
 .LogoSmall {
   @include flex($align: center, $justify: center);
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
   margin: 10px;
   @include tablet{
     height: 100px;
@@ -244,7 +241,7 @@
 
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 70%);
+  @include size($height: 100%, $width: 42.5%);
   text-align: right;
   flex-wrap: wrap;
   @include tablet{
@@ -271,7 +268,6 @@
   @include flex($justify: center);
   @include size($height: 100%, $width: 70%);
 }
-
 .ItemStar{
   @include flex($justify: flex-end);
   @include size($height: 100%);
@@ -352,8 +348,7 @@
 
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
-  margin: 20px;
+  @include size($height: 100%, $width: 100%);
   @include tablet{
     @include size($height: 30%, $width: 97%);
     align-items: center;
@@ -501,9 +496,8 @@
     flex-direction: column;
   }
 }
-
 .FooterCardSecondaryItem {
-  @include size($width: 45%);
+  @include size($width: 42.5%);
   @include tablet{
     @include size($width: 100%);
     @include flex($align: center, $justify: center);

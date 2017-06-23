@@ -28,10 +28,6 @@ class IndexController < Controller
     end
   end
 
-  get "/admin" do
-    erb :login
-  end
-
   post "/request_contact" do
     @name = params[:name]
     @email = params[:email]
