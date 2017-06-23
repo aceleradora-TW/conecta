@@ -2,8 +2,6 @@
 @import "_variables.scss";
 @import "MediaQuery.scss";
 
-
-
 .Button{
   @include flex($justify: center);
   @include size($height: 100%);
