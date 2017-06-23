@@ -2,14 +2,16 @@ require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/session_service"
 
-use Rack::Session::Cookie, :key => 'rack.session',
-:expire_after => 2592000,
-:secret => ENV['SESSION_SECRET']
+
 
 DEFAULT_ADMIN_ROUTE = "/admin/list_instituitions"
 DEFAULT_USER_ROUTE = "/admin/company"
 
 class AdminController < Controller
+  use Rack::Session::Cookie, :key => 'rack.session',
+  :expire_after => 2592000,
+  :secret => ENV['SESSION_SECRET']
+  
   def initialize father_controller
     super father_controller
     @session_service = SessionService.new
