@@ -1,4 +1,4 @@
-/* line 3, ../sass/Footer.scss */
+/* line 4, ../sass/Footer.scss */
 footer {
   display: flex;
   align-items: center;
@@ -6,12 +6,18 @@ footer {
   justify-content: center;
   height: 6vh;
   width: 100%;
-  font-family: 'Lato', sans-serif;
   background-color: black;
+  font-family: 'Lato', sans-serif;
   color: white;
 }
+@media (max-width: 499px) {
+  /* line 4, ../sass/Footer.scss */
+  footer {
+    font-size: 0.75em;
+  }
+}
 
-/* line 11, ../sass/Footer.scss */
+/* line 15, ../sass/Footer.scss */
 .RegisterFooter {
   display: flex;
   align-items: center;

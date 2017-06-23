@@ -1,22 +1,16 @@
 /* line 4, ../sass/Default.scss */
 body {
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
-@media (max-width: 499px) {
-  /* line 4, ../sass/Default.scss */
-  body {
-    padding: 0;
-    margin: 0;
-  }
-}
 
-/* line 13, ../sass/Default.scss */
+/* line 10, ../sass/Default.scss */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 5em;
+  font-size: 1.5em;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
@@ -31,23 +25,23 @@ body {
   font-feature-settings: 'liga';
 }
 
-/* line 32, ../sass/Default.scss */
+/* line 30, ../sass/Default.scss */
 .material-icons.md-3 {
   font-size: 3em;
 }
 
-/* line 35, ../sass/Default.scss */
+/* line 33, ../sass/Default.scss */
 .material-icons.md-hamburger {
   font-size: 3em;
 }
 @media (max-width: 499px) {
-  /* line 35, ../sass/Default.scss */
+  /* line 33, ../sass/Default.scss */
   .material-icons.md-hamburger {
     font-size: 2em;
   }
 }
 
-/* line 42, ../sass/Default.scss */
+/* line 40, ../sass/Default.scss */
 .material-icons.md-1-4 {
   font-size: 1.4em;
 }
