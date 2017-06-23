@@ -55,6 +55,14 @@ class AdminController < Controller
     end
   end
 
+  get "/admin/register/2" do
+    if @user_info.is_logged_in
+      erb :register2, :layout => :layout_admin
+    else
+      erb :forbidden, :layout => :layout_admin
+    end
+  end
+
   post "/session" do
     user = @session_service.find_user_by(email: params[:email], password: params[:password])
     if(user)
