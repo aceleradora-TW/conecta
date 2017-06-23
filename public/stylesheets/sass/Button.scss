@@ -21,7 +21,6 @@
   &Send {
     @include size($height: 30%, $width: 25%);
     font-size: 0.8em;
-
     &:disabled{
       background-color: rgba(128, 128, 128, 1);
     }
@@ -37,21 +36,21 @@
     @include tablet {
       font-size: 0.8rem;
     }
-
     @include mobile {
       @include flex($justify: center);
-      @include size($width: 0%, $height: 32px);
+      @include size($width: 40%, $height: 3em);
       font-size: 0.75rem;
       span{display:none}
     }
     @include smallMobile {
       @include flex($justify: center);
-      @include size($width: 0%, $height: 32px);
+      @include size($width: 30%, $height: 3em);
       font-size: 0.75rem;
       span{display:none}
     }
   }
 }
+
 .ButtonFilter {
   @include size($height: 100%, $width: 100%);
   background-color: $white-color;
@@ -61,6 +60,18 @@
   outline: none;
   &-activated {
     border-radius: 4px 0 0 0;
+  }
+}
+
+.ButtonSearch {
+  @include flex($align: center);
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  cursor: pointer;
+  padding: 0 2em;
+  border-radius: 0 4px 4px 0;
+  &:hover {
+    @include blackGradient($alpha: 0.2);
   }
 }
 
@@ -81,6 +92,7 @@
 }
 
 .ButtonBack {
+  @include blackGradient($alpha: 0.7);
   display: none;
   position: fixed;
   bottom: 20px;
@@ -88,23 +100,11 @@
   z-index: 3;
   border: none;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.7);
   color: $white-color;
   cursor: pointer;
   padding: 15px;
   border-radius: 100%;
   &:hover {
     background-color: $black-color;
-  }
-}
-
-.ButtonSearch {
-  @include flex($align: center);
-  cursor: pointer;
-  padding: 0 2%;
-  padding: 0 2em;
-  &:hover{
-    background: rgba(0, 0, 0, .2);
-
   }
 }

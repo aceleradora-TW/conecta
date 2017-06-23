@@ -4,7 +4,9 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 6vh;
   width: 100%;
+  background-color: black;
   font-family: Lato, sans-serif;
   background-color: black;
   color: white;
@@ -16,7 +18,7 @@
   }
 }
 
-/* line 16, ../sass/Footer.scss */
+/* line 17, ../sass/Footer.scss */
 .RegisterFooter {
   display: flex;
   align-items: center;

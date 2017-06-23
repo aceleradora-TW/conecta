@@ -4,49 +4,45 @@
 
 
 .u-fontSizeXSmall {
-	font-size: 0.8em;
+	font-size: $small-font-size;
 }
 
-
 .u-fontSizeSmall {
-	font-size: 1em;
+	font-size: $medium-font-size;
 }
 
 .u-fontSizeMediumSlogan {
-	font-size: 1.3em;
+	font-size: $medium-font-size;
 	@include mobile {
-		font-size: 1.5em;
+		font-size: $medium-font-size;
 	}
 }
 
 .u-fontSizeMedium {
-	font-size: 1.3em;
+	font-size: $medium-font-size;
 	@include tablet {
-		font-size: 1em;
+		font-size: $medium-font-size;
 	}
 	@include mobile {
-		font-size: 0.9em;
+		font-size: $small-font-size;
 	}
 	@include smallMobile {
-		font-size: 0.8em;
+		font-size: $small-font-size;
 	}
 }
 
 .u-fontSizeLarge {
-	font-size: 1.7em;
+	font-size: $large-font-size;
 	@include tablet {
-		font-size: 1.5em;
-	}
-	@include mobile {
-		font-size: 1.3em;
+		font-size: $medium-font-size;
 	}
 	@include smallMobile {
-		font-size: 1.1em;
+		font-size: $medium-font-size;
 	}
 }
 
 .u-fontSizeXLarge {
-	font-size: 5em;
+	font-size: $x-large-font-size;
 }
 
 .u-fontFamilyLato {
@@ -70,7 +66,7 @@
 }
 
 .u-marginSmall {
-	margin: 6px;
+	margin: 1%;
 }
 
 .u-marginLeft {
@@ -110,7 +106,7 @@
 	margin-bottom: 2%;
 }
 
-.u-lineHeightMedium{
+.u-lineHeightMedium {
 	line-height: 1.7em;
 }
 
@@ -118,20 +114,8 @@
 	color: $light-blue-color;
 }
 
-.u-colorLightRed{
+.u-colorLightRed {
 	color: $light-red-color;
-}
-
-.u-colorGreen{
-	color: $aqua-green-color;
-}
-
-.u-colorOrange {
-	color: $burnt-yellow-color;
-}
-
-.u-widthNone {
-	width: 0%;
 }
 
 .u-widthMedium {
@@ -157,6 +141,7 @@
 .u-colorGold {
 	color: rgba(228, 181, 65, 1);
 }
+
 .u-colorRed {
 	background-color: rgba(235, 99, 97, 1);
 	&:hover {
@@ -200,27 +185,31 @@
 		cursor: pointer;
 	}
 }
+.u-widthNone {
+	@include size($width: 0%);
+}
 
 .u-widthMedium {
-	width: 30%;
+	@include size($width: 30%);
 	margin: 5%;
 	@include tablet {
 		@include size($height: 70%, $width: 15%);
 		@include flex($justify: center,$align: center);
 		margin: 1%;
-		font-size: 1em;
+		font-size: $medium-font-size;
 		line-height: 0.8em;
 	}
+
 	@include smallMobile {
 		@include flex($justify: center, $align: center);
 		@include size($height: 35%, $width: 15%);
 		margin: 1%;
 		line-height: 1.3em;
-		font-size: 0.5em;
+		font-size: $small-font-size;
 	}
 }
 
-.u-colorBackgroundBlue{
+.u-colorBackgroundBlue {
 	background-color: $blue-color;
 	&:hover {
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(244, 179, 80,1);
@@ -228,7 +217,7 @@
 	}
 }
 
-.u-colorBackgroundGreen{
+.u-colorBackgroundGreen {
 	background-color: $aqua-green-color;
 	&:hover {
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(100, 221, 187,1);
@@ -245,8 +234,13 @@
 }
 
 .u-widthMediumOnly {
-	width: 30%;
+	@include size ($width: 30%);
 }
+
+.u-widthLarge {
+	@include size ($width: 90%);
+}
+
 .u-widthMediumLarge {
 	width: 80%;
 }
@@ -264,6 +258,12 @@
 
 .u-borderWhite {
 	border: solid 2px;
+}
+
+.u-rotateIcon{
+	@include smallMobile{
+		-webkit-transform: rotate(90deg);
+	}
 }
 
 .u-fontBold {

@@ -31,6 +31,7 @@
 
 /* line 25, ../sass/Section.scss */
 .SectionOpacity {
+  background-color: rgba(0, 0, 0, 0.47);
   height: 85vh;
   width: 100%;
   display: flex;
@@ -38,7 +39,7 @@
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 31, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .HowItWorks {
   height: 95vh;
   width: 100%;
@@ -50,7 +51,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-/* line 38, ../sass/Section.scss */
+/* line 39, ../sass/Section.scss */
 .Collaborators {
   height: 95vh;
   width: 100%;
@@ -58,16 +59,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
   background: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 499px) {
-  /* line 38, ../sass/Section.scss */
+  /* line 39, ../sass/Section.scss */
   .Collaborators {
     height: 202vh;
   }
 }
 
-/* line 47, ../sass/Section.scss */
+/* line 49, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 97vh;
@@ -83,13 +85,13 @@
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 47, ../sass/Section.scss */
+  /* line 49, ../sass/Section.scss */
   .About {
     min-height: 65vh;
   }
 }
 
-/* line 61, ../sass/Section.scss */
+/* line 63, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 100%;
@@ -101,7 +103,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 61, ../sass/Section.scss */
+  /* line 63, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -110,7 +112,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 61, ../sass/Section.scss */
+  /* line 63, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -119,7 +121,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 61, ../sass/Section.scss */
+  /* line 63, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -128,7 +130,7 @@
   }
 }
 
-/* line 77, ../sass/Section.scss */
+/* line 79, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 100%;
@@ -139,7 +141,7 @@
   padding: 0;
 }
 
-/* line 83, ../sass/Section.scss */
+/* line 85, ../sass/Section.scss */
 .SectionList {
   width: 100%;
   min-height: 82vh;
@@ -150,7 +152,7 @@
   padding: 0;
 }
 
-/* line 89, ../sass/Section.scss */
+/* line 91, ../sass/Section.scss */
 .LogosList {
   width: 100%;
   display: flex;

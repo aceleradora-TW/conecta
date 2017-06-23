@@ -24,7 +24,7 @@
 
 .InputGroupButton{
   @include size($width: 30%);
-  z-index: 99;
+  z-index: 3;
 }
 
 .InputSearch{
@@ -144,7 +144,7 @@ input{
 .RegisterInputs {
   @include flex($align: center, $direction: column);
   @include size($width: 100%);
-  input{
+  input, textarea{
     @include size($width: 100%);
     outline: none;
     border-radius: 4%;
