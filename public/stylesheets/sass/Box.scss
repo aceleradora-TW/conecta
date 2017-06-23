@@ -17,15 +17,23 @@
   font-size: 1.3em;
   font-weight: lighter;
   @include tablet{
-    font-size: 1.7em;
+    font-size: 1.4em;
+  }
+  @include mobile{
+    font-size: 1.3em;
+  }
+  @include smallMobile{
+    font-size: 1.2em;
   }
 }
+
+
 
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
-  @include tablet{
-    align-items: baseline;
+  @include mobile{
+    align-items: inherit;
   }
 }
 
@@ -38,14 +46,23 @@
   text-align: center;
   color: $white-font-color;
   @include tablet{
-    font-size: 0.8em;
+    font-size: 0.85em;
+  }
+  @include mobile{
+    @include flex($justify: flex-start);
+    font-size: 0.7em;
+    margin: 1vh 0;
+  }
+  @include smallMobile{
+    @include size($width: 90%);
+    font-size: 0.7em;
   }
 }
 
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 60%, $width: 100%);
-  background-color: rgba(0, 0, 0, 0.7);
+  @include blackGradient($alpha: 0.7);
 }
 
 .TitleSearch {
@@ -54,6 +71,10 @@
   font-family: $font-style;
   color: $white-font-color;
   text-shadow: 1px 1px #000;
+  @include smallMobile{
+    text-align: center;
+    margin-top: 3%;
+  }
 }
 
 .BoxHowItWorks {
@@ -61,6 +82,13 @@
   @include size($height: 100%, $width: 20%);
   @include tablet{
     height: 80%;
+  }
+  @include mobile{
+    @include size($height: 60%, $width: 80%);
+  }
+  @include smallMobile{
+    @include flex($direction: column);
+    @include size($width: 70%);
   }
 }
 
@@ -71,8 +99,15 @@
   background-color: $white-color;
   border-radius: 100%;
   @include tablet{
-    width: 50%;
-    height: 50%;
+    @include size($height: 50%, $width: 50%);
+  }
+
+  @include mobile{
+    @include size($height: 53%, $width: 60%);
+  }
+
+  @include smallMobile{
+    @include size($height: 16vh, $width: 12vw);
   }
 }
 
@@ -81,6 +116,9 @@
   @include size($height: 35vh, $width: 98%);
   font-family: $font-style;
   font-weight: lighter;
+  @include smallMobile{
+    @include size($height: 70%);
+  }
 }
 
 .Title {
@@ -92,6 +130,10 @@
 .CardContentF {
   @include flex($align: flex-start, $justify: space-around);
   @include size($height: 75%, $width: 98%);
+  @include smallMobile{
+    @include flex($align: center, $direction: column);
+    @include size($height: 100%);
+  }
 }
 
 .Arrow {
@@ -114,19 +156,30 @@
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
+  @include mobile{
+    @include size($min-height: 20vh);
+  }
 }
 
 .Tag{
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 7vh, $width: 40%);
   cursor: pointer;
+  @include mobile{
+    @include size($width: 100%);
+    margin-bottom: 2%;
+  }
+  @include smallMobile{
+    @include size($width: 100%);
+    margin-bottom: 3%;
+  }
 }
 
 .TagTitle{
   @include flex($align: center, $direction: row, $justify: center);
   @include size($height: 100%, $width: 100%);
-	color: $white-font-color;
-	font-family: $font-style;
+  color: $white-font-color;
+  font-family: $font-style;
 }
 
 .RegisterTitle{
@@ -139,6 +192,14 @@
 .NavSearch{
   @include flex($direction: row, $justify: space-between);
   @include size($height: 60%, $width: 60%);
+  @include mobile{
+    @include flex($direction: column);
+    @include size($width: 60%);
+  }
+  @include smallMobile{
+    @include flex($align: center ,$direction: column);
+    @include size($width: 60%);
+  }
 }
 
 .BoxTextTitle{
@@ -150,11 +211,18 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 85%);
   align-content: space-between;
+  @include smallMobile{
+  @include size($width: 100%);
+  }
 }
 
 .InputGroup {
   @include flex($justify: center);
   @include size($height: 6vh, $width: 75%);
+  @include smallMobile{
+    @include size($height: 7vh, $width: 95%);
+    @include flex($direction: row);
+  }
 }
 
 .BoxFilterBy {

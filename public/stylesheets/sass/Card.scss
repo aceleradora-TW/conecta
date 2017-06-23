@@ -13,7 +13,7 @@
   font-weight: lighter;
   @include tablet {
     @include size($width: 95%, $min-height: 55%);
-    font-size: $large-font-size;       
+    font-size: $large-font-size;
   };
   @include mobile {
     @include size($width: 95%, $min-height: 55%);
@@ -188,7 +188,6 @@
   line-height: 2em;
   cursor: pointer;
   align-self: center;
-
   &:hover {
     background: rgba(0,0,0,.05);
     transition: .5s;
@@ -264,15 +263,11 @@
     font-size: $small-font-size;
   }
 }
+
 .ItemTextSegment{
   @include flex($justify: center);
   @include size($height: 100%, $width: 70%);
 }
-.ItemStar{
-  @include size($height: 100%);
-  @include flex($justify: flex-end);
-}
-
 .ItemStar{
   @include flex($justify: flex-end);
   @include size($height: 100%);
@@ -380,9 +375,34 @@
 }
 
 .BoxButtonMessage {
+  @include flex($align: center, $justify: flex-end);
+  @include size($height: 50%, $width: 60%);
+  @include tablet{
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+  }
+  @include mobile{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+  }
+  @include smallMobile{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+  }
+}
+
+.BoxButtonMessage {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
-
   @include tablet{
     @include size($height: 100px, $width: 100%);
     align-items: center;
@@ -475,19 +495,19 @@
     @include size($min-height: 140px);
     flex-direction: column;
   }
-  .FooterCardSecondaryItem {
-    @include size($width: 42.5%);
-    @include tablet{
-      @include size($width: 100%);
-      @include flex($align: center, $justify: center);
-    }
-    @include mobile{
-      font-size: 13px;
-    }
-    @include smallMobile{
-      font-size: 13px;
-      flex-wrap: wrap;
-    }
+}
+.FooterCardSecondaryItem {
+  @include size($width: 42.5%);
+  @include tablet{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
+  }
+  @include mobile{
+    font-size: 13px;
+  }
+  @include smallMobile{
+    font-size: 13px;
+    flex-wrap: wrap;
   }
 }
 

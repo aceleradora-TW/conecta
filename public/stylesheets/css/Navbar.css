@@ -6,9 +6,9 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.47);
   font-family: Lato, sans-serif;
   font-weight: lighter;
-  background-color: rgba(0, 0, 0, 0.47);
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 14vh;
+    min-height: 14vh;
   }
 }
 @media (max-width: 499px) {
@@ -38,13 +38,13 @@
     min-height: 100%;
   }
 }
-/* line 29, ../sass/Navbar.scss */
+/* line 27, ../sass/Navbar.scss */
 .Navbar.is-open {
   background-color: rgba(0, 0, 0, 0.55);
   height: 37vh;
 }
 
-/* line 35, ../sass/Navbar.scss */
+/* line 33, ../sass/Navbar.scss */
 .NavLogo {
   height: 100%;
   width: 50%;
@@ -54,7 +54,7 @@
   margin-left: 2%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 35, ../sass/Navbar.scss */
+  /* line 33, ../sass/Navbar.scss */
   .NavLogo {
     width: 90%;
     min-height: 50%;
@@ -63,7 +63,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 35, ../sass/Navbar.scss */
+  /* line 33, ../sass/Navbar.scss */
   .NavLogo {
     width: 90%;
     min-height: 60%;
@@ -72,7 +72,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 35, ../sass/Navbar.scss */
+  /* line 33, ../sass/Navbar.scss */
   .NavLogo {
     width: 90%;
     min-height: 50%;
@@ -81,12 +81,12 @@
   }
 }
 
-/* line 56, ../sass/Navbar.scss */
+/* line 54, ../sass/Navbar.scss */
 .Hamburger {
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 56, ../sass/Navbar.scss */
+  /* line 54, ../sass/Navbar.scss */
   .Hamburger {
     height: 60%;
     width: 36%;
@@ -94,7 +94,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 56, ../sass/Navbar.scss */
+  /* line 54, ../sass/Navbar.scss */
   .Hamburger {
     height: 60%;
     width: 5%;
@@ -102,7 +102,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 56, ../sass/Navbar.scss */
+  /* line 54, ../sass/Navbar.scss */
   .Hamburger {
     height: 60%;
     width: 5%;
@@ -110,7 +110,7 @@
   }
 }
 
-/* line 74, ../sass/Navbar.scss */
+/* line 70, ../sass/Navbar.scss */
 .LogoImage {
   height: 50%;
   width: 37%;
@@ -120,7 +120,7 @@
   background-size: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 74, ../sass/Navbar.scss */
+  /* line 70, ../sass/Navbar.scss */
   .LogoImage {
     height: 72%;
     width: 45%;
@@ -129,7 +129,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 74, ../sass/Navbar.scss */
+  /* line 70, ../sass/Navbar.scss */
   .LogoImage {
     height: 74%;
     width: 52%;
@@ -138,7 +138,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 74, ../sass/Navbar.scss */
+  /* line 70, ../sass/Navbar.scss */
   .LogoImage {
     height: 70%;
     width: 67%;
@@ -147,7 +147,7 @@
   }
 }
 
-/* line 96, ../sass/Navbar.scss */
+/* line 92, ../sass/Navbar.scss */
 .NavLinks {
   height: 100%;
   width: 50%;
@@ -160,7 +160,7 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 96, ../sass/Navbar.scss */
+  /* line 92, ../sass/Navbar.scss */
   .NavLinks {
     width: 90%;
     min-height: 20%;
@@ -171,7 +171,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 96, ../sass/Navbar.scss */
+  /* line 92, ../sass/Navbar.scss */
   .NavLinks {
     width: 90%;
     min-height: 20%;
@@ -182,7 +182,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 96, ../sass/Navbar.scss */
+  /* line 92, ../sass/Navbar.scss */
   .NavLinks {
     width: 100%;
     min-height: 20%;
@@ -193,7 +193,7 @@
     padding: 0;
   }
 }
-/* line 127, ../sass/Navbar.scss */
+/* line 120, ../sass/Navbar.scss */
 .NavLinks a {
   text-decoration: none;
   font-size: 1.3em;
@@ -201,28 +201,28 @@
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 127, ../sass/Navbar.scss */
+  /* line 120, ../sass/Navbar.scss */
   .NavLinks a {
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 127, ../sass/Navbar.scss */
+  /* line 120, ../sass/Navbar.scss */
   .NavLinks a {
     font-size: 0.7em;
   }
 }
-/* line 140, ../sass/Navbar.scss */
+/* line 132, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 146, ../sass/Navbar.scss */
+/* line 137, ../sass/Navbar.scss */
 .NavLinks.is-open {
   display: flex;
 }
 
-/* line 151, ../sass/Navbar.scss */
+/* line 143, ../sass/Navbar.scss */
 .Link {
   height: 60%;
   width: 24%;
@@ -232,10 +232,9 @@
   text-decoration: none;
   flex-wrap: wrap;
   color: white;
-  list-style: none;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 151, ../sass/Navbar.scss */
+  /* line 143, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -243,7 +242,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 151, ../sass/Navbar.scss */
+  /* line 143, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -251,7 +250,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 151, ../sass/Navbar.scss */
+  /* line 143, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -259,14 +258,14 @@
     font-size: 1.3em;
   }
 }
-/* line 174, ../sass/Navbar.scss */
+/* line 164, ../sass/Navbar.scss */
 .Link:hover {
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   color: #34495e;
   font-size: 1.3em;
 }
-/* line 180, ../sass/Navbar.scss */
+/* line 170, ../sass/Navbar.scss */
 .Link:hover a {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
