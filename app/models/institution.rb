@@ -7,7 +7,7 @@ class Institution
   property :address, String
   property :type, Discriminator
 
-  has n, :competences, :through => :competece_institutions
+  has n, :competences, :through => :competence_institutions
   has n, :competence_institutions
   has 1, :contact
 
