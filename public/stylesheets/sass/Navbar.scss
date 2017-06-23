@@ -4,14 +4,13 @@
 
 
 
-.Navbar{
+.Navbar {
 	@include size($width:100%, $height:12vh);
 	@include flex($align: center, $direction: row, $justify: space-between);
 	@include blackGradient($alpha: 0.47);
 	font-family: $font-style;
 	font-weight: lighter;
 	color: $white-font-color;
-
 	@include tablet {
 		@include flex($justify: center,  $direction: column);
 		@include size($min-height: 14vh);
@@ -89,7 +88,7 @@
 	}
 }
 
-.NavLinks{
+.NavLinks {
 	@include size($width:50%, $height:100%);
 	@include flex($align: center, $direction: row, $justify: flex-end);
 	list-style: none;
@@ -137,10 +136,25 @@
 	&.is-open {
 		display: flex;
 	}
+	@include mobile {
+		padding-right: 5%;
+	}
+	@include smallMobile {
+		padding-right: 5%;
+	}
+	& a {
+		text-decoration: none;
+		font-size: 1.1em;
+		color: $white-font-color;
+		text-align: center;
+		&:hover {
+			text-decoration: none;
+			color: $white-font-color;
+		}
+	}
 }
 
-
-.Link{
+.Link {
 	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
 	text-decoration: none;
@@ -171,5 +185,24 @@
 		@include blackGradient($alpha: 0.7);
 		color: $white-font-color;
 		font-size: $medium-font-size;
+	}
+}
+
+
+
+
+
+
+
+.NavSearch{
+	@include flex($direction: row, $justify: space-between);
+	@include size($height: 60%, $width: 60%);
+	@include mobile {
+		@include flex($direction: column);
+		@include size($width: 60%);
+	}
+	@include smallMobile {
+		@include flex($align: center ,$direction: column);
+		@include size($width: 60%);
 	}
 }

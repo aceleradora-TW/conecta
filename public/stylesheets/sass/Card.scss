@@ -203,8 +203,7 @@
   }
 }
 
-
-.ItemsFeatured{
+.ItemsFeatured {
   @include flex($align: center, $justify: space-around);
   @include size($width: 100%);
   line-height: 2em;
@@ -231,7 +230,7 @@
   padding: 0;
 }
 
-.CompetencesTitle{
+.CompetencesTitle {
   @include flex($align:flex-end, $justify:center);
   @include size($height: 5%, $width: 100%);
   margin-top: 5%;
@@ -403,21 +402,17 @@
 .BoxButtonMessage {
   @include flex($align: center, $justify: center);
   @include size($height: 50%, $width: 40%);
-  @include tablet{
+  @include tablet {
     @include size($height: 100px, $width: 100%);
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
+    @include flex($align: center, $direction: row, $justify: space-around);
   }
-  @include mobile {
-    @include size($height: 80%, $width: 100%);
-    flex-direction: row;
+  @include mobile{
+    @include size($height: 100%, $width: 80%);
+    @include flex($align: center, $direction: row, $justify: center);
   }
-  @include smallMobile {
-    @include size($height: 100%, $width: 70%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @include smallMobile{
+    @include size($height: 70%, $width: 100%);
+    @include flex($align: center, $direction: column, $justify: center);
   }
 }
 
