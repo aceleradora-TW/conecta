@@ -13,7 +13,7 @@
   font-weight: lighter;
   @include tablet {
     @include size($width: 95%, $min-height: 55%);
-    font-size: $large-font-size;       
+    font-size: $large-font-size;
   };
   @include mobile {
     @include size($width: 95%, $min-height: 55%);
@@ -140,7 +140,7 @@
   font-size: $medium-font-size;
 }
 
-.LogoImage{
+.LogoInstitutions{
   @include size($width: 50%);
 }
 
