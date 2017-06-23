@@ -19,29 +19,19 @@
   color: $white-color;
   text-align: center;
   letter-spacing: .5px;
-  &.ButtonSend {
+  &.ButtonSend { 
     @include size($height: 4.6vh);
     &:disabled{
       background-color: gray;
-    }
-}
-
-  &.ButtonSend {
-    @include size($height: 4.6vh);
-
-    @include mobile{
-      @include size($height: 32px);
-    }
-    @include smallMobile{
-      @include size($height: 32px);
-}
-
-    &:disabled{
-      background-color: gray;
-
     }
   }
 
+  &.ButtonSend {
+    @include size($height: 4.6vh);
+    &:disabled{
+      background-color: gray;
+    }
+  }
   &:hover{
     box-shadow: 1px 1px 1px 1px #6BB9F0;
     cursor: pointer;
@@ -50,6 +40,12 @@
     @include flex($align: center, $justify: center);
     text-decoration: none;
     color: $white-color;
+  }
+  @include mobile{
+    @include size($height: 32px);
+  }
+  @include smallMobile{
+    @include size($height: 32px);
   }
   @include tablet {
     font-size: 0.8rem;

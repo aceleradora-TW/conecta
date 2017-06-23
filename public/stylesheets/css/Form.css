@@ -15,32 +15,32 @@
   height: 6vh;
   width: 75%;
 }
-/* line 14, ../sass/Form.scss */
+/* line 13, ../sass/Form.scss */
 .InputGroup input {
   font-size: 1.05em;
 }
-/* line 17, ../sass/Form.scss */
+/* line 16, ../sass/Form.scss */
 .InputGroup span {
   font-size: 1.3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 21, ../sass/Form.scss */
+  /* line 20, ../sass/Form.scss */
   .InputGroup input {
     font-size: 0.8em;
   }
-  /* line 24, ../sass/Form.scss */
+  /* line 23, ../sass/Form.scss */
   .InputGroup span {
     font-size: 1.1em;
   }
 }
 
-/* line 30, ../sass/Form.scss */
+/* line 29, ../sass/Form.scss */
 .InputGroupButton {
   width: 30%;
   z-index: 99;
 }
 
-/* line 35, ../sass/Form.scss */
+/* line 34, ../sass/Form.scss */
 .ButtonFilter {
   height: 100%;
   width: 100%;
@@ -50,12 +50,12 @@
   border-radius: 4px 0 0 4px;
 }
 
-/* line 43, ../sass/Form.scss */
+/* line 42, ../sass/Form.scss */
 .ButtonFilter-activated {
   border-radius: 4px 0 0 0;
 }
 
-/* line 47, ../sass/Form.scss */
+/* line 46, ../sass/Form.scss */
 .InputSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
@@ -63,7 +63,7 @@
   width: 60%;
 }
 
-/* line 54, ../sass/Form.scss */
+/* line 53, ../sass/Form.scss */
 .ButtonSearch {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-left: none;
@@ -72,7 +72,7 @@
   border-radius: 0 4px 4px 0;
 }
 
-/* line 62, ../sass/Form.scss */
+/* line 61, ../sass/Form.scss */
 .ButtonSearch:hover {
   background: rgba(0, 0, 0, 0.2);
 }

@@ -61,14 +61,15 @@
 .u-marginLeft {
 	margin-left: 10%;
 }
+
 .u-marginLeftSmall {
 	margin-left: 5%;
 }
 
 .u-marginLeftSmall {
 	margin-left: 6%;
-
 }
+
 .u-marginLeftXSmall {
 	margin-left: 2%;
 }
@@ -92,6 +93,7 @@
 .u-marginBottomMedium {
 	margin-bottom: 5%;
 }
+
 .u-marginSidesAndBottom {
 	margin: 0 2%;
 	margin-bottom: 2%;
@@ -165,15 +167,17 @@
 	width: 30%;
 	margin: 5%;
 	@include tablet {
-		@include size($height: 70%);
+		@include size($height: 70%, $width: 15%);
 		@include flex($justify: center,$align: center);
 		margin: 1%;
 		font-size: 1em;
+		line-height: 0.8em;
 	}
 	@include smallMobile {
 		@include flex($justify: center, $align: center);
 		@include size($height: 35%, $width: 15%);
 		margin: 1%;
+		line-height: 1.3em;
 		font-size: 0.5em;
 	}
 }

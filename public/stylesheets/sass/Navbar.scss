@@ -32,7 +32,6 @@
 	}
 }
 
-
 .NavLogo {
 	@include size($width: 50%, $height: 100%);
 	@include flex($justify: flex-start,  $align: center);
@@ -57,17 +56,17 @@
 .Hamburger {
 	display: none;
 	@include tablet {
-		@include size($width: 36%);
+		@include size($width: 36%, $height: 60%);
 		display: block;
 	}
 
 	@include mobile {
-		@include size($width: 5%);
+		@include size($width: 5%, $height: 60%);
 		display: block;
 	}
 
 	@include smallMobile {
-		@include size($width: 5%);
+		@include size($width: 5%, $height: 60%);
 		display: block;
 	}
 }
@@ -79,24 +78,24 @@
 	border-radius: 0;
 	background-size: 100%;
 	@include tablet {
-		@include size($width: 45%, $height: 48%);
+		@include size($width: 45%, $height: 72%);
 		@include flex($justify: center);
 	}
 
 	@include mobile {
-		@include size($width: 52%, $height: 34%);
+		@include size($width: 52%, $height: 74%);
 		@include flex($justify: center);
 	}
 
 	@include smallMobile {
-		@include size($width: 67%);
+		@include size($width: 67%, $height: 70%);
 		@include flex($justify: center);
 	}
 }
 
-.NavLinks {
-	@include size($width: 50%, $min-height: 100%);
-	@include flex($justify:flex-end, $align:center, $direction: row);
+.NavLinks{
+	@include size($width:50%, $height:100%);
+  @include flex($align: center, $direction: row, $justify: flex-end);
 	list-style: none;
 	margin: 0;
 	color: $white-color;
@@ -156,7 +155,6 @@
 	flex-wrap: wrap;
 	color: $white-color;
 	list-style: none;
-
 
 	@include tablet {
 		@include size($width: 90%, $height: 10vh);
