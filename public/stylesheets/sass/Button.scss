@@ -19,7 +19,7 @@
   color: $white-color;
   text-align: center;
   letter-spacing: .5px;
-  &.ButtonSend { 
+  &.ButtonSend {
     @include size($height: 4.6vh);
     &:disabled{
       background-color: gray;
