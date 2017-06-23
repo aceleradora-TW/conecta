@@ -17,32 +17,52 @@
           <% if segment.name.downcase.include? @value %>
         <li class="Items">
           <div class="ItemTextSegment">
-            <%= segment.name %><i class="material-icons u-widthNone u-colorGreen">check circle</i>
+            <%= segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
           </div>
         </li>
           <% end %>
         <%end %>
       </ul>
+      <div class="RatingExplanation u-marginTop">
+        <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthMediumLarge">Segmento informado pela empresa    </div>
+      </div>
     </div>
   <% else %>
 
     <div class="CompanyCompetences">
       <ul class="CompetenceList">
-        <% company.featured_competences.each_with_index do |company_competence,index| %>
-          <% rating = company_competence.competence_value_calculated_integer  %>
+        <%
+        has_check = false
+        has_stars = false
+        company.featured_competences.each_with_index do |company_competence,index|
+          rating = company_competence.competence_value_calculated_integer
+        %>
         <li class="ItemsFeatured ">
           <div class="ItemText"><%= company_competence.competence.name %></div>
           <div class="ItemStar">
-          <% for n_of_stars in (1..5) %>
-            <i class="material-icons u-colorGold"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
-          <% end %>
+            <% if rating > 0 %>
+              <% has_stars = true %>
+              <% for n_of_stars in (1..5) %>
+                <i class="material-icons u-colorGold u-widthIcon"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
+              <% end %>
+            <% else %>
+              <% has_check = true %>
+              <i class="material-icons u-colorGreen u-widthIcon">check circle</i>
+            <% end %>
           </div>
         </li>
         <% end %>
       </ul>
-      <div class="RatingExplanation">
-        <i class="material-icons u-colorGold">star</i> Nível de competência informado pela empresa
+      <% if has_stars %>
+      <div class="RatingExplanation u-marginTop">
+        <div class=""><i class="material-icons u-colorGold u-widthIcon">star</i> </div><div class="u-widthMediumLarge">Nível de competência informado pela empresa</div>
       </div>
+      <% end %>
+      <% if has_check %>
+      <div class="RatingExplanation u-marginTop">
+        <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthMediumLarge">Competência informada pela empresa    </div>
+      </div>
+      <% end %>
     </div>
 
   <% end %>

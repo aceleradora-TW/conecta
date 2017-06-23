@@ -1,15 +1,4 @@
 
-<h1 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">Resultados Buscados</h1>
-<h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft">
-  <% if @institution.length == 0 %>
-  <br>Nenhum resultado encontrado
-  <% end %>
-</h3>
-<section class="SectionCards">
-  <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
-
-
-
 <div class="u-gradientTransparentToBlack">
   <h1 class="u-fontFamilyLato u-fontSizeMedium u-marginLeftXSmall u-marginTopLarge u-fontWhite"><%= @search_description %></h1>
   <h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft u-fontWhite">
@@ -20,11 +9,9 @@
   <section class="SectionCards">
     <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
     <%= erb :companies %>
-    <% elsif @search_type == 'centro-pesquisa'or @search_type == 'area-pesquisa' or @search_type == 'eixo-pesquisa'%>
+    <% elsif @search_type == 'centro-pesquisa'or @search_type == 'estrutura-pesquisa-competencia'%>
 
     <%= erb :research_centers %>
-  <% end %>
-</section>
     <% end %>
   </section>
 </div>
