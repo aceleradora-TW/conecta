@@ -24,6 +24,7 @@
 .LoginFooter {
   @include flex($align: center, $direction: column, $justify: space-around);
   @include size($height: 40%, $width: 100%);
+
   & a {
     color: $black-font-color;
   }
