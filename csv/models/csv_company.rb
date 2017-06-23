@@ -1,5 +1,5 @@
 class CsvCompany
-  attr_accessor :name, :size, :description,:segments,:types,:competences, :competence_value
+  attr_accessor :name, :size, :description,:segments,:types,:competences, :competence_value, :logo
   def initialize
     @competence_area_array = nil
     create_competence_area_array()
@@ -7,7 +7,7 @@ class CsvCompany
 
   def insert_to_db
 
-    company = Company.new(name: @name, size: @size)
+    company = Company.new(name: @name, size: @size, logo: @logo)
 
     @segments.each do |segment|
       segment_object = Segment.first(name: segment)
