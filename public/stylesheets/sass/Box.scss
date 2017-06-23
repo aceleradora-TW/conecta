@@ -199,3 +199,24 @@
     @include size($width: 90%,$height: 52vh);
   }
 }
+
+.BoxButtonMessage {
+  @include flex($align: center, $justify: center);
+  @include size($height: 50%, $width: 40%);
+  @include tablet{
+    @include size($height: 100px, $width: 100%);
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  @include mobile {
+    @include size($height: 80%, $width: 100%);
+    flex-direction: row;
+  }
+  @include smallMobile {
+    @include size($height: 100%, $width: 70%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

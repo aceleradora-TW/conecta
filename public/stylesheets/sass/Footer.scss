@@ -1,4 +1,6 @@
 @import "_mixins.scss";
+@import "_variables.scss";
+@import "MediaQuery.scss";
 
 footer{
 	@include flex($align: center, $direction: column, $justify: center);
@@ -11,4 +13,40 @@ footer{
 .RegisterFooter {
 	@include flex($align: center, $direction: column, $justify: space-around);
 	@include size($width: 100%, $height: 15%);
+}
+
+.FooterCardSecondary{
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
+  flex-wrap: wrap;
+  padding-top: 3%;
+  margin-bottom: 3%;
+  @include tablet {
+    @include size($min-height: 146px);
+    flex-direction: column;
+  }
+  @include mobile{
+    @include size($min-height: 140px);
+    flex-direction: column;
+  }
+  @include smallMobile{
+    @include size($min-height: 140px);
+    flex-direction: column;
+  }
+}
+
+.FooterCardSecondaryItem {
+  @include size($width: 45%);
+  @include tablet{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
+  }
+  @include mobile{
+    font-size: 13px;
+  }
+  @include smallMobile{
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
 }

@@ -118,12 +118,6 @@
   @include size($width: 30%);
 }
 
-.CardTitle {
-  @include flex($justify: center);
-  @include size($height: 100%, $width: 40%);
-  font-size: $medium-font-size;
-}
-
 .LogoImage{
   @include size($height: 40px, $width: 40px);
   border-radius: 100%;
@@ -223,16 +217,6 @@
   padding: 0;
 }
 
-.CompetencesTitle{
-  @include flex($align:flex-end, $justify:center);
-  @include size($height: 5%, $width: 100%);
-  margin-top: 5%;
-  font-weight: bold;
-  font-size: $medium-font-size;
-  @include smallMobile {
-      font-size: $large-font-size;
-    }
-  }
 
 
 .ItemText{
@@ -374,58 +358,6 @@
   @include size($height: 50%, $width: 60%);
 }
 
-.BoxButtonMessage {
-  @include flex($align: center, $justify: flex-end);
-  @include size($height: 50%, $width: 60%);
-  @include tablet{
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-  }
-  @include mobile{
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-  }
-  @include smallMobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 70%;
-  }
-}
-
-.BoxButtonMessage {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
-  @include tablet{
-    @include size($height: 100px, $width: 100%);
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  @include mobile {
-    @include size($height: 80%, $width: 100%);
-    flex-direction: row;
-  }
-  @include smallMobile {
-    @include size($height: 100%, $width: 70%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.BoxButtonMessage {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
-}
-
 .CompanyCompetences{
   @include flex($direction: column);
   @include size($height: 60%, $width: 100%);
@@ -473,42 +405,6 @@
   }
   @include smallMobile{
     @include flex($align: center, $direction: column, $justify: center);
-  }
-}
-
-.FooterCardSecondary{
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($min-height: 60px, $width: 100%);
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  flex-wrap: wrap;
-  padding-top: 3%;
-  margin-bottom: 3%;
-  @include tablet {
-    @include size($min-height: 146px);
-    flex-direction: column;
-  }
-  @include mobile{
-    @include size($min-height: 140px);
-    flex-direction: column;
-  }
-  @include smallMobile{
-    @include size($min-height: 140px);
-    flex-direction: column;
-  }
-}
-
-.FooterCardSecondaryItem {
-  @include size($width: 45%);
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    font-size: 13px;
-  }
-  @include smallMobile{
-    font-size: 13px;
-    flex-wrap: wrap;
   }
 }
 
