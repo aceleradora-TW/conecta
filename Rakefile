@@ -3,9 +3,8 @@ require ::File.expand_path('../config/database', __FILE__)
 require_relative 'csv/csv_import.rb'
 require_relative 'config/seed.rb'
 
-desc 'Start Development Server Locally'
-
 task :s do
+  desc 'Start Development Server Locally'
   fork do
     exec "compass watch"
   end
@@ -16,7 +15,8 @@ task :test do
   Rake::Task["db:reset"].invoke
   Rake::Task["db:seed_test"].invoke
   Rake::Task["db:seed_test_users"].invoke
-  exec "rspec --format d --color"
+  exec "rspec --format d"
+
 end
 
 namespace :db do

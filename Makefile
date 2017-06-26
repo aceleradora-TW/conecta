@@ -18,9 +18,7 @@ ps:
 
 test:
 	@echo "Starting Tests"
-	docker-compose up -d postgres
-	docker-compose run -e RACK_ENV=test web rake test
-	docker-compose down postgres
+	docker-compose up web_test 
 
 db-start:
 	docker-compose up -d db
