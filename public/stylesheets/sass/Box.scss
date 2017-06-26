@@ -4,7 +4,7 @@
 
 .ContentAbout {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($height: 50%, $width: 65%);
+  @include size($height: 75%, $width: 90%);
 }
 
 .LogosCredibility {
@@ -141,4 +141,9 @@
   @include smallMobile{
     @include size($width: 90%,$height: 52vh);
   }
+}
+
+.ContentCollaborators{
+  @include size($width: 70%);
+  @include flex();
 }

@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 50%;
-  width: 65%;
+  height: 75%;
+  width: 90%;
 }
 
 /* line 10, ../sass/Box.scss */
@@ -245,4 +245,10 @@
     height: 52vh;
     width: 90%;
   }
+}
+
+/* line 146, ../sass/Box.scss */
+.ContentCollaborators {
+  width: 70%;
+  display: flex;
 }
