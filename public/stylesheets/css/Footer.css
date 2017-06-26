@@ -97,24 +97,27 @@
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  min-height: 60px;
+  min-height: 7vh;
   border-top: 1px solid rgba(193, 193, 193, 0.45);
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
+    min-height: 12vh;
     flex-direction: column;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
-    flex-direction: row;
+    min-height: 12vh;
+    flex-direction: column;
   }
 }
 @media (max-width: 499px) {
   /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
+    min-height: 12vh;
     flex-direction: column;
   }
 }

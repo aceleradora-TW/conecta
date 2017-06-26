@@ -106,14 +106,14 @@
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		font-size: $medium-font-size;
+		font-size: $small-font-size;
 	}
 	@include smallMobile {
 		@include size($width: 100%, $min-height: 20%);
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		font-size: $medium-font-size;
+		font-size: $small-font-size;
 		padding: 0;
 	}
 	a {

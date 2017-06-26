@@ -58,15 +58,19 @@
 
 .FooterCardPrimary {
   @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($min-height: 60px, $width: 100%);
+  @include size($min-height: 7vh, $width: 100%);
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   @include tablet{
+		  @include size($min-height: 12vh);
     flex-direction: column;
+
   }
   @include mobile{
-    flex-direction: row;
+		@include size($min-height: 12vh);
+	  flex-direction: column;
   }
   @include smallMobile{
-    flex-direction: column;
+		@include size($min-height: 12vh);
+   flex-direction: column;
   }
 }

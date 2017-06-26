@@ -24,25 +24,24 @@
   }
   &.is-login {
     @include size($height: 60vh);
-      background: rgba(255, 255, 255, 0.72);
-      @include tablet{
-        @include size($width: 80%);
-      }
-      @include mobile{
-        @include size($width: 80%);
-      }
-      @include smallMobile{
-        @include size($width: 90%,$height: 300px);
+    background: rgba(255, 255, 255, 0.72);
+    @include tablet{
+      @include size($width: 80%);
+    }
+    @include mobile{
+      @include size($width: 80%);
+    }
+    @include smallMobile{
+      @include size($width: 90%,$height: 300px);
+    }
   }
-}
 }
 
 .InstitutionList {
   @include flex($align: center, $direction: column, $justify: flex-end);
   @include size($width: 30%);
   background: rgba(255, 255, 255, 1);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
@@ -92,10 +91,10 @@
     text-align: center;
     @include mobile{
       @include size($width: 90%);
-        }
+    }
     @include smallMobile{
       @include size($width: 90%);
-        }
+    }
   }
 }
 
@@ -239,23 +238,20 @@
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
   @include size($height: 100%, $width: 70%);
-  margin: 20px;
+
   @include tablet{
     @include size($height: 30%, $width: 97%);
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $justify: center);
     font-size: $small-font-size;
   }
   @include mobile{
     @include size($height: 30%, $width: 100%);
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $justify: center);
     font-size: $medium-font-size
   }
   @include smallMobile{
     @include size($height: 30%, $width: 90%);
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $justify: center);
     font-size: $medium-font-size
   }
 }
@@ -281,13 +277,19 @@
   padding: 1%;
   display: none;
   @include tablet{
-    @include flex($align: center, $direction: column, $justify: center);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   @include mobile{
-    @include flex($align: center, $direction: column, $justify: center);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   @include smallMobile{
-    @include flex($align: center, $direction: column, $justify: center);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

@@ -27,10 +27,7 @@
   }
 }
 
-.BoxButtonCard {
-  @include flex($align: center, $justify: flex-end);
-  @include size($height: 50%, $width: 60%);
-}
+
 .LogosCredibility {
   @include flex($align: center, $direction: row, $justify: flex-end);
   @include size($height: 30%, $width: 99%);
