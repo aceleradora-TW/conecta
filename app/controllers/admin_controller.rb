@@ -48,7 +48,7 @@ class AdminController < Controller
   end
 
   get "/admin/register" do
-    if @user_info.is_logged_in
+    if @user_info.is_logged_in and @user_info.is_admin
       erb :register, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
@@ -56,8 +56,16 @@ class AdminController < Controller
   end
 
   get "/admin/register/2" do
-    if @user_info.is_logged_in
+    if @user_info.is_logged_in and @user_info.is_admin
       erb :register2, :layout => :layout_admin
+    else
+      erb :forbidden, :layout => :layout_admin
+    end
+  end
+
+  get "/admin/register/3" do
+    if @user_info.is_logged_in and @user_info.is_admin
+      erb :register3, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
     end
