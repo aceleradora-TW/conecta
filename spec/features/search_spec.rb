@@ -29,7 +29,6 @@ RSpec.describe IndexController do
         find("#ButtonContact1").click
         expect(page).to have_css(".ModalContent")
       end
-
     end
   end
 end

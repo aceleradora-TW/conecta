@@ -63,8 +63,9 @@
     width: 7%;
   }
 }
-/* line 42, ../sass/Logos.scss */
-.Logo .LogoCollaborators {
+
+/* line 43, ../sass/Logos.scss */
+.LogoCollaborators {
   width: 100%;
   min-height: 30%;
   display: flex;
@@ -74,8 +75,18 @@
   flex-wrap: wrap;
 }
 
+/* line 49, ../sass/Logos.scss */
+.LogoDirectories {
+  width: 12.5vw;
+}
+
+/* line 53, ../sass/Logos.scss */
+.LogosSupporters {
+  width: 12.5vw;
+}
+
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 48, ../sass/Logos.scss */
+  /* line 56, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -84,7 +95,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 48, ../sass/Logos.scss */
+  /* line 56, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -93,7 +104,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 48, ../sass/Logos.scss */
+  /* line 56, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -102,7 +113,7 @@
   }
 }
 
-/* line 62, ../sass/Logos.scss */
+/* line 70, ../sass/Logos.scss */
 .CardLogo {
   display: flex;
   align-items: center;
@@ -110,12 +121,12 @@
   width: 30%;
 }
 
-/* line 66, ../sass/Logos.scss */
+/* line 74, ../sass/Logos.scss */
 .LogoInstitutions {
   width: 50%;
 }
 
-/* line 70, ../sass/Logos.scss */
+/* line 78, ../sass/Logos.scss */
 .LogoSmall {
   display: flex;
   align-items: center;
@@ -126,7 +137,7 @@
   margin: 10px;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 70, ../sass/Logos.scss */
+  /* line 78, ../sass/Logos.scss */
   .LogoSmall {
     height: 100px;
   }

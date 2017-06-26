@@ -4,7 +4,7 @@ build:
 
 run:build
 	@echo "Starting Server"
-	docker-compose up
+	docker-compose up web db
 
 bash:
 	@echo "Starting Application Bash"
@@ -18,7 +18,7 @@ ps:
 
 test:
 	@echo "Starting Tests"
-	docker-compose run web rake test
+	docker-compose up web_test 
 
 db-start:
 	docker-compose up -d db
