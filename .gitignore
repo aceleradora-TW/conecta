@@ -6,3 +6,4 @@ vendor/*
 coverage
 data/*
 .sass-cache/
+node_modules/
