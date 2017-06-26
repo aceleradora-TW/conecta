@@ -12,6 +12,9 @@ task :s do
 end
 
 task :test do
+  Rake::Task["db:reset"].invoke
+  Rake::Task["db:seed_test"].invoke
+  Rake::Task["db:seed_test_users"].invoke
   exec "rspec --format d --color"
 end
 
