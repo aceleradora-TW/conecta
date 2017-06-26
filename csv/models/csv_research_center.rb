@@ -1,11 +1,11 @@
 class CsvResearchCenter
-
   attr_accessor :name, :description, :address_info,
   :site, :phone, :contact_name, :email, :competences, :segments
 
+  @@competence_area_research_center = nil
+
   def initialize
-    @competence_area_research_center = nil
-    create_competence_area_research_center()
+    CsvResearchCenter.create_competence_area_research_center()
   end
 
   def insert_to_db
@@ -21,7 +21,7 @@ class CsvResearchCenter
       @competences.each do |competence|
         competence_object = Competence.first(name: competence)
         if !competence_object
-          competence_area = @competence_area_research_center[0]
+          competence_area = @@competence_area_research_center[0]
           competence_object = Competence.create(name: competence, competence_area: competence_area)
         end
         competence_institution_object = CompetenceInstitution.new(competence_value: -1)
@@ -33,9 +33,9 @@ class CsvResearchCenter
     end
   end
 
-  def create_competence_area_research_center
-    if !@competence_area_research_center
-      @competence_area_research_center = [
+  def self.create_competence_area_research_center
+    if !@@competence_area_research_center
+      @@competence_area_research_center = [
         CompetenceArea.create(name: "Estruturas de Pesquisa")
       ]
     end
