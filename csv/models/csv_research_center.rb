@@ -3,7 +3,7 @@ class CsvResearchCenter
   :site, :phone, :contact_name, :email, :competences, :segments
 
   @@competence_area_research_center = nil
-
+ 
   def initialize
     CsvResearchCenter.create_competence_area_research_center()
   end
