@@ -1,5 +1,5 @@
 <section class="SectionCards u-marginTopLarge">
-  <form class="BoxRegister" id="LoginForm" action="/session" method="post" onload="onLoadLogin">
+  <form class="BoxRegister BoxRegisterLarger" id="LoginForm" action="/session" method="post" onload="onLoadLogin">
 
     <div class="LoginHeader">
       <h1 class="u-fontFamilyLato u-fontSizeMedium">Negócio da instituição</h1>
@@ -13,36 +13,44 @@
 
 
     <div class="BoxRegisterBody">
-      <div class="RegisterInputs">
-        <span> Nome do contato:</span>
-        <input type="text" name="" value="">
-      </div>
-      <div class="RegisterInputs">
-        <span> E-mail:</span>
-        <input type="text" name="" value="">
-      </div>
-      <div class="RegisterInputs">
-        <span> E-mail alternativo:</span>
-        <input type="text" name="" value="">
-      </div>
-      <div class="RegisterInputs">
-        <span> Telefone:</span>
-        <input type="text" name="" value="">
-      </div>
-      <div class="RegisterInputs">
-        <span> Site:</span>
-        <input type="text" name="" value="">
+      <h2>Segmentos</h2>
+
+      <div class="BoxSegments">
+        <%@segment.each do |segment|%>
+
+        <p class="u-marginXSmall">
+          <input type="checkbox" id="<%='Segment'"#{segment.id}"%>"/>
+          <label for="<%='Segment'"#{segment.id}"%>"><%=segment.name%></label>
+        </p>
+
+
+        <%end%>
       </div>
 
-      <div class="RegisterInputs">
-        <span>Descrição:</span>
-        <textarea> </textarea>
+      <h2>Competências</h2>
+
+
+
+
+      <div class="CompanyCompetences">
+        <div class="CompetencesTitle">Demais competências</div>
+        <% @competence_areas.each do |competence_area| %>
+        <%= competence_area.name %>
+        <% end %>
+
+
       </div>
+
+
+
+
+
+
 
     </div>
 
     <div class="RegisterFooter u-marginSidesAndBottom">
-      <button class="Button" type="button" name="button">Próximo</button>
+      <button class="Button" type="button" name="button">Cadastrar</button>
     </div>
 
   </form>

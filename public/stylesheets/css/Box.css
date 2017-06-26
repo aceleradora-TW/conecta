@@ -214,14 +214,18 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
-  width: 40%;
+  width: 60%;
+  min-height: 65vh;
   background: rgba(255, 255, 255, 0.72);
   border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: Lato, sans-serif;
   font-weight: lighter;
+}
+/* line 132, ../sass/Box.scss */
+.BoxRegisterLarger {
+  min-height: 100vh;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 123, ../sass/Box.scss */
@@ -241,4 +245,18 @@
     height: 52vh;
     width: 90%;
   }
+}
+
+/* line 146, ../sass/Box.scss */
+.BoxSegments {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* line 150, ../sass/Box.scss */
+.BoxSegments p {
+  width: 30%;
 }

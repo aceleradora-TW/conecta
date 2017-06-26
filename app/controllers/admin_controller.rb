@@ -65,6 +65,9 @@ class AdminController < Controller
 
   get "/admin/register/3" do
     if @user_info.is_logged_in and @user_info.is_admin
+      @segment = Segment.all
+      @competence_areas = CompetenceArea.all
+      # @grouped_competences = {}
       erb :register3, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
