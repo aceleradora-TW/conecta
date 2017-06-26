@@ -18,5 +18,28 @@ services:
       - POSTGRES_USER=test
       - POSTGRES_PASSWORD=test
       - POSTGRES_DB=test_db
+      - RACK_ENV=development
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
+  web_test:
+    build: .
+    tty: true
+    volumes:
+     - .:/code
+    environment:
+     - GMAIL_USER=${GMAIL_USER}
+     - GMAIL_PASSWORD=${GMAIL_PASSWORD}
+     - RACK_ENV=test
+     - SESSION_SECRET=DEV_SESSION_SECRET
+    depends_on:
+     - db_test
+    command: rake test
+
+  db_test:
+    image: postgres:9.3
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=test_db
+    volumes:
+      - ./data/postgres_test:/var/lib/postgresql/data

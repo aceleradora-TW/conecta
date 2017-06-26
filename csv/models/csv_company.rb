@@ -1,8 +1,8 @@
 class CsvCompany
   attr_accessor :name, :size, :description,:segments,:types,:competences, :competence_value, :logo
+  @@competence_area_array = nil
   def initialize
-    @competence_area_array = nil
-    create_competence_area_array()
+    CsvCompany.create_competence_area_array()
   end
 
   def insert_to_db
@@ -27,7 +27,7 @@ class CsvCompany
 
       competence_object = Competence.first(name: competence[:name])
       if !competence_object
-        competence_area = @competence_area_array[competence[:area_number].to_i]
+        competence_area = @@competence_area_array[competence[:area_number].to_i]
         competence_object = Competence.create(name: competence[:name], competence_area: competence_area)
       end
       competence_institution_object = CompetenceInstitution.new(competence_value: competence[:competence_value].to_i )
@@ -43,9 +43,9 @@ class CsvCompany
     puts company.inspect
 
   end
-  def create_competence_area_array
-    if !@competence_area_array
-      @competence_area_array = [
+  def self.create_competence_area_array
+    if !@@competence_area_array
+      @@competence_area_array = [
         "",
         CompetenceArea.create(name: "Hardware"),
         CompetenceArea.create(name: "Software"),
