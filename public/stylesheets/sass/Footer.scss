@@ -55,3 +55,18 @@
     flex-wrap: wrap;
   }
 }
+
+.FooterCardPrimary {
+  @include flex($align: center, $direction: row, $justify: space-around);
+  @include size($min-height: 60px, $width: 100%);
+  border-top: 1px solid rgba(193, 193, 193, 0.45);
+  @include tablet{
+    flex-direction: column;
+  }
+  @include mobile{
+    flex-direction: row;
+  }
+  @include smallMobile{
+    flex-direction: column;
+  }
+}

@@ -66,3 +66,13 @@
 .LogoInstitutions{
   @include size($width: 50%);
 }
+
+.LogoSmall {
+  @include flex($align: center, $justify: center);
+  @include size($height: 40px, $width: 40px);
+  border-radius: 100%;
+  margin: 10px;
+  @include tablet{
+    height: 100px;
+  }
+}

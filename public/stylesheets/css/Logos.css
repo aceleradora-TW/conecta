@@ -114,3 +114,20 @@
 .LogoInstitutions {
   width: 50%;
 }
+
+/* line 70, ../sass/Logos.scss */
+.LogoSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin: 10px;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 70, ../sass/Logos.scss */
+  .LogoSmall {
+    height: 100px;
+  }
+}
