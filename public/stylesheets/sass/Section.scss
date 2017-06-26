@@ -4,7 +4,7 @@
 
 
 .Section {
-  @include size($width: 100%, $min-height: 100%);
+  @include size($width: 100%, $min-height: 94vh);
   @include flex($direction: column);
   background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;

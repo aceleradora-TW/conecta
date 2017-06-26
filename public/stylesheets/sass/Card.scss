@@ -6,8 +6,7 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45%);
   background: $white-color;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
@@ -23,29 +22,22 @@
     @include size($width: 95%, $min-height: 55%);
     font-size: $small-font-size;
   }
-}
-
-.CardLogin {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $height: 50vh);
-  background: rgba(255, 255, 255, 0.72);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 2%;
-  font-family: $font-style;
-  font-weight: lighter;
-  @include tablet{
-    @include size($width: 80%);
-  }
-  @include mobile{
-    @include size($width: 80%);
-  }
-  @include smallMobile{
-    @include size($width: 90%,$height: 300px);
+  &.is-login {
+    @include size($height: 60vh);
+      background: rgba(255, 255, 255, 0.72);
+      @include tablet{
+        @include size($width: 80%);
+      }
+      @include mobile{
+        @include size($width: 80%);
+      }
+      @include smallMobile{
+        @include size($width: 90%,$height: 300px);
   }
 }
+}
 
-.CardList, .InstitutionList {
+.InstitutionList {
   @include flex($align: center, $direction: column, $justify: flex-end);
   @include size($width: 30%);
   background: rgba(255, 255, 255, 1);
@@ -154,9 +146,12 @@
 
 .ItemsFeatured {
   @include flex($align: center, $justify: space-around);
-  @include size($width: 100%);
+  @include size($width: 75%);
   line-height: 2em;
   align-self: center;
+  @include tablet{
+    @include size($width: 75%);
+  };
   @include mobile{
     @include flex($align: center, $direction: column, $justify: center);
     box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
@@ -168,18 +163,15 @@
   }
 }
 
-.Items:hover {
-  background: rgba(0,0,0,.05);
-  transition: .5s;
-}
-
 .CompetenceList {
   @include flex($align: flex-start, $direction: column, $justify: space-around);
   @include size($height: 95%, $width: 100%);
   text-align: left;
   padding: 0;
+  @include tablet{
+    @include size($width: 90%);
+  };
 }
-
 
 .ItemText{
   @include flex($align: flex-start, $direction: row, $justify: space-between);
@@ -204,11 +196,9 @@
     align-items: center;
     font-size: $large-font-size;
   }
-}
-
-.ItemTextSegment{
-  @include flex($justify: center);
-  @include size($height: 100%, $width: 70%);
+  &.is-segment{
+    @include flex($justify: center);
+  }
 }
 
 .ItemStar{
@@ -323,17 +313,12 @@
   @include flex($align:center, $direction: column, $justify: space-around);
 }
 
-.InstitutionList .Title {
-  background: red;
-  @include size($width: 20%, $height: 5vh);
-}
-
-.InstitutionList .LeftItem {
+.LeftItem {
   @include size($width: 75%);
   text-align: left;
 }
 
-.InstitutionList .RightItem {
+.RightItem {
   @include size($width: 25%);
   text-align: center;
 }

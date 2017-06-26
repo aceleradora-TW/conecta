@@ -1,9 +1,12 @@
 <% @institution.each do |rc_searched| %>
 <div class="Card">
   <% rating = 0 %>
-  <div class="CardNav is-center">
+  <div class="Card is-center">
     <h1><%= rc_searched.name %></h1>
   </div>
+
+
+
   <div class="CompanyCompetences">
     <ul class="CompetenceList">
       <%
@@ -30,7 +33,7 @@
     </ul>
     <% if has_stars %>
     <div class="RatingExplanation u-marginTop">
-      <div class=""><i class="material-icons u-colorGold u-widthIcon">star</i> </div><div class="u-widthMediumLarge">Nível de competência informado pela estrutura de pesquisa</div>
+      <div class="ItemText"><i class="material-icons u-colorGold u-widthIcon">star</i> </div><div class="u-widthMediumLarge">Nível de competência informado pela estrutura de pesquisa</div>
     </div>
     <% end %>
     <% if has_check %>
@@ -39,6 +42,10 @@
     </div>
     <% end %>
   </div>
+
+
+
+
   <div class="FooterCardSecondary">
     <% if(rc_searched.contact) %>
     <div class="FooterCardSecondaryItem">
@@ -56,7 +63,7 @@
     </div>
     <% end %>
   </div>
-  <div class="FooterCardPrimay">
+  <div class="FooterCardPrimary">
     <div class="BoxButtonCard">
       <div class="Button u-center u-widthMedium ButtonContact" onclick="showModal('<%="#{rc_searched.id}"%>', '<%="#{rc_searched.name}"%>');" id="<%='ButtonContact'"#{rc_searched.id}"%>">contato</div>
       <div class="Button u-center u-widthMedium ButtonSeeMore">ver mais</div>

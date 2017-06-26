@@ -16,7 +16,7 @@
         <% company.segments.each do |segment| %>
           <% if segment.name.downcase.include? @value %>
         <li class="Items">
-          <div class="ItemTextSegment">
+          <div class="ItemText is-segment">
             <%= segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
           </div>
         </li>
@@ -77,7 +77,7 @@
       <div class="FooterCardSecondaryItem"><b>Site</b>: <a href="http://conectatw.herokuapp.com">http://conectatw.herokuapp.com</a></div>
     <% end %>
   </div>
-  <div class="FooterCardPrimay">
+  <div class="FooterCardPrimary">
     <div class="BoxButtonCard">
       <div class="Button u-center u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
       <div class="Button u-center u-widthMedium ButtonSeeMore">ver mais</div>
