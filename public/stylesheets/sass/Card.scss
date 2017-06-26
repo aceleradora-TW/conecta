@@ -146,7 +146,7 @@
 
 .ItemsFeatured {
   @include flex($align: center, $justify: space-around);
-  @include size($width: 75%);
+  @include size($width: 58%);
   line-height: 2em;
   align-self: center;
   @include tablet{
@@ -250,13 +250,13 @@
     @include size($height: 30%, $width: 100%);
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: $medium-font-size
   }
   @include smallMobile{
     @include size($height: 30%, $width: 90%);
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: $medium-font-size
   }
 }
 
