@@ -9,6 +9,7 @@ services:
     environment:
      - GMAIL_USER=${GMAIL_USER}
      - GMAIL_PASSWORD=${GMAIL_PASSWORD}
+     - SESSION_SECRET=DEV_SESSION_SECRET
     depends_on:
      - db
   db:
