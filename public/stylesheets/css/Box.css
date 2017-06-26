@@ -214,7 +214,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 65vh;
   width: 40%;
   background: rgba(255, 255, 255, 0.72);
   border-radius: 1.4%;
@@ -222,10 +222,6 @@
   margin-bottom: 2%;
   font-family: Lato, sans-serif;
   font-weight: lighter;
-}
-/* line 132, ../sass/Box.scss */
-.BoxRegister.BoxRegisterLarge {
-  height: 65vh;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 123, ../sass/Box.scss */

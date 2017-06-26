@@ -1,7 +1,7 @@
 /* line 6, ../sass/Section.scss */
 .Section {
   width: 100%;
-  min-height: 100%;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   background-image: url("/images/background-main-desktop.jpg");
@@ -94,7 +94,7 @@
 /* line 63, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
-  min-height: 100%;
+  min-height: 75vh;
   display: flex;
   align-items: flex-start;
   flex-direction: row;

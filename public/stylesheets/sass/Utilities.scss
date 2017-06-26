@@ -233,6 +233,10 @@
 	}
 }
 
+.u-widthSmall {
+	width: 5em;
+}
+
 .u-widthMediumOnly {
 	@include size ($width: 30%);
 }
