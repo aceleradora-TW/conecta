@@ -140,6 +140,7 @@
   justify-content: flex-start;
   width: 100%;
   min-height: 20%;
+  font-family: Lato, sans-serif;
 }
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 85, ../sass/Card.scss */
@@ -161,37 +162,29 @@
     justify-content: center;
   }
 }
-
-/* line 98, ../sass/Card.scss */
-.CardResearchNav {
+/* line 97, ../sass/Card.scss */
+.CardNav.is-center {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  min-height: 20%;
-  font-family: Lato, sans-serif;
   flex-wrap: wrap;
   text-align: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 98, ../sass/Card.scss */
-  .CardResearchNav {
+  /* line 97, ../sass/Card.scss */
+  .CardNav.is-center {
     width: 90%;
-    font-size: 0.7em;
-    text-align: center;
   }
 }
 @media (max-width: 499px) {
-  /* line 98, ../sass/Card.scss */
-  .CardResearchNav {
+  /* line 97, ../sass/Card.scss */
+  .CardNav.is-center {
     width: 90%;
-    font-size: 0.7em;
-    text-align: center;
   }
 }
 
-/* line 116, ../sass/Card.scss */
+/* line 110, ../sass/Card.scss */
 .Subitems {
   width: 100%;
   display: none;
@@ -204,24 +197,24 @@
   padding: 0;
   justify-content: space-around;
 }
-/* line 127, ../sass/Card.scss */
+/* line 121, ../sass/Card.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 131, ../sass/Card.scss */
+/* line 125, ../sass/Card.scss */
 .Subitems.Open {
   display: flex;
 }
 @media (max-width: 499px) {
-  /* line 116, ../sass/Card.scss */
+  /* line 110, ../sass/Card.scss */
   .Subitems {
     font-size: 1.3em;
   }
 }
 
-/* line 139, ../sass/Card.scss */
+/* line 133, ../sass/Card.scss */
 .Items {
   display: flex;
   align-items: center;
@@ -231,32 +224,32 @@
   cursor: pointer;
   align-self: center;
 }
-/* line 145, ../sass/Card.scss */
+/* line 139, ../sass/Card.scss */
 .Items:hover {
   background: rgba(0, 0, 0, 0.05);
   transition: .5s;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 139, ../sass/Card.scss */
+  /* line 133, ../sass/Card.scss */
   .Items {
     width: 100%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 139, ../sass/Card.scss */
+  /* line 133, ../sass/Card.scss */
   .Items {
     width: 100%;
   }
 }
 @media (max-width: 499px) {
-  /* line 139, ../sass/Card.scss */
+  /* line 133, ../sass/Card.scss */
   .Items {
     width: 100%;
     font-size: 1.3em;
   }
 }
 
-/* line 161, ../sass/Card.scss */
+/* line 155, ../sass/Card.scss */
 .ItemsFeatured {
   display: flex;
   align-items: center;
@@ -266,7 +259,7 @@
   align-self: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 161, ../sass/Card.scss */
+  /* line 155, ../sass/Card.scss */
   .ItemsFeatured {
     display: flex;
     align-items: center;
@@ -276,7 +269,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 161, ../sass/Card.scss */
+  /* line 155, ../sass/Card.scss */
   .ItemsFeatured {
     display: flex;
     align-items: center;
@@ -287,13 +280,13 @@
   }
 }
 
-/* line 177, ../sass/Card.scss */
+/* line 171, ../sass/Card.scss */
 .Items:hover {
   background: rgba(0, 0, 0, 0.05);
   transition: .5s;
 }
 
-/* line 182, ../sass/Card.scss */
+/* line 176, ../sass/Card.scss */
 .CompetenceList {
   display: flex;
   align-items: flex-start;
@@ -305,7 +298,7 @@
   padding: 0;
 }
 
-/* line 192, ../sass/Card.scss */
+/* line 184, ../sass/Card.scss */
 .ItemText {
   display: flex;
   align-items: flex-start;
@@ -317,14 +310,14 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 192, ../sass/Card.scss */
+  /* line 184, ../sass/Card.scss */
   .ItemText {
     width: 68%;
     text-align: left;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 192, ../sass/Card.scss */
+  /* line 184, ../sass/Card.scss */
   .ItemText {
     width: 100%;
     text-align: left;
@@ -334,7 +327,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 192, ../sass/Card.scss */
+  /* line 184, ../sass/Card.scss */
   .ItemText {
     width: 100%;
     text-align: left;
@@ -344,7 +337,7 @@
   }
 }
 
-/* line 217, ../sass/Card.scss */
+/* line 209, ../sass/Card.scss */
 .ItemTextSegment {
   display: flex;
   justify-content: center;
@@ -352,20 +345,20 @@
   width: 70%;
 }
 
-/* line 222, ../sass/Card.scss */
+/* line 214, ../sass/Card.scss */
 .ItemStar {
   display: flex;
   justify-content: flex-end;
   height: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 222, ../sass/Card.scss */
+  /* line 214, ../sass/Card.scss */
   .ItemStar {
     width: 32%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 222, ../sass/Card.scss */
+  /* line 214, ../sass/Card.scss */
   .ItemStar {
     height: 100%;
     display: flex;
@@ -374,7 +367,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 222, ../sass/Card.scss */
+  /* line 214, ../sass/Card.scss */
   .ItemStar {
     height: 100%;
     display: flex;
@@ -384,7 +377,7 @@
   }
 }
 
-/* line 238, ../sass/Card.scss */
+/* line 230, ../sass/Card.scss */
 .CompanyDeion {
   display: flex;
   height: 30%;
@@ -394,27 +387,27 @@
   line-height: 1.8em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 238, ../sass/Card.scss */
+  /* line 230, ../sass/Card.scss */
   .CompanyDeion {
     width: 90%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 238, ../sass/Card.scss */
+  /* line 230, ../sass/Card.scss */
   .CompanyDeion {
     width: 90%;
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 238, ../sass/Card.scss */
+  /* line 230, ../sass/Card.scss */
   .CompanyDeion {
     width: 90%;
     font-size: 0.7em;
   }
 }
 
-/* line 257, ../sass/Card.scss */
+/* line 249, ../sass/Card.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
@@ -424,7 +417,7 @@
   margin: 20px;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 257, ../sass/Card.scss */
+  /* line 249, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -434,7 +427,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 257, ../sass/Card.scss */
+  /* line 249, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -444,7 +437,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 257, ../sass/Card.scss */
+  /* line 249, ../sass/Card.scss */
   .RatingExplanation {
     height: 30%;
     width: 90%;
@@ -454,7 +447,7 @@
   }
 }
 
-/* line 281, ../sass/Card.scss */
+/* line 273, ../sass/Card.scss */
 .CompanyCompetences {
   display: flex;
   flex-direction: column;
@@ -463,33 +456,33 @@
   margin-top: 3%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 281, ../sass/Card.scss */
+  /* line 273, ../sass/Card.scss */
   .CompanyCompetences {
     width: 90%;
     font-size: 1.3em;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 281, ../sass/Card.scss */
+  /* line 273, ../sass/Card.scss */
   .CompanyCompetences {
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 281, ../sass/Card.scss */
+  /* line 273, ../sass/Card.scss */
   .CompanyCompetences {
     font-size: 0.7em;
   }
 }
 
-/* line 297, ../sass/Card.scss */
+/* line 289, ../sass/Card.scss */
 .CardSecondary {
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 297, ../sass/Card.scss */
+  /* line 289, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -498,7 +491,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 297, ../sass/Card.scss */
+  /* line 289, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -507,7 +500,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 297, ../sass/Card.scss */
+  /* line 289, ../sass/Card.scss */
   .CardSecondary {
     display: flex;
     align-items: center;
@@ -516,7 +509,7 @@
   }
 }
 
-/* line 312, ../sass/Card.scss */
+/* line 304, ../sass/Card.scss */
 .InstitutionList {
   display: flex;
   flex-direction: row;
@@ -525,7 +518,7 @@
   padding: 2%;
 }
 
-/* line 318, ../sass/Card.scss */
+/* line 310, ../sass/Card.scss */
 .InstitutionListHeader {
   width: 100%;
   display: flex;
@@ -533,7 +526,7 @@
   justify-content: center;
 }
 
-/* line 323, ../sass/Card.scss */
+/* line 315, ../sass/Card.scss */
 .RegisterListHeader {
   width: 94%;
   display: flex;
@@ -542,7 +535,7 @@
   border-radius: 5px;
 }
 
-/* line 329, ../sass/Card.scss */
+/* line 321, ../sass/Card.scss */
 .RegisterListItem {
   width: 50%;
   display: flex;
@@ -551,20 +544,20 @@
   justify-content: space-around;
 }
 
-/* line 334, ../sass/Card.scss */
+/* line 326, ../sass/Card.scss */
 .InstitutionList .Title {
   background: red;
   height: 5vh;
   width: 20%;
 }
 
-/* line 339, ../sass/Card.scss */
+/* line 331, ../sass/Card.scss */
 .InstitutionList .LeftItem {
   width: 75%;
   text-align: left;
 }
 
-/* line 344, ../sass/Card.scss */
+/* line 336, ../sass/Card.scss */
 .InstitutionList .RightItem {
   width: 25%;
   text-align: center;
