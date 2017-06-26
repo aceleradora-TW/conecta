@@ -60,7 +60,8 @@ function sendMail(){
       }
     });
   } else {
-    $("#email").addClass("u-colorLightRed");
+    document.querySelector("#invalidEmailMessage").style.display = "flex";
+    document.querySelector("#email").style.borderColor = "rgba(255, 0, 0, 1)"
   }
   event.preventDefault();
 }
