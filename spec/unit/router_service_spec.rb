@@ -3,7 +3,7 @@ require_relative '../../app/services/router_service'
 
 describe RouterService do
   it "Retorna competencias procuradas" do
-    mock_find_by = spy(mock_find_by)
+    mock_find_by = spy("mock_find_by")
     router_service = RouterService.new(mock_find_by)
 
     router_service.return_competence("software","empresa")
