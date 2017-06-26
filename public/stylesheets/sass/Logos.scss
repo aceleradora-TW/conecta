@@ -7,18 +7,17 @@
 		@include size($height: 50%, $width: 10%);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		margin: 10px;
 		background-image: url("/images/tecnopuc4.png");
-		@include tablet{
+		@include tablet {
 			justify-content: center;
 		}
-		@include mobile{
+		@include mobile {
 			@include size($height: 50%, $width: 20%);
-      @include flex($align: center, $justify: center);
+			@include flex($align: center, $justify: center);
 			margin: 0;
 		}
-		@include smallMobile{
-			@include size($width: 35%);
+		@include smallMobile {
+			@include size($width: 20%);
 		}
 	}
 	&-tall {
@@ -27,22 +26,21 @@
 		background-size: 100%;
 		margin: 0 5% 0% 2%;
 		background-image: url("/images/puc4.png");
-		@include tablet{
+		@include tablet {
 			@include size($height: 95%, $width: 3%);
 			@include flex($justify: flex-end);
 		}
-		@include mobile{
+		@include mobile {
 			@include size($width: 5%);
 			@include flex($align: center, $justify: center);
-			margin: 0 20px;
 		}
-		@include smallMobile{
-			@include size($width: 10%);
+		@include smallMobile {
+			@include size($width: 7%, $height: 70%);
 		}
 	}
 
-	.LogoCollaborators{
-	  @include size($width: 100%, $min-height: 30%);
+	.LogoCollaborators {
+		@include size($width: 100%, $min-height: 30%);
 		@include flex($align: center, $direction: row, $justify: space-around);
 		flex-wrap: wrap;
 	}
@@ -64,4 +62,7 @@
 .CardLogo {
   @include flex($align: center, $justify: center);
   @include size($width: 30%);
+}
+.LogoInstitutions{
+  @include size($width: 50%);
 }

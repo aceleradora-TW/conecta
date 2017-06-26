@@ -4,7 +4,6 @@
   width: 10%;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 10px;
   background-image: url("/images/tecnopuc4.png");
 }
 @media (min-width: 768px) and (max-width: 1190px) {
@@ -27,10 +26,10 @@
 @media (max-width: 499px) {
   /* line 6, ../sass/Logos.scss */
   .Logo-wide {
-    width: 35%;
+    width: 20%;
   }
 }
-/* line 24, ../sass/Logos.scss */
+/* line 23, ../sass/Logos.scss */
 .Logo-tall {
   height: 95%;
   width: 3%;
@@ -40,7 +39,7 @@
   background-image: url("/images/puc4.png");
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 24, ../sass/Logos.scss */
+  /* line 23, ../sass/Logos.scss */
   .Logo-tall {
     height: 95%;
     width: 3%;
@@ -49,22 +48,22 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 24, ../sass/Logos.scss */
+  /* line 23, ../sass/Logos.scss */
   .Logo-tall {
     width: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px;
   }
 }
 @media (max-width: 499px) {
-  /* line 24, ../sass/Logos.scss */
+  /* line 23, ../sass/Logos.scss */
   .Logo-tall {
-    width: 10%;
+    height: 70%;
+    width: 7%;
   }
 }
-/* line 44, ../sass/Logos.scss */
+/* line 42, ../sass/Logos.scss */
 .Logo .LogoCollaborators {
   width: 100%;
   min-height: 30%;
@@ -76,7 +75,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 50, ../sass/Logos.scss */
+  /* line 48, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -85,7 +84,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 50, ../sass/Logos.scss */
+  /* line 48, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -94,7 +93,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 50, ../sass/Logos.scss */
+  /* line 48, ../sass/Logos.scss */
   .LogoCard {
     width: 100%;
     display: flex;
@@ -103,10 +102,15 @@
   }
 }
 
-/* line 64, ../sass/Logos.scss */
+/* line 62, ../sass/Logos.scss */
 .CardLogo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
+}
+
+/* line 66, ../sass/Logos.scss */
+.LogoInstitutions {
+  width: 50%;
 }

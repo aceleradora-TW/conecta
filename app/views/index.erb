@@ -6,7 +6,6 @@
         <div> Encontre colaboradores adequados às suas necessidades no ecossistema de empresas do TecnoPuc</div>
       </div>
       <div class="LogosCredibility">
-
         <div class="Logo-wide"></div>
         <div class="Logo-tall"></div>
       </div>
@@ -18,7 +17,7 @@
         </div>
         <div class="ContentSearch">
           <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
-            <div class="InputGroup ">
+            <div class="InputGroup">
               <div class="BoxFilterBy">
                 <button class="ButtonFilter" type="button" name="button">
                   <span class="u-fontSizeMedium">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
@@ -35,7 +34,11 @@
                 </div>
               </div>
               <input id="InputSearch" class="InputSearch" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
-              <div class="Button"><a onclick="document.forms['search'].submit();"><span>Buscar</span><i class="material-icons u-marginSmall">search</i></a></div>
+              <div class="Button u-center" onclick="document.forms['search'].submit();">
+                <a class="ButtonSearch">
+                  <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
+                </a>
+              </div>
             </div>
           </form>
         </div>
@@ -63,13 +66,13 @@
 </section>
 <section class="HowItWorks u-fontWhite" id="HowItWorks">
   <div class="u-fontSizeLarge u-fontFamilyLato"><h1>Como Funciona</h1></div>
-  <div class="ContentHowItWorks">
-    <div class="CardContentF">
+  <div class="BowFlowHowItWorks">
+    <div class="BoxCardContent">
       <div class="BoxHowItWorks ">
         <div class="Icon">
           <i class="material-icons md-3  u-colorLightBlue">insert_drive_file</i>
         </div>
-        <div class="Text">
+        <div class="Text u-center u-fontSizeSmall">
           <p class="BoxText">Você cadastra sua empresa no Conecta</p>
         </div>
       </div>
@@ -80,7 +83,7 @@
         <div class="Icon">
           <i class="material-icons md-3 u-colorLightRed">build</i>
         </div>
-        <div class="Text">
+        <div class="Text u-center u-fontSizeSmall">
           <p class="BoxText">Procura recursos ou serviços</p>
         </div>
       </div>
@@ -91,7 +94,7 @@
         <div class="Icon">
           <i class="material-icons md-3 u-colorGreen">business</i>
         </div>
-        <div class="Text">
+        <div class="Text u-center u-fontSizeSmall">
           <p class="BoxText">Encontra empresas fornecedoras</p>
         </div>
       </div>
@@ -102,7 +105,7 @@
         <div class="Icon">
           <i class="material-icons md-3 u-colorOrange">contact_mail</i>
         </div>
-        <div class="Text">
+        <div class="Text u-center u-fontSizeSmall">
           <p class="BoxText">Você contata essa empresa ou o Conecta faz isso para você</p>
         </div>
       </div>

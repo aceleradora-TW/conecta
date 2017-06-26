@@ -22,3 +22,14 @@
   display: block;
   transition: .5s;
 }
+
+/* line 26, ../sass/Dropdown.scss */
+.DropdownMenu li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/Dropdown.scss */
+.DropdownMenu li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

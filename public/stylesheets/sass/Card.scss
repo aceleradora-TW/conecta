@@ -113,10 +113,6 @@
   }
 }
 
-.LogoImage {
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
-}
 
 .LogoSmall {
   @include flex($align: center, $justify: center);
@@ -183,8 +179,7 @@
   }
 }
 
-
-.ItemsFeatured{
+.ItemsFeatured {
   @include flex($align: center, $justify: space-around);
   @include size($width: 100%);
   line-height: 2em;
@@ -211,6 +206,7 @@
   text-align: left;
   padding: 0;
 }
+
 
 
 
@@ -352,6 +348,10 @@
   @include flex($align: center, $justify: flex-end);
   @include size($height: 50%, $width: 60%);
 }
+
+
+
+
 
 .CompanyCompetences{
   @include flex($direction: column);

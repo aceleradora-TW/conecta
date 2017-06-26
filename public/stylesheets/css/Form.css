@@ -1,71 +1,15 @@
-/*
-Error: Undefined variable: "$white-color".
-        on line 67 of /code/public/stylesheets/sass/Form.scss
-
-62: .DropdownMenu{
-63:   list-style: none;
-64:   position: static;
-65:   border: 1px solid rgba(0, 0, 0, .4);
-66:   border-radius: 0 0 4px 4px;
-67:   background-color: $white-color;
-68:   text-align: left;
-69:   right: 61.05vw;
-70:   bottom: 4.6vh;
-71:   padding: 2%;
-72:   display: none;
-
-Backtrace:
-/code/public/stylesheets/sass/Form.scss:67
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 67 of /code/public/stylesheets/sass/Form.scss\A \A 62: .DropdownMenu{\A 63:   list-style: none;\A 64:   position: static;\A 65:   border: 1px solid rgba(0, 0, 0, .4);\A 66:   border-radius: 0 0 4px 4px;\A 67:   background-color: $white-color;\A 68:   text-align: left;\A 69:   right: 61.05vw;\A 70:   bottom: 4.6vh;\A 71:   padding: 2%;\A 72:   display: none;"; }
+/* line 5, ../sass/Form.scss */
+.FormSearch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  align-content: space-between;
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Form.scss */
+  .FormSearch {
+    width: 100%;
+  }
+}

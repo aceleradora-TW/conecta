@@ -1,5 +1,5 @@
-/* line 5, ../sass/Footer.scss */
-footer {
+/* line 6, ../sass/Footer.scss */
+.Footer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -7,17 +7,18 @@ footer {
   height: 6vh;
   width: 100%;
   background-color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
+  background-color: black;
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 5, ../sass/Footer.scss */
-  footer {
+  /* line 6, ../sass/Footer.scss */
+  .Footer {
     font-size: 0.75em;
   }
 }
 
-/* line 16, ../sass/Footer.scss */
+/* line 18, ../sass/Footer.scss */
 .RegisterFooter {
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@ footer {
   width: 100%;
 }
 
-/* line 21, ../sass/Footer.scss */
+/* line 23, ../sass/Footer.scss */
 .FooterCardSecondary {
   display: flex;
   align-items: center;
@@ -41,33 +42,33 @@ footer {
   margin-bottom: 3%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 21, ../sass/Footer.scss */
+  /* line 23, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 146px;
     flex-direction: column;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 21, ../sass/Footer.scss */
+  /* line 23, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 140px;
     flex-direction: column;
   }
 }
 @media (max-width: 499px) {
-  /* line 21, ../sass/Footer.scss */
+  /* line 23, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 140px;
     flex-direction: column;
   }
 }
 
-/* line 42, ../sass/Footer.scss */
+/* line 44, ../sass/Footer.scss */
 .FooterCardSecondaryItem {
   width: 45%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 42, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     width: 100%;
     display: flex;
@@ -76,13 +77,13 @@ footer {
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 42, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     font-size: 13px;
   }
 }
 @media (max-width: 499px) {
-  /* line 42, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     font-size: 13px;
     flex-wrap: wrap;
