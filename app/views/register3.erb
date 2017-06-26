@@ -28,17 +28,21 @@
       </div>
 
       <h2>Competências</h2>
-
-
-
-
       <div class="CompanyCompetences">
-        <div class="CompetencesTitle">Demais competências</div>
+        <ul class="CompetenceList">
+
         <% @competence_areas.each do |competence_area| %>
-        <%= competence_area.name %>
+        <li class="Items ItemsArea">
+          <div class="ItemText"><h3><%= competence_area.name %></h3></div>
+          <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+        </li>
+        <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
+          <% competence_area.competences.each do |competence| %>
+          <li><%= competence.name %></li>
+          <% end %>
+        </ul>
         <% end %>
-
-
+      </ul>
       </div>
 
 

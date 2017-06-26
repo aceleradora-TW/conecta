@@ -2,7 +2,7 @@
   <form class="BoxRegister" id="LoginForm" action="/session" method="post" onload="onLoadLogin">
 
     <div class="LoginHeader">
-      <h1 class="u-fontFamilyLato u-fontSizeMedium">Cadastro Empresa</h1>
+      <h1 class="u-fontFamilyLato u-fontSizeMedium">Cadastro <%= @is_company ? 'Empresa' : 'Estrutura de Pesquisa' %></h1>
     </div>
 
     <div class="BoxSteps">
@@ -17,10 +17,13 @@
         <span> Nome:</span>
         <input type="text" name="" value="">
       </div>
+      <% if @is_company %>
       <div class="RegisterInputs">
         <span> CNPJ:</span>
         <input type="text" name="" value="">
-      </div>  <div class="RegisterInputs">
+      </div>
+      <% end %>
+      <div class="RegisterInputs">
         <span> Senha:</span>
         <input type="text" name="" value="">
       </div>  <div class="RegisterInputs">
