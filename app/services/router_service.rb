@@ -2,27 +2,30 @@ require_relative "../services/search_service"
 
 class RouterService
 
+  def initialize search_service
+    @search_service = search_service
+  end
+
   def return_found_values value_sql, search_type
-    search_service = SearchService.new
     case search_type
     when 'competencia' then
-      return_competence value_sql, search_service, :company
+      return_competence value_sql, :company
     when 'segmento' then
-      return_segment value_sql, search_service
+      return_segment value_sql
     when 'empresa' then
-      return_company value_sql, search_service
+      return_company value_sql
     when 'centro-pesquisa' then
-      return_research_center value_sql, search_service
+      return_research_center value_sql
     when 'estrutura-pesquisa-competencia' then
-      return_competence value_sql, search_service, :research_center
+      return_competence value_sql, :research_center
     end
   end
 
-  def return_competence value_sql, search_service, institution_type
+  def return_competence value_sql, institution_type
     @institutions_searched = []
-    @competences = search_service.find_by_competence(value_sql)
+    @competences = @search_service.find_by_competence(value_sql)
     if @competences.length != 0
-      @institution_competence = search_service.find_related_competence_institutions(@competences,institution_type)
+      @institution_competence = @search_service.find_related_competence_institutions(@competences,institution_type)
       @institution_competence.each do |single_competence|
         local_institution = single_competence.institution
         index_of_institution = @institutions_searched.index local_institution
@@ -37,12 +40,12 @@ class RouterService
     @institutions_searched
   end
 
-  def return_segment value_sql, search_service
+  def return_segment value_sql
     @companies_with_segment = []
-    @segments = search_service.find_by_segment(value_sql)
+    @segments = @search_service.find_by_segment(value_sql)
 
     if @segments.length != 0
-      @company_segments = search_service.find_related_segment(@segments)
+      @company_segments = @search_service.find_related_segment(@segments)
       @company_segments.each do |single_segment|
         local_company = single_segment.company
         if !@companies_with_segment.include? local_company
@@ -53,13 +56,13 @@ class RouterService
     @companies_with_segment
   end
 
-  def return_company value_sql, search_service
-    search_service.find_by_company(value_sql)
+  def return_company value_sql
+    @search_service.find_by_company(value_sql)
 
   end
 
-  def return_research_center  value_sql, search_service
-    search_service.find_by_research_center(value_sql)
+  def return_research_center  value_sql
+    @search_service.find_by_research_center(value_sql)
   end
 
 end
