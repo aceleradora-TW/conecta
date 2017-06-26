@@ -10,7 +10,7 @@ configure :development do
 end
 
 configure :test do
-  DataMapper.setup(:default, "postgres://test:test@postgres/test_db")
+  DataMapper.setup(:default, "postgres://test:test@db_test/test_db")
 end
 
 configure :production do

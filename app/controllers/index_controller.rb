@@ -3,8 +3,11 @@ require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/search_service"
 require_relative "../services/router_service"
+require_relative "./admin_controller"
 
 class IndexController < Controller
+  use AdminController
+  
   def initialize
     super
     @router_service = RouterService.new
