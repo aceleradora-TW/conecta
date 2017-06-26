@@ -1,5 +1,5 @@
-/* line 4, ../sass/Footer.scss */
-footer {
+/* line 5, ../sass/Footer.scss */
+.Footer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -7,17 +7,18 @@ footer {
   height: 6vh;
   width: 100%;
   background-color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
+  background-color: black;
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 4, ../sass/Footer.scss */
-  footer {
+  /* line 5, ../sass/Footer.scss */
+  .Footer {
     font-size: 0.75em;
   }
 }
 
-/* line 15, ../sass/Footer.scss */
+/* line 17, ../sass/Footer.scss */
 .RegisterFooter {
   display: flex;
   align-items: center;

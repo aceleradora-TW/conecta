@@ -1,0 +1,42 @@
+/* line 5, ../sass/Icon.scss */
+.Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 40%;
+  color: white;
+  background-color: white;
+  border-radius: 100%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 5, ../sass/Icon.scss */
+  .Icon {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 5, ../sass/Icon.scss */
+  .Icon {
+    height: 53%;
+    width: 60%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Icon.scss */
+  .Icon {
+    height: 16vh;
+    width: 12vw;
+  }
+}
+
+/* line 24, ../sass/Icon.scss */
+.Arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 5%;
+  color: white;
+}

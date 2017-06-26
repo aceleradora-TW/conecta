@@ -1,15 +1,37 @@
 @import "_mixins.scss";
-@import "MediaQuery.scss";
+@import "MediaQuery";
+@import "_variables";
 
-.Input{
-  &Search{
+.Input {
+  &Search {
+    @include size ($width: 60%);
     font-size: 1.05em;
-    border: 1px solid rgba(0, 0, 0, .4);
+    border: 0.1em solid rgba(0, 0, 0, .4);
     border-left: none;
     padding-left: 2%;
     font-size: 1.05em;
-    width: 60%;
+    @include tablet {
+      font-size: 0.8em;
+    }
+    @include mobile {
+      font-size: 0.6em;
+    }
+    @include smallMobile {
+      font-size: 0.6em;
+    }
   }
+}
+
+.InputGroupButton{
+  @include size($width: 30%);
+  z-index: 3;
+}
+
+.InputSearch{
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-left: none;
+  padding-left: 2%;
+  width: 60%;
 }
 
 .ModalInputs {
@@ -36,6 +58,48 @@
     border-radius: 5px;
     outline: none;
   }
+}
+
+.InputGroup {
+  @include flex($justify: center);
+  @include size($width: 75%, $height: 6vh);
+  input {
+    font-size: 1.05em;
+  }
+  span {
+    font-size: 1.3em;
+  }
+  @include tablet {
+    input {
+      font-size: 0.8em;
+    }
+    span {
+      font-size: 1.1em;
+    }
+  }
+  @include mobile {
+    @include size($width: 90%, $height: 5.3vh);
+    input {
+      font-size: 0.65em;
+    }
+    span {
+      font-size: 1em;
+    }
+  }
+  @include smallMobile {
+    @include size($width: 90%, $height: 5.3vh);
+    @include flex($direction: row);
+    input {
+      font-size: 0.45em;
+    }
+    span {
+      font-size: 0.8em;
+    }
+  }
+}
+
+input{
+  outline: none;
 }
 
 .LoginInputs {

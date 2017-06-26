@@ -4,8 +4,15 @@ body {
   overflow-x: hidden;
   padding: 0;
 }
+@media (max-width: 499px) {
+  /* line 4, ../sass/Default.scss */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
 
-/* line 10, ../sass/Default.scss */
+/* line 14, ../sass/Default.scss */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -15,33 +22,41 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
   font-feature-settings: 'liga';
 }
 
-/* line 30, ../sass/Default.scss */
+/* line 29, ../sass/Default.scss */
 .material-icons.md-3 {
   font-size: 3em;
 }
 
-/* line 33, ../sass/Default.scss */
+/* line 32, ../sass/Default.scss */
 .material-icons.md-hamburger {
   font-size: 3em;
 }
 @media (max-width: 499px) {
-  /* line 33, ../sass/Default.scss */
+  /* line 32, ../sass/Default.scss */
   .material-icons.md-hamburger {
     font-size: 2em;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 32, ../sass/Default.scss */
+  .material-icons.md-hamburger {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 32, ../sass/Default.scss */
+  .material-icons.md-hamburger {
+    font-size: 1em;
+  }
+}
 
-/* line 40, ../sass/Default.scss */
+/* line 45, ../sass/Default.scss */
 .material-icons.md-1-4 {
   font-size: 1.4em;
 }
