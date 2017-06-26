@@ -1,4 +1,5 @@
 require ::File.expand_path('../config/environment', __FILE__)
+require ::File.expand_path('../config/database', __FILE__)
 require_relative 'csv/csv_import.rb'
 require_relative 'config/seed.rb'
 
