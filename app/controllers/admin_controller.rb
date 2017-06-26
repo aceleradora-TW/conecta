@@ -2,14 +2,16 @@ require_relative 'controller.rb'
 require "sinatra/base"
 require_relative "../services/session_service"
 
-use Rack::Session::Cookie, :key => 'rack.session',
-:expire_after => 2592000,
-:secret => ENV['SESSION_SECRET']
 
-DEFAULT_ADMIN_ROUTE = "/admin/list_instituitions"
+
+DEFAULT_ADMIN_ROUTE = "/admin/list_institutions"
 DEFAULT_USER_ROUTE = "/admin/company"
 
 class AdminController < Controller
+  use Rack::Session::Cookie, :key => 'rack.session',
+  :expire_after => 2592000,
+  :secret => ENV['SESSION_SECRET']
+
   def initialize father_controller
     super father_controller
     @session_service = SessionService.new
@@ -29,7 +31,7 @@ class AdminController < Controller
     erb :login, :layout => :layout_admin
   end
 
-  get "/admin/list_instituitions" do
+  get "/admin/list_institutions" do
     if @user_info.is_admin
       @companies = Company.all(order: [:name.asc])
       @research_centers = ResearchCenter.all(order: [:name.asc])
