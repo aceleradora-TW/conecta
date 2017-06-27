@@ -38,23 +38,30 @@ function sendMail(){
   $("#SendEmailMessage").removeClass("u-colorGreen");
   $("#SendEmailButton").attr("disabled","disabled");
 
-  $("#SendEmailMessage").html("<img class='Spinner' src='images/spinner.gif'>");
-  var url = "/request_contact";
-  $.ajax({
-    type: "POST",
-    url: url,
-    data: $("#ContactForm").serialize(),
-    success: function(response){
-      if(response.indexOf("[erro]") < 0){
-        $("#SendEmailMessage").addClass("u-colorGreen");
-        $("#SendEmailMessage").html(response);
-        setTimeout(closeModal,3000);
+  var email = $("#email").val();
+
+  if (isValidEmail(email)) {
+    $("#SendEmailMessage").html("<img class='Spinner' src='images/spinner.gif'>");
+    var url = "/request_contact";
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $("#ContactForm").serialize(),
+      success: function(response){
+        if(response.indexOf("[erro]") < 0){
+          $("#SendEmailMessage").addClass("u-colorGreen");
+          $("#SendEmailMessage").html(response);
+          setTimeout(closeModal,3000);
+        }
+        else{
+          $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
+        }
+        $("#SendEmailButton").removeAttr("disabled");
       }
-      else{
-        $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
-      }
-      $("#SendEmailButton").removeAttr("disabled");
-    }
-  });
+    });
+  } else {
+    document.querySelector("#invalidEmailMessage").style.display = "flex";
+    document.querySelector("#email").style.borderColor = "rgba(255, 0, 0, 1)"
+  }
   event.preventDefault();
 }
