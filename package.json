@@ -1,0 +1,23 @@
+{
+  "name": "conecta",
+  "version": "1.0.0",
+  "description": "[![wercker status](https://app.wercker.com/status/a63242f5c5cee0e75044f6895689a927/m/master \"wercker status\")](https://app.wercker.com/project/byKey/a63242f5c5cee0e75044f6895689a927)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -c spec/js/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aceleradora-TW/conecta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aceleradora-TW/conecta/issues"
+  },
+  "homepage": "https://github.com/aceleradora-TW/conecta#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
