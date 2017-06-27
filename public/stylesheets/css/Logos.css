@@ -63,8 +63,9 @@
     width: 7%;
   }
 }
-/* line 42, ../sass/Logos.scss */
-.Logo .LogoCollaborators {
+
+/* line 43, ../sass/Logos.scss */
+.LogoCollaborators {
   width: 100%;
   min-height: 30%;
   display: flex;
@@ -72,4 +73,14 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+/* line 49, ../sass/Logos.scss */
+.LogoDirectories {
+  width: 12.5vw;
+}
+
+/* line 53, ../sass/Logos.scss */
+.LogosSupporters {
+  width: 12.5vw;
 }

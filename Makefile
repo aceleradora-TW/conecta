@@ -4,7 +4,7 @@ build:
 
 run:build
 	@echo "Starting Server"
-	docker-compose up
+	docker-compose up web db
 
 bash:
 	@echo "Starting Application Bash"
@@ -16,9 +16,15 @@ stop:
 ps:
 	docker-compose ps
 
+js-install:
+	npm install
+
 test:
 	@echo "Starting Tests"
-	docker-compose run web rake test
+	docker-compose up web_test 
+
+js-test:
+	npm test
 
 db-start:
 	docker-compose up -d db

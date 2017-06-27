@@ -53,8 +53,8 @@
 
 /* line 39, ../sass/Section.scss */
 .Collaborators {
-  height: 95vh;
   width: 100%;
+  min-height: 97vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -65,7 +65,7 @@
 @media (max-width: 499px) {
   /* line 39, ../sass/Section.scss */
   .Collaborators {
-    height: 202vh;
+    min-height: 65vh;
   }
 }
 
@@ -154,8 +154,11 @@
 
 /* line 91, ../sass/Section.scss */
 .LogosList {
+  height: 100%;
   width: 100%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
