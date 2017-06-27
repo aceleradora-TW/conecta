@@ -238,6 +238,14 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+/* line 178, ../sass/Utilities.scss */
+.u-colorBackgroundDarkerBlue {
+  background-color: rgba(48, 89, 119, 0.93);
+}
+
+>>>>>>> f12d847e35d8df823916ae093ea337379e327371
 /* line 182, ../sass/Utilities.scss */
 .u-widthNone {
   width: 0%;

@@ -10,6 +10,7 @@ class Institution
   has n, :competences, :through => :competence_institutions
   has n, :competence_institutions
   has 1, :contact
+  has 1, :user
 
   def featured_competences
     if @searched_competences and @searched_competences.length > 0

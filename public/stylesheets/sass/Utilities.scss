@@ -179,6 +179,10 @@
 		cursor: pointer;
 	}
 }
+.u-colorBackgroundDarkerBlue {
+	background-color: $darker-blue-color;
+}
+
 .u-widthNone {
 	@include size($width: 0%);
 }

@@ -8,6 +8,8 @@ class User
   property :email, String, :required => true
   property :password_hash, String, :required => true
   property :role, String, :required => true
+  belongs_to :institution, :required => false
+
   def is_admin
     return @role == 'admin'
   end

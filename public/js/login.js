@@ -23,5 +23,11 @@ function login(){
       $("#LoginButton").removeAttr("disabled");
     }
   });
-  event.preventDefault();
+  return false;
+}
+function testEnter(evt){
+  var charCode = (typeof evt.which === "number") ? evt.which : evt.keyCode;
+  if(charCode == 13){
+    login();
+  }
 }
