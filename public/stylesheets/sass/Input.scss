@@ -50,6 +50,13 @@
     @include size($width: 51%);
     text-align: left;
   }
+  span.error {
+    @include size($width: 51%);
+    justify-content: flex-start;
+    display: none;
+    color: rgba(255, 0, 0, 1);
+    text-align: left;
+  }
   textarea {
     min-height: 20vh;
     margin: 8px 0px;
