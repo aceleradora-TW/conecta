@@ -7,7 +7,7 @@ require_relative "./admin_controller"
 
 class IndexController < Controller
   use AdminController
-  
+
   def initialize
     super
     @router_service = RouterService.new
@@ -21,10 +21,22 @@ class IndexController < Controller
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
-    if @value != nil
-      @search_description = "Exibindo #{@search_type}s para '#{@value}'"
+    case @search_type
+    when 'centro-pesquisa' then
+      variavel_aleatoria = "Centro de pesquisa"
+    when 'estrutura-pesquisa-competencia' then
+      variavel_aleatoria = "Competências das Estruturas de Pesquisa"
+    when 'competencia' then
+      variavel_aleatoria = "competências das empresa"
+    when 'segmento' then
+      variavel_aleatoria = "segmentos das empresa"
+    when 'empresa' then
+      variavel_aleatoria = "empresa"
+    end
+    if @value != ""
+      @search_description = "Exibindo #{variavel_aleatoria}s para '#{@value}'"
     else
-      @search_description = "Exibindo #{@search_type}s"
+      @search_description = "Exibindo #{variavel_aleatoria}s"
     end
 
     if @search_type
