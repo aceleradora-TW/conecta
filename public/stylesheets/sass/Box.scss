@@ -121,7 +121,7 @@
 }
 
 .BoxRegister {
-  @include flex($align: center, $direction: column, $justify: center);
+  @include flex($align: center, $direction: column, $justify: flex-start);
   @include size($width: 60%, $min-height: 65vh);
   background: rgba(255, 255, 255, 0.72);
   border-radius: 1.4%;
