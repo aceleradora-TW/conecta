@@ -50,7 +50,8 @@ class AdminController < Controller
   end
 
   get "/admin/register" do
-    if @user_info.is_logged_in
+    if @user_info.is_logged_in and @user_info.is_admin
+      @is_company = params[:type] == 'company'
       erb :register, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
@@ -58,8 +59,19 @@ class AdminController < Controller
   end
 
   get "/admin/register/2" do
-    if @user_info.is_logged_in
+    if @user_info.is_logged_in and @user_info.is_admin
       erb :register2, :layout => :layout_admin
+    else
+      erb :forbidden, :layout => :layout_admin
+    end
+  end
+
+  get "/admin/register/3" do
+    if @user_info.is_logged_in and @user_info.is_admin
+      @segment = Segment.all(order: :name)
+      @competence_areas = CompetenceArea.all(order: :name)
+      # @grouped_competences = {}
+      erb :register3, :layout => :layout_admin
     else
       erb :forbidden, :layout => :layout_admin
     end

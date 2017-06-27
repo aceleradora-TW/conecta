@@ -4,7 +4,7 @@
 
 
 .Section {
-  @include size($width: 100%, $min-height: 100%);
+  @include size($width: 100%, $min-height: 94vh);
   @include flex($direction: column);
   background-image: url("/images/background-main-desktop.jpg");
   background-size: cover;
@@ -61,7 +61,7 @@
 }
 
 .SectionCards {
-  @include size($width: 100%, $min-height: 100%);
+  @include size($width: 100%, $min-height: 75vh);
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;

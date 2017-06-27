@@ -122,15 +122,15 @@
 
 .BoxRegister {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 40%, $height: 50vh);
+  @include size($width: 60%, $min-height: 65vh);
   background: rgba(255, 255, 255, 0.72);
   border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
-  &.BoxRegisterLarge{
-    height: 65vh;
+  &Larger {
+    @include size($min-height: 100vh);
   }
   @include tablet{
     @include size($width: 80%);
@@ -143,6 +143,14 @@
   }
 }
 
+.BoxSegments {
+  @include flex($align: center, $direction: row, $justify: space-between);
+  flex-wrap: wrap;
+  align-content: center;
+  p{
+    width: 30%;
+  }
+}
 .ContentCollaborators{
   @include size($width: 70%);
   @include flex();
