@@ -36,9 +36,9 @@
         company.featured_competences.each_with_index do |company_competence,index|
           rating = company_competence.competence_value_calculated_integer
         %>
-        <li class="ItemsFeatured ">
+        <li class="Items is-featured ">
           <div class="ItemText"><%= company_competence.competence.name %></div>
-          <div class="ItemStar">
+          <div class="ItemText is-icon">
             <% if rating > 0 %>
               <% has_stars = true %>
               <% for n_of_stars in (1..5) %>
@@ -81,7 +81,7 @@
 
       <div class="Button u-center u-widthMediumOnly ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
       <div class="Button u-center u-widthMediumOnly ButtonSeeMore">ver mais</div>
-  
+
   </div>
   <div class="CardSecondary">
     <div>
@@ -99,7 +99,7 @@
             <% @company_competences.each_key do |competence_area| %>
               <li class="Items ItemsArea">
                 <div class="ItemText"><%= competence_area %></div>
-                <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+                <div class="ItemText is-icon"><i class="material-icons">keyboard_arrow_down</i></div>
               </li>
               <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
                 <% @company_competences[competence_area].each do |competence| %>

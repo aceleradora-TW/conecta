@@ -59,20 +59,6 @@
   }
 }
 
-.ContentCardList{
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($width: 90%);
-  flex-wrap: wrap;
-  align-content: center;
-  text-align: center;
-  @include mobile{
-    flex-direction: column;
-  }
-  @include smallMobile{
-    flex-direction: column;
-  }
-}
-
 .CardNav {
   @include flex($direction: row, $justify: flex-start);
   @include size($width: 100%, $min-height: 20%);
@@ -86,8 +72,7 @@
     @include flex($align: center, $direction: column, $justify: center);
   }
   &.is-center {
-    @include flex($align: center, $direction: row, $justify: center);
-    flex-wrap: wrap;
+    @include flex($align: center, $direction: row, $justify: center, $wrap: wrap);
     text-align: center;
     @include mobile{
       @include size($width: 90%);
@@ -121,44 +106,73 @@
   }
 }
 
-.Items{
-  @include flex($align: center, $justify: space-around);
+.Items {
+  @include flex($align: center, $justify: space-around, $self: center);
   @include size($width: 100%);
   line-height: 2em;
   cursor: pointer;
-  align-self: center;
   &:hover {
     background: rgba(0,0,0,.05);
     transition: .5s;
   }
-  @include tablet{
+  @include tablet {
     @include size($width: 100%);
   }
-  @include mobile{
+  @include mobile {
     @include size($width: 100%);
   }
-  @include smallMobile{
+  @include smallMobile {
     @include size($width: 100%);
     font-size: $medium-font-size;
   }
+  &.is-featured {
+    @include size($width: 75%);
+    @include mobile{
+      @include flex($align: center, $direction: column, $justify: center);
+      box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+    }
+    @include smallMobile{
+      @include flex($align: center, $direction: column, $justify: center);
+      box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+      line-height: 5em;
+    }
+  }
 }
 
-.ItemsFeatured {
-  @include flex($align: center, $justify: space-around);
-  @include size($width: 58%);
-  line-height: 2em;
-  align-self: center;
+.ItemText{
+  @include flex($align: flex-start, $direction: row, $justify: space-between, $wrap: wrap);
+  @include size($height: 100%, $width: 70%);
+  text-align: right;
   @include tablet{
-    @include size($width: 75%);
-  };
+    @include size($width: 68%);
+    text-align: left;
+  }
   @include mobile{
-    @include flex($align: center, $direction: column, $justify: center);
-    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+    @include size($width: 100%);
+    @include flex($justify: center, $align: center);
+    text-align: left;
+    font-size: $small-font-size;
   }
   @include smallMobile{
-    @include flex($align: center, $direction: column, $justify: center);
-    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
-    line-height: 5em;
+    @include size($width: 100);
+    @include flex($justify: center, $align: center);
+    text-align: left;
+    font-size: $large-font-size;
+  }
+  &.is-segment{
+    @include flex($justify: center);
+  }
+  &.is-icon{
+    @include flex($justify: flex-end);
+    @include size($width: 32%);
+    @include mobile{
+      @include flex($justify: center,$align: center);
+    }
+    @include smallMobile{
+      @include size($height: 100%);
+      @include flex($align: center, $justify: center);
+      font-size: $small-font-size;
+    }
   }
 }
 
@@ -170,90 +184,6 @@
   @include tablet{
     @include size($width: 90%);
   };
-}
-
-.ItemText{
-  @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 70%);
-  text-align: right;
-  flex-wrap: wrap;
-  @include tablet{
-    @include size($width: 68%);
-    text-align: left;
-  }
-  @include mobile{
-    @include size($width: 100%);
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: $small-font-size;
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: $large-font-size;
-  }
-  &.is-segment{
-    @include flex($justify: center);
-  }
-}
-
-.ItemStar{
-  @include flex($justify: flex-end);
-  @include size($height: 100%);
-  @include tablet{
-    @include size($width: 32%);
-  }
-  @include mobile{
-    @include size($height: 100%);
-    @include flex($justify: center,$align: center);
-  }
-  @include smallMobile{
-    @include size($height: 100%);
-    @include flex($align: center, $justify: center);
-    font-size: $small-font-size;
-  }
-}
-.CompanyDeion{
-  @include flex();
-  @include size($height: 30%, $width: 100%);
-  text-align: center;
-  font-size: $small-font-size;
-  line-height: 1.8em;
-  @include tablet{
-    @include size($width: 90%);
-  }
-  @include mobile {
-    @include size($width: 90%);
-    font-size: $small-font-size;
-  }
-  @include smallMobile {
-    @include size($width: 90%);
-    font-size: $small-font-size;
-  }
-}
-
-.RatingExplanation {
-  @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
-
-  @include tablet{
-    @include size($height: 30%, $width: 97%);
-    @include flex($align: center, $justify: center);
-    font-size: $small-font-size;
-  }
-  @include mobile{
-    @include size($height: 30%, $width: 100%);
-    @include flex($align: center, $justify: center);
-    font-size: $medium-font-size
-  }
-  @include smallMobile{
-    @include size($height: 30%, $width: 90%);
-    @include flex($align: center, $justify: center);
-    font-size: $medium-font-size
-  }
 }
 
 .CompanyCompetences{
@@ -294,25 +224,22 @@
 }
 
 .InstitutionList {
-  @include flex($direction: row, $justify: flex-start);
-  flex-wrap: wrap;
+  @include flex($direction: row, $justify: flex-start, $wrap: wrap);
   padding: 2%;
 }
 
-.InstitutionListHeader {
+.HeaderList {
   @include size($width: 100%);
   @include flex($direction: row, $justify: center);
-}
-
-.RegisterListHeader {
-  @include size($width: 94%);
-  @include flex($align:center, $direction: row);
-  border-radius: 5px;
-}
-
-.RegisterListItem {
-  @include size($width: 50%);
-  @include flex($align:center, $direction: column, $justify: space-around);
+  &.is-register{
+    @include size($width: 94%);
+    @include flex($align:center);
+    border-radius: 1%;
+  }
+  &.is-item {
+    @include size($width: 50%);
+    @include flex($align:center, $direction: column, $justify: space-around);
+  }
 }
 
 .LeftItem {
