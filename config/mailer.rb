@@ -10,8 +10,8 @@ configure do
     :port           => 587,
     :domain         => 'gmail.com',
     :authentication => :plain,
-    :user_name      => ENV['GMAIL_USER'],
-    :password       => ENV['GMAIL_PASSWORD'],
+    :user_name      => 'aceleradora11@gmail.com',#ENV['GMAIL_USER'],
+    :password       => 'geoprocessamentotw',#ENV['GMAIL_PASSWORD'],
     :enable_starttls_auto => true
   }
 end
