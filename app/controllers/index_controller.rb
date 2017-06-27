@@ -23,20 +23,20 @@ class IndexController < Controller
     @search_type = params[:search_type]
     case @search_type
     when 'centro-pesquisa' then
-      variavel_aleatoria = "Centro de pesquisa"
+      search_type = "Centro de pesquisa"
     when 'estrutura-pesquisa-competencia' then
-      variavel_aleatoria = "Competências das Estruturas de Pesquisa"
+      search_type = "Competências das Estruturas de Pesquisa"
     when 'competencia' then
-      variavel_aleatoria = "competências das empresa"
+      search_type = "competências das empresa"
     when 'segmento' then
-      variavel_aleatoria = "segmentos das empresa"
+      search_type = "segmentos das empresa"
     when 'empresa' then
-      variavel_aleatoria = "empresa"
+      search_type = "empresa"
     end
     if @value != ""
-      @search_description = "Exibindo #{variavel_aleatoria}s para '#{@value}'"
+      @search_description = "Exibindo #{search_type}s para '#{@value}'"
     else
-      @search_description = "Exibindo #{variavel_aleatoria}s"
+      @search_description = "Exibindo #{search_type}s"
     end
 
     if @search_type
