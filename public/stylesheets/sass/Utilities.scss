@@ -281,3 +281,18 @@
 .u-displayNone {
 	display: none;
 }
+
+.u-textAlignLeft {
+	text-align: left;
+}
+
+.u-textAlignRight {
+	text-align: right;
+}
+
+.u-width3of4 {
+	@include size($width: 75%);
+}
+.u-width1of4 {
+	@include size($width: 25%);
+}

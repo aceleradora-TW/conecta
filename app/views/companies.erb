@@ -11,8 +11,8 @@
       </div>
     </div>
   <% if @search_type == 'segmento' %>
-    <div class="CompanyCompetences">
-      <ul class="CompetenceList">
+    <div class="List is-vertical">
+      <ul>
         <% company.segments.each do |segment| %>
           <% if segment.name.downcase.include? @value %>
         <li class="Items">
@@ -28,8 +28,8 @@
       </div>
     </div>
   <% else %>
-    <div class="CompanyCompetences">
-      <ul class="CompetenceList">
+    <div class="List is-vertical">
+      <ul>
         <%
         has_check = false
         has_stars = false
@@ -83,7 +83,7 @@
       <div class="Button u-center u-widthMediumOnly ButtonSeeMore">ver mais</div>
 
   </div>
-  <div class="CardSecondary">
+  <div class="Card is-secondary">
     <div>
       Mayra ipsum dolor sit amet, consectetur adipisicing elit.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -91,11 +91,11 @@
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
       fugiat nulla pariatur.
     </div>
-    <div class="CompanyCompetences">
+    <div class="List is-vertical">
       <div class="CompetencesTitle">Demais competências</div>
         <% @company_competences = company.grouped_competences %>
         <% if @company_competences != nil %>
-          <ul class="CompetenceList">
+          <ul >
             <% @company_competences.each_key do |competence_area| %>
               <li class="Items ItemsArea">
                 <div class="ItemText"><%= competence_area %></div>

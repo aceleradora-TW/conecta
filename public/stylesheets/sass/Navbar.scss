@@ -188,12 +188,6 @@
 	}
 }
 
-
-
-
-
-
-
 .NavSearch{
 	@include flex($direction: row, $justify: space-between);
 	@include size($height: 60%, $width: 60%);

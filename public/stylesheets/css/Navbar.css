@@ -296,7 +296,7 @@
   font-size: 1.3em;
 }
 
-/* line 197, ../sass/Navbar.scss */
+/* line 191, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -305,7 +305,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 197, ../sass/Navbar.scss */
+  /* line 191, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -313,7 +313,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 197, ../sass/Navbar.scss */
+  /* line 191, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;

@@ -16,7 +16,7 @@ items.forEach(function(item, index){
 });
 
 const button = document.querySelectorAll('.ButtonSeeMore');
-const cardSecondary = document.querySelectorAll('.CardSecondary');
+const cardSecondary = document.querySelectorAll('.is-secondary');
 for(let i = 0; i < button.length; i++){
   button[i].addEventListener("click", function(){
     if(cardSecondary[i].style.display == 'block') {
