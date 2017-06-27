@@ -182,6 +182,24 @@
   }
 }
 
+.SubitemsRegister {
+  @include size($width: 100%);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2em;
+  text-align:center;
+  padding: 0;
+  justify-content: space-around;
+  li {
+    @include flex($justify: flex-start);
+    margin-left: 8.5%;
+  }
+  &.Open{
+    @include flex()
+  }
+}
+
 .Items{
   @include flex($align: center, $justify: space-around);
   @include size($width: 100%);

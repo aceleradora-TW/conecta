@@ -65,6 +65,10 @@
 	padding-bottom: 1%;
 }
 
+.u-marginXSmall {
+	margin: 0.5%;
+}
+
 .u-marginSmall {
 	margin: 1%;
 }
@@ -171,6 +175,10 @@
 		cursor: pointer;
 	}
 }
+.u-colorBackgroundDarkerBlue {
+	background-color: $darker-blue-color;
+}
+
 .u-widthNone {
 	@include size($width: 0%);
 }
@@ -217,6 +225,10 @@
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(226, 106, 106, 1);
 		cursor: pointer;
 	}
+}
+
+.u-widthSmall {
+	width: 5em;
 }
 
 .u-widthMediumOnly {
