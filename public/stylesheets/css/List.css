@@ -5,14 +5,13 @@
   flex-direction: row;
   justify-content: center;
 }
-/* line 8, ../sass/List.scss */
+/* line 9, ../sass/List.scss */
 .List.is-register {
-  width: 94%;
   display: flex;
   align-items: center;
   border-radius: 1%;
 }
-/* line 13, ../sass/List.scss */
+/* line 14, ../sass/List.scss */
 .List.is-item {
   width: 50%;
   display: flex;
@@ -20,7 +19,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 17, ../sass/List.scss */
+/* line 19, ../sass/List.scss */
 .List.is-horizontal {
   display: flex;
   flex-direction: row;
@@ -29,7 +28,7 @@
   padding: 2%;
   background-color: white;
 }
-/* line 22, ../sass/List.scss */
+/* line 25, ../sass/List.scss */
 .List.is-vertical {
   display: flex;
   flex-direction: column;
@@ -39,20 +38,20 @@
   margin-top: 3%;
 }
 @media (min-width: 1191px) and (max-width: 1814px) {
-  /* line 22, ../sass/List.scss */
+  /* line 25, ../sass/List.scss */
   .List.is-vertical {
     font-size: 1.3em;
   }
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 22, ../sass/List.scss */
+  /* line 25, ../sass/List.scss */
   .List.is-vertical {
     width: 90%;
     font-size: 1.3em;
   }
 }
 
-/* line 37, ../sass/List.scss */
+/* line 40, ../sass/List.scss */
 .Items {
   display: flex;
   align-items: center;
@@ -62,36 +61,23 @@
   line-height: 2em;
   cursor: pointer;
 }
-/* line 42, ../sass/List.scss */
+/* line 46, ../sass/List.scss */
 .Items:hover {
   background: rgba(0, 0, 0, 0.05);
   transition: .5s;
 }
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 37, ../sass/List.scss */
-  .Items {
-    width: 100%;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 37, ../sass/List.scss */
-  .Items {
-    width: 100%;
-  }
-}
 @media (max-width: 499px) {
-  /* line 37, ../sass/List.scss */
+  /* line 40, ../sass/List.scss */
   .Items {
-    width: 100%;
     font-size: 1.3em;
   }
 }
-/* line 56, ../sass/List.scss */
+/* line 54, ../sass/List.scss */
 .Items.is-featured {
   width: 95%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 56, ../sass/List.scss */
+  /* line 54, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -101,7 +87,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 56, ../sass/List.scss */
+  /* line 54, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -112,9 +98,8 @@
     line-height: 5em;
   }
 }
-
-/* line 71, ../sass/List.scss */
-.ItemText {
+/* line 68, ../sass/List.scss */
+.ItemsText {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -122,59 +107,55 @@
   flex-wrap: wrap;
   height: 100%;
   width: 70%;
-  text-align: right;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 71, ../sass/List.scss */
-  .ItemText {
+  /* line 68, ../sass/List.scss */
+  .ItemsText {
     width: 68%;
-    text-align: left;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 71, ../sass/List.scss */
-  .ItemText {
+  /* line 68, ../sass/List.scss */
+  .ItemsText {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 71, ../sass/List.scss */
-  .ItemText {
+  /* line 68, ../sass/List.scss */
+  .ItemsText {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
     font-size: 1.7em;
   }
 }
-/* line 91, ../sass/List.scss */
-.ItemText.is-segment {
+/* line 86, ../sass/List.scss */
+.ItemsText.is-segment {
   display: flex;
   justify-content: center;
 }
-/* line 94, ../sass/List.scss */
-.ItemText.is-icon {
+/* line 90, ../sass/List.scss */
+.ItemsText.is-icon {
   display: flex;
   justify-content: flex-end;
   width: 32%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 94, ../sass/List.scss */
-  .ItemText.is-icon {
+  /* line 90, ../sass/List.scss */
+  .ItemsText.is-icon {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 @media (max-width: 499px) {
-  /* line 94, ../sass/List.scss */
-  .ItemText.is-icon {
+  /* line 90, ../sass/List.scss */
+  .ItemsText.is-icon {
     width: 100%;
     display: flex;
     align-items: center;
@@ -183,7 +164,7 @@
   }
 }
 
-/* line 107, ../sass/List.scss */
+/* line 105, ../sass/List.scss */
 .Subitems {
   width: 100%;
   display: none;
@@ -196,18 +177,18 @@
   padding: 0;
   justify-content: space-around;
 }
-/* line 118, ../sass/List.scss */
+/* line 116, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 122, ../sass/List.scss */
+/* line 120, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }
 @media (max-width: 499px) {
-  /* line 107, ../sass/List.scss */
+  /* line 105, ../sass/List.scss */
   .Subitems {
     font-size: 1.3em;
   }

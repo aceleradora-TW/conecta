@@ -36,31 +36,31 @@
     font-size: 0.7em;
   }
 }
-/* line 25, ../sass/Card.scss */
+/* line 26, ../sass/Card.scss */
 .Card.is-login {
   height: 60vh;
   background: rgba(255, 255, 255, 0.72);
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 25, ../sass/Card.scss */
+  /* line 26, ../sass/Card.scss */
   .Card.is-login {
     width: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 25, ../sass/Card.scss */
+  /* line 26, ../sass/Card.scss */
   .Card.is-login {
     width: 80%;
   }
 }
 @media (max-width: 499px) {
-  /* line 25, ../sass/Card.scss */
+  /* line 26, ../sass/Card.scss */
   .Card.is-login {
     height: 300px;
     width: 90%;
   }
 }
-/* line 38, ../sass/Card.scss */
+/* line 40, ../sass/Card.scss */
 .Card.is-secondary {
   width: 95%;
   border-top: 1px solid rgba(193, 193, 193, 0.45);
@@ -70,8 +70,7 @@
   justify-content: center;
   flex-direction: column;
 }
-
-/* line 49, ../sass/Card.scss */
+/* line 50, ../sass/Card.scss */
 .CardNav {
   display: flex;
   flex-direction: row;
@@ -81,7 +80,7 @@
   font-family: Lato, sans-serif;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 49, ../sass/Card.scss */
+  /* line 50, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -91,7 +90,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 49, ../sass/Card.scss */
+  /* line 50, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -100,7 +99,7 @@
     justify-content: center;
   }
 }
-/* line 61, ../sass/Card.scss */
+/* line 62, ../sass/Card.scss */
 .CardNav.is-center {
   display: flex;
   align-items: center;
@@ -110,13 +109,13 @@
   text-align: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 61, ../sass/Card.scss */
+  /* line 62, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }
 }
 @media (max-width: 499px) {
-  /* line 61, ../sass/Card.scss */
+  /* line 62, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }
