@@ -198,7 +198,7 @@
 
 /* line 149, ../sass/Utilities.scss */
 .u-colorRed {
-  background-color: #eb6361;
+  color: #eb6361;
 }
 
 /* line 153, ../sass/Utilities.scss */
@@ -208,7 +208,7 @@
 
 /* line 157, ../sass/Utilities.scss */
 .u-colorBlue {
-  background-color: #0faac3;
+  color: #0faac3;
 }
 
 /* line 161, ../sass/Utilities.scss */
@@ -216,28 +216,36 @@
   color: #eb9532;
 }
 
+/* line 165, ../sass/Utilities.scss */
+.u-colorWhite {
+  color: white;
+}
+
 @media (max-width: 499px) {
-  /* line 165, ../sass/Utilities.scss */
+  /* line 169, ../sass/Utilities.scss */
   .u-rotateIcon {
     -webkit-transform: rotate(90deg);
   }
 }
 
-/* line 171, ../sass/Utilities.scss */
+/* line 175, ../sass/Utilities.scss */
 .u-colorBackgroundOrange {
   background-color: #eb9532;
 }
-/* line 173, ../sass/Utilities.scss */
+/* line 177, ../sass/Utilities.scss */
 .u-colorBackgroundOrange:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 /* line 178, ../sass/Utilities.scss */
 .u-colorBackgroundDarkerBlue {
   background-color: rgba(48, 89, 119, 0.93);
 }
 
+>>>>>>> f12d847e35d8df823916ae093ea337379e327371
 /* line 182, ../sass/Utilities.scss */
 .u-widthNone {
   width: 0%;

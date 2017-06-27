@@ -147,7 +147,7 @@
 }
 
 .u-colorRed {
-	background-color: rgba(235, 99, 97, 1);
+  color: $light-red-color;
 }
 
 .u-colorGreen {
@@ -155,11 +155,15 @@
 }
 
 .u-colorBlue {
-	background-color: $light-blue-color;
+	color:  $light-blue-color;
 }
 
 .u-colorOrange {
 	color: $burnt-yellow-color;
+}
+
+.u-colorWhite {
+	color: $white-font-color;
 }
 
 .u-rotateIcon {
