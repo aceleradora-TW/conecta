@@ -7,7 +7,7 @@
 .Navbar {
 	@include size($width:100%, $height:12vh);
 	@include flex($align: center, $direction: row, $justify: space-between);
-	@include blackGradient($alpha: 0.47);
+	@include blackGradient($alpha: 0.6);
 	font-family: $font-style;
 	font-weight: lighter;
 	color: $white-font-color;
@@ -117,6 +117,7 @@
 		padding: 0;
 	}
 	a {
+		@include size($height:100%);
 		text-decoration: none;
 		font-size: $medium-font-size;
 		color: $white-font-color;
@@ -149,7 +150,7 @@
 		text-align: center;
 		&:hover {
 			text-decoration: none;
-			color: $white-font-color;
+			color: $blue-color;
 		}
 	}
 }
@@ -157,6 +158,7 @@
 .Link {
 	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
+	@include blackGradient($alpha: 0.5);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
@@ -176,22 +178,14 @@
 		font-size: $medium-font-size;
 	}
 	&:hover {
-		@include blackGradient($alpha: 0.7);
+		@include blackGradient($alpha: 0.5);
 		text-decoration: none;
 		color: rgba(52, 73, 94, 1);
 	}
 	&:hover a {
-		@include blackGradient($alpha: 0.7);
-		color: $white-font-color;
-
+	 color: $white-font-color;
 	}
 }
-
-
-
-
-
-
 
 .NavSearch{
 	@include flex($direction: row, $justify: space-between);
