@@ -1,25 +1,25 @@
 <div class="RegisterInputs">
   <% if @is_company %>
-  <span> Nome da empresa (nome fantasia):</span>
+  <span> Nome da empresa (nome fantasia) <i class="u-colorRed">*</i></span>
   <% else %>
-  <span> Nome da estrutura de pesquisa:</span>
+  <span> Nome da estrutura de pesquisa <i class="u-colorRed">*</i></span>
   <% end %>
   <input type="text" name="institution_name" value="">
 </div>
 <div class="RegisterInputs">
-  <span> E-mail para login:</span>
+  <span> E-mail para login <i class="u-colorRed">*</i></span>
   <input type="text" name="user_email" value="">
 </div>
 <% if @is_company %>
 <div class="RegisterInputs">
-  <span> CNPJ:</span>
+  <span> CNPJ</span>
   <input type="text" name="institution_cnpj" value="">
 </div>
 <% end %>
 <div class="RegisterInputs">
-  <span> Senha:</span>
+  <span> Senha <i class="u-colorRed">*</i></span>
   <input type="text" name="user_password" value="">
 </div>  <div class="RegisterInputs">
-  <span> Confirmar Senha:</span>
+  <span> Confirmar Senha <i class="u-colorRed">*</i></span>
   <input type="text" name="user_password2" value="">
 </div>
