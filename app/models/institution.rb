@@ -34,4 +34,18 @@ class Institution
     end
     return filtered_competences
   end
+
+  def grouped_competences_research
+    filtered_competences = {}
+    competence_institutions.each do |competence_all|
+      if filtered_competences.key?(competence_all.competence.competence_area.name)
+        competence_area_array = filtered_competences[competence_all.competence.competence_area.name]
+        competence_area_array.push(competence_all.competence.name)
+      else
+        competence_area_array = [competence_all.competence.name]
+        filtered_competences[competence_all.competence.competence_area.name] = competence_area_array
+      end
+    end
+    return filtered_competences
+  end
 end
