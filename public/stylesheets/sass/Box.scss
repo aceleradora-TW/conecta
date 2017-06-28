@@ -14,13 +14,13 @@
   color: $white-font-color;
   text-shadow: 1px 1px $black-color;
   line-height: 2em;
-  font-size: 1.3em;
+  font-size: $medium-font-size;
   font-weight: lighter;
   @include tablet{
     font-size: 1.4em;
   }
   @include mobile{
-    font-size: 1.3em;
+    font-size: $medium-font-size;
   }
   @include smallMobile{
     font-size: 1.2em;
@@ -49,12 +49,12 @@
   }
   @include mobile {
     @include flex($justify: flex-start);
-    font-size: 0.7em;
+    font-size: $small-font-size;
     margin: 1vh 0;
   }
   @include smallMobile {
     @include size($width: 90%);
-    font-size: 0.7em;
+    font-size: $small-font-size;
   }
 }
 
