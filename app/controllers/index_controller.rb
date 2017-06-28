@@ -23,15 +23,15 @@ class IndexController < Controller
     @search_type = params[:search_type]
     case @search_type
     when 'centro-pesquisa' then
-      search_type = "centros de pesquisa"
+      search_type = "Centros de pesquisa"
     when 'estrutura-pesquisa-competencia' then
-      search_type = "competências das estruturas de pesquisa"
+      search_type = "Competências das estruturas de pesquisa"
     when 'competencia' then
-      search_type = "competências das empresas"
+      search_type = "Competências das empresas"
     when 'segmento' then
-      search_type = "segmentos das empresas"
+      search_type = "Segmentos das empresas"
     when 'empresa' then
-      search_type = "empresas"
+      search_type = "Empresas"
     end
     if @value != ""
       @search_description = "Exibindo #{search_type} para '#{@value}'"
