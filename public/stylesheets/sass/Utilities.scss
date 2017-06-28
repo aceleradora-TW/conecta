@@ -69,6 +69,10 @@
 	padding-bottom: 1%;
 }
 
+.u-marginXSmall {
+	margin: 0.5%;
+}
+
 .u-marginSmall {
 	margin: 1%;
 }
@@ -147,7 +151,7 @@
 }
 
 .u-colorRed {
-	background-color: rgba(235, 99, 97, 1);
+  color: $light-red-color;
 }
 
 .u-colorGreen {
@@ -155,11 +159,15 @@
 }
 
 .u-colorBlue {
-	background-color: $light-blue-color;
+	color:  $light-blue-color;
 }
 
 .u-colorOrange {
 	color: $burnt-yellow-color;
+}
+
+.u-colorWhite {
+	color: $white-font-color;
 }
 
 .u-rotateIcon {
@@ -175,6 +183,10 @@
 		cursor: pointer;
 	}
 }
+.u-colorBackgroundDarkerBlue {
+	background-color: $darker-blue-color;
+}
+
 .u-widthNone {
 	@include size($width: 0%);
 }
@@ -221,6 +233,10 @@
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(226, 106, 106, 1);
 		cursor: pointer;
 	}
+}
+
+.u-widthSmall {
+	width: 5em;
 }
 
 .u-widthMediumOnly {
