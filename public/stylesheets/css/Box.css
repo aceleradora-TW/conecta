@@ -54,6 +54,7 @@
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 31, ../sass/Box.scss */
   .LogosCredibility {
+    display: flex;
     align-items: inherit;
   }
 }
@@ -316,9 +317,9 @@
   .BoxButtonMessage {
     height: 100px;
     width: 100%;
-    align-items: center;
-    justify-content: space-around;
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
@@ -326,6 +327,7 @@
   .BoxButtonMessage {
     height: 80%;
     width: 100%;
+    display: flex;
     flex-direction: row;
   }
 }
@@ -334,13 +336,12 @@
   .BoxButtonMessage {
     height: 100%;
     width: 70%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 
-/* line 201, ../sass/Box.scss */
+/* line 197, ../sass/Box.scss */
 .BoxSegments {
   display: flex;
   align-items: center;
@@ -349,18 +350,18 @@
   flex-wrap: wrap;
   align-content: center;
 }
-/* line 205, ../sass/Box.scss */
+/* line 199, ../sass/Box.scss */
 .BoxSegments p {
   width: 30%;
 }
 
-/* line 210, ../sass/Box.scss */
+/* line 204, ../sass/Box.scss */
 .ContentCollaborators {
   width: 70%;
   display: flex;
 }
 
-/* line 215, ../sass/Box.scss */
+/* line 209, ../sass/Box.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
@@ -369,7 +370,7 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 215, ../sass/Box.scss */
+  /* line 209, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -380,7 +381,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 215, ../sass/Box.scss */
+  /* line 209, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -391,7 +392,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 215, ../sass/Box.scss */
+  /* line 209, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 90%;
