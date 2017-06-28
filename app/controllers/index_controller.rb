@@ -7,7 +7,7 @@ require_relative "./admin_controller"
 
 class IndexController < Controller
   use AdminController
-  
+
   def initialize
     super
     @router_service = RouterService.new
