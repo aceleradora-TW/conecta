@@ -4,9 +4,6 @@
   <div class="CardNav is-center">
     <h1><%= rc_searched.name %></h1>
   </div>
-
-
-
   <div class="List is-vertical">
     <ul>
       <%
@@ -42,10 +39,6 @@
     </div>
     <% end %>
   </div>
-
-
-
-
   <div class="FooterCardSecondary">
     <% if(rc_searched.contact) %>
     <div class="FooterCardSecondaryItem">
@@ -64,10 +57,8 @@
     <% end %>
   </div>
   <div class="FooterCardPrimary">
-
       <div class="Button u-center u-widthMedium  ButtonContact" onclick="showModal('<%="#{rc_searched.id}"%>', '<%="#{rc_searched.name}"%>');" id="<%='ButtonContact'"#{rc_searched.id}"%>">contato</div>
       <div class="Button u-center u-widthMedium ButtonSeeMore">ver mais</div>
-
   </div>
   <div class="Card is-secondary">
     <div class="CompanyDescription">
