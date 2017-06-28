@@ -1,12 +1,12 @@
 /* line 7, ../sass/Navbar.scss */
 .Navbar {
-  height: 12vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: Lato, sans-serif;
   font-weight: lighter;
   color: white;
@@ -112,8 +112,8 @@
 
 /* line 69, ../sass/Navbar.scss */
 .LogoImage {
-  height: 50%;
-  width: 37%;
+  height: 60%;
+  width: 30%;
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
   border-radius: 0;
@@ -254,7 +254,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   flex-wrap: wrap;
   color: white;
@@ -284,18 +283,18 @@
     font-size: 1.3em;
   }
 }
-/* line 180, ../sass/Navbar.scss */
+/* line 179, ../sass/Navbar.scss */
 .Link:hover {
   background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: #34495e;
 }
-/* line 185, ../sass/Navbar.scss */
+/* line 184, ../sass/Navbar.scss */
 .Link:hover a {
   color: white;
 }
 
-/* line 190, ../sass/Navbar.scss */
+/* line 189, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -304,7 +303,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 190, ../sass/Navbar.scss */
+  /* line 189, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -312,7 +311,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 190, ../sass/Navbar.scss */
+  /* line 189, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;

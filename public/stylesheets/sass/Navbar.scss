@@ -5,9 +5,9 @@
 
 
 .Navbar {
-	@include size($width:100%, $height:12vh);
+	@include size($width: 100%, $height: 8vh);
 	@include flex($align: center, $direction: row, $justify: space-between);
-	@include blackGradient($alpha: 0.6);
+	@include blackGradient($alpha: 0.8);
 	font-family: $font-style;
 	font-weight: lighter;
 	color: $white-font-color;
@@ -67,7 +67,7 @@
 }
 
 .LogoImage {
-	@include size($width: 37%,$height: 50%);
+	@include size($width: 30%,$height: 60%);
 	background-image: url("/images/logo.png");
 	background-repeat: no-repeat;
 	border-radius: 0;
@@ -158,7 +158,6 @@
 .Link {
 	@include size($width:24%, $height:60%);
 	@include flex($align: center, $justify: center);
-	@include blackGradient($alpha: 0.5);
 	text-decoration: none;
 	flex-wrap: wrap;
 	color: $white-color;
