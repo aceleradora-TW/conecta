@@ -8,7 +8,7 @@
   background: $white-color;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 2%;
+  margin-bottom: 3vh;
   font-family: $font-style;
   font-weight: lighter;
   @include tablet {
@@ -171,6 +171,24 @@
   font-size: $small-font-size;
   text-align:center;
   background-color: $white-color;
+  padding: 0;
+  justify-content: space-around;
+  li {
+    @include flex($justify: flex-start);
+    margin-left: 8.5%;
+  }
+  &.Open{
+    @include flex()
+  }
+}
+
+.SubitemsRegister {
+  @include size($width: 100%);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2em;
+  text-align:center;
   padding: 0;
   justify-content: space-around;
   li {
