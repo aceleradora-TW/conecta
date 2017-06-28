@@ -15,6 +15,7 @@ function showModal(id, InstitutionName) {
 function closeModal() {
   modal.style.display = "none";
   company.id = "SendEmail";
+  document.getElementById("SendEmailMessage").innerHTML = "";
 }
 
 window.onclick = function(event) {
@@ -51,7 +52,7 @@ function sendMail(){
         if(response.indexOf("[erro]") < 0){
           $("#SendEmailMessage").addClass("u-colorGreen");
           $("#SendEmailMessage").html(response);
-          setTimeout(closeModal,3000);
+          setTimeout(closeModal, 3000);
         }
         else{
           $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
