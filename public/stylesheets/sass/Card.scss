@@ -33,7 +33,7 @@
       @include size($width: 80%);
     }
     @include smallMobile {
-      @include size($width: 90%,$height: 300px);
+      @include size($width: 90%,$height: 57vh);
     }
   }
 

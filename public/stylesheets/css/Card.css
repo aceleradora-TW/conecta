@@ -56,7 +56,7 @@
 @media (max-width: 499px) {
   /* line 26, ../sass/Card.scss */
   .Card.is-login {
-    height: 300px;
+    height: 57vh;
     width: 90%;
   }
 }
