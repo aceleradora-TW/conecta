@@ -7,10 +7,10 @@
       <span>Email:</span>
       <input type="text" id="email" name="email"  class="InputLogin u-marginTop u-marginBottomMedium" placeholder="Nome de usuário" autofocus>
       <span>Senha:</span>
-      <input type="password" id="password" name="password" class="InputLogin u-marginTop u-marginBottomMedium" placeholder="Senha de acesso">
+      <input type="password" id="password" name="password" onkeyup="testEnter(event)" class="InputLogin u-marginTop u-marginBottomMedium" placeholder="Senha de acesso">
     </div>
     <div class="LoginFooter">
-      <button type="submit" id="LoginButton" onclick="login()" class="Button ButtonSend">Entrar</button>
+      <button type="button" id="LoginButton" onclick="login()" class="Button ButtonSend">Entrar</button>
       <a href="#" class="u-marginTop u-fontSizeXSmall">Esqueceu sua senha?</a>
       <div id="LoginMessage">
 

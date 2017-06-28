@@ -20,20 +20,20 @@
             <div class="InputGroup">
               <div class="BoxFilterBy">
                 <button class="ButtonFilter" type="button" name="button">
-                  <span class="u-fontSizeMedium">Filtre por <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                  <span class="u-fontSizeMedium"><span id="ReplaceFilter">Filtre por</span> <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </button>
                 <div class="DropdownMenu">
-                  <label class="u-fontBold u-marginBottom">Empresa</label><br>
-                  <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> Nome</label><br>
-                  <label><input type="radio" name="search_type" value="competencia"> Competência</label><br>
-                  <label><input type="radio" name="search_type" value="segmento"> Segmento</label><br>
+                  <span class="u-fontBold u-marginBottom">Empresa</span><br>
+                  <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                  <label><input type="radio" name="search_type" value="competencia"> <span class="u-fontSizeSmallMedium">Competência</span></label><br>
+                  <label><input type="radio" name="search_type" value="segmento"> <span class="u-fontSizeSmallMedium">Segmento</span></label><br>
                   <hr>
-                  <label class="u-fontBold u-marginBottom">Estruturas de pesquisa</label><br>
-                  <label><input type="radio" name="search_type" value="centro-pesquisa"> Nome</label><br>
-                  <label><input type="radio" name="search_type" value="estrutura-pesquisa-competencia"> Competencia</label><br>
+                  <span class="u-fontBold u-marginBottom">Estruturas de pesquisa</span><br>
+                  <label><input type="radio" name="search_type" value="centro-pesquisa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                  <label><input type="radio" name="search_type" value="estrutura-pesquisa-competencia"> <span class="u-fontSizeSmallMedium">Competencia</span></label><br>
                 </div>
               </div>
-              <input id="InputSearch" class="InputSearch" type="text" placeholder="Ex: ThoughtWorks, Outsourcing..." name="value"/>
+              <input id="InputSearch" class="InputSearch" type="text" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
               <div class="Button u-center" onclick="document.forms['search'].submit();">
                 <a class="ButtonSearch">
                   <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
