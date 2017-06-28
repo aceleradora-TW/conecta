@@ -269,9 +269,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  width: 40%;
+  justify-content: flex-start;
+  width: 60%;
+  min-height: 65vh;
   background: rgba(255, 255, 255, 0.72);
   border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
@@ -280,8 +280,8 @@
   font-weight: lighter;
 }
 /* line 165, ../sass/Box.scss */
-.BoxRegister.BoxRegisterLarge {
-  height: 65vh;
+.BoxRegisterLarger {
+  min-height: 100vh;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 156, ../sass/Box.scss */
@@ -303,7 +303,7 @@
   }
 }
 
-/* line 179, ../sass/Box.scss */
+/* line 180, ../sass/Box.scss */
 .BoxButtonMessage {
   display: flex;
   align-items: center;
@@ -312,7 +312,7 @@
   width: 40%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 179, ../sass/Box.scss */
+  /* line 180, ../sass/Box.scss */
   .BoxButtonMessage {
     height: 100px;
     width: 100%;
@@ -322,7 +322,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 179, ../sass/Box.scss */
+  /* line 180, ../sass/Box.scss */
   .BoxButtonMessage {
     height: 80%;
     width: 100%;
@@ -330,7 +330,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 179, ../sass/Box.scss */
+  /* line 180, ../sass/Box.scss */
   .BoxButtonMessage {
     height: 100%;
     width: 70%;
@@ -340,13 +340,27 @@
   }
 }
 
-/* line 200, ../sass/Box.scss */
+/* line 201, ../sass/Box.scss */
+.BoxSegments {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* line 205, ../sass/Box.scss */
+.BoxSegments p {
+  width: 30%;
+}
+
+/* line 210, ../sass/Box.scss */
 .ContentCollaborators {
   width: 70%;
   display: flex;
 }
 
-/* line 205, ../sass/Box.scss */
+/* line 215, ../sass/Box.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
@@ -355,7 +369,7 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 205, ../sass/Box.scss */
+  /* line 215, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -366,7 +380,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 205, ../sass/Box.scss */
+  /* line 215, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -377,7 +391,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 205, ../sass/Box.scss */
+  /* line 215, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 90%;

@@ -64,6 +64,25 @@
     <div class="CompanyDescription">
       <%= rc_searched.description%>
     </div>
+    <div class="CompanyCompetences">
+      <div class="CompetencesTitle">Demais competências</div>
+        <% @company_competences = rc_searched.grouped_competences_research %>
+        <% if @company_competences != nil %>
+          <ul class="CompetenceList">
+            <% @company_competences.each_key do |competence_area| %>
+              <li class="Items ItemsArea">
+                <div class="ItemText"><%= competence_area %></div>
+                <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+              </li>
+              <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
+                <% @company_competences[competence_area].each do |competence| %>
+                <li><%= competence %></li>
+                <% end %>
+              </ul>
+            <% end %>
+          </ul>
+        <% end %>
+    </div>
   </div>
   </div>
   <% end %>
