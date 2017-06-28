@@ -4,11 +4,11 @@
   <% else %>
   <span> Nome da estrutura de pesquisa <b class="u-colorRed">*</b></span>
   <% end %>
-  <input type="text" name="institution_name" value="">
+  <input type="text" name="institution_name" value="" class="required">
 </div>
 <div class="RegisterInputs">
   <span> E-mail para login <b class="u-colorRed">*</b></span>
-  <input type="text" name="user_email" value="">
+  <input type="text" name="user_email" value="" class="required">
 </div>
 <% if @is_company %>
 <div class="RegisterInputs">
@@ -18,8 +18,8 @@
 <% end %>
 <div class="RegisterInputs">
   <span> Senha <b class="u-colorRed">*</b></span>
-  <input type="text" name="user_password" value="">
+  <input type="text" name="user_password" value="" class="required">
 </div>  <div class="RegisterInputs">
   <span> Confirmar Senha <b class="u-colorRed">*</b></span>
-  <input type="text" name="user_password2" value="">
+  <input type="text" name="user_password2" value="" class="required">
 </div>

@@ -11,7 +11,7 @@
       <a id="buttonTab3" class="Button u-marginSmall u-widthSmall ButtonChangeTab" onclick="changeRegisterTab('buttonTab3','BoxRegister3')">3</a>
     </div>
     <input name="institution_type" type="hidden" value="<%= @is_company ? 'company' : 'research_center' %>" />
-    <div class="BoxRegisterBody" id="BoxRegister1">
+    <div class="BoxRegisterBody active" id="BoxRegister1">
       <%= erb :register_step_1 %>
       <br/>
       <div class="RegisterFooter u-marginSidesAndBottom">
