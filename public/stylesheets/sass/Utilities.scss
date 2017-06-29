@@ -15,7 +15,8 @@
 	font-size: $medium-font-size;
 }
 
-.u-fontSizeMediumSlogan {
+
+.u-fontSizeMediumSlogan{
 	font-size: $medium-font-size;
 	@include mobile {
 		font-size: $medium-font-size;
@@ -76,7 +77,9 @@
 .u-marginSmall {
 	margin: 1%;
 }
-
+.u-marginMedium {
+	margin: 2%;
+}
 .u-marginLeft {
 	margin-left: 10%;
 }
@@ -126,30 +129,17 @@
 	color: $light-red-color;
 }
 
-.u-widthMedium {
-	width: 30%;
-	margin: 5%;
-	@include tablet {
-		@include flex($align: center, $justify: center);
-		width: 15%;
-		height: 2.8em;
-		line-height: 0.8em;
-		font-size: 0.8rem;
-		margin: 2em;
-	}
-	@include smallMobile {
-		@include flex($align: center, $justify: center);
-		height: 3em;
-		margin: 1em;
-		line-height: 1.3em;
-		font-size: 0.5em;
-	}
-}
-
 .u-colorGold {
 	color: rgba(228, 181, 65, 1);
 }
 
+.u-colorBackgroundWhite {
+	background-color: $white-color;
+}
+
+.u-colorBackgroundOrange {
+	background-color: $burnt-yellow-color;
+}
 .u-colorRed {
   color: $light-red-color;
 }
@@ -211,10 +201,24 @@
 	}
 }
 
+
+.u-widthMediumOnly {
+	@include size ($width: 30%);
+}
+
+	.u-widthLarge {
+		@include size ($width: 90%);
+	}
+
+	.u-colorGold{
+		color: rgba(228, 181, 65, 1);
+	}
+
 .u-colorBackgroundBlue {
 	background-color: $blue-color;
 	&:hover {
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(244, 179, 80,1);
+
 		cursor: pointer;
 	}
 }
@@ -249,7 +253,8 @@
 
 .u-widthMediumLarge {
 	width: 80%;
-}
+	}
+
 .u-widthLarge {
 	width: 90%;
 }
@@ -258,13 +263,26 @@
 	width: 24px;
 }
 
-.u-center{
+.u-center {
 	text-align: center;
 }
 
 .u-borderWhite {
 	border: solid 2px;
 }
+
+.u-colorOrange{
+		color: $burnt-yellow-color;
+}
+
+	.u-colorOrange:hover{
+		box-shadow: 1px 1px 2px 2px rgba(244, 179, 80, 1);
+		cursor: pointer;
+	}
+
+	.u-center{
+		text-align: center;
+	}
 
 .u-rotateIcon{
 	@include smallMobile{
@@ -282,4 +300,19 @@
 
 .u-displayNone {
 	display: none;
+}
+
+.u-textAlignLeft {
+	text-align: left;
+}
+
+.u-textAlignRight {
+	text-align: right;
+}
+
+.u-width3of4 {
+	@include size($width: 75%);
+}
+.u-width1of4 {
+	@include size($width: 25%);
 }

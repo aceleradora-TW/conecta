@@ -179,7 +179,7 @@
     display: none;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.7em;
+    font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
@@ -190,7 +190,7 @@
     display: none;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.7em;
+    font-size: 0.7em;
     padding: 0;
   }
 }

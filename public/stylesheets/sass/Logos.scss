@@ -53,3 +53,34 @@
 .LogosSupporters{
 	@include size($width: 12.5vw);
 }
+.LogoCard{
+  @include tablet{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
+  }
+  @include mobile{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
+  }
+  @include smallMobile{
+    @include size($width: 100%);
+    @include flex($align: center, $justify: center);
+  }
+}
+.CardLogo {
+  @include flex($align: center, $justify: center);
+  @include size($width: 30%);
+}
+.LogoInstitutions{
+  @include size($width: 50%);
+}
+
+.LogoSmall {
+  @include flex($align: center, $justify: center);
+  @include size($height: 40px, $width: 40px);
+  border-radius: 100%;
+  margin: 10px;
+  @include tablet{
+    height: 100px;
+  }
+}

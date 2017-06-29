@@ -1,4 +1,4 @@
-@mixin flex($align: null, $direction: null, $justify: null) {
+@mixin flex($align: null, $direction: null, $justify: null, $self: null, $wrap: null, $content: null) {
   display: flex;
   @if($align) {
     align-items: $align;
@@ -9,6 +9,15 @@
   @if($justify){
     justify-content: $justify;
   }
+  @if($self){
+    align-self: $self;
+  }
+  @if($wrap){
+  flex-wrap: $wrap;
+}
+@if($content){
+  align-content: $content;
+}
 }
 
 @mixin size($height: null, $width: null, $min-height: null, $min-width: null) {
