@@ -7,7 +7,8 @@
 .Navbar {
 	@include size($width: 100%, $height: 8vh);
 	@include flex($align: center, $direction: row, $justify: space-between);
-	@include blackGradient($alpha: 0.8);
+	@include blackGradient($alpha: 0.7);
+	position: fixed;
 	font-family: $font-style;
 	font-weight: lighter;
 	color: $white-font-color;
