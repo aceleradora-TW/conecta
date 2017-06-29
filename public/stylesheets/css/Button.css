@@ -155,3 +155,35 @@
 .ButtonBack:hover {
   background-color: black;
 }
+
+/* line 120, ../sass/Button.scss */
+.ButtonCards {
+  width: 30%;
+  margin: 5%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 120, ../sass/Button.scss */
+  .ButtonCards {
+    height: 70%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+}
+@media (max-width: 499px) {
+  /* line 120, ../sass/Button.scss */
+  .ButtonCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 15%;
+    margin: 1%;
+    line-height: 1.3em;
+    font-size: 0.7em;
+  }
+}

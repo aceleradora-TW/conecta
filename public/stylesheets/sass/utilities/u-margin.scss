@@ -1,0 +1,32 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-marginXSmall {
+	margin: 0.5%;
+}
+
+.u-marginSmall {
+	margin: 1%;
+}
+
+.u-marginTop {
+	margin-top: 1%;
+}
+
+.u-marginTopLarge {
+	margin-top: 3%;
+}
+
+.u-marginBottom {
+	margin-bottom: 1%;
+}
+
+.u-marginBottomMedium {
+	margin-bottom: 5%;
+}
+
+.u-marginSidesAndBottom {
+	margin: 0 2%;
+	margin-bottom: 2%;
+}

@@ -1,0 +1,15 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-textAlignCenter {
+	text-align: center;
+}
+
+.u-textAlignLeft {
+	text-align: left;
+}
+
+.u-textAlignRight {
+	text-align: right;
+}

@@ -1,0 +1,14 @@
+/* line 5, ../../sass/utilities/u-textAlign.scss */
+.u-textAlignCenter {
+  text-align: center;
+}
+
+/* line 9, ../../sass/utilities/u-textAlign.scss */
+.u-textAlignLeft {
+  text-align: left;
+}
+
+/* line 13, ../../sass/utilities/u-textAlign.scss */
+.u-textAlignRight {
+  text-align: right;
+}
