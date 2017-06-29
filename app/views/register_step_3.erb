@@ -1,5 +1,5 @@
 <div class="requiredOne">
-  <h2>Segmentos <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone">É necessário o preenchimento de ao menos um segmento</span> </h2>
+  <h2>Segmentos <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone u-fontSizeXSmall">É necessário o preenchimento de ao menos um segmento</span> </h2>
 
   <div class="BoxThreeColumns">
     <%@segment.each do |segment|%>
@@ -11,23 +11,21 @@
   </div>
 </div>
 <div class="requiredOne">
-  <h2>Competências <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone">É necessário o preenchimento de ao menos uma competência</span> </h2>
+  <h2>Competências <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone u-fontSizeXSmall">É necessário o preenchimento de ao menos uma competência</span> </h2>
   <div class="CompanyCompetences">
-    <!-- <ul class="CompetenceList"> -->
-      <% @competence_areas.each do |competence_area| %>
-      <li class="Items ItemsArea">
-        <div class="ItemText"><h3><%= competence_area.name %></h3></div>
-        <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
-      </li>
-      <div class="BoxThreeColumns u-colorBackgroundTransparent u-fontSizeSmallMedium" style="justify-content: space-around;">
-        <% competence_area.competences.each do |competence| %>
-        <p class="u-marginXSmall">
-          <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
-          <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
-        </p>
-        <% end %>
+    <% @competence_areas.each do |competence_area| %>
+    <li class="Items ItemsRegister CompetenceArea">
+      <div><h3><%= competence_area.name %></h3></div>
+      <div><i class="material-icons">keyboard_arrow_down</i></div>
+    </li>
+    <div class="BoxThreeColumns u-colorBackgroundTransparent u-fontSizeSmallMedium CompetenceAreaList u-displayNone">
+      <% competence_area.competences.each do |competence| %>
+      <p class="u-marginXSmall">
+        <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
+        <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
+      </p>
       <% end %>
-      </div>
-    <!-- </ul> -->
+    </div>
+    <% end %>
   </div>
 </div>

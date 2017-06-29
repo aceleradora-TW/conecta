@@ -130,6 +130,27 @@ function validateForm(){
   return validated;
 }
 
+function setExpandableCompetenceAreas(){
+  const itemAreas = document.querySelectorAll('.CompetenceArea');
+  const subItemAreas = document.querySelectorAll('.CompetenceAreaList');
+
+  itemAreas.forEach(function(item, index){
+    item.addEventListener("click", function(){
+      if(subItemAreas[index].classList.contains("u-displayNone")){
+        subItemAreas.forEach(function disableCompetenceAreas(competenceArea){
+          competenceArea.classList.add("u-displayNone");
+        });
+        subItemAreas[index].classList.remove("u-displayNone");
+        subItemAreas[index].classList.add("active");
+      } else {
+        subItemAreas[index].classList.add("u-displayNone");
+      }
+    });
+  });
+
+}
+
 window.onload = function onLoadFunction() {
   setValidationOnRequiredFields();
+  setExpandableCompetenceAreas();
 }
