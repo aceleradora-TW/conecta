@@ -2,48 +2,28 @@
 @import "../MediaQuery.scss";
 @import "../_mixins.scss";
 
-.u-widthNone {
-  @include size($width: 0%);
+.u-widthSmall {
+  width: 5em;
 }
 
-.u-widthMediumOnly {
+.u-widthMedium{
   @include size ($width: 30%);
 }
 
 .u-widthLarge {
+  width: 80%;
+}
+
+.u-widthXLarge {
   @include size ($width: 90%);
 }
 
-.u-widthSmall {
-	width: 5em;
-}
-
-.u-widthMediumOnly {
-	@include size ($width: 30%);
-}
-
-.u-widthLarge {
-	@include size ($width: 90%);
-}
-
-.u-widthMediumLarge {
-	width: 80%;
-}
-
-.u-widthLarge {
-	width: 90%;
-}
-
-.u-widthIcon {
-	width: 24px;
+.u-width1of4 {
+  @include size($width: 25%);
 }
 
 .u-width3of4 {
 	@include size($width: 75%);
-}
-
-.u-width1of4 {
-	@include size($width: 25%);
 }
 
 .u-lineHeightMedium {

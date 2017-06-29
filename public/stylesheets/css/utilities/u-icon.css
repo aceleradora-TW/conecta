@@ -4,3 +4,8 @@
     -webkit-transform: rotate(90deg);
   }
 }
+
+/* line 11, ../../sass/utilities/u-icon.scss */
+.u-widthIcon {
+  width: 24px;
+}
