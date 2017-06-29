@@ -17,5 +17,14 @@ configure :production do
   DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_GRAY_URL'])
 end
 
-Dir[APP_ROOT.join('app','models', '*.rb')].each { |file| require file }
-DataMapper.finalize
+begin
+  adapter = DataMapper.repository(:default).adapter
+  adapter.execute("create extension unaccent")
+rescue
+  puts "Unaccent já exste no banco"
+end
+
+
+
+  Dir[APP_ROOT.join('app','models', '*.rb')].each { |file| require file }
+  DataMapper.finalize
