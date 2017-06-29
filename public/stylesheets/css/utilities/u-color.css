@@ -32,14 +32,13 @@
 .u-colorOrange {
   color: #eb9532;
 }
-
-/* line 33, ../../sass/utilities/u-color.scss */
+/* line 31, ../../sass/utilities/u-color.scss */
 .u-colorOrange:hover {
   box-shadow: 1px 1px 2px 2px #f4b350;
   cursor: pointer;
 }
 
-/* line 38, ../../sass/utilities/u-color.scss */
+/* line 37, ../../sass/utilities/u-color.scss */
 .u-colorWhite {
   color: white;
 }
