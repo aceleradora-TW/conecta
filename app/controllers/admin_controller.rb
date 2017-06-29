@@ -109,7 +109,7 @@ class AdminController < Controller
         end
       end
         erb :register_success, :layout => :layout_admin
-      
+
     else
       erb :forbidden, :layout => :layout_admin
     end
