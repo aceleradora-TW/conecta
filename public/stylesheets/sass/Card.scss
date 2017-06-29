@@ -5,11 +5,12 @@
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45%);
-  background: $white-color;
+  @include blackGradient($alpha: 0.7);
   border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
+  color: $white-color;
   @include tablet {
     @include size($width: 95%, $min-height: 55%);
     font-size: $large-font-size;
