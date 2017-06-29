@@ -1,0 +1,59 @@
+/* line 5, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundWhite {
+  background-color: white;
+}
+
+/* line 9, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundOrange {
+  background-color: #eb9532;
+}
+
+/* line 13, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundOrange {
+  background-color: #eb9532;
+}
+/* line 15, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundOrange:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
+  cursor: pointer;
+}
+
+/* line 21, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundDarkerBlue {
+  background-color: rgba(48, 89, 119, 0.93);
+}
+
+/* line 25, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundBlue {
+  background-color: #3771c8;
+}
+/* line 27, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundBlue:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #f4b350;
+  cursor: pointer;
+}
+
+/* line 33, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundGreen {
+  background-color: #02af7e;
+}
+/* line 35, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundGreen:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
+  cursor: pointer;
+}
+
+/* line 41, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundRed {
+  background-color: #eb6361;
+}
+/* line 43, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundRed:hover {
+  box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
+  cursor: pointer;
+}
+
+/* line 49, ../../sass/utilities/u-backgroundColor.scss */
+.u-gradientTransparentToBlack {
+  background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
+}

@@ -1,3 +1,7 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
 .u-fontSizeXSmall {
 	font-size: $small-font-size;
 }
@@ -50,4 +54,8 @@
 
 .u-fontWhite {
 	color: $white-font-color;
+}
+
+.u-fontBold {
+	font-weight: bold;
 }

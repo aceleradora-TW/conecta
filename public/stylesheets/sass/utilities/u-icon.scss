@@ -1,0 +1,9 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-rotateIcon {
+	@include smallMobile {
+		-webkit-transform: rotate(90deg);
+	}
+}

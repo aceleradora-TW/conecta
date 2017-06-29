@@ -1,0 +1,60 @@
+/* line 5, ../../sass/utilities/u-margin.scss */
+.u-marginXSmall {
+  margin: 0.5%;
+}
+
+/* line 9, ../../sass/utilities/u-margin.scss */
+.u-marginSmall {
+  margin: 1%;
+}
+
+/* line 13, ../../sass/utilities/u-margin.scss */
+.u-marginMedium {
+  margin: 2%;
+}
+
+/* line 17, ../../sass/utilities/u-margin.scss */
+.u-marginLeft {
+  margin-left: 10%;
+}
+
+/* line 21, ../../sass/utilities/u-margin.scss */
+.u-marginLeftSmall {
+  margin-left: 5%;
+}
+
+/* line 25, ../../sass/utilities/u-margin.scss */
+.u-marginLeftSmall {
+  margin-left: 6%;
+}
+
+/* line 29, ../../sass/utilities/u-margin.scss */
+.u-marginLeftXSmall {
+  margin-left: 2%;
+}
+
+/* line 33, ../../sass/utilities/u-margin.scss */
+.u-marginTop {
+  margin-top: 1%;
+}
+
+/* line 37, ../../sass/utilities/u-margin.scss */
+.u-marginTopLarge {
+  margin-top: 3%;
+}
+
+/* line 41, ../../sass/utilities/u-margin.scss */
+.u-marginBottom {
+  margin-bottom: 1%;
+}
+
+/* line 45, ../../sass/utilities/u-margin.scss */
+.u-marginBottomMedium {
+  margin-bottom: 5%;
+}
+
+/* line 49, ../../sass/utilities/u-margin.scss */
+.u-marginSidesAndBottom {
+  margin: 0 2%;
+  margin-bottom: 2%;
+}

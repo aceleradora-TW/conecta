@@ -1,0 +1,70 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-widthNone {
+  @include size($width: 0%);
+}
+
+.u-widthMedium {
+  @include size($width: 30%);
+  margin: 5%;
+  @include tablet {
+    @include size($height: 70%, $width: 15%);
+    @include flex($justify: center,$align: center);
+    margin: 1%;
+    font-size: $medium-font-size;
+    line-height: 0.8em;
+  }
+  @include smallMobile {
+    @include flex($justify: center, $align: center);
+    @include size($height: 35%, $width: 15%);
+    margin: 1%;
+    line-height: 1.3em;
+    font-size: $small-font-size;
+  }
+}
+
+.u-widthMediumOnly {
+  @include size ($width: 30%);
+}
+
+.u-widthLarge {
+  @include size ($width: 90%);
+}
+
+.u-widthSmall {
+	width: 5em;
+}
+
+.u-widthMediumOnly {
+	@include size ($width: 30%);
+}
+
+.u-widthLarge {
+	@include size ($width: 90%);
+}
+
+.u-widthMediumLarge {
+	width: 80%;
+}
+
+.u-widthLarge {
+	width: 90%;
+}
+
+.u-widthIcon {
+	width: 24px;
+}
+
+.u-width3of4 {
+	@include size($width: 75%);
+}
+
+.u-width1of4 {
+	@include size($width: 25%);
+}
+
+.u-lineHeightMedium {
+	line-height: 1.7em;
+}

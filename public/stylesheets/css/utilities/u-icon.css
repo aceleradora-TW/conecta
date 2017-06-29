@@ -1,0 +1,6 @@
+@media (max-width: 499px) {
+  /* line 5, ../../sass/utilities/u-icon.scss */
+  .u-rotateIcon {
+    -webkit-transform: rotate(90deg);
+  }
+}

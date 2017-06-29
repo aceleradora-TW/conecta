@@ -1,0 +1,45 @@
+/* line 5, ../../sass/utilities/u-color.scss */
+.u-colorLightBlue {
+  color: #0faac3;
+}
+
+/* line 9, ../../sass/utilities/u-color.scss */
+.u-colorLightRed {
+  color: #eb6361;
+}
+
+/* line 13, ../../sass/utilities/u-color.scss */
+.u-colorGold {
+  color: #e4b541;
+}
+
+/* line 17, ../../sass/utilities/u-color.scss */
+.u-colorRed {
+  color: #eb6361;
+}
+
+/* line 21, ../../sass/utilities/u-color.scss */
+.u-colorGreen {
+  color: #02af7e;
+}
+
+/* line 25, ../../sass/utilities/u-color.scss */
+.u-colorBlue {
+  color: #0faac3;
+}
+
+/* line 29, ../../sass/utilities/u-color.scss */
+.u-colorOrange {
+  color: #eb9532;
+}
+
+/* line 33, ../../sass/utilities/u-color.scss */
+.u-colorOrange:hover {
+  box-shadow: 1px 1px 2px 2px #f4b350;
+  cursor: pointer;
+}
+
+/* line 38, ../../sass/utilities/u-color.scss */
+.u-colorWhite {
+  color: white;
+}
