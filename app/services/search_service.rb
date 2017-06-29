@@ -1,7 +1,7 @@
 class SearchService
 
   def find_by_competence competence_name
-    @competences = Competence.all(conditions: ["lower(name) like ?", competence_name])
+    @competences = Competence.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", competence_name])
   end
 
   def find_related_competence_institutions compenteces, institution_type
@@ -17,7 +17,7 @@ class SearchService
   end
 
   def find_by_segment segment_name
-    @segments = Segment.all(conditions: ["lower(name) like ?", segment_name])
+    @segments = Segment.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", segment_name])
   end
 
   def find_related_segment segments
@@ -26,13 +26,11 @@ class SearchService
   end
 
   def find_by_company companies
-    @companies = Company.all(conditions: ["lower(name) like ?", companies])
+    @companies = Company.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", companies])
   end
 
   def find_by_research_center research_centers
-    @research_center = ResearchCenter.all(conditions: ["lower(name) like ?", research_centers])
-    puts @research_center.inspect
-    @research_center
+    @research_center = ResearchCenter.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", research_centers])
   end
 
 end

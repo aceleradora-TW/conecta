@@ -21,7 +21,7 @@ js-install:
 
 test:
 	@echo "Starting Tests"
-	docker-compose up web_test 
+	docker-compose up web_test
 
 js-test:
 	npm test
