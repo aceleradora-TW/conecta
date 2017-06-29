@@ -14,27 +14,20 @@ RSpec.describe IndexController do
 
       it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por empresas" do
         visit "/search_all?search_type=empresa&value="
-        expect(page).to have_link('Como funciona')
-        expect(page).to have_link('Sobre')
-        expect(page).to have_link('Colaboradores')
-      end
-
-      it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por estruturas de pesquisa" do
-        visit "/search_all?search_type=centro-pesquisa&value="
-        expect(page).to have_link('Como funciona')
-        expect(page).to have_link('Sobre')
-        expect(page).to have_link('Colaboradores')
+        expect(page).to have_content('Como funciona')
+        expect(page).to have_content('Sobre')
+        expect(page).to have_content('Colaboradores')
       end
 
       it "Deve mostrar o botão contato" do
         visit "/search_all?search_type=empresa&value="
-        expect(page).to have_css('.ButtonContact')
+        expect(page).to have_content('contato')
       end
 
       it "Deve mostrar uma modal ao clicar no botão contato" do
         visit "/search_all?search_type=empresa&value="
         find("#ButtonContact1").click
-        expect(page).to have_css(".ModalContact")
+        expect(page).to have_css(".ModalContent")
       end
     end
   end
