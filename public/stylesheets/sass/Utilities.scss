@@ -98,6 +98,15 @@
 
 .u-marginTopNavbar{
 	margin-top: 6%;
+	@include tablet {
+	margin-top: 15%;
+	}
+	@include mobile {
+	margin-top: 15%;
+	}
+	@include smallMobile {
+	margin-top: 15%;
+	}
 }
 
 .u-marginTop {
