@@ -12,6 +12,7 @@
   justify-content: center;
   height: 70%;
   width: 100%;
+  margin-top: 7%;
   font-family: Lato, sans-serif;
   color: white;
   text-shadow: 1px 1px black;
@@ -38,7 +39,7 @@
   }
 }
 
-/* line 30, ../sass/Text.scss */
+/* line 31, ../sass/Text.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -48,7 +49,7 @@
   text-align: center;
 }
 
-/* line 36, ../sass/Text.scss */
+/* line 37, ../sass/Text.scss */
 .TitleSearch {
   display: flex;
   align-items: center;
@@ -60,14 +61,14 @@
   text-shadow: 1px 1px black;
 }
 @media (max-width: 499px) {
-  /* line 36, ../sass/Text.scss */
+  /* line 37, ../sass/Text.scss */
   .TitleSearch {
     text-align: center;
     margin-top: 3%;
   }
 }
 
-/* line 48, ../sass/Text.scss */
+/* line 49, ../sass/Text.scss */
 .RegisterTitle {
   display: flex;
   align-items: center;
