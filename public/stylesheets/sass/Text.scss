@@ -10,6 +10,7 @@
 .TextExplanation {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($height: 70%, $width: 100%);
+  margin-top: 7%;
   font-family: $font-style;
   color: $white-font-color;
   text-shadow: 1px 1px $black-color;
@@ -24,6 +25,8 @@
   }
   @include smallMobile {
     font-size: 1.2em;
+    margin-top: 10%;
+    margin-left: 10%;
   }
 }
 

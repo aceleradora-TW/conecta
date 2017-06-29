@@ -12,6 +12,7 @@
   justify-content: center;
   height: 70%;
   width: 100%;
+  margin-top: 7%;
   font-family: Lato, sans-serif;
   color: white;
   text-shadow: 1px 1px black;
@@ -35,10 +36,12 @@
   /* line 10, ../sass/Text.scss */
   .TextExplanation {
     font-size: 1.2em;
+    margin-top: 10%;
+    margin-left: 10%;
   }
 }
 
-/* line 30, ../sass/Text.scss */
+/* line 33, ../sass/Text.scss */
 .Title {
   display: flex;
   align-items: center;
@@ -48,7 +51,7 @@
   text-align: center;
 }
 
-/* line 36, ../sass/Text.scss */
+/* line 39, ../sass/Text.scss */
 .TitleSearch {
   display: flex;
   align-items: center;
@@ -60,14 +63,14 @@
   text-shadow: 1px 1px black;
 }
 @media (max-width: 499px) {
-  /* line 36, ../sass/Text.scss */
+  /* line 39, ../sass/Text.scss */
   .TitleSearch {
     text-align: center;
     margin-top: 3%;
   }
 }
 
-/* line 48, ../sass/Text.scss */
+/* line 51, ../sass/Text.scss */
 .RegisterTitle {
   display: flex;
   align-items: center;
