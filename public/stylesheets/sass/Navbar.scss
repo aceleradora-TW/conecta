@@ -26,9 +26,8 @@
 }
 
 .is-scrolling{
-	background-color: rgba(0, 0, 0, 0.7);
+	@include blackGradient($alpha: 0.7);
 }
-
 
 .NavLogo {
 	@include size($width: 50%, $height: 100%);
