@@ -4,88 +4,56 @@
 }
 
 /* line 9, ../../sass/utilities/u-size.scss */
-.u-widthMedium {
-  width: 30%;
-  margin: 5%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 9, ../../sass/utilities/u-size.scss */
-  .u-widthMedium {
-    height: 70%;
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1%;
-    font-size: 1.3em;
-    line-height: 0.8em;
-  }
-}
-@media (max-width: 499px) {
-  /* line 9, ../../sass/utilities/u-size.scss */
-  .u-widthMedium {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35%;
-    width: 15%;
-    margin: 1%;
-    line-height: 1.3em;
-    font-size: 0.7em;
-  }
-}
-
-/* line 28, ../../sass/utilities/u-size.scss */
 .u-widthMediumOnly {
   width: 30%;
 }
 
-/* line 32, ../../sass/utilities/u-size.scss */
+/* line 13, ../../sass/utilities/u-size.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 36, ../../sass/utilities/u-size.scss */
+/* line 17, ../../sass/utilities/u-size.scss */
 .u-widthSmall {
   width: 5em;
 }
 
-/* line 40, ../../sass/utilities/u-size.scss */
+/* line 21, ../../sass/utilities/u-size.scss */
 .u-widthMediumOnly {
   width: 30%;
 }
 
-/* line 44, ../../sass/utilities/u-size.scss */
+/* line 25, ../../sass/utilities/u-size.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 48, ../../sass/utilities/u-size.scss */
+/* line 29, ../../sass/utilities/u-size.scss */
 .u-widthMediumLarge {
   width: 80%;
 }
 
-/* line 52, ../../sass/utilities/u-size.scss */
+/* line 33, ../../sass/utilities/u-size.scss */
 .u-widthLarge {
   width: 90%;
 }
 
-/* line 56, ../../sass/utilities/u-size.scss */
+/* line 37, ../../sass/utilities/u-size.scss */
 .u-widthIcon {
   width: 24px;
 }
 
-/* line 60, ../../sass/utilities/u-size.scss */
+/* line 41, ../../sass/utilities/u-size.scss */
 .u-width3of4 {
   width: 75%;
 }
 
-/* line 64, ../../sass/utilities/u-size.scss */
+/* line 45, ../../sass/utilities/u-size.scss */
 .u-width1of4 {
   width: 25%;
 }
 
-/* line 68, ../../sass/utilities/u-size.scss */
+/* line 49, ../../sass/utilities/u-size.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }
