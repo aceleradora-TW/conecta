@@ -7,7 +7,6 @@
 .Navbar {
 	@include size($width: 100%, $height: 8vh);
 	@include flex($align: center, $direction: row, $justify: space-between);
-	@include blackGradient($alpha: 0.7);
 	position: fixed;
 	font-family: $font-style;
 	font-weight: lighter;
@@ -24,11 +23,12 @@
 		@include flex($justify: center,  $direction: column);
 		@include size($min-height: 100%);
 	}
-	&.is-open {
-		background-color: rgba(0,0,0,0.55);
-		height: 12vh;
-	}
 }
+
+.is-scrolling{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 .NavLogo {
 	@include size($width: 50%, $height: 100%);
@@ -151,7 +151,8 @@
 		text-align: center;
 		&:hover {
 			text-decoration: none;
-			color: $blue-color;
+			line-height: 1 !important;
+			border-bottom: 0.3vh solid;
 		}
 	}
 }
@@ -182,7 +183,7 @@
 		color: rgba(52, 73, 94, 1);
 	}
 	&:hover a {
-	 color: $white-font-color;
+		color: $white-font-color;
 	}
 }
 

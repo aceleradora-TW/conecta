@@ -6,7 +6,6 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   font-family: Lato, sans-serif;
   font-weight: lighter;
@@ -39,10 +38,10 @@
     min-height: 100%;
   }
 }
-/* line 27, ../sass/Navbar.scss */
-.Navbar.is-open {
-  background-color: rgba(0, 0, 0, 0.55);
-  height: 12vh;
+
+/* line 28, ../sass/Navbar.scss */
+.is-scrolling {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* line 33, ../sass/Navbar.scss */
@@ -245,10 +244,11 @@
 /* line 152, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
-  color: #3771c8;
+  line-height: 1 !important;
+  border-bottom: 0.3vh solid;
 }
 
-/* line 159, ../sass/Navbar.scss */
+/* line 160, ../sass/Navbar.scss */
 .Link {
   height: 60%;
   width: 24%;
@@ -260,7 +260,7 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 159, ../sass/Navbar.scss */
+  /* line 160, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -268,7 +268,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 159, ../sass/Navbar.scss */
+  /* line 160, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -276,7 +276,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 159, ../sass/Navbar.scss */
+  /* line 160, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -284,17 +284,17 @@
     font-size: 1.3em;
   }
 }
-/* line 180, ../sass/Navbar.scss */
+/* line 181, ../sass/Navbar.scss */
 .Link:hover {
   text-decoration: none;
   color: #34495e;
 }
-/* line 184, ../sass/Navbar.scss */
+/* line 185, ../sass/Navbar.scss */
 .Link:hover a {
   color: white;
 }
 
-/* line 189, ../sass/Navbar.scss */
+/* line 190, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -303,7 +303,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 189, ../sass/Navbar.scss */
+  /* line 190, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -311,7 +311,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 189, ../sass/Navbar.scss */
+  /* line 190, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;
