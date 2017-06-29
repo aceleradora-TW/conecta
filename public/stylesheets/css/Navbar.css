@@ -247,7 +247,7 @@
 /* line 156, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
-  line-height: 1 !important;
+  line-height: 1;
   border-bottom: 0.3vh solid;
 }
 
