@@ -36,34 +36,39 @@
 	margin-left: 2%;
 
 	@include tablet {
-		@include size($width: 90%, $min-height: 50%);
+		@include size($width: 100%, $min-height: 50%);
 		@include flex($justify: flex-start);
 	}
 
 	@include mobile {
-		@include size($width: 90%, $min-height: 60%);
-		@include flex($justify: space-around);
+		@include size($width: 100%, $min-height: 60%);
+		@include flex($justify: flex-start);
 	}
 
 	@include smallMobile {
-		@include size($width: 90%, $min-height: 20%);
-		@include flex($justify: space-around);
+		@include size($width: 100%, $min-height: 20%);
+		@include flex($justify: flex-start);
 	}
 }
 
 .Hamburger {
 	display: none;
 	@include tablet {
-		@include size($width: 36%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
+
 	@include mobile {
-		@include size($width: 5%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
+
 	@include smallMobile {
-		@include size($width: 5%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
 }
 
@@ -74,17 +79,17 @@
 	border-radius: 0;
 	background-size: 100%;
 	@include tablet {
-		@include size($width: 45%, $height: 72%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 
 	@include mobile {
-		@include size($width: 52%, $height: 74%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 
 	@include smallMobile {
-		@include size($width: 45%, $height: 60%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 }

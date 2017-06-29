@@ -56,7 +56,7 @@
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 33, ../sass/Navbar.scss */
   .NavLogo {
-    width: 90%;
+    width: 100%;
     min-height: 50%;
     display: flex;
     justify-content: flex-start;
@@ -65,19 +65,19 @@
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 33, ../sass/Navbar.scss */
   .NavLogo {
-    width: 90%;
+    width: 100%;
     min-height: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 499px) {
   /* line 33, ../sass/Navbar.scss */
   .NavLogo {
-    width: 90%;
+    width: 100%;
     min-height: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 
@@ -88,29 +88,32 @@
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 54, ../sass/Navbar.scss */
   .Hamburger {
-    height: 60%;
-    width: 36%;
+    height: 65%;
+    width: 26%;
     display: block;
+    margin-left: 5%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 54, ../sass/Navbar.scss */
   .Hamburger {
-    height: 60%;
-    width: 5%;
+    height: 65%;
+    width: 26%;
     display: block;
+    margin-left: 5%;
   }
 }
 @media (max-width: 499px) {
   /* line 54, ../sass/Navbar.scss */
   .Hamburger {
-    height: 60%;
-    width: 5%;
+    height: 65%;
+    width: 26%;
     display: block;
+    margin-left: 5%;
   }
 }
 
-/* line 70, ../sass/Navbar.scss */
+/* line 75, ../sass/Navbar.scss */
 .LogoImage {
   height: 60%;
   width: 30%;
@@ -120,34 +123,34 @@
   background-size: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 70, ../sass/Navbar.scss */
+  /* line 75, ../sass/Navbar.scss */
   .LogoImage {
-    height: 72%;
-    width: 45%;
+    height: 70%;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 70, ../sass/Navbar.scss */
+  /* line 75, ../sass/Navbar.scss */
   .LogoImage {
-    height: 74%;
-    width: 52%;
+    height: 70%;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
 }
 @media (max-width: 499px) {
-  /* line 70, ../sass/Navbar.scss */
+  /* line 75, ../sass/Navbar.scss */
   .LogoImage {
-    height: 60%;
-    width: 45%;
+    height: 70%;
+    width: 35%;
     display: flex;
     justify-content: center;
   }
 }
 
-/* line 92, ../sass/Navbar.scss */
+/* line 97, ../sass/Navbar.scss */
 .NavLinks {
   height: 100%;
   width: 50%;
@@ -160,7 +163,7 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 92, ../sass/Navbar.scss */
+  /* line 97, ../sass/Navbar.scss */
   .NavLinks {
     width: 90%;
     min-height: 20%;
@@ -171,7 +174,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 92, ../sass/Navbar.scss */
+  /* line 97, ../sass/Navbar.scss */
   .NavLinks {
     width: 90%;
     min-height: 20%;
@@ -182,7 +185,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 92, ../sass/Navbar.scss */
+  /* line 97, ../sass/Navbar.scss */
   .NavLinks {
     width: 100%;
     min-height: 20%;
@@ -193,7 +196,7 @@
     padding: 0;
   }
 }
-/* line 120, ../sass/Navbar.scss */
+/* line 125, ../sass/Navbar.scss */
 .NavLinks a {
   height: 100%;
   text-decoration: none;
@@ -202,53 +205,53 @@
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 120, ../sass/Navbar.scss */
+  /* line 125, ../sass/Navbar.scss */
   .NavLinks a {
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 120, ../sass/Navbar.scss */
+  /* line 125, ../sass/Navbar.scss */
   .NavLinks a {
     font-size: 0.7em;
   }
 }
-/* line 133, ../sass/Navbar.scss */
+/* line 138, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 138, ../sass/Navbar.scss */
+/* line 143, ../sass/Navbar.scss */
 .NavLinks.is-open {
   display: flex;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 92, ../sass/Navbar.scss */
+  /* line 97, ../sass/Navbar.scss */
   .NavLinks {
     padding-right: 5%;
   }
 }
 @media (max-width: 499px) {
-  /* line 92, ../sass/Navbar.scss */
+  /* line 97, ../sass/Navbar.scss */
   .NavLinks {
     padding-right: 5%;
   }
 }
-/* line 147, ../sass/Navbar.scss */
+/* line 152, ../sass/Navbar.scss */
 .NavLinks a {
   text-decoration: none;
   font-size: 1.1em;
   color: white;
   text-align: center;
 }
-/* line 152, ../sass/Navbar.scss */
+/* line 157, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
   line-height: 1 !important;
   border-bottom: 0.3vh solid;
 }
 
-/* line 160, ../sass/Navbar.scss */
+/* line 165, ../sass/Navbar.scss */
 .Link {
   height: 60%;
   width: 24%;
@@ -260,7 +263,7 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 160, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -268,7 +271,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 160, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -276,7 +279,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 160, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -284,17 +287,17 @@
     font-size: 1.3em;
   }
 }
-/* line 181, ../sass/Navbar.scss */
+/* line 186, ../sass/Navbar.scss */
 .Link:hover {
   text-decoration: none;
   color: #34495e;
 }
-/* line 185, ../sass/Navbar.scss */
+/* line 190, ../sass/Navbar.scss */
 .Link:hover a {
   color: white;
 }
 
-/* line 190, ../sass/Navbar.scss */
+/* line 195, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -303,7 +306,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 190, ../sass/Navbar.scss */
+  /* line 195, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -311,7 +314,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 190, ../sass/Navbar.scss */
+  /* line 195, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;
