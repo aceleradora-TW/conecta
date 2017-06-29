@@ -76,6 +76,12 @@
   span {
     font-size: 1.3em;
   }
+  select {
+    font-size: 1.3em;
+  }
+  option {
+    font-size: 1.3em;
+  }
   @include tablet {
     input {
       font-size: 0.8em;
