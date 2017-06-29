@@ -168,22 +168,23 @@
 .Subitems {
   width: 100%;
   display: none;
+  color: white;
   flex-direction: column;
   list-style: none;
+  background-color: transparent;
   line-height: 2em;
   font-size: 0.7em;
   text-align: center;
-  background-color: white;
   padding: 0;
   justify-content: space-around;
 }
-/* line 116, ../sass/List.scss */
+/* line 117, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 120, ../sass/List.scss */
+/* line 121, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }

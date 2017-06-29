@@ -105,12 +105,13 @@
 .Subitems {
   @include size($width: 100%);
   display: none;
+  color: $white-font-color;
   flex-direction: column;
   list-style: none;
+  background-color: rgba(0, 0, 0, 0);
   line-height: 2em;
   font-size: $small-font-size;
   text-align:center;
-  background-color: $white-color;
   padding: 0;
   justify-content: space-around;
   li {

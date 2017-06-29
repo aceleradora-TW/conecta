@@ -66,12 +66,14 @@
   width: 95%;
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
+  background-color: transparent;
+  color: white;
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-/* line 51, ../sass/Card.scss */
+/* line 53, ../sass/Card.scss */
 .CardNav {
   display: flex;
   flex-direction: row;
@@ -81,7 +83,7 @@
   font-family: Lato, sans-serif;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 51, ../sass/Card.scss */
+  /* line 53, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -91,7 +93,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 51, ../sass/Card.scss */
+  /* line 53, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -100,7 +102,7 @@
     justify-content: center;
   }
 }
-/* line 63, ../sass/Card.scss */
+/* line 65, ../sass/Card.scss */
 .CardNav.is-center {
   display: flex;
   align-items: center;
@@ -110,13 +112,13 @@
   text-align: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 63, ../sass/Card.scss */
+  /* line 65, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }
 }
 @media (max-width: 499px) {
-  /* line 63, ../sass/Card.scss */
+  /* line 65, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }
