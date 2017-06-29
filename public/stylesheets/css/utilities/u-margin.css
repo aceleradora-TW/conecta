@@ -19,16 +19,39 @@
 }
 
 /* line 21, ../../sass/utilities/u-margin.scss */
+.u-marginTopXLarge {
+  margin-top: 6%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 21, ../../sass/utilities/u-margin.scss */
+  .u-marginTopXLarge {
+    margin-top: 15%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 21, ../../sass/utilities/u-margin.scss */
+  .u-marginTopXLarge {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 21, ../../sass/utilities/u-margin.scss */
+  .u-marginTopXLarge {
+    margin-top: 15%;
+  }
+}
+
+/* line 34, ../../sass/utilities/u-margin.scss */
 .u-marginBottom {
   margin-bottom: 1%;
 }
 
-/* line 25, ../../sass/utilities/u-margin.scss */
+/* line 38, ../../sass/utilities/u-margin.scss */
 .u-marginBottomMedium {
   margin-bottom: 5%;
 }
 
-/* line 29, ../../sass/utilities/u-margin.scss */
+/* line 42, ../../sass/utilities/u-margin.scss */
 .u-marginSidesAndBottom {
   margin: 0 2%;
   margin-bottom: 2%;
