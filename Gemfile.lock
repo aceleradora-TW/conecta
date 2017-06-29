@@ -222,6 +222,3 @@ DEPENDENCIES
   simplecov
   sinatra
   tux
-
-BUNDLED WITH
-   1.15.0

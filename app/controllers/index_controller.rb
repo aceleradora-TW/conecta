@@ -43,6 +43,7 @@ class IndexController < Controller
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
       @institution = @router_service.return_found_values value_sql, @search_type
+
       erb :search_all
     end
   end

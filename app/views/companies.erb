@@ -11,12 +11,12 @@
       </div>
     </div>
   <% if @search_type == 'segmento' %>
-    <div class="CompanyCompetences">
-      <ul class="CompetenceList">
+    <div class="List is-vertical">
+      <ul>
         <% company.segments.each do |segment| %>
           <% if segment.name.downcase.include? @value %>
         <li class="Items">
-          <div class="ItemTextSegment">
+          <div class="ItemsText is-segment">
             <%= segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
           </div>
         </li>
@@ -28,18 +28,17 @@
       </div>
     </div>
   <% else %>
-
-    <div class="CompanyCompetences">
-      <ul class="CompetenceList">
+    <div class="List is-vertical">
+      <ul>
         <%
         has_check = false
         has_stars = false
         company.featured_competences.each_with_index do |company_competence,index|
           rating = company_competence.competence_value_calculated_integer
         %>
-        <li class="ItemsFeatured ">
-          <div class="ItemText"><%= company_competence.competence.name %></div>
-          <div class="ItemStar">
+        <li class="Items is-featured ">
+          <div class="ItemsText"><%= company_competence.competence.name %></div>
+          <div class="ItemsText is-icon">
             <% if rating > 0 %>
               <% has_stars = true %>
               <% for n_of_stars in (1..5) %>
@@ -64,7 +63,6 @@
       </div>
       <% end %>
     </div>
-
   <% end %>
   <div class="FooterCardSecondary">
     <% if company.contact %>
@@ -79,29 +77,29 @@
       <div class="FooterCardSecondaryItem"><b>Site</b>: <a href="http://conectatw.herokuapp.com">http://conectatw.herokuapp.com</a></div>
     <% end %>
   </div>
-  <div class="FooterCardPrimay">
-    <div class="BoxButtonCard">
-      <div class="Button u-center u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
-      <div class="Button u-center u-widthMedium ButtonSeeMore">ver mais</div>
-    </div>
+  <div class="FooterCardPrimary">
+
+      <div class="Button u-center u-widthMediumOnly ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
+      <div class="Button u-center u-widthMediumOnly ButtonSeeMore">ver mais</div>
+
   </div>
-  <div class="CardSecondary">
-    <div class="CompanyDescription">
+  <div class="Card is-secondary">
+    <div>
       Mayra ipsum dolor sit amet, consectetur adipisicing elit.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
       ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
       fugiat nulla pariatur.
     </div>
-    <div class="CompanyCompetences">
+    <div class="List is-vertical">
       <div class="CompetencesTitle">Demais competências</div>
         <% @company_competences = company.grouped_competences %>
         <% if @company_competences != nil %>
-          <ul class="CompetenceList">
+          <ul >
             <% @company_competences.each_key do |competence_area| %>
               <li class="Items ItemsArea">
-                <div class="ItemText"><%= competence_area %></div>
-                <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+                <div class="ItemsText"><%= competence_area %></div>
+                <div class="ItemsText is-icon"><i class="material-icons">keyboard_arrow_down</i></div>
               </li>
               <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
                 <% @company_competences[competence_area].each do |competence| %>

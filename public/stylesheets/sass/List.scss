@@ -1,0 +1,126 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "MediaQuery.scss";
+
+.List {
+  @include size($width: 100%);
+  @include flex($direction: row, $justify: center);
+
+  &.is-register{
+    @include flex($align:center);
+    border-radius: 1%;
+  }
+
+  &.is-item {
+    @include size($width: 50%);
+    @include flex($align:center, $direction: column, $justify: space-around);
+  }
+
+  &.is-horizontal {
+    @include flex($direction: row, $justify: flex-start, $wrap: wrap);
+    padding: 2%;
+    background-color: $white-color;
+  }
+
+  &.is-vertical {
+    @include flex($direction: column);
+    @include size($height: 60%, $width: 100%);
+    font-size: $small-font-size;
+    margin-top: 3%;
+    @include desktop {
+      font-size: $medium-font-size;
+    }
+    @include tablet {
+      @include size($width: 90%);
+      font-size: $medium-font-size;
+    }
+  }
+}
+
+.Items {
+  @include flex($align: center, $justify: space-around, $self: center);
+  @include size($width: 100%);
+  line-height: 2em;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0,0,0,.05);
+    transition: .5s;
+  }
+  @include smallMobile {
+    font-size: $medium-font-size;
+  }
+
+  &.is-featured {
+    @include size($width: 95%);
+    @include mobile{
+      @include flex($align: center, $direction: column, $justify: center);
+      box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+    }
+    @include smallMobile {
+      @include flex($align: center, $direction: column, $justify: center);
+      @include size($width: 100%);
+      box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
+      line-height: 5em;
+    }
+  }
+
+  &Text {
+    @include flex($align: flex-start, $direction: row, $justify: space-between, $wrap: wrap);
+    @include size($height: 100%, $width: 70%);
+
+    @include tablet {
+      @include size($width: 68%);
+    }
+    @include mobile {
+      @include size($width: 100%);
+      @include flex($justify: center, $align: center);
+      font-size: $small-font-size;
+    }
+    @include smallMobile {
+      @include size($width: 100%);
+      @include flex($justify: center, $align: center);
+      font-size: $large-font-size;
+    }
+
+    &.is-segment {
+      @include flex($justify: center);
+    }
+
+    &.is-icon {
+      @include flex($justify: flex-end);
+      @include size($width: 32%);
+      @include mobile{
+        @include flex($justify: center,$align: center);
+      }
+      @include smallMobile {
+        @include size($width: 100%);
+        @include flex($align: center, $justify: center);
+        font-size: $small-font-size;
+      }
+    }
+  }
+}
+
+.Subitems {
+  @include size($width: 100%);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2em;
+  font-size: $small-font-size;
+  text-align:center;
+  background-color: $white-color;
+  padding: 0;
+  justify-content: space-around;
+  li {
+    @include flex($justify: flex-start);
+    margin-left: 8.5%;
+  }
+  &.Open {
+    @include flex()
+  }
+  @include smallMobile {
+    font-size: $medium-font-size;
+  }
+}

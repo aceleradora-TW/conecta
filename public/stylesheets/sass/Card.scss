@@ -6,557 +6,68 @@
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45%);
   background: $white-color;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 3vh;
-  font-family: $font-style;
-  font-weight: lighter;
-  @include tablet {
-    @include size($width: 95%, $min-height: 55%);
-    font-size: $large-font-size;
-  };
-  @include mobile {
-    @include size($width: 95%, $min-height: 55%);
-    font-size: $large-font-size;
-  };
-  @include smallMobile {
-    @include size($width: 95%, $min-height: 55%);
-    font-size: $large-font-size;
-  };
-}
-
-.CardLogin {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $height: 50vh);
-  background: rgba(255, 255, 255, 0.72);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
+  border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
-  @include tablet{
-    @include size($width: 80%);
-  }
-  @include mobile{
-    @include size($width: 80%);
-  }
-  @include smallMobile{
-    @include size($width: 90%,$height: 300px);
-  }
-}
-
-.CardList, .InstitutionList {
-  @include flex($align: center, $direction: column, $justify: flex-end);
-  @include size($width: 30%);
-  background: rgba(255, 255, 255, 1);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 2%;
-  font-family: $font-style;
-  font-weight: lighter;
-  @include tablet{
-    @include size($width: 40%);
-    padding: 2%;
-  }
-  @include mobile{
-    @include size($width: 90%);
-    padding: 2%;
-  }
-  @include smallMobile{
-    @include size($width: 90%);
-    padding: 2%;
-  }
-}
-
-
-.ContentCardList{
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($width: 90%);
-  flex-wrap: wrap;
-  align-content: center;
-  text-align: center;
-  @include mobile{
-    flex-direction: column;
-  }
-  @include smallMobile{
-    flex-direction: column;
-  }
-}
-
-.LogoCard{
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-}
-
-.CardNav {
-  @include flex($direction: row, $justify: flex-start);
-  @include size($width: 100%, $min-height: 20%);
-  @include mobile{
-    @include size($width: 100%);
-    @include flex($align: center, $direction: column, $justify: center);
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    @include flex($align: center, $direction: column, $justify: center);
-  }
-}
-
-.CardResearchNav {
-  @include flex($align: center, $direction: row, $justify: center);
-  @include size($width: 100%, $min-height: 20%);
-  font-family: $font-style;
-  flex-wrap: wrap;
-  text-align: center;
-  @include mobile{
-    @include size($width: 90%);
-    font-size: $small-font-size;
-    text-align: center;
-  }
-  @include smallMobile{
-    @include size($width: 90%);
-    font-size: $small-font-size;
-    text-align: center;
-  }
-}
-
-.CardLogo {
-  @include flex($align: center, $justify: center);
-  @include size($width: 30%);
-}
-
-.CardTitle {
-  @include flex($justify: center);
-  @include size($height: 100%, $width: 40%);
-  font-size: $medium-font-size;
-}
-
-.LogoInstitutions{
-  @include size($width: 50%);
-}
-
-.LogoSmall {
-  @include flex($align: center, $justify: center);
-  margin: 10px;
-  @include tablet{
-    height: 100px;
-  }
-}
-
-.CardCenter {
-  @include flex($align: center, $direction: column, $justify: center);
-  @include size($width: 48%, $min-height: 66vh);
-  background: $white-color;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 3%;
-  font-family: $font-style;
-  font-weight: lighter;
-}
-
-.Subitems {
-  @include size($width: 100%);
-  display: none;
-  flex-direction: column;
-  list-style: none;
-  line-height: 2em;
-  font-size: $small-font-size;
-  text-align:center;
-  background-color: $white-color;
-  padding: 0;
-  justify-content: space-around;
-  li {
-    @include flex($justify: flex-start);
-    margin-left: 8.5%;
-  }
-  &.Open{
-    @include flex()
-  }
-}
-
-.SubitemsRegister {
-  @include size($width: 100%);
-  display: none;
-  flex-direction: column;
-  list-style: none;
-  line-height: 2em;
-  text-align:center;
-  padding: 0;
-  justify-content: space-around;
-  li {
-    @include flex($justify: flex-start);
-    margin-left: 8.5%;
-  }
-  &.Open{
-    @include flex()
-  }
-}
-
-.Items{
-  @include flex($align: center, $justify: space-around);
-  @include size($width: 100%);
-  line-height: 2em;
-  cursor: pointer;
-  align-self: center;
-  &:hover {
-    background: rgba(0,0,0,.05);
-    transition: .5s;
-  }
-  @include tablet{
-    @include size($width: 100%);
-  }
-  @include mobile{
-    @include size($width: 100%);
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-  }
-}
-
-.ItemsFeatured {
-  @include flex($align: center, $justify: space-around);
-  @include size($width: 100%);
-  line-height: 2em;
-  align-self: center;
-  @include mobile{
-    @include flex($align: center, $direction: column, $justify: center);
-    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
-  }
-  @include smallMobile{
-    @include flex($align: center, $direction: column, $justify: center);
-    box-shadow: 2px 2px 1px 1px rgba(234, 230, 230, 0.3);
-  }
-}
-
-.Items:hover {
-  background: rgba(0,0,0,.05);
-  transition: .5s;
-}
-
-.CompetenceList {
-  @include flex($align: flex-start, $direction: column, $justify: space-around);
-  @include size($height: 95%, $width: 100%);
-  text-align: left;
-  padding: 0;
-}
-
-.CompetencesTitle {
-  @include flex($align:flex-end, $justify:center);
-  @include size($height: 5%, $width: 100%);
-  margin-top: 5%;
-  font-weight: bold;
-  font-size: $medium-font-size;
-}
-
-.ItemText{
-  @include flex($align: flex-start, $direction: row, $justify: space-between);
-  @include size($height: 100%, $width: 42.5%);
-  text-align: right;
-  flex-wrap: wrap;
-  @include tablet{
-    @include size($width: 68%);
-    text-align: left;
-  }
-  @include mobile{
-    @include size($width: 100%);
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: $small-font-size;
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: $small-font-size;
-  }
-}
-
-.ItemTextSegment{
-  @include flex($justify: center);
-  @include size($height: 100%, $width: 70%);
-}
-.ItemStar{
-  @include flex($justify: flex-end);
-  @include size($height: 100%);
-  @include tablet{
-    @include size($width: 32%);
-  }
-  @include mobile{
-    @include size($height: 100%);
-    @include flex($justify: center,$align: center);
-  }
-  @include smallMobile{
-    @include size($height: 100%);
-    @include flex($align: center, $justify: center);
-  }
-}
-
-.ContactTitle{
-  @include flex($align: flex-end, $justify: center);
-  @include size($height: 5%, $width: 100%);
-}
-
-.CompanyName {
-  @include size($height: 10%, $width: 100%);
-  text-align: center;
-}
-
-.CenterName{
-  @include size($height: 10%, $width: 100%);
-  text-align: center;
-  margin-bottom: 3%;
-}
-
-.CompanyDescription{
-  @include flex();
-  @include size($height: 30%, $width: 100%);
-  text-align: center;
-  font-size: $small-font-size;
-  line-height: 1.8em;
-  @include tablet{
-    @include size($width: 90%);
+  @include tablet {
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
   }
   @include mobile {
-    @include size($width: 90%);
-    font-size: $small-font-size;
+    @include size($width: 95%, $min-height: 55%);
+    font-size: $large-font-size;
   }
   @include smallMobile {
-    @include size($width: 90%);
+    @include size($width: 95%, $min-height: 55%);
     font-size: $small-font-size;
   }
-}
 
-.CenterTheme{
-  @include flex($direction: row);
-  @include size($height: 20%, $width: 100%);
-}
+  &.is-login {
+    @include size($height: 60vh);
+    background: rgba(255, 255, 255, 0.72);
+    @include tablet {
+      @include size($width: 80%);
+    }
+    @include mobile {
+      @include size($width: 80%);
+    }
+    @include smallMobile {
+      @include size($width: 90%,$height: 57vh);
+    }
+  }
 
-.ItemTheme{
-  @include size($height: 100%, $width: 50%);
-  margin: 2%;
-  word-wrap: break-word;
-}
-
-.FooterCardPrimay {
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($min-height: 60px, $width: 100%);
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  @include tablet{
-    flex-direction: column;
-  }
-  @include mobile{
-    flex-direction: row;
-  }
-  @include smallMobile{
-    flex-direction: column;
-  }
-}
-
-
-.RatingExplanation {
-  @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 100%);
-  @include tablet{
-    @include size($height: 30%, $width: 97%);
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1em;
-  }
-  @include mobile{
-    @include size($height: 30%, $width: 100%);
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-  }
-  @include smallMobile{
-    @include size($height: 30%, $width: 90%);
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-  }
-}
-
-.BoxButtonCard {
-  @include flex($align: center, $justify: flex-end);
-  @include size($height: 50%, $width: 60%);
-}
-
-.BoxButtonMessage {
-  @include flex($align: center, $justify: flex-end);
-  @include size($height: 50%, $width: 60%);
-  @include tablet{
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-  }
-  @include mobile{
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-  }
-  @include smallMobile{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 70%;
-  }
-}
-
-.BoxButtonMessage {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
-  @include tablet {
-    @include size($height: 100px, $width: 100%);
-    @include flex($align: center, $direction: row, $justify: space-around);
-  }
-  @include mobile{
-    @include size($height: 100%, $width: 80%);
-    @include flex($align: center, $direction: row, $justify: center);
-  }
-  @include smallMobile{
-    @include size($height: 70%, $width: 100%);
-    @include flex($align: center, $direction: column, $justify: center);
-  }
-}
-
-.BoxButtonMessage {
-  @include flex($align: center, $justify: center);
-  @include size($height: 50%, $width: 40%);
-}
-
-.CompanyCompetences{
-  @include flex($direction: column);
-  @include size($height: 60%, $width: 100%);
-  margin-top: 3%;
-  @include tablet {
-    @include size($width: 90%);
-    font-size: $medium-font-size;
-  }
-  @include mobile {
-    font-size: $small-font-size;
-  }
-  @include smallMobile {
-    font-size: $small-font-size;
-  }
-}
-
-.ResearchCompetences{
-  @include flex($direction: row);
-  @include size($height: 60%, $width: 100%);
-  margin-top: 3%;
-  text-align: center;
-  @include mobile{
-    font-size: 0.7em;
+  &.is-secondary {
+    @include size($width: 95%);
+    border-top: 1px solid rgba(193, 193, 193, 0.45);
+    padding: 1%;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  @include smallMobile{
-    font-size: 0.7em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
 
-.CardSecondary{
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  padding: 1%;
-  display: none;
-  @include tablet{
-    @include flex($align: center, $direction: column, $justify: center);
+  &Nav {
+    @include flex($direction: row, $justify: flex-start);
+    @include size($width: 100%, $min-height: 20%);
+    font-family: $font-style;
+    @include mobile{
+      @include size($width: 100%);
+      @include flex($align: center, $direction: column, $justify: center);
+    }
+    @include smallMobile{
+      @include size($width: 100%);
+      @include flex($align: center, $direction: column, $justify: center);
+    }
+    &.is-center {
+      @include flex($align: center, $direction: row, $justify: center, $wrap: wrap);
+      text-align: center;
+      @include mobile{
+        @include size($width: 90%);
+      }
+      @include smallMobile{
+        @include size($width: 90%);
+      }
+    }
   }
-  @include mobile{
-    @include flex($align: center, $direction: column, $justify: center);
-  }
-  @include smallMobile{
-    @include flex($align: center, $direction: column, $justify: center);
-  }
-}
-
-.FooterCardSecondary{
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($min-height: 60px, $width: 100%);
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  flex-wrap: wrap;
-  padding-top: 3%;
-  margin-bottom: 3%;
-  @include tablet {
-    @include size($min-height: 146px);
-    flex-direction: column;
-  }
-  @include mobile{
-    @include size($min-height: 140px);
-    flex-direction: column;
-  }
-  @include smallMobile{
-    @include size($min-height: 140px);
-    flex-direction: column;
-  }
-}
-.FooterCardSecondaryItem {
-  @include size($width: 42.5%);
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    font-size: 13px;
-  }
-  @include smallMobile{
-    font-size: 13px;
-    flex-wrap: wrap;
-  }
-}
-
-.InstitutionList {
-  @include flex($direction: row, $justify: flex-start);
-  flex-wrap: wrap;
-  padding: 2%;
-}
-
-.InstitutionListHeader {
-  @include size($width: 100%);
-  @include flex($direction: row, $justify: center);
-}
-
-.RegisterListHeader {
-  @include size($width: 94%);
-  @include flex($align:center, $direction: row);
-  border-radius: 5px;
-}
-
-.RegisterListItem {
-  @include size($width: 50%);
-  @include flex($align:center, $direction: column, $justify: space-around);
-}
-
-.InstitutionList .Title {
-  background: red;
-  @include size($width: 20%, $height: 5vh);
-}
-
-.InstitutionList .LeftItem {
-  @include size($width: 75%);
-  text-align: left;
-}
-
-.InstitutionList .RightItem {
-  @include size($width: 25%);
-  text-align: center;
 }
