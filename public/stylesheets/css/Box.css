@@ -1,404 +1,55 @@
-/* line 5, ../sass/Box.scss */
-.ContentAbout {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 75%;
-  width: 90%;
-}
+/*
+Error: Invalid CSS after "    @": expected identifier, was "width: 30%;"
+        on line 200 of /code/public/stylesheets/sass/Box.scss
 
-/* line 10, ../sass/Box.scss */
-.TextExplanation {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 70%;
-  width: 100%;
-  font-family: Lato, sans-serif;
-  color: white;
-  text-shadow: 1px 1px black;
-  line-height: 2em;
-  font-size: 1.3em;
-  font-weight: lighter;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 10, ../sass/Box.scss */
-  .TextExplanation {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 10, ../sass/Box.scss */
-  .TextExplanation {
-    font-size: 1.3em;
-  }
-}
-@media (max-width: 499px) {
-  /* line 10, ../sass/Box.scss */
-  .TextExplanation {
-    font-size: 1.2em;
-  }
-}
+195: }
+196: 
+197: .BoxThreeColumns {
+198:   @include flex($align: center, $direction: row, $justify: space-between, $wrap: wrap, $content: center);
+199:   p{
+200:     @
+201:     width: 30%;
+202:   }
+203: }
+204: 
+205: .ContentCollaborators{
 
-/* line 31, ../sass/Box.scss */
-.LogosCredibility {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 30%;
-  width: 99%;
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 31, ../sass/Box.scss */
-  .LogosCredibility {
-    display: flex;
-    align-items: inherit;
-  }
-}
-
-/* line 39, ../sass/Box.scss */
-.BoxText {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 50%;
-  width: 100%;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-  font-size: 1em;
-  text-align: center;
-  color: white;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 39, ../sass/Box.scss */
-  .BoxText {
-    font-size: 0.75em;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 39, ../sass/Box.scss */
-  .BoxText {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.7em;
-    margin: 1vh 0;
-  }
-}
-@media (max-width: 499px) {
-  /* line 39, ../sass/Box.scss */
-  .BoxText {
-    width: 90%;
-    font-size: 0.7em;
-  }
-}
-
-/* line 61, ../sass/Box.scss */
-.BoxSearch {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 60%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* line 67, ../sass/Box.scss */
-.BoxHowItWorks {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 30%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 67, ../sass/Box.scss */
-  .BoxHowItWorks {
-    height: 80%;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 67, ../sass/Box.scss */
-  .BoxHowItWorks {
-    height: 60%;
-    width: 80%;
-  }
-}
-@media (max-width: 499px) {
-  /* line 67, ../sass/Box.scss */
-  .BoxHowItWorks {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-  }
-}
-
-/* line 82, ../sass/Box.scss */
-.BowFlowHowItWorks {
-  display: flex;
-  flex-direction: column;
-  height: 35vh;
-  width: 98%;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-}
-@media (max-width: 499px) {
-  /* line 82, ../sass/Box.scss */
-  .BowFlowHowItWorks {
-    height: 70%;
-  }
-}
-
-/* line 92, ../sass/Box.scss */
-.Container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  height: 75%;
-  width: 98%;
-}
-@media (max-width: 499px) {
-  /* line 92, ../sass/Box.scss */
-  .Container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-  }
-}
-/* line 100, ../sass/Box.scss */
-.Container.is-list {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 90%;
-  text-align: center;
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 100, ../sass/Box.scss */
-  .Container.is-list {
-    flex-direction: column;
-  }
-}
-@media (max-width: 499px) {
-  /* line 100, ../sass/Box.scss */
-  .Container.is-list {
-    flex-direction: column;
-  }
-}
-
-/* line 113, ../sass/Box.scss */
-.ContentSearch {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 98%;
-  min-height: 25vh;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-  text-align: justify;
-  padding: 0%;
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 113, ../sass/Box.scss */
-  .ContentSearch {
-    min-height: 20vh;
-  }
-}
-@media (max-width: 499px) {
-  /* line 113, ../sass/Box.scss */
-  .ContentSearch {
-    min-height: 18vh;
-  }
-}
-
-/* line 128, ../sass/Box.scss */
-.BoxTextTitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 85%;
-}
-
-/* line 133, ../sass/Box.scss */
-.BoxFilterBy {
-  width: 30%;
-  z-index: 2;
-}
-
-/* line 138, ../sass/Box.scss */
-.BoxClear {
-  width: 50%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-/* line 143, ../sass/Box.scss */
-.BoxTextArea {
-  width: 100%;
-}
-
-/* line 147, ../sass/Box.scss */
-.BoxRegisterBody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 75%;
-  width: 80%;
-}
-
-/* line 152, ../sass/Box.scss */
-.BoxSteps {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/* line 156, ../sass/Box.scss */
-.BoxRegister {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 60%;
-  min-height: 65vh;
-  background: rgba(255, 255, 255, 0.72);
-  border-radius: 1.4%;
-  box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
-  margin-bottom: 2%;
-  font-family: Lato, sans-serif;
-  font-weight: lighter;
-}
-/* line 165, ../sass/Box.scss */
-.BoxRegisterLarger {
-  min-height: 100vh;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 156, ../sass/Box.scss */
-  .BoxRegister {
-    width: 80%;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 156, ../sass/Box.scss */
-  .BoxRegister {
-    width: 80%;
-  }
-}
-@media (max-width: 499px) {
-  /* line 156, ../sass/Box.scss */
-  .BoxRegister {
-    height: 52vh;
-    width: 90%;
-  }
-}
-
-/* line 180, ../sass/Box.scss */
-.BoxButtonMessage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  width: 40%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 180, ../sass/Box.scss */
-  .BoxButtonMessage {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 180, ../sass/Box.scss */
-  .BoxButtonMessage {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 499px) {
-  /* line 180, ../sass/Box.scss */
-  .BoxButtonMessage {
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* line 197, ../sass/Box.scss */
-.BoxSegments {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: center;
-}
-/* line 199, ../sass/Box.scss */
-.BoxSegments p {
-  width: 30%;
-}
-
-/* line 204, ../sass/Box.scss */
-.ContentCollaborators {
-  width: 70%;
-  display: flex;
-}
-
-/* line 209, ../sass/Box.scss */
-.RatingExplanation {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  width: 70%;
-}
-@media (min-width: 768px) and (max-width: 1190px) {
-  /* line 209, ../sass/Box.scss */
-  .RatingExplanation {
-    height: 30%;
-    width: 97%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7em;
-  }
-}
-@media (min-width: 500px) and (max-width: 767px) {
-  /* line 209, ../sass/Box.scss */
-  .RatingExplanation {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3em;
-  }
-}
-@media (max-width: 499px) {
-  /* line 209, ../sass/Box.scss */
-  .RatingExplanation {
-    height: 30%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3em;
-  }
-}
+Backtrace:
+/code/public/stylesheets/sass/Box.scss:200
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:194:in `directive'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/bundle/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    @\": expected identifier, was \"width: 30%;\"\A         on line 200 of /code/public/stylesheets/sass/Box.scss\A \A 195: }\A 196: \A 197: .BoxThreeColumns {\A 198:   @include flex($align: center, $direction: row, $justify: space-between, $wrap: wrap, $content: center);\A 199:   p{\A 200:     @\A 201:     width: 30%;\A 202:   }\A 203: }\A 204: \A 205: .ContentCollaborators{"; }

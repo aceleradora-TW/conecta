@@ -194,9 +194,10 @@
   }
 }
 
-.BoxSegments {
+.BoxThreeColumns {
   @include flex($align: center, $direction: row, $justify: space-between, $wrap: wrap, $content: center);
   p{
+    @
     width: 30%;
   }
 }
