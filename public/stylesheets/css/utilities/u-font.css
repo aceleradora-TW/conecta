@@ -65,21 +65,16 @@
 }
 
 /* line 47, ../../sass/utilities/u-font.scss */
-.u-fontSizeXLarge {
-  font-size: 5em;
-}
-
-/* line 51, ../../sass/utilities/u-font.scss */
 .u-fontFamilyLato {
   font-family: Lato, sans-serif;
 }
 
-/* line 55, ../../sass/utilities/u-font.scss */
+/* line 51, ../../sass/utilities/u-font.scss */
 .u-fontWhite {
   color: white;
 }
 
-/* line 59, ../../sass/utilities/u-font.scss */
+/* line 55, ../../sass/utilities/u-font.scss */
 .u-fontBold {
   font-weight: bold;
 }
