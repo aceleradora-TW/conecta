@@ -5,10 +5,20 @@ require_relative "../services/search_service"
 require_relative "../services/router_service"
 
 class IndexController < Controller
-
   def initialize
     super
     @router_service = RouterService.new
+  end
+
+  set :environment, Sprockets::Environment.new
+  environment.append_path "public/stylesheets"
+  environment.append_path "public/js"
+  environment.append_path "public/images"
+  environment.css_compressor = :scss
+
+  get "/public/*" do
+    env["PATH_INFO"].sub!("/public", "")
+    settings.environment.call(env)
   end
 
   get "/" do
