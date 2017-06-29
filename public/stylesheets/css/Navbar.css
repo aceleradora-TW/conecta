@@ -285,16 +285,15 @@
 }
 /* line 179, ../sass/Navbar.scss */
 .Link:hover {
-  background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: #34495e;
 }
-/* line 184, ../sass/Navbar.scss */
+/* line 183, ../sass/Navbar.scss */
 .Link:hover a {
   color: white;
 }
 
-/* line 189, ../sass/Navbar.scss */
+/* line 188, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -303,7 +302,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 189, ../sass/Navbar.scss */
+  /* line 188, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -311,7 +310,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 189, ../sass/Navbar.scss */
+  /* line 188, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;
