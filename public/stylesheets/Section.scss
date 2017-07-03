@@ -6,19 +6,19 @@
 .Section {
   @include size($width: 100%, $min-height: 94vh);
   @include flex($direction: column);
-  background-image: url("/images/background-main-desktop.jpg");
+  background-image: url("/public/background-main-desktop.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   @include tablet {
-    background-image: url("/images/background-main-tablet.jpg");
+    background-image: url("/public/background-main-tablet.jpg");
   }
   @include mobile {
-    background-image: url("/images/background-main-mobile.jpg");
+    background-image: url("/public/background-main-mobile.jpg");
   }
   @include smallMobile {
-    background-image: url("/images/background-main-smallMobile.jpg");
+    background-image: url("/public/background-main-smallMobile.jpg");
   }
 }
 
