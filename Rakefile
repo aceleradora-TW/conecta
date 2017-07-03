@@ -5,6 +5,9 @@ require_relative 'config/seed.rb'
 
 task :s do
   desc 'Start Development Server Locally'
+  fork do
+    exec "compass watch"
+  end
   exec "rerun --background 'rackup config.ru --port 9393 --host 0.0.0.0'"
 end
 

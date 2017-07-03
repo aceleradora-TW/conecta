@@ -4,7 +4,7 @@ function login(){
   $("#LoginMessage").removeClass("u-colorGreen");
   $("#LoginButton").attr("disabled","disabled");
 
-  $("#LoginMessage").html("<img class='Spinner' src='/public/spinner.gif'>");
+  $("#LoginMessage").html("<img class='Spinner' src='images/spinner.gif'>");
   var url = "/session";
   $.ajax({
     type: "POST",

@@ -1,0 +1,15 @@
+/* line 5, ../sass/Form.scss */
+.FormSearch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  align-content: space-between;
+}
+@media (max-width: 499px) {
+  /* line 5, ../sass/Form.scss */
+  .FormSearch {
+    width: 100%;
+  }
+}

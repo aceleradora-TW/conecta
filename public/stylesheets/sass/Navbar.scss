@@ -73,7 +73,7 @@
 
 .LogoImage {
 	@include size($width: 30%,$height: 60%);
-	background-image: url("/public/logo.png");
+	background-image: url("/images/logo.png");
 	background-repeat: no-repeat;
 	border-radius: 0;
 	background-size: 100%;
