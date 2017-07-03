@@ -42,7 +42,7 @@ function sendMail(){
   var email = $("#email").val();
 
   if (isValidEmail(email)) {
-    $("#SendEmailMessage").html("<img class='Spinner' src='/public/spinner.gif'>");
+    $("#SendEmailMessage").html("<img class='Spinner' src='images/spinner.gif'>");
     var url = "/request_contact";
     $.ajax({
       type: "POST",

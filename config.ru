@@ -4,4 +4,5 @@ require ::File.expand_path('../config/mailer',  __FILE__)
 
 set :app_file, __FILE__
 
+use Rack::Static, :urls => ["/images", "/js", "/stylesheets/css"], :root => "public"
 run IndexController

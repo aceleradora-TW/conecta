@@ -1,0 +1,171 @@
+/* line 6, ../sass/Section.scss */
+.Section {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/background-main-desktop.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 6, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-tablet.jpg");
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 6, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-mobile.jpg");
+  }
+}
+@media (max-width: 499px) {
+  /* line 6, ../sass/Section.scss */
+  .Section {
+    background-image: url("/images/background-main-smallMobile.jpg");
+  }
+}
+
+/* line 25, ../sass/Section.scss */
+.SectionOpacity {
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 94vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+/* line 32, ../sass/Section.scss */
+.SectionBlack {
+  background-color: rgba(0, 0, 0, 0.47);
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* line 37, ../sass/Section.scss */
+.HowItWorks {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+
+/* line 44, ../sass/Section.scss */
+.Collaborators {
+  width: 100%;
+  min-height: 97vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 499px) {
+  /* line 44, ../sass/Section.scss */
+  .Collaborators {
+    min-height: 65vh;
+  }
+}
+
+/* line 54, ../sass/Section.scss */
+.About {
+  width: 100%;
+  min-height: 97vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+  background-color: rgba(48, 89, 119, 0.93);
+  color: white;
+}
+@media (max-width: 499px) {
+  /* line 54, ../sass/Section.scss */
+  .About {
+    min-height: 65vh;
+  }
+}
+
+/* line 68, ../sass/Section.scss */
+.SectionCards {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 68, ../sass/Section.scss */
+  .SectionCards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 68, ../sass/Section.scss */
+  .SectionCards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 68, ../sass/Section.scss */
+  .SectionCards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* line 84, ../sass/Section.scss */
+.SectionSearch {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+/* line 90, ../sass/Section.scss */
+.SectionList {
+  width: 100%;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+/* line 96, ../sass/Section.scss */
+.LogosList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,144 @@
+/* line 6, ../sass/Logos.scss */
+.Logo-wide {
+  height: 50%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("/images/tecnopuc4.png");
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 6, ../sass/Logos.scss */
+  .Logo-wide {
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 6, ../sass/Logos.scss */
+  .Logo-wide {
+    height: 50%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+}
+@media (max-width: 499px) {
+  /* line 6, ../sass/Logos.scss */
+  .Logo-wide {
+    width: 20%;
+  }
+}
+/* line 23, ../sass/Logos.scss */
+.Logo-tall {
+  height: 95%;
+  width: 3%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 5% 0% 2%;
+  background-image: url("/images/puc4.png");
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 23, ../sass/Logos.scss */
+  .Logo-tall {
+    height: 95%;
+    width: 3%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 23, ../sass/Logos.scss */
+  .Logo-tall {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 23, ../sass/Logos.scss */
+  .Logo-tall {
+    height: 70%;
+    width: 7%;
+  }
+}
+
+/* line 43, ../sass/Logos.scss */
+.LogoCollaborators {
+  width: 100%;
+  min-height: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 49, ../sass/Logos.scss */
+.LogoDirectories {
+  width: 12.5vw;
+}
+
+/* line 53, ../sass/Logos.scss */
+.LogosSupporters {
+  width: 12.5vw;
+}
+
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 56, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 56, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 56, ../sass/Logos.scss */
+  .LogoCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* line 70, ../sass/Logos.scss */
+.CardLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+/* line 74, ../sass/Logos.scss */
+.LogoInstitutions {
+  width: 50%;
+}
+
+/* line 78, ../sass/Logos.scss */
+.LogoSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin: 10px;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 78, ../sass/Logos.scss */
+  .LogoSmall {
+    height: 100px;
+  }
+}
