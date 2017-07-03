@@ -31,14 +31,14 @@ body{
 }
 .material-icons.md-hamburger {
   font-size: 3em;
-  @include smallMobile{
-    font-size: 2em;
+  @include tablet{
+    font-size: 3em;
   }
   @include mobile {
     font-size: 2.5em;
   }
   @include smallMobile {
-    font-size: 1em;
+    font-size: 2.5em;
   }
 }
 
