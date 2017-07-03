@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var emailValidator = require('../../public/js/email_validator');
+var emailValidator = require('../../public/email_validator');
 
 describe('EmailValidator', function() {
   describe('#isValidEmail', function() {

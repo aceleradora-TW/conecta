@@ -12,7 +12,7 @@ gem "actionmailer"
 
 group :development, :test do
   gem 'sass'
-  gem 'compass'
+  gem 'sprockets'
   gem 'simplecov'
   gem 'rerun'
   gem 'rack', '2.0.2'
