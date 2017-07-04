@@ -1,4 +1,4 @@
-require_relative 'controller.rb'
+require_relative "controller.rb"
 require "sinatra/base"
 require_relative "../services/session_service"
 
@@ -8,15 +8,15 @@ DEFAULT_ADMIN_ROUTE = "/admin/list_institutions"
 DEFAULT_USER_ROUTE = "/admin/company"
 
 class AdminController < Controller
-  use Rack::Session::Cookie, :key => 'rack.session',
+  use Rack::Session::Cookie, :key => "rack.session",
   :expire_after => 2592000,
-  :secret => ENV['SESSION_SECRET']
+  :secret => ENV["SESSION_SECRET"]
 
   def initialize father_controller
     super father_controller
     @session_service = SessionService.new
   end
-  before '/admin*' do
+  before "/admin*" do
     @user_info = @session_service.get_user_session_info(session)
   end
 
@@ -51,7 +51,7 @@ class AdminController < Controller
 
   get "/admin/register" do
     if @user_info.is_logged_in and @user_info.is_admin
-      @is_company = params[:type] == 'company'
+      @is_company = params[:type] == "company"
       @segment = Segment.all(order: :name)
       @competence_areas = CompetenceArea.all(order: :name)
       erb :register, :layout => :layout_admin
@@ -88,7 +88,7 @@ class AdminController < Controller
       user = User.first(email: @user_email)
       return "Email de usuário já cadastrado" if user
 
-      user = User.new(email: @user_email, password: @user_password, role: 'user')
+      user = User.new(email: @user_email, password: @user_password, role: "user")
       contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone)
       if @institution_type == "company"
         institution = Company.new(name: @institution_name, description: @institution_description)
