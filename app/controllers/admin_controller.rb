@@ -72,6 +72,8 @@ class AdminController < Controller
       @contact_email_2 = params[:contact_email_2]
       @contact_phone = params[:contact_phone]
       @contact_site = params[:contact_site]
+      @institution_logo = params[:institution_logo]
+      @institution_address = params[:institution_address]
       @institution_description = params[:institution_description]
       @segment_list = params[:segment_list]
       @competence_list = params[:competence_list]
@@ -99,6 +101,8 @@ class AdminController < Controller
       else
         institution = ResearchCenter.new(name: @institution_name, description: @institution_description)
       end
+      institution.logo = @institution_logo
+      institution.address = @institution_address
       institution.contact = contact
       institution.user = user
       institution.save
