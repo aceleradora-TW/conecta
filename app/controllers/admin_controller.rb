@@ -89,7 +89,7 @@ class AdminController < Controller
       return "Email de usuário já cadastrado" if user
 
       user = User.new(email: @user_email, password: @user_password, role: "user")
-      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone)
+      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone, contact_name_2: @contact_name_2, email_2: @contact_email_2)
       if @institution_type == "company"
         institution = Company.new(name: @institution_name, description: @institution_description)
         @segment_list.each do |segment_id|
