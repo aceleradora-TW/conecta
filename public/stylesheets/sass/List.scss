@@ -40,7 +40,7 @@
 .Items {
   @include flex($align: center, $justify: space-around, $self: center);
   @include size($width: 100%);
-  line-height: 2em;
+  line-height: 1.3em;
   cursor: pointer;
 
   &:hover {
@@ -109,7 +109,7 @@
   flex-direction: column;
   list-style: none;
   background-color: rgba(0, 0, 0, 0);
-  line-height: 2em;
+  line-height: 1.3em;
   font-size: $small-font-size;
   text-align:center;
   padding: 0;

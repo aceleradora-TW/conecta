@@ -5,7 +5,7 @@
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45%);
-  @include blackGradient($alpha: 0.7);
+  @include blackGradient($alpha: 0.85);
   border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
@@ -22,6 +22,10 @@
   @include smallMobile {
     @include size($width: 95%, $min-height: 55%);
     font-size: $small-font-size;
+  }
+
+  a{
+  color: rgb(0, 102, 255);
   }
 
   &.is-login {

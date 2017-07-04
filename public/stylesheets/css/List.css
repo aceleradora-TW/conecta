@@ -58,7 +58,7 @@
   justify-content: space-around;
   align-self: center;
   width: 100%;
-  line-height: 2em;
+  line-height: 1.3em;
   cursor: pointer;
 }
 /* line 46, ../sass/List.scss */
@@ -172,7 +172,7 @@
   flex-direction: column;
   list-style: none;
   background-color: transparent;
-  line-height: 2em;
+  line-height: 1.3em;
   font-size: 0.7em;
   text-align: center;
   padding: 0;

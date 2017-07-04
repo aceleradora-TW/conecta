@@ -48,7 +48,7 @@
 
 /* line 37, ../sass/Section.scss */
 .HowItWorks {
-  height: 95vh;
+  height: 46vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@
 /* line 54, ../sass/Section.scss */
 .About {
   width: 100%;
-  min-height: 97vh;
+  min-height: 46vh;
   display: flex;
   align-items: center;
   flex-direction: row;
