@@ -71,9 +71,11 @@
     <i class="material-icons">arrow_upward</i>
   </button>
 <section class="Section">
-  <%= erb :modal_contact %>
-  <%= erb :header %>
-  <%= yield %>
+  <section class="SectionOpacity">
+    <%= erb :modal_contact %>
+    <%= erb :header %>
+    <%= yield %>
+</section>
 </section>
 <%= erb :footer %>
 <script type="text/javascript" src="/js/email_validator.js"></script>

@@ -136,8 +136,13 @@
     justify-content: center;
   }
 }
+/* line 82, ../sass/Section.scss */
+.SectionCards.is-login {
+  display: flex;
+  align-items: center;
+}
 
-/* line 84, ../sass/Section.scss */
+/* line 87, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 100%;
@@ -148,7 +153,7 @@
   padding: 0;
 }
 
-/* line 90, ../sass/Section.scss */
+/* line 93, ../sass/Section.scss */
 .SectionList {
   width: 100%;
   min-height: 82vh;
@@ -159,7 +164,7 @@
   padding: 0;
 }
 
-/* line 96, ../sass/Section.scss */
+/* line 99, ../sass/Section.scss */
 .LogosList {
   height: 100%;
   width: 100%;

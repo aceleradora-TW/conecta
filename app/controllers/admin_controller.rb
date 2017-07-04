@@ -28,7 +28,7 @@ class AdminController < Controller
         redirect DEFAULT_USER_ROUTE
       end
     end
-    erb :login, :layout => :layout_admin
+    erb :login, :layout => :layout
   end
 
   get "/admin/list_institutions" do
