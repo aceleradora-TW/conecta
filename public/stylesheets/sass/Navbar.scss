@@ -24,6 +24,27 @@
 		@include size($min-height: 14vh);
 	}
 }
+.NavbarHome {
+	@include size($width: 100%, $height: 8vh);
+	@include flex($align: center, $direction: row, $justify: space-between);
+	position: fixed;
+	font-family: $font-style;
+	font-weight: lighter;
+	color: $white-font-color;
+	background: black;
+	@include tablet {
+		@include flex($justify: center,  $direction: column);
+		@include size($min-height: 14vh);
+	}
+	@include mobile {
+		@include flex($justify: center,  $direction: column);
+		@include size($min-height: 14vh);
+	}
+	@include smallMobile {
+		@include flex($justify: center,  $direction: column);
+		@include size($min-height: 14vh);
+	}
+}
 
 .is-scrolling{
 	background-color: rgba(0, 0, 0, 0.7);
@@ -132,7 +153,8 @@
 		}
 		&:hover{
 			text-decoration: none;
-			color: $white-font-color;
+			// color: $white-font-color;
+			  color: rgb(0,161,154);
 		}
 	}
 	&.is-open {
@@ -183,7 +205,9 @@
 		color: rgba(52, 73, 94, 1);
 	}
 	&:hover a {
-		color: $white-font-color;
+		// color: $white-font-color;
+		//
+		  color: rgb(0,161,154);
 	}
 }
 

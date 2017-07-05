@@ -60,7 +60,7 @@
 
 .BoxSearch {
   @include flex($align: center, $direction: column, $justify: center);
-  @include size($height: 50%, $width: 100%);
+  @include size($height: 100%, $width: 100%);
   @include blackGradient($alpha: 0.7);
 }
 

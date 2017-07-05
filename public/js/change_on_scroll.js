@@ -15,7 +15,7 @@ var verifyScrolled = function(scrolled){
 
 var changeOnScroll = function(){
   window.addEventListener('scroll', function(){
-    if (window.scrollY > 0) {
+    if (window.scrollY => 0) {
       verifyScrolled(true);
     }
     else {

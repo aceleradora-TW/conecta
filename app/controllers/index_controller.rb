@@ -18,6 +18,10 @@ class IndexController < Controller
     erb :index
   end
 
+  get "/aboutus" do
+    erb :aboutus
+  end
+
   get "/search_all" do
     @value = params[:value]
     @search_type = params[:search_type]
