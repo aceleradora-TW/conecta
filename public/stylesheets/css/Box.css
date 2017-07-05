@@ -342,7 +342,7 @@
 }
 
 /* line 197, ../sass/Box.scss */
-.BoxSegments {
+.BoxThreeColumns {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -351,17 +351,29 @@
   align-content: center;
 }
 /* line 199, ../sass/Box.scss */
-.BoxSegments p {
+.BoxThreeColumns p {
   width: 30%;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 199, ../sass/Box.scss */
+  .BoxThreeColumns p {
+    width: 49%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 199, ../sass/Box.scss */
+  .BoxThreeColumns p {
+    width: 100%;
+  }
+}
 
-/* line 204, ../sass/Box.scss */
+/* line 211, ../sass/Box.scss */
 .ContentCollaborators {
   width: 70%;
   display: flex;
 }
 
-/* line 209, ../sass/Box.scss */
+/* line 216, ../sass/Box.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
@@ -370,7 +382,7 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -381,7 +393,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -392,7 +404,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 90%;

@@ -1,31 +1,31 @@
-<h2>Segmentos</h2>
+<div class="requiredOne">
+  <h2>Segmentos <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone u-fontSizeXSmall">É necessário o preenchimento de ao menos um segmento</span> </h2>
 
-<div class="BoxSegments">
-  <%@segment.each do |segment|%>
-  <p class="u-marginXSmall">
-    <input type="checkbox" id='<%="segment_#{segment.id}"%>' name="segment_list[]" value="<%=segment.id%>"/>
-    <label for='<%="segment_#{segment.id}"%>'><%=segment.name%></label>
-  </p>
-  <%end%>
+  <div class="BoxThreeColumns">
+    <%@segment.each do |segment|%>
+    <p class="u-marginXSmall u-fontSizeSmallMedium">
+      <input type="checkbox" class="CheckboxSegment" id='<%="segment_#{segment.id}"%>' name="segment_list[]" value="<%=segment.id%>"/>
+      <label for='<%="segment_#{segment.id}"%>'><%=segment.name%></label>
+    </p>
+    <%end%>
+  </div>
 </div>
-
-<h2>Competências</h2>
-<div class="CompanyCompetences">
-  <ul class="CompetenceList">
+<div class="requiredOne">
+  <h2>Competências <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone u-fontSizeXSmall">É necessário o preenchimento de ao menos uma competência</span> </h2>
+  <div class="CompanyCompetences">
     <% @competence_areas.each do |competence_area| %>
-    <li class="Items ItemsArea">
-      <div class="ItemText"><h3><%= competence_area.name %></h3></div>
-      <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+    <li class="Items ItemsRegister CompetenceArea">
+      <div><h3><%= competence_area.name %></h3></div>
+      <div><i class="material-icons">keyboard_arrow_down</i></div>
     </li>
-    <ul class="SubitemsRegister SubItemsArea" style="justify-content: space-around;">
+    <div class="BoxThreeColumns u-colorBackgroundTransparent u-fontSizeSmallMedium CompetenceAreaList u-displayNone">
       <% competence_area.competences.each do |competence| %>
-      <li>
-        <input type="checkbox" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
+      <p class="u-marginXSmall">
+        <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
         <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
-      </li>
+      </p>
       <% end %>
-    </ul>
+    </div>
     <% end %>
-  </ul>
-
+  </div>
 </div>
