@@ -1,3 +1,7 @@
+@font-face {
+  font-family: lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../sass/List.scss */
 .List {
   width: 100%;

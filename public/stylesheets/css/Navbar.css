@@ -1,3 +1,7 @@
+@font-face {
+  font-family: lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 7, ../sass/Navbar.scss */
 .Navbar {
   height: 8vh;
@@ -7,7 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   font-weight: lighter;
   color: white;
 }

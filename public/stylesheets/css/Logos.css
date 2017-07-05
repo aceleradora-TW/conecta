@@ -1,3 +1,7 @@
+@font-face {
+  font-family: lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 6, ../sass/Logos.scss */
 .Logo-wide {
   height: 50%;

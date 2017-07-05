@@ -1,3 +1,7 @@
+@font-face {
+  font-family: lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../sass/Box.scss */
 .ContentAbout {
   display: flex;
@@ -16,7 +20,7 @@
   justify-content: center;
   height: 70%;
   width: 100%;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   color: white;
   text-shadow: 1px 1px black;
   line-height: 2em;
@@ -67,7 +71,7 @@
   justify-content: center;
   height: 50%;
   width: 100%;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   font-weight: lighter;
   font-size: 1em;
   text-align: center;
@@ -144,7 +148,7 @@
   flex-direction: column;
   height: 35vh;
   width: 98%;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   font-weight: lighter;
 }
 @media (max-width: 499px) {
@@ -202,7 +206,7 @@
   justify-content: center;
   width: 98%;
   min-height: 25vh;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
@@ -277,7 +281,7 @@
   border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
-  font-family: Lato, sans-serif;
+  font-family: lane;
   font-weight: lighter;
 }
 /* line 165, ../sass/Box.scss */
