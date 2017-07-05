@@ -68,8 +68,8 @@ class AdminController < Controller
       @user_password = params[:user_password]
       @contact_name = params[:contact_name]
       @contact_email = params[:contact_email]
-      @contact_name_2 = params[:contact_name_2]
-      @contact_email_2 = params[:contact_email_2]
+      @secondary_contact_name = params[:secondary_contact_name]
+      @secondary_email = params[:secondary_email]
       @contact_phone = params[:contact_phone]
       @contact_site = params[:contact_site]
       @institution_logo = params[:institution_logo]
@@ -89,7 +89,7 @@ class AdminController < Controller
       return "Email de usuário já cadastrado" if user
 
       user = User.new(email: @user_email, password: @user_password, role: "user")
-      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone, contact_name_2: @contact_name_2, email_2: @contact_email_2)
+      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone, secondary_contact_name: @secondary_contact_name, secondary_email: @secondary_email)
       if @institution_type == "company"
         institution = Company.new(name: @institution_name, description: @institution_description)
         @segment_list.each do |segment_id|

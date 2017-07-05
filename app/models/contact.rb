@@ -4,9 +4,9 @@ class Contact
   property :site, String
   property :phone,  String
   property :contact_name, String
-  property :contact_name_2, String
+  property :secondary_contact_name, String
   property :email,  String, :required => true
-  property :email_2,  String
+  property :secondary_email,  String
 
   belongs_to :institution
 end
