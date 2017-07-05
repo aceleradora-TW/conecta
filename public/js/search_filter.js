@@ -4,21 +4,27 @@ var menu = document.querySelector('.DropdownMenu');
 var textFilter = document.querySelector('.text-filter');
 var filterSearch = document.querySelectorAll('label');
 var filterDescription = document.querySelector('#ReplaceFilter');
-
-btnFilter.onclick = function() {
-  menu.classList.toggle('DropdownMenu-visible');
-  btnFilter.classList.toggle('ButtonFilter-activated');
+if(btnFilter){
+  btnFilter.onclick = function() {
+    menu.classList.toggle('DropdownMenu-visible');
+    btnFilter.classList.toggle('ButtonFilter-activated');
+  }
 }
+
 
 window.onload = function onLoad(){
   var urlHasAnchor = location.href.indexOf("#") > 0;
   if(!urlHasAnchor){
-    document.getElementById("InputSearch").focus();
+    var inputSearch = document.getElementById("InputSearch");
+    if(inputSearch){
+      inputSearch.focus();
+    }
   }
 }
-
-filterSearch.forEach(function(searchOption){
-  searchOption.addEventListener("click", function(){
-    filterDescription.innerHTML = searchOption.querySelector("span").innerHTML;
-  })
-});
+if(filterSearch && filterSearch.constructor === Array){
+  filterSearch.forEach(function(searchOption){
+    searchOption.addEventListener("click", function(){
+      filterDescription.innerHTML = searchOption.querySelector("span").innerHTML;
+    })
+  });
+}
