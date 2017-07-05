@@ -7,10 +7,11 @@
           Encontre parcerias agora
         </div>
         <div class="ContentSearch">
-          <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
+          <form class="FormSearch" action="/search_all" name="search" id="searchFrom" onsubmit="return false">
             <div class="InputGroup">
+
           <input id="InputSearch" class="InputSearch" type="text" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
-          <div class="Button u-center" onclick="document.forms['search'].submit();">
+          <div class="Button u-center" onclick="validateSearch(event)">
             <a class="ButtonSearch">
               <i class="material-icons u-marginSmall">search</i>
             </a>

@@ -5,7 +5,7 @@ var textFilter = document.querySelector('.text-filter');
 var filterSearch = document.querySelectorAll('label');
 var filterDescription = document.querySelector('#ReplaceFilter');
 
-btnFilter.onclick = function() {
+btnFilter.onclick = function expand() {
   menu.classList.toggle('DropdownMenu-visible');
   btnFilter.classList.toggle('ButtonFilter-activated');
 }
