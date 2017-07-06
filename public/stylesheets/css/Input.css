@@ -234,15 +234,11 @@ input {
   padding: 1.3%;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-/* line 168, ../sass/Input.scss */
-=======
-/* line 161, ../sass/Input.scss */
+/* line 167, ../sass/Input.scss */
 .RegisterInputs input.invalid, .RegisterInputs textarea.invalid {
   border: 1px solid #eb6361;
 }
-/* line 165, ../sass/Input.scss */
->>>>>>> f73c3d488f3f94e191288d7b7ee3f0cba1ff6463
+/* line 171, ../sass/Input.scss */
 .RegisterInputs span {
   display: flex;
   justify-content: flex-start;

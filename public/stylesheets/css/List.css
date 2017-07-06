@@ -183,21 +183,13 @@
   padding: 0;
   justify-content: space-around;
 }
-<<<<<<< HEAD
-/* line 117, ../sass/List.scss */
-=======
-/* line 120, ../sass/List.scss */
->>>>>>> f73c3d488f3f94e191288d7b7ee3f0cba1ff6463
+/* line 121, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-<<<<<<< HEAD
-/* line 121, ../sass/List.scss */
-=======
-/* line 124, ../sass/List.scss */
->>>>>>> f73c3d488f3f94e191288d7b7ee3f0cba1ff6463
+/* line 125, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }
