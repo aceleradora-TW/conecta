@@ -1,23 +1,23 @@
-<<<<<<< HEAD
-<div class="u-gradientTransparent">
-  <h1 class="u-fontFamilyLato u-fontSizeLarge u-marginLeftXSmall u-marginTopNavbar u-fontWhite"><%= @search_description %></h1>
-  <h3 class="u-fontFamilyLato u-fontSizeMedium u-marginLeft u-fontWhite">
-=======
 <div class="u-gradientTransparentToBlack">
   <h1 class="u-fontFamilyLane u-fontSizeLarge u-marginLeftXSmall u-marginTopXLarge u-fontWhite"><%= @search_description %></h1>
   <h3 class="u-fontFamilyLane u-fontSizeMedium u-marginLeft u-fontWhite">
->>>>>>> eb8f8ec9687c151b6bb6631ff052a01fe24152a2
-    <% if @institution.length == 0 %>
-    <br>Nenhum resultado encontrado
-    <% end %>
-  </h3>
-  <section class="SectionCards">
-    <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
-    <%= erb :companies %>
-    <% elsif @search_type == 'centro-pesquisa'or @search_type == 'estrutura-pesquisa-competencia'%>
 
-    <%= erb :research_centers %>
-    <% end %>
-  </section>
-</div>
-<script src="js/break_links.js"></script>
+    <div class="u-gradientTransparentToBlack">
+      <h1 class="u-fontFamilyLane u-fontSizeLarge u-marginLeftXSmall u-marginTopXLarge u-fontWhite"><%= @search_description %></h1>
+      <h3 class="u-fontFamilyLane u-fontSizeMedium u-marginLeft u-fontWhite">
+
+
+        <% if @institution.length == 0 %>
+        <br>Nenhum resultado encontrado
+        <% end %>
+      </h3>
+      <section class="SectionCards">
+        <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
+        <%= erb :companies %>
+        <% elsif @search_type == 'centro-pesquisa'or @search_type == 'estrutura-pesquisa-competencia'%>
+
+        <%= erb :research_centers %>
+        <% end %>
+      </section>
+    </div>
+    <script src="js/break_links.js"></script>
