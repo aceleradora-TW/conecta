@@ -6,6 +6,8 @@
   &Search {
     @include size ($width: 60%);
     font-size: 1.05em;
+    font-family: $font-style;
+
     border: 0.1em solid rgba(0, 0, 0, .4);
     border-left: none;
     padding-left: 2%;
