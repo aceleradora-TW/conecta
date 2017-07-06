@@ -12,4 +12,16 @@
 
 .u-paddingTopMedium {
 	padding-top: 2em;
+	@include tablet {
+		padding-top: 4em;
+	}
+	
+	@include mobile {
+		padding-top: 4em;
+	}
+
+	@include smallMobile {
+		padding-top: 4em;
+	}
+
 }

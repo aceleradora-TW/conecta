@@ -89,7 +89,7 @@
   /* line 53, ../sass/Navbar.scss */
   .Hamburger {
     height: 65%;
-    width: 26%;
+    width: 33%;
     display: block;
     margin-left: 5%;
   }
@@ -98,7 +98,7 @@
   /* line 53, ../sass/Navbar.scss */
   .Hamburger {
     height: 65%;
-    width: 26%;
+    width: 30%;
     display: block;
     margin-left: 5%;
   }
@@ -126,7 +126,7 @@
   /* line 74, ../sass/Navbar.scss */
   .LogoImage {
     height: 70%;
-    width: 35%;
+    width: 18%;
     display: flex;
     justify-content: center;
   }
@@ -135,7 +135,7 @@
   /* line 74, ../sass/Navbar.scss */
   .LogoImage {
     height: 70%;
-    width: 35%;
+    width: 26%;
     display: flex;
     justify-content: center;
   }
