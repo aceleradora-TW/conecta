@@ -35,10 +35,10 @@
 }
 
 .HowItWorks {
-  @include size($width: 100%, $min-height: 90vh);
+  @include size($width: 100%, $min-height: 100vh);
   @include flex($align: center, $direction: column, $justify: center);
-  color: $white-font-color;
   background-color: $dark-black-color;
+  color: $white-font-color;
 }
 
 .Collaborators {

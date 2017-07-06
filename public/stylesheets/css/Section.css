@@ -49,13 +49,13 @@
 /* line 37, ../sass/Section.scss */
 .HowItWorks {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
 /* line 44, ../sass/Section.scss */
@@ -88,7 +88,7 @@
   font-family: Lato, sans-serif;
   font-weight: lighter;
   text-align: justify;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
 }
 @media (max-width: 499px) {
