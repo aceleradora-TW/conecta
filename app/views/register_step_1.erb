@@ -1,25 +1,25 @@
 <div class="RegisterInputs">
   <% if @is_company %>
-  <span> Nome da empresa (nome fantasia):</span>
+  <span> Nome da empresa (nome fantasia) <b class="u-colorRed">*</b></span>
   <% else %>
-  <span> Nome da estrutura de pesquisa:</span>
+  <span> Nome da estrutura de pesquisa <b class="u-colorRed">*</b></span>
   <% end %>
-  <input type="text" name="institution_name" value="">
+  <input type="text" name="institution_name" value="" class="required">
 </div>
 <div class="RegisterInputs">
-  <span> E-mail para login:</span>
-  <input type="text" name="user_email" value="">
+  <span> E-mail para login <b class="u-colorRed">*</b></span>
+  <input type="text" name="user_email" value="" class="required">
 </div>
 <% if @is_company %>
 <div class="RegisterInputs">
-  <span> CNPJ:</span>
+  <span> CNPJ</span>
   <input type="text" name="institution_cnpj" value="">
 </div>
 <% end %>
 <div class="RegisterInputs">
-  <span> Senha:</span>
-  <input type="text" name="user_password" value="">
+  <span> Senha <b class="u-colorRed">*</b></span>
+  <input type="password" name="user_password" value="" class="required password">
 </div>  <div class="RegisterInputs">
-  <span> Confirmar Senha:</span>
-  <input type="text" name="user_password2" value="">
+  <span> Confirmar Senha <b class="u-colorRed">*</b><b id="invalidPasswordCheckMessage" class="u-colorRed u-displayNone">Senhas não conferem</b></span>
+  <input type="password" name="user_password2" value="" class="required password">
 </div>

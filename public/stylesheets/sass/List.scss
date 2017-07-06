@@ -51,6 +51,10 @@
     font-size: $medium-font-size;
   }
 
+  &Register {
+    @include flex($justify: flex-start);
+  }
+
   &.is-featured {
     @include size($width: 95%);
     @include mobile{
