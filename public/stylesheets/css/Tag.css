@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../sass/Tag.scss */
 .Tag {
   display: flex;
@@ -32,5 +36,5 @@
   height: 100%;
   width: 100%;
   color: white;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
 }

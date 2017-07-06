@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../../sass/utilities/u-backgroundColor.scss */
 .u-colorBackgroundWhite {
   background-color: white;
