@@ -1,5 +1,5 @@
 <section class="SectionCards u-marginTopLarge">
-  <form class="BoxRegister" action="/admin/register_submit" method="post">
+  <form class="BoxRegister" action="/admin/register_submit" method="post" onsubmit="return validateForm()">
 
     <div class="LoginHeader">
       <h1 class="u-fontFamilyLato u-fontSizeMedium">Cadastro <%= @is_company ? 'Empresa' : 'Estrutura de Pesquisa' %></h1>
@@ -11,7 +11,7 @@
       <a id="buttonTab3" class="Button u-marginSmall u-widthSmall ButtonChangeTab" onclick="changeRegisterTab('buttonTab3','BoxRegister3')">3</a>
     </div>
     <input name="institution_type" type="hidden" value="<%= @is_company ? 'company' : 'research_center' %>" />
-    <div class="BoxRegisterBody" id="BoxRegister1">
+    <div class="BoxRegisterBody active" id="BoxRegister1">
       <%= erb :register_step_1 %>
       <br/>
       <div class="RegisterFooter u-marginSidesAndBottom">
@@ -34,9 +34,6 @@
         <button class="Button" type="submit" name="button">Enviar</button>
       </div>
     </div>
-
-
-
-
+    <i>Campos marcados com um asterisco (<b class="u-colorRed">*</b>) são obrigatórios</i>
   </form>
 </section>

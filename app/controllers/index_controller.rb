@@ -69,4 +69,8 @@ class IndexController < Controller
     "Email Enviado com Sucesso!"
 
   end
+
+  get "/about_us" do
+   erb :about_us  
+  end
 end

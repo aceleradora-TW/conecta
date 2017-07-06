@@ -1,0 +1,57 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-fontSizeXSmall {
+	font-size: $small-font-size;
+}
+
+.u-fontSizeSmallMedium {
+	font-size: $small-medium-font-size!important;
+}
+
+.u-fontSizeSmall {
+	font-size: $medium-font-size;
+}
+
+.u-fontSizeMediumSlogan{
+	font-size: $medium-font-size;
+	@include mobile {
+		font-size: $medium-font-size;
+	}
+}
+
+.u-fontSizeMedium {
+	font-size: $medium-font-size;
+	@include tablet {
+		font-size: $medium-font-size;
+	}
+	@include mobile {
+		font-size: $small-font-size;
+	}
+	@include smallMobile {
+		font-size: $small-font-size;
+	}
+}
+
+.u-fontSizeLarge {
+	font-size: $large-font-size;
+	@include tablet {
+		font-size: $medium-font-size;
+	}
+	@include smallMobile {
+		font-size: $medium-font-size;
+	}
+}
+
+.u-fontFamilyLato {
+	font-family: $font-style;
+}
+
+.u-fontWhite {
+	color: $white-font-color;
+}
+
+.u-fontBold {
+	font-weight: bold;
+}

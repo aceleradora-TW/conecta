@@ -26,9 +26,8 @@
 }
 
 .is-scrolling{
-	background-color: rgba(0, 0, 0, 0.7);
+	@include blackGradient($alpha: 0.7);
 }
-
 
 .NavLogo {
 	@include size($width: 50%, $height: 100%);
@@ -36,34 +35,39 @@
 	margin-left: 2%;
 
 	@include tablet {
-		@include size($width: 90%, $min-height: 50%);
+		@include size($width: 100%, $min-height: 50%);
 		@include flex($justify: flex-start);
 	}
 
 	@include mobile {
-		@include size($width: 90%, $min-height: 60%);
-		@include flex($justify: space-around);
+		@include size($width: 100%, $min-height: 60%);
+		@include flex($justify: flex-start);
 	}
 
 	@include smallMobile {
-		@include size($width: 90%, $min-height: 20%);
-		@include flex($justify: space-around);
+		@include size($width: 100%, $min-height: 20%);
+		@include flex($justify: flex-start);
 	}
 }
 
 .Hamburger {
 	display: none;
 	@include tablet {
-		@include size($width: 36%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
+
 	@include mobile {
-		@include size($width: 5%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
+
 	@include smallMobile {
-		@include size($width: 5%, $height: 60%);
+		@include size($width: 26%, $height: 65%);
 		display: block;
+		margin-left: 5%;
 	}
 }
 
@@ -74,17 +78,17 @@
 	border-radius: 0;
 	background-size: 100%;
 	@include tablet {
-		@include size($width: 45%, $height: 72%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 
 	@include mobile {
-		@include size($width: 52%, $height: 74%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 
 	@include smallMobile {
-		@include size($width: 45%, $height: 60%);
+		@include size($width: 35%, $height: 70%);
 		@include flex($justify: center);
 	}
 }
@@ -151,7 +155,7 @@
 		text-align: center;
 		&:hover {
 			text-decoration: none;
-			line-height: 1 !important;
+			line-height: 1;
 			border-bottom: 0.3vh solid;
 		}
 	}

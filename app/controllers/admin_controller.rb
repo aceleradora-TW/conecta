@@ -1,4 +1,4 @@
-require_relative 'controller.rb'
+require_relative "controller.rb"
 require "sinatra/base"
 require_relative "../services/session_service"
 
@@ -8,15 +8,15 @@ DEFAULT_ADMIN_ROUTE = "/admin/list_institutions"
 DEFAULT_USER_ROUTE = "/admin/company"
 
 class AdminController < Controller
-  use Rack::Session::Cookie, :key => 'rack.session',
+  use Rack::Session::Cookie, :key => "rack.session",
   :expire_after => 2592000,
-  :secret => ENV['SESSION_SECRET']
+  :secret => ENV["SESSION_SECRET"]
 
   def initialize father_controller
     super father_controller
     @session_service = SessionService.new
   end
-  before '/admin*' do
+  before "/admin*" do
     @user_info = @session_service.get_user_session_info(session)
   end
 
@@ -51,7 +51,7 @@ class AdminController < Controller
 
   get "/admin/register" do
     if @user_info.is_logged_in and @user_info.is_admin
-      @is_company = params[:type] == 'company'
+      @is_company = params[:type] == "company"
       @segment = Segment.all(order: :name)
       @competence_areas = CompetenceArea.all(order: :name)
       erb :register, :layout => :layout_admin
@@ -68,10 +68,12 @@ class AdminController < Controller
       @user_password = params[:user_password]
       @contact_name = params[:contact_name]
       @contact_email = params[:contact_email]
-      @contact_name_2 = params[:contact_name_2]
-      @contact_email_2 = params[:contact_email_2]
+      @secondary_contact_name = params[:secondary_contact_name]
+      @secondary_email = params[:secondary_email]
       @contact_phone = params[:contact_phone]
       @contact_site = params[:contact_site]
+      @institution_logo = params[:institution_logo]
+      @institution_address = params[:institution_address]
       @institution_description = params[:institution_description]
       @segment_list = params[:segment_list]
       @competence_list = params[:competence_list]
@@ -86,8 +88,8 @@ class AdminController < Controller
       user = User.first(email: @user_email)
       return "Email de usuário já cadastrado" if user
 
-      user = User.new(email: @user_email, password: @user_password, role: 'user')
-      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone)
+      user = User.new(email: @user_email, password: @user_password, role: "user")
+      contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone, secondary_contact_name: @secondary_contact_name, secondary_email: @secondary_email)
       if @institution_type == "company"
         institution = Company.new(name: @institution_name, description: @institution_description)
         @segment_list.each do |segment_id|
@@ -99,6 +101,8 @@ class AdminController < Controller
       else
         institution = ResearchCenter.new(name: @institution_name, description: @institution_description)
       end
+      institution.logo = @institution_logo
+      institution.address = @institution_address
       institution.contact = contact
       institution.user = user
       institution.save
@@ -129,4 +133,6 @@ class AdminController < Controller
     session.clear
     redirect "/admin"
   end
+
+
 end

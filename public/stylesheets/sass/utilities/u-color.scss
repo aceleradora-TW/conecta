@@ -1,0 +1,35 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-colorLightBlue {
+	color: $light-blue-color;
+}
+
+.u-colorLightRed {
+	color: $light-red-color;
+}
+
+.u-colorGold {
+	color: rgba(228, 181, 65, 1);
+}
+
+.u-colorRed {
+	color: $light-red-color;
+}
+
+.u-colorGreen {
+	color: $aqua-green-color;
+}
+
+.u-colorBlue {
+	color:  $light-blue-color;
+}
+
+.u-colorOrange {
+	color: $burnt-yellow-color;
+}
+
+.u-colorWhite {
+	color: $white-font-color;
+}

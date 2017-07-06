@@ -1,0 +1,31 @@
+@import "../_variables.scss";
+@import "../MediaQuery.scss";
+@import "../_mixins.scss";
+
+.u-widthSmall {
+  width: 5em;
+}
+
+.u-widthMedium{
+  @include size ($width: 30%);
+}
+
+.u-widthLarge {
+  width: 80%;
+}
+
+.u-widthXLarge {
+  @include size ($width: 90%);
+}
+
+.u-width1of4 {
+  @include size($width: 25%);
+}
+
+.u-width3of4 {
+	@include size($width: 75%);
+}
+
+.u-lineHeightMedium {
+	line-height: 1.7em;
+}

@@ -73,11 +73,16 @@
   }
 }
 /* line 54, ../sass/List.scss */
+.ItemsRegister {
+  display: flex;
+  justify-content: flex-start;
+}
+/* line 58, ../sass/List.scss */
 .Items.is-featured {
   width: 95%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 54, ../sass/List.scss */
+  /* line 58, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -87,7 +92,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 54, ../sass/List.scss */
+  /* line 58, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -98,7 +103,7 @@
     line-height: 5em;
   }
 }
-/* line 68, ../sass/List.scss */
+/* line 72, ../sass/List.scss */
 .ItemsText {
   display: flex;
   align-items: flex-start;
@@ -109,13 +114,13 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 68, ../sass/List.scss */
+  /* line 72, ../sass/List.scss */
   .ItemsText {
     width: 68%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 68, ../sass/List.scss */
+  /* line 72, ../sass/List.scss */
   .ItemsText {
     width: 100%;
     display: flex;
@@ -125,7 +130,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 68, ../sass/List.scss */
+  /* line 72, ../sass/List.scss */
   .ItemsText {
     width: 100%;
     display: flex;
@@ -134,19 +139,19 @@
     font-size: 1.7em;
   }
 }
-/* line 86, ../sass/List.scss */
+/* line 90, ../sass/List.scss */
 .ItemsText.is-segment {
   display: flex;
   justify-content: center;
 }
-/* line 90, ../sass/List.scss */
+/* line 94, ../sass/List.scss */
 .ItemsText.is-icon {
   display: flex;
   justify-content: flex-end;
   width: 32%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 90, ../sass/List.scss */
+  /* line 94, ../sass/List.scss */
   .ItemsText.is-icon {
     display: flex;
     align-items: center;
@@ -154,7 +159,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 90, ../sass/List.scss */
+  /* line 94, ../sass/List.scss */
   .ItemsText.is-icon {
     width: 100%;
     display: flex;
@@ -164,7 +169,7 @@
   }
 }
 
-/* line 105, ../sass/List.scss */
+/* line 109, ../sass/List.scss */
 .Subitems {
   width: 100%;
   display: none;
@@ -178,18 +183,26 @@
   padding: 0;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 /* line 117, ../sass/List.scss */
+=======
+/* line 120, ../sass/List.scss */
+>>>>>>> f73c3d488f3f94e191288d7b7ee3f0cba1ff6463
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
+<<<<<<< HEAD
 /* line 121, ../sass/List.scss */
+=======
+/* line 124, ../sass/List.scss */
+>>>>>>> f73c3d488f3f94e191288d7b7ee3f0cba1ff6463
 .Subitems.Open {
   display: flex;
 }
 @media (max-width: 499px) {
-  /* line 105, ../sass/List.scss */
+  /* line 109, ../sass/List.scss */
   .Subitems {
     font-size: 1.3em;
   }
