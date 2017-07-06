@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../../sass/utilities/u-font.scss */
 .u-fontSizeXSmall {
   font-size: 0.7em;
@@ -65,8 +69,8 @@
 }
 
 /* line 47, ../../sass/utilities/u-font.scss */
-.u-fontFamilyLato {
-  font-family: Lato, sans-serif;
+.u-fontFamilyLane {
+  font-family: Lane;
 }
 
 /* line 51, ../../sass/utilities/u-font.scss */
