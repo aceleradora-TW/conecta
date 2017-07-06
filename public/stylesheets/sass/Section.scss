@@ -45,7 +45,7 @@
   @include size($width: 100%, $min-height: 97vh);
   @include flex($align: center, $direction: column, $justify: center);
   @include blackGradient($alpha: 0.8);
-  background: rgba(0,0,0,0.8);
+  background-color: $dark-black-color;
   @include smallMobile{
     @include size($min-height: 65vh);
   }
