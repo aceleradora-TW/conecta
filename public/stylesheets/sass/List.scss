@@ -8,6 +8,7 @@
 
   &.is-register{
     @include flex($align:center);
+    @include size($width: 94%);
     border-radius: 1%;
   }
 
