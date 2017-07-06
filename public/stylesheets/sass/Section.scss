@@ -98,3 +98,7 @@
   @include flex($align: center, $direction: column, $justify: space-around);
   flex-wrap: wrap;
 }
+
+.SectionLogin{
+  @include flex($align: flex-end);
+}
