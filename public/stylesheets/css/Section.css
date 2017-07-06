@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 6, ../sass/Section.scss */
 .Section {
   width: 100%;
@@ -85,7 +89,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   font-weight: lighter;
   text-align: justify;
   background-color: rgba(0, 0, 0, 0.75);
