@@ -4,11 +4,7 @@ var menu = document.querySelector('.DropdownMenu');
 var textFilter = document.querySelector('.text-filter');
 var filterSearch = document.querySelectorAll('label');
 var filterDescription = document.querySelector('#ReplaceFilter');
-
-btnFilter.onclick = function() {
-  menu.classList.toggle('DropdownMenu-visible');
-  btnFilter.classList.toggle('ButtonFilter-activated');
-}
+var inputSearch = document.querySelector('#InputSearch');
 
 window.onload = function onLoad(){
   var urlHasAnchor = location.href.indexOf("#") > 0;
@@ -17,8 +13,10 @@ window.onload = function onLoad(){
   }
 }
 
-filterSearch.forEach(function(searchOption){
-  searchOption.addEventListener("click", function(){
-    filterDescription.innerHTML = searchOption.querySelector("span").innerHTML;
+if(inputSearch){
+  inputSearch.addEventListener('focus', function(e){
+    menu.classList.add('DropdownMenu-visible');
+    console.log('focus');
   })
-});
+
+}
