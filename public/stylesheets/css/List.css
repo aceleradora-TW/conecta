@@ -184,13 +184,13 @@
   padding: 0;
   justify-content: space-around;
 }
-/* line 121, ../sass/List.scss */
+/* line 122, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 125, ../sass/List.scss */
+/* line 126, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }
