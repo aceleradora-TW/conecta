@@ -1,52 +1,50 @@
 <% @institution.each do |company| %>
-  <div class="Card">
-    <div class="CardNav">
-      <div class="CardLogo">
-        <div class="LogoSmall">
-          <img class="LogoInstitutions" src="<%= company.logo %>">
-        </div>
-      </div>
-      <div class="CardTitle">
-        <h1><%= company.name %></h1>
+<div class="Card">
+  <div class="CardNav">
+    <div class="CardLogo">
+      <div class="LogoSmall">
+        <img class="LogoInstitutions" src="<%= company.logo %>">
       </div>
     </div>
+    <div class="CardTitle">
+      <h1><%= company.name %></h1>
+    </div>
+  </div>
   <% if @search_type == 'segmento' %>
-    <div class="List is-vertical">
-      <ul>
-        <% company.segments.each do |segment| %>
-          <% if segment.name.downcase.include? @value %>
-        <li class="Items">
-          <div class="ItemsText is-segment">
-            <%= segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
-          </div>
-        </li>
-          <% end %>
-        <%end %>
-      </ul>
-      <div class="RatingExplanation u-marginTop">
-        <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthLarge">Segmento informado pela empresa    </div>
-      </div>
+  <div class="List is-vertical">
+    <ul>
+      <% company.searched_segments.each do |institution_segment| %>
+      <li class="Items">
+        <div class="ItemsText is-segment">
+          <%= institution_segment.segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
+        </div>
+      </li>
+      <%end %>
+    </ul>
+    <div class="RatingExplanation u-marginTop">
+      <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthLarge">Segmento informado pela empresa    </div>
     </div>
+  </div>
   <% else %>
-    <div class="List is-vertical">
-      <ul>
-        <%
-        has_check = false
-        has_stars = false
-        company.featured_competences.each_with_index do |company_competence,index|
-          rating = company_competence.competence_value_calculated_integer
+  <div class="List is-vertical">
+    <ul>
+      <%
+      has_check = false
+      has_stars = false
+      company.featured_competences.each_with_index do |company_competence,index|
+        rating = company_competence.competence_value_calculated_integer
         %>
         <li class="Items is-featured ">
           <div class="ItemsText"><%= company_competence.competence.name %></div>
           <div class="ItemsText is-icon">
             <% if rating > 0 %>
-              <% has_stars = true %>
-              <% for n_of_stars in (1..5) %>
-                <i class="material-icons u-colorGold u-widthIcon"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
-              <% end %>
+            <% has_stars = true %>
+            <% for n_of_stars in (1..5) %>
+            <i class="material-icons u-colorGold u-widthIcon"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
+            <% end %>
             <% else %>
-              <% has_check = true %>
-              <i class="material-icons u-colorGreen u-widthIcon">check circle</i>
+            <% has_check = true %>
+            <i class="material-icons u-colorGreen u-widthIcon">check circle</i>
             <% end %>
           </div>
         </li>
@@ -63,49 +61,49 @@
       </div>
       <% end %>
     </div>
-  <% end %>
-  <div class="FooterCardSecondary">
-    <% if company.contact %>
+    <% end %>
+    <div class="FooterCardSecondary">
+      <% if company.contact %>
       <div class="FooterCardSecondaryItem"><b>Contato</b>: <%= company.contact.contact_name %> </div>
       <div class="FooterCardSecondaryItem"><b>Fone</b>: <%= company.contact.phone %></div>
       <div class="FooterCardSecondaryItem"><b>E-mail</b>: <a href='<%= company.contact.email %>'><%= company.contact.email %></a></div>
       <div class="FooterCardSecondaryItem"><b>Site</b>: <a href="<%= company.contact.site %>"><%= company.contact.site %></a></div>
-    <% else %>
+      <% else %>
       <div class="FooterCardSecondaryItem"><b>Local</b>: Prédio 99A, 5 Andar</div>
       <div class="FooterCardSecondaryItem"><b>Fone</b>: (99) 9999-9999</div>
       <div class="FooterCardSecondaryItem"><b>E-mail</b>: <a href="mailto:endereco@email.com">endereco@email.com</a></div>
       <div class="FooterCardSecondaryItem"><b>Site</b>: <a href="http://conectatw.herokuapp.com">http://conectatw.herokuapp.com</a></div>
-    <% end %>
-  </div>
-  <div class="FooterCardPrimary">
+      <% end %>
+    </div>
+    <div class="FooterCardPrimary">
 
       <div class="Button u-textAlignCenter u-widthMedium ButtonContact" onclick="showModal('<%="#{company.id}"%>', '<%="#{company.name}"%>');" id="<%='ButtonContact'"#{company.id}"%>">contato</div>
       <div class="Button u-textAlignCenter u-widthMedium ButtonSeeMore">ver mais</div>
 
-  </div>
-  <div class="Card is-secondary">
-    <div>
-      <%= company.description || "Mayra Ipsum Dort Lamem" %>
     </div>
-    <div class="List is-vertical">
-      <div class="CompetencesTitle">Demais competências</div>
+    <div class="Card is-secondary">
+      <div>
+        <%= company.description || "Mayra Ipsum Dort Lamem" %>
+      </div>
+      <div class="List is-vertical">
+        <div class="CompetencesTitle">Demais competências</div>
         <% @company_competences = company.grouped_competences %>
         <% if @company_competences != nil %>
-          <ul >
-            <% @company_competences.each_key do |competence_area| %>
-              <li class="Items ItemsArea">
-                <div class="ItemsText"><%= competence_area %></div>
-                <div class="ItemsText is-icon"><i class="material-icons">keyboard_arrow_down</i></div>
-              </li>
-              <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
-                <% @company_competences[competence_area].each do |competence| %>
-                <li><%= competence %></li>
-                <% end %>
-              </ul>
+        <ul >
+          <% @company_competences.each_key do |competence_area| %>
+          <li class="Items ItemsArea">
+            <div class="ItemsText"><%= competence_area %></div>
+            <div class="ItemsText is-icon"><i class="material-icons">keyboard_arrow_down</i></div>
+          </li>
+          <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
+            <% @company_competences[competence_area].each do |competence| %>
+            <li><%= competence %></li>
             <% end %>
           </ul>
+          <% end %>
+        </ul>
         <% end %>
+      </div>
     </div>
   </div>
-</div>
-<% end %>
+  <% end %>

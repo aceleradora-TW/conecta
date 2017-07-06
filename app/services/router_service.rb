@@ -45,6 +45,11 @@ class RouterService
       @company_segments = search_service.find_related_segment(@segments)
       @company_segments.each do |single_segment|
         local_company = single_segment.company
+        if !local_company.searched_segments
+          local_company.searched_segments = [single_segment]
+        else
+          local_company.searched_segments.push(single_segment)
+        end
         if !@companies_with_segment.include? local_company
           @companies_with_segment.push(local_company)
         end
