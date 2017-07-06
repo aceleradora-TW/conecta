@@ -79,7 +79,7 @@
 /* line 54, ../sass/Section.scss */
 .About {
   width: 100%;
-  min-height: 46vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: row;
