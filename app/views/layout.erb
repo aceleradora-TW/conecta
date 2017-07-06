@@ -73,12 +73,11 @@
   <section class="Section">
     <% if User.role == 'admin' %>
     <%= erb :header_admin %>
-    <%= yield %>
     <% else %>
     <%= erb :modal_contact %>
     <%= erb :header %>
-    <%= yield %>
     <% end %>
+    <%= yield %>
   </section>
   <%= erb :footer %>
   <script type="text/javascript" src="/js/email_validator.js"></script>
@@ -90,6 +89,7 @@
   <script type="text/javascript" src="/js/login.js"></script>
   <script type="text/javascript" src="/js/jquery_ajax.js"></script>
   <script type="text/javascript" src="/js/change_on_scroll.js"></script>
+  <script type="text/javascript" src="/js/register.js"></script>
 
 </body>
 </html>
