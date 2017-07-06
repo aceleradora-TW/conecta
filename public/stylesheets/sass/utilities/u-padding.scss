@@ -2,10 +2,33 @@
 @import "../MediaQuery.scss";
 @import "../_mixins.scss";
 
+.u-paddingBottomSmall {
+	padding-bottom: 1%;
+}
+
 .u-paddingTopSmall {
 	padding-top: 1%;
 }
 
-.u-paddingBottomSmall {
-	padding-bottom: 1%;
+.u-paddingTopMedium {
+	padding-top: 2em;
+	@include tablet {
+		padding-top: 4em;
+	}
+	@include mobile {
+		padding-top: 4em;
+	}
+	@include smallMobile {
+		padding-top: 4em;
+	}
+}
+
+.u-paddingTopLarge {
+	padding-top: 5em;
+	@include mobile {
+		margin-top: 1em;
+	}
+	@include smallMobile {
+		margin-top: 1em;
+	}
 }
