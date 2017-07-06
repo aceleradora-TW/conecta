@@ -4,6 +4,7 @@
 .DropdownMenu{
   @include size($height:  95px, $width: 95%);
   z-index: 3;
+  visibility: hidden;
   list-style: none;
   border: 1px solid rgba(0, 0, 0, .4);
   border-radius: 0 0 4px 4px;
@@ -15,7 +16,23 @@
     @include flex($direction: row, $justify: space-around);
     opacity: 1;
     transition: .5s;
+    visibility: visible;
   }
+}
+
+.teste2{
+@include flex($direction: row, $justify: space-around);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+opacity: 1;
+transition: 5s;
+height: 95px;
+}
+
+.teste{
+  width: 500px;
+  height: 500px;
 }
 
 .DropdownMenu li a{
