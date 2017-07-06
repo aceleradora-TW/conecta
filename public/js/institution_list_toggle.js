@@ -1,18 +1,19 @@
 const buttons = document.querySelectorAll('.TagTitle');
 const companies = document.querySelector('#companies');
 const research_centers = document.querySelector('#research-centers');
-
-buttons.forEach(function(button){
-  button.addEventListener("click", function(){
-    if (button.classList.contains("u-colorBackgroundGreen")) {
-      companies.classList.remove("u-displayNone");
-      research_centers.classList.add("u-displayNone");
-    } else if(button.classList.contains("u-colorBackgroundOrange")){
-      research_centers.classList.remove("u-displayNone");
-      companies.classList.add("u-displayNone");
-    } else {
-      research_centers.classList.remove("u-displayNone");
-      companies.classList.remove("u-displayNone");
-    }
+if(buttons && buttons.constructor === Array){
+  buttons.forEach(function(button){
+    button.addEventListener("click", function(){
+      if (button.classList.contains("u-colorBackgroundGreen")) {
+        companies.classList.remove("u-displayNone");
+        research_centers.classList.add("u-displayNone");
+      } else if(button.classList.contains("u-colorBackgroundOrange")){
+        research_centers.classList.remove("u-displayNone");
+        companies.classList.add("u-displayNone");
+      } else {
+        research_centers.classList.remove("u-displayNone");
+        companies.classList.remove("u-displayNone");
+      }
+    })
   })
-})
+}

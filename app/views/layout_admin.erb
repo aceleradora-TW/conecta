@@ -36,6 +36,14 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://use.fontawesome.com/3f86ba9d74.js"></script>
+  <script type="text/javascript" src="/js/register.js"></script>
+  <script type="text/javascript" src="/js/expand_cards.js"></script>
+  <script type="text/javascript" src="/js/search_filter.js"></script>
+  <script type="text/javascript" src="/js/modal_contact.js"></script>
+  <script type="text/javascript" src="/js/btn_back_to_top.js"></script>
+  <script type="text/javascript" src="/js/login.js"></script>
+  <script type="text/javascript" src="/js/jquery_ajax.js"></script>
+  <script type="text/javascript" src="/js/change_on_scroll.js"></script>
 </head>
 <body>
   <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
@@ -45,20 +53,10 @@
     <i class="material-icons">arrow_upward</i>
   </button>
 <section class="Section">
-  <!-- <section class="SectionOpacity"> -->
   <%= erb :header_admin %>
   <%= yield %>
 </section>
 <%= erb :footer %>
-<script type="text/javascript" src="/js/register.js"></script>
-<script type="text/javascript" src="/js/expand_cards.js"></script>
-<script type="text/javascript" src="/js/search_filter.js"></script>
-<script type="text/javascript" src="/js/modal_contact.js"></script>
-<script type="text/javascript" src="/js/btn_back_to_top.js"></script>
-<script type="text/javascript" src="/js/login.js"></script>
-<script type="text/javascript" src="/js/jquery_ajax.js"></script>
-<script type="text/javascript" src="/js/change_on_scroll.js"></script>
-
 
 </body>
 </html>

@@ -19,6 +19,8 @@ group :development, :test do
   gem 'rspec'
   gem 'rack-test'
   gem 'capybara'
+  gem 'poltergeist'  # NOVO
+  gem 'phantomjs', '~> 2.1', '>= 2.1.1.0' #NOVO
 end
 
 group :production do
