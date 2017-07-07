@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  background-color: #3771c8;
+  background-color: #00a19a;
   line-height: 2em;
   text-transform: uppercase;
   border: none;
@@ -127,12 +127,12 @@
   width: 30px;
   font-size: 0.7rem;
   border-radius: 100%;
-  background-color: rgba(48, 89, 119, 0.93);
+  background-color: #706f6f;
   border: none;
 }
 /* line 93, ../sass/Button.scss */
 .ButtonClear:hover {
-  background-color: #3771c8;
+  background-color: #00a19a;
 }
 
 /* line 98, ../sass/Button.scss */
