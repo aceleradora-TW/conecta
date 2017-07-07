@@ -14,8 +14,8 @@ RSpec.describe IndexController do
         expect(page).to have_content 'Conecta'
       end
 
-      it "Deve exibir o botão do filtro de busca" do
-        expect(page).to have_css("button", class: 'ButtonFilter')
+      it "Deve exibir o campo de busca" do
+        expect(page).to have_css('input', class: 'InputSearch')
       end
 
       it "Deve exibir o texto do copyright no footer" do
