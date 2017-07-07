@@ -1,5 +1,7 @@
 class CsvCompany
-  attr_accessor :name, :size, :description,:segments,:types,:competences, :competence_value, :logo
+  attr_accessor :name, :size, :description,:segments,:types,:competences,
+  :competence_value, :logo, :contact_name, :contact_site, :contact_email,
+  :contact_phone, :address_info, :status
   @@competence_area_array = nil
   def initialize
     CsvCompany.create_competence_area_array()
@@ -7,7 +9,13 @@ class CsvCompany
 
   def insert_to_db
 
-    company = Company.new(name: @name, size: @size, logo: @logo)
+    company = Company.new(name: @name, description: @description, size: @size, logo: @logo, address: @address_info, status: @status)
+
+    @email = @contact_email || "exemplo@domain.com"
+
+    contact_object = Contact.new(site: @contact_site, phone: @pcontact_phone, contact_name: @contact_name,
+    email: @email)
+    company.contact = contact_object
 
     @segments.each do |segment|
       segment_object = Segment.first(name: segment)
@@ -37,11 +45,7 @@ class CsvCompany
 
     end
 
-
     company.save
-
-    puts company.inspect
-
   end
   def self.create_competence_area_array
     if !@@competence_area_array

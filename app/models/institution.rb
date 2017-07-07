@@ -6,7 +6,9 @@ class Institution
   property :logo, String
   property :address, String
   property :type, Discriminator
+  property :status, Boolean, :default  => false
 
+  has n, :segments, :through => Resource
   has n, :competences, :through => :competence_institutions
   has n, :competence_institutions
   has 1, :contact
@@ -27,9 +29,9 @@ class Institution
     competence_institutions.each do |competence_all|
       if filtered_competences.key?(competence_all.competence.competence_area.name)
         competence_area_array = filtered_competences[competence_all.competence.competence_area.name]
-        competence_area_array.push(competence_all.competence.name + " | " + competence_all.competence_value_calculated)
+        competence_area_array.push(competence_all.competence.name  + competence_all.competence_value_calculated)
       else
-        competence_area_array = [competence_all.competence.name + " | " + competence_all.competence_value_calculated]
+        competence_area_array = [competence_all.competence.name + competence_all.competence_value_calculated]
         filtered_competences[competence_all.competence.competence_area.name] = competence_area_array
       end
     end
