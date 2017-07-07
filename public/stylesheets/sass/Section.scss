@@ -58,7 +58,7 @@
   font-family: $font-style;
   font-weight: lighter;
   text-align: justify;
-  background-color: $darker-blue-color;
+  background-color: $gray-color;
   color: $white-font-color;
   @include smallMobile{
     @include size($min-height: 65vh);
