@@ -30,6 +30,10 @@
 	@include size($min-height: 88.8vh);
 }
 
+.u-heightXLarge {
+	@include size($height: 100vh);
+}
+
 .u-lineHeightMedium {
 	line-height: 1.7em;
 }

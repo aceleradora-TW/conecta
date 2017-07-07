@@ -35,6 +35,7 @@
 
 /* line 25, ../sass/Section.scss */
 .SectionOpacity {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -103,7 +104,7 @@
 /* line 67, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
-  min-height: 75vh;
+  min-height: 76vh;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
