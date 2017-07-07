@@ -28,24 +28,24 @@ class AdminController < Controller
         redirect DEFAULT_USER_ROUTE
       end
     end
-    erb :login, :layout => :layout_admin
+    erb :login, :layout => :layout
   end
 
   get "/admin/list_institutions" do
     if @user_info.is_admin
       @companies = Company.all(order: [:name.asc])
       @research_centers = ResearchCenter.all(order: [:name.asc])
-      erb :list_institutions, :layout => :layout_admin
+      erb :list_institutions
     else
-      erb :forbidden, :layout => :layout_admin
+      erb :forbidden
     end
   end
 
   get "/admin/company" do
     if @user_info.is_logged_in
-      erb :institution, :layout => :layout_admin
+      erb :institution
     else
-      erb :forbidden, :layout => :layout_admin
+      erb :forbidden
     end
   end
 
@@ -54,9 +54,9 @@ class AdminController < Controller
       @is_company = params[:type] == "company"
       @segment = Segment.all(order: :name)
       @competence_areas = CompetenceArea.all(order: :name)
-      erb :register, :layout => :layout_admin
+      erb :register
     else
-      erb :forbidden, :layout => :layout_admin
+      erb :forbidden
     end
   end
 
@@ -112,10 +112,10 @@ class AdminController < Controller
           competence_institution = CompetenceInstitution.create(competence_value: -1, institution: institution, competence: competence)
         end
       end
-        erb :register_success, :layout => :layout_admin
+        erb :register_success
 
     else
-      erb :forbidden, :layout => :layout_admin
+      erb :forbidden
     end
   end
 
@@ -133,4 +133,6 @@ class AdminController < Controller
     session.clear
     redirect "/admin"
   end
+
+
 end
