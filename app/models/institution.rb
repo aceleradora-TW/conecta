@@ -6,7 +6,9 @@ class Institution
   property :logo, String
   property :address, String
   property :type, Discriminator
+  property :status, Boolean, :default  => false
 
+  has n, :segments, :through => Resource
   has n, :competences, :through => :competence_institutions
   has n, :competence_institutions
   has 1, :contact

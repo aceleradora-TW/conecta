@@ -8,7 +8,7 @@ module CsvMappers
 
   CSV_LOCATION = File.join(Dir.pwd, 'csv', 'files')
   COMPANY_FILE_NAME = 'company.csv'
-  RESEARCH_CENTER_FILE_NAME = 'research_center_with_competences.csv'
+  RESEARCH_CENTER_FILE_NAME = 'research_center.csv'
 
   class CsvFileMapper
 
@@ -34,7 +34,7 @@ module CsvMappers
   def self.parse_company
     (CsvFileMapper.new(
       COMPANY_FILE_NAME,
-      CsvParser.new,
+      CsvParser.new(:col_sep => '*'),
       CsvLambdas.company
     )).parse()
   end
