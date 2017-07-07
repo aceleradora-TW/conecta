@@ -10,12 +10,12 @@ function openTab(buttonId, tabClass, tabLinkClass, tabId) {
 
   tablinks = document.getElementsByClassName(tabLinkClass);
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("u-colorBackgroundDarkerBlue");
+    tablinks[i].classList.remove("u-colorBackgroundGray");
   }
 
   document.getElementById(tabId).classList.remove("u-displayNone");
   document.getElementById(tabId).classList.add("active");
-  document.getElementById(buttonId).classList.add("u-colorBackgroundDarkerBlue");
+  document.getElementById(buttonId).classList.add("u-colorBackgroundGray");
 }
 
 function changeRegisterTab(buttonId, tabId){

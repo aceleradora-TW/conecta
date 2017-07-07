@@ -50,7 +50,7 @@
 
 .RegisterTitle{
   @include flex($align: center, $direction: row, $justify: center);
-  @include size($height: 100%, $width: 100%);
+  @include size($height: 100%, $width: 30%);
   color: $white-font-color;
   font-family: $font-style;
 }

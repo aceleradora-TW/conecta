@@ -92,7 +92,7 @@
   font-family: Lane;
   font-weight: lighter;
   text-align: justify;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #706f6f;
   color: white;
 }
 @media (max-width: 499px) {

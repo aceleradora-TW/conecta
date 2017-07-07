@@ -14,11 +14,6 @@
 	}
 }
 
-.u-colorBackgroundDarkerBlue {
-	background-color: $darker-blue-color;
-}
-
-
 .u-colorBackgroundGreen {
 	background-color: $aqua-green-color;
 	&:hover {
@@ -33,6 +28,10 @@
 		box-shadow: 0.07em 0.07em 0.14em 0.14em rgba(226, 106, 106, 1);
 		cursor: pointer;
 	}
+}
+
+.u-colorBackgroundGray {
+background-color: $gray-color;
 }
 
 .u-gradientTransparentToBlack {
