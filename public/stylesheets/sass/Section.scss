@@ -79,6 +79,9 @@
   @include smallMobile{
     @include flex($align: center, $direction: column, $justify: center);
   }
+  &.is-login{
+    @include flex($align: center);
+  }
 }
 
 .SectionSearch {
