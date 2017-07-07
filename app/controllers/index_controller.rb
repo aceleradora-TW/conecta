@@ -4,7 +4,7 @@ require "sinatra/base"
 require_relative "../services/search_service"
 require_relative "../services/router_service"
 require_relative "./admin_controller"
-
+# só um comentario pra ter a branch no git hub
 class IndexController < Controller
   use AdminController
 
@@ -71,5 +71,9 @@ class IndexController < Controller
     mailer.send_now
     "Email Enviado com Sucesso!"
 
+  end
+
+  get "/about_us" do
+   erb :about_us  
   end
 end

@@ -1,7 +1,9 @@
 <nav class="Navbar">
-  <a href="/" class="NavLogo">
-    <img src="/images/logo.png" alt="">
-  </a>
+  <div href="/" class="NavLogo">
+    <div class="Hamburger" onclick="navToggle()">  <i class="material-icons md-hamburger">menu</i></div>
+      <a  class="LogoImage" href="/" ></a>
+    </div>
+  </div>
   <ul class="NavLinks">
     <%if @user_info.is_logged_in %>
       <i class="material-icons u-colorBlue">account_circle</i>

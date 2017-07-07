@@ -14,20 +14,12 @@ RSpec.describe IndexController do
         expect(page).to have_content 'Conecta'
       end
 
-      it "Deve exibir o botão do filtro de busca" do
-        expect(page).to have_css("button", class: 'ButtonFilter')
+      it "Deve exibir o campo de busca" do
+        expect(page).to have_css('input', class: 'InputSearch')
       end
 
       it "Deve exibir o texto do copyright no footer" do
         expect(page).to have_content "© 2017 Conecta, Todos os direitos reservados."
-      end
-
-      it "Deve exibir o botão da lista de empresas" do
-        expect(page).to have_selector('span', text: 'Empresas')
-      end
-
-      it "Deve exibir o botão da lista de estruturas de pesquisa" do
-        expect(page).to have_selector('span', text: 'Estruturas de Pesquisa')
       end
 
       it "Deve exibir o título Como Funciona" do
@@ -43,6 +35,19 @@ RSpec.describe IndexController do
 
       it "Deve exibir o botão login na navbar" do
         expect(page).to have_css('a', id: 'login')
+      end
+
+    end
+
+    context "Quando clicar no campo de busca" do
+
+      before :each do
+        visit "/"
+      end
+
+      it "Deve exibir os filtros de pesquisa" do
+        page.find_by_id('InputSearch').click
+        expect(page).to have_css('.DropdownMenu')
       end
 
     end

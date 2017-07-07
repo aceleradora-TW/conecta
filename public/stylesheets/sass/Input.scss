@@ -6,6 +6,8 @@
   &Search {
     @include size ($width: 60%);
     font-size: 1.05em;
+    font-family: $font-style;
+
     border: 0.1em solid rgba(0, 0, 0, .4);
     border-left: none;
     padding-left: 2%;
@@ -31,7 +33,7 @@
   border: 1px solid rgba(0, 0, 0, .4);
   border-left: none;
   padding-left: 2%;
-  width: 60%;
+  width: 100%;
 }
 
 .ModalInputs {
@@ -74,6 +76,12 @@
     font-size: 1.05em;
   }
   span {
+    font-size: 1.3em;
+  }
+  select {
+    font-size: 1.3em;
+  }
+  option {
     font-size: 1.3em;
   }
   @include tablet {
