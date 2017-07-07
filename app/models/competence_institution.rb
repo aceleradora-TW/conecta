@@ -22,6 +22,7 @@ class CompetenceInstitution
   end
 
   def competence_value_calculated_integer
-    competence_value > 1 ? (competence_value - 1): 0
+    #competence_value > 1 ? (competence_value - 1): 0
+    competence_value
   end
 end
