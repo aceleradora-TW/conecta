@@ -6,6 +6,9 @@
 .DropdownMenu {
   height: 95px;
   width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   z-index: 3;
   visibility: hidden;
   list-style: none;
@@ -16,11 +19,8 @@
   opacity: 0;
   transition: 1s;
 }
-/* line 15, ../sass/Dropdown.scss */
+/* line 16, ../sass/Dropdown.scss */
 .DropdownMenu-visible {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   opacity: 1;
   transition: .5s;
   visibility: visible;

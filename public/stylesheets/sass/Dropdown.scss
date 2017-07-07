@@ -3,6 +3,7 @@
 
 .DropdownMenu{
   @include size($height:  95px, $width: 95%);
+  @include flex($direction: row, $justify: space-around);
   z-index: 3;
   visibility: hidden;
   list-style: none;
@@ -13,7 +14,6 @@
   opacity: 0;
   transition: 1s;
   &-visible{
-    @include flex($direction: row, $justify: space-around);
     opacity: 1;
     transition: .5s;
     visibility: visible;
