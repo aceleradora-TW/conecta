@@ -133,4 +133,6 @@ class AdminController < Controller
     session.clear
     redirect "/admin"
   end
+
+
 end
