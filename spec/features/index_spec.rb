@@ -45,7 +45,7 @@ RSpec.describe IndexController do
         visit "/"
       end
 
-      fit "Deve exibir os filtros de pesquisa" do
+      it "Deve exibir os filtros de pesquisa" do
         page.find_by_id('InputSearch').click
         expect(page).to have_css('.DropdownMenu')
       end
