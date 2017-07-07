@@ -1,0 +1,35 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "MediaQuery";
+
+.Tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.Tooltip .Tooltiptext {
+  visibility: hidden;
+  &-active{
+    min-width: 300px;
+    background-color: $black-font-color;
+    color: $white-color;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: -110px;
+    visibility: visible;
+    &::after{
+      content: " ";
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+  }
+}
