@@ -194,10 +194,17 @@
   }
 }
 
-.BoxSegments {
+.BoxThreeColumns {
   @include flex($align: center, $direction: row, $justify: space-between, $wrap: wrap, $content: center);
   p{
     width: 30%;
+
+    @include tablet {
+      @include size($width: 49%);
+    }
+    @include mobile {
+      @include size($width: 100%);
+    }
   }
 }
 
@@ -208,7 +215,7 @@
 
 .RatingExplanation {
   @include flex($align: center, $justify: space-around);
-  @include size($height: 100%, $width: 70%);
+  @include size($height: 100%, $width: 100%);
 
   @include tablet{
     @include size($height: 30%, $width: 97%);

@@ -8,6 +8,7 @@
 
   &.is-register{
     @include flex($align:center);
+    @include size($width: 94%);
     border-radius: 1%;
   }
 
@@ -40,7 +41,7 @@
 .Items {
   @include flex($align: center, $justify: space-around, $self: center);
   @include size($width: 100%);
-  line-height: 2em;
+  line-height: 1.3em;
   cursor: pointer;
 
   &:hover {
@@ -49,6 +50,10 @@
   }
   @include smallMobile {
     font-size: $medium-font-size;
+  }
+
+  &Register {
+    @include flex($justify: flex-start);
   }
 
   &.is-featured {
@@ -105,12 +110,13 @@
 .Subitems {
   @include size($width: 100%);
   display: none;
+  color: $white-font-color;
   flex-direction: column;
   list-style: none;
-  line-height: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 1.3em;
   font-size: $small-font-size;
   text-align:center;
-  background-color: $white-color;
   padding: 0;
   justify-content: space-around;
   li {

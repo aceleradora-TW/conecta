@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 @media (max-width: 499px) {
   /* line 5, ../../sass/utilities/u-icon.scss */
   .u-rotateIcon {
