@@ -22,14 +22,6 @@ RSpec.describe IndexController do
         expect(page).to have_content "© 2017 Conecta, Todos os direitos reservados."
       end
 
-      it "Deve exibir o botão da lista de empresas" do
-        expect(page).to have_selector('span', text: 'Empresas')
-      end
-
-      it "Deve exibir o botão da lista de estruturas de pesquisa" do
-        expect(page).to have_selector('span', text: 'Estruturas de Pesquisa')
-      end
-
       it "Deve exibir o título Como Funciona" do
         expect(page).to have_selector('h1', text: 'Como Funciona')
       end
