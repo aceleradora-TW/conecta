@@ -63,7 +63,7 @@
   justify-content: space-around;
   align-self: center;
   width: 100%;
-  line-height: 2em;
+  line-height: 1.3em;
   cursor: pointer;
 }
 /* line 47, ../sass/List.scss */
@@ -178,22 +178,23 @@
 .Subitems {
   width: 100%;
   display: none;
+  color: white;
   flex-direction: column;
   list-style: none;
-  line-height: 2em;
+  background-color: transparent;
+  line-height: 1.3em;
   font-size: 0.7em;
   text-align: center;
-  background-color: white;
   padding: 0;
   justify-content: space-around;
 }
-/* line 121, ../sass/List.scss */
+/* line 122, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 125, ../sass/List.scss */
+/* line 126, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }
