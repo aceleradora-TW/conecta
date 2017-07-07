@@ -30,8 +30,8 @@ RSpec.describe IndexController do
         expect(page).to have_selector('span', text: 'Estruturas de Pesquisa')
       end
 
-      it "Deve exibir o título Sobre" do
-        expect(page).to have_selector('h1', text: 'Sobre nós')
+      it "Deve exibir o título Sobre nós" do
+        expect(page).to have_selector('h1', id: 'about_us')
 
       it "Deve exibir o botão login na navbar" do
         expect(page).to have_css('a', id: 'login')
