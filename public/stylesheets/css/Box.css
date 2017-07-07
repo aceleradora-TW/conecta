@@ -383,7 +383,7 @@
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  width: 70%;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 216, ../sass/Box.scss */
