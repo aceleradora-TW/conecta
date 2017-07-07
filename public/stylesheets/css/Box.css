@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../sass/Box.scss */
 .ContentAbout {
   display: flex;
@@ -16,7 +20,7 @@
   justify-content: center;
   height: 70%;
   width: 100%;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   color: white;
   text-shadow: 1px 1px black;
   line-height: 2em;
@@ -67,7 +71,7 @@
   justify-content: center;
   height: 50%;
   width: 100%;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   font-weight: lighter;
   font-size: 1em;
   text-align: center;
@@ -144,7 +148,7 @@
   flex-direction: column;
   height: 35vh;
   width: 98%;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   font-weight: lighter;
 }
 @media (max-width: 499px) {
@@ -202,7 +206,7 @@
   justify-content: center;
   width: 98%;
   min-height: 25vh;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   font-weight: lighter;
   text-align: justify;
   padding: 0%;
@@ -277,7 +281,7 @@
   border-radius: 1.4%;
   box-shadow: 1px 1px 5px 2px rgba(48, 91, 159, 0.2);
   margin-bottom: 2%;
-  font-family: Lato, sans-serif;
+  font-family: Lane;
   font-weight: lighter;
 }
 /* line 165, ../sass/Box.scss */
@@ -342,7 +346,7 @@
 }
 
 /* line 197, ../sass/Box.scss */
-.BoxSegments {
+.BoxThreeColumns {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -351,17 +355,29 @@
   align-content: center;
 }
 /* line 199, ../sass/Box.scss */
-.BoxSegments p {
+.BoxThreeColumns p {
   width: 30%;
 }
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 199, ../sass/Box.scss */
+  .BoxThreeColumns p {
+    width: 49%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 199, ../sass/Box.scss */
+  .BoxThreeColumns p {
+    width: 100%;
+  }
+}
 
-/* line 204, ../sass/Box.scss */
+/* line 211, ../sass/Box.scss */
 .ContentCollaborators {
   width: 70%;
   display: flex;
 }
 
-/* line 209, ../sass/Box.scss */
+/* line 216, ../sass/Box.scss */
 .RatingExplanation {
   display: flex;
   align-items: center;
@@ -370,7 +386,7 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 97%;
@@ -381,7 +397,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 100%;
@@ -392,7 +408,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 209, ../sass/Box.scss */
+  /* line 216, ../sass/Box.scss */
   .RatingExplanation {
     height: 30%;
     width: 90%;

@@ -8,6 +8,7 @@
 
   &.is-register{
     @include flex($align:center);
+    @include size($width: 94%);
     border-radius: 1%;
   }
 
@@ -49,6 +50,10 @@
   }
   @include smallMobile {
     font-size: $medium-font-size;
+  }
+
+  &Register {
+    @include flex($justify: flex-start);
   }
 
   &.is-featured {
