@@ -26,6 +26,10 @@
 	@include size($width: 75%);
 }
 
+.u-minHeightLarge {
+	@include size($min-height: 88.8vh);
+}
+
 .u-lineHeightMedium {
 	line-height: 1.7em;
 }
