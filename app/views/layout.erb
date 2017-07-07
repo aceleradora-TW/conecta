@@ -70,25 +70,24 @@
   <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
     <i class="material-icons">arrow_upward</i>
   </button>
-  <section class="Section">
-    <% if @user_info && @user_info.is_admin %>
-    <%= erb :header_admin %>
-    <% else %>
+
+<section class="Section">
+  <section class="SectionOpacity">
     <%= erb :modal_contact %>
     <%= erb :header %>
-    <% end %>
     <%= yield %>
-  </section>
-  <%= erb :footer %>
-  <script type="text/javascript" src="/js/email_validator.js"></script>
-  <script type="text/javascript" src="/js/navbar.js"></script>
-  <script type="text/javascript" src="/js/expand_cards.js"></script>
-  <script type="text/javascript" src="/js/search_filter.js"></script>
-  <script type="text/javascript" src="/js/modal_contact.js"></script>
-  <script type="text/javascript" src="/js/btn_back_to_top.js"></script>
-  <script type="text/javascript" src="/js/login.js"></script>
-  <script type="text/javascript" src="/js/jquery_ajax.js"></script>
-  <script type="text/javascript" src="/js/change_on_scroll.js"></script>
+</section>
+</section>
+<%= erb :footer %>
+<script type="text/javascript" src="/js/email_validator.js"></script>
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/expand_cards.js"></script>
+<script type="text/javascript" src="/js/search_filter.js"></script>
+<script type="text/javascript" src="/js/modal_contact.js"></script>
+<script type="text/javascript" src="/js/btn_back_to_top.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
+<script type="text/javascript" src="/js/jquery_ajax.js"></script>
+<script type="text/javascript" src="/js/change_on_scroll.js"></script>
 
 </body>
 </html>
