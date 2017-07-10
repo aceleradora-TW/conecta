@@ -61,7 +61,7 @@
   background: #00a19a;
 }
 
-/* line 55, ../sass/Section.scss */
+/* line 44, ../sass/Section.scss */
 .Collaborators {
   width: 100%;
   min-height: 72vh;
@@ -71,13 +71,13 @@
   justify-content: center;
 }
 @media (max-width: 499px) {
-  /* line 55, ../sass/Section.scss */
+  /* line 44, ../sass/Section.scss */
   .Collaborators {
     min-height: 65vh;
   }
 }
 
-/* line 72, ../sass/Section.scss */
+/* line 53, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 62vh;
@@ -92,13 +92,13 @@
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 72, ../sass/Section.scss */
+  /* line 53, ../sass/Section.scss */
   .About {
     min-height: 65vh;
   }
 }
 
-/* line 101, ../sass/Section.scss */
+/* line 66, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 76vh;
@@ -110,7 +110,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 101, ../sass/Section.scss */
+  /* line 66, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 101, ../sass/Section.scss */
+  /* line 66, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 101, ../sass/Section.scss */
+  /* line 66, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -136,13 +136,13 @@
     justify-content: center;
   }
 }
-/* line 115, ../sass/Section.scss */
+/* line 80, ../sass/Section.scss */
 .SectionCards.is-login {
   display: flex;
   align-items: center;
 }
 
-/* line 120, ../sass/Section.scss */
+/* line 85, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 100%;
@@ -153,7 +153,7 @@
   padding: 0;
 }
 
-/* line 126, ../sass/Section.scss */
+/* line 91, ../sass/Section.scss */
 .SectionList {
   width: 100%;
   min-height: 82vh;
@@ -164,7 +164,7 @@
   padding: 0;
 }
 
-/* line 132, ../sass/Section.scss */
+/* line 97, ../sass/Section.scss */
 .LogosList {
   height: 100%;
   width: 100%;
@@ -175,7 +175,7 @@
   flex-wrap: wrap;
 }
 
-/* line 138, ../sass/Section.scss */
+/* line 103, ../sass/Section.scss */
 .SectionLogin {
   display: flex;
   align-items: flex-end;
