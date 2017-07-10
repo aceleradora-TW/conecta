@@ -32,8 +32,6 @@ class SearchService
     return InstitutionSegment.all(conditions: ["segment_id in ? AND institution_id in ?",segments_ids, institution_ids])
   end
 
-
-
   def find_by_company companies
     @companies = Company.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", companies])
   end
