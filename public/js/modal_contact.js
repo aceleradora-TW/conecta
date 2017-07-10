@@ -1,6 +1,6 @@
-var modal = document.querySelector("#ModalContact");
-var company = document.querySelector("#SendEmailButton");
-var message = document.querySelector("#MessageModal");
+const modal = document.querySelector("#ModalContact");
+const company = document.querySelector("#SendEmailButton");
+const message = document.querySelector("#MessageModal");
 
 function showModal(id, InstitutionName) {
   var contact = document.querySelector("#ContactCompany");
@@ -37,9 +37,11 @@ function showMessage(msg){
 function sendMail(){
   $("#SendEmailMessage").removeClass("u-colorLightRed");
   $("#SendEmailMessage").removeClass("u-colorGreen");
-  $("#SendEmailButton").attr("disabled","disabled");
 
   var email = $("#email").val();
+
+  document.querySelector("#invalidEmailMessage").style.display = "none";
+  document.querySelector("#email").style.borderColor = "rgba(193, 193, 193, 1)"
 
   if (isValidEmail(email)) {
     $("#SendEmailMessage").html("<img class='Spinner' src='images/spinner.gif'>");
@@ -55,6 +57,7 @@ function sendMail(){
           setTimeout(closeModal, 3000);
         }
         else{
+          $("#SendEmailMessage").addClass("u-colorLightRed");
           $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
         }
         $("#SendEmailButton").removeAttr("disabled");

@@ -35,22 +35,21 @@
 
 /* line 26, ../sass/Section.scss */
 .SectionOpacity {
-  background-color: rgba(0, 0, 0, 0.47);
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 33, ../sass/Section.scss */
+/* line 32, ../sass/Section.scss */
 .SectionBlack {
   background-color: rgba(0, 0, 0, 0.47);
   width: 100%;
   min-height: 100vh;
 }
 
-/* line 38, ../sass/Section.scss */
+/* line 37, ../sass/Section.scss */
 .HowItWorks {
   width: 100%;
   min-height: 48vh;
@@ -62,7 +61,7 @@
   background: #00a19a;
 }
 
-/* line 56, ../sass/Section.scss */
+/* line 55, ../sass/Section.scss */
 .Collaborators {
   width: 100%;
   min-height: 72vh;
@@ -72,13 +71,13 @@
   justify-content: center;
 }
 @media (max-width: 499px) {
-  /* line 56, ../sass/Section.scss */
+  /* line 55, ../sass/Section.scss */
   .Collaborators {
     min-height: 65vh;
   }
 }
 
-/* line 73, ../sass/Section.scss */
+/* line 72, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 62vh;
@@ -93,7 +92,7 @@
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 73, ../sass/Section.scss */
+  /* line 72, ../sass/Section.scss */
   .About {
     min-height: 65vh;
   }
@@ -102,7 +101,7 @@
 /* line 101, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
-  min-height: 75vh;
+  min-height: 76vh;
   display: flex;
   align-items: flex-start;
   flex-direction: row;

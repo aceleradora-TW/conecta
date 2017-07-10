@@ -33,6 +33,16 @@
 }
 
 /* line 29, ../../sass/utilities/u-size.scss */
+.u-minHeightLarge {
+  min-height: 88.8vh;
+}
+
+/* line 33, ../../sass/utilities/u-size.scss */
+.u-heightXLarge {
+  height: 100vh;
+}
+
+/* line 37, ../../sass/utilities/u-size.scss */
 .u-lineHeightMedium {
   line-height: 1.7em;
 }

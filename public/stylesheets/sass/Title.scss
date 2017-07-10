@@ -15,6 +15,6 @@
 
   .CardTitle {
     @include flex($justify: center);
-    @include size($height: 100%, $width: 40%);
-    font-size: $medium-font-size;
+    @include size($height: 100%, $width: 100%);
+    font-size: $large-font-size;
   }

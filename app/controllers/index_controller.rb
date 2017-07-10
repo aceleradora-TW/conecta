@@ -66,11 +66,13 @@ class IndexController < Controller
     institution_email = @institution.contact.email
     "Email: #{institution_email}"
     email_infos = EmailData.new(@name, @email, @comment, institution_contact_name, institution_email)
-    mailer = ContactMailer.new email_infos
-
-    mailer.send_now
-    "Email Enviado com Sucesso!"
-
+    begin
+      mailer = ContactMailer.new email_infos
+      mailer.send_now
+      "Email Enviado com Sucesso!"
+    rescue
+      "[erro] Variáveis de ambiente GMAIL_USER ou GMAIL_PASSWORD não configuradas."
+    end
   end
 
   get "/about_us" do

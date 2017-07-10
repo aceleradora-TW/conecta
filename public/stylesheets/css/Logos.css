@@ -117,20 +117,7 @@
   }
 }
 
-/* line 70, ../sass/Logos.scss */
-.CardLogo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-}
-
-/* line 74, ../sass/Logos.scss */
-.LogoInstitutions {
-  width: 50%;
-}
-
-/* line 78, ../sass/Logos.scss */
+/* line 71, ../sass/Logos.scss */
 .LogoSmall {
   display: flex;
   align-items: center;
@@ -141,7 +128,7 @@
   margin: 10px;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 78, ../sass/Logos.scss */
+  /* line 71, ../sass/Logos.scss */
   .LogoSmall {
     height: 100px;
   }
