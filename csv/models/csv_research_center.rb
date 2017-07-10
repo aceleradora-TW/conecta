@@ -29,6 +29,14 @@ class CsvResearchCenter
         competence_institution_object.competence = competence_object
         competence_institution_object.save
       end
+
+      @segments.each do |segment|
+        segment_object = Segment.first(name: segment)
+        if !segment_object
+          segment_object = Segment.create(name: segment)
+        end
+        research_center.segments.push(segment_object)
+      end
       research_center.save
     end
   end

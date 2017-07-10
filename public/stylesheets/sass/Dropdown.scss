@@ -3,18 +3,19 @@
 @import "MediaQuery";
 
 .DropdownMenu {
-  @include size($height:  13vh, $width: 92%);
+  @include size($height: 11vh, $width: 95.5%);
   @include flex($direction: row, $justify: space-around);
+  font-size: 0.9em;
   @include tablet {
-    @include size($height:  13vh, $width: 84.7%);
-    font-size: 0.9em;
-  }  
+    @include size($height: 13vh, $width: 84.8%);
+    font-size: 0.8em;
+  }
   @include mobile {
-    @include size($height:  13vh, $width: 93%);
+    @include size($height: 13vh, $width: 93%);
     font-size: 0.8em;
   }
   @include smallMobile {
-    @include size($height:  11vh, $width: 85%);
+    @include size($width: 85%);
     font-size: $small-font-size;
   }
   z-index: 3;

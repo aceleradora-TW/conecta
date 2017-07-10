@@ -6,12 +6,12 @@
     <% end %>
   </h3>
   <section class="SectionCards">
-    <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
-    <%= erb :companies %>
-    <% elsif @search_type == 'centro-pesquisa'or @search_type == 'estrutura-pesquisa-competencia'%>
 
-    <%= erb :research_centers %>
+    <% if @institution.length == 0 %>
+    <br>Nenhum resultado encontrado
     <% end %>
+  <section class="SectionCards">
+    <%= erb :institution_card %>
   </section>
 </div>
 <script src="js/break_links.js"></script>
