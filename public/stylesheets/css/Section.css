@@ -17,23 +17,23 @@
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 6, ../sass/Section.scss */
   .Section {
-    background-image: url("/images/background-main-tablet.jpg");
+    background-color: #1d1d1b;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
   /* line 6, ../sass/Section.scss */
   .Section {
-    background-image: url("/images/background-main-mobile.jpg");
+    background-color: #1d1d1b;
   }
 }
 @media (max-width: 499px) {
   /* line 6, ../sass/Section.scss */
   .Section {
-    background-image: url("/images/background-main-smallMobile.jpg");
+    background-color: #1d1d1b;
   }
 }
 
-/* line 26, ../sass/Section.scss */
+/* line 25, ../sass/Section.scss */
 .SectionOpacity {
   height: 100%;
   width: 100%;
@@ -42,14 +42,14 @@
   background-color: rgba(0, 0, 0, 0.47);
 }
 
-/* line 32, ../sass/Section.scss */
+/* line 31, ../sass/Section.scss */
 .SectionBlack {
   background-color: rgba(0, 0, 0, 0.47);
   width: 100%;
   min-height: 100vh;
 }
 
-/* line 37, ../sass/Section.scss */
+/* line 36, ../sass/Section.scss */
 .HowItWorks {
   width: 100%;
   min-height: 48vh;
@@ -61,7 +61,7 @@
   background: #00a19a;
 }
 
-/* line 44, ../sass/Section.scss */
+/* line 43, ../sass/Section.scss */
 .Collaborators {
   width: 100%;
   min-height: 72vh;
@@ -71,13 +71,13 @@
   justify-content: center;
 }
 @media (max-width: 499px) {
-  /* line 44, ../sass/Section.scss */
+  /* line 43, ../sass/Section.scss */
   .Collaborators {
     min-height: 65vh;
   }
 }
 
-/* line 53, ../sass/Section.scss */
+/* line 52, ../sass/Section.scss */
 .About {
   width: 100%;
   min-height: 62vh;
@@ -92,13 +92,13 @@
   color: white;
 }
 @media (max-width: 499px) {
-  /* line 53, ../sass/Section.scss */
+  /* line 52, ../sass/Section.scss */
   .About {
     min-height: 65vh;
   }
 }
 
-/* line 66, ../sass/Section.scss */
+/* line 65, ../sass/Section.scss */
 .SectionCards {
   width: 100%;
   min-height: 76vh;
@@ -110,7 +110,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 66, ../sass/Section.scss */
+  /* line 65, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 66, ../sass/Section.scss */
+  /* line 65, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 66, ../sass/Section.scss */
+  /* line 65, ../sass/Section.scss */
   .SectionCards {
     display: flex;
     align-items: center;
@@ -136,13 +136,13 @@
     justify-content: center;
   }
 }
-/* line 80, ../sass/Section.scss */
+/* line 79, ../sass/Section.scss */
 .SectionCards.is-login {
   display: flex;
   align-items: center;
 }
 
-/* line 85, ../sass/Section.scss */
+/* line 84, ../sass/Section.scss */
 .SectionSearch {
   width: 100%;
   min-height: 100%;
@@ -153,7 +153,7 @@
   padding: 0;
 }
 
-/* line 91, ../sass/Section.scss */
+/* line 90, ../sass/Section.scss */
 .SectionList {
   width: 100%;
   min-height: 82vh;
@@ -164,7 +164,7 @@
   padding: 0;
 }
 
-/* line 97, ../sass/Section.scss */
+/* line 96, ../sass/Section.scss */
 .LogosList {
   height: 100%;
   width: 100%;
@@ -175,7 +175,7 @@
   flex-wrap: wrap;
 }
 
-/* line 103, ../sass/Section.scss */
+/* line 102, ../sass/Section.scss */
 .SectionLogin {
   display: flex;
   align-items: flex-end;
