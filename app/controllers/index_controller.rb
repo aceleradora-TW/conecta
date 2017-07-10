@@ -66,14 +66,18 @@ class IndexController < Controller
     institution_email = @institution.contact.email
     "Email: #{institution_email}"
     email_infos = EmailData.new(@name, @email, @comment, institution_contact_name, institution_email)
-    mailer = ContactMailer.new email_infos
-
-    mailer.send_now
-    "Email Enviado com Sucesso!"
-
+    environment_user = ActionMailer::Base.smtp_settings[:user_name]
+    environment_pass = ActionMailer::Base.smtp_settings[:password]
+    if environment_user && environment_pass
+      mailer = ContactMailer.new email_infos
+      mailer.send_now
+      "Email Enviado com Sucesso!"
+    else
+      "ERRO: Variáveis de ambiente GMAIL_USER ou GMAIL_PASSWORD não configuradas."
+    end
   end
 
   get "/about_us" do
-   erb :about_us  
+   erb :about_us
   end
 end
