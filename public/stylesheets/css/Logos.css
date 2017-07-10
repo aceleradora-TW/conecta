@@ -133,3 +133,37 @@
     height: 100px;
   }
 }
+
+/* line 81, ../sass/Logos.scss */
+.LogoHome {
+  height: 50%;
+  width: 50%;
+  background-image: url("/images/ligaLogoSlogan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+  /* line 81, ../sass/Logos.scss */
+  .LogoHome {
+    height: 45%;
+    width: 65%;
+    background-size: 80%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  /* line 81, ../sass/Logos.scss */
+  .LogoHome {
+    height: 30%;
+    width: 65%;
+    background-size: 90%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 81, ../sass/Logos.scss */
+  .LogoHome {
+    height: 30%;
+    width: 65%;
+    background-size: 100%;
+  }
+}

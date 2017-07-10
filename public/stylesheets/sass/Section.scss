@@ -2,24 +2,10 @@
 @import "_mixins.scss";
 @import "MediaQuery.scss";
 
-
 .Section {
   @include size($width: 100%, $min-height: 94vh);
   @include flex($direction: column);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: $dark-grey-color;
-  @include tablet {
-    background-color: $dark-grey-color;
-  }
-  @include mobile {
-    background-color: $dark-grey-color;
-  }
-  @include smallMobile {
-    background-color: $dark-grey-color;
-  }
 }
 
 .SectionOpacity {
@@ -101,4 +87,9 @@
 
 .SectionLogin{
   @include flex($align: flex-end);
+}
+
+.SectionLogoBusca {
+  @include size($width: 100vw, $height: 94vh);
+  @include flex($align: center, $direction: column, $justify: center);
 }
