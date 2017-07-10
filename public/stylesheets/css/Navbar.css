@@ -250,12 +250,13 @@
 }
 /* line 156, ../sass/Navbar.scss */
 .NavLinks a:hover {
+  color: #00a19a;
   text-decoration: none;
   line-height: 1;
   border-bottom: 0.3vh solid;
 }
 
-/* line 164, ../sass/Navbar.scss */
+/* line 165, ../sass/Navbar.scss */
 .Link {
   height: 60%;
   width: 24%;
@@ -267,7 +268,7 @@
   color: white;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 164, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -275,7 +276,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 164, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -283,7 +284,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 164, ../sass/Navbar.scss */
+  /* line 165, ../sass/Navbar.scss */
   .Link {
     height: 10vh;
     width: 90%;
@@ -291,17 +292,17 @@
     font-size: 1.3em;
   }
 }
-/* line 185, ../sass/Navbar.scss */
+/* line 186, ../sass/Navbar.scss */
 .Link:hover {
   text-decoration: none;
   color: #34495e;
 }
-/* line 189, ../sass/Navbar.scss */
+/* line 190, ../sass/Navbar.scss */
 .Link:hover a {
   color: white;
 }
 
-/* line 194, ../sass/Navbar.scss */
+/* line 195, ../sass/Navbar.scss */
 .NavSearch {
   display: flex;
   flex-direction: row;
@@ -310,7 +311,7 @@
   width: 60%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 194, ../sass/Navbar.scss */
+  /* line 195, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     flex-direction: column;
@@ -318,7 +319,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 194, ../sass/Navbar.scss */
+  /* line 195, ../sass/Navbar.scss */
   .NavSearch {
     display: flex;
     align-items: center;

@@ -2,11 +2,10 @@
 @import "_mixins.scss";
 @import "MediaQuery.scss";
 
-
 .Section {
   @include size($width: 100%, $min-height: 94vh);
   @include flex($direction: column);
-  background-color: rgba(29, 29, 27, 1);
+  background-color: $dark-grey-color;
 }
 
 .SectionOpacity {

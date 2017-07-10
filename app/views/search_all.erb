@@ -1,11 +1,10 @@
 <div class="u-gradientTransparentToBlack">
   <h1 class="u-fontFamilyLane u-fontSizeLarge u-marginLeftXSmall u-marginTopXLarge u-fontWhite"><%= @search_description %></h1>
-  <h3 class="u-fontFamilyLane u-fontSizeMedium u-marginLeft u-fontWhite"></h3>
-    <h3 class="u-fontFamilyLane u-fontSizeMedium u-marginLeft u-fontWhite">
-      <% if @institution.length == 0 %>
-      <br>Nenhum resultado encontrado
-      <% end %>
-    </h3>
+  <h3 class="u-fontFamilyLane u-fontSizeMedium u-marginLeft u-fontWhite">
+    <% if @institution.length == 0 %>
+    <br>Nenhum resultado encontrado
+    <% end %>
+  </h3>
   <section class="SectionCards">
     <% if @search_type == 'segmento' or @search_type == 'competencia' or @search_type == 'empresa' %>
     <%= erb :companies %>
@@ -15,4 +14,4 @@
     <% end %>
   </section>
 </div>
-  <script src="js/break_links.js"></script>
+<script src="js/break_links.js"></script>

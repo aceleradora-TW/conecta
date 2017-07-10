@@ -10,10 +10,17 @@ services:
 build:
   steps:
     - install-packages:
-         packages: libpq-dev postgresql-server-dev-9.4
+         packages: libpq-dev postgresql-server-dev-9.4 wget libfontconfig
+    - script:
+        name: Install PhantomJs
+        code: |
+          wget "https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2"
+          tar xvfj phantomjs-2.1.1-linux-x86_64.tar.bz2
+          cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
+          rm -rf phantomjs-2.1.1-linux-x86_64/
     - bundle-install
     - script:
-        name: echo ruby information
+        name: Ruby information
         code: |
           echo "ruby version $(ruby --version) running!"
           echo "from location $(which ruby)"
@@ -23,7 +30,7 @@ build:
         code: rake db:reset && rake db:seed_test && rake db:seed_test_users
     - script:
         name: test
-        code: bundle exec rspec
+        code: bundle exec rspec --format d
 
 deploy:
   steps:

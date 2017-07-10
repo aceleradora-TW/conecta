@@ -84,26 +84,24 @@
       <div>
         <%= company.description || "Mayra Ipsum Dort Lamem" %>
       </div>
-    <div class="List is-vertical">
-      <div class="CompetencesTitle">Demais competências</div>
-
+      <div class="List is-vertical">
+        <div class="CompetencesTitle">Demais competências</div>        
         <% @company_competences = company.grouped_competences %>
         <% if @company_competences != nil %>
-          <ul >
-            <% @company_competences.each_key do |competence_area| %>
-              <li class="Items ItemsArea">
-                <div class="ItemsText"><%= competence_area %></div>
-                <div class="ItemsText is-icon"><i class="material-icons" style="float:ri">keyboard_arrow_down</i></div>
-              </li>
-              <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
-                <% @company_competences[competence_area].each do |competence| %>
-                <li><%= competence %></li>
-                <% end %>
-              </ul>
+        <ul >
+          <% @company_competences.each_key do |competence_area| %>
+          <li class="Items ItemsArea">
+            <div class="ItemsText"><%= competence_area %></div>
+            <div class="ItemsText is-icon"><i class="material-icons" style="float:ri">keyboard_arrow_down</i></div>
+          </li>
+          <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
+            <% @company_competences[competence_area].each do |competence| %>
+            <li><%= competence %></li>
             <% end %>
           </ul>
           <% end %>
-
+        </ul>
+        <% end %>
       </div>
     </div>
   </div>

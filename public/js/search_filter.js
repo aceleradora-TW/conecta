@@ -3,20 +3,21 @@ const inputSearch = document.querySelector('#InputSearch');
 const searchFilterElements = [inputSearch, dropdownMenu];
 const tooltip = document.querySelector('#tooltipMessage');
 
-searchFilterElements.forEach(function(element){
-  element.addEventListener('click', function(event){
+if(dropdownMenu && inputSearch){
+  searchFilterElements.forEach(function(element){
+    console.log(element);
+    element.addEventListener('click', function(event){
+      event.stopPropagation();
+    });
+  });
+  inputSearch.addEventListener('focus', function(event){
+    dropdownMenu.classList.add('DropdownMenu-visible');
     event.stopPropagation();
   });
-});
-
-inputSearch.addEventListener('focus', function(event){
-  dropdownMenu.classList.add('DropdownMenu-visible');
-  event.stopPropagation();
-});
-
-document.addEventListener('click', function(){
-  dropdownMenu.classList.remove('DropdownMenu-visible');
-});
+  document.addEventListener('click', function(){
+    dropdownMenu.classList.remove('DropdownMenu-visible');
+  });
+}
 
 function validateFilter(){
   const requiredFilterInputs = document.querySelectorAll('.requiredFilter');
