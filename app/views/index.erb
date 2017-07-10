@@ -16,48 +16,38 @@
           Encontre parcerias agora
         </div>
         <div class="ContentSearch">
-          <form class="FormSearch" action="/search_all" name="search" id="searchFrom">
-            <div class="InputGroup">
-              <div class="BoxFilterBy">
-                <button class="ButtonFilter" type="button" name="button">
-                <span class="u-fontSizeMedium"><span id="ReplaceFilter">Filtre por</span> <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-              </button>
-              <div class="DropdownMenu">
-              <span class="u-fontBold u-marginBottom">Empresa</span><br>
-              <label class="filterLabel"><input type="radio" name="search_type" value="empresa" checked> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
-              <label><input type="radio" name="search_type" value="competencia"> <span class="u-fontSizeSmallMedium">Competência</span></label><br>
-              <label><input type="radio" name="search_type" value="segmento"> <span class="u-fontSizeSmallMedium">Segmento</span></label><br>
-              <hr>
-              <span class="u-fontBold u-marginBottom">Estruturas de pesquisa</span><br>
-              <label><input type="radio" name="search_type" value="centro-pesquisa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
-              <label><input type="radio" name="search_type" value="estrutura-pesquisa-competencia"> <span class="u-fontSizeSmallMedium">Competência</span></label><br>
-            </div>
 
-          </div>
-          <input id="InputSearch" class="InputSearch" type="text" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
-          <div class="Button u-center" onclick="document.forms['search'].submit();">
-            <a class="ButtonSearch">
-              <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
-            </a>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="NavSearch">
-      <div class="Tag" onclick="location.href='/search_all?search_type=empresa'">
-        <div class="TagTitle u-colorBackgroundGreen">
-          <div class="BoxTextTitle">
-            <i class="material-icons u-fontSizeMedium">work</i>
-            <span class="u-fontSizeMedium u-marginSmall">Empresas</span>
-          </div>
-        </div>
-      </div>
-      <div class="Tag" onclick="location.href='/search_all?search_type=centro-pesquisa'">
-        <div class="TagTitle u-colorBackgroundOrange">
-          <div class="BoxTextTitle">
-            <i class="material-icons u-fontSizeMedium">school</i>
-            <span class="u-fontSizeMedium u-marginSmall">Estruturas de Pesquisa</span>
-          </div>
+          <form class="FormSearch" action="/search_all" name="search" onsubmit="return validateFilter()" id="searchFrom">
+            <div class="Tooltip">
+              <span id = "tooltipMessage" class="Tooltiptext">Selecione ao menos um campo de busca</span>
+            </div>
+            <div class="InputGroup">
+              <input id="InputSearch" class="InputSearch" type="text" autocomplete="off" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
+              <div class="Button u-textAlignCenter" onclick="validateFilter()">
+                <a class="ButtonSearch">
+
+                  <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
+                </a>
+              </div>
+            </div>
+            <div class="InputGroup u-justifyContentStart">
+              <div class="BoxFilterBy">
+                <div class="DropdownMenu">
+                  <div>
+                    <span class="u-fontBold u-marginBottom">Empresa</span><br>
+                    <label class="filterLabel"><input type="radio" class="requiredFilter" name="search_type" value="empresa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                    <label><input type="radio" class="requiredFilter" name="search_type" value="competencia" > <span class="u-fontSizeSmallMedium">Competência</span></label><br>
+                    <label><input type="radio" class="requiredFilter" name="search_type" value="segmento" > <span class="u-fontSizeSmallMedium">Segmento</span></label><br>
+                  </div>
+                  <div>
+                    <span class="u-fontBold u-marginBottom">Estruturas de pesquisa</span><br>
+                    <label><input type="radio" class="requiredFilter" name="search_type" value="centro-pesquisa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                    <label><input type="radio" class="requiredFilter" name="search_type" value="estrutura-pesquisa-competencia"> <span class="u-fontSizeSmallMedium">Competencia</span></label><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -18,31 +18,31 @@
 }
 
 /* line 17, ../../sass/utilities/u-backgroundColor.scss */
-.u-colorBackgroundDarkerBlue {
-  background-color: rgba(48, 89, 119, 0.93);
-}
-
-/* line 22, ../../sass/utilities/u-backgroundColor.scss */
 .u-colorBackgroundGreen {
-  background-color: #02af7e;
+  background-color: #00a19a;
 }
-/* line 24, ../../sass/utilities/u-backgroundColor.scss */
+/* line 19, ../../sass/utilities/u-backgroundColor.scss */
 .u-colorBackgroundGreen:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #64ddbb;
   cursor: pointer;
 }
 
-/* line 30, ../../sass/utilities/u-backgroundColor.scss */
+/* line 25, ../../sass/utilities/u-backgroundColor.scss */
 .u-colorBackgroundRed {
   background-color: #eb6361;
 }
-/* line 32, ../../sass/utilities/u-backgroundColor.scss */
+/* line 27, ../../sass/utilities/u-backgroundColor.scss */
 .u-colorBackgroundRed:hover {
   box-shadow: 0.07em 0.07em 0.14em 0.14em #e26a6a;
   cursor: pointer;
 }
 
-/* line 38, ../../sass/utilities/u-backgroundColor.scss */
+/* line 33, ../../sass/utilities/u-backgroundColor.scss */
+.u-colorBackgroundGray {
+  background-color: #706f6f;
+}
+
+/* line 37, ../../sass/utilities/u-backgroundColor.scss */
 .u-gradientTransparentToBlack {
   background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.9));
 }
