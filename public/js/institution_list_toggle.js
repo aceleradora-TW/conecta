@@ -15,4 +15,4 @@ buttons.forEach(function(button){
       companies.classList.remove("u-displayNone");
     }
   });
-}
+});
