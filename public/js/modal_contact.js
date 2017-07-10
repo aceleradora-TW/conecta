@@ -57,6 +57,7 @@ function sendMail(){
           setTimeout(closeModal, 3000);
         }
         else{
+          $("#SendEmailMessage").addClass("u-colorLightRed");
           $("#SendEmailMessage").html(response.replace("[erro]","Erro: "));
         }
         $("#SendEmailButton").removeAttr("disabled");
