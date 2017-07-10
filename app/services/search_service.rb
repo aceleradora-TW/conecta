@@ -29,7 +29,6 @@ class SearchService
     institutions = Institution.all(fields: [:id], conditions: ["type = ?",institution_discriminator])
     institution_ids = institutions.map { |institution| institution.id }
     segments_ids = segments.map { |segment| segment.id }
-    #@segments  = InstitutionSegment.all(conditions: ["segments_id in ? AND institution_id in ?", segments_ids, institution_ids])
     return InstitutionSegment.all(conditions: ["segment_id in ? AND institution_id in ?",segments_ids, institution_ids])
   end
 
