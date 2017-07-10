@@ -10,19 +10,38 @@ Before running the project, you need to install the the following programs:
 **Docker**
 **docker-compose**
 
-# Installation
-```
-$ git clone https://github.com/aceleradora-TW/conecta.git
-$ cd conecta
-```
-# Build
-Build the docker application image whenever you **change the Gemfile**. To build it, run the command:
-```
-$ make build
-```
-_The command **make build** takes a long time so it is recommended to use it only if you really need to change the Gemfile._
+# Getting started
 
-# Import Data
+Below is the checklist of all you have to do to run the project in your local machine:
+
+### 0 - Clone this project:
+
+``` sh
+git clone https://github.com/aceleradora-TW/conecta.git
+cd conecta
+```
+
+### 1 - Build the application with Docker Compose
+
+First, remember to set the Gmail credentials to configure the mailer. To do so, export them in
+your environment:
+
+`GMAIL_USER=<your_email>`
+
+`GMAIL_PASSWORD=<your password>`
+
+``` sh
+make build
+```
+
+### 2 - Create the initial database schema in the Postgres container
+
+``` sh
+make db-migrate
+```
+
+__Optionally you can seed the database with some data from `CSV` files:__
+
 To have Companies and Research Centers available in the project you need to
 import their data from CSV files.
 
@@ -36,39 +55,39 @@ The CSV files should be located in:
 
 With the files in the right folder, you can run the import
 command (It is faster now, with postgres =D )
-```
-$ make db-seed
+
+``` sh
+make db-seed
 ```
 
-# Execution
+### 3 - Running the project
 
 _The database schema must be created before starting the application, or
 it will crash otherwise. To do so, you have two options:_
 
-- Run the command mentioned above, importing the data from the CSV files
+``` sh
+make run
+```
+The application will be available at:
 
-- Create the schema without any data, by running `make db-migrate`.
-
-Once you set up your schema, you can run the server with:
-
 ```
-$ make run
+localhost:9393
 ```
 
-# Browser
-Open browser in:
+# Tests
+
+Running all the tests with Capybara and Rspec:
+
+``` sh
+make test
 ```
-$ localhost:9393
-```
-# Test
-To run all the tests with Capybara and Rspec, run the command:
-```
-$ make test
-```
+
 # Application Bash
+
 If you want to access application container bash (terminal), run the following command:
-```
-$ make bash
+
+``` sh
+make bash
 ```
 
 # Database operations
@@ -111,14 +130,16 @@ Docker Compose._
 
 # Other informations
 
-Postgres container data are saved in ./data/postgres
+Postgres container data will be saved under `./data/postgres`
 
 ## Staging Page
+
 ```
 https://conectatw-staging.herokuapp.com/
 ```
 
 ## Production Page
+
 ```
 https://conectatw.herokuapp.com/
 ```
