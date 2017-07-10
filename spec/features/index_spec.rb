@@ -19,7 +19,7 @@ RSpec.describe IndexController do
       end
 
       it "Deve exibir o texto do copyright no footer" do
-        expect(page).to have_content "© 2017 Conecta, Todos os direitos reservados."
+        expect(page).to have_content "© 2017 LIGA, Todos os direitos reservados."
       end
 
       it "Deve exibir o botão login na navbar" do
