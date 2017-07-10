@@ -1,11 +1,11 @@
 const dropdownMenu = document.querySelector('.DropdownMenu');
 const inputSearch = document.querySelector('#InputSearch');
-const searchFilterElements = [inputSearch, dropdownMenu];
+const buttonSearch = document.querySelector('#ButtonSearch');
+const searchFilterElements = [inputSearch, dropdownMenu, buttonSearch];
 const tooltip = document.querySelector('#tooltipMessage');
 
 if(dropdownMenu && inputSearch){
   searchFilterElements.forEach(function(element){
-    console.log(element);
     element.addEventListener('click', function(event){
       event.stopPropagation();
     });
@@ -36,6 +36,7 @@ function validateFilter(){
     return true;
   } else{
     tooltip.classList.add('Tooltiptext-active');
+    dropdownMenu.classList.add('DropdownMenu-visible');
   }
 
   return false;
