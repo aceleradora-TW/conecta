@@ -5,12 +5,13 @@
 .Card {
   @include flex($align: center, $direction: column, $justify: center);
   @include size($width: 48%, $min-height: 45%);
-  @include blackGradient($alpha: 0.85);
+  // @include blackGradient($alpha: 0.85);
+  background-color: $white-color;
   border-radius: 1%;
   margin-bottom: 2%;
   font-family: $font-style;
   font-weight: lighter;
-  color: $white-color;
+  color: $black-font-color;
   @include tablet {
     @include size($width: 95%, $min-height: 55%);
     font-size: $large-font-size;
@@ -47,7 +48,7 @@
     border-top: 1px solid rgba(193, 193, 193, 0.45);
     padding: 1%;
     background-color: rgba(0,0,0,0);
-    color:$white-font-color;
+    color:$black-font-color;
     display: none;
     align-items: center;
     justify-content: center;

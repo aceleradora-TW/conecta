@@ -178,7 +178,7 @@
 .Subitems {
   width: 100%;
   display: none;
-  color: white;
+  color: black;
   flex-direction: column;
   list-style: none;
   background-color: transparent;
