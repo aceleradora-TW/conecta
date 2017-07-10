@@ -42,6 +42,9 @@ class IndexController < Controller
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
+      value_sql = value_sql.gsub(/\s+/m, '%').strip.split(" ")
+      value_sql.to_s
+
       @institution = @router_service.return_found_values value_sql, @search_type
 
       erb :search_all
