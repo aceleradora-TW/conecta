@@ -8,13 +8,15 @@ class RouterService
     when 'competencia' then
       return_competence value_sql, search_service, :company
     when 'segmento' then
-      return_segment value_sql, search_service
+      return_segment value_sql, search_service, :company
     when 'empresa' then
       return_company value_sql, search_service
     when 'centro-pesquisa' then
       return_research_center value_sql, search_service
     when 'estrutura-pesquisa-competencia' then
       return_competence value_sql, search_service, :research_center
+    when 'estrutura-pesquisa-segmento' then
+      return_segment value_sql, search_service, :research_center
     end
   end
 
@@ -37,25 +39,25 @@ class RouterService
     @institutions_searched
   end
 
-  def return_segment value_sql, search_service
-    @companies_with_segment = []
+  def return_segment value_sql, search_service, institution_type
+    @institution_with_competence = []
     @segments = search_service.find_by_segment(value_sql)
 
     if @segments.length != 0
-      @company_segments = search_service.find_related_segment(@segments)
-      @company_segments.each do |single_segment|
-        local_company = single_segment.company
-        if !local_company.searched_segments
-          local_company.searched_segments = [single_segment]
+      @institution_segments = search_service.find_related_segment(@segments, institution_type)
+      @institution_segments.each do |single_segment|
+        local_institution = single_segment.institution
+        if !local_institution.searched_segments
+          local_institution.searched_segments = [single_segment]
         else
-          local_company.searched_segments.push(single_segment)
+          local_institution.searched_segments.push(single_segment)
         end
-        if !@companies_with_segment.include? local_company
-          @companies_with_segment.push(local_company)
+        if !@institution_with_competence.include? local_institution
+          @institution_with_competence.push(local_institution)
         end
       end
     end
-    @companies_with_segment
+    @institution_with_competence
   end
 
   def return_company value_sql, search_service
