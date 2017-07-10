@@ -11,7 +11,7 @@
 .SectionOpacity {
   @include size($width: 100%, $height: 100%);
   @include flex($direction: column);
-  background-color: rgba(0,0,0,0.47);
+  // background-color: rgba(0,0,0,0.47);
 }
 
 .SectionBlack {
@@ -20,32 +20,30 @@
 }
 
 .HowItWorks {
-  @include size($width: 100%, $min-height: 100vh);
+  @include size($width: 100%, $min-height: 48vh);
   @include flex($align: center, $direction: column, $justify: center);
-  background-color: $dark-black-color;
-  color: $white-font-color;
+  color: $white-color;
+  background: $aqua-green-color;
 }
 
 .Collaborators {
-  @include size($width: 100%, $min-height: 97vh);
+  @include size($width: 100%, $min-height: 72vh);
   @include flex($align: center, $direction: column, $justify: center);
-  @include blackGradient($alpha: 0.8);
-  background-color: $dark-black-color;
+
   @include smallMobile{
     @include size($min-height: 65vh);
   }
 }
 
 .About{
-  @include size($width: 100%, $min-height: 100vh);
+  @include size($width: 100%, $min-height: 62vh);
   @include flex($align: center, $direction: row, $justify: space-around);
-  padding: 0;
-  font-family: $font-style;
-  font-weight: lighter;
-  text-align: justify;
-  background-color: $gray-color;
-  color: $white-font-color;
-  @include smallMobile {
+    padding: 0;
+    font-family: Lane;
+    font-weight: lighter;
+    text-align: justify;
+    color: $white-color;
+  @include smallMobile{
     @include size($min-height: 65vh);
   }
 }

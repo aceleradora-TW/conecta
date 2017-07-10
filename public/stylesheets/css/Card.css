@@ -10,12 +10,12 @@
   justify-content: center;
   width: 48%;
   min-height: 45%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: white;
   border-radius: 1%;
   margin-bottom: 2%;
   font-family: Lane;
   font-weight: lighter;
-  color: white;
+  color: black;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
   /* line 5, ../sass/Card.scss */
@@ -41,47 +41,47 @@
     font-size: 0.7em;
   }
 }
-/* line 27, ../sass/Card.scss */
+/* line 28, ../sass/Card.scss */
 .Card a {
   color: #0066ff;
 }
-/* line 31, ../sass/Card.scss */
+/* line 32, ../sass/Card.scss */
 .Card.is-login {
   height: 60vh;
   background: rgba(255, 255, 255, 0.72);
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 31, ../sass/Card.scss */
+  /* line 32, ../sass/Card.scss */
   .Card.is-login {
     width: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 31, ../sass/Card.scss */
+  /* line 32, ../sass/Card.scss */
   .Card.is-login {
     width: 80%;
   }
 }
 @media (max-width: 499px) {
-  /* line 31, ../sass/Card.scss */
+  /* line 32, ../sass/Card.scss */
   .Card.is-login {
     height: 57vh;
     width: 90%;
   }
 }
-/* line 45, ../sass/Card.scss */
+/* line 46, ../sass/Card.scss */
 .Card.is-secondary {
   width: 95%;
   border-top: 1px solid rgba(193, 193, 193, 0.45);
   padding: 1%;
   background-color: transparent;
-  color: white;
+  color: black;
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-/* line 57, ../sass/Card.scss */
+/* line 58, ../sass/Card.scss */
 .CardNav {
   display: flex;
   flex-direction: row;
@@ -91,7 +91,7 @@
   font-family: Lane;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 57, ../sass/Card.scss */
+  /* line 58, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -101,7 +101,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 57, ../sass/Card.scss */
+  /* line 58, ../sass/Card.scss */
   .CardNav {
     width: 100%;
     display: flex;
@@ -110,7 +110,7 @@
     justify-content: center;
   }
 }
-/* line 69, ../sass/Card.scss */
+/* line 70, ../sass/Card.scss */
 .CardNav.is-center {
   display: flex;
   align-items: center;
@@ -120,13 +120,13 @@
   text-align: center;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 69, ../sass/Card.scss */
+  /* line 70, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }
 }
 @media (max-width: 499px) {
-  /* line 69, ../sass/Card.scss */
+  /* line 70, ../sass/Card.scss */
   .CardNav.is-center {
     width: 90%;
   }

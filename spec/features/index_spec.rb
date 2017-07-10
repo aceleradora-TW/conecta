@@ -26,19 +26,18 @@ RSpec.describe IndexController do
         expect(page).to have_css('a', id: 'login')
       end
 
-    end
+      context "Quando clicar no campo de busca" do
 
-    context "Quando clicar no campo de busca" do
+        before :each do
+          visit "/"
+        end
 
-      before :each do
-        visit "/"
+        it "Deve exibir os filtros de pesquisa" do
+          page.find_by_id('InputSearch').click
+          expect(page).to have_css('.DropdownMenu')
+        end
+
       end
-
-      it "Deve exibir os filtros de pesquisa" do
-        page.find_by_id('InputSearch').click
-        expect(page).to have_css('.DropdownMenu')
-      end
-
     end
   end
 end

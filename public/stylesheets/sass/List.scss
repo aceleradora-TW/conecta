@@ -110,7 +110,7 @@
 .Subitems {
   @include size($width: 100%);
   display: none;
-  color: $white-font-color;
+  color: $black-font-color;
   flex-direction: column;
   list-style: none;
   background-color: rgba(0, 0, 0, 0);

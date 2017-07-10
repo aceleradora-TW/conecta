@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('.TagTitle');
 const companies = document.querySelector('#companies');
 const research_centers = document.querySelector('#research-centers');
 
-if(buttons && buttons.constructor === Array){
+if(buttons && buttons.constructor === NodeList){
   buttons.forEach(function(button){
     button.addEventListener("click", function(){
       if (button.classList.contains("js-companies")) {
