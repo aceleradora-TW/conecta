@@ -72,7 +72,7 @@
   <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
     <i class="material-icons">arrow_upward</i>
   </button>
-  <!--  -->
+
   <% if @is_about_us%>
       <%= erb :modal_contact %>
       <% if @user_info && @user_info.is_logged_in %>
@@ -98,7 +98,6 @@
   <% end %>
 
 
-  <!--  -->
   <%= erb :footer %>
   <script type="text/javascript" src="/js/email_validator.js"></script>
   <script type="text/javascript" src="/js/navbar.js"></script>
