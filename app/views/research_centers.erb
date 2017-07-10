@@ -4,6 +4,31 @@
   <div class="CardNav is-center">
     <h1><%= rc_searched.name %></h1>
   </div>
+
+
+
+  <% if @search_type == 'segmento' %>
+  <div class="List is-vertical">
+    <ul>
+      <% company.searched_segments.each do |institution_segment| %>
+      <li class="Items">
+        <div class="ItemsText is-segment">
+          <%= institution_segment.segment.name %><i class="material-icons u-colorGreen u-widthIcon">check circle</i>
+        </div>
+      </li>
+      <%end %>
+    </ul>
+    <div class="RatingExplanation u-marginTop">
+      <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthLarge">Segmento informado pela empresa    </div>
+    </div>
+  </div>
+  <% else %>
+
+
+
+
+
+
   <div class="List is-vertical">
     <ul>
       <%

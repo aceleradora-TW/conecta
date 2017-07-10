@@ -33,7 +33,7 @@ class InstitutionBuilder
         @contact_site = value
       elsif header == "email"
         @contact_email = value
-      elsif header == "phone" and @phone == nil and value != ""
+      elsif header == "phone" and @contact_phone == nil and value != ""
         @contact_phone = value
       elsif header.start_with? "Segmento_"
         segment_name = header.sub "Segmento_", ""
