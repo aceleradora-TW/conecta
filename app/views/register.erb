@@ -1,12 +1,12 @@
-<section class="SectionCards u-marginTopLarge">
-  <form class="BoxRegister" action="/admin/register_submit" method="post" onsubmit="return validateForm()">
+<section class="SectionCards u-marginTopLarge u-minHeightLarge">
+  <form class="BoxRegister u-marginTopLarge" action="/admin/register_submit" method="post" onsubmit="return validateForm()">
 
     <div class="LoginHeader">
-      <h1 class="u-fontFamilyLato u-fontSizeMedium">Cadastro <%= @is_company ? 'Empresa' : 'Estrutura de Pesquisa' %></h1>
+      <h1 class="u-fontFamilyLane u-fontSizeMedium">Cadastro <%= @is_company ? 'Empresa' : 'Estrutura de Pesquisa' %></h1>
     </div>
 
     <div class="BoxSteps">
-      <a id="buttonTab1" class="Button u-marginSmall u-widthSmall ButtonChangeTab u-colorBackgroundDarkerBlue" onclick="changeRegisterTab('buttonTab1','BoxRegister1')">1</a>
+      <a id="buttonTab1" class="Button u-marginSmall u-widthSmall ButtonChangeTab u-colorBackgroundGray" onclick="changeRegisterTab('buttonTab1','BoxRegister1')">1</a>
       <a id="buttonTab2" class="Button u-marginSmall u-widthSmall ButtonChangeTab" onclick="changeRegisterTab('buttonTab2','BoxRegister2')">2</a>
       <a id="buttonTab3" class="Button u-marginSmall u-widthSmall ButtonChangeTab" onclick="changeRegisterTab('buttonTab3','BoxRegister3')">3</a>
     </div>
@@ -37,3 +37,4 @@
     <i>Campos marcados com um asterisco (<b class="u-colorRed">*</b>) são obrigatórios</i>
   </form>
 </section>
+<script type="text/javascript" src="/js/register.js"></script>

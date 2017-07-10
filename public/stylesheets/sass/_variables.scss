@@ -1,17 +1,25 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
+
 //Colors
 $blue-color: rgba(55, 113, 200, 1);
 $burnt-yellow-color:rgba(235, 149, 50, 1);
-$aqua-green-color: rgba(2, 175, 126, 1);
+$aqua-green-color: rgba(0, 161, 154, 1);
 $light-blue-color: rgba(15, 170, 195, 1);
 $light-red-color: rgba(235, 99, 97, 1);
-$darker-blue-color: rgba(48, 89, 119, 0.93);
+$gray-color: rgba(112, 111, 111, 1);
 $black-color: rgba(0, 0, 0, 1);
 $white-color: rgba(255, 255, 255, 1);
+$dark-black-color: rgba(0, 0, 0, 0.75);
 
 //Font
-$font-style: Lato, sans-serif;
+// - narrow regular
+$font-style: Lane;
 $white-font-color: rgba(255, 255, 255, 1);
 $black-font-color: rgba(0, 0, 0, 1);
+$aqua-green-font-color: rgba(0, 161, 154, 1);
 $small-font-size: 0.7em;
 $small-medium-font-size: 1em;
 $medium-font-size: 1.3em;

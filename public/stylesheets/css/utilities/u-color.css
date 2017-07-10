@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../../sass/utilities/u-color.scss */
 .u-colorLightBlue {
   color: #0faac3;
@@ -20,7 +24,7 @@
 
 /* line 21, ../../sass/utilities/u-color.scss */
 .u-colorGreen {
-  color: #02af7e;
+  color: #00a19a;
 }
 
 /* line 25, ../../sass/utilities/u-color.scss */

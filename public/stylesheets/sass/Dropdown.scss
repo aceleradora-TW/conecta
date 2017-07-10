@@ -2,24 +2,21 @@
 @import "_variables.scss";
 
 .DropdownMenu{
-  @include size($height:  170px, $width: 95%);
+  @include size($height:  95px, $width: 95%);
+  @include flex($direction: row, $justify: space-around);
   z-index: 3;
+  visibility: hidden;
   list-style: none;
-  position: static;
   border: 1px solid rgba(0, 0, 0, .4);
   border-radius: 0 0 4px 4px;
   background-color: $white-color;
-  text-align: left;
-  right: 61.05vw;
-  bottom: 4.6vh;
   padding: 2%;
-  display: none;
   opacity: 0;
   transition: 1s;
   &-visible{
     opacity: 1;
-    display: block;
     transition: .5s;
+    visibility: visible;
   }
 }
 

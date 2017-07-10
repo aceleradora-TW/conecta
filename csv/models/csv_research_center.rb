@@ -1,9 +1,9 @@
 class CsvResearchCenter
   attr_accessor :name, :description, :address_info,
-  :site, :phone, :contact_name, :email, :competences, :segments
+  :site, :phone, :contact_name, :email, :competences, :segments, :status
 
   @@competence_area_research_center = nil
- 
+
   def initialize
     CsvResearchCenter.create_competence_area_research_center()
   end
@@ -12,7 +12,7 @@ class CsvResearchCenter
     rc_object = ResearchCenter.first(name: @name)
     if !rc_object
       @email = @email || "exemplo@domain.com"
-      research_center = ResearchCenter.new(name: @name, description: @description)
+      research_center = ResearchCenter.new(name: @name, description: @description, status: @status)
       research_center.address = @address_info
       contact_object = Contact.new(site: @site, phone: @phone, contact_name: @contact_name,
       email: @email)

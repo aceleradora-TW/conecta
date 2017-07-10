@@ -4,7 +4,7 @@ require "sinatra/base"
 require_relative "../services/search_service"
 require_relative "../services/router_service"
 require_relative "./admin_controller"
-
+# só um comentario pra ter a branch no git hub
 class IndexController < Controller
   use AdminController
 
@@ -42,6 +42,9 @@ class IndexController < Controller
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
+      value_sql = value_sql.gsub(/\s+/m, '%').strip.split(" ")
+      value_sql.to_s
+
       @institution = @router_service.return_found_values value_sql, @search_type
 
       erb :search_all
@@ -68,5 +71,9 @@ class IndexController < Controller
     mailer.send_now
     "Email Enviado com Sucesso!"
 
+  end
+
+  get "/about_us" do
+   erb :about_us  
   end
 end

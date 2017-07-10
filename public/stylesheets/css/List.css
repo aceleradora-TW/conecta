@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
 /* line 5, ../sass/List.scss */
 .List {
   width: 100%;
@@ -9,9 +13,10 @@
 .List.is-register {
   display: flex;
   align-items: center;
+  width: 94%;
   border-radius: 1%;
 }
-/* line 14, ../sass/List.scss */
+/* line 15, ../sass/List.scss */
 .List.is-item {
   width: 50%;
   display: flex;
@@ -19,7 +24,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 19, ../sass/List.scss */
+/* line 20, ../sass/List.scss */
 .List.is-horizontal {
   display: flex;
   flex-direction: row;
@@ -28,7 +33,7 @@
   padding: 2%;
   background-color: white;
 }
-/* line 25, ../sass/List.scss */
+/* line 26, ../sass/List.scss */
 .List.is-vertical {
   display: flex;
   flex-direction: column;
@@ -38,51 +43,51 @@
   margin-top: 3%;
 }
 @media (min-width: 1191px) and (max-width: 1814px) {
-  /* line 25, ../sass/List.scss */
+  /* line 26, ../sass/List.scss */
   .List.is-vertical {
     font-size: 1.3em;
   }
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 25, ../sass/List.scss */
+  /* line 26, ../sass/List.scss */
   .List.is-vertical {
     width: 90%;
     font-size: 1.3em;
   }
 }
 
-/* line 40, ../sass/List.scss */
+/* line 41, ../sass/List.scss */
 .Items {
   display: flex;
   align-items: center;
   justify-content: space-around;
   align-self: center;
   width: 100%;
-  line-height: 2em;
+  line-height: 1.3em;
   cursor: pointer;
 }
-/* line 46, ../sass/List.scss */
+/* line 47, ../sass/List.scss */
 .Items:hover {
   background: rgba(0, 0, 0, 0.05);
   transition: .5s;
 }
 @media (max-width: 499px) {
-  /* line 40, ../sass/List.scss */
+  /* line 41, ../sass/List.scss */
   .Items {
     font-size: 1.3em;
   }
 }
-/* line 54, ../sass/List.scss */
+/* line 55, ../sass/List.scss */
 .ItemsRegister {
   display: flex;
   justify-content: flex-start;
 }
-/* line 58, ../sass/List.scss */
+/* line 59, ../sass/List.scss */
 .Items.is-featured {
   width: 95%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 58, ../sass/List.scss */
+  /* line 59, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -92,7 +97,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 58, ../sass/List.scss */
+  /* line 59, ../sass/List.scss */
   .Items.is-featured {
     display: flex;
     align-items: center;
@@ -103,7 +108,7 @@
     line-height: 5em;
   }
 }
-/* line 72, ../sass/List.scss */
+/* line 73, ../sass/List.scss */
 .ItemsText {
   display: flex;
   align-items: flex-start;
@@ -114,13 +119,13 @@
   width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 72, ../sass/List.scss */
+  /* line 73, ../sass/List.scss */
   .ItemsText {
     width: 68%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 72, ../sass/List.scss */
+  /* line 73, ../sass/List.scss */
   .ItemsText {
     width: 100%;
     display: flex;
@@ -130,7 +135,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 72, ../sass/List.scss */
+  /* line 73, ../sass/List.scss */
   .ItemsText {
     width: 100%;
     display: flex;
@@ -139,19 +144,19 @@
     font-size: 1.7em;
   }
 }
-/* line 90, ../sass/List.scss */
+/* line 91, ../sass/List.scss */
 .ItemsText.is-segment {
   display: flex;
   justify-content: center;
 }
-/* line 94, ../sass/List.scss */
+/* line 95, ../sass/List.scss */
 .ItemsText.is-icon {
   display: flex;
   justify-content: flex-end;
   width: 32%;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 94, ../sass/List.scss */
+  /* line 95, ../sass/List.scss */
   .ItemsText.is-icon {
     display: flex;
     align-items: center;
@@ -159,7 +164,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 94, ../sass/List.scss */
+  /* line 95, ../sass/List.scss */
   .ItemsText.is-icon {
     width: 100%;
     display: flex;
@@ -169,31 +174,32 @@
   }
 }
 
-/* line 109, ../sass/List.scss */
+/* line 110, ../sass/List.scss */
 .Subitems {
   width: 100%;
   display: none;
+  color: white;
   flex-direction: column;
   list-style: none;
-  line-height: 2em;
+  background-color: transparent;
+  line-height: 1.3em;
   font-size: 0.7em;
   text-align: center;
-  background-color: white;
   padding: 0;
   justify-content: space-around;
 }
-/* line 120, ../sass/List.scss */
+/* line 122, ../sass/List.scss */
 .Subitems li {
   display: flex;
   justify-content: flex-start;
   margin-left: 8.5%;
 }
-/* line 124, ../sass/List.scss */
+/* line 126, ../sass/List.scss */
 .Subitems.Open {
   display: flex;
 }
 @media (max-width: 499px) {
-  /* line 109, ../sass/List.scss */
+  /* line 110, ../sass/List.scss */
   .Subitems {
     font-size: 1.3em;
   }
