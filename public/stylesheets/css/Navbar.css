@@ -223,7 +223,7 @@
 /* line 137, ../sass/Navbar.scss */
 .NavLinks a:hover {
   text-decoration: none;
-  color: white;
+  color: #00a19a;
 }
 /* line 142, ../sass/Navbar.scss */
 .NavLinks.is-open {

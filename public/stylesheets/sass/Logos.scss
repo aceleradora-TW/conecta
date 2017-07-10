@@ -67,13 +67,6 @@
     @include flex($align: center, $justify: center);
   }
 }
-.CardLogo {
-  @include flex($align: center, $justify: center);
-  @include size($width: 30%);
-}
-.LogoInstitutions{
-  @include size($width: 50%);
-}
 
 .LogoSmall {
   @include flex($align: center, $justify: center);

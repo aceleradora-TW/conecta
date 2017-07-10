@@ -76,7 +76,11 @@
 <section class="Section">
   <section class="SectionOpacity">
     <%= erb :modal_contact %>
-    <%= erb :header %>
+    <% if @user_info && @user_info.is_logged_in %>
+      <%= erb :header_admin %>
+    <% else %>
+      <%= erb :header %>
+    <% end %>
     <%= yield %>
 </section>
 </section>

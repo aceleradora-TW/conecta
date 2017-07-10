@@ -23,8 +23,7 @@
 }
 
 .SectionOpacity {
-  @include blackGradient($alpha: 0.47);
-  @include size($width: 100%, $height: 100vh);
+  @include size($width: 100%, $height: 100%);
   @include flex($direction: column);
   background-color: rgba(0,0,0,0.47);
 }
@@ -60,13 +59,13 @@
   text-align: justify;
   background-color: $gray-color;
   color: $white-font-color;
-  @include smallMobile{
+  @include smallMobile {
     @include size($min-height: 65vh);
   }
 }
 
 .SectionCards {
-  @include size($width: 100%, $min-height: 75vh);
+  @include size($width: 100%, $min-height: 76vh);
   @include flex($align: flex-start, $direction: row, $justify: space-around);
   padding: 0;
   flex-wrap: wrap;
@@ -79,7 +78,7 @@
   @include smallMobile{
     @include flex($align: center, $direction: column, $justify: center);
   }
-  &.is-login{
+  &.is-login {
     @include flex($align: center);
   }
 }

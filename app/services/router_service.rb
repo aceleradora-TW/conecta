@@ -16,7 +16,7 @@ class RouterService
     when 'estrutura-pesquisa-competencia' then
       return_competence value_sql, search_service, :research_center
     when 'estrutura-pesquisa-segmento' then
-      return_competence value_sql, search_service, :research_center
+      return_segment value_sql, search_service, :research_center
     end
   end
 
