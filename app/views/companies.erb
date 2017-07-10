@@ -1,9 +1,8 @@
 <% @institution.each do |company| %>
-<div class="Card">
-  <div class="CardNav">
-    <div class="CardLogo">
-      <div class="LogoSmall">
-        <img class="LogoInstitutions" src="<%= company.logo %>">
+  <div class="Card">
+    <div class="CardNav">
+      <div class="CardTitle">
+        <h1><%= company.name %></h1>
       </div>
     </div>
     <div class="CardTitle">
