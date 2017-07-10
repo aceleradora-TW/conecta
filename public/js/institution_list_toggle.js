@@ -14,5 +14,5 @@ buttons.forEach(function(button){
       research_centers.classList.remove("u-displayNone");
       companies.classList.remove("u-displayNone");
     }
-  })
-})
+  });
+}
