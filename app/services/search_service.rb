@@ -20,9 +20,16 @@ class SearchService
     @segments = Segment.all(conditions: ["lower(unaccent(name)) like lower(unaccent(?))", segment_name])
   end
 
-  def find_related_segment segments
-    segments_id = segments.map { |s| s.id }
-    @company_segments = InstitutionSegment.all(conditions: ['segment_id in ?', segments_id])
+  def find_related_segment segments, institution_type
+    if institution_type == :company
+      institution_discriminator = 'Company'
+    else
+      institution_discriminator = 'ResearchCenter'
+    end
+    institutions = Institution.all(fields: [:id], conditions: ["type = ?",institution_discriminator])
+    institution_ids = institutions.map { |institution| institution.id }
+    segments_ids = segments.map { |segment| segment.id }
+    return InstitutionSegment.all(conditions: ["segment_id in ? AND institution_id in ?",segments_ids, institution_ids])
   end
 
   def find_by_company companies

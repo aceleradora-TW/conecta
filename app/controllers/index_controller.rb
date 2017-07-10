@@ -32,6 +32,8 @@ class IndexController < Controller
       search_type = "Segmentos das empresas"
     when 'empresa' then
       search_type = "Empresas"
+    when 'estrutura-pesquisa-segmento' then
+      search_type = "Segmentos das estruturas de pesquisa"
     end
     if @value != ""
       @search_description = "Exibindo #{search_type} para '#{@value}'"
@@ -42,8 +44,7 @@ class IndexController < Controller
     if @search_type
       @value = @value ? @value : ""
       value_sql = "%#{@value.strip.downcase}%"
-      value_sql = value_sql.gsub(/\s+/m, '%').strip.split(" ")
-      value_sql.to_s
+      value_sql = value_sql.gsub(/\s+/m, '%')
 
       @institution = @router_service.return_found_values value_sql, @search_type
 

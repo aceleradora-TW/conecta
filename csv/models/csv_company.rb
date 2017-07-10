@@ -13,7 +13,7 @@ class CsvCompany
 
     @email = @contact_email || "exemplo@domain.com"
 
-    contact_object = Contact.new(site: @contact_site, phone: @pcontact_phone, contact_name: @contact_name,
+    contact_object = Contact.new(site: @contact_site, phone: @contact_phone, contact_name: @contact_name,
     email: @email)
     company.contact = contact_object
 
@@ -42,9 +42,7 @@ class CsvCompany
       competence_institution_object.institution = company
       competence_institution_object.competence = competence_object
       competence_institution_object.save
-
     end
-
     company.save
   end
   def self.create_competence_area_array

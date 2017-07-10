@@ -8,11 +8,13 @@ class CompetenceInstitution
 
 
   def competence_value_calculated
-    #competence_value > 1 ? (competence_value - 1).to_s + "/5" : "0/5"
+
+    if competence_value < 0
+      return "<i class='material-icons u-colorGreen u-widthIcon'>check circle</i>"
+    end
     stars = ""
-    competence_real = (competence_value - 1)
     for i in 1..5
-      if i <= competence_real
+      if i <= competence_value
         stars += "<i class='material-icons u-colorGold u-widthIcon'>star</i>"
       else
         stars += "<i class='material-icons u-colorGold u-widthIcon'>star_border</i>"
