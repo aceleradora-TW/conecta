@@ -72,28 +72,43 @@
   <button onclick="scrollBackToTop()" id="backToTopButton" class="ButtonBack" title="Voltar ao topo">
     <i class="material-icons">arrow_upward</i>
   </button>
-
-<section class="Section">
-  <section class="SectionOpacity">
-    <%= erb :modal_contact %>
-    <% if @user_info && @user_info.is_logged_in %>
+  <!--  -->
+  <% if @is_about_us%>
+      <%= erb :modal_contact %>
+      <% if @user_info && @user_info.is_logged_in %>
       <%= erb :header_admin %>
-    <% else %>
+      <% else %>
       <%= erb :header %>
-    <% end %>
-    <%= yield %>
-</section>
-</section>
-<%= erb :footer %>
-<script type="text/javascript" src="/js/email_validator.js"></script>
-<script type="text/javascript" src="/js/navbar.js"></script>
-<script type="text/javascript" src="/js/expand_cards.js"></script>
-<script type="text/javascript" src="/js/search_filter.js"></script>
-<script type="text/javascript" src="/js/modal_contact.js"></script>
-<script type="text/javascript" src="/js/btn_back_to_top.js"></script>
-<script type="text/javascript" src="/js/login.js"></script>
-<script type="text/javascript" src="/js/jquery_ajax.js"></script>
-<script type="text/javascript" src="/js/change_on_scroll.js"></script>
+      <% end %>
+      <%= yield %>
+    </section>
+  </section>
+  <% else %>
+  <section class="Section">
+    <section class="SectionOpacity">
+      <%= erb :modal_contact %>
+      <% if @user_info && @user_info.is_logged_in %>
+      <%= erb :header_admin %>
+      <% else %>
+      <%= erb :header %>
+      <% end %>
+      <%= yield %>
+    </section>
+
+  <% end %>
+
+
+  <!--  -->
+  <%= erb :footer %>
+  <script type="text/javascript" src="/js/email_validator.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+  <script type="text/javascript" src="/js/expand_cards.js"></script>
+  <script type="text/javascript" src="/js/search_filter.js"></script>
+  <script type="text/javascript" src="/js/modal_contact.js"></script>
+  <script type="text/javascript" src="/js/btn_back_to_top.js"></script>
+  <script type="text/javascript" src="/js/login.js"></script>
+  <script type="text/javascript" src="/js/jquery_ajax.js"></script>
+  <script type="text/javascript" src="/js/change_on_scroll.js"></script>
 
 </body>
 </html>

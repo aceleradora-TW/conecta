@@ -74,6 +74,7 @@ class IndexController < Controller
   end
 
   get "/about_us" do
-   erb :about_us  
+    @is_about_us = request.path_info == '/about_us'
+    erb :about_us
   end
 end
