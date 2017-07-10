@@ -1,153 +1,40 @@
 <section class="Section">
-  <div class="SectionOpacity u-heightXLarge">
-    <div class="BoxText">
-      <div class="TextExplanation">
-        <div class="u-fontSizeMediumSlogan">  Quer expandir os seus empreendimentos?</div>
-        <div> Encontre colaboradores adequados às suas necessidades no ecossistema de empresas do TecnoPuc</div>
-      </div>
-      <div class="LogosCredibility">
-        <div class="Logo-wide"></div>
-        <div class="Logo-tall"></div>
-      </div>
-    </div>
-    <div class="BoxSearch">
-      <section class="SectionSearch">
-        <div class="TitleSearch u-fontSizeLarge">
-          Encontre parcerias agora
-        </div>
-        <div class="ContentSearch">
 
-          <form class="FormSearch" action="/search_all" name="search" onsubmit="return validateFilter()" id="searchFrom">
-            <div class="Tooltip">
-              <span id = "tooltipMessage" class="Tooltiptext">Selecione ao menos um campo de busca</span>
-            </div>
-            <div class="InputGroup">
-              <input id="InputSearch" class="InputSearch" type="text" autocomplete="off" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
-              <div class="Button u-textAlignCenter" onclick="validateFilter()">
-                <a class="ButtonSearch">
-                  <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
-                </a>
-              </div>
-            </div>
-            <div class="InputGroup u-justifyContentStart">
-              <div class="BoxFilterBy">
-                <div class="DropdownMenu">
-                  <div>
-                    <span class="u-fontBold u-marginBottom">Empresa</span><br>
-                    <label class="filterLabel"><input type="radio" class="requiredFilter" name="search_type" value="empresa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
-                    <label><input type="radio" class="requiredFilter" name="search_type" value="competencia" > <span class="u-fontSizeSmallMedium">Competência</span></label><br>
-                    <label><input type="radio" class="requiredFilter" name="search_type" value="segmento" > <span class="u-fontSizeSmallMedium">Segmento</span></label><br>
-                  </div>
-                  <div>
-                    <span class="u-fontBold u-marginBottom">Estruturas de pesquisa</span><br>
-                    <label><input type="radio" class="requiredFilter" name="search_type" value="centro-pesquisa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
-                    <label><input type="radio" class="requiredFilter" name="search_type" value="estrutura-pesquisa-competencia"> <span class="u-fontSizeSmallMedium">Competencia</span></label><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+  <section class="SectionLogoBusca">
+
+    <div class="LogoHome"></div>
+
+    <div class="ContentSearch">
+      <form class="FormSearch" action="/search_all" name="search" onsubmit="return validateFilter()" id="searchFrom">
+        <div class="Tooltip">
+          <span id = "tooltipMessage" class="Tooltiptext">Selecione ao menos um campo de busca</span>
         </div>
-      </div>
+        <div class="InputGroup">
+          <input id="InputSearch" class="InputSearch" type="text" autocomplete="off" placeholder="Selecione o tipo de busca, e pesquise o que precisa..." name="value"/>
+          <div class="Button u-textAlignCenter" onclick="validateFilter()">
+            <a class="ButtonSearch">
+              <span>Buscar</span><i class="material-icons u-marginSmall">search</i>
+            </a>
+          </div>
+        </div>
+        <div class="InputGroup u-justifyContentStart">
+          <div class="BoxFilterBy">
+            <div class="DropdownMenu">
+              <div>
+                <span class="u-fontBold u-marginBottom">Empresa</span><br>
+                <label class="filterLabel"><input type="radio" class="requiredFilter" name="search_type" value="empresa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                <label><input type="radio" class="requiredFilter" name="search_type" value="competencia" > <span class="u-fontSizeSmallMedium">Competência</span></label><br>
+                <label><input type="radio" class="requiredFilter" name="search_type" value="segmento" > <span class="u-fontSizeSmallMedium">Segmento</span></label><br>
+              </div>
+              <div>
+                <span class="u-fontBold u-marginBottom">Estruturas de pesquisa</span><br>
+                <label><input type="radio" class="requiredFilter" name="search_type" value="centro-pesquisa"> <span class="u-fontSizeSmallMedium">Nome</span></label><br>
+                <label><input type="radio" class="requiredFilter" name="search_type" value="estrutura-pesquisa-competencia"> <span class="u-fontSizeSmallMedium">Competencia</span></label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
-</div>
-</div>
-</section>
-<section class="HowItWorks u-fontWhite" id="HowItWorks">
-  <div class="u-fontSizeLarge u-fontFamilyLane"><h1>Como Funciona</h1></div>
-  <div class="BowFlowHowItWorks">
-    <div class="Container">
-      <div class="BoxHowItWorks ">
-        <div class="Icon">
-          <i class="material-icons md-3  u-colorLightBlue">insert_drive_file</i>
-        </div>
-        <div class="Text u-textAlignCenter u-fontSizeSmall">
-          <p class="BoxText">Você cadastra sua empresa no Conecta</p>
-        </div>
-      </div>
-      <div class="Arrow">
-        <i class="material-icons u-rotateIcon">arrow_forward</i>
-      </div>
-      <div class="BoxHowItWorks">
-        <div class="Icon">
-          <i class="material-icons md-3 u-colorLightRed">search</i>
-        </div>
-        <div class="Text u-textAlignCenter u-fontSizeSmall">
-          <p class="BoxText">Procura recursos ou serviços</p>
-        </div>
-      </div>
-      <div class="Arrow">
-        <i class="material-icons u-rotateIcon">arrow_forward</i>
-      </div>
-      <div class="BoxHowItWorks">
-        <div class="Icon">
-          <i class="material-icons md-3 u-colorGreen">business</i>
-        </div>
-        <div class="Text u-textAlignCenter u-fontSizeSmall">
-          <p class="BoxText">Encontra empresas fornecedoras</p>
-        </div>
-      </div>
-      <div class="Arrow">
-        <i class="material-icons u-rotateIcon">arrow_forward</i>
-      </div>
-      <div class="BoxHowItWorks">
-        <div class="Icon">
-          <i class="material-icons md-3 u-colorOrange">contact_mail</i>
-        </div>
-        <div class="Text u-textAlignCenter u-fontSizeSmall">
-          <p class="BoxText">Você contata essa empresa ou o Conecta faz isso para você</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="About" id="About">
-  <div class="ContentAbout">
-    <div class="u-fontSizeLarge"><h1>Sobre</h1></div>
-    <p class="u-fontSizeMedium u-lineHeightMedium">A plataforma Conecta faz parte de uma estratégia institucional de Gestão da Inovação na PUCRS, a qual tem o intuito de:
-      <ul class="u-fontSizeMedium u-lineHeightMedium">
-        <li>Fomentar o surgimento de novos negócios dentro do ecossistema de inovação;</li>
-        <li>Auxiliar na busca de recursos humanos e financeiros, em projetos inovadores de base científica e tecnológica;</li>
-        <li>Conectar empresas, pessoas e saberes, processos e serviços, procurando potencializar ações voltadas à inovação, pesquisa e desenvolvimento.</li>
-      </ul>
-    </p>
-  </div>
-</section>
-
-<section class="Collaborators u-fontWhite" id="Collaborators">
-  <div class="ContentAbout">
-    <div class="u-fontSizeLarge u-fontFamilyLane"><h1>Colaboradores</h1></div>
-    <p class="u-fontWhite u-fontSizeMedium u-textAlignCenter u-fontFamilyLane">A Conecta é fruto do trabalho colaborativo de diferentes atores do ambiente de Inovação e Desenvolvimento da PUCRS, citando-se: </p>
-
-    <div class="ContentCollaborators">
-      <div class="LogosList">
-        <div class="u-fontSizeMedium u-fontFamilyLane"><h3>Realizadores</h3></div>
-        <a href="http://www3.pucrs.br/portal/page/portal/inovapucrs/Capa/CentrodeInovacao//" target="_blank">
-          <img class="u-marginSmall LogoDirectories" src="/images/logos_colaboradores/logo_CI.png">
-        </a>
-        <a href="https://www.thoughtworks.com/pt" target="_blank">
-          <img class="u-marginSmall LogoDirectories" src="/images/logos_colaboradores/tw_logo.png">
-        </a>
-        <a href="http://www.pucrs.br/ffch/lab-geo/" target="_blank">
-          <img class="u-marginSmall LogoDirectories" src="/images/logos_colaboradores/logo_ltig.png">
-        </a>
-      </div>
-
-      <div class="LogosList">
-        <div class="u-fontSizeMedium u-fontFamilyLane"><h3>Apoiadores</h3></div>
-        <a href="http://www3.pucrs.br/portal/page/portal/inovapucrs/Capa/Tecnopuc" target="_blank">
-          <img class="u-marginSmall LogosSupporters" src="/images/logos_colaboradores/logo_tecnopuc.png">
-        </a>
-        <a href="http://www3.pucrs.br/portal/page/portal/inovapucrs/Capa/raiar/" target="_blank">
-          <img class="u-marginSmall LogosSupporters" src="/images/logos_colaboradores/logo_raiar.png">
-        </a>
-        <a href="http://www3.pucrs.br/portal/page/portal/inovapucrs/Capa/Crialab" target="_blank">
-          <img class="u-marginSmall LogosSupporters" src="/images/logos_colaboradores/logo_crialab.png">
-        </a>
-      </div>
-    </div>
-
-  </div>
 </section>

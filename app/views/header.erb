@@ -1,7 +1,9 @@
 <nav class="Navbar">
   <div class="NavLogo">
     <div class="Hamburger" onclick="navToggle()">  <i class="material-icons md-hamburger">menu</i></div>
+    <% if request.path != "/" %>
       <a  class="LogoImage" href="/" ></a>
+      <% end %>
     </div>
   </div>
   <% if request.path != "/admin" %>

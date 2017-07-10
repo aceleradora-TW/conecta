@@ -133,3 +133,13 @@
     height: 100px;
   }
 }
+
+/* line 81, ../sass/Logos.scss */
+.LogoHome {
+  height: 50%;
+  width: 50%;
+  background-image: url("/images/ligaLogoSlogan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}

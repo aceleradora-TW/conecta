@@ -54,26 +54,36 @@
 	@include size($width: 12.5vw);
 }
 .LogoCard{
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include smallMobile{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
+	@include tablet{
+		@include size($width: 100%);
+		@include flex($align: center, $justify: center);
+	}
+	@include mobile{
+		@include size($width: 100%);
+		@include flex($align: center, $justify: center);
+	}
+	@include smallMobile{
+		@include size($width: 100%);
+		@include flex($align: center, $justify: center);
+	}
 }
 
 .LogoSmall {
-  @include flex($align: center, $justify: center);
-  @include size($height: 40px, $width: 40px);
-  border-radius: 100%;
-  margin: 10px;
-  @include tablet{
-    height: 100px;
-  }
+	@include flex($align: center, $justify: center);
+	@include size($height: 40px, $width: 40px);
+	border-radius: 100%;
+	margin: 10px;
+	@include tablet{
+		height: 100px;
+	}
+}
+
+.LogoHome {
+	@include size($height: 50%, $width: 50%);
+	background-image: url("/images/ligaLogoSlogan.png");
+	//background-image: url("/images/background-main-desktop.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+	//background-color: red;
 }
