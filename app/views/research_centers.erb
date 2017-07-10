@@ -20,12 +20,6 @@
     </div>
   </div>
   <% else %>
-
-
-
-
-
-
   <div class="List is-vertical">
     <ul>
       <%
@@ -33,78 +27,78 @@
       has_stars = false
       rc_searched.featured_competences.each_with_index do |rc_searched_competence,index|
         rating = rc_searched_competence.competence_value_calculated_integer
-      %>
-      <li class="Items is-featured ">
-        <div class="ItemsText"><%= rc_searched_competence.competence.name %></div>
-        <div class="ItemsText is-icon">
-          <% if rating > 0 %>
+        %>
+        <li class="Items is-featured ">
+          <div class="ItemsText"><%= rc_searched_competence.competence.name %></div>
+          <div class="ItemsText is-icon">
+            <% if rating > 0 %>
             <% has_stars = true %>
             <% for n_of_stars in (1..5) %>
-              <i class="material-icons u-colorGold u-widthIcon"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
+            <i class="material-icons u-colorGold u-widthIcon"><%=n_of_stars <= rating ? "star" : "star_border"%></i>
             <% end %>
-          <% else %>
+            <% else %>
             <% has_check = true %>
             <i class="material-icons u-colorGreen u-widthIcon">check circle</i>
-          <% end %>
-        </div>
-      </li>
+            <% end %>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+      <% if has_stars %>
+      <div class="RatingExplanation u-marginTop">
+        <div class="ItemsText"><i class="material-icons u-colorGold u-widthIcon">star</i> </div><div class="u-widthLarge">Nível de competência informado pela estrutura de pesquisa</div>
+      </div>
       <% end %>
-    </ul>
-    <% if has_stars %>
-    <div class="RatingExplanation u-marginTop">
-      <div class="ItemsText"><i class="material-icons u-colorGold u-widthIcon">star</i> </div><div class="u-widthLarge">Nível de competência informado pela estrutura de pesquisa</div>
+      <% if has_check %>
+      <div class="RatingExplanation u-marginTop">
+        <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthLarge">Competência informada pela estrutura de pesquisa  </div>
+      </div>
+      <% end %>
     </div>
-    <% end %>
-    <% if has_check %>
-    <div class="RatingExplanation u-marginTop">
-      <div><i class="material-icons u-colorGreen u-widthIcon">check circle</i></div><div class="u-widthLarge">Competência informada pela estrutura de pesquisa  </div>
+    <div class="FooterCardSecondary">
+      <% if(rc_searched.contact) %>
+      <div class="FooterCardSecondaryItem">
+        <b>Nome de Contato: </b>  <%= rc_searched.contact.contact_name || ""  %> <br>
+      </div>
+      <div class="FooterCardSecondaryItem">
+        <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%=rc_searched.contact.email%></a>
+      </div>
+      <div class="FooterCardSecondaryItem">
+        <b>Telefone de Contato: </b>  <%= rc_searched.contact.phone %>
+      </div>
+      <div class="FooterCardSecondaryItem">
+        <%@site_url = rc_searched.contact.site%>
+        <b>Site: </b>  <a class="URL" href=<%= @site_url %> target="_blank"> <%= @site_url %></a>
+      </div>
+      <% end %>
     </div>
-    <% end %>
-  </div>
-  <div class="FooterCardSecondary">
-    <% if(rc_searched.contact) %>
-    <div class="FooterCardSecondaryItem">
-      <b>Nome de Contato: </b>  <%= rc_searched.contact.contact_name || ""  %> <br>
+    <div class="FooterCardPrimary">
+      <div class="Button u-textAlignCenter ButtonCards  ButtonContact" onclick="showModal('<%="#{rc_searched.id}"%>', '<%="#{rc_searched.name}"%>');" id="<%='ButtonContact'"#{rc_searched.id}"%>">contato</div>
+      <div class="Button u-textAlignCenter ButtonCards ButtonSeeMore">ver mais</div>
     </div>
-    <div class="FooterCardSecondaryItem">
-      <b>  Email: </b>  <a href=mailto:'"<%=@email%>"'><%=rc_searched.contact.email%></a>
-    </div>
-    <div class="FooterCardSecondaryItem">
-      <b>Telefone de Contato: </b>  <%= rc_searched.contact.phone %>
-    </div>
-    <div class="FooterCardSecondaryItem">
-      <%@site_url = rc_searched.contact.site%>
-      <b>Site: </b>  <a class="URL" href=<%= @site_url %> target="_blank"> <%= @site_url %></a>
-    </div>
-    <% end %>
-  </div>
-  <div class="FooterCardPrimary">
-    <div class="Button u-textAlignCenter ButtonCards  ButtonContact" onclick="showModal('<%="#{rc_searched.id}"%>', '<%="#{rc_searched.name}"%>');" id="<%='ButtonContact'"#{rc_searched.id}"%>">contato</div>
-    <div class="Button u-textAlignCenter ButtonCards ButtonSeeMore">ver mais</div>
-  </div>
-  <div class="Card is-secondary">
-    <div class="CompanyDescription">
-      <%= rc_searched.description%>
-    </div>
-    <div class="CompanyCompetences">
-      <div class="CompetencesTitle">Demais competências</div>
+    <div class="Card is-secondary">
+      <div class="CompanyDescription">
+        <%= rc_searched.description%>
+      </div>
+      <div class="CompanyCompetences">
+        <div class="CompetencesTitle">Demais competências</div>
         <% @company_competences = rc_searched.grouped_competences_research %>
         <% if @company_competences != nil %>
-          <ul class="CompetenceList">
-            <% @company_competences.each_key do |competence_area| %>
-              <li class="Items ItemsArea">
-                <div class="ItemText"><%= competence_area %></div>
-                <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
-              </li>
-              <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
-                <% @company_competences[competence_area].each do |competence| %>
-                <li><%= competence %></li>
-                <% end %>
-              </ul>
+        <ul class="CompetenceList">
+          <% @company_competences.each_key do |competence_area| %>
+          <li class="Items ItemsArea">
+            <div class="ItemText"><%= competence_area %></div>
+            <div class="ItemStar"><i class="material-icons">keyboard_arrow_down</i></div>
+          </li>
+          <ul class="Subitems SubItemsArea" style="justify-content: space-around;">
+            <% @company_competences[competence_area].each do |competence| %>
+            <li><%= competence %></li>
             <% end %>
           </ul>
+          <% end %>
+        </ul>
         <% end %>
+      </div>
     </div>
-  </div>
   </div>
   <% end %>
