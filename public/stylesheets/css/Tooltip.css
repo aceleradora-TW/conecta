@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
+/* line 5, ../sass/Tooltip.scss */
+.Tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* line 10, ../sass/Tooltip.scss */
+.Tooltip .Tooltiptext {
+  visibility: hidden;
+}
+/* line 12, ../sass/Tooltip.scss */
+.Tooltip .Tooltiptext-active {
+  min-width: 300px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: -110px;
+  visibility: visible;
+}
+/* line 24, ../sass/Tooltip.scss */
+.Tooltip .Tooltiptext-active::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
