@@ -26,5 +26,4 @@ RSpec.configure do |config|
   config.include RSpecMixin
   config.include Capybara::DSL
 end
-
-Capybara.app = IndexController
+Capybara.app = Rack::Builder.parse_file(File.expand_path('../../config.ru', __FILE__)).first

@@ -4,7 +4,7 @@ function isValidEmail(email) {
 };
 
 // Para rodar os testes
-if (!!module) {
+if (typeof module !== 'undefined') {
   module.exports = {
     isValidEmail: isValidEmail
   };
