@@ -73,7 +73,7 @@
     <i class="material-icons">arrow_upward</i>
   </button>
 
-  <% if @is_about_us%>
+  <% if @is_about_us %>
       <%= erb :modal_contact %>
       <% if @user_info && @user_info.is_logged_in %>
       <%= erb :header_admin %>
@@ -81,8 +81,6 @@
       <%= erb :header %>
       <% end %>
       <%= yield %>
-    </section>
-  </section>
   <% else %>
   <section class="Section">
     <section class="SectionOpacity">
