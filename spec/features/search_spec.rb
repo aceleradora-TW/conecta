@@ -12,11 +12,9 @@ RSpec.describe IndexController do
         expect(page).to have_content('Exibindo')
       end
 
-      it "Deve mostrar o Como funciona, Sobre e Colaboradores na barra de navegação do resultado da busca por empresas" do
+      it "Deve mostrar o sobre nós na barra de navegação do resultado da busca por empresas" do
         visit "/search_all?search_type=empresa&value="
-        expect(page).to have_content('Como funciona')
-        expect(page).to have_content('Sobre')
-        expect(page).to have_content('Colaboradores')
+        expect(page).to have_content('Sobre nós')
       end
 
       it "Deve mostrar o botão contato" do
