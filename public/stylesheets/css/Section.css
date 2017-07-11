@@ -155,10 +155,11 @@
 /* line 88, ../sass/Section.scss */
 .SectionLogin {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  height: 94vh;
 }
 
-/* line 92, ../sass/Section.scss */
+/* line 93, ../sass/Section.scss */
 .SectionLogoBusca {
   height: 94vh;
   width: 100vw;

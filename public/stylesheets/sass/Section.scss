@@ -38,11 +38,11 @@
 .About{
   @include size($width: 100%, $min-height: 62vh);
   @include flex($align: center, $direction: row, $justify: space-around);
-    padding: 0;
-    font-family: Lane;
-    font-weight: lighter;
-    text-align: justify;
-    color: $white-color;
+  padding: 0;
+  font-family: Lane;
+  font-weight: lighter;
+  text-align: justify;
+  color: $white-color;
   @include smallMobile{
     @include size($min-height: 65vh);
   }
@@ -86,7 +86,8 @@
 }
 
 .SectionLogin{
-  @include flex($align: flex-end);
+  @include flex($align: center);
+  height: 94vh;
 }
 
 .SectionLogoBusca {
