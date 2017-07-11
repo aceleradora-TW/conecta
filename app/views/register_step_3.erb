@@ -19,7 +19,7 @@
       <div><i class="material-icons">keyboard_arrow_down</i></div>
     </li>
     <div class="BoxThreeColumns u-colorBackgroundTransparent u-fontSizeSmallMedium CompetenceAreaList u-displayNone">
-      <% competence_area.competences.each do |competence| %>
+      <% competence_area.competences.sort {|competence1,competence2| competence1.name <=> competence2.name  }.each do |competence| %>
       <p class="u-marginXSmall">
         <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
         <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>

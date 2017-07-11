@@ -37,6 +37,9 @@ class Institution
         filtered_competences[competence_all.competence.competence_area.name] = competence_area_array
       end
     end
+    filtered_competences.each_key do |competence_area|
+      filtered_competences[competence_area].sort_by!{ |competence| competence.downcase }
+    end
     return filtered_competences
   end
 
