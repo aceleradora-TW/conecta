@@ -210,7 +210,7 @@
 
 .ContentCollaborators{
   @include size($width: 70%);
-  @include flex();
+  @include flex($direction: column);
 }
 
 .RatingExplanation {
