@@ -45,15 +45,19 @@
       <div class="u-widthXLarge" id="companies">
         <div class="u-textAlignLeft u-width3of4"><h1>Empresas</h1></div>
         <% @companies.each do |company| %>
-        <div class="u-textAlignLeft u-width3of4"><%= company.name %></div>
-        <div class="u-textAlignRight u-width1of4"><!-- TODO: Opções editar/remover/... --></div>
+        <div class="InstitutionLine">
+          <div class="u-textAlignLeft"><%= company.name %></div>
+          <div class="u-textAlignRight"><a onclick="confirmDelete(<%= company.id %>, '<%= company.name %>')"><i class="material-icons u-cursorPointer">delete</i></a></div>
+        </div>
         <%end%>
       </div>
       <div class="u-widthXLarge " id="research-centers">
         <div class="u-textAlignLeft u-width3of4"><h1>Estruturas de Pesquisa</h1></div>
         <% @research_centers.each do |research_center| %>
-        <div class="u-textAlignLeft u-width3of4"><%= research_center.name %></div>
-        <div class="u-textAlignRight u-width1of4"><!-- TODO: Opções editar/remover/... --></div>
+        <div class="InstitutionLine">
+          <div class="u-textAlignLeft"><%= research_center.name %></div>
+          <div class="u-textAlignRight"><a onclick="confirmDelete(<%= research_center.id %>, '<%= research_center.name %>')"><i class="material-icons u-cursorPointer">delete</i></a></div>
+        </div>
         <%end%>
       </div>
     </div>
