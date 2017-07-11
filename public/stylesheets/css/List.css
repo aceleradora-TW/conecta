@@ -204,3 +204,13 @@
     font-size: 1.3em;
   }
 }
+
+/* line 134, ../sass/List.scss */
+.InstitutionLine {
+  height: 4vh;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(174, 175, 175, 0.6);
+}
