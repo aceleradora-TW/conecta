@@ -49,6 +49,23 @@ class AdminController < Controller
     end
   end
 
+  get "/admin/delete/:institution_id" do
+    if @user_info.is_logged_in and @user_info.is_admin
+      id = params['institution_id']
+      institution = Institution.get(id)
+      if institution
+        institution.contact.destroy if institution.contact
+        institution.user.destroy if institution.user
+        institution.competence_institutions.destroy if institution.competence_institutions
+        institution.institution_segments.destroy if institution.institution_segments
+        institution.destroy!
+        redirect 'admin/list_institutions'
+      end
+    else
+      erb :forbidden
+    end
+  end
+
   get "/admin/register" do
     if @user_info.is_logged_in and @user_info.is_admin
       @is_company = params[:type] == "company"
@@ -92,12 +109,6 @@ class AdminController < Controller
       contact = Contact.new(email: @contact_email, contact_name: @contact_name, site: @contact_site, phone: @contact_phone, secondary_contact_name: @secondary_contact_name, secondary_email: @secondary_email)
       if @institution_type == "company"
         institution = Company.new(name: @institution_name, description: @institution_description)
-        @segment_list.each do |segment_id|
-          segment = Segment.first(id: segment_id)
-          if segment
-            institution.segments.push(segment)
-          end
-        end
       else
         institution = ResearchCenter.new(name: @institution_name, description: @institution_description)
       end
@@ -106,13 +117,21 @@ class AdminController < Controller
       institution.contact = contact
       institution.user = user
       institution.save
+
+      @segment_list.each do |segment_id|
+        segment = Segment.first(id: segment_id)
+        if segment
+          institution.segments.push(segment)
+        end
+      end
+      institution.save
       @competence_list.each do |competence_id|
         competence = Competence.first(id: competence_id)
         if competence
           competence_institution = CompetenceInstitution.create(competence_value: -1, institution: institution, competence: competence)
         end
       end
-        erb :register_success
+      erb :register_success
 
     else
       erb :forbidden
