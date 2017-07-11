@@ -5,7 +5,7 @@
     <%@segment.each do |segment|%>
     <p class="u-marginXSmall u-fontSizeSmallMedium">
       <input type="checkbox" class="CheckboxSegment" id='<%="segment_#{segment.id}"%>' name="segment_list[]" value="<%=segment.id%>"/>
-      <label for='<%="segment_#{segment.id}"%>'><%=segment.name%></label>
+      <label class="u-cursorPointer" for='<%="segment_#{segment.id}"%>'><%=segment.name%></label>
     </p>
     <%end%>
   </div>
@@ -14,7 +14,7 @@
   <h2>Competências <b class="u-colorRed">*</b> <span class="u-colorRed requiredMessage u-displayNone u-fontSizeXSmall">É necessário o preenchimento de ao menos uma competência</span> </h2>
   <div class="CompanyCompetences">
     <% @competence_areas.each do |competence_area| %>
-    <li class="Items ItemsRegister CompetenceArea">
+    <li class="Items ItemsRegister CompetenceArea u-cursorPointer">
       <div><h3><%= competence_area.name %></h3></div>
       <div><i class="material-icons">keyboard_arrow_down</i></div>
     </li>
@@ -22,7 +22,7 @@
       <% competence_area.competences.each do |competence| %>
       <p class="u-marginXSmall">
         <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
-        <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
+        <label class="u-cursorPointer" for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
       </p>
       <% end %>
     </div>
