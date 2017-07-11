@@ -375,6 +375,7 @@
 .ContentCollaborators {
   width: 70%;
   display: flex;
+  flex-direction: column;
 }
 
 /* line 216, ../sass/Box.scss */
