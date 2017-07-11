@@ -4,18 +4,14 @@
   <% else %>
   <span> Nome da estrutura de pesquisa <b class="u-colorRed">*</b></span>
   <% end %>
-  <input type="text" name="institution_name" value="" class="required">
+  <input type="text" name="institution_name" value="<%= @institution.name if @institution %>" class="required">
+  <input type="hidden" name="institution_id" value="<%= @institution.id if @institution %>">
 </div>
+<% if !@institution %>
 <div class="RegisterInputs">
   <span> E-mail para login <b class="u-colorRed">*</b></span>
-  <input type="text" name="user_email" value="" class="required">
+  <input type="text" name="user_email" value="<%= @institution.user.email if @institution and @institution.user %>" class="required">
 </div>
-<% if @is_company %>
-<div class="RegisterInputs">
-  <span> CNPJ</span>
-  <input type="text" name="institution_cnpj" value="">
-</div>
-<% end %>
 <div class="RegisterInputs">
   <span> Senha <b class="u-colorRed">*</b></span>
   <input type="password" name="user_password" value="" class="required password">
@@ -23,3 +19,4 @@
   <span> Confirmar Senha <b class="u-colorRed">*</b><b id="invalidPasswordCheckMessage" class="u-colorRed u-displayNone">Senhas não conferem</b></span>
   <input type="password" name="user_password2" value="" class="required password">
 </div>
+<% end %>
