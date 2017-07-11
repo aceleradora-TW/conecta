@@ -1,12 +1,13 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "MediaQuery";
 
 .ModalContact {
   @include size($height: 100%, $width: 100%);
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-}
+  }
 
 .ModalContent {
   @include size( $width: 50%);
@@ -16,6 +17,9 @@
   border: 1px solid rgba(136, 136, 136, 1);
   text-align: center;
   font-family: $font-style;
+  @include smallMobile{
+    @include size($width: 67%);
+  }
 }
 
 .Close {
