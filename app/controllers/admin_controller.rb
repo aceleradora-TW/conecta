@@ -112,7 +112,7 @@ class AdminController < Controller
           competence_institution = CompetenceInstitution.create(competence_value: -1, institution: institution, competence: competence)
         end
       end
-        erb :register_success
+      erb :register_success
 
     else
       erb :forbidden
@@ -132,6 +132,11 @@ class AdminController < Controller
   get "/session/logout" do
     session.clear
     redirect "/admin"
+  end
+
+  not_found do
+    status 404
+    erb :not_found
   end
 
 

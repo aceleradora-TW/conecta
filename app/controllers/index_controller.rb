@@ -80,4 +80,11 @@ class IndexController < Controller
     @is_about_us = request.path_info == '/about_us'
     erb :about_us
   end
+
+  not_found do
+    status 404
+    erb :not_found
+  end
+
+
 end

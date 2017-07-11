@@ -418,3 +418,13 @@
     font-size: 1.3em;
   }
 }
+/* line 236, ../sass/Box.scss */
+.RatingExplanation .NotFound {
+  height: 30%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 10%;
+}
