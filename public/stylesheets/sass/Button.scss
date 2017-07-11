@@ -24,7 +24,7 @@
     @include size($height: 4.6vh);
     letter-spacing: 0.1em;
     @include smallMobile {
-      @include size($width: 15%);
+      @include size($width: 90%);
     }
     }
   &Send {
