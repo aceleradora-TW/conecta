@@ -4,7 +4,7 @@
   <div class="BoxThreeColumns">
     <%@segment.each do |segment|%>
     <p class="u-marginXSmall u-fontSizeSmallMedium">
-      <input type="checkbox" class="CheckboxSegment" id='<%="segment_#{segment.id}"%>' name="segment_list[]" value="<%=segment.id%>"/>
+      <input type="checkbox" class="CheckboxSegment" id='<%="segment_#{segment.id}"%>' name="segment_list[]" value="<%=segment.id%>" <%= (@institution.segments.include?(segment) ? 'checked="checked"' : '') if @institution %>/>
       <label for='<%="segment_#{segment.id}"%>'><%=segment.name%></label>
     </p>
     <%end%>
@@ -21,7 +21,7 @@
     <div class="BoxThreeColumns u-colorBackgroundTransparent u-fontSizeSmallMedium CompetenceAreaList u-displayNone">
       <% competence_area.competences.each do |competence| %>
       <p class="u-marginXSmall">
-        <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"/>
+        <input type="checkbox" class="CheckboxCompetence" id='<%="competence_#{competence.id}"%>' name="competence_list[]" value="<%=competence.id%>"  <%= (@institution.competences.include?(competence) ? 'checked="checked"' : '') if @institution %>/>
         <label for='<%="competence_#{competence.id}"%>'><%= competence.name %></label>
       </p>
       <% end %>
