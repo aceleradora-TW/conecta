@@ -210,7 +210,7 @@
 
 .ContentCollaborators{
   @include size($width: 70%);
-  @include flex();
+  @include flex($direction: column);
 }
 
 .RatingExplanation {
@@ -232,4 +232,14 @@
     @include flex($align: center, $justify: center);
     font-size: $medium-font-size
   }
+
+  .NotFound{
+    @include size($height: 30%, $width: 90%);
+    @include flex($align: center, $direction: column);
+    align-self: center;
+    margin-top: 10%;
+  }
+
+
+
 }

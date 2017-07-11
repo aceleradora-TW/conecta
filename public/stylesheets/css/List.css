@@ -64,7 +64,6 @@
   align-self: center;
   width: 100%;
   line-height: 1.3em;
-  cursor: pointer;
 }
 /* line 47, ../sass/List.scss */
 .Items:hover {
