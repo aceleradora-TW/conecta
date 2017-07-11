@@ -1,7 +1,7 @@
 <% @institution.each do |institution| %>
-<div class="Card">
+<div class="Card u-fontBold">
   <div class="CardNav is-center">
-    <h1 class="u-fontSizeMedium"><%= institution.name %></h1>
+    <h1 class="u-fontSizeLargeMedium"><%= institution.name %></h1>
   </div>
   <% if @search_type == 'segmento' ||  @search_type == 'estrutura-pesquisa-segmento'%>
   <div class="List is-vertical">

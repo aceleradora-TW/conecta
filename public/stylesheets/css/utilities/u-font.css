@@ -17,68 +17,73 @@
   font-size: 1.3em;
 }
 
-/* line 17, ../../sass/utilities/u-font.scss */
+/* line 16, ../../sass/utilities/u-font.scss */
+.u-fontSizeLargeMedium {
+  font-size: 1.5em !important;
+}
+
+/* line 20, ../../sass/utilities/u-font.scss */
 .u-fontSizeMediumSlogan {
   font-size: 1.3em;
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 17, ../../sass/utilities/u-font.scss */
+  /* line 20, ../../sass/utilities/u-font.scss */
   .u-fontSizeMediumSlogan {
     font-size: 1.3em;
   }
 }
 
-/* line 24, ../../sass/utilities/u-font.scss */
+/* line 27, ../../sass/utilities/u-font.scss */
 .u-fontSizeMedium {
   font-size: 1.3em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 24, ../../sass/utilities/u-font.scss */
+  /* line 27, ../../sass/utilities/u-font.scss */
   .u-fontSizeMedium {
     font-size: 1.3em;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 24, ../../sass/utilities/u-font.scss */
+  /* line 27, ../../sass/utilities/u-font.scss */
   .u-fontSizeMedium {
     font-size: 0.7em;
   }
 }
 @media (max-width: 499px) {
-  /* line 24, ../../sass/utilities/u-font.scss */
+  /* line 27, ../../sass/utilities/u-font.scss */
   .u-fontSizeMedium {
     font-size: 0.7em;
   }
 }
 
-/* line 37, ../../sass/utilities/u-font.scss */
+/* line 40, ../../sass/utilities/u-font.scss */
 .u-fontSizeLarge {
   font-size: 1.7em;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 37, ../../sass/utilities/u-font.scss */
+  /* line 40, ../../sass/utilities/u-font.scss */
   .u-fontSizeLarge {
     font-size: 1.3em;
   }
 }
 @media (max-width: 499px) {
-  /* line 37, ../../sass/utilities/u-font.scss */
+  /* line 40, ../../sass/utilities/u-font.scss */
   .u-fontSizeLarge {
     font-size: 1.3em;
   }
 }
 
-/* line 47, ../../sass/utilities/u-font.scss */
+/* line 50, ../../sass/utilities/u-font.scss */
 .u-fontFamilyLane {
   font-family: Lane;
 }
 
-/* line 51, ../../sass/utilities/u-font.scss */
+/* line 54, ../../sass/utilities/u-font.scss */
 .u-fontWhite {
   color: white;
 }
 
-/* line 55, ../../sass/utilities/u-font.scss */
+/* line 58, ../../sass/utilities/u-font.scss */
 .u-fontBold {
   font-weight: bold;
 }
