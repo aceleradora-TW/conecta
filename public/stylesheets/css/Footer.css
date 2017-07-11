@@ -22,7 +22,7 @@
   }
 }
 
-/* line 18, ../sass/Footer.scss */
+/* line 19, ../sass/Footer.scss */
 .RegisterFooter {
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-/* line 23, ../sass/Footer.scss */
+/* line 24, ../sass/Footer.scss */
 .FooterCardSecondary {
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
   margin-bottom: 3%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 23, ../sass/Footer.scss */
+  /* line 24, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 146px;
     display: flex;
@@ -54,7 +54,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 23, ../sass/Footer.scss */
+  /* line 24, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 140px;
     display: flex;
@@ -62,7 +62,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 23, ../sass/Footer.scss */
+  /* line 24, ../sass/Footer.scss */
   .FooterCardSecondary {
     min-height: 140px;
     display: flex;
@@ -70,12 +70,12 @@
   }
 }
 
-/* line 43, ../sass/Footer.scss */
+/* line 44, ../sass/Footer.scss */
 .FooterCardSecondaryItem {
   width: 45%;
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 43, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     width: 100%;
     display: flex;
@@ -84,20 +84,20 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 43, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     font-size: 13px;
   }
 }
 @media (max-width: 499px) {
-  /* line 43, ../sass/Footer.scss */
+  /* line 44, ../sass/Footer.scss */
   .FooterCardSecondaryItem {
     font-size: 13px;
     flex-wrap: wrap;
   }
 }
 
-/* line 58, ../sass/Footer.scss */
+/* line 59, ../sass/Footer.scss */
 .FooterCardPrimary {
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@
   border-top: 1px solid rgba(193, 193, 193, 0.45);
 }
 @media (min-width: 768px) and (max-width: 1190px) {
-  /* line 58, ../sass/Footer.scss */
+  /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
     min-height: 12vh;
     display: flex;
@@ -116,7 +116,7 @@
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  /* line 58, ../sass/Footer.scss */
+  /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
     min-height: 12vh;
     display: flex;
@@ -124,7 +124,7 @@
   }
 }
 @media (max-width: 499px) {
-  /* line 58, ../sass/Footer.scss */
+  /* line 59, ../sass/Footer.scss */
   .FooterCardPrimary {
     min-height: 12vh;
     display: flex;

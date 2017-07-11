@@ -7,6 +7,7 @@
 	@include flex($align: center, $direction: column, $justify: center);
 	@include size($width: 100%, $height: 6vh);
 	@include blackGradient($alpha: 1);
+	
 	font-family: $font-style;
 	background-color: $black-font-color;
 	color: $white-font-color;
@@ -21,54 +22,54 @@
 }
 
 .FooterCardSecondary{
-  @include flex($align: center, $direction: row, $justify: space-around, $wrap: wrap);
-  @include size($min-height: 60px, $width: 100%);
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  padding-top: 3%;
-  margin-bottom: 3%;
-  @include tablet {
-    @include size($min-height: 146px);
+	@include flex($align: center, $direction: row, $justify: space-around, $wrap: wrap);
+	@include size($min-height: 60px, $width: 100%);
+	border-top: 1px solid rgba(193, 193, 193, 0.45);
+	padding-top: 3%;
+	margin-bottom: 3%;
+	@include tablet {
+		@include size($min-height: 146px);
 		@include flex($direction: column);
-  }
-  @include mobile{
-    @include size($min-height: 140px);
+	}
+	@include mobile{
+		@include size($min-height: 140px);
 		@include flex($direction: column);
-  }
-  @include smallMobile{
-    @include size($min-height: 140px);
+	}
+	@include smallMobile{
+		@include size($min-height: 140px);
 		@include flex($direction: column);
-  }
+	}
 }
 
 .FooterCardSecondaryItem {
-  @include size($width: 45%);
-  @include tablet{
-    @include size($width: 100%);
-    @include flex($align: center, $justify: center);
-  }
-  @include mobile{
-    font-size: 13px;
-  }
-  @include smallMobile{
-    font-size: 13px;
-    flex-wrap: wrap;
-  }
+	@include size($width: 45%);
+	@include tablet{
+		@include size($width: 100%);
+		@include flex($align: center, $justify: center);
+	}
+	@include mobile{
+		font-size: 13px;
+	}
+	@include smallMobile{
+		font-size: 13px;
+		flex-wrap: wrap;
+	}
 }
 
 .FooterCardPrimary {
-  @include flex($align: center, $direction: row, $justify: space-around);
-  @include size($min-height: 7vh, $width: 100%);
-  border-top: 1px solid rgba(193, 193, 193, 0.45);
-  @include tablet{
+	@include flex($align: center, $direction: row, $justify: space-around);
+	@include size($min-height: 7vh, $width: 100%);
+	border-top: 1px solid rgba(193, 193, 193, 0.45);
+	@include tablet{
 		@include size($min-height: 12vh);
 		@include flex($direction: column);
-  }
-  @include mobile{
+	}
+	@include mobile{
 		@include size($min-height: 12vh);
 		@include flex($direction: column);
-  }
-  @include smallMobile{
+	}
+	@include smallMobile{
 		@include size($min-height: 12vh);
 		@include flex($direction: column);
-  }
+	}
 }
