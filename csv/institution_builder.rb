@@ -1,6 +1,7 @@
 require_relative 'models/csv_company'
 class InstitutionBuilder
   def parse_company row
+    @contact_phone = nil
     @status = true
     company_csv = CsvCompany.new
     @segments, @types, @competences = [],[],[]
