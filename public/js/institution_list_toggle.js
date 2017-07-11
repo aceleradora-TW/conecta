@@ -18,3 +18,8 @@ if(buttons && buttons.constructor === NodeList){
     });
   });
 }
+function confirmDelete(institutionId, institutionName){
+  if(confirm('Tem certeza que deseja excluir a instituição "' + institutionName + '"?')){
+    location.href = "/admin/delete/" + institutionId;
+  }
+}

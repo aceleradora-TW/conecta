@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Lane;
+  src: url("/fonts/LANENAR_.ttf");
+}
+/* line 5, ../../sass/utilities/u-cursor.scss */
+.u-cursorPointer {
+  cursor: pointer;
+}

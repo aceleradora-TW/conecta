@@ -130,3 +130,9 @@
     font-size: $medium-font-size;
   }
 }
+
+.InstitutionLine {
+  @include size($width: 110%, $height: 4vh);
+  @include flex($align: center, $justify: space-between);
+  border-bottom: 1px dashed rgba(174, 175, 175, 0.6);
+}
