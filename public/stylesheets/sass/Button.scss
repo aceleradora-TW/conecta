@@ -17,13 +17,16 @@
   color: $white-font-color;
   text-align: center;
   letter-spacing: .5px;
-  &.ButtonSend {
+  @include mobile{
+    margin: 2%;
+  }
+    &.ButtonSend {
     @include size($height: 4.6vh);
     letter-spacing: 0.1em;
     @include smallMobile {
       @include size($width: 15%);
     }
-  }
+    }
   &Send {
     @include size($height: 30%, $width: 25%);
     font-size: 0.8em;
