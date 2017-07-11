@@ -147,7 +147,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
