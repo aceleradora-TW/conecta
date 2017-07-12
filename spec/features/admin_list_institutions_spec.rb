@@ -17,8 +17,8 @@ RSpec.describe IndexController do
         page.find_by_id('password').set('admin')
         page.click_button 'Entrar'
         wait_for_ajax
+
         page.visit "/admin/list_institutions"
-        return page
       end
 
       def wait_for_ajax
@@ -30,34 +30,18 @@ RSpec.describe IndexController do
         end
       end
 
-      before(:each,js:true) do
+      before(:each) do
         login_admin
       end
 
-      it "Deve mostrar eldorado" do
+      it "Deve mostrar Empresas e Estruturas de Pesquisa" do
         expect(page).to have_content 'Eldorado'
-      end
-
-      it "Deve mostrar HPServ" do
         expect(page).to have_content 'HPServ'
-      end
-
-      it "Deve mostrar Centro de Pesquisas em Biologia Molecular e Funcional" do
         expect(page).to have_content 'Centro de Pesquisas em Biologia Molecular e Funcional'
-      end
-
-      it "Deve mostrar Centro de Terapia Celular" do
         expect(page).to have_content 'Centro de Terapia Celular'
-      end
-
-      it "Deve mostrar Botao de cadastro de empresa" do
+        expect(page).to have_css("div", class: 'RegisterTitle')
         expect(page).to have_css("div", class: 'RegisterTitle')
       end
-
-      it "Deve mostrar Botao de cadastro de estrutura de pesquisa" do
-        expect(page).to have_css("div", class: 'RegisterTitle')
-      end
-
     end
   end
 end

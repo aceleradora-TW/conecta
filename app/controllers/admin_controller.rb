@@ -119,7 +119,7 @@ class AdminController < Controller
           user = User.new(email: @user_email, password: @user_password, role: "user")
         end
       else
-        if @institution_id > 0 
+        if @institution_id > 0
           institution = ResearchCenter.get(@institution_id)
           user = institution.user
         else
@@ -127,8 +127,9 @@ class AdminController < Controller
           user = User.new(email: @user_email, password: @user_password, role: "user")
         end
       end
-
+      institution.name = @institution_name
       contact = institution.contact || Contact.new(email: @contact_email)
+      contact.email = @contact_email
       contact.contact_name = @contact_name
       contact.site = @contact_site
       contact.phone = @contact_phone
